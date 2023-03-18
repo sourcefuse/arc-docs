@@ -49,8 +49,15 @@ nav:
   - ARC IaC:
       - Introduction: 'arc-iac-docs/README.md'
       - IaC Modules:
-          - terraform-aws-ref-arch-network: 'arc-iac-docs/modules/terraform-aws-ref-arch-network/README.md'
+          - terraform-aws-refarch-control-tower-aft:  'arc-iac-docs/modules/terraform-aws-refarch-control-tower-aft/README.md'
           - terraform-module-aws-bootstrap: 'arc-iac-docs/modules/terraform-module-aws-bootstrap/README.md'
+          - terraform-aws-ref-arch-network: 'arc-iac-docs/modules/terraform-aws-ref-arch-network/README.md'
+          - terraform-aws-ref-arch-db:  'arc-iac-docs/modules/terraform-aws-ref-arch-db/README.md'
+          - terraform-aws-refarch-ecs:  'arc-iac-docs/modules/terraform-aws-refarch-ecs/README.md'
+          - terraform-aws-ref-arch-eks:  'arc-iac-docs/modules/terraform-aws-ref-arch-eks/README.md'
+          - terraform-aws-ref-arch-network:  'arc-iac-docs/modules/terraform-aws-ref-arch-network/README.md'
+          - terraform-aws-refarch-tags:  'arc-iac-docs/modules/terraform-aws-refarch-tags/README.md'
+          - terraform-k8s-app:  'arc-iac-docs/modules/terraform-k8s-app/README.md'
       - Reference Architectures:
           - AWS Account Baseline: 'arc-iac-docs/reference_architectures/aws_account_baseline.md'
           - Network Baseline: 'arc-iac-docs/reference_architectures/network_baseline.md'
