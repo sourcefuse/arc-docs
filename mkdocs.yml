@@ -1,0 +1,63 @@
+site_name: 'ARC'
+site_description: 'Main documentation for ARC'
+repo_url: https://github.com/sourcefuse/arc-docs
+edit_uri: edit/main/docs
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  features:
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - techdocs-core
+  - search
+  - include-markdown
+
+docs_dir: docs
+
+markdown_extensions:
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sourcefuse/loopback4-microservice-catalog
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/sourcefuse/arc-docs" target="_blank" rel="noopener">ARC</a>
+
+nav:
+  - ARC API:
+      - Introduction: 'arc-api-docs/index.md'
+  - ARC IaC:
+      - Introduction: 'arc-iac-docs/README.md'
+      - IaC Modules:
+          - terraform-aws-ref-arch-network: 'arc-iac-docs/modules/terraform-aws-ref-arch-network/README.md'
+          - terraform-module-aws-bootstrap: 'arc-iac-docs/modules/terraform-module-aws-bootstrap/README.md'
+      - Reference Architectures:
+          - AWS Account Baseline: 'arc-iac-docs/reference_architectures/aws_account_baseline.md'
+          - Network Baseline: 'arc-iac-docs/reference_architectures/network_baseline.md'
+          - ECS Platform Baseline: 'arc-iac-docs/reference_architectures/ecs_platform_baseline.md'
+          - EKS Platform Baseline: 'arc-iac-docs/reference_architectures/eks_platform_baseline.md'
+          - Lambda Platform Baseline: 'arc-iac-docs/reference_architectures/lambda_platform_baseline.md'
+          - Windows Basic Platform Baseline: 'arc-iac-docs/reference_architectures/windows_basic_platform_baseline.md'
+          - Windows Enterprise Platform Baseline: 'arc-iac-docs/reference_architectures/windows_enterprise_platform_baseline.md'
+  - ARC UI:
+      - Introduction: 'arc-ui-docs/index.md'
