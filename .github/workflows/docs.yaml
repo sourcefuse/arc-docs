@@ -21,18 +21,11 @@ jobs:
       - name: Install dependencies
         run: |
           pip install mkdocs mkdocs-material
-          pip install markdown-extensions pymdown-extensions
-
+          pip install mkdocs-techdocs-core
+          pip install mkdocs-include-markdown-plugin
       - name: Deploy docs
         run: |
           mkdocs gh-deploy --config-file mkdocs.yml \
                            --remote-branch gh-pages \
-                           --theme-material \
-                           --markdown-extension=pymdownx.superfences \
-                           --markdown-extension=tables \
-                           --markdown-extension=pymdownx.highlight:
-                               anchor_linenums: true \
-                           --markdown-extension=pymdownx.inlinehilite \
-                           --markdown-extension=pymdownx.snippets
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ARC_DOCS_TOKEN }}
