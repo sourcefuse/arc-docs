@@ -18,11 +18,39 @@ The module provisions
 
 Our approach to ECS Fargate clusters is to provision a cluster and allow downstream services to attach to it via convention based data source queries.
 
+**Note**: the example below is does not have a pinned version. Be sure to pin your version. Refer to the `example` folder for a working example version.
 ## Usage
 
 ```hcl
 module "ecs" {
   source = "git::https://github.com/sourcefuse/terraform-aws-refarch-ecs"
+
+  environment = var.environment
+  namespace   = var.namespace
+
+  vpc_id                  = data.aws_vpc.vpc.id
+  alb_subnet_ids          = data.aws_subnets.public.ids
+  health_check_subnet_ids = data.aws_subnets.private.ids
+
+  // --- Devs: DO NOT override, otherwise tests will fail --- //
+  access_logs_enabled                             = false
+  alb_access_logs_s3_bucket_force_destroy         = true
+  alb_access_logs_s3_bucket_force_destroy_enabled = true
+  // -------------------------- END ------------------------- //
+
+  ## create acm certificate and dns record for health check
+  route_53_zone                 = local.route_53_zone
+  acm_domain_name               = "healthcheck-ecs-${var.namespace}-${var.environment}.${local.route_53_zone}"
+  acm_subject_alternative_names = []
+  health_check_route_53_records = [
+    "healthcheck-ecs-${var.namespace}-${var.environment}.${local.route_53_zone}"
+  ]
+
+  service_discovery_private_dns_namespace = [
+    "${var.namespace}.${var.environment}.${local.route_53_zone}"
+  ]
+
+  tags = module.tags.tags
 }
 ```
 
