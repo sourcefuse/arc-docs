@@ -6,15 +6,18 @@ Terraform Module for AWS ECS by the SourceFuse ARC team.
 
 The module assumes that upstream dependencies, namely networking dependencies, are created upstream and the values are passed into this module via mechanisms such as Terraform data source queries.
 
-![Module Components](./static/ecs_module_hla.png)
+![Module Structure](./static/ecs_module_hla.png)
 
 The module provisions
 
 * ECS Cluster - we are focusing on the Fargate launch type, so we do not provision any underlying EC2 instances for the ECS launch type.
-* Application Load Balancer
-* Health Check Service - vanilla Nginx service that is used as the default route for the load balancer. The purpose of the health check service is to ensure that the core infrastructure, networking, security groups, etc. are configured correctly.
+* Application Load Balancer - default port 80 to 443 redirect.
+* Health Check Service - vanilla HTTP echo service that is used as the default target group for the load balancer. The purpose of the health check service is to ensure that the core infrastructure, networking, security groups, etc. are configured correctly.
 * Task execution IAM role - used by downstream services for task execution.
+* Utilizes ACM to generate a certificate specific to the ALB.
 * Tags/SSM params - the module tags resources and outputs SSM params that can be used in data source lookups downstream for ECS services to reference to deploy into the cluster.
+
+![Module Structure](./static/arc_ecs_basic_components.png)
 
 Our approach to ECS Fargate clusters is to provision a cluster and allow downstream services to attach to it via convention based data source queries.
 
