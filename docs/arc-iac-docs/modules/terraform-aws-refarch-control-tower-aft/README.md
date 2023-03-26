@@ -13,39 +13,10 @@ To see a full example, check out the [main.tf](./example/main.tf) file in the ex
 
 ```hcl
 ################################################################################
-## defaults
-################################################################################
-terraform {
-  required_version = ">= 1.3"
-
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 4.0"
-    }
-  }
-}
-
-provider "aws" {
-  region = var.control_tower_home_region
-}
-
-module "tags" {
-  source = "git::https://github.com/sourcefuse/terraform-aws-refarch-tags?ref=1.0.3"
-
-  environment = terraform.workspace
-  project     = "terraform-aws-refarch-control-tower-aft"
-
-  extra_tags = {
-    Example = "true"
-  }
-}
-
-################################################################################
 ## control tower
 ################################################################################
 module "aft" {
-  source = "../"
+  source = "git::https://github.com/sourcefuse/terraform-aws-refarch-control-tower-aft"
 
   account_ids                        = var.account_ids
   aft_vpc_cidr                       = var.aft_vpc_cidr
