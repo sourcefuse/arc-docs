@@ -59,6 +59,7 @@ nav:
           - terraform-aws-refarch-tags:  'arc-iac-docs/modules/terraform-aws-refarch-tags/README.md'
           - terraform-k8s-app:  'arc-iac-docs/modules/terraform-k8s-app/README.md'
           - typescript-lambda-boilerplate:  'arc-iac-docs/modules/typescript-lambda-boilerplate/README.md'
+          - terraform-aws-cloud-custodian:  'arc-iac-docs/modules/terraform-aws-cloud-custodian/README.md'
       - Reference Architectures:
           - AWS Account Baseline: 'arc-iac-docs/reference_architectures/aws_account_baseline.md'
           - Network Baseline: 'arc-iac-docs/reference_architectures/network_baseline.md'
