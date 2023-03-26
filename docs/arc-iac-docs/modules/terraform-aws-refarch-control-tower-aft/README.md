@@ -1,16 +1,61 @@
 # terraform-aws-refarch-control-tower-aft
 
+[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-refarch-control-tower-aft/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-control-tower-aft/actions/workflows/snyk.yaml)
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Control Tower Account Factory Terraform.
+SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Control Tower Account Factory Terraform. Part of the ARC AWS Landing Zone solution.
+
+![ARC Landing Zone](./static/arc_landing_zone.png)
 
 ## Usage
 
 To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.
 
 ```hcl
+################################################################################
+## defaults
+################################################################################
+terraform {
+  required_version = ">= 1.3"
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+  }
+}
+
+provider "aws" {
+  region = var.control_tower_home_region
+}
+
+module "tags" {
+  source = "git::https://github.com/sourcefuse/terraform-aws-refarch-tags?ref=1.0.3"
+
+  environment = terraform.workspace
+  project     = "terraform-aws-refarch-control-tower-aft"
+
+  extra_tags = {
+    Example = "true"
+  }
+}
+
+################################################################################
+## control tower
+################################################################################
 module "aft" {
-  source = "git::https://github.com/sourcefuse/terraform-aws-refarch-control-tower-aft.git"
+  source = "../"
+
+  account_ids                        = var.account_ids
+  aft_vpc_cidr                       = var.aft_vpc_cidr
+  control_tower_home_region          = var.control_tower_home_region
+  terraform_backend_secondary_region = var.terraform_backend_secondary_region
+
+  account_customizations_repo              = var.account_customizations_repo
+  account_provisioning_customizations_repo = var.account_provisioning_customizations_repo
+  account_request_repo                     = var.account_request_repo
+  global_customizations_repo               = var.global_customizations_repo
 }
 ```
 
