@@ -49,17 +49,18 @@ nav:
   - ARC IaC:
       - Introduction: 'arc-iac-docs/README.md'
       - IaC Modules:
-          - terraform-aws-refarch-control-tower-aft:  'arc-iac-docs/modules/terraform-aws-refarch-control-tower-aft/README.md'
-          - terraform-module-aws-bootstrap: 'arc-iac-docs/modules/terraform-module-aws-bootstrap/README.md'
-          - terraform-aws-ref-arch-network: 'arc-iac-docs/modules/terraform-aws-ref-arch-network/README.md'
-          - terraform-aws-ref-arch-db:  'arc-iac-docs/modules/terraform-aws-ref-arch-db/README.md'
-          - terraform-aws-refarch-ecs:  'arc-iac-docs/modules/terraform-aws-refarch-ecs/README.md'
-          - terraform-aws-ref-arch-eks:  'arc-iac-docs/modules/terraform-aws-ref-arch-eks/README.md'
-          - terraform-aws-ref-arch-network:  'arc-iac-docs/modules/terraform-aws-ref-arch-network/README.md'
-          - terraform-aws-refarch-tags:  'arc-iac-docs/modules/terraform-aws-refarch-tags/README.md'
-          - terraform-k8s-app:  'arc-iac-docs/modules/terraform-k8s-app/README.md'
-          - typescript-lambda-boilerplate:  'arc-iac-docs/modules/typescript-lambda-boilerplate/README.md'
-          - terraform-aws-cloud-custodian:  'arc-iac-docs/modules/terraform-aws-cloud-custodian/README.md'
+          - AWS:
+            - Control Tower AFT:  'arc-iac-docs/modules/terraform-aws-refarch-control-tower-aft/README.md'
+            - Environment Bootstrap: 'arc-iac-docs/modules/terraform-module-aws-bootstrap/README.md'
+            - Network: 'arc-iac-docs/modules/terraform-aws-ref-arch-network/README.md'
+            - RDBMS:  'arc-iac-docs/modules/terraform-aws-ref-arch-db/README.md'
+            - ECS:  'arc-iac-docs/modules/terraform-aws-refarch-ecs/README.md'
+            - EKS:  'arc-iac-docs/modules/terraform-aws-ref-arch-eks/README.md'
+            - Tags:  'arc-iac-docs/modules/terraform-aws-refarch-tags/README.md'
+            - TypeScript Lambda Boilerplate:  'arc-iac-docs/modules/typescript-lambda-boilerplate/README.md'
+            - Cloud Custodian:  'arc-iac-docs/modules/terraform-aws-cloud-custodian/README.md'
+          - Cloud Native:
+              - Kubernetes App:  'arc-iac-docs/modules/terraform-k8s-app/README.md'
       - Reference Architectures:
           - AWS Account Baseline: 'arc-iac-docs/reference_architectures/aws_account_baseline.md'
           - Network Baseline: 'arc-iac-docs/reference_architectures/network_baseline.md'
