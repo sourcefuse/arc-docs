@@ -1,8 +1,8 @@
-![Known Vulnerabilities](https://snyk.io/test/github/sourcefuse/typescript-lambda-boilerplate/badge.svg?targetFile=aws-lambdas/iac/cdk/package.json)  
+# Typescript Lambda Boilerplate
+
+![Known Vulnerabilities](https://snyk.io/test/github/sourcefuse/typescript-lambda-boilerplate/badge.svg?targetFile=aws-lambdas/iac/cdk/package.json)        [![Known Vulnerabilities](https://github.com/sourcefuse/typescript-lambda-boilerplate/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/typescript-lambda-boilerplate/actions/workflows/snyk.yaml)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_typescript-lambda-boilerplate&token=e3f829a84ea5000631ca5239aa6fa1c8853e539f)](https://sonarcloud.io/summary/new_code?id=sourcefuse_typescript-lambda-boilerplate)
-
-# Typescript Lambda Boilerplate
 
 | :exclamation: **Contributors:** See [Development](#dev) |
 | ------------------------------------------------------- |
