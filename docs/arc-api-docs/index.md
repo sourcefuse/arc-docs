@@ -1,5 +1,5 @@
 ---
-title: ARC API
+title: Introduction
 ---
 
 # ARC API

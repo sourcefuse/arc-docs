@@ -1,0 +1,74 @@
+[@sourceloop/bpmn-service](../README.md) / [Exports](../modules.md) / WorkflowServiceBindings
+
+# Namespace: WorkflowServiceBindings
+
+## Table of contents
+
+### Variables
+
+- [Config](WorkflowServiceBindings.md#config)
+- [ExecutionInputValidatorFn](WorkflowServiceBindings.md#executioninputvalidatorfn)
+- [RegisterWorkerFunction](WorkflowServiceBindings.md#registerworkerfunction)
+- [WORKER\_MAP](WorkflowServiceBindings.md#worker_map)
+- [WorkerImplementationFunction](WorkflowServiceBindings.md#workerimplementationfunction)
+- [WorkflowManager](WorkflowServiceBindings.md#workflowmanager)
+
+## Variables
+
+### Config
+
+• `Const` **Config**: `BindingKey`<``null`` \| [`IWorkflowServiceConfig`](../interfaces/IWorkflowServiceConfig.md)\>
+
+#### Defined in
+
+[services/bpmn-service/src/keys.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/bpmn-service/src/keys.ts#L20)
+
+___
+
+### ExecutionInputValidatorFn
+
+• `Const` **ExecutionInputValidatorFn**: `BindingKey`<``null`` \| [`ExecutionInputValidator`](../interfaces/ExecutionInputValidator.md)<`AnyObject`\>\>
+
+#### Defined in
+
+[services/bpmn-service/src/keys.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/bpmn-service/src/keys.ts#L23)
+
+___
+
+### RegisterWorkerFunction
+
+• `Const` **RegisterWorkerFunction**: `BindingKey`<``null`` \| [`WorkerRegisterFn`](../interfaces/WorkerRegisterFn.md)<`AnyObject`, `AnyObject`\>\>
+
+#### Defined in
+
+[services/bpmn-service/src/keys.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/bpmn-service/src/keys.ts#L27)
+
+___
+
+### WORKER\_MAP
+
+• `Const` **WORKER\_MAP**: `BindingKey`<``null`` \| [`WorkerMap`](../modules.md#workermap)<`AnyObject`, `AnyObject`\>\>
+
+#### Defined in
+
+[services/bpmn-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/bpmn-service/src/keys.ts#L35)
+
+___
+
+### WorkerImplementationFunction
+
+• `Const` **WorkerImplementationFunction**: `BindingKey`<``null`` \| [`WorkerImplementationFn`](../interfaces/WorkerImplementationFn.md)<`AnyObject`, `AnyObject`\>\>
+
+#### Defined in
+
+[services/bpmn-service/src/keys.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/bpmn-service/src/keys.ts#L31)
+
+___
+
+### WorkflowManager
+
+• `Const` **WorkflowManager**: `BindingKey`<``null`` \| [`WorflowManager`](../interfaces/WorflowManager.md)<`AnyObject`, `AnyObject`\>\>
+
+#### Defined in
+
+[services/bpmn-service/src/keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/bpmn-service/src/keys.ts#L17)
