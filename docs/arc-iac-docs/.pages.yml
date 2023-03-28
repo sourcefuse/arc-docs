@@ -14,7 +14,7 @@ nav:
           - TypeScript Lambda Boilerplate: "arc-iac-docs/modules/typescript-lambda-boilerplate"
           - Cloud Custodian: "arc-iac-docs/modules/terraform-aws-cloud-custodian"
           - Backstage:
-            - ECS: 'arc-iac-docs/modules/arc-backstage-ecs-app/README.md'
+            - ECS: "arc-iac-docs/modules/arc-backstage-ecs-app/README.md"
       - Cloud Native:
           - Kubernetes App: "arc-iac-docs/modules/terraform-k8s-app"
   - Reference Architectures:
