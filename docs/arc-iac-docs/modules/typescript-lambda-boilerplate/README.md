@@ -124,3 +124,9 @@ pip install pre-commit
 
 Once pre-commit is installed, run `pre-commit install` from the root of this repo. This executes
 prior to commits to the repo.
+
+## Authors
+
+This project is authored by below people
+
+- SourceFuse
