@@ -32,7 +32,7 @@ src/
 The react app is pre configured with mui material theme , auth guards , notification provider , error boundary , routes , page layouts , vite package bundler and many reuseable components inside the components directory .
 To Use the template
 
-- clone the [repo] (git@github.com:sourcefuse/react-boilerplate-ts-ui.git)
+- Clone the [github repo](https://github.com/sourcefuse/react-boilerplate-ts-ui)
 - cd into the folder and run `npm i` to install node_modules.
 - Add the [environment variables](#Inputs) to connect to ARC backend service.
 - Run `npm start` to run the vite development server.
