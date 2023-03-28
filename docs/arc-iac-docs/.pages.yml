@@ -1,0 +1,27 @@
+title: ARC IaC
+nav:
+  - Introduction: "README.md"
+  - IaC Modules:
+      - AWS:
+          - Control Tower AFT: "arc-iac-docs/modules/terraform-aws-refarch-control-tower-aft"
+          - Environment Bootstrap: "arc-iac-docs/modules/terraform-module-aws-bootstrap"
+          - Network: "arc-iac-docs/modules/terraform-aws-ref-arch-network"
+          - RDBMS: "arc-iac-docs/modules/terraform-aws-ref-arch-db"
+          - ECS: "arc-iac-docs/modules/terraform-aws-refarch-ecs"
+          - EKS: "arc-iac-docs/modules/terraform-aws-ref-arch-eks"
+          - Tags: "arc-iac-docs/modules/terraform-aws-refarch-tags"
+          - OpenSearch: "arc-iac-docs/modules/terraform-aws-refarch-opensearch"
+          - TypeScript Lambda Boilerplate: "arc-iac-docs/modules/typescript-lambda-boilerplate"
+          - Cloud Custodian: "arc-iac-docs/modules/terraform-aws-cloud-custodian"
+          - Backstage:
+            - ECS: 'arc-iac-docs/modules/arc-backstage-ecs-app/README.md'
+      - Cloud Native:
+          - Kubernetes App: "arc-iac-docs/modules/terraform-k8s-app"
+  - Reference Architectures:
+      - AWS Account Baseline: "arc-iac-docs/reference_architectures/aws_account_baseline"
+      - Network Baseline: "arc-iac-docs/reference_architectures/network_baseline"
+      - ECS Platform Baseline: "arc-iac-docs/reference_architectures/ecs_platform_baseline"
+      - EKS Platform Baseline: "arc-iac-docs/reference_architectures/eks_platform_baseline"
+      - Lambda Platform Baseline: "arc-iac-docs/reference_architectures/lambda_platform_baseline"
+      - Windows Basic Platform Baseline: "arc-iac-docs/reference_architectures/windows_basic_platform_baseline"
+      - Windows Enterprise Platform Baseline: "arc-iac-docs/reference_architectures/windows_enterprise_platform_baseline"

@@ -29,7 +29,145 @@ src/
 
 ## How to use
 
-The react app is pre configured with mui material theme , auth guards , notification provider , error boundary , routes , page layouts and many reuseable components inside the components directory . To Use the template, clone the repo , Add the [environment variables](#Inputs) to connect to ARC backend service.
+The react app is pre configured with mui material theme , auth guards , notification provider , error boundary , routes , page layouts , vite package bundler and many reuseable components inside the components directory .
+To Use the template
+
+- Clone the [github repo](https://github.com/sourcefuse/react-boilerplate-ts-ui)
+- cd into the folder and run `npm i` to install node_modules.
+- Add the [environment variables](#Inputs) to connect to ARC backend service.
+- Run `npm start` to run the vite development server.
+  ![home.png](assets/home.png)
+
+## Example
+
+Creating a simple login page using ARC form components
+
+- Without ARC form components
+  - Lot more line of code
+  - state of each variable has to managed separately
+  - Styling has to be managed individually
+  - Separate error block for each field
+
+```javascript
+import './App.css';
+import {Formik} from 'formik';
+import * as Yup from 'yup';
+
+// Creating schema
+const schema = Yup.object().shape({
+  email: Yup.string().required('Email is a required field').email('Invalid email format'),
+  password: Yup.string().required('Password is a required field').min(8, 'Password must be at least 8 characters'),
+});
+
+function App() {
+  return (
+    <>
+      {/* Wrapping form inside formik tag and passing our schema to validationSchema prop */}
+      <Formik
+        validationSchema={schema}
+        initialValues={{email: '', password: ''}}
+        onSubmit={(values) => {
+          // Alert the input values of the form that we filled
+          alert(JSON.stringify(values));
+        }}
+      >
+        {({values, errors, touched, handleChange, handleBlur, handleSubmit}) => (
+          <div className="login">
+            <div className="form">
+              {/* Passing handleSubmit parameter tohtml form onSubmit property */}
+              <form noValidate onSubmit={handleSubmit}>
+                <span>Login</span>
+                {/* Our input html with passing formik parameters like handleChange, values, handleBlur to input properties */}
+                <input
+                  type="email"
+                  name="email"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.email}
+                  placeholder="Enter email id / username"
+                  className="form-control inp_text"
+                  id="email"
+                />
+                {/* If validation is not passed show errors */}
+                <p className="error">{errors.email && touched.email && errors.email}</p>
+                {/* Our input html with passing formik parameters like handleChange, values, handleBlur to input properties */}
+                <input
+                  type="password"
+                  name="password"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.password}
+                  placeholder="Enter password"
+                  className="form-control"
+                />
+                {/* If validation is not passed show errors */}
+                <p className="error">{errors.password && touched.password && errors.password}</p>
+                {/* Click on submit button to submit the form */}
+                <button type="submit">Login</button>
+              </form>
+            </div>
+          </div>
+        )}
+      </Formik>
+    </>
+  );
+}
+
+export default App;
+```
+
+- With ARC form components
+  - All data, errors and styles are managed internally
+  - Less amount of code on the actual page
+
+```javascript
+import {Box, Stack} from '@mui/material';
+import Grid from '@mui/material/Grid';
+import Button from 'Components/Button/Button';
+import Form from 'Components/Forms/Form';
+import FormInput from 'Components/Forms/FormInput';
+import FormPasswordInput from 'Components/Forms/FormPasswordInput';
+import PagePaper from 'Components/PagePaper';
+import * as yup from 'yup';
+import {initialValues} from './utils';
+
+type LoginForm = {userName: string, password: string};
+const validationSchema = () => {
+  return yup.object({
+    userName: yup.string().required().label('User Name'),
+    password: yup.string().required().label('Password'),
+  });
+};
+export default function Login() {
+  return (
+    <Stack direction="row">
+      <Box sx={{flexGrow: 1}}>
+        <PagePaper title="Form">
+          <Form
+            initialValues={initialValues}
+            validationSchema={validationSchema}
+            onSubmit={(val: LoginForm) => alert(JSON.stringify(val))}
+          >
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <FormInput id="userName" label="User Name" />
+              </Grid>
+              <Grid item xs={12}>
+                <FormPasswordInput id="Password" label="Password" />
+              </Grid>
+            </Grid>
+            <Button variant="outlined" type="submit" sx={{marginTop: 1}}>
+              Submit
+            </Button>
+          </Form>
+        </PagePaper>
+      </Box>
+    </Stack>
+  );
+}
+```
+
+![form.png](assets/form.png)
 
 ## <a id="prereqs"></a> Pre-Requisites
 
@@ -53,7 +191,7 @@ The react app is pre configured with mui material theme , auth guards , notifica
 
 | Name                                                                             | Description                                                                   | Type      | Default | Required |
 | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------- | ------- | :------: |
-| <a name="CLIENT_ID"></a> `CLIENT_ID`                                             | Unique public Identifier for the app.                                         | `string`  | `""`    |   yes    |
+| <a name="CLIENT_ID"></a> `CLIENT_ID`                                             | Unique public Identifier for the app.                                         | `string`  |         |   yes    |
 | <a name="CLIENT_SECRET"></a> `CLIENT_SECRET`                                     | Secret key known only to the application server and the authorization server. | `string`  |         |   yes    |
 | <a name="AUTH_API_BASE_URL"></a> `AUTH_API_BASE_URL`                             | Base URL of the authentication service.                                       | `string`  |         |   yes    |
 | <a name="APP_API_BASE_URL"></a> `APP_API_BASE_URL`                               |                                                                               | `string`  |         |    no    |

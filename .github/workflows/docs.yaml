@@ -16,13 +16,14 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'
+          python-version: "3.9"
 
       - name: Install dependencies
         run: |
           pip install mkdocs mkdocs-material
           pip install mkdocs-techdocs-core
           pip install mkdocs-include-markdown-plugin
+          pip install mkdocs-awesome-pages-plugin
       - name: Deploy docs
         run: |
           mkdocs gh-deploy --force \

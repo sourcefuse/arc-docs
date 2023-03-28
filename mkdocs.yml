@@ -1,5 +1,5 @@
-site_name: 'ARC'
-site_description: 'Main documentation for ARC'
+site_name: "ARC"
+site_description: "Main documentation for ARC"
 repo_url: https://github.com/sourcefuse/arc-docs
 edit_uri: edit/main/docs
 
@@ -23,6 +23,8 @@ plugins:
   - techdocs-core
   - search
   - include-markdown
+  - awesome-pages:
+      filename: .pages.yml
 
 docs_dir: docs
 
@@ -43,33 +45,6 @@ extra:
 copyright: |
   &copy; 2023 <a href="https://github.com/sourcefuse/arc-docs" target="_blank" rel="noopener">ARC</a>
 
-nav:
-  - ARC API:
-      - Introduction: 'arc-api-docs/index.md'
-  - ARC IaC:
-      - Introduction: 'arc-iac-docs/README.md'
-      - IaC Modules:
-          - AWS:
-            - Control Tower AFT:  'arc-iac-docs/modules/terraform-aws-refarch-control-tower-aft/README.md'
-            - Environment Bootstrap: 'arc-iac-docs/modules/terraform-module-aws-bootstrap/README.md'
-            - Network: 'arc-iac-docs/modules/terraform-aws-ref-arch-network/README.md'
-            - RDBMS:  'arc-iac-docs/modules/terraform-aws-ref-arch-db/README.md'
-            - ECS:  'arc-iac-docs/modules/terraform-aws-refarch-ecs/README.md'
-            - EKS:  'arc-iac-docs/modules/terraform-aws-ref-arch-eks/README.md'
-            - Tags:  'arc-iac-docs/modules/terraform-aws-refarch-tags/README.md'
-            - TypeScript Lambda Boilerplate:  'arc-iac-docs/modules/typescript-lambda-boilerplate/README.md'
-            - Cloud Custodian:  'arc-iac-docs/modules/terraform-aws-cloud-custodian/README.md'
-            - Backstage:
-                - ECS: 'arc-iac-docs/modules/arc-backstage-ecs-app/README.md'
-          - Cloud Native:
-              - Kubernetes App:  'arc-iac-docs/modules/terraform-k8s-app/README.md'
-      - Reference Architectures:
-          - AWS Account Baseline: 'arc-iac-docs/reference_architectures/aws_account_baseline.md'
-          - Network Baseline: 'arc-iac-docs/reference_architectures/network_baseline.md'
-          - ECS Platform Baseline: 'arc-iac-docs/reference_architectures/ecs_platform_baseline.md'
-          - EKS Platform Baseline: 'arc-iac-docs/reference_architectures/eks_platform_baseline.md'
-          - Lambda Platform Baseline: 'arc-iac-docs/reference_architectures/lambda_platform_baseline.md'
-          - Windows Basic Platform Baseline: 'arc-iac-docs/reference_architectures/windows_basic_platform_baseline.md'
-          - Windows Enterprise Platform Baseline: 'arc-iac-docs/reference_architectures/windows_enterprise_platform_baseline.md'
-  - ARC UI:
-      - Introduction: 'arc-ui-docs/index.md'
+# "nav:" configuration is moved to `.pages.yml` file in respective directories to utlize dynamic listing.
+# See: https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin
+
