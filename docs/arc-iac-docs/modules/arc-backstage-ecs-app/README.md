@@ -26,7 +26,7 @@ Upstream dependencies:
 **Note**: the example below is does not have a pinned version. Be sure to pin your version. Refer to the `example` folder for a working example version.
 ```hcl
 module "backstage" {
-  source                = "../"
+ source                = "git::https://github.com/sourcefuse/arc-backstage-ecs-app"
   alb_dns_name          = module.ecs.alb_dns_name
   alb_zone_id           = module.ecs.alb_dns_zone_id
   app_host_name         = var.app_host_name
