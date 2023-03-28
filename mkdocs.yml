@@ -45,5 +45,5 @@ extra:
 copyright: |
   &copy; 2023 <a href="https://github.com/sourcefuse/arc-docs" target="_blank" rel="noopener">ARC</a>
 
-# "nav:" configuration is moved to `.pages` file in respective directories to utlize dynamic listing.
+# "nav:" configuration is moved to `.pages.yml` file in respective directories to utlize dynamic listing.
 # See: https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin
