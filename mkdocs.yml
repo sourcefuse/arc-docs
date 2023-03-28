@@ -47,3 +47,4 @@ copyright: |
 
 # "nav:" configuration is moved to `.pages.yml` file in respective directories to utlize dynamic listing.
 # See: https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin
+
