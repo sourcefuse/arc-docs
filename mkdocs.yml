@@ -1,7 +1,6 @@
 site_name: "ARC"
 site_description: "Main documentation for ARC"
 repo_url: https://github.com/sourcefuse/arc-docs
-edit_uri: edit/main/docs
 
 theme:
   name: material
