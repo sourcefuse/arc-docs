@@ -58,18 +58,16 @@ npx lerna run build:all --scope="service-name"
 - arc-search
 - arc-user-tenant
 
+## How to Test
 
-## Testing
+Here's how you can test the deployed lambda(s) for this project:
 
-Testing the deployed lambda(s):
+- Set the `LAMBDA_URL` variable in the env to the Domain name or the url of the api gateway that triggers the lambda.
 
 - To test all the deployed services:
 
-  - Run `lerna run test:lambda`.
-    Please note: If you encounter error `inotify_add_watch system call has failed due to insufficient space on the device` on your linux system. Try to increase the number of inotify watches.
-    - To see current number of inotify watches. Run the command `cat /proc/sys/fs/inotify/max_user_watches` in your terminal.
-    - To increase the number of inotify watches run the command `sudo sh -c 'echo fs.inotify.max_user_watches=524288 >> /etc/sysctl.conf'`
-      `sudo sysctl -p`
+  - Run `lerna run test:lambda`. - Please note: If you encounter error `inotify_add_watch system call has failed due to insufficient space on the device` on your linux system. Try to increase the number of inotify watches. - To see current number of inotify watches. Run the command `cat /proc/sys/fs/inotify/max_user_watches` in your terminal. - To increase the number of inotify watches run the command `sudo sh -c 'echo fs.inotify.max_user_watches=524288 >> /etc/sysctl.conf'`
+    `sudo sysctl -p`
 
 - To test selective services:
 
@@ -77,17 +75,40 @@ Testing the deployed lambda(s):
   - To list all the packages run `lerna ls --all`
 
 - Adding tests:
-  - To add tests, add tests in ${service-name}/src/**tests**/lambda directory.
+
+  - To add tests, add tests in ${service-name}/src/**\_\_tests\_\_**/lambda directory.
   - This project uses @loopback/testlab, supertest for writing tests. For more info please refer [loopback_testing](https://loopback.io/doc/en/lb4/Testing-your-application.html)
+  - For hitting an api endpoint you might need to be authorized to complete the action. For authorization you need JWT token with required permissions as Bearer Token.
+    You can generate a JWT using the following nodejs script:
+
+  ```
+    const jwt = require('jsonwebtoken');
+
+    const testUser = {
+    id: "id",
+    username:"username",
+    password: "password",
+    permissions: [
+    //Add the permissions required to hit an endpoint
+    ],
+    };
+
+    const token = jwt.sign(testUser, 'jwtSecret', {
+    expiresIn: 180000,
+    issuer: 'sourcefuse',
+    });
+  ```
+
+  For more info see [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) documentation.
 
 ## AWS Architecture
+
 The lambdas are designed to run in a private subnet with access to Redis and a compatible database. In the example below, we demonstrate a completely serverless and managed infrastructure AWS stack.
 ![ARC Lambda Baseline HLA](./static/arc_lambda_baseline_hla.png)
 
-* The Lambdas run in a private subnet, since they need to communicate with backend services such as a database and distributed cache.
-* Each Lambda that requires Redis can either provision a standalone ElastiCache Redis cluster (recommended) or reuse a shared instance.
-* Resources such as the network, Aurora cluster, Route53 zone, and VPC endpoints are created upstream.
+- The Lambdas run in a private subnet, since they need to communicate with backend services such as a database and distributed cache.
+- Each Lambda that requires Redis can either provision a standalone ElastiCache Redis cluster (recommended) or reuse a shared instance.
+- Resources such as the network, Aurora cluster, Route53 zone, and VPC endpoints are created upstream.
 
 A cross-section of a ARC typical service is shown below.
 ![ARC Lambda Baseline HLA](./static/arc_lambda_cross_section.png)
-
