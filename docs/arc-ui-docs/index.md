@@ -34,7 +34,7 @@ To Use the template
 
 - Clone the [github repo](https://github.com/sourcefuse/react-boilerplate-ts-ui)
 - cd into the folder and run `npm i` to install node_modules.
-- Add the [environment variables](#Inputs) to connect to ARC backend service.
+- Add the [environment variables](#inputs) to connect to ARC backend service.
 - Run `npm start` to run the vite development server.
   ![home.png](assets/home.png)
 
