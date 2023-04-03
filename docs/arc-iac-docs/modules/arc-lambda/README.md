@@ -16,11 +16,19 @@ This repo manages examples using [lerna-nx](https://lerna.js.org/docs/getting-st
 - cd into the folder and run `npm i` to install node_modules.
 - Run 'npx lerna bootstrap` to install dependencies in workspace folders
 - packages/\* contains all the ARC backend services supported by cdktf in AWS lambda.
-- To run any service locally update reqd values in .env file (more info env variables in the service readme.md)
-- To deploy service on AWS lambda :
-  - Run `npm run build:all` to build the lambda layers, code build and migrations for the service
-  - cd into cdk folder inside the service and update the .env file
-  - Run `npm run deploy`
+- To run any service locally , cd into the service folder and update reqd values in .env file (more info env variables in the service readme.md)
+- Run `npm start` to start the development server
+
+## How to deploy
+
+To deploy service on AWS lambda :
+
+- Run `npm run build` to generate the code build
+- Run `npm run build:layers` to generate the node_modules as lambda layers
+- Run `npm run build:migrations` to build install dependencies for migration code which will be deployed as separate lambda function
+- We can choose to skip running commands mentioned in step 1-3 and directly run `npm run build:all` to build the lambda layers, code build and migrations for the service
+- cd into cdk folder inside the service and update the .env file(Make sure upstream dependencies like postgres DB etc are already setup)
+- Run `npm run deploy` to deploy the code on AWS using terraform constructs
 
 Checkout out README files inside each example to know more.
 
@@ -49,14 +57,3 @@ npx lerna run build:all --scope="service-name"
 - arc-scheduler
 - arc-search
 - arc-user-tenant
-
-## AWS Architecture
-The lambdas are designed to run in a private subnet with access to Redis and a compatible database. In the example below, we demonstrate a completely serverless and managed infrastructure AWS stack.
-![ARC Lambda Baseline HLA](./static/arc_lambda_baseline_hla.png)
-
-* The Lambdas run in a private subnet, since they need to communicate with backend services such as a database and distributed cache.
-* Each Lambda that requires Redis can either provision a standalone ElastiCache Redis cluster (recommended) or reuse a shared instance.
-* Resources such as the network, Aurora cluster, Route53 zone, and VPC endpoints are created upstream.
-
-A cross-section of a ARC typical service is shown below.
-![ARC Lambda Baseline HLA](./static/arc_lambda_cross_section.png)
