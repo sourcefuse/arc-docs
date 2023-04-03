@@ -1,4 +1,4 @@
-# terraform-aws-ref-arch-eks
+# [terraform-aws-ref-arch-eks](https://github.com/sourcefuse/terraform-aws-ref-arch-eks)
 
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-ref-arch-eks/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-ref-arch-eks/actions/workflows/snyk.yaml)
 
