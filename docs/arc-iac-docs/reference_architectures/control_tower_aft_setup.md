@@ -1,25 +1,27 @@
 # Control Tower AFT Setup
 
 ## Special Notes
+
 * Cannot have CloudTrail already configured in the management account.
 * All configuration should be done in the management account for the Organization.
 * Control Tower will create a new OU with additional accounts in it for security purposes.
 * You will need to be an Organization Administrator to complete this
-* You will need the ability to create, at a minimum, of Three unique email distribution lists (or individual email addresses) for the additional accounts the instructions will walk through setting up.
-* The account must be a commercial account. Control Tower is not available in GovCloud.
+* You will need the ability to create, at a minimum, of Three unique email distribution lists (or individual email addresses) for the additional accounts the instructions will walk through setting up. A format such as `serviceaccountemail+account_name@corpemail.com` will also work for reusing the same email address multiple times during account creation.
 
 ## Pre-Requisites
+
  * AWS CLI Version >= 2.7
  * Terraform Version >= 1.3
  * Administrative privileges to the Organization's Management Account
 
 ## Landing Zone Setup
 For additional information on how to configure Landing Zone, see the official AWS Docs on Getting started with AWS Control Tower.
+
 1. Log into the Management Account console with an administrator account.
 2. In the search bar, type Control Tower then select the result.
-	![1.png](assets/control_tower/1.png)
+   ![](./assets/control_tower/1.png)
 3. Select Set up landing zone
-	![2.png](assets/control_tower/2.png)
+   ![](./assets/control_tower/2.png)
 4. **Home Region**: us-east-1
 5. **Region deny setting**: Enable. This is helpful to avoid creating resources in regions that are not supported by your organization.
 6. **Additional AWS Regions for governance**: Add additional supported regions for your organization.
@@ -36,6 +38,7 @@ For additional information on how to configure Landing Zone, see the official AW
 If you had existing accounts configured in your organization, you can enroll them into Control Tower from the Management Account.
 
 **Notes on enrolling existing accounts**:
+
 * The existing account first needs to be set up with a role to allow access to control tower. You need to log into the existing account and follow the steps outlined here:
 * You cannot be the root user while enrolling existing accounts. Must be an IAM user
 * IAM user must be in the AWSControlTowerAdmins group
@@ -43,6 +46,7 @@ If you had existing accounts configured in your organization, you can enroll the
 ![iam_identity_center.png](assets/control_tower/iam_identity_center.png)
 
 **Enrollment Process**
+
 1. Log into the Management Account with an Administrator account
 2. Navigate to Services > Control Tower
 3. Select Organization.
@@ -69,6 +73,7 @@ There are 2 AWS accounts available to you.
   * Creates the CodeBuild pipeline for monitoring the changes in the defined VCS.
 
 There are four repositories that need to be managed for creating the resources in the accounts:
+
 1. [Account requests](https://github.com/sourcefuse/terraform-aws-refarch-aft-account-request) – This repository handles placing or updating account requests. [Examples available](https://github.com/aws-ia/terraform-aws-control_tower_account_factory/tree/main/sources/aft-customizations-repos/aft-account-request).
 2. [AFT account provisioning customizations](https://github.com/sourcefuse/terraform-aws-refarch-aft-account-provisioning-customizations) – This repository manages customizations that are applied to all accounts created by and managed with AFT, before beginning the global customizations stage. [Examples available](https://github.com/aws-ia/terraform-aws-control_tower_account_factory/tree/main/sources/aft-customizations-repos/aft-account-provisioning-customizations).  
 3. [Global customizations](https://github.com/sourcefuse/terraform-aws-refarch-aft-global-customizations) – This repository manages customizations that are applied to all accounts created by and managed with AFT. [Examples available](https://github.com/aws-ia/terraform-aws-control_tower_account_factory/tree/main/sources/aft-customizations-repos/aft-global-customizations).
@@ -89,6 +94,7 @@ You **WILL** need AWSServiceCatalogEndUserAccess Management Console access to co
 For more in-depth information, see the AWS Doc on [Deploy AWS Control Tower Account Factory for Terraform (AFT)](https://docs.aws.amazon.com/controltower/latest/userguide/aft-getting-started.html)
 
 **From the Control Tower Management Dashboard:**
+
 1. Select _Organization_ then _Create resources_ > _Create organizational unit_ and name it **AFT-Management**
 2. Navigate to _<https://<subdomain>.awsapps.com/start>_ then log in using your control tower SSO email that was configured in [Landing Zone Setup](#landing-zone-setup)
 3. Log in to the Dashboard and select _AWSServiceCatalogEndUserAccess_ Management Console
@@ -118,6 +124,7 @@ Once the infrastructure is in place, you will need to complete the setup.
 
 ### Service Catalog
 The following will need to be configured in the Management Account (where Control Tower is located).
+
 1. Navigate to “Service Catalog” > Select _AWS Control Tower Account Factory Portfolio_ > Select _Access_ tab  > Under “IAM Principals and Principal Names” Select _Grant access_
 2. Under “Grant access to AWS Control Tower Account Factory Portfolio”, Select _Roles_ tab
 3. Select the role name _AWSAFTExecution_ > _Grant access_
@@ -142,33 +149,34 @@ From your GitHub account, you will need to allow access to the required repos:
 	![github_connector_2.png](assets/control_tower/github_connector_2.png)
 
 ## Creating new accounts with AFT
-For more setup information, see (AWS Control Tower workshops)[https://controltower.aws-management.tools/automation/aft_setup/].
+For more setup information, see [AWS Control Tower workshops](https://controltower.aws-management.tools/automation/aft_setup/).
+
 1. Set up a create account request file that contains the appropriate input values for the following parameters in the Account Request git repo.
 2. When you push to this repo’s `main` branch, it will trigger the `ct-aft-account-request` operation in the AWS CodePipeline in the AFT Management account.
 3. Include the following list of parameters in your file:
-	* The value of the **module name** must be unique per the AWS account request.
-    * The value of the **module source** is the path to the account request Terraform module provided by AFT.
-    * The value of `control_tower_parameters` captures the input required to create an AWS Control Tower account, as follows.
-      * **AccountEmail**
-      * **AccountName**
-      * **ManagedOrganizationalUnit**
-      * **SSOUserEmail**
-      * **SSOUserFirstName**
-      * **SSOUserLastName**
-    * The parameter `account_tags` captures user-defined keys and values that can tag AWS accounts according to your business criteria.  
-      For more information about account tags, see the [Tagging AWS Organizations resources](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_tagging.html) in the _AWS Organizations User Guide_.
-    * The parameter `change_management_parameters` captures additional information that you may want to keep, such as the reason for the account request, and the identifier of who initiated the request.
-      * `change_requested_by`
-      * `change_reason`
-    * The parameter `custom_fields` captures custom keys and values. The values are deployed as SSM Parameters in the vended account under the namespace: **"/aft/account-request/custom-fields/"**. 
-      If a custom field is removed from the account request, the field is removed from the SSM Parameter Store for that vended account. The `custom_fields` parameter allows you to collect additional metadata with the account request. 
-      This metadata can trigger additional processing, either during provisioning or when updating an account. You can refer to this metadata during account customizations to determine the proper guardrails to deploy. 
-      For example, an account that is subject to regulatory compliance could deploy additional AWS Config Rules.
-    * The parameter `account_customizations_name` is optional. It captures the specified account template folder for account customizations. See [Account customizations](https://docs.aws.amazon.com/controltower/latest/userguide/aft-account-customization-options.html) for more information.
+   * The value of the `module name` must be unique per the AWS account request.
+   * The value of the `module source` is the path to the account request Terraform module provided by AFT.
+   * The value of `control_tower_parameters` captures the input required to create an AWS Control Tower account, as follows.
+     * `AccountEmail`
+     * `AccountName`
+     * `ManagedOrganizationalUnit`
+     * `SSOUserEmail`
+     * `SSOUserFirstName`
+     * `SSOUserLastName`
+   * The parameter `account_tags` captures user-defined keys and values that can tag AWS accounts according to your business criteria.  
+     For more information about account tags, see the [Tagging AWS Organizations resources](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_tagging.html) in the _AWS Organizations User Guide_.
+   * The parameter `change_management_parameters` captures additional information that you may want to keep, such as the reason for the account request, and the identifier of who initiated the request.
+     * `change_requested_by`
+     * `change_reason`
+     * The parameter `custom_fields` captures custom keys and values. The values are deployed as SSM Parameters in the vended account under the namespace: `/aft/account-request/custom-fields/`. 
+       If a custom field is removed from the account request, the field is removed from the SSM Parameter Store for that vended account. The `custom_fields` parameter allows you to collect additional metadata with the account request. 
+       This metadata can trigger additional processing, either during provisioning or when updating an account. You can refer to this metadata during account customizations to determine the proper guardrails to deploy. 
+       For example, an account that is subject to regulatory compliance could deploy additional AWS Config Rules.
+     * The parameter `account_customizations_name` is optional. It captures the specified account template folder for account customizations. See [Account customizations](https://docs.aws.amazon.com/controltower/latest/userguide/aft-account-customization-options.html) for more information.
 
 
 ## Update an existing account with AFT
-You will update the configuration for previously configured AFT vended accounts and then push the changes to the Account Request repo.\
+You will update the configuration for previously configured AFT vended accounts and then push the changes to the Account Request repo.
 
 ## Deleting an account from AFT
 For more information, see the [AWS documentation](https://docs.aws.amazon.com/controltower/latest/userguide/aft-remove-account.html) on Removing an account from AFT.
@@ -176,6 +184,7 @@ For more information, see the [AWS documentation](https://docs.aws.amazon.com/co
 > When you follow these steps, the account is not deleted, it is only removed from management by AFT. It is still managed by AWS Control Tower.
 
 :warning: Removing an account from the AFT pipeline is irreversible! It can result in a loss of state!
+
 1. Remove the configuration for the account created in the **aft-account-request** git repository and merge it into the monitored branch.
 2. Wait for the CodeBuild project(s) to complete in the AFT-Management account.  This occurs AFTER Step 1 has been merged.
    :exclamation: This occurs AFTER Step 1 has been merged. :exclamation:
