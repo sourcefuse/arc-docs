@@ -9,7 +9,7 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Contro
 
 ## Usage
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.
+To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-refarch-control-tower-aft/blob/main/example/main.tf) file in the example folder.
 
 ```hcl
 ################################################################################
