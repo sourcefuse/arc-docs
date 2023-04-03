@@ -58,6 +58,28 @@ npx lerna run build:all --scope="service-name"
 - arc-search
 - arc-user-tenant
 
+
+## Testing
+
+Testing the deployed lambda(s):
+
+- To test all the deployed services:
+
+  - Run `lerna run test:lambda`.
+    Please note: If you encounter error `inotify_add_watch system call has failed due to insufficient space on the device` on your linux system. Try to increase the number of inotify watches.
+    - To see current number of inotify watches. Run the command `cat /proc/sys/fs/inotify/max_user_watches` in your terminal.
+    - To increase the number of inotify watches run the command `sudo sh -c 'echo fs.inotify.max_user_watches=524288 >> /etc/sysctl.conf'`
+      `sudo sysctl -p`
+
+- To test selective services:
+
+  - Run `lerna run test:lambda --scope=package_name1 --scope=package-name2 ... --verbose`
+  - To list all the packages run `lerna ls --all`
+
+- Adding tests:
+  - To add tests, add tests in ${service-name}/src/**tests**/lambda directory.
+  - This project uses @loopback/testlab, supertest for writing tests. For more info please refer [loopback_testing](https://loopback.io/doc/en/lb4/Testing-your-application.html)
+
 ## AWS Architecture
 The lambdas are designed to run in a private subnet with access to Redis and a compatible database. In the example below, we demonstrate a completely serverless and managed infrastructure AWS stack.
 ![ARC Lambda Baseline HLA](./static/arc_lambda_baseline_hla.png)
@@ -68,3 +90,4 @@ The lambdas are designed to run in a private subnet with access to Redis and a c
 
 A cross-section of a ARC typical service is shown below.
 ![ARC Lambda Baseline HLA](./static/arc_lambda_cross_section.png)
+
