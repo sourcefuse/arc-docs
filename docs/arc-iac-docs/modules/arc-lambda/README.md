@@ -57,3 +57,14 @@ npx lerna run build:all --scope="service-name"
 - arc-scheduler
 - arc-search
 - arc-user-tenant
+
+## AWS Architecture
+The lambdas are designed to run in a private subnet with access to Redis and a compatible database. In the example below, we demonstrate a completely serverless and managed infrastructure AWS stack.
+![ARC Lambda Baseline HLA](./static/arc_lambda_baseline_hla.png)
+
+* The Lambdas run in a private subnet, since they need to communicate with backend services such as a database and distributed cache.
+* Each Lambda that requires Redis can either provision a standalone ElastiCache Redis cluster (recommended) or reuse a shared instance.
+* Resources such as the network, Aurora cluster, Route53 zone, and VPC endpoints are created upstream.
+
+A cross-section of a ARC typical service is shown below.
+![ARC Lambda Baseline HLA](./static/arc_lambda_cross_section.png)
