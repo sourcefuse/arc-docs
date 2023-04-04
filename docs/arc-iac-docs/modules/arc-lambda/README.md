@@ -1,4 +1,4 @@
-# ARC Lambda
+# [ARC Lambda](https://github.com/sourcefuse/arc-lambda)
 
 This repo manages examples using [lerna-nx](https://lerna.js.org/docs/getting-started) to create ARC backend services and nodejs functions which can be deployed on AWS lambda functions using cdktf and [sourceloop-cdktf](https://www.npmjs.com/package/sourceloop-cdktf)
 
