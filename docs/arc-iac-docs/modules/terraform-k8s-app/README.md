@@ -1,5 +1,6 @@
-# terraform-k8s-app
+# [terraform-k8s-app](https://github.com/sourcefuse/terraform-k8s-app)
 
+[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-k8s-app/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-k8s-app/actions/workflows/snyk.yaml)
 ## Overview
 
 Terraform module for deploying an application to a Kubernetes cluster.  
