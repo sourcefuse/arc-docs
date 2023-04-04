@@ -1,4 +1,4 @@
-# Typescript Lambda Boilerplate
+# [Typescript Lambda Boilerplate](https://github.com/sourcefuse/typescript-lambda-boilerplate)
 
 ![Known Vulnerabilities](https://snyk.io/test/github/sourcefuse/typescript-lambda-boilerplate/badge.svg?targetFile=aws-lambdas/iac/cdk/package.json)        [![Known Vulnerabilities](https://github.com/sourcefuse/typescript-lambda-boilerplate/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/typescript-lambda-boilerplate/actions/workflows/snyk.yaml)
 
