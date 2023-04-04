@@ -1,4 +1,4 @@
-# terraform-aws-refarch-opensearch
+# [terraform-aws-refarch-opensearch](https://github.com/sourcefuse/terraform-aws-refarch-opensearch)
 
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-refarch-opensearch/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-opensearch/actions/workflows/snyk.yaml)
 ## Overview
