@@ -1,4 +1,9 @@
-# ARC React
+# [ARC React](https://github.com/sourcefuse/react-boilerplate-ts-ui)
+
+
+[![Known Vulnerabilities](https://github.com/sourcefuse/react-boilerplate-ts-ui/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/react-boilerplate-ts-ui/actions/workflows/snyk.yaml)
+
+## Overview
 
 This project aims to provide a react boilerplate with all basic configuration pre-configured. We are using [MUI](https://mui.com/material-ui/getting-started/overview/) as base library to extend the Theme module and create reuseable components.
 
