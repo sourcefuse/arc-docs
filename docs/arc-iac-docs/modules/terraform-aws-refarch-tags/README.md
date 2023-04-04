@@ -1,4 +1,4 @@
-# terraform-aws-refarch-tags
+# [terraform-aws-refarch-tags](https://github.com/sourcefuse/terraform-aws-refarch-tags)
 
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-refarch-tags/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-tags/actions/workflows/snyk.yaml)
 
