@@ -1,4 +1,4 @@
-# terraform-aws-ref-arch-network
+# [terraform-aws-ref-arch-network](https://github.com/sourcefuse/terraform-aws-ref-arch-network)
 
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-ref-arch-network/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-ref-arch-network/actions/workflows/snyk.yaml)
 ## Overview
