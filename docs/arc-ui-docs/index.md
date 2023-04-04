@@ -1,6 +1,5 @@
 # [ARC React](https://github.com/sourcefuse/react-boilerplate-ts-ui)
 
-
 [![Known Vulnerabilities](https://github.com/sourcefuse/react-boilerplate-ts-ui/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/react-boilerplate-ts-ui/actions/workflows/snyk.yaml)
 
 ## Overview
@@ -42,6 +41,10 @@ To Use the template
 - Add the [environment variables](#inputs) to connect to ARC backend service.
 - Run `npm start` to run the vite development server.
   ![home.png](assets/home.png)
+
+## How to deploy
+
+The App comes pre-configured with docker , To deploy the app on server/EC2 machine you need to install docker and docker compose and set the required env variables mentioned in docker-compose.yml and run docker compose up , the app will connect to port 80 and will be available on static ip address of EC2 machine.
 
 ## Example
 
