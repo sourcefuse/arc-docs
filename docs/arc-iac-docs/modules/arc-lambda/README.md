@@ -1,5 +1,7 @@
 # [ARC Lambda](https://github.com/sourcefuse/arc-lambda)
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_arc-lambda)](https://sonarcloud.io/summary/new_code?id=sourcefuse_arc-lambda)
+
 This repo manages examples using [lerna-nx](https://lerna.js.org/docs/getting-started) to create ARC backend services and nodejs functions which can be deployed on AWS lambda functions using cdktf and [sourceloop-cdktf](https://www.npmjs.com/package/sourceloop-cdktf)
 
 ## <a id="prereqs"></a> Pre-Requisites
