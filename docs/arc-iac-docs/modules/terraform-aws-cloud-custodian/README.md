@@ -1,11 +1,17 @@
-# Terraform AWS: Cloud Custodian
+# [Terraform AWS: Cloud Custodian](https://github.com/sourcefuse/terraform-aws-cloud-custodian)
+
+[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-cloud-custodian/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-cloud-custodian/actions/workflows/snyk.yaml)
+## Overview
 
 The purpose of this module is to provide a Terraform based interface for administering Cloud Custodian to assist with managing the state of template files and to allow for easier runtime interpolation via Terraform.
 
 ## Requirements 
+
+```shell
 Terraform >= 1.0.5  
 Pip >= 20.0.2   
-Python >= 3.8  
+Python >= 3.8 
+``` 
 
 ## Getting started 
 You must have Python 3.8 or above installed.
