@@ -1,4 +1,4 @@
-# terraform-aws-ref-arch-db
+# [terraform-aws-ref-arch-db](https://github.com/sourcefuse/terraform-aws-ref-arch-db)
 
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-ref-arch-db/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-ref-arch-db/actions/workflows/snyk.yaml)
 
