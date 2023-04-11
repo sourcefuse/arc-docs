@@ -13,6 +13,8 @@ npm install arc-cdk
 - apiGatewayCustomDomainName
 - createAcmCertificate
 - createLambdaRole
+- dbModule
+- elastiCache
 - lambda
 - lambdaWithApiGateway
 - lambdaWithCloudWatchEvent
