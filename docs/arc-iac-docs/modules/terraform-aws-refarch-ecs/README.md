@@ -1,5 +1,6 @@
-# terraform-aws-ref-arch-ecs
+# [terraform-aws-ref-arch-ecs](https://github.com/sourcefuse/terraform-aws-ref-arch-ecs)
 
+[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-ref-arch-ecs/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-ref-arch-ecs/actions/workflows/snyk.yaml)
 ## Overview
 
 Terraform Module for AWS ECS by the SourceFuse ARC team.
