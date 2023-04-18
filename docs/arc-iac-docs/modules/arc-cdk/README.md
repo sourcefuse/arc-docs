@@ -12,6 +12,8 @@ npm install arc-cdk
 
 - apiGatewayCustomDomainName
 - createAcmCertificate
+- createEcrImage
+- createEcrRepository
 - createLambdaRole
 - dbModule
 - elastiCache
