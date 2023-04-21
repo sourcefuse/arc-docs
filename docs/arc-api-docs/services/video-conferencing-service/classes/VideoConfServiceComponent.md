@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/component.ts#L53)
+[services/video-conferencing-service/src/component.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/component.ts#L53)
 
 ## Properties
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/component.ts#L55)
+[services/video-conferencing-service/src/component.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/component.ts#L55)
 
 ___
 
@@ -65,7 +65,7 @@ Component.bindings
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:114](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/component.ts#L114)
+[services/video-conferencing-service/src/component.ts:114](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/component.ts#L114)
 
 ___
 
@@ -81,7 +81,7 @@ Component.controllers
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/component.ts#L131)
+[services/video-conferencing-service/src/component.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/component.ts#L131)
 
 ___
 
@@ -94,7 +94,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:126](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/component.ts#L126)
+[services/video-conferencing-service/src/component.ts:126](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/component.ts#L126)
 
 ___
 
@@ -108,7 +108,7 @@ Component.providers
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/component.ts#L112)
+[services/video-conferencing-service/src/component.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/component.ts#L112)
 
 ___
 
@@ -121,7 +121,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:120](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/component.ts#L120)
+[services/video-conferencing-service/src/component.ts:120](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/component.ts#L120)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/component.ts#L57)
+[services/video-conferencing-service/src/component.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/component.ts#L57)
 
 ## Methods
 
@@ -153,4 +153,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:138](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/component.ts#L138)
+[services/video-conferencing-service/src/component.ts:138](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/component.ts#L138)

@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/vonage.provider.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/providers/vonage/vonage.provider.ts#L25)
+[services/video-conferencing-service/src/providers/vonage/vonage.provider.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/providers/vonage/vonage.provider.ts#L25)
 
 ## Properties
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/vonage.provider.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/providers/vonage/vonage.provider.ts#L27)
+[services/video-conferencing-service/src/providers/vonage/vonage.provider.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/providers/vonage/vonage.provider.ts#L27)
 
 ## Methods
 
@@ -72,4 +72,4 @@ Provider.value
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/vonage.provider.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/providers/vonage/vonage.provider.ts#L29)
+[services/video-conferencing-service/src/providers/vonage/vonage.provider.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/providers/vonage/vonage.provider.ts#L29)

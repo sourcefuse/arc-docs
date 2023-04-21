@@ -20,4 +20,4 @@
 
 #### Defined in
 
-[services/scheduler-service/src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/types.ts#L9)
+[services/scheduler-service/src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/types.ts#L9)

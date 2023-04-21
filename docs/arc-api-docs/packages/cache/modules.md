@@ -20,16 +20,17 @@
 
 ### Interfaces
 
+- [CacheEntity](interfaces/CacheEntity.md)
 - [CachePluginComponentOptions](interfaces/CachePluginComponentOptions.md)
-- [ICacheFindOptions](interfaces/ICacheFindOptions.md)
 - [ICacheMixin](interfaces/ICacheMixin.md)
-- [ICacheMixinOptions](interfaces/ICacheMixinOptions.md)
 - [ICacheStrategy](interfaces/ICacheStrategy.md)
-- [IRedisCacheMixinOptions](interfaces/IRedisCacheMixinOptions.md)
 
 ### Type Aliases
 
-- [CacheOptions](modules.md#cacheoptions)
+- [OptionsWithForceUpdate](modules.md#optionswithforceupdate)
+- [RedisConnectorExecuteReturnType](modules.md#redisconnectorexecutereturntype)
+- [SaveInCacheValue](modules.md#saveincachevalue)
+- [SearchInCacheResponse](modules.md#searchincacheresponse)
 
 ### Variables
 
@@ -37,13 +38,55 @@
 
 ## Type Aliases
 
-### CacheOptions
+### OptionsWithForceUpdate
 
-Ƭ **CacheOptions**: `Options` & [`ICacheFindOptions`](interfaces/ICacheFindOptions.md)
+Ƭ **OptionsWithForceUpdate**: `Options` & { `forceUpdate?`: `boolean`  }
 
 #### Defined in
 
-[types.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/types.ts#L42)
+[types.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L42)
+
+___
+
+### RedisConnectorExecuteReturnType
+
+Ƭ **RedisConnectorExecuteReturnType**: `ArrayBuffer` \| `Buffer` \| `number`
+
+#### Defined in
+
+[types.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L39)
+
+___
+
+### SaveInCacheValue
+
+Ƭ **SaveInCacheValue**<`M`\>: `M` \| `M`[] \| ``null``
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `M` |
+
+#### Defined in
+
+[types.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L41)
+
+___
+
+### SearchInCacheResponse
+
+Ƭ **SearchInCacheResponse**<`M`\>: `M` \| `M`[] \| `undefined` \| ``null``
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `M` |
+
+#### Defined in
+
+[types.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L40)
 
 ## Variables
 
@@ -55,4 +98,4 @@ Default options for the component
 
 #### Defined in
 
-[types.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/types.ts#L21)
+[types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L22)

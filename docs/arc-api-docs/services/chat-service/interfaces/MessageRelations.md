@@ -6,11 +6,22 @@
 
 ### Properties
 
+- [messageFiles](MessageRelations.md#messagefiles)
 - [messageRecipients](MessageRelations.md#messagerecipients)
 - [messages](MessageRelations.md#messages)
 - [parentMessage](MessageRelations.md#parentmessage)
 
 ## Properties
+
+### messageFiles
+
+• **messageFiles**: [`AttachmentFilesWithRelations`](../modules.md#attachmentfileswithrelations)[]
+
+#### Defined in
+
+[services/chat-service/src/models/message.model.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L84)
+
+___
 
 ### messageRecipients
 
@@ -18,7 +29,7 @@
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/message.model.ts#L77)
+[services/chat-service/src/models/message.model.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L82)
 
 ___
 
@@ -28,7 +39,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/message.model.ts#L76)
+[services/chat-service/src/models/message.model.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L81)
 
 ___
 
@@ -38,4 +49,4 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/message.model.ts#L78)
+[services/chat-service/src/models/message.model.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L83)

@@ -37,7 +37,7 @@ Model.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/local-user-profile.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/local-user-profile.ts#L25)
+[services/authentication-service/src/models/local-user-profile.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/local-user-profile.ts#L25)
 
 ## Properties
 
@@ -47,7 +47,7 @@ Model.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/local-user-profile.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/local-user-profile.ts#L17)
+[services/authentication-service/src/models/local-user-profile.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/local-user-profile.ts#L17)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/local-user-profile.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/local-user-profile.ts#L23)
+[services/authentication-service/src/models/local-user-profile.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/local-user-profile.ts#L23)

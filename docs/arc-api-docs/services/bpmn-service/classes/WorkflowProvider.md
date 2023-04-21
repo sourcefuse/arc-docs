@@ -47,4 +47,4 @@ Provider.value
 
 #### Defined in
 
-[services/bpmn-service/src/providers/workflow-helper.service.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/bpmn-service/src/providers/workflow-helper.service.ts#L11)
+[services/bpmn-service/src/providers/workflow-helper.service.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/providers/workflow-helper.service.ts#L11)

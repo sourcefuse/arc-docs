@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[mixins/cache.mixin.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/mixins/cache.mixin.ts#L27)
+[mixins/cache.mixin.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/mixins/cache.mixin.ts#L26)
 
 ## Methods
 
@@ -52,7 +52,7 @@
 | Name | Type |
 | :------ | :------ |
 | `baseClass` | `R` |
-| `cacheOptions` | [`ICacheMixinOptions`](../interfaces/ICacheMixinOptions.md) & `Partial`<[`CachePluginComponentOptions`](../interfaces/CachePluginComponentOptions.md)\> |
+| `cacheOptions` | `Partial`<[`CachePluginComponentOptions`](../interfaces/CachePluginComponentOptions.md)\> |
 
 #### Returns
 
@@ -60,4 +60,4 @@
 
 #### Defined in
 
-[mixins/cache.mixin.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/mixins/cache.mixin.ts#L30)
+[mixins/cache.mixin.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/mixins/cache.mixin.ts#L29)

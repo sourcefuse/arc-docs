@@ -51,7 +51,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L21)
+[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L21)
 
 ## Properties
 
@@ -65,7 +65,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L25)
+[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L25)
 
 ## Methods
 

@@ -23,12 +23,13 @@ Interface defining the component's options object
 ### Properties
 
 - [cacheProvider](RedisCacheStrategy.md#cacheprovider)
+- [deletionKey](RedisCacheStrategy.md#deletionkey)
 - [getCacheDataSource](RedisCacheStrategy.md#getcachedatasource)
 - [prefix](RedisCacheStrategy.md#prefix)
+- [ttl](RedisCacheStrategy.md#ttl)
 
 ### Methods
 
-- [checkDataSource](RedisCacheStrategy.md#checkdatasource)
 - [clearCache](RedisCacheStrategy.md#clearcache)
 - [executeRedisCommand](RedisCacheStrategy.md#executerediscommand)
 - [saveInCache](RedisCacheStrategy.md#saveincache)
@@ -50,11 +51,11 @@ Interface defining the component's options object
 
 | Name | Type |
 | :------ | :------ |
-| `opts` | `Partial`<[`CachePluginComponentOptions`](../interfaces/CachePluginComponentOptions.md)\> |
+| `opts` | [`CachePluginComponentOptions`](../interfaces/CachePluginComponentOptions.md) |
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L25)
+[strategies/redis/redis-cache-strategy.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L27)
 
 ## Properties
 
@@ -68,7 +69,17 @@ Interface defining the component's options object
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L22)
+[strategies/redis/redis-cache-strategy.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L22)
+
+___
+
+### deletionKey
+
+• **deletionKey**: `string`
+
+#### Defined in
+
+[strategies/redis/redis-cache-strategy.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L25)
 
 ___
 
@@ -90,7 +101,7 @@ ___
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L21)
+[strategies/redis/redis-cache-strategy.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L21)
 
 ___
 
@@ -104,33 +115,27 @@ ___
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L23)
-
-## Methods
-
-### checkDataSource
-
-▸ `Private` **checkDataSource**(): `void`
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[strategies/redis/redis-cache-strategy.ts:91](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L91)
+[strategies/redis/redis-cache-strategy.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L23)
 
 ___
 
+### ttl
+
+• **ttl**: `number`
+
+#### Implementation of
+
+[ICacheStrategy](../interfaces/ICacheStrategy.md).[ttl](../interfaces/ICacheStrategy.md#ttl)
+
+#### Defined in
+
+[strategies/redis/redis-cache-strategy.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L24)
+
+## Methods
+
 ### clearCache
 
-▸ **clearCache**(`cacheOptions`): `Promise`<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `cacheOptions` | [`IRedisCacheMixinOptions`](../interfaces/IRedisCacheMixinOptions.md) |
+▸ **clearCache**(): `Promise`<`void`\>
 
 #### Returns
 
@@ -142,13 +147,19 @@ ___
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L66)
+[strategies/redis/redis-cache-strategy.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L78)
 
 ___
 
 ### executeRedisCommand
 
-▸ **executeRedisCommand**(`command`, `args`): `Promise`<`undefined` \| `number` \| `Buffer`\>
+▸ **executeRedisCommand**<`T`\>(`command`, `args`): `Promise`<`undefined` \| `T`\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`RedisConnectorExecuteReturnType`](../modules.md#redisconnectorexecutereturntype) |
 
 #### Parameters
 
@@ -159,25 +170,24 @@ ___
 
 #### Returns
 
-`Promise`<`undefined` \| `number` \| `Buffer`\>
+`Promise`<`undefined` \| `T`\>
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:97](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L97)
+[strategies/redis/redis-cache-strategy.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L88)
 
 ___
 
 ### saveInCache
 
-▸ **saveInCache**(`key`, `value`, `cacheOptions`): `Promise`<`void`\>
+▸ **saveInCache**(`key`, `value`): `Promise`<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `key` | `string` |
-| `value` | ``null`` \| `M` \| `M`[] |
-| `cacheOptions` | [`IRedisCacheMixinOptions`](../interfaces/IRedisCacheMixinOptions.md) |
+| `value` | [`SaveInCacheValue`](../modules.md#saveincachevalue)<`M`\> |
 
 #### Returns
 
@@ -189,24 +199,23 @@ ___
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L47)
+[strategies/redis/redis-cache-strategy.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L59)
 
 ___
 
 ### searchInCache
 
-▸ **searchInCache**(`key`, `cacheOptions`): `Promise`<`undefined` \| ``null`` \| `M` \| `M`[]\>
+▸ **searchInCache**(`key`): `Promise`<[`SearchInCacheResponse`](../modules.md#searchincacheresponse)<`M`\>\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `key` | `string` |
-| `cacheOptions` | [`IRedisCacheMixinOptions`](../interfaces/IRedisCacheMixinOptions.md) |
 
 #### Returns
 
-`Promise`<`undefined` \| ``null`` \| `M` \| `M`[]\>
+`Promise`<[`SearchInCacheResponse`](../modules.md#searchincacheresponse)<`M`\>\>
 
 #### Implementation of
 
@@ -214,4 +223,4 @@ ___
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L29)
+[strategies/redis/redis-cache-strategy.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L33)

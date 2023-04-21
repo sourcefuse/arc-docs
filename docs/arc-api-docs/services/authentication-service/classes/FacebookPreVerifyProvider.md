@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/facebook-pre-verify.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/providers/facebook-pre-verify.provider.ts#L13)
+[services/authentication-service/src/providers/facebook-pre-verify.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/facebook-pre-verify.provider.ts#L13)

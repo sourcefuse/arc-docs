@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/authentication-service/src/models/user-credentials.model.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/user-credentials.model.ts#L67)
+[services/authentication-service/src/models/user-credentials.model.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user-credentials.model.ts#L67)

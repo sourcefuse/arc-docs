@@ -50,7 +50,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/video-chat-session.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/repositories/video-chat-session.repository.ts#L19)
+[services/video-conferencing-service/src/repositories/video-chat-session.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/repositories/video-chat-session.repository.ts#L19)
 
 ## Properties
 
@@ -64,7 +64,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/video-chat-session.repository.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/repositories/video-chat-session.repository.ts#L23)
+[services/video-conferencing-service/src/repositories/video-chat-session.repository.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/repositories/video-chat-session.repository.ts#L23)
 
 ## Methods
 

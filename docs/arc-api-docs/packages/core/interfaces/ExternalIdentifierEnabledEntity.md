@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[src/models/ext-identifier-enabled-entity.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/core/src/models/ext-identifier-enabled-entity.interface.ts#L6)
+[src/models/ext-identifier-enabled-entity.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/core/src/models/ext-identifier-enabled-entity.interface.ts#L6)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[src/models/ext-identifier-enabled-entity.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/core/src/models/ext-identifier-enabled-entity.interface.ts#L7)
+[src/models/ext-identifier-enabled-entity.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/core/src/models/ext-identifier-enabled-entity.interface.ts#L7)

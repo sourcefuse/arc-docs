@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:204](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/providers/vonage/types.ts#L204)
+[services/video-conferencing-service/src/providers/vonage/types.ts:204](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/providers/vonage/types.ts#L204)
 
 ___
 
@@ -72,7 +72,7 @@ Promise then returns a successful message for deleting if promise is resolved
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:184](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/providers/vonage/types.ts#L184)
+[services/video-conferencing-service/src/providers/vonage/types.ts:184](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/providers/vonage/types.ts#L184)
 
 ___
 
@@ -102,7 +102,7 @@ a list of archives after resolving promise
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:176](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/providers/vonage/types.ts#L176)
+[services/video-conferencing-service/src/providers/vonage/types.ts:176](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/providers/vonage/types.ts#L176)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:202](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/providers/vonage/types.ts#L202)
+[services/video-conferencing-service/src/providers/vonage/types.ts:202](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/providers/vonage/types.ts#L202)
 
 ___
 
@@ -154,7 +154,7 @@ Promise when resolved returns meeting id
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:153](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/providers/vonage/types.ts#L153)
+[services/video-conferencing-service/src/providers/vonage/types.ts:153](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/providers/vonage/types.ts#L153)
 
 ___
 
@@ -193,7 +193,7 @@ Promise when resolved returns object of type
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:159](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/providers/vonage/types.ts#L159)
+[services/video-conferencing-service/src/providers/vonage/types.ts:159](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/providers/vonage/types.ts#L159)
 
 ___
 
@@ -229,4 +229,4 @@ VonageAzureTargetOptions
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:195](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/providers/vonage/types.ts#L195)
+[services/video-conferencing-service/src/providers/vonage/types.ts:195](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/providers/vonage/types.ts#L195)

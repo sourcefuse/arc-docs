@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/code-reader.provider.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/providers/code-reader.provider.ts#L9)
+[services/authentication-service/src/providers/code-reader.provider.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/code-reader.provider.ts#L9)

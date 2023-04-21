@@ -23,6 +23,8 @@
 - [ApplePreVerifyProvider](classes/ApplePreVerifyProvider.md)
 - [AuthClient](classes/AuthClient.md)
 - [AuthClientRepository](classes/AuthClientRepository.md)
+- [AuthSecureClient](classes/AuthSecureClient.md)
+- [AuthSecureClientRepository](classes/AuthSecureClientRepository.md)
 - [AuthenticationServiceComponent](classes/AuthenticationServiceComponent.md)
 - [AzureAdSignupProvider](classes/AzureAdSignupProvider.md)
 - [AzurePostVerifyProvider](classes/AzurePostVerifyProvider.md)
@@ -191,7 +193,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:208](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/providers/types.ts#L208)
+[services/authentication-service/src/providers/types.ts:208](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/types.ts#L208)
 
 ___
 
@@ -222,7 +224,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:212](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/providers/types.ts#L212)
+[services/authentication-service/src/providers/types.ts:212](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/types.ts#L212)
 
 ___
 
@@ -232,7 +234,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/role.model.ts#L45)
+[services/authentication-service/src/models/role.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/role.model.ts#L45)
 
 ___
 
@@ -242,7 +244,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/tenant.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/tenant.model.ts#L75)
+[services/authentication-service/src/models/tenant.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/tenant.model.ts#L75)
 
 ___
 
@@ -252,7 +254,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-credentials.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/user-credentials.model.ts#L70)
+[services/authentication-service/src/models/user-credentials.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user-credentials.model.ts#L70)
 
 ___
 
@@ -262,7 +264,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-tenant.model.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/user-tenant.model.ts#L82)
+[services/authentication-service/src/models/user-tenant.model.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user-tenant.model.ts#L82)
 
 ___
 
@@ -272,7 +274,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:128](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/user.model.ts#L128)
+[services/authentication-service/src/models/user.model.ts:128](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user.model.ts#L128)
 
 ## Variables
 
@@ -282,7 +284,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/types.ts#L20)
+[services/authentication-service/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/types.ts#L20)
 
 ___
 
@@ -292,7 +294,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/types.ts#L19)
+[services/authentication-service/src/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/types.ts#L19)
 
 ___
 
@@ -302,17 +304,17 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/index.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/index.ts#L52)
+[services/authentication-service/src/models/index.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/index.ts#L54)
 
 ___
 
 ### repositories
 
-• `Const` **repositories**: (typeof [`AuthClientRepository`](classes/AuthClientRepository.md) \| typeof [`OtpCacheRepository`](classes/OtpCacheRepository.md) \| typeof [`OtpRepository`](classes/OtpRepository.md) \| typeof [`RefreshTokenRepository`](classes/RefreshTokenRepository.md) \| typeof [`RevokedTokenRepository`](classes/RevokedTokenRepository.md) \| typeof [`RoleRepository`](classes/RoleRepository.md) \| typeof [`TenantRepository`](classes/TenantRepository.md) \| typeof [`TenantConfigRepository`](classes/TenantConfigRepository.md) \| typeof [`UserLevelPermissionRepository`](classes/UserLevelPermissionRepository.md) \| typeof [`UserTenantRepository`](classes/UserTenantRepository.md) \| typeof [`UserRepository`](classes/UserRepository.md) \| typeof [`UserCredentialsRepository`](classes/UserCredentialsRepository.md) \| typeof [`UserLevelResourceRepository`](classes/UserLevelResourceRepository.md))[]
+• `Const` **repositories**: (typeof [`AuthClientRepository`](classes/AuthClientRepository.md) \| typeof [`AuthSecureClientRepository`](classes/AuthSecureClientRepository.md) \| typeof [`OtpCacheRepository`](classes/OtpCacheRepository.md) \| typeof [`OtpRepository`](classes/OtpRepository.md) \| typeof [`RefreshTokenRepository`](classes/RefreshTokenRepository.md) \| typeof [`RevokedTokenRepository`](classes/RevokedTokenRepository.md) \| typeof [`RoleRepository`](classes/RoleRepository.md) \| typeof [`TenantRepository`](classes/TenantRepository.md) \| typeof [`TenantConfigRepository`](classes/TenantConfigRepository.md) \| typeof [`UserLevelPermissionRepository`](classes/UserLevelPermissionRepository.md) \| typeof [`UserTenantRepository`](classes/UserTenantRepository.md) \| typeof [`UserRepository`](classes/UserRepository.md) \| typeof [`UserCredentialsRepository`](classes/UserCredentialsRepository.md) \| typeof [`UserLevelResourceRepository`](classes/UserLevelResourceRepository.md))[]
 
 #### Defined in
 
-[services/authentication-service/src/repositories/index.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/repositories/index.ts#L33)
+[services/authentication-service/src/repositories/index.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/repositories/index.ts#L35)
 
 ___
 
@@ -322,4 +324,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/services/index.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/services/index.ts#L10)
+[services/authentication-service/src/services/index.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/services/index.ts#L10)

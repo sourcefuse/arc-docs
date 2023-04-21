@@ -54,7 +54,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/working-hour.repository.ts#L26)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/working-hour.repository.ts#L26)
 
 ## Properties
 
@@ -64,7 +64,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/working-hour.repository.ts#L21)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/working-hour.repository.ts#L21)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/working-hour.repository.ts#L34)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/working-hour.repository.ts#L34)
 
 ___
 
@@ -88,7 +88,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/working-hour.repository.ts#L30)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/working-hour.repository.ts#L30)
 
 ## Methods
 

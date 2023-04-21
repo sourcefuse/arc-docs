@@ -37,7 +37,7 @@
 
 #### Defined in
 
-[component.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/payment-service/src/component.ts#L75)
+[component.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/component.ts#L75)
 
 ## Properties
 
@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[component.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/payment-service/src/component.ts#L77)
+[component.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/component.ts#L77)
 
 ___
 
@@ -61,7 +61,7 @@ Component.bindings
 
 #### Defined in
 
-[component.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/payment-service/src/component.ts#L73)
+[component.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/component.ts#L73)
 
 ___
 
@@ -77,7 +77,7 @@ Component.controllers
 
 #### Defined in
 
-[component.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/payment-service/src/component.ts#L72)
+[component.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/component.ts#L72)
 
 ___
 
@@ -90,7 +90,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[component.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/payment-service/src/component.ts#L67)
+[component.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/component.ts#L67)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[component.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/payment-service/src/component.ts#L79)
+[component.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/component.ts#L79)
 
 ___
 
@@ -114,7 +114,7 @@ Component.providers
 
 #### Defined in
 
-[component.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/payment-service/src/component.ts#L74)
+[component.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/component.ts#L74)
 
 ___
 
@@ -124,4 +124,4 @@ ___
 
 #### Defined in
 
-[component.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/payment-service/src/component.ts#L61)
+[component.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/component.ts#L61)

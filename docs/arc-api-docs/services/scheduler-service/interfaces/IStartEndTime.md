@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/models/free-busy.dto.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/models/free-busy.dto.ts#L28)
+[services/scheduler-service/src/models/free-busy.dto.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/free-busy.dto.ts#L28)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/free-busy.dto.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/models/free-busy.dto.ts#L27)
+[services/scheduler-service/src/models/free-busy.dto.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/free-busy.dto.ts#L27)

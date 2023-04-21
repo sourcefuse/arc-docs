@@ -44,7 +44,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/attachment-file.model.ts#L45)
+[services/chat-service/src/models/attachment-file.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/attachment-file.model.ts#L45)
 
 ## Properties
 
@@ -54,7 +54,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/attachment-file.model.ts#L21)
+[services/chat-service/src/models/attachment-file.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/attachment-file.model.ts#L21)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/attachment-file.model.ts#L27)
+[services/chat-service/src/models/attachment-file.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/attachment-file.model.ts#L27)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/attachment-file.model.ts#L14)
+[services/chat-service/src/models/attachment-file.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/attachment-file.model.ts#L14)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/attachment-file.model.ts#L36)
+[services/chat-service/src/models/attachment-file.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/attachment-file.model.ts#L36)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/attachment-file.model.ts#L43)
+[services/chat-service/src/models/attachment-file.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/attachment-file.model.ts#L43)
 
 ___
 

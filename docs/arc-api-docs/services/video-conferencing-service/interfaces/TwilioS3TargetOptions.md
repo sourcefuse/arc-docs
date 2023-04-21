@@ -32,7 +32,7 @@ name of the external storage, For example : 'AWSS3', 'AZURE'
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/providers/twilio/types.ts#L55)
+[services/video-conferencing-service/src/providers/twilio/types.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/providers/twilio/types.ts#L55)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/providers/twilio/types.ts#L56)
+[services/video-conferencing-service/src/providers/twilio/types.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/providers/twilio/types.ts#L56)
 
 ___
 
@@ -56,4 +56,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/types.ts#L108)
+[services/video-conferencing-service/src/types.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/types.ts#L108)

@@ -54,7 +54,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/bpmn-service/src/repositories/workflow.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/bpmn-service/src/repositories/workflow.repository.ts#L30)
+[services/bpmn-service/src/repositories/workflow.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/repositories/workflow.repository.ts#L30)
 
 ## Properties
 
@@ -68,7 +68,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/bpmn-service/src/repositories/workflow.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/bpmn-service/src/repositories/workflow.repository.ts#L36)
+[services/bpmn-service/src/repositories/workflow.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/repositories/workflow.repository.ts#L36)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/repositories/workflow.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/bpmn-service/src/repositories/workflow.repository.ts#L34)
+[services/bpmn-service/src/repositories/workflow.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/repositories/workflow.repository.ts#L34)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/repositories/workflow.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/bpmn-service/src/repositories/workflow.repository.ts#L25)
+[services/bpmn-service/src/repositories/workflow.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/repositories/workflow.repository.ts#L25)
 
 ## Methods
 

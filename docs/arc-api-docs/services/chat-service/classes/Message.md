@@ -16,6 +16,7 @@
 
 ### Properties
 
+- [attachmentFiles](Message.md#attachmentfiles)
 - [body](Message.md#body)
 - [channelId](Message.md#channelid)
 - [channelType](Message.md#channeltype)
@@ -49,9 +50,19 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/message.model.ts#L70)
+[services/chat-service/src/models/message.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L75)
 
 ## Properties
+
+### attachmentFiles
+
+• **attachmentFiles**: [`AttachmentFile`](AttachmentFile.md)[]
+
+#### Defined in
+
+[services/chat-service/src/models/message.model.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L64)
+
+___
 
 ### body
 
@@ -59,7 +70,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/message.model.ts#L24)
+[services/chat-service/src/models/message.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L28)
 
 ___
 
@@ -69,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/message.model.ts#L31)
+[services/chat-service/src/models/message.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L35)
 
 ___
 
@@ -79,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/message.model.ts#L38)
+[services/chat-service/src/models/message.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L42)
 
 ___
 
@@ -117,7 +128,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/message.model.ts#L18)
+[services/chat-service/src/models/message.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L22)
 
 ___
 
@@ -127,7 +138,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/message.model.ts#L58)
+[services/chat-service/src/models/message.model.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L62)
 
 ___
 
@@ -137,7 +148,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/message.model.ts#L68)
+[services/chat-service/src/models/message.model.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L73)
 
 ___
 
@@ -175,7 +186,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/message.model.ts#L65)
+[services/chat-service/src/models/message.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L70)
 
 ___
 
@@ -185,7 +196,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/message.model.ts#L44)
+[services/chat-service/src/models/message.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L48)
 
 ___
 
@@ -195,7 +206,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/message.model.ts#L49)
+[services/chat-service/src/models/message.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L53)
 
 ___
 
@@ -205,4 +216,4 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/models/message.model.ts#L55)
+[services/chat-service/src/models/message.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/models/message.model.ts#L59)

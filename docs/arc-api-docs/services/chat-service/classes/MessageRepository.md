@@ -16,6 +16,8 @@
 
 ### Properties
 
+- [attachmentFileRepositoryGetter](MessageRepository.md#attachmentfilerepositorygetter)
+- [attachmentFiles](MessageRepository.md#attachmentfiles)
 - [getCurrentUser](MessageRepository.md#getcurrentuser)
 - [messageRecipientRepositoryGetter](MessageRepository.md#messagerecipientrepositorygetter)
 - [messageRecipients](MessageRepository.md#messagerecipients)
@@ -37,7 +39,7 @@
 
 ### constructor
 
-• **new MessageRepository**(`dataSource`, `getCurrentUser`, `messageRecipientRepositoryGetter`, `messageRepositoryGetter`)
+• **new MessageRepository**(`dataSource`, `getCurrentUser`, `messageRecipientRepositoryGetter`, `messageRepositoryGetter`, `attachmentFileRepositoryGetter`)
 
 #### Parameters
 
@@ -47,6 +49,7 @@
 | `getCurrentUser` | `Getter`<`undefined` \| `IAuthUserWithPermissions`<`string`, `string`, `string`\>\> |
 | `messageRecipientRepositoryGetter` | `Getter`<[`MessageRecipientRepository`](MessageRecipientRepository.md)\> |
 | `messageRepositoryGetter` | `Getter`<[`MessageRepository`](MessageRepository.md)\> |
+| `attachmentFileRepositoryGetter` | `Getter`<[`AttachmentFileRepository`](AttachmentFileRepository.md)\> |
 
 #### Overrides
 
@@ -58,9 +61,29 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/repositories/message.repository.ts#L40)
+[services/chat-service/src/repositories/message.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/repositories/message.repository.ts#L50)
 
 ## Properties
+
+### attachmentFileRepositoryGetter
+
+• `Protected` **attachmentFileRepositoryGetter**: `Getter`<[`AttachmentFileRepository`](AttachmentFileRepository.md)\>
+
+#### Defined in
+
+[services/chat-service/src/repositories/message.repository.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/repositories/message.repository.ts#L61)
+
+___
+
+### attachmentFiles
+
+• `Readonly` **attachmentFiles**: `HasManyRepositoryFactory`<[`AttachmentFile`](AttachmentFile.md), `undefined` \| `string`\>
+
+#### Defined in
+
+[services/chat-service/src/repositories/message.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/repositories/message.repository.ts#L45)
+
+___
 
 ### getCurrentUser
 
@@ -72,7 +95,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/repositories/message.repository.ts#L43)
+[services/chat-service/src/repositories/message.repository.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/repositories/message.repository.ts#L53)
 
 ___
 
@@ -82,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/repositories/message.repository.ts#L47)
+[services/chat-service/src/repositories/message.repository.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/repositories/message.repository.ts#L57)
 
 ___
 
@@ -92,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/repositories/message.repository.ts#L25)
+[services/chat-service/src/repositories/message.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/repositories/message.repository.ts#L31)
 
 ___
 
@@ -102,7 +125,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/repositories/message.repository.ts#L49)
+[services/chat-service/src/repositories/message.repository.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/repositories/message.repository.ts#L59)
 
 ___
 
@@ -112,7 +135,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/repositories/message.repository.ts#L35)
+[services/chat-service/src/repositories/message.repository.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/repositories/message.repository.ts#L41)
 
 ___
 
@@ -122,7 +145,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/chat-service/src/repositories/message.repository.ts#L30)
+[services/chat-service/src/repositories/message.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/repositories/message.repository.ts#L36)
 
 ## Methods
 

@@ -30,7 +30,7 @@ VideoChatInterface
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/keys.ts#L22)
+[services/video-conferencing-service/src/keys.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/keys.ts#L22)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/keys.ts#L19)
+[services/video-conferencing-service/src/keys.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/keys.ts#L19)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/keys.ts#L15)
+[services/video-conferencing-service/src/keys.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/keys.ts#L15)

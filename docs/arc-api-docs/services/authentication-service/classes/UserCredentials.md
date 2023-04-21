@@ -46,7 +46,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/user-credentials.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/user-credentials.model.ts#L61)
+[services/authentication-service/src/models/user-credentials.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user-credentials.model.ts#L61)
 
 ## Properties
 
@@ -56,7 +56,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/user-credentials.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/user-credentials.model.ts#L41)
+[services/authentication-service/src/models/user-credentials.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user-credentials.model.ts#L41)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-credentials.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/user-credentials.model.ts#L35)
+[services/authentication-service/src/models/user-credentials.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user-credentials.model.ts#L35)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-credentials.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/user-credentials.model.ts#L47)
+[services/authentication-service/src/models/user-credentials.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user-credentials.model.ts#L47)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-credentials.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/user-credentials.model.ts#L18)
+[services/authentication-service/src/models/user-credentials.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user-credentials.model.ts#L18)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-credentials.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/user-credentials.model.ts#L59)
+[services/authentication-service/src/models/user-credentials.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user-credentials.model.ts#L59)
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-credentials.model.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/user-credentials.model.ts#L54)
+[services/authentication-service/src/models/user-credentials.model.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user-credentials.model.ts#L54)
 
 ___
 
@@ -172,4 +172,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-credentials.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/user-credentials.model.ts#L28)
+[services/authentication-service/src/models/user-credentials.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user-credentials.model.ts#L28)

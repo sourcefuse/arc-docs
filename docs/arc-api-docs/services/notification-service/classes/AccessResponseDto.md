@@ -37,7 +37,7 @@ Model.constructor
 
 #### Defined in
 
-[services/notification-service/src/models/access-response-dto.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/notification-service/src/models/access-response-dto.model.ts#L19)
+[services/notification-service/src/models/access-response-dto.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/notification-service/src/models/access-response-dto.model.ts#L19)
 
 ## Properties
 
@@ -47,7 +47,7 @@ Model.constructor
 
 #### Defined in
 
-[services/notification-service/src/models/access-response-dto.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/notification-service/src/models/access-response-dto.model.ts#L17)
+[services/notification-service/src/models/access-response-dto.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/notification-service/src/models/access-response-dto.model.ts#L17)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/access-response-dto.model.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/notification-service/src/models/access-response-dto.model.ts#L12)
+[services/notification-service/src/models/access-response-dto.model.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/notification-service/src/models/access-response-dto.model.ts#L12)

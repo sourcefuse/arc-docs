@@ -27,6 +27,7 @@ Interface defining the component's options object
 - [cacheProvider](ICacheStrategy.md#cacheprovider)
 - [getCacheDataSource](ICacheStrategy.md#getcachedatasource)
 - [prefix](ICacheStrategy.md#prefix)
+- [ttl](ICacheStrategy.md#ttl)
 
 ### Methods
 
@@ -46,7 +47,7 @@ Interface defining the component's options object
 
 #### Defined in
 
-[types.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/types.ts#L14)
+[types.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L14)
 
 ___
 
@@ -64,7 +65,7 @@ ___
 
 #### Defined in
 
-[strategies/cache-strategy.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/strategies/cache-strategy.ts#L9)
+[strategies/cache-strategy.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/strategies/cache-strategy.ts#L9)
 
 ___
 
@@ -78,19 +79,27 @@ ___
 
 #### Defined in
 
-[types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/types.ts#L15)
+[types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L15)
+
+___
+
+### ttl
+
+• **ttl**: `number`
+
+#### Inherited from
+
+[CachePluginComponentOptions](CachePluginComponentOptions.md).[ttl](CachePluginComponentOptions.md#ttl)
+
+#### Defined in
+
+[types.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L16)
 
 ## Methods
 
 ### clearCache
 
-▸ **clearCache**(`cacheOptions`): `Promise`<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `cacheOptions` | [`ICacheMixinOptions`](ICacheMixinOptions.md) |
+▸ **clearCache**(): `Promise`<`void`\>
 
 #### Returns
 
@@ -98,13 +107,13 @@ ___
 
 #### Defined in
 
-[strategies/cache-strategy.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/strategies/cache-strategy.ts#L19)
+[strategies/cache-strategy.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/strategies/cache-strategy.ts#L12)
 
 ___
 
 ### saveInCache
 
-▸ **saveInCache**(`key`, `value`, `cacheOptions`): `Promise`<`void`\>
+▸ **saveInCache**(`key`, `value`): `Promise`<`void`\>
 
 #### Parameters
 
@@ -112,7 +121,6 @@ ___
 | :------ | :------ |
 | `key` | `string` |
 | `value` | ``null`` \| `M` \| `M`[] |
-| `cacheOptions` | [`ICacheMixinOptions`](ICacheMixinOptions.md) |
 
 #### Returns
 
@@ -120,20 +128,19 @@ ___
 
 #### Defined in
 
-[strategies/cache-strategy.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/strategies/cache-strategy.ts#L14)
+[strategies/cache-strategy.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/strategies/cache-strategy.ts#L11)
 
 ___
 
 ### searchInCache
 
-▸ **searchInCache**(`key`, `cacheOptions`): `Promise`<`undefined` \| ``null`` \| `M` \| `M`[]\>
+▸ **searchInCache**(`key`): `Promise`<`undefined` \| ``null`` \| `M` \| `M`[]\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `key` | `string` |
-| `cacheOptions` | [`ICacheMixinOptions`](ICacheMixinOptions.md) |
 
 #### Returns
 
@@ -141,4 +148,4 @@ ___
 
 #### Defined in
 
-[strategies/cache-strategy.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/strategies/cache-strategy.ts#L10)
+[strategies/cache-strategy.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/strategies/cache-strategy.ts#L10)

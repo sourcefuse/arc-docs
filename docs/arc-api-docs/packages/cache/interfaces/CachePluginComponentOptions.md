@@ -16,6 +16,7 @@ Interface defining the component's options object
 
 - [cacheProvider](CachePluginComponentOptions.md#cacheprovider)
 - [prefix](CachePluginComponentOptions.md#prefix)
+- [ttl](CachePluginComponentOptions.md#ttl)
 
 ## Properties
 
@@ -25,7 +26,7 @@ Interface defining the component's options object
 
 #### Defined in
 
-[types.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/types.ts#L14)
+[types.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L14)
 
 ___
 
@@ -35,4 +36,14 @@ ___
 
 #### Defined in
 
-[types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/packages/cache/src/types.ts#L15)
+[types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L15)
+
+___
+
+### ttl
+
+• **ttl**: `number`
+
+#### Defined in
+
+[types.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L16)

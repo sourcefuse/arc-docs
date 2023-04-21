@@ -35,4 +35,4 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L14)
+[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L14)

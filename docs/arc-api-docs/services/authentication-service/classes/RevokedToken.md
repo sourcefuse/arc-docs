@@ -36,7 +36,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/revoked-token.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/revoked-token.model.ts#L16)
+[services/authentication-service/src/models/revoked-token.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/revoked-token.model.ts#L16)
 
 ## Properties
 
@@ -46,4 +46,4 @@ Entity.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/revoked-token.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/authentication-service/src/models/revoked-token.model.ts#L14)
+[services/authentication-service/src/models/revoked-token.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/revoked-token.model.ts#L14)

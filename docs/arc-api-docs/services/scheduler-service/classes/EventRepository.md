@@ -61,7 +61,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/event.repository.ts#L48)
+[services/scheduler-service/src/repositories/event.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/event.repository.ts#L48)
 
 ## Properties
 
@@ -71,7 +71,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/event.repository.ts#L60)
+[services/scheduler-service/src/repositories/event.repository.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/event.repository.ts#L60)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/event.repository.ts#L43)
+[services/scheduler-service/src/repositories/event.repository.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/event.repository.ts#L43)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/event.repository.ts#L58)
+[services/scheduler-service/src/repositories/event.repository.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/event.repository.ts#L58)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/event.repository.ts#L38)
+[services/scheduler-service/src/repositories/event.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/event.repository.ts#L38)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/event.repository.ts#L28)
+[services/scheduler-service/src/repositories/event.repository.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/event.repository.ts#L28)
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/event.repository.ts#L56)
+[services/scheduler-service/src/repositories/event.repository.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/event.repository.ts#L56)
 
 ___
 
@@ -135,7 +135,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/event.repository.ts#L52)
+[services/scheduler-service/src/repositories/event.repository.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/event.repository.ts#L52)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/scheduler-service/src/repositories/event.repository.ts#L33)
+[services/scheduler-service/src/repositories/event.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/event.repository.ts#L33)
 
 ## Methods
 

@@ -29,7 +29,7 @@ s3 bucket name
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:118](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/types.ts#L118)
+[services/video-conferencing-service/src/types.ts:118](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/types.ts#L118)
 
 ___
 
@@ -39,4 +39,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:119](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/a84fe677/services/video-conferencing-service/src/types.ts#L119)
+[services/video-conferencing-service/src/types.ts:119](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/types.ts#L119)
