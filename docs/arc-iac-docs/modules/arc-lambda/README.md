@@ -15,8 +15,8 @@ This repo manages examples using [lerna-nx](https://lerna.js.org/docs/getting-st
 ## How to use
 
 - Clone the [github repo](https://github.com/sourcefuse/arc-lambda)
-- cd into the folder and run `npm i` to install node_modules.
-- Run 'npx lerna bootstrap` to install dependencies in workspace folders
+- cd into the folder and run `npm i` to install node_modules (and to create envs).
+- Run 'npx lerna bootstrap` to install dependencies in workspace folders.
 - packages/\* contains all the ARC backend services supported by cdktf in AWS lambda.
 - To run any service locally , cd into the service folder and update reqd values in .env file (more info env variables in the service readme.md)
 - Run `npm start` to start the development server
