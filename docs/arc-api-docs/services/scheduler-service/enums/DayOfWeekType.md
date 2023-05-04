@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/day-of-week.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/enums/day-of-week.enum.ts#L10)
+[services/scheduler-service/src/models/enums/day-of-week.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/enums/day-of-week.enum.ts#L10)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/day-of-week.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/enums/day-of-week.enum.ts#L6)
+[services/scheduler-service/src/models/enums/day-of-week.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/enums/day-of-week.enum.ts#L6)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/day-of-week.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/enums/day-of-week.enum.ts#L11)
+[services/scheduler-service/src/models/enums/day-of-week.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/enums/day-of-week.enum.ts#L11)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/day-of-week.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/enums/day-of-week.enum.ts#L12)
+[services/scheduler-service/src/models/enums/day-of-week.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/enums/day-of-week.enum.ts#L12)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/day-of-week.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/enums/day-of-week.enum.ts#L9)
+[services/scheduler-service/src/models/enums/day-of-week.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/enums/day-of-week.enum.ts#L9)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/day-of-week.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/enums/day-of-week.enum.ts#L7)
+[services/scheduler-service/src/models/enums/day-of-week.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/enums/day-of-week.enum.ts#L7)
 
 ___
 
@@ -82,4 +82,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/day-of-week.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/enums/day-of-week.enum.ts#L8)
+[services/scheduler-service/src/models/enums/day-of-week.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/enums/day-of-week.enum.ts#L8)

@@ -2,6 +2,22 @@
 
 # Class: AuditLog
 
+Audit Logs Model
+
+**`Deprecated`**
+
+Use the [ConditionalAuditLog](ConditionalAuditLog.md) instead.
+eg.
+```ts
+class AuditLogRepository extends DefaultCrudRepository<
+ConditionalAuditLog,
+typeof ConditionalAuditLog.prototype.id
+>
+{
+   // ...
+}
+```
+
 ## Hierarchy
 
 - `Entity`
@@ -50,7 +66,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit-log.model.ts:95](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/audit-log.model.ts#L95)
+[services/scheduler-service/src/models/audit-log.model.ts:110](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/audit-log.model.ts#L110)
 
 ## Properties
 
@@ -60,7 +76,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit-log.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/audit-log.model.ts#L27)
+[services/scheduler-service/src/models/audit-log.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/audit-log.model.ts#L42)
 
 ___
 
@@ -70,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit-log.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/audit-log.model.ts#L32)
+[services/scheduler-service/src/models/audit-log.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/audit-log.model.ts#L47)
 
 ___
 
@@ -80,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit-log.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/audit-log.model.ts#L37)
+[services/scheduler-service/src/models/audit-log.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/audit-log.model.ts#L52)
 
 ___
 
@@ -90,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit-log.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/audit-log.model.ts#L43)
+[services/scheduler-service/src/models/audit-log.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/audit-log.model.ts#L58)
 
 ___
 
@@ -104,7 +120,7 @@ ExternalIdentifierEnabledEntity.extId
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit-log.model.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/audit-log.model.ts#L87)
+[services/scheduler-service/src/models/audit-log.model.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/audit-log.model.ts#L102)
 
 ___
 
@@ -118,7 +134,7 @@ ExternalIdentifierEnabledEntity.extMetadata
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit-log.model.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/audit-log.model.ts#L93)
+[services/scheduler-service/src/models/audit-log.model.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/audit-log.model.ts#L108)
 
 ___
 
@@ -128,7 +144,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit-log.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/audit-log.model.ts#L21)
+[services/scheduler-service/src/models/audit-log.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/audit-log.model.ts#L36)
 
 ___
 
@@ -138,7 +154,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit-log.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/audit-log.model.ts#L53)
+[services/scheduler-service/src/models/audit-log.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/audit-log.model.ts#L68)
 
 ___
 
@@ -148,7 +164,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit-log.model.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/audit-log.model.ts#L63)
+[services/scheduler-service/src/models/audit-log.model.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/audit-log.model.ts#L78)
 
 ___
 
@@ -158,7 +174,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit-log.model.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/audit-log.model.ts#L71)
+[services/scheduler-service/src/models/audit-log.model.ts:86](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/audit-log.model.ts#L86)
 
 ___
 
@@ -168,4 +184,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit-log.model.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/models/audit-log.model.ts#L81)
+[services/scheduler-service/src/models/audit-log.model.ts:96](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/audit-log.model.ts#L96)

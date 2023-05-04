@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/case-definition.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/camunda/case-definition.ts#L8)
+[services/bpmn-service/src/types/camunda/case-definition.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/camunda/case-definition.ts#L8)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/case-definition.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/camunda/case-definition.ts#L12)
+[services/bpmn-service/src/types/camunda/case-definition.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/camunda/case-definition.ts#L12)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/case-definition.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/camunda/case-definition.ts#L14)
+[services/bpmn-service/src/types/camunda/case-definition.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/camunda/case-definition.ts#L14)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/case-definition.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/camunda/case-definition.ts#L6)
+[services/bpmn-service/src/types/camunda/case-definition.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/camunda/case-definition.ts#L6)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/case-definition.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/camunda/case-definition.ts#L7)
+[services/bpmn-service/src/types/camunda/case-definition.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/camunda/case-definition.ts#L7)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/case-definition.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/camunda/case-definition.ts#L9)
+[services/bpmn-service/src/types/camunda/case-definition.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/camunda/case-definition.ts#L9)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/case-definition.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/camunda/case-definition.ts#L11)
+[services/bpmn-service/src/types/camunda/case-definition.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/camunda/case-definition.ts#L11)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/case-definition.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/camunda/case-definition.ts#L13)
+[services/bpmn-service/src/types/camunda/case-definition.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/camunda/case-definition.ts#L13)
 
 ___
 
@@ -104,4 +104,4 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/case-definition.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/camunda/case-definition.ts#L10)
+[services/bpmn-service/src/types/camunda/case-definition.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/camunda/case-definition.ts#L10)

@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultCrudRepository`<[`SessionAttendees`](SessionAttendees.md), typeof [`id`](SessionAttendees.md#id)\>
+- `DefaultUserModifyCrudRepository`<[`SessionAttendees`](SessionAttendees.md), `undefined` \| `number`, {}, `this`\> & `DefaultCrudRepository`<[`SessionAttendees`](SessionAttendees.md), `undefined` \| `number`, `object`, `this`\>
 
   ↳ **`SessionAttendeesRepository`**
 
@@ -14,25 +14,67 @@
 
 - [constructor](SessionAttendeesRepository.md#constructor)
 
+### Properties
+
+- [getAuditLogRepository](SessionAttendeesRepository.md#getauditlogrepository)
+- [getCurrentUser](SessionAttendeesRepository.md#getcurrentuser)
+
 ## Constructors
 
 ### constructor
 
-• **new SessionAttendeesRepository**(`dataSource`)
+• **new SessionAttendeesRepository**(`dataSource`, `getCurrentUser`, `getAuditLogRepository`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `dataSource` | `DataSource` |
+| `getCurrentUser` | `Getter`<`IAuthUserWithPermissions`<`string`\>\> |
+| `getAuditLogRepository` | `Getter`<`AuditLogRepository`\> |
 
 #### Overrides
 
-DefaultCrudRepository&lt;
-  SessionAttendees,
-  typeof SessionAttendees.prototype.id
-\&gt;.constructor
+ConditionalAuditRepositoryMixin(
+  DefaultUserModifyCrudRepository&lt;
+    SessionAttendees,
+    typeof SessionAttendees.prototype.id,
+    {}
+  \&gt;,
+  SessionAttendeesAuditOpts,
+).constructor
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L14)
+[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L30)
+
+## Properties
+
+### getAuditLogRepository
+
+• **getAuditLogRepository**: `Getter`<`AuditLogRepository`\>
+
+#### Defined in
+
+[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L36)
+
+___
+
+### getCurrentUser
+
+• **getCurrentUser**: `Getter`<`IAuthUserWithPermissions`<`string`\>\>
+
+#### Inherited from
+
+ConditionalAuditRepositoryMixin(
+  DefaultUserModifyCrudRepository<
+    SessionAttendees,
+    typeof SessionAttendees.prototype.id,
+    {}
+  \>,
+  SessionAttendeesAuditOpts,
+).getCurrentUser
+
+#### Defined in
+
+[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L34)

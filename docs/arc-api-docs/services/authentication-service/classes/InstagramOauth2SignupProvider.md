@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`InstagramSignUpFn`](../interfaces/InstagramSignUpFn.md)\>
+- `Provider`<[`InstagramSignUpFn`](../modules.md#instagramsignupfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`InstagramSignUpFn`](../interfaces/InstagramSignUpFn.md)
+▸ **value**(): [`InstagramSignUpFn`](../modules.md#instagramsignupfn)
 
 #### Returns
 
-[`InstagramSignUpFn`](../interfaces/InstagramSignUpFn.md)
+[`InstagramSignUpFn`](../modules.md#instagramsignupfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/instagram-oauth2-signup.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/instagram-oauth2-signup.provider.ts#L12)
+[services/authentication-service/src/providers/instagram-oauth2-signup.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/instagram-oauth2-signup.provider.ts#L12)

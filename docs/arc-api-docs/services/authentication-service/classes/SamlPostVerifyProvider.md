@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`SamlPostVerifyFn`](../interfaces/SamlPostVerifyFn.md)\>
+- `Provider`<[`SamlPostVerifyFn`](../modules.md#samlpostverifyfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`SamlPostVerifyFn`](../interfaces/SamlPostVerifyFn.md)
+▸ **value**(): [`SamlPostVerifyFn`](../modules.md#samlpostverifyfn)
 
 #### Returns
 
-[`SamlPostVerifyFn`](../interfaces/SamlPostVerifyFn.md)
+[`SamlPostVerifyFn`](../modules.md#samlpostverifyfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/saml-post-verify.provider.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/saml-post-verify.provider.ts#L8)
+[services/authentication-service/src/providers/saml-post-verify.provider.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/saml-post-verify.provider.ts#L8)

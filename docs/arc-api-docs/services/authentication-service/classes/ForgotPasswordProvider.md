@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`ForgotPasswordHandlerFn`](../interfaces/ForgotPasswordHandlerFn.md)\>
+- `Provider`<[`ForgotPasswordHandlerFn`](../modules.md#forgotpasswordhandlerfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`ForgotPasswordHandlerFn`](../interfaces/ForgotPasswordHandlerFn.md)
+▸ **value**(): [`ForgotPasswordHandlerFn`](../modules.md#forgotpasswordhandlerfn)
 
 #### Returns
 
-[`ForgotPasswordHandlerFn`](../interfaces/ForgotPasswordHandlerFn.md)
+[`ForgotPasswordHandlerFn`](../modules.md#forgotpasswordhandlerfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/forgot-password.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/forgot-password.provider.ts#L12)
+[services/authentication-service/src/providers/forgot-password.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/forgot-password.provider.ts#L12)

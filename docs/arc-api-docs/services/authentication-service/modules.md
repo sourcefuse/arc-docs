@@ -100,59 +100,59 @@
 
 ### Interfaces
 
-- [ApplePostVerifyFn](interfaces/ApplePostVerifyFn.md)
-- [ApplePreVerifyFn](interfaces/ApplePreVerifyFn.md)
-- [AppleSignUpFn](interfaces/AppleSignUpFn.md)
-- [AuthCodeGeneratorFn](interfaces/AuthCodeGeneratorFn.md)
-- [AzureAdPostVerifyFn](interfaces/AzureAdPostVerifyFn.md)
-- [AzureAdPreVerifyFn](interfaces/AzureAdPreVerifyFn.md)
-- [AzureAdSignUpFn](interfaces/AzureAdSignUpFn.md)
-- [CodeReaderFn](interfaces/CodeReaderFn.md)
-- [CodeWriterFn](interfaces/CodeWriterFn.md)
-- [CognitoPostVerifyFn](interfaces/CognitoPostVerifyFn.md)
-- [CognitoPreVerifyFn](interfaces/CognitoPreVerifyFn.md)
-- [CognitoSignUpFn](interfaces/CognitoSignUpFn.md)
 - [ExternalTokens](interfaces/ExternalTokens.md)
-- [FacebookPostVerifyFn](interfaces/FacebookPostVerifyFn.md)
-- [FacebookPreVerifyFn](interfaces/FacebookPreVerifyFn.md)
-- [FacebookSignUpFn](interfaces/FacebookSignUpFn.md)
-- [ForgotPasswordHandlerFn](interfaces/ForgotPasswordHandlerFn.md)
-- [GooglePostVerifyFn](interfaces/GooglePostVerifyFn.md)
-- [GooglePreVerifyFn](interfaces/GooglePreVerifyFn.md)
 - [GoogleSignUpFn](interfaces/GoogleSignUpFn.md)
 - [IAuthClientDTO](interfaces/IAuthClientDTO.md)
 - [IAuthServiceConfig](interfaces/IAuthServiceConfig.md)
 - [IDeviceInfo](interfaces/IDeviceInfo.md)
 - [IMfaConfig](interfaces/IMfaConfig.md)
 - [IOtpConfig](interfaces/IOtpConfig.md)
-- [InstagramPostVerifyFn](interfaces/InstagramPostVerifyFn.md)
-- [InstagramPreVerifyFn](interfaces/InstagramPreVerifyFn.md)
-- [InstagramSignUpFn](interfaces/InstagramSignUpFn.md)
-- [JwtPayloadFn](interfaces/JwtPayloadFn.md)
-- [KeyCloakPostVerifyFn](interfaces/KeyCloakPostVerifyFn.md)
-- [KeyCloakPreVerifyFn](interfaces/KeyCloakPreVerifyFn.md)
-- [KeyCloakSignUpFn](interfaces/KeyCloakSignUpFn.md)
-- [MfaCheckFn](interfaces/MfaCheckFn.md)
-- [OtpFn](interfaces/OtpFn.md)
-- [OtpGenerateFn](interfaces/OtpGenerateFn.md)
-- [OtpSenderFn](interfaces/OtpSenderFn.md)
-- [PreSignupFn](interfaces/PreSignupFn.md)
-- [SamlPostVerifyFn](interfaces/SamlPostVerifyFn.md)
-- [SamlPreVerifyFn](interfaces/SamlPreVerifyFn.md)
-- [SamlSignUpFn](interfaces/SamlSignUpFn.md)
-- [SignupTokenHandlerFn](interfaces/SignupTokenHandlerFn.md)
 - [UserCredentialsRelations](interfaces/UserCredentialsRelations.md)
 - [UserRelations](interfaces/UserRelations.md)
-- [UserSignupFn](interfaces/UserSignupFn.md)
 - [UserTenantRelations](interfaces/UserTenantRelations.md)
 
 ### Type Aliases
 
+- [ApplePostVerifyFn](modules.md#applepostverifyfn)
+- [ApplePreVerifyFn](modules.md#applepreverifyfn)
+- [AppleSignUpFn](modules.md#applesignupfn)
+- [AuthCodeGeneratorFn](modules.md#authcodegeneratorfn)
+- [AzureAdPostVerifyFn](modules.md#azureadpostverifyfn)
+- [AzureAdPreVerifyFn](modules.md#azureadpreverifyfn)
+- [AzureAdSignUpFn](modules.md#azureadsignupfn)
+- [CodeReaderFn](modules.md#codereaderfn)
+- [CodeWriterFn](modules.md#codewriterfn)
+- [CognitoPostVerifyFn](modules.md#cognitopostverifyfn)
+- [CognitoPreVerifyFn](modules.md#cognitopreverifyfn)
+- [CognitoSignUpFn](modules.md#cognitosignupfn)
+- [FacebookPostVerifyFn](modules.md#facebookpostverifyfn)
+- [FacebookPreVerifyFn](modules.md#facebookpreverifyfn)
+- [FacebookSignUpFn](modules.md#facebooksignupfn)
+- [ForgotPasswordHandlerFn](modules.md#forgotpasswordhandlerfn)
+- [GooglePostVerifyFn](modules.md#googlepostverifyfn)
+- [GooglePreVerifyFn](modules.md#googlepreverifyfn)
+- [InstagramPostVerifyFn](modules.md#instagrampostverifyfn)
+- [InstagramPreVerifyFn](modules.md#instagrampreverifyfn)
+- [InstagramSignUpFn](modules.md#instagramsignupfn)
 - [JWTSignerFn](modules.md#jwtsignerfn)
 - [JWTVerifierFn](modules.md#jwtverifierfn)
+- [JwtPayloadFn](modules.md#jwtpayloadfn)
+- [KeyCloakPostVerifyFn](modules.md#keycloakpostverifyfn)
+- [KeyCloakPreVerifyFn](modules.md#keycloakpreverifyfn)
+- [KeyCloakSignUpFn](modules.md#keycloaksignupfn)
+- [MfaCheckFn](modules.md#mfacheckfn)
+- [OtpFn](modules.md#otpfn)
+- [OtpGenerateFn](modules.md#otpgeneratefn)
+- [OtpSenderFn](modules.md#otpsenderfn)
+- [PreSignupFn](modules.md#presignupfn)
 - [RoleWithRelations](modules.md#rolewithrelations)
+- [SamlPostVerifyFn](modules.md#samlpostverifyfn)
+- [SamlPreVerifyFn](modules.md#samlpreverifyfn)
+- [SamlSignUpFn](modules.md#samlsignupfn)
+- [SignupTokenHandlerFn](modules.md#signuptokenhandlerfn)
 - [TenantWithRelations](modules.md#tenantwithrelations)
 - [UserCredentialsWithRelations](modules.md#usercredentialswithrelations)
+- [UserSignupFn](modules.md#usersignupfn)
 - [UserTenantWithRelations](modules.md#usertenantwithrelations)
 - [UserWithRelations](modules.md#userwithrelations)
 
@@ -165,6 +165,535 @@
 - [services](modules.md#services)
 
 ## Type Aliases
+
+### ApplePostVerifyFn
+
+Ƭ **ApplePostVerifyFn**: (`profile`: `AppleStrategy.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `AppleStrategy.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L71)
+
+___
+
+### ApplePreVerifyFn
+
+Ƭ **ApplePreVerifyFn**: (`accessToken`: `string`, `refreshToken`: `string`, `profile`: `AppleStrategy.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`accessToken`, `refreshToken`, `profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `accessToken` | `string` |
+| `refreshToken` | `string` |
+| `profile` | `AppleStrategy.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L64)
+
+___
+
+### AppleSignUpFn
+
+Ƭ **AppleSignUpFn**: (`profile`: `AppleStrategy.Profile`) => `Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`): `Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `AppleStrategy.Profile` |
+
+##### Returns
+
+`Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L60)
+
+___
+
+### AuthCodeGeneratorFn
+
+Ƭ **AuthCodeGeneratorFn**: (`client`: [`AuthClient`](classes/AuthClient.md), `user`: `AuthUser`) => `Promise`<`string`\>
+
+#### Type declaration
+
+▸ (`client`, `user`): `Promise`<`string`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `client` | [`AuthClient`](classes/AuthClient.md) |
+| `user` | `AuthUser` |
+
+##### Returns
+
+`Promise`<`string`\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:125](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L125)
+
+___
+
+### AzureAdPostVerifyFn
+
+Ƭ **AzureAdPostVerifyFn**: (`profile`: `AzureADStrategy.IProfile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `AzureADStrategy.IProfile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:153](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L153)
+
+___
+
+### AzureAdPreVerifyFn
+
+Ƭ **AzureAdPreVerifyFn**: (`accessToken`: `string`, `refreshToken`: `string`, `profile`: `AzureADStrategy.IProfile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`accessToken`, `refreshToken`, `profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `accessToken` | `string` |
+| `refreshToken` | `string` |
+| `profile` | `AzureADStrategy.IProfile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:146](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L146)
+
+___
+
+### AzureAdSignUpFn
+
+Ƭ **AzureAdSignUpFn**: (`profile`: `AzureADStrategy.IProfile`) => `Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`): `Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `AzureADStrategy.IProfile` |
+
+##### Returns
+
+`Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:142](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L142)
+
+___
+
+### CodeReaderFn
+
+Ƭ **CodeReaderFn**: (`token`: `string`) => `Promise`<`string`\>
+
+#### Type declaration
+
+▸ (`token`): `Promise`<`string`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `token` | `string` |
+
+##### Returns
+
+`Promise`<`string`\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:109](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L109)
+
+___
+
+### CodeWriterFn
+
+Ƭ **CodeWriterFn**: (`token`: `string`) => `Promise`<`string`\>
+
+#### Type declaration
+
+▸ (`token`): `Promise`<`string`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `token` | `string` |
+
+##### Returns
+
+`Promise`<`string`\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L108)
+
+___
+
+### CognitoPostVerifyFn
+
+Ƭ **CognitoPostVerifyFn**: (`profile`: `Cognito.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `Cognito.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:165](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L165)
+
+___
+
+### CognitoPreVerifyFn
+
+Ƭ **CognitoPreVerifyFn**: (`accessToken`: `string`, `refreshToken`: `string`, `profile`: `Cognito.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`accessToken`, `refreshToken`, `profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `accessToken` | `string` |
+| `refreshToken` | `string` |
+| `profile` | `Cognito.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:158](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L158)
+
+___
+
+### CognitoSignUpFn
+
+Ƭ **CognitoSignUpFn**: (`profile`: `Cognito.Profile`) => `Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`): `Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `Cognito.Profile` |
+
+##### Returns
+
+`Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:170](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L170)
+
+___
+
+### FacebookPostVerifyFn
+
+Ƭ **FacebookPostVerifyFn**: (`profile`: `FacebookStrategy.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `FacebookStrategy.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L87)
+
+___
+
+### FacebookPreVerifyFn
+
+Ƭ **FacebookPreVerifyFn**: (`accessToken`: `string`, `refreshToken`: `string`, `profile`: `FacebookStrategy.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`accessToken`, `refreshToken`, `profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `accessToken` | `string` |
+| `refreshToken` | `string` |
+| `profile` | `FacebookStrategy.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L80)
+
+___
+
+### FacebookSignUpFn
+
+Ƭ **FacebookSignUpFn**: (`profile`: `FacebookStrategy.Profile`) => `Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`): `Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `FacebookStrategy.Profile` |
+
+##### Returns
+
+`Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L76)
+
+___
+
+### ForgotPasswordHandlerFn
+
+Ƭ **ForgotPasswordHandlerFn**: (`dto`: `DataObject`<[`ForgetPasswordResponseDto`](classes/ForgetPasswordResponseDto.md)\>) => `Promise`<`unknown`\>
+
+#### Type declaration
+
+▸ (`dto`): `Promise`<`unknown`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `dto` | `DataObject`<[`ForgetPasswordResponseDto`](classes/ForgetPasswordResponseDto.md)\> |
+
+##### Returns
+
+`Promise`<`unknown`\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:121](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L121)
+
+___
+
+### GooglePostVerifyFn
+
+Ƭ **GooglePostVerifyFn**: (`profile`: `GoogleStrategy.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `GoogleStrategy.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L39)
+
+___
+
+### GooglePreVerifyFn
+
+Ƭ **GooglePreVerifyFn**: (`accessToken`: `string`, `refreshToken`: `string`, `profile`: `GoogleStrategy.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`accessToken`, `refreshToken`, `profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `accessToken` | `string` |
+| `refreshToken` | `string` |
+| `profile` | `GoogleStrategy.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L32)
+
+___
+
+### InstagramPostVerifyFn
+
+Ƭ **InstagramPostVerifyFn**: (`profile`: `InstagramStrategy.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `InstagramStrategy.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L55)
+
+___
+
+### InstagramPreVerifyFn
+
+Ƭ **InstagramPreVerifyFn**: (`accessToken`: `string`, `refreshToken`: `string`, `profile`: `InstagramStrategy.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`accessToken`, `refreshToken`, `profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `accessToken` | `string` |
+| `refreshToken` | `string` |
+| `profile` | `InstagramStrategy.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L48)
+
+___
+
+### InstagramSignUpFn
+
+Ƭ **InstagramSignUpFn**: (`profile`: `InstagramStrategy.Profile`) => `Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`): `Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `InstagramStrategy.Profile` |
+
+##### Returns
+
+`Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L44)
+
+___
 
 ### JWTSignerFn
 
@@ -193,7 +722,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:208](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/types.ts#L208)
+[services/authentication-service/src/providers/types.ts:174](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L174)
 
 ___
 
@@ -224,7 +753,236 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:212](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/types.ts#L212)
+[services/authentication-service/src/providers/types.ts:178](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L178)
+
+___
+
+### JwtPayloadFn
+
+Ƭ **JwtPayloadFn**: (`user`: `IAuthUser`, `authClient`: `IAuthClient`) => `Promise`<`object`\>
+
+#### Type declaration
+
+▸ (`user`, `authClient`): `Promise`<`object`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `user` | `IAuthUser` |
+| `authClient` | `IAuthClient` |
+
+##### Returns
+
+`Promise`<`object`\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:116](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L116)
+
+___
+
+### KeyCloakPostVerifyFn
+
+Ƭ **KeyCloakPostVerifyFn**: (`profile`: `Keycloak.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `Keycloak.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:103](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L103)
+
+___
+
+### KeyCloakPreVerifyFn
+
+Ƭ **KeyCloakPreVerifyFn**: (`accessToken`: `string`, `refreshToken`: `string`, `profile`: `Keycloak.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`accessToken`, `refreshToken`, `profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `accessToken` | `string` |
+| `refreshToken` | `string` |
+| `profile` | `Keycloak.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:96](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L96)
+
+___
+
+### KeyCloakSignUpFn
+
+Ƭ **KeyCloakSignUpFn**: (`profile`: `Keycloak.Profile`) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `Keycloak.Profile` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:92](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L92)
+
+___
+
+### MfaCheckFn
+
+Ƭ **MfaCheckFn**: (`user`: `AuthUser`) => `Promise`<`boolean`\>
+
+#### Type declaration
+
+▸ (`user`): `Promise`<`boolean`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `user` | `AuthUser` |
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:130](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L130)
+
+___
+
+### OtpFn
+
+Ƭ **OtpFn**: (`user`: [`User`](classes/User.md)) => `Promise`<`OtpResponse`\>
+
+#### Type declaration
+
+▸ (`user`): `Promise`<`OtpResponse`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `user` | [`User`](classes/User.md) |
+
+##### Returns
+
+`Promise`<`OtpResponse`\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:134](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L134)
+
+___
+
+### OtpGenerateFn
+
+Ƭ **OtpGenerateFn**: (`secret`: `string`) => `Promise`<`string`\>
+
+#### Type declaration
+
+▸ (`secret`): `Promise`<`string`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `secret` | `string` |
+
+##### Returns
+
+`Promise`<`string`\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:132](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L132)
+
+___
+
+### OtpSenderFn
+
+Ƭ **OtpSenderFn**: (`otp`: `string`, `user`: [`User`](classes/User.md)) => `Promise`<`void`\>
+
+#### Type declaration
+
+▸ (`otp`, `user`): `Promise`<`void`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `otp` | `string` |
+| `user` | [`User`](classes/User.md) |
+
+##### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:136](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L136)
+
+___
+
+### PreSignupFn
+
+Ƭ **PreSignupFn**<`T`, `S`\>: (`request`: [`SignupRequestDto`](classes/SignupRequestDto.md)<`T`\>) => `Promise`<`S`\>
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+| `S` |
+
+#### Type declaration
+
+▸ (`request`): `Promise`<`S`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `request` | [`SignupRequestDto`](classes/SignupRequestDto.md)<`T`\> |
+
+##### Returns
+
+`Promise`<`S`\>
+
+#### Defined in
+
+[services/authentication-service/src/types.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/types.ts#L30)
 
 ___
 
@@ -234,7 +992,105 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/role.model.ts#L45)
+[services/authentication-service/src/models/role.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/models/role.model.ts#L45)
+
+___
+
+### SamlPostVerifyFn
+
+Ƭ **SamlPostVerifyFn**: (`profile`: `SamlStrategy.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `SamlStrategy.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:191](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L191)
+
+___
+
+### SamlPreVerifyFn
+
+Ƭ **SamlPreVerifyFn**: (`profile`: `SamlStrategy.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `SamlStrategy.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:186](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L186)
+
+___
+
+### SamlSignUpFn
+
+Ƭ **SamlSignUpFn**: (`profile`: `SamlStrategy.Profile`) => `Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`): `Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `SamlStrategy.Profile` |
+
+##### Returns
+
+`Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:182](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L182)
+
+___
+
+### SignupTokenHandlerFn
+
+Ƭ **SignupTokenHandlerFn**: (`dto`: `DataObject`<[`SignupRequestResponseDto`](classes/SignupRequestResponseDto.md)\>) => `Promise`<`void`\>
+
+#### Type declaration
+
+▸ (`dto`): `Promise`<`void`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `dto` | `DataObject`<[`SignupRequestResponseDto`](classes/SignupRequestResponseDto.md)\> |
+
+##### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:138](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/types.ts#L138)
 
 ___
 
@@ -244,7 +1100,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/tenant.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/tenant.model.ts#L75)
+[services/authentication-service/src/models/tenant.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/models/tenant.model.ts#L75)
 
 ___
 
@@ -254,7 +1110,39 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-credentials.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user-credentials.model.ts#L70)
+[services/authentication-service/src/models/user-credentials.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/models/user-credentials.model.ts#L70)
+
+___
+
+### UserSignupFn
+
+Ƭ **UserSignupFn**<`T`, `S`\>: (`model`: `T` & [`LocalUserProfileDto`](classes/LocalUserProfileDto.md), `tokenInfo?`: `AnyObject`) => `Promise`<`S`\>
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+| `S` |
+
+#### Type declaration
+
+▸ (`model`, `tokenInfo?`): `Promise`<`S`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `model` | `T` & [`LocalUserProfileDto`](classes/LocalUserProfileDto.md) |
+| `tokenInfo?` | `AnyObject` |
+
+##### Returns
+
+`Promise`<`S`\>
+
+#### Defined in
+
+[services/authentication-service/src/types.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/types.ts#L32)
 
 ___
 
@@ -264,7 +1152,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-tenant.model.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user-tenant.model.ts#L82)
+[services/authentication-service/src/models/user-tenant.model.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/models/user-tenant.model.ts#L82)
 
 ___
 
@@ -274,7 +1162,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:128](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/user.model.ts#L128)
+[services/authentication-service/src/models/user.model.ts:128](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/models/user.model.ts#L128)
 
 ## Variables
 
@@ -284,7 +1172,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/types.ts#L20)
+[services/authentication-service/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/types.ts#L20)
 
 ___
 
@@ -294,7 +1182,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/types.ts#L19)
+[services/authentication-service/src/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/types.ts#L19)
 
 ___
 
@@ -304,7 +1192,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/index.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/models/index.ts#L54)
+[services/authentication-service/src/models/index.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/models/index.ts#L54)
 
 ___
 
@@ -314,7 +1202,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/index.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/repositories/index.ts#L35)
+[services/authentication-service/src/repositories/index.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/repositories/index.ts#L35)
 
 ___
 
@@ -324,4 +1212,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/services/index.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/services/index.ts#L10)
+[services/authentication-service/src/services/index.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/services/index.ts#L10)

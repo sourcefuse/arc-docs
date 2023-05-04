@@ -54,7 +54,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/chat-service/src/repositories/message-recipient.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/repositories/message-recipient.repository.ts#L25)
+[services/chat-service/src/repositories/message-recipient.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/chat-service/src/repositories/message-recipient.repository.ts#L25)
 
 ## Properties
 
@@ -68,7 +68,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/chat-service/src/repositories/message-recipient.repository.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/repositories/message-recipient.repository.ts#L28)
+[services/chat-service/src/repositories/message-recipient.repository.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/chat-service/src/repositories/message-recipient.repository.ts#L28)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/message-recipient.repository.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/repositories/message-recipient.repository.ts#L20)
+[services/chat-service/src/repositories/message-recipient.repository.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/chat-service/src/repositories/message-recipient.repository.ts#L20)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/message-recipient.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/chat-service/src/repositories/message-recipient.repository.ts#L32)
+[services/chat-service/src/repositories/message-recipient.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/chat-service/src/repositories/message-recipient.repository.ts#L32)
 
 ## Methods
 

@@ -26,7 +26,6 @@
 - [DecisionDefinition](interfaces/DecisionDefinition.md)
 - [DecisionRequirementDefinition](interfaces/DecisionRequirementDefinition.md)
 - [DeploymentWithDefinitions](interfaces/DeploymentWithDefinitions.md)
-- [ExecutionInputValidator](interfaces/ExecutionInputValidator.md)
 - [IBPMTask](interfaces/IBPMTask.md)
 - [ICommand](interfaces/ICommand.md)
 - [IWorkflowServiceConfig](interfaces/IWorkflowServiceConfig.md)
@@ -34,8 +33,6 @@
 - [ProcessInstance](interfaces/ProcessInstance.md)
 - [Variable](interfaces/Variable.md)
 - [WorflowManager](interfaces/WorflowManager.md)
-- [WorkerImplementationFn](interfaces/WorkerImplementationFn.md)
-- [WorkerRegisterFn](interfaces/WorkerRegisterFn.md)
 - [WorkflowRelations](interfaces/WorkflowRelations.md)
 - [WorkflowVersionRelations](interfaces/WorkflowVersionRelations.md)
 
@@ -45,10 +42,13 @@
 - [DeployedDecisionDefinitions](modules.md#deployeddecisiondefinitions)
 - [DeployedDecisionRequirementDefinitions](modules.md#deployeddecisionrequirementdefinitions)
 - [DeployedProcessDefinitions](modules.md#deployedprocessdefinitions)
+- [ExecutionInputValidator](modules.md#executioninputvalidator)
 - [Link](modules.md#link)
 - [SuccessResponse](modules.md#successresponse)
+- [WorkerImplementationFn](modules.md#workerimplementationfn)
 - [WorkerMap](modules.md#workermap)
 - [WorkerNameCmdPair](modules.md#workernamecmdpair)
+- [WorkerRegisterFn](modules.md#workerregisterfn)
 - [WorkflowVersionWithRelations](modules.md#workflowversionwithrelations)
 - [WorkflowWithRelations](modules.md#workflowwithrelations)
 
@@ -68,7 +68,7 @@
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L28)
+[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L28)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L32)
+[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L32)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L36)
+[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L36)
 
 ___
 
@@ -110,7 +110,38 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L24)
+[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L24)
+
+___
+
+### ExecutionInputValidator
+
+Ƭ **ExecutionInputValidator**<`T`\>: (`schema`: `AnyObject`, `input`: `T`) => `Promise`<`boolean`\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `AnyObject` |
+
+#### Type declaration
+
+▸ (`schema`, `input`): `Promise`<`boolean`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `schema` | `AnyObject` |
+| `input` | `T` |
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+#### Defined in
+
+[services/bpmn-service/src/types/types.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/types.ts#L41)
 
 ___
 
@@ -128,7 +159,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/types.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/camunda/types.ts#L5)
+[services/bpmn-service/src/types/camunda/types.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/camunda/types.ts#L5)
 
 ___
 
@@ -148,7 +179,38 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/types.ts#L67)
+[services/bpmn-service/src/types/types.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/types.ts#L66)
+
+___
+
+### WorkerImplementationFn
+
+Ƭ **WorkerImplementationFn**<`T`, `R`\>: (`worker`: [`WorkerNameCmdPair`](modules.md#workernamecmdpair)<`T`, `R`\>) => `Promise`<`void`\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `AnyObject` |
+| `R` | `AnyObject` |
+
+#### Type declaration
+
+▸ (`worker`): `Promise`<`void`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `worker` | [`WorkerNameCmdPair`](modules.md#workernamecmdpair)<`T`, `R`\> |
+
+##### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[services/bpmn-service/src/types/types.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/types.ts#L62)
 
 ___
 
@@ -169,7 +231,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/types.ts#L53)
+[services/bpmn-service/src/types/types.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/types.ts#L52)
 
 ___
 
@@ -194,7 +256,40 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/types.ts#L57)
+[services/bpmn-service/src/types/types.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/types.ts#L56)
+
+___
+
+### WorkerRegisterFn
+
+Ƭ **WorkerRegisterFn**<`T`, `R`\>: (`bpmnName`: `string`, `topicName`: `string`, `commandCtor`: [`BPMTask`](classes/BPMTask.md)<`T`, `R`\>) => `Promise`<`void`\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `AnyObject` |
+| `R` | `AnyObject` |
+
+#### Type declaration
+
+▸ (`bpmnName`, `topicName`, `commandCtor`): `Promise`<`void`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bpmnName` | `string` |
+| `topicName` | `string` |
+| `commandCtor` | [`BPMTask`](classes/BPMTask.md)<`T`, `R`\> |
+
+##### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[services/bpmn-service/src/types/types.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/types.ts#L46)
 
 ___
 
@@ -204,7 +299,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow-version.model.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/models/workflow-version.model.ts#L77)
+[services/bpmn-service/src/models/workflow-version.model.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/models/workflow-version.model.ts#L77)
 
 ___
 
@@ -214,7 +309,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow.model.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/models/workflow.model.ts#L80)
+[services/bpmn-service/src/models/workflow.model.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/models/workflow.model.ts#L80)
 
 ## Variables
 
@@ -224,4 +319,4 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/types/types.ts#L75)
+[services/bpmn-service/src/types/types.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/types.ts#L74)

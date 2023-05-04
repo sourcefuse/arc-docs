@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`SamlPreVerifyFn`](../interfaces/SamlPreVerifyFn.md)\>
+- `Provider`<[`SamlPreVerifyFn`](../modules.md#samlpreverifyfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`SamlPreVerifyFn`](../interfaces/SamlPreVerifyFn.md)
+▸ **value**(): [`SamlPreVerifyFn`](../modules.md#samlpreverifyfn)
 
 #### Returns
 
-[`SamlPreVerifyFn`](../interfaces/SamlPreVerifyFn.md)
+[`SamlPreVerifyFn`](../modules.md#samlpreverifyfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/saml-pre-verify.provider.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/saml-pre-verify.provider.ts#L8)
+[services/authentication-service/src/providers/saml-pre-verify.provider.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/saml-pre-verify.provider.ts#L8)

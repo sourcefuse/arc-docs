@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`OtpGenerateFn`](../interfaces/OtpGenerateFn.md)\>
+- `Provider`<[`OtpGenerateFn`](../modules.md#otpgeneratefn)\>
 
 ## Table of contents
 
@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/otp-generate.provider.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/otp-generate.provider.ts#L16)
+[services/authentication-service/src/providers/otp-generate.provider.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/otp-generate.provider.ts#L16)
 
 ## Properties
 
@@ -44,17 +44,17 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/otp-generate.provider.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/otp-generate.provider.ts#L16)
+[services/authentication-service/src/providers/otp-generate.provider.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/otp-generate.provider.ts#L16)
 
 ## Methods
 
 ### value
 
-▸ **value**(): [`OtpGenerateFn`](../interfaces/OtpGenerateFn.md)
+▸ **value**(): [`OtpGenerateFn`](../modules.md#otpgeneratefn)
 
 #### Returns
 
-[`OtpGenerateFn`](../interfaces/OtpGenerateFn.md)
+[`OtpGenerateFn`](../modules.md#otpgeneratefn)
 
 #### Implementation of
 
@@ -62,4 +62,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/otp-generate.provider.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/otp-generate.provider.ts#L17)
+[services/authentication-service/src/providers/otp-generate.provider.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/otp-generate.provider.ts#L17)

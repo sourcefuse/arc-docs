@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`CognitoPostVerifyFn`](../interfaces/CognitoPostVerifyFn.md)\>
+- `Provider`<[`CognitoPostVerifyFn`](../modules.md#cognitopostverifyfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`CognitoPostVerifyFn`](../interfaces/CognitoPostVerifyFn.md)
+▸ **value**(): [`CognitoPostVerifyFn`](../modules.md#cognitopostverifyfn)
 
 #### Returns
 
-[`CognitoPostVerifyFn`](../interfaces/CognitoPostVerifyFn.md)
+[`CognitoPostVerifyFn`](../modules.md#cognitopostverifyfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/cognito-post-verify.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/cognito-post-verify.provider.ts#L12)
+[services/authentication-service/src/providers/cognito-post-verify.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/cognito-post-verify.provider.ts#L12)

@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`GooglePostVerifyFn`](../interfaces/GooglePostVerifyFn.md)\>
+- `Provider`<[`GooglePostVerifyFn`](../modules.md#googlepostverifyfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`GooglePostVerifyFn`](../interfaces/GooglePostVerifyFn.md)
+▸ **value**(): [`GooglePostVerifyFn`](../modules.md#googlepostverifyfn)
 
 #### Returns
 
-[`GooglePostVerifyFn`](../interfaces/GooglePostVerifyFn.md)
+[`GooglePostVerifyFn`](../modules.md#googlepostverifyfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/google-post-verify.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/google-post-verify.provider.ts#L12)
+[services/authentication-service/src/providers/google-post-verify.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/google-post-verify.provider.ts#L12)

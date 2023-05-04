@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`KeyCloakPreVerifyFn`](../interfaces/KeyCloakPreVerifyFn.md)\>
+- `Provider`<[`KeyCloakPreVerifyFn`](../modules.md#keycloakpreverifyfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`KeyCloakPreVerifyFn`](../interfaces/KeyCloakPreVerifyFn.md)
+▸ **value**(): [`KeyCloakPreVerifyFn`](../modules.md#keycloakpreverifyfn)
 
 #### Returns
 
-[`KeyCloakPreVerifyFn`](../interfaces/KeyCloakPreVerifyFn.md)
+[`KeyCloakPreVerifyFn`](../modules.md#keycloakpreverifyfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/keycloak-pre-verify.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keycloak-pre-verify.provider.ts#L13)
+[services/authentication-service/src/providers/keycloak-pre-verify.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keycloak-pre-verify.provider.ts#L13)

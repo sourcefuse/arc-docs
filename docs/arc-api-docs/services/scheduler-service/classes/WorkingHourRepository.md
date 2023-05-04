@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`WorkingHour`](WorkingHour.md), typeof [`id`](WorkingHour.md#id), [`WorkingHourRelations`](../interfaces/WorkingHourRelations.md)\>
+- `DefaultUserModifyCrudRepository`<[`WorkingHour`](WorkingHour.md), `undefined` \| `string`, [`WorkingHourRelations`](../interfaces/WorkingHourRelations.md), `this`\> & `DefaultCrudRepository`<[`WorkingHour`](WorkingHour.md), `undefined` \| `string`, `object`, `this`\>
 
   ↳ **`WorkingHourRepository`**
 
@@ -18,23 +18,14 @@
 
 - [calendar](WorkingHourRepository.md#calendar)
 - [calendarRepositoryGetter](WorkingHourRepository.md#calendarrepositorygetter)
+- [getAuditLogRepository](WorkingHourRepository.md#getauditlogrepository)
 - [getCurrentUser](WorkingHourRepository.md#getcurrentuser)
-
-### Methods
-
-- [create](WorkingHourRepository.md#create)
-- [createAll](WorkingHourRepository.md#createall)
-- [replaceById](WorkingHourRepository.md#replacebyid)
-- [save](WorkingHourRepository.md#save)
-- [update](WorkingHourRepository.md#update)
-- [updateAll](WorkingHourRepository.md#updateall)
-- [updateById](WorkingHourRepository.md#updatebyid)
 
 ## Constructors
 
 ### constructor
 
-• **new WorkingHourRepository**(`dataSource`, `getCurrentUser`, `calendarRepositoryGetter`)
+• **new WorkingHourRepository**(`dataSource`, `getCurrentUser`, `calendarRepositoryGetter`, `getAuditLogRepository`)
 
 #### Parameters
 
@@ -43,18 +34,22 @@
 | `dataSource` | `DataSource` |
 | `getCurrentUser` | `Getter`<`undefined` \| `IAuthUserWithPermissions`<`string`, `string`, `string`\>\> |
 | `calendarRepositoryGetter` | `Getter`<[`CalendarRepository`](CalendarRepository.md)\> |
+| `getAuditLogRepository` | `Getter`<[`AuditLogRepository`](AuditLogRepository.md)\> |
 
 #### Overrides
 
-DefaultUserModifyCrudRepository&lt;
-  WorkingHour,
-  typeof WorkingHour.prototype.id,
-  WorkingHourRelations
-\&gt;.constructor
+ConditionalAuditRepositoryMixin(
+  DefaultUserModifyCrudRepository&lt;
+    WorkingHour,
+    typeof WorkingHour.prototype.id,
+    WorkingHourRelations
+  \&gt;,
+  WorkingHourAuditOpts,
+).constructor
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/working-hour.repository.ts#L26)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/repositories/working-hour.repository.ts#L38)
 
 ## Properties
 
@@ -64,7 +59,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/working-hour.repository.ts#L21)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/repositories/working-hour.repository.ts#L33)
 
 ___
 
@@ -74,7 +69,17 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/working-hour.repository.ts#L34)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/repositories/working-hour.repository.ts#L46)
+
+___
+
+### getAuditLogRepository
+
+• **getAuditLogRepository**: `Getter`<[`AuditLogRepository`](AuditLogRepository.md)\>
+
+#### Defined in
+
+[services/scheduler-service/src/repositories/working-hour.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/repositories/working-hour.repository.ts#L48)
 
 ___
 
@@ -84,186 +89,15 @@ ___
 
 #### Inherited from
 
-DefaultUserModifyCrudRepository.getCurrentUser
+ConditionalAuditRepositoryMixin(
+  DefaultUserModifyCrudRepository<
+    WorkingHour,
+    typeof WorkingHour.prototype.id,
+    WorkingHourRelations
+  \>,
+  WorkingHourAuditOpts,
+).getCurrentUser
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/scheduler-service/src/repositories/working-hour.repository.ts#L30)
-
-## Methods
-
-### create
-
-▸ **create**(`entity`, `options?`): `Promise`<[`WorkingHour`](WorkingHour.md)\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entity` | `DataObject`<[`WorkingHour`](WorkingHour.md)\> |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<[`WorkingHour`](WorkingHour.md)\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.create
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:11
-
-___
-
-### createAll
-
-▸ **createAll**(`entities`, `options?`): `Promise`<[`WorkingHour`](WorkingHour.md)[]\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entities` | `DataObject`<[`WorkingHour`](WorkingHour.md)\>[] |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<[`WorkingHour`](WorkingHour.md)[]\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.createAll
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:12
-
-___
-
-### replaceById
-
-▸ **replaceById**(`id`, `data`, `options?`): `Promise`<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `id` | `undefined` \| `string` |
-| `data` | `DataObject`<[`WorkingHour`](WorkingHour.md)\> |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<`void`\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.replaceById
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:17
-
-___
-
-### save
-
-▸ **save**(`entity`, `options?`): `Promise`<[`WorkingHour`](WorkingHour.md)\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entity` | [`WorkingHour`](WorkingHour.md) |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<[`WorkingHour`](WorkingHour.md)\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.save
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:13
-
-___
-
-### update
-
-▸ **update**(`entity`, `options?`): `Promise`<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entity` | [`WorkingHour`](WorkingHour.md) |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<`void`\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.update
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:14
-
-___
-
-### updateAll
-
-▸ **updateAll**(`data`, `where?`, `options?`): `Promise`<`Count`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `DataObject`<[`WorkingHour`](WorkingHour.md)\> |
-| `where?` | `Where`<[`WorkingHour`](WorkingHour.md)\> |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<`Count`\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.updateAll
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:15
-
-___
-
-### updateById
-
-▸ **updateById**(`id`, `data`, `options?`): `Promise`<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `id` | `undefined` \| `string` |
-| `data` | `DataObject`<[`WorkingHour`](WorkingHour.md)\> |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<`void`\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.updateById
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:16
+[services/scheduler-service/src/repositories/working-hour.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/repositories/working-hour.repository.ts#L42)

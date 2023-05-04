@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`KeyCloakPostVerifyFn`](../interfaces/KeyCloakPostVerifyFn.md)\>
+- `Provider`<[`KeyCloakPostVerifyFn`](../modules.md#keycloakpostverifyfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`KeyCloakPostVerifyFn`](../interfaces/KeyCloakPostVerifyFn.md)
+▸ **value**(): [`KeyCloakPostVerifyFn`](../modules.md#keycloakpostverifyfn)
 
 #### Returns
 
-[`KeyCloakPostVerifyFn`](../interfaces/KeyCloakPostVerifyFn.md)
+[`KeyCloakPostVerifyFn`](../modules.md#keycloakpostverifyfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/keycloak-post-verify.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keycloak-post-verify.provider.ts#L13)
+[services/authentication-service/src/providers/keycloak-post-verify.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keycloak-post-verify.provider.ts#L13)

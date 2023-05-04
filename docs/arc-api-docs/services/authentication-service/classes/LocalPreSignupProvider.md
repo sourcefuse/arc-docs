@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`PreSignupFn`](../interfaces/PreSignupFn.md)<[`SignupRequestDto`](SignupRequestDto.md), { `email`: `string`  }\>\>
+- `Provider`<[`PreSignupFn`](../modules.md#presignupfn)<[`SignupRequestDto`](SignupRequestDto.md), { `email`: `string`  }\>\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`PreSignupFn`](../interfaces/PreSignupFn.md)<[`SignupRequestDto`](SignupRequestDto.md)<`AnyObject`\>, { `email`: `string`  }\>
+▸ **value**(): [`PreSignupFn`](../modules.md#presignupfn)<[`SignupRequestDto`](SignupRequestDto.md)<`AnyObject`\>, { `email`: `string`  }\>
 
 #### Returns
 
-[`PreSignupFn`](../interfaces/PreSignupFn.md)<[`SignupRequestDto`](SignupRequestDto.md)<`AnyObject`\>, { `email`: `string`  }\>
+[`PreSignupFn`](../modules.md#presignupfn)<[`SignupRequestDto`](SignupRequestDto.md)<`AnyObject`\>, { `email`: `string`  }\>
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/local-presignup.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/local-presignup.provider.ts#L12)
+[services/authentication-service/src/providers/local-presignup.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/local-presignup.provider.ts#L12)

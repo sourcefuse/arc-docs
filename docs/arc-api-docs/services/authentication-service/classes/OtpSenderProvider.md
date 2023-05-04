@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`OtpSenderFn`](../interfaces/OtpSenderFn.md)\>
+- `Provider`<[`OtpSenderFn`](../modules.md#otpsenderfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`OtpSenderFn`](../interfaces/OtpSenderFn.md)
+▸ **value**(): [`OtpSenderFn`](../modules.md#otpsenderfn)
 
 #### Returns
 
-[`OtpSenderFn`](../interfaces/OtpSenderFn.md)
+[`OtpSenderFn`](../modules.md#otpsenderfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/otp-sender.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/otp-sender.provider.ts#L11)
+[services/authentication-service/src/providers/otp-sender.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/otp-sender.provider.ts#L11)

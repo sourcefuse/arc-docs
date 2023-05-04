@@ -36,7 +36,7 @@ Entity.constructor
 
 #### Defined in
 
-[src/components/bearer-verifier/models/revoked-token.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/core/src/components/bearer-verifier/models/revoked-token.model.ts#L16)
+[src/components/bearer-verifier/models/revoked-token.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/components/bearer-verifier/models/revoked-token.model.ts#L16)
 
 ## Properties
 
@@ -46,4 +46,4 @@ Entity.constructor
 
 #### Defined in
 
-[src/components/bearer-verifier/models/revoked-token.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/core/src/components/bearer-verifier/models/revoked-token.model.ts#L14)
+[src/components/bearer-verifier/models/revoked-token.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/components/bearer-verifier/models/revoked-token.model.ts#L14)

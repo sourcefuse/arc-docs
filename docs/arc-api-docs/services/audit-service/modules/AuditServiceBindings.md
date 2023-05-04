@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/audit-service/src/keys.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/audit-service/src/keys.ts#L10)
+[services/audit-service/src/keys.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/audit-service/src/keys.ts#L10)

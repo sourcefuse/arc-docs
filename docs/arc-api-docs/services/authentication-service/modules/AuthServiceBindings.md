@@ -20,27 +20,27 @@
 
 #### Defined in
 
-[services/authentication-service/src/keys.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/keys.ts#L11)
+[services/authentication-service/src/keys.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/keys.ts#L11)
 
 ___
 
 ### ForgotPasswordHandler
 
-• `Const` **ForgotPasswordHandler**: `BindingKey`<[`ForgotPasswordHandlerFn`](../interfaces/ForgotPasswordHandlerFn.md)\>
+• `Const` **ForgotPasswordHandler**: `BindingKey`<[`ForgotPasswordHandlerFn`](../modules.md#forgotpasswordhandlerfn)\>
 
 #### Defined in
 
-[services/authentication-service/src/keys.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/keys.ts#L27)
+[services/authentication-service/src/keys.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/keys.ts#L27)
 
 ___
 
 ### JWTPayloadProvider
 
-• `Const` **JWTPayloadProvider**: `BindingKey`<[`JwtPayloadFn`](../interfaces/JwtPayloadFn.md)\>
+• `Const` **JWTPayloadProvider**: `BindingKey`<[`JwtPayloadFn`](../modules.md#jwtpayloadfn)\>
 
 #### Defined in
 
-[services/authentication-service/src/keys.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/keys.ts#L23)
+[services/authentication-service/src/keys.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/keys.ts#L23)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/keys.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/keys.ts#L15)
+[services/authentication-service/src/keys.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/keys.ts#L15)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/keys.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/keys.ts#L19)
+[services/authentication-service/src/keys.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/keys.ts#L19)

@@ -44,7 +44,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/feature-toggle-service/src/models/feature.model.ts#L44)
+[services/feature-toggle-service/src/models/feature.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/feature-toggle-service/src/models/feature.model.ts#L44)
 
 ## Properties
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/feature-toggle-service/src/models/feature.model.ts#L42)
+[services/feature-toggle-service/src/models/feature.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/feature-toggle-service/src/models/feature.model.ts#L42)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/feature-toggle-service/src/models/feature.model.ts#L35)
+[services/feature-toggle-service/src/models/feature.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/feature-toggle-service/src/models/feature.model.ts#L35)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/feature-toggle-service/src/models/feature.model.ts#L17)
+[services/feature-toggle-service/src/models/feature.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/feature-toggle-service/src/models/feature.model.ts#L17)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/feature-toggle-service/src/models/feature.model.ts#L29)
+[services/feature-toggle-service/src/models/feature.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/feature-toggle-service/src/models/feature.model.ts#L29)
 
 ___
 
@@ -150,4 +150,4 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/feature-toggle-service/src/models/feature.model.ts#L23)
+[services/feature-toggle-service/src/models/feature.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/feature-toggle-service/src/models/feature.model.ts#L23)

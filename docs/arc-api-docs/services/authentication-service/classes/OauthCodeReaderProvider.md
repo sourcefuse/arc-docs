@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`CodeReaderFn`](../interfaces/CodeReaderFn.md)\>
+- `Provider`<[`CodeReaderFn`](../modules.md#codereaderfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`CodeReaderFn`](../interfaces/CodeReaderFn.md)
+▸ **value**(): [`CodeReaderFn`](../modules.md#codereaderfn)
 
 #### Returns
 
-[`CodeReaderFn`](../interfaces/CodeReaderFn.md)
+[`CodeReaderFn`](../modules.md#codereaderfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/code-reader.provider.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/code-reader.provider.ts#L9)
+[services/authentication-service/src/providers/code-reader.provider.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/code-reader.provider.ts#L9)

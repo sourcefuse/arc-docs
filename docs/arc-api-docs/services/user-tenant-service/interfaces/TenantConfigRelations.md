@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/user-tenant-service/src/models/tenant-config.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/user-tenant-service/src/models/tenant-config.model.ts#L48)
+[services/user-tenant-service/src/models/tenant-config.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/tenant-config.model.ts#L48)

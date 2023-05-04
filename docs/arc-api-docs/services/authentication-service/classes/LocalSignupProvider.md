@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`UserSignupFn`](../interfaces/UserSignupFn.md)<[`LocalUserProfileDto`](LocalUserProfileDto.md), [`LocalUserProfileDto`](LocalUserProfileDto.md)\>\>
+- `Provider`<[`UserSignupFn`](../modules.md#usersignupfn)<[`LocalUserProfileDto`](LocalUserProfileDto.md), [`LocalUserProfileDto`](LocalUserProfileDto.md)\>\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`UserSignupFn`](../interfaces/UserSignupFn.md)<[`LocalUserProfileDto`](LocalUserProfileDto.md), [`LocalUserProfileDto`](LocalUserProfileDto.md)\>
+▸ **value**(): [`UserSignupFn`](../modules.md#usersignupfn)<[`LocalUserProfileDto`](LocalUserProfileDto.md), [`LocalUserProfileDto`](LocalUserProfileDto.md)\>
 
 #### Returns
 
-[`UserSignupFn`](../interfaces/UserSignupFn.md)<[`LocalUserProfileDto`](LocalUserProfileDto.md), [`LocalUserProfileDto`](LocalUserProfileDto.md)\>
+[`UserSignupFn`](../modules.md#usersignupfn)<[`LocalUserProfileDto`](LocalUserProfileDto.md), [`LocalUserProfileDto`](LocalUserProfileDto.md)\>
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/local-signup.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/local-signup.provider.ts#L13)
+[services/authentication-service/src/providers/local-signup.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/local-signup.provider.ts#L13)

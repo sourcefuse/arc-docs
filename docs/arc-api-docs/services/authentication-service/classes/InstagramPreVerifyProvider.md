@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`InstagramPreVerifyFn`](../interfaces/InstagramPreVerifyFn.md)\>
+- `Provider`<[`InstagramPreVerifyFn`](../modules.md#instagrampreverifyfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`InstagramPreVerifyFn`](../interfaces/InstagramPreVerifyFn.md)
+▸ **value**(): [`InstagramPreVerifyFn`](../modules.md#instagrampreverifyfn)
 
 #### Returns
 
-[`InstagramPreVerifyFn`](../interfaces/InstagramPreVerifyFn.md)
+[`InstagramPreVerifyFn`](../modules.md#instagrampreverifyfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/instagram-pre-verify.provider.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/instagram-pre-verify.provider.ts#L14)
+[services/authentication-service/src/providers/instagram-pre-verify.provider.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/instagram-pre-verify.provider.ts#L14)

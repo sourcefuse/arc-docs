@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[src/components/logger-extension/logger.interface.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/core/src/components/logger-extension/logger.interface.ts#L12)
+[src/components/logger-extension/logger.interface.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/components/logger-extension/logger.interface.ts#L12)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/components/logger-extension/logger.interface.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/core/src/components/logger-extension/logger.interface.ts#L11)
+[src/components/logger-extension/logger.interface.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/components/logger-extension/logger.interface.ts#L11)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[src/components/logger-extension/logger.interface.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/core/src/components/logger-extension/logger.interface.ts#L9)
+[src/components/logger-extension/logger.interface.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/components/logger-extension/logger.interface.ts#L9)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[src/components/logger-extension/logger.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/core/src/components/logger-extension/logger.interface.ts#L8)
+[src/components/logger-extension/logger.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/components/logger-extension/logger.interface.ts#L8)
 
 ___
 
@@ -114,4 +114,4 @@ ___
 
 #### Defined in
 
-[src/components/logger-extension/logger.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/core/src/components/logger-extension/logger.interface.ts#L10)
+[src/components/logger-extension/logger.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/components/logger-extension/logger.interface.ts#L10)

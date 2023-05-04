@@ -7,6 +7,7 @@
 ### Namespaces
 
 - [GatewayBindings](modules/GatewayBindings.md)
+- [PayPalBindings](modules/PayPalBindings.md)
 - [PaymentServiceComponentBindings](modules/PaymentServiceComponentBindings.md)
 - [RazorpayBindings](modules/RazorpayBindings.md)
 - [StripeBindings](modules/StripeBindings.md)
@@ -15,14 +16,17 @@
 
 - [GatewayProvider](classes/GatewayProvider.md)
 - [PaymentServiceComponent](classes/PaymentServiceComponent.md)
+- [PaypalProvider](classes/PaypalProvider.md)
 - [RazorpayProvider](classes/RazorpayProvider.md)
 - [StripeProvider](classes/StripeProvider.md)
 
 ### Interfaces
 
 - [IGateway](interfaces/IGateway.md)
+- [IPayPalConfig](interfaces/IPayPalConfig.md)
 - [IRazorpayConfig](interfaces/IRazorpayConfig.md)
 - [IStripeConfig](interfaces/IStripeConfig.md)
+- [PayPalPaymentGateway](interfaces/PayPalPaymentGateway.md)
 - [PaymentServiceComponentOptions](interfaces/PaymentServiceComponentOptions.md)
 - [RazorpayOrder](interfaces/RazorpayOrder.md)
 - [RazorpayPaymentGateway](interfaces/RazorpayPaymentGateway.md)
@@ -44,7 +48,7 @@ Default options for the component
 
 #### Defined in
 
-[types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/types.ts#L17)
+[types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/types.ts#L17)
 
 ___
 
@@ -54,4 +58,4 @@ ___
 
 #### Defined in
 
-[keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/keys.ts#L17)
+[keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/keys.ts#L17)

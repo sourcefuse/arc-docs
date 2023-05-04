@@ -21,27 +21,27 @@
 
 #### Defined in
 
-[services/bpmn-service/src/keys.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/keys.ts#L20)
+[services/bpmn-service/src/keys.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/keys.ts#L20)
 
 ___
 
 ### ExecutionInputValidatorFn
 
-• `Const` **ExecutionInputValidatorFn**: `BindingKey`<``null`` \| [`ExecutionInputValidator`](../interfaces/ExecutionInputValidator.md)<`AnyObject`\>\>
+• `Const` **ExecutionInputValidatorFn**: `BindingKey`<``null`` \| [`ExecutionInputValidator`](../modules.md#executioninputvalidator)<`AnyObject`\>\>
 
 #### Defined in
 
-[services/bpmn-service/src/keys.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/keys.ts#L23)
+[services/bpmn-service/src/keys.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/keys.ts#L23)
 
 ___
 
 ### RegisterWorkerFunction
 
-• `Const` **RegisterWorkerFunction**: `BindingKey`<``null`` \| [`WorkerRegisterFn`](../interfaces/WorkerRegisterFn.md)<`AnyObject`, `AnyObject`\>\>
+• `Const` **RegisterWorkerFunction**: `BindingKey`<``null`` \| [`WorkerRegisterFn`](../modules.md#workerregisterfn)<`AnyObject`, `AnyObject`\>\>
 
 #### Defined in
 
-[services/bpmn-service/src/keys.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/keys.ts#L27)
+[services/bpmn-service/src/keys.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/keys.ts#L27)
 
 ___
 
@@ -51,17 +51,17 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/keys.ts#L35)
+[services/bpmn-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/keys.ts#L35)
 
 ___
 
 ### WorkerImplementationFunction
 
-• `Const` **WorkerImplementationFunction**: `BindingKey`<``null`` \| [`WorkerImplementationFn`](../interfaces/WorkerImplementationFn.md)<`AnyObject`, `AnyObject`\>\>
+• `Const` **WorkerImplementationFunction**: `BindingKey`<``null`` \| [`WorkerImplementationFn`](../modules.md#workerimplementationfn)<`AnyObject`, `AnyObject`\>\>
 
 #### Defined in
 
-[services/bpmn-service/src/keys.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/keys.ts#L31)
+[services/bpmn-service/src/keys.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/keys.ts#L31)
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/bpmn-service/src/keys.ts#L17)
+[services/bpmn-service/src/keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/keys.ts#L17)

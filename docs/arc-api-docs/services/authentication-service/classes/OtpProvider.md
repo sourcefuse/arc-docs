@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`OtpFn`](../interfaces/OtpFn.md)\>
+- `Provider`<[`OtpFn`](../modules.md#otpfn)\>
 
 ## Table of contents
 
@@ -31,42 +31,42 @@
 
 | Name | Type |
 | :------ | :------ |
-| `generateOtp` | [`OtpGenerateFn`](../interfaces/OtpGenerateFn.md) |
-| `sendOtp` | [`OtpSenderFn`](../interfaces/OtpSenderFn.md) |
+| `generateOtp` | [`OtpGenerateFn`](../modules.md#otpgeneratefn) |
+| `sendOtp` | [`OtpSenderFn`](../modules.md#otpsenderfn) |
 
 #### Defined in
 
-[services/authentication-service/src/providers/otp.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/otp.provider.ts#L12)
+[services/authentication-service/src/providers/otp.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/otp.provider.ts#L12)
 
 ## Properties
 
 ### generateOtp
 
-• `Private` `Readonly` **generateOtp**: [`OtpGenerateFn`](../interfaces/OtpGenerateFn.md)
+• `Private` `Readonly` **generateOtp**: [`OtpGenerateFn`](../modules.md#otpgeneratefn)
 
 #### Defined in
 
-[services/authentication-service/src/providers/otp.provider.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/otp.provider.ts#L14)
+[services/authentication-service/src/providers/otp.provider.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/otp.provider.ts#L14)
 
 ___
 
 ### sendOtp
 
-• `Private` `Readonly` **sendOtp**: [`OtpSenderFn`](../interfaces/OtpSenderFn.md)
+• `Private` `Readonly` **sendOtp**: [`OtpSenderFn`](../modules.md#otpsenderfn)
 
 #### Defined in
 
-[services/authentication-service/src/providers/otp.provider.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/otp.provider.ts#L16)
+[services/authentication-service/src/providers/otp.provider.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/otp.provider.ts#L16)
 
 ## Methods
 
 ### value
 
-▸ **value**(): [`OtpFn`](../interfaces/OtpFn.md)
+▸ **value**(): [`OtpFn`](../modules.md#otpfn)
 
 #### Returns
 
-[`OtpFn`](../interfaces/OtpFn.md)
+[`OtpFn`](../modules.md#otpfn)
 
 #### Implementation of
 
@@ -74,4 +74,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/otp.provider.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/otp.provider.ts#L19)
+[services/authentication-service/src/providers/otp.provider.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/otp.provider.ts#L19)

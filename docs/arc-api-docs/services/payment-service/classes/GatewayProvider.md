@@ -14,6 +14,7 @@
 
 ### Properties
 
+- [paypalHelper](GatewayProvider.md#paypalhelper)
 - [razorpayPaymentHelper](GatewayProvider.md#razorpaypaymenthelper)
 - [req](GatewayProvider.md#req)
 - [res](GatewayProvider.md#res)
@@ -27,7 +28,7 @@
 
 ### constructor
 
-• **new GatewayProvider**(`res`, `req`, `razorpayPaymentHelper`, `stripeHelper`)
+• **new GatewayProvider**(`res`, `req`, `razorpayPaymentHelper`, `stripeHelper`, `paypalHelper`)
 
 #### Parameters
 
@@ -37,12 +38,23 @@
 | `req` | `Request`<`ParamsDictionary`, `any`, `any`, `ParsedQs`, `Record`<`string`, `any`\>\> |
 | `razorpayPaymentHelper` | [`RazorpayPaymentGateway`](../interfaces/RazorpayPaymentGateway.md) |
 | `stripeHelper` | [`StripePaymentGateway`](../interfaces/StripePaymentGateway.md) |
+| `paypalHelper` | [`PayPalPaymentGateway`](../interfaces/PayPalPaymentGateway.md) |
 
 #### Defined in
 
-[providers/gateway.provider.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/providers/gateway.provider.ts#L14)
+[providers/gateway.provider.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/gateway.provider.ts#L15)
 
 ## Properties
+
+### paypalHelper
+
+• `Private` `Readonly` **paypalHelper**: [`PayPalPaymentGateway`](../interfaces/PayPalPaymentGateway.md)
+
+#### Defined in
+
+[providers/gateway.provider.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/gateway.provider.ts#L23)
+
+___
 
 ### razorpayPaymentHelper
 
@@ -50,7 +62,7 @@
 
 #### Defined in
 
-[providers/gateway.provider.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/providers/gateway.provider.ts#L18)
+[providers/gateway.provider.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/gateway.provider.ts#L19)
 
 ___
 
@@ -60,7 +72,7 @@ ___
 
 #### Defined in
 
-[providers/gateway.provider.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/providers/gateway.provider.ts#L16)
+[providers/gateway.provider.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/gateway.provider.ts#L17)
 
 ___
 
@@ -70,7 +82,7 @@ ___
 
 #### Defined in
 
-[providers/gateway.provider.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/providers/gateway.provider.ts#L15)
+[providers/gateway.provider.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/gateway.provider.ts#L16)
 
 ___
 
@@ -80,7 +92,7 @@ ___
 
 #### Defined in
 
-[providers/gateway.provider.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/providers/gateway.provider.ts#L20)
+[providers/gateway.provider.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/gateway.provider.ts#L21)
 
 ## Methods
 
@@ -107,4 +119,4 @@ Provider.value
 
 #### Defined in
 
-[providers/gateway.provider.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/payment-service/src/providers/gateway.provider.ts#L23)
+[providers/gateway.provider.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/gateway.provider.ts#L26)

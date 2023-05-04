@@ -22,41 +22,41 @@
 
 ### APPLE\_SIGN\_UP\_PROVIDER
 
-• `Const` **APPLE\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`AppleSignUpFn`](../interfaces/AppleSignUpFn.md)\>
+• `Const` **APPLE\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`AppleSignUpFn`](../modules.md#applesignupfn)\>
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L52)
+[services/authentication-service/src/providers/keys.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L52)
 
 ___
 
 ### AZURE\_AD\_SIGN\_UP\_PROVIDER
 
-• `Const` **AZURE\_AD\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`AzureAdSignUpFn`](../interfaces/AzureAdSignUpFn.md)\>
+• `Const` **AZURE\_AD\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`AzureAdSignUpFn`](../modules.md#azureadsignupfn)\>
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L61)
+[services/authentication-service/src/providers/keys.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L61)
 
 ___
 
 ### COGNITO\_SIGN\_UP\_PROVIDER
 
-• `Const` **COGNITO\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`CognitoSignUpFn`](../interfaces/CognitoSignUpFn.md)\>
+• `Const` **COGNITO\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`CognitoSignUpFn`](../modules.md#cognitosignupfn)\>
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L64)
+[services/authentication-service/src/providers/keys.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L64)
 
 ___
 
 ### FACEBOOK\_SIGN\_UP\_PROVIDER
 
-• `Const` **FACEBOOK\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`FacebookSignUpFn`](../interfaces/FacebookSignUpFn.md)\>
+• `Const` **FACEBOOK\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`FacebookSignUpFn`](../modules.md#facebooksignupfn)\>
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L55)
+[services/authentication-service/src/providers/keys.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L55)
 
 ___
 
@@ -66,64 +66,64 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L47)
+[services/authentication-service/src/providers/keys.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L47)
 
 ___
 
 ### INSTAGRAM\_SIGN\_UP\_PROVIDER
 
-• `Const` **INSTAGRAM\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`InstagramSignUpFn`](../interfaces/InstagramSignUpFn.md)\>
+• `Const` **INSTAGRAM\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`InstagramSignUpFn`](../modules.md#instagramsignupfn)\>
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L50)
+[services/authentication-service/src/providers/keys.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L50)
 
 ___
 
 ### KEYCLOAK\_SIGN\_UP\_PROVIDER
 
-• `Const` **KEYCLOAK\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`KeyCloakSignUpFn`](../interfaces/KeyCloakSignUpFn.md)\>
+• `Const` **KEYCLOAK\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`KeyCloakSignUpFn`](../modules.md#keycloaksignupfn)\>
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L58)
+[services/authentication-service/src/providers/keys.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L58)
 
 ___
 
 ### LOCAL\_SIGNUP\_PROVIDER
 
-• `Const` **LOCAL\_SIGNUP\_PROVIDER**: `BindingKey`<[`UserSignupFn`](../interfaces/UserSignupFn.md)<`any`, `any`\>\>
+• `Const` **LOCAL\_SIGNUP\_PROVIDER**: `BindingKey`<[`UserSignupFn`](../modules.md#usersignupfn)<`any`, `any`\>\>
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L74)
+[services/authentication-service/src/providers/keys.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L74)
 
 ___
 
 ### PRE\_LOCAL\_SIGNUP\_PROVIDER
 
-• `Const` **PRE\_LOCAL\_SIGNUP\_PROVIDER**: `BindingKey`<[`PreSignupFn`](../interfaces/PreSignupFn.md)<`any`, `any`\>\>
+• `Const` **PRE\_LOCAL\_SIGNUP\_PROVIDER**: `BindingKey`<[`PreSignupFn`](../modules.md#presignupfn)<`any`, `any`\>\>
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L70)
+[services/authentication-service/src/providers/keys.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L70)
 
 ___
 
 ### SAML\_SIGN\_UP\_PROVIDER
 
-• `Const` **SAML\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`SamlSignUpFn`](../interfaces/SamlSignUpFn.md)\>
+• `Const` **SAML\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`SamlSignUpFn`](../modules.md#samlsignupfn)\>
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L67)
+[services/authentication-service/src/providers/keys.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L67)
 
 ___
 
 ### SIGNUP\_HANDLER\_PROVIDER
 
-• `Const` **SIGNUP\_HANDLER\_PROVIDER**: `BindingKey`<[`SignupTokenHandlerFn`](../interfaces/SignupTokenHandlerFn.md)\>
+• `Const` **SIGNUP\_HANDLER\_PROVIDER**: `BindingKey`<[`SignupTokenHandlerFn`](../modules.md#signuptokenhandlerfn)\>
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L79)
+[services/authentication-service/src/providers/keys.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L79)

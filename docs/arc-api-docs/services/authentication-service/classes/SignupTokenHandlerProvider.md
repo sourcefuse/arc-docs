@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`SignupTokenHandlerFn`](../interfaces/SignupTokenHandlerFn.md)\>
+- `Provider`<[`SignupTokenHandlerFn`](../modules.md#signuptokenhandlerfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`SignupTokenHandlerFn`](../interfaces/SignupTokenHandlerFn.md)
+▸ **value**(): [`SignupTokenHandlerFn`](../modules.md#signuptokenhandlerfn)
 
 #### Returns
 
-[`SignupTokenHandlerFn`](../interfaces/SignupTokenHandlerFn.md)
+[`SignupTokenHandlerFn`](../modules.md#signuptokenhandlerfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/signup-token-handler.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/signup-token-handler.provider.ts#L12)
+[services/authentication-service/src/providers/signup-token-handler.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/signup-token-handler.provider.ts#L12)

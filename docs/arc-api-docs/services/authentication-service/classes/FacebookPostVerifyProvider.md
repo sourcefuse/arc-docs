@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`FacebookPostVerifyFn`](../interfaces/FacebookPostVerifyFn.md)\>
+- `Provider`<[`FacebookPostVerifyFn`](../modules.md#facebookpostverifyfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`FacebookPostVerifyFn`](../interfaces/FacebookPostVerifyFn.md)
+▸ **value**(): [`FacebookPostVerifyFn`](../modules.md#facebookpostverifyfn)
 
 #### Returns
 
-[`FacebookPostVerifyFn`](../interfaces/FacebookPostVerifyFn.md)
+[`FacebookPostVerifyFn`](../modules.md#facebookpostverifyfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/facebook-post-verify.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/facebook-post-verify.provider.ts#L13)
+[services/authentication-service/src/providers/facebook-post-verify.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/facebook-post-verify.provider.ts#L13)

@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`FeatureFlagFn`](../interfaces/FeatureFlagFn.md)\>
+- `Provider`<[`FeatureFlagFn`](../modules.md#featureflagfn)\>
 
 ## Table of contents
 
@@ -37,7 +37,7 @@
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-action.provider.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L17)
+[feature-toggle/src/providers/feature-flag-action.provider.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L17)
 
 ## Properties
 
@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-action.provider.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L19)
+[feature-toggle/src/providers/feature-flag-action.provider.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L19)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-action.provider.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L21)
+[feature-toggle/src/providers/feature-flag-action.provider.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L21)
 
 ## Methods
 
@@ -71,17 +71,17 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-action.provider.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L27)
+[feature-toggle/src/providers/feature-flag-action.provider.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L27)
 
 ___
 
 ### value
 
-▸ **value**(): [`FeatureFlagFn`](../interfaces/FeatureFlagFn.md)
+▸ **value**(): [`FeatureFlagFn`](../modules.md#featureflagfn)
 
 #### Returns
 
-[`FeatureFlagFn`](../interfaces/FeatureFlagFn.md)
+[`FeatureFlagFn`](../modules.md#featureflagfn)
 
 #### Implementation of
 
@@ -89,4 +89,4 @@ Provider.value
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-action.provider.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L23)
+[feature-toggle/src/providers/feature-flag-action.provider.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L23)

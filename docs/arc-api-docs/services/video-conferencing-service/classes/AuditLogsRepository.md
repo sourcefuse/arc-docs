@@ -2,6 +2,27 @@
 
 # Class: AuditLogsRepository
 
+Audit Logs Repository
+
+This repository is usable for those who are using the audit trigger from the default migrations provided by this service.
+This is deprecated and will be removed in future releases. Users are advised to utilize the `AuditLogRepository` in case needed (more instructions provided in the Audit Logs section inside README.md).
+
+**`Deprecated`**
+
+Use the [AuditLogRepository](AuditLogRepository.md) instead.
+eg.
+```ts
+class MyRepository{
+ constructor(
+ @repository.getter('AuditLogRepository')
+  public getAuditLogRepository: Getter<AuditLogRepository>
+ ){
+    // ...
+ }
+ // ...
+}
+```
+
 ## Hierarchy
 
 - `DefaultCrudRepository`<[`AuditLogs`](AuditLogs.md), typeof [`id`](AuditLogs.md#id)\>
@@ -50,7 +71,7 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L25)
+[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L44)
 
 ## Properties
 
@@ -60,7 +81,7 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L29)
+[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L48)
 
 ## Methods
 
@@ -85,7 +106,7 @@ DefaultCrudRepository.create
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L36)
+[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L55)
 
 ___
 
@@ -110,7 +131,7 @@ DefaultCrudRepository.createAll
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L50)
+[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L69)
 
 ___
 
@@ -136,7 +157,7 @@ DefaultCrudRepository.replaceById
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L89)
+[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L108)
 
 ___
 
@@ -161,7 +182,7 @@ DefaultCrudRepository.save
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L66)
+[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:85](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L85)
 
 ___
 
@@ -186,7 +207,7 @@ DefaultCrudRepository.update
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L70)
+[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L89)
 
 ___
 
@@ -212,7 +233,7 @@ DefaultCrudRepository.updateAll
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L74)
+[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L93)
 
 ___
 
@@ -238,4 +259,4 @@ DefaultCrudRepository.updateById
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L82)
+[services/video-conferencing-service/src/repositories/audit-logs.repository.ts:101](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/repositories/audit-logs.repository.ts#L101)

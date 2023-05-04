@@ -20,27 +20,27 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:146](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L146)
+[services/authentication-service/src/providers/keys.ts:146](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L146)
 
 ___
 
 ### CODEREADER\_PROVIDER
 
-• `Const` **CODEREADER\_PROVIDER**: `BindingKey`<[`CodeReaderFn`](../interfaces/CodeReaderFn.md)\>
+• `Const` **CODEREADER\_PROVIDER**: `BindingKey`<[`CodeReaderFn`](../modules.md#codereaderfn)\>
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:143](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L143)
+[services/authentication-service/src/providers/keys.ts:143](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L143)
 
 ___
 
 ### CODEWRITER\_PROVIDER
 
-• `Const` **CODEWRITER\_PROVIDER**: `BindingKey`<[`CodeWriterFn`](../interfaces/CodeWriterFn.md)\>
+• `Const` **CODEWRITER\_PROVIDER**: `BindingKey`<[`CodeWriterFn`](../modules.md#codewriterfn)\>
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:139](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L139)
+[services/authentication-service/src/providers/keys.ts:139](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L139)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:150](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L150)
+[services/authentication-service/src/providers/keys.ts:150](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L150)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:153](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keys.ts#L153)
+[services/authentication-service/src/providers/keys.ts:153](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keys.ts#L153)

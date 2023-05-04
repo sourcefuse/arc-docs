@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[types.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L42)
+[types.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/cache/src/types.ts#L42)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[types.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L39)
+[types.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/cache/src/types.ts#L39)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[types.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L41)
+[types.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/cache/src/types.ts#L41)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[types.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L40)
+[types.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/cache/src/types.ts#L40)
 
 ## Variables
 
@@ -98,4 +98,4 @@ Default options for the component
 
 #### Defined in
 
-[types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/packages/cache/src/types.ts#L22)
+[types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/cache/src/types.ts#L22)

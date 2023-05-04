@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`AzureAdPreVerifyFn`](../interfaces/AzureAdPreVerifyFn.md)\>
+- `Provider`<[`AzureAdPreVerifyFn`](../modules.md#azureadpreverifyfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`AzureAdPreVerifyFn`](../interfaces/AzureAdPreVerifyFn.md)
+▸ **value**(): [`AzureAdPreVerifyFn`](../modules.md#azureadpreverifyfn)
 
 #### Returns
 
-[`AzureAdPreVerifyFn`](../interfaces/AzureAdPreVerifyFn.md)
+[`AzureAdPreVerifyFn`](../modules.md#azureadpreverifyfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/azure-pre-verify.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/azure-pre-verify.provider.ts#L11)
+[services/authentication-service/src/providers/azure-pre-verify.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/azure-pre-verify.provider.ts#L11)

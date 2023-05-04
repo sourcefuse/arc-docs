@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`AzureAdSignUpFn`](../interfaces/AzureAdSignUpFn.md)\>
+- `Provider`<[`AzureAdSignUpFn`](../modules.md#azureadsignupfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`AzureAdSignUpFn`](../interfaces/AzureAdSignUpFn.md)
+▸ **value**(): [`AzureAdSignUpFn`](../modules.md#azureadsignupfn)
 
 #### Returns
 
-[`AzureAdSignUpFn`](../interfaces/AzureAdSignUpFn.md)
+[`AzureAdSignUpFn`](../modules.md#azureadsignupfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/azure-ad-signup.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/azure-ad-signup.provider.ts#L10)
+[services/authentication-service/src/providers/azure-ad-signup.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/azure-ad-signup.provider.ts#L10)

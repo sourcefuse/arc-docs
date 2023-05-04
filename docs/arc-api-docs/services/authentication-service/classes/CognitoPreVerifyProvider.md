@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`CognitoPreVerifyFn`](../interfaces/CognitoPreVerifyFn.md)\>
+- `Provider`<[`CognitoPreVerifyFn`](../modules.md#cognitopreverifyfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`CognitoPreVerifyFn`](../interfaces/CognitoPreVerifyFn.md)
+▸ **value**(): [`CognitoPreVerifyFn`](../modules.md#cognitopreverifyfn)
 
 #### Returns
 
-[`CognitoPreVerifyFn`](../interfaces/CognitoPreVerifyFn.md)
+[`CognitoPreVerifyFn`](../modules.md#cognitopreverifyfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/cognito-pre-verify.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/cognito-pre-verify.provider.ts#L10)
+[services/authentication-service/src/providers/cognito-pre-verify.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/cognito-pre-verify.provider.ts#L10)

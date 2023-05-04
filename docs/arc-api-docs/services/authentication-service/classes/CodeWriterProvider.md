@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`CodeWriterFn`](../interfaces/CodeWriterFn.md)\>
+- `Provider`<[`CodeWriterFn`](../modules.md#codewriterfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`CodeWriterFn`](../interfaces/CodeWriterFn.md)
+▸ **value**(): [`CodeWriterFn`](../modules.md#codewriterfn)
 
 #### Returns
 
-[`CodeWriterFn`](../interfaces/CodeWriterFn.md)
+[`CodeWriterFn`](../modules.md#codewriterfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/code-writer.provider.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/code-writer.provider.ts#L9)
+[services/authentication-service/src/providers/code-writer.provider.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/code-writer.provider.ts#L9)

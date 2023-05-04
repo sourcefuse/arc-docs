@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`GooglePreVerifyFn`](../interfaces/GooglePreVerifyFn.md)\>
+- `Provider`<[`GooglePreVerifyFn`](../modules.md#googlepreverifyfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`GooglePreVerifyFn`](../interfaces/GooglePreVerifyFn.md)
+▸ **value**(): [`GooglePreVerifyFn`](../modules.md#googlepreverifyfn)
 
 #### Returns
 
-[`GooglePreVerifyFn`](../interfaces/GooglePreVerifyFn.md)
+[`GooglePreVerifyFn`](../modules.md#googlepreverifyfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/google-pre-verify.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/google-pre-verify.provider.ts#L12)
+[services/authentication-service/src/providers/google-pre-verify.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/google-pre-verify.provider.ts#L12)

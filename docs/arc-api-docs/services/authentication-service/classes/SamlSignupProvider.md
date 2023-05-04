@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`SamlSignUpFn`](../interfaces/SamlSignUpFn.md)\>
+- `Provider`<[`SamlSignUpFn`](../modules.md#samlsignupfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`SamlSignUpFn`](../interfaces/SamlSignUpFn.md)
+▸ **value**(): [`SamlSignUpFn`](../modules.md#samlsignupfn)
 
 #### Returns
 
-[`SamlSignUpFn`](../interfaces/SamlSignUpFn.md)
+[`SamlSignUpFn`](../modules.md#samlsignupfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/saml-signup.provider.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/saml-signup.provider.ts#L6)
+[services/authentication-service/src/providers/saml-signup.provider.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/saml-signup.provider.ts#L6)

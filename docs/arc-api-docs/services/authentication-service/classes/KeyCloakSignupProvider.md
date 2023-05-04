@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`KeyCloakSignUpFn`](../interfaces/KeyCloakSignUpFn.md)\>
+- `Provider`<[`KeyCloakSignUpFn`](../modules.md#keycloaksignupfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`KeyCloakSignUpFn`](../interfaces/KeyCloakSignUpFn.md)
+▸ **value**(): [`KeyCloakSignUpFn`](../modules.md#keycloaksignupfn)
 
 #### Returns
 
-[`KeyCloakSignUpFn`](../interfaces/KeyCloakSignUpFn.md)
+[`KeyCloakSignUpFn`](../modules.md#keycloaksignupfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/keycloak-signup.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/keycloak-signup.provider.ts#L10)
+[services/authentication-service/src/providers/keycloak-signup.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/keycloak-signup.provider.ts#L10)

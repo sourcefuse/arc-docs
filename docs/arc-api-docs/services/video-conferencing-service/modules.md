@@ -20,6 +20,8 @@
 
 ### Classes
 
+- [AuditLog](classes/AuditLog.md)
+- [AuditLogRepository](classes/AuditLogRepository.md)
 - [AuditLogs](classes/AuditLogs.md)
 - [AuditLogsRepository](classes/AuditLogsRepository.md)
 - [SessionAttendees](classes/SessionAttendees.md)
@@ -55,6 +57,7 @@
 - [TwilioWebhookPayload](interfaces/TwilioWebhookPayload.md)
 - [VideoChatFeatures](interfaces/VideoChatFeatures.md)
 - [VideoChatInterface](interfaces/VideoChatInterface.md)
+- [VideoChatSessionRelation](interfaces/VideoChatSessionRelation.md)
 - [VonageAzureTargetOptions](interfaces/VonageAzureTargetOptions.md)
 - [VonageConfig](interfaces/VonageConfig.md)
 - [VonageMeetingOptions](interfaces/VonageMeetingOptions.md)
@@ -78,7 +81,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/keys.ts#L35)
+[services/video-conferencing-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/keys.ts#L35)
 
 ___
 
@@ -88,4 +91,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/video-conferencing-service/src/keys.ts#L40)
+[services/video-conferencing-service/src/keys.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/keys.ts#L40)

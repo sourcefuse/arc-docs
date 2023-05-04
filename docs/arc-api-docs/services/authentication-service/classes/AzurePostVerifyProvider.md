@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`AzureAdPostVerifyFn`](../interfaces/AzureAdPostVerifyFn.md)\>
+- `Provider`<[`AzureAdPostVerifyFn`](../modules.md#azureadpostverifyfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`AzureAdPostVerifyFn`](../interfaces/AzureAdPostVerifyFn.md)
+▸ **value**(): [`AzureAdPostVerifyFn`](../modules.md#azureadpostverifyfn)
 
 #### Returns
 
-[`AzureAdPostVerifyFn`](../interfaces/AzureAdPostVerifyFn.md)
+[`AzureAdPostVerifyFn`](../modules.md#azureadpostverifyfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/azure-post-verify.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/azure-post-verify.provider.ts#L11)
+[services/authentication-service/src/providers/azure-post-verify.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/azure-post-verify.provider.ts#L11)

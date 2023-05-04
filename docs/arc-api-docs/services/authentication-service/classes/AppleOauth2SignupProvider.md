@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`AppleSignUpFn`](../interfaces/AppleSignUpFn.md)\>
+- `Provider`<[`AppleSignUpFn`](../modules.md#applesignupfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`AppleSignUpFn`](../interfaces/AppleSignUpFn.md)
+▸ **value**(): [`AppleSignUpFn`](../modules.md#applesignupfn)
 
 #### Returns
 
-[`AppleSignUpFn`](../interfaces/AppleSignUpFn.md)
+[`AppleSignUpFn`](../modules.md#applesignupfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/apple-oauth2-signup.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/apple-oauth2-signup.provider.ts#L10)
+[services/authentication-service/src/providers/apple-oauth2-signup.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/apple-oauth2-signup.provider.ts#L10)

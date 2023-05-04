@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`FacebookSignUpFn`](../interfaces/FacebookSignUpFn.md)\>
+- `Provider`<[`FacebookSignUpFn`](../modules.md#facebooksignupfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`FacebookSignUpFn`](../interfaces/FacebookSignUpFn.md)
+▸ **value**(): [`FacebookSignUpFn`](../modules.md#facebooksignupfn)
 
 #### Returns
 
-[`FacebookSignUpFn`](../interfaces/FacebookSignUpFn.md)
+[`FacebookSignUpFn`](../modules.md#facebooksignupfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/facebook-oauth2-signup.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/6c16af104/services/authentication-service/src/providers/facebook-oauth2-signup.provider.ts#L12)
+[services/authentication-service/src/providers/facebook-oauth2-signup.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/facebook-oauth2-signup.provider.ts#L12)
