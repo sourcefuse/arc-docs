@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[services/notification-service/src/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/notification-service/src/types.ts#L22)
+[services/notification-service/src/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/types.ts#L22)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/notification-user.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/notification-service/src/models/notification-user.model.ts#L68)
+[services/notification-service/src/models/notification-user.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/models/notification-user.model.ts#L68)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/notification.model.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/notification-service/src/models/notification.model.ts#L73)
+[services/notification-service/src/models/notification.model.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/models/notification.model.ts#L73)
 
 ## Variables
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/types.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/notification-service/src/types.ts#L27)
+[services/notification-service/src/types.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/types.ts#L27)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/types.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/notification-service/src/types.ts#L26)
+[services/notification-service/src/types.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/types.ts#L26)

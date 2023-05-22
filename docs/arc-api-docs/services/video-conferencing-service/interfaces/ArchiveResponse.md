@@ -30,7 +30,7 @@ Session Id of the meeting that has been used for archiving
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/types.ts#L89)
+[services/video-conferencing-service/src/types.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/types.ts#L89)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/types.ts#L87)
+[services/video-conferencing-service/src/types.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/types.ts#L87)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/types.ts#L88)
+[services/video-conferencing-service/src/types.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/types.ts#L88)

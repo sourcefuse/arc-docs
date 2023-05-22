@@ -43,7 +43,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/tenant-config.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/tenant-config.model.ts#L42)
+[services/user-tenant-service/src/models/tenant-config.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/tenant-config.model.ts#L42)
 
 ## Properties
 
@@ -53,7 +53,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/tenant-config.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/tenant-config.model.ts#L24)
+[services/user-tenant-service/src/models/tenant-config.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/tenant-config.model.ts#L24)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/tenant-config.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/tenant-config.model.ts#L30)
+[services/user-tenant-service/src/models/tenant-config.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/tenant-config.model.ts#L30)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/tenant-config.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/tenant-config.model.ts#L17)
+[services/user-tenant-service/src/models/tenant-config.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/tenant-config.model.ts#L17)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/tenant-config.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/tenant-config.model.ts#L40)
+[services/user-tenant-service/src/models/tenant-config.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/tenant-config.model.ts#L40)

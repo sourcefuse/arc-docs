@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L60)
+[src/casbin-secure-sequence.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L60)
 
 ## Properties
 
@@ -76,7 +76,7 @@
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L73)
+[src/casbin-secure-sequence.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L73)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L71)
+[src/casbin-secure-sequence.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L71)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L77)
+[src/casbin-secure-sequence.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L77)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L75)
+[src/casbin-secure-sequence.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L75)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L58)
+[src/casbin-secure-sequence.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L58)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L62)
+[src/casbin-secure-sequence.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L62)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L79)
+[src/casbin-secure-sequence.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L79)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L87)
+[src/casbin-secure-sequence.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L87)
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L83)
+[src/casbin-secure-sequence.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L83)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L66)
+[src/casbin-secure-sequence.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L66)
 
 ___
 
@@ -179,7 +179,7 @@ To be injected via SequenceActions.INVOKE_MIDDLEWARE.
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L56)
+[src/casbin-secure-sequence.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L56)
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L69)
+[src/casbin-secure-sequence.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L69)
 
 ___
 
@@ -199,7 +199,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L64)
+[src/casbin-secure-sequence.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L64)
 
 ___
 
@@ -209,7 +209,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L81)
+[src/casbin-secure-sequence.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L81)
 
 ___
 
@@ -219,7 +219,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:85](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L85)
+[src/casbin-secure-sequence.ts:85](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L85)
 
 ___
 
@@ -229,7 +229,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L68)
+[src/casbin-secure-sequence.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L68)
 
 ___
 
@@ -239,7 +239,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L67)
+[src/casbin-secure-sequence.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L67)
 
 ## Methods
 
@@ -259,7 +259,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:164](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L164)
+[src/casbin-secure-sequence.ts:164](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L164)
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:184](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L184)
+[src/casbin-secure-sequence.ts:184](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L184)
 
 ___
 
@@ -303,4 +303,4 @@ SequenceHandler.handle
 
 #### Defined in
 
-[src/casbin-secure-sequence.ts:90](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/casbin-secure-sequence.ts#L90)
+[src/casbin-secure-sequence.ts:90](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/casbin-secure-sequence.ts#L90)

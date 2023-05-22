@@ -52,7 +52,7 @@ setting fallback to "opentok" will make the archive available  at the vonage das
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/providers/vonage/types.ts#L84)
+[services/video-conferencing-service/src/providers/vonage/types.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/providers/vonage/types.ts#L84)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:85](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/providers/vonage/types.ts#L85)
+[services/video-conferencing-service/src/providers/vonage/types.ts:85](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/providers/vonage/types.ts#L85)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:86](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/providers/vonage/types.ts#L86)
+[services/video-conferencing-service/src/providers/vonage/types.ts:86](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/providers/vonage/types.ts#L86)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/types.ts#L108)
+[services/video-conferencing-service/src/types.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/types.ts#L108)
 
 ___
 
@@ -96,4 +96,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/providers/vonage/types.ts#L83)
+[services/video-conferencing-service/src/providers/vonage/types.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/providers/vonage/types.ts#L83)

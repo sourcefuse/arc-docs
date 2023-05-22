@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:141](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user.model.ts#L141)
+[services/user-tenant-service/src/models/user.model.ts:141](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user.model.ts#L141)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:140](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user.model.ts#L140)
+[services/user-tenant-service/src/models/user.model.ts:140](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user.model.ts#L140)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:142](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user.model.ts#L142)
+[services/user-tenant-service/src/models/user.model.ts:142](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user.model.ts#L142)

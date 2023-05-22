@@ -49,7 +49,7 @@ node_modules/loopback4-soft-delete/dist/models/soft-delete-entity.d.ts:15
 
 #### Defined in
 
-[src/models/base-entity.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/models/base-entity.model.ts#L14)
+[src/models/base-entity.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/models/base-entity.model.ts#L14)
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 #### Defined in
 
-[src/models/base-entity.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/models/base-entity.model.ts#L21)
+[src/models/base-entity.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/models/base-entity.model.ts#L21)

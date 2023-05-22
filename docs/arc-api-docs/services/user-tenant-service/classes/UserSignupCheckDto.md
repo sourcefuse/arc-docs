@@ -36,7 +36,7 @@ Model.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-signup-check-dto.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user-signup-check-dto.model.ts#L15)
+[services/user-tenant-service/src/models/user-signup-check-dto.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-signup-check-dto.model.ts#L15)
 
 ## Properties
 
@@ -46,4 +46,4 @@ Model.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-signup-check-dto.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user-signup-check-dto.model.ts#L13)
+[services/user-tenant-service/src/models/user-signup-check-dto.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-signup-check-dto.model.ts#L13)

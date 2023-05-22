@@ -24,6 +24,9 @@
 - [AuditLogRepository](classes/AuditLogRepository.md)
 - [AuditLogs](classes/AuditLogs.md)
 - [AuditLogsRepository](classes/AuditLogsRepository.md)
+- [ChatArchiveService](classes/ChatArchiveService.md)
+- [ChatSessionService](classes/ChatSessionService.md)
+- [MeetingLinkIdGeneratorProvider](classes/MeetingLinkIdGeneratorProvider.md)
 - [SessionAttendees](classes/SessionAttendees.md)
 - [SessionAttendeesRepository](classes/SessionAttendeesRepository.md)
 - [TwilioProvider](classes/TwilioProvider.md)
@@ -68,20 +71,42 @@
 - [VonageVideoChat](interfaces/VonageVideoChat.md)
 - [WebhookPayloadParameters](interfaces/WebhookPayloadParameters.md)
 
+### Type Aliases
+
+- [MeetingLinkIdGenerator](modules.md#meetinglinkidgenerator)
+
 ### Variables
 
 - [MeetLinkGeneratorProvider](modules.md#meetlinkgeneratorprovider)
 - [VideoConfDatasource](modules.md#videoconfdatasource)
 
+## Type Aliases
+
+### MeetingLinkIdGenerator
+
+Ƭ **MeetingLinkIdGenerator**: () => `Promise`<`string`\>
+
+#### Type declaration
+
+▸ (): `Promise`<`string`\>
+
+##### Returns
+
+`Promise`<`string`\>
+
+#### Defined in
+
+[services/video-conferencing-service/src/services/meeting-link-id-generator.provider.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/services/meeting-link-id-generator.provider.ts#L8)
+
 ## Variables
 
 ### MeetLinkGeneratorProvider
 
-• `Const` **MeetLinkGeneratorProvider**: `BindingKey`<`MeetingLinkIdGenerator`\>
+• `Const` **MeetLinkGeneratorProvider**: `BindingKey`<[`MeetingLinkIdGenerator`](modules.md#meetinglinkidgenerator)\>
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/keys.ts#L35)
+[services/video-conferencing-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/keys.ts#L35)
 
 ___
 
@@ -91,4 +116,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/video-conferencing-service/src/keys.ts#L40)
+[services/video-conferencing-service/src/keys.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/keys.ts#L40)

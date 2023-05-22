@@ -50,7 +50,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/working-hour.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/working-hour.model.ts#L75)
+[services/scheduler-service/src/models/working-hour.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/working-hour.model.ts#L75)
 
 ## Properties
 
@@ -60,7 +60,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/working-hour.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/working-hour.model.ts#L61)
+[services/scheduler-service/src/models/working-hour.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/working-hour.model.ts#L61)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/working-hour.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/working-hour.model.ts#L41)
+[services/scheduler-service/src/models/working-hour.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/working-hour.model.ts#L41)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/working-hour.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/working-hour.model.ts#L46)
+[services/scheduler-service/src/models/working-hour.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/working-hour.model.ts#L46)
 
 ___
 
@@ -122,7 +122,7 @@ ExternalIdentifierEnabledEntity.extId
 
 #### Defined in
 
-[services/scheduler-service/src/models/working-hour.model.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/working-hour.model.ts#L67)
+[services/scheduler-service/src/models/working-hour.model.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/working-hour.model.ts#L67)
 
 ___
 
@@ -136,7 +136,7 @@ ExternalIdentifierEnabledEntity.extMetadata
 
 #### Defined in
 
-[services/scheduler-service/src/models/working-hour.model.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/working-hour.model.ts#L73)
+[services/scheduler-service/src/models/working-hour.model.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/working-hour.model.ts#L73)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/working-hour.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/working-hour.model.ts#L24)
+[services/scheduler-service/src/models/working-hour.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/working-hour.model.ts#L24)
 
 ___
 
@@ -184,4 +184,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/working-hour.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/working-hour.model.ts#L51)
+[services/scheduler-service/src/models/working-hour.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/working-hour.model.ts#L51)

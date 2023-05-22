@@ -10,6 +10,7 @@
 
 ### Classes
 
+- [AuditLog](classes/AuditLog.md)
 - [AuthClient](classes/AuthClient.md)
 - [Group](classes/Group.md)
 - [GroupUserCountView](classes/GroupUserCountView.md)
@@ -65,7 +66,7 @@
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/group.model.ts#L61)
+[services/user-tenant-service/src/models/group.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/group.model.ts#L61)
 
 ___
 
@@ -75,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/role.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/role.model.ts#L70)
+[services/user-tenant-service/src/models/role.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/role.model.ts#L70)
 
 ___
 
@@ -85,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/tenant-config.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/tenant-config.model.ts#L51)
+[services/user-tenant-service/src/models/tenant-config.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/tenant-config.model.ts#L51)
 
 ___
 
@@ -95,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/tenant.model.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/tenant.model.ts#L112)
+[services/user-tenant-service/src/models/tenant.model.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/tenant.model.ts#L112)
 
 ___
 
@@ -105,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-credentials.model.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user-credentials.model.ts#L69)
+[services/user-tenant-service/src/models/user-credentials.model.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-credentials.model.ts#L69)
 
 ___
 
@@ -115,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-group.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user-group.model.ts#L61)
+[services/user-tenant-service/src/models/user-group.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-group.model.ts#L61)
 
 ___
 
@@ -125,7 +126,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant.model.ts:91](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user-tenant.model.ts#L91)
+[services/user-tenant-service/src/models/user-tenant.model.ts:91](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-tenant.model.ts#L91)
 
 ___
 
@@ -135,7 +136,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:145](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user.model.ts#L145)
+[services/user-tenant-service/src/models/user.model.ts:145](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user.model.ts#L145)
 
 ## Variables
 
@@ -147,7 +148,7 @@ Default options for the component
 
 #### Defined in
 
-[services/user-tenant-service/src/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/types.ts#L18)
+[services/user-tenant-service/src/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/types.ts#L18)
 
 ___
 
@@ -157,7 +158,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/keys.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/keys.ts#L18)
+[services/user-tenant-service/src/keys.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/keys.ts#L18)
 
 ___
 
@@ -167,4 +168,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/keys.ts#L17)
+[services/user-tenant-service/src/keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/keys.ts#L17)

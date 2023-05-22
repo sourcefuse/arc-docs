@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/saml-signup.provider.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/saml-signup.provider.ts#L6)
+[services/authentication-service/src/providers/saml-signup.provider.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/providers/saml-signup.provider.ts#L6)

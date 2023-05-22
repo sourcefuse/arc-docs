@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[feature-toggle/src/component.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/feature-toggle/src/component.ts#L24)
+[feature-toggle/src/component.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/feature-toggle/src/component.ts#L24)
 
 ## Properties
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[feature-toggle/src/component.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/feature-toggle/src/component.ts#L26)
+[feature-toggle/src/component.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/feature-toggle/src/component.ts#L26)
 
 ___
 
@@ -56,7 +56,7 @@ Component.bindings
 
 #### Defined in
 
-[feature-toggle/src/component.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/feature-toggle/src/component.ts#L23)
+[feature-toggle/src/component.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/feature-toggle/src/component.ts#L23)
 
 ___
 
@@ -70,4 +70,4 @@ Component.providers
 
 #### Defined in
 
-[feature-toggle/src/component.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/feature-toggle/src/component.ts#L22)
+[feature-toggle/src/component.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/feature-toggle/src/component.ts#L22)

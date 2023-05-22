@@ -42,4 +42,4 @@ Provider.value
 
 #### Defined in
 
-[services/notification-service/src/providers/channel-manager.service.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/notification-service/src/providers/channel-manager.service.ts#L10)
+[services/notification-service/src/providers/channel-manager.service.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/providers/channel-manager.service.ts#L10)

@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/search-service/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/search-service/src/types.ts#L20)
+[services/search-service/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/search-service/src/types.ts#L20)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/search-service/src/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/search-service/src/types.ts#L19)
+[services/search-service/src/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/search-service/src/types.ts#L19)

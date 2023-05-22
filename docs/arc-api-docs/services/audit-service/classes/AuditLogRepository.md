@@ -35,4 +35,4 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[services/audit-service/src/repositories/audit-log.repository.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/audit-service/src/repositories/audit-log.repository.ts#L15)
+[services/audit-service/src/repositories/audit-log.repository.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/audit-service/src/repositories/audit-log.repository.ts#L15)

@@ -49,7 +49,7 @@ BaseEntity.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant.model.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user-tenant.model.ts#L79)
+[services/user-tenant-service/src/models/user-tenant.model.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-tenant.model.ts#L79)
 
 ## Properties
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user-tenant.model.ts#L27)
+[services/user-tenant-service/src/models/user-tenant.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-tenant.model.ts#L27)
 
 ___
 
@@ -87,7 +87,7 @@ IUserPrefs.locale
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user-tenant.model.ts#L32)
+[services/user-tenant-service/src/models/user-tenant.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-tenant.model.ts#L32)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant.model.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user-tenant.model.ts#L71)
+[services/user-tenant-service/src/models/user-tenant.model.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-tenant.model.ts#L71)
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user-tenant.model.ts#L41)
+[services/user-tenant-service/src/models/user-tenant.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-tenant.model.ts#L41)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user-tenant.model.ts#L61)
+[services/user-tenant-service/src/models/user-tenant.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-tenant.model.ts#L61)
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant.model.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user-tenant.model.ts#L77)
+[services/user-tenant-service/src/models/user-tenant.model.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-tenant.model.ts#L77)
 
 ___
 
@@ -151,7 +151,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user-tenant.model.ts#L51)
+[services/user-tenant-service/src/models/user-tenant.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-tenant.model.ts#L51)
 
 ___
 
@@ -161,4 +161,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant.model.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/user-tenant-service/src/models/user-tenant.model.ts#L74)
+[services/user-tenant-service/src/models/user-tenant.model.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-tenant.model.ts#L74)

@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[types/party-marker.type.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/in-mail-service/src/types/party-marker.type.ts#L9)
+[types/party-marker.type.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/in-mail-service/src/types/party-marker.type.ts#L9)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[types/party-marker.type.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/in-mail-service/src/types/party-marker.type.ts#L8)
+[types/party-marker.type.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/in-mail-service/src/types/party-marker.type.ts#L8)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[types/party-marker.type.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/in-mail-service/src/types/party-marker.type.ts#L6)
+[types/party-marker.type.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/in-mail-service/src/types/party-marker.type.ts#L6)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[types/party-marker.type.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/in-mail-service/src/types/party-marker.type.ts#L7)
+[types/party-marker.type.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/in-mail-service/src/types/party-marker.type.ts#L7)

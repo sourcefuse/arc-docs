@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[providers/types.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/types.ts#L13)
+[providers/types.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/payment-service/src/providers/types.ts#L13)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `payorder` | `Orders` |
+| `payorder` | [`Orders`](../classes/Orders.md) |
 | `paymentTemplate` | `undefined` \| `string` |
 
 #### Returns
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[providers/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/types.ts#L9)
+[providers/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/payment-service/src/providers/types.ts#L9)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[providers/types.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/types.ts#L14)
+[providers/types.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/payment-service/src/providers/types.ts#L14)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[providers/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/types.ts#L19)
+[providers/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/payment-service/src/providers/types.ts#L19)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `subscriptions` | `Subscriptions` |
+| `subscriptions` | [`Subscriptions`](../classes/Subscriptions.md) |
 | `paymentTemplate` | `undefined` \| `string` |
 
 #### Returns
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[providers/types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/types.ts#L15)
+[providers/types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/payment-service/src/providers/types.ts#L15)
 
 ___
 
@@ -133,4 +133,4 @@ ___
 
 #### Defined in
 
-[providers/types.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/types.ts#L26)
+[providers/types.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/payment-service/src/providers/types.ts#L26)

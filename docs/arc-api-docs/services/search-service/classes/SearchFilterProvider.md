@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/search-service/src/services/search-filter.provider.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/search-service/src/services/search-filter.provider.ts#L16)
+[services/search-service/src/services/search-filter.provider.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/search-service/src/services/search-filter.provider.ts#L16)

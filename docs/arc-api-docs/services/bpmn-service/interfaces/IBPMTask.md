@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/types.ts#L18)
+[services/bpmn-service/src/types/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/bpmn-service/src/types/types.ts#L18)
 
 ## Methods
 
@@ -52,4 +52,4 @@
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/bpmn-service/src/types/types.ts#L17)
+[services/bpmn-service/src/types/types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/bpmn-service/src/types/types.ts#L17)

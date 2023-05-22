@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/cognito-oauth2-signup.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/cognito-oauth2-signup.provider.ts#L10)
+[services/authentication-service/src/providers/cognito-oauth2-signup.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/providers/cognito-oauth2-signup.provider.ts#L10)

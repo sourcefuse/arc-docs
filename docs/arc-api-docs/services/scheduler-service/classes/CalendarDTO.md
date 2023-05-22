@@ -46,7 +46,7 @@ Model.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.dto.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/calendar.dto.ts#L83)
+[services/scheduler-service/src/models/calendar.dto.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.dto.ts#L83)
 
 ## Properties
 
@@ -56,7 +56,7 @@ Model.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.dto.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/calendar.dto.ts#L27)
+[services/scheduler-service/src/models/calendar.dto.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.dto.ts#L27)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.dto.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/calendar.dto.ts#L67)
+[services/scheduler-service/src/models/calendar.dto.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.dto.ts#L67)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.dto.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/calendar.dto.ts#L73)
+[services/scheduler-service/src/models/calendar.dto.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.dto.ts#L73)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.dto.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/calendar.dto.ts#L15)
+[services/scheduler-service/src/models/calendar.dto.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.dto.ts#L15)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.dto.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/calendar.dto.ts#L45)
+[services/scheduler-service/src/models/calendar.dto.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.dto.ts#L45)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.dto.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/calendar.dto.ts#L35)
+[services/scheduler-service/src/models/calendar.dto.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.dto.ts#L35)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.dto.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/calendar.dto.ts#L20)
+[services/scheduler-service/src/models/calendar.dto.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.dto.ts#L20)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.dto.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/calendar.dto.ts#L81)
+[services/scheduler-service/src/models/calendar.dto.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.dto.ts#L81)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.dto.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/calendar.dto.ts#L53)
+[services/scheduler-service/src/models/calendar.dto.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.dto.ts#L53)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.dto.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/calendar.dto.ts#L61)
+[services/scheduler-service/src/models/calendar.dto.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.dto.ts#L61)
 
 ___
 
@@ -156,4 +156,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.dto.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/scheduler-service/src/models/calendar.dto.ts#L76)
+[services/scheduler-service/src/models/calendar.dto.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.dto.ts#L76)

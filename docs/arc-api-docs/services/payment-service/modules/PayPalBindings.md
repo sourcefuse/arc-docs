@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[providers/paypal/keys.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/paypal/keys.ts#L5)
+[providers/paypal/keys.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/payment-service/src/providers/paypal/keys.ts#L5)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[providers/paypal/keys.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/payment-service/src/providers/paypal/keys.ts#L9)
+[providers/paypal/keys.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/payment-service/src/providers/paypal/keys.ts#L9)

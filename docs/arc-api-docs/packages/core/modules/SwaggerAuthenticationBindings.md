@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[src/components/swagger-authentication/keys.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/packages/core/src/components/swagger-authentication/keys.ts#L9)
+[src/components/swagger-authentication/keys.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/components/swagger-authentication/keys.ts#L9)

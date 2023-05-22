@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/otp-sender.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/089fc2dc0/services/authentication-service/src/providers/otp-sender.provider.ts#L11)
+[services/authentication-service/src/providers/otp-sender.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/providers/otp-sender.provider.ts#L11)
