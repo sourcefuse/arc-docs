@@ -1,3 +1,4 @@
 title: ARC UI
 nav:
-  - Introduction: "arc-ui-docs"
+  - ARC React: "arc-ui-docs/arc-react"
+  - ARC Angular: "arc-ui-docs/arc-angular"
