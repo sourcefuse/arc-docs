@@ -30,6 +30,7 @@ For enterprise grade projects, ARC IaC is an excellent foundation and accelerato
   * [OpenSearch](modules/terraform-aws-refarch-opensearch/README.md)
   * [TypeScript Lambda Boilerplate](modules/typescript-lambda-boilerplate/README.md)
   * [Cloud Custodian](modules/terraform-aws-cloud-custodian/README.md)
+  * [CloudFront](modules/terraform-aws-refarch-cloudfront/README.md)
 * Cloud Native
   * [Kubernetes App](modules/terraform-k8s-app/README.md)
 
