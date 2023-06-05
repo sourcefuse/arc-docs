@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[src/enums/auth-error-keys.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/enums/auth-error-keys.enum.ts#L7)
+[src/enums/auth-error-keys.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/enums/auth-error-keys.enum.ts#L7)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[src/enums/auth-error-keys.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/enums/auth-error-keys.enum.ts#L14)
+[src/enums/auth-error-keys.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/enums/auth-error-keys.enum.ts#L14)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[src/enums/auth-error-keys.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/enums/auth-error-keys.enum.ts#L12)
+[src/enums/auth-error-keys.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/enums/auth-error-keys.enum.ts#L12)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[src/enums/auth-error-keys.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/enums/auth-error-keys.enum.ts#L11)
+[src/enums/auth-error-keys.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/enums/auth-error-keys.enum.ts#L11)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[src/enums/auth-error-keys.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/enums/auth-error-keys.enum.ts#L10)
+[src/enums/auth-error-keys.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/enums/auth-error-keys.enum.ts#L10)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[src/enums/auth-error-keys.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/enums/auth-error-keys.enum.ts#L9)
+[src/enums/auth-error-keys.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/enums/auth-error-keys.enum.ts#L9)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[src/enums/auth-error-keys.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/enums/auth-error-keys.enum.ts#L13)
+[src/enums/auth-error-keys.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/enums/auth-error-keys.enum.ts#L13)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/enums/auth-error-keys.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/enums/auth-error-keys.enum.ts#L6)
+[src/enums/auth-error-keys.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/enums/auth-error-keys.enum.ts#L6)
 
 ___
 
@@ -104,4 +104,4 @@ ___
 
 #### Defined in
 
-[src/enums/auth-error-keys.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/enums/auth-error-keys.enum.ts#L8)
+[src/enums/auth-error-keys.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/enums/auth-error-keys.enum.ts#L8)

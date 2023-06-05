@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/component.ts#L75)
+[services/scheduler-service/src/component.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/component.ts#L75)
 
 ## Properties
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/component.ts#L77)
+[services/scheduler-service/src/component.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/component.ts#L77)
 
 ___
 
@@ -65,7 +65,7 @@ Component.bindings
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:156](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/component.ts#L156)
+[services/scheduler-service/src/component.ts:156](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/component.ts#L156)
 
 ___
 
@@ -81,7 +81,7 @@ Component.controllers
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:173](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/component.ts#L173)
+[services/scheduler-service/src/component.ts:173](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/component.ts#L173)
 
 ___
 
@@ -94,7 +94,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:168](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/component.ts#L168)
+[services/scheduler-service/src/component.ts:168](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/component.ts#L168)
 
 ___
 
@@ -108,7 +108,7 @@ Component.providers
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:154](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/component.ts#L154)
+[services/scheduler-service/src/component.ts:154](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/component.ts#L154)
 
 ___
 
@@ -121,7 +121,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:162](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/component.ts#L162)
+[services/scheduler-service/src/component.ts:162](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/component.ts#L162)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/component.ts#L79)
+[services/scheduler-service/src/component.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/component.ts#L79)
 
 ## Methods
 
@@ -153,4 +153,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:180](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/component.ts#L180)
+[services/scheduler-service/src/component.ts:180](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/component.ts#L180)

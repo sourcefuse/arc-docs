@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/models/auth-secure-client.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/models/auth-secure-client.model.ts#L19)
+[services/authentication-service/src/models/auth-secure-client.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/auth-secure-client.model.ts#L19)
 
 ## Properties
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/models/auth-client.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/models/auth-client.model.ts#L51)
+[services/authentication-service/src/models/auth-client.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/auth-client.model.ts#L51)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/auth-client.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/models/auth-client.model.ts#L65)
+[services/authentication-service/src/models/auth-client.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/auth-client.model.ts#L65)
 
 ___
 
@@ -98,7 +98,7 @@ IAuthSecureClient.clientId
 
 #### Defined in
 
-[services/authentication-service/src/models/auth-client.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/models/auth-client.model.ts#L24)
+[services/authentication-service/src/models/auth-client.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/auth-client.model.ts#L24)
 
 ___
 
@@ -116,7 +116,7 @@ IAuthSecureClient.clientSecret
 
 #### Defined in
 
-[services/authentication-service/src/models/auth-client.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/models/auth-client.model.ts#L31)
+[services/authentication-service/src/models/auth-client.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/auth-client.model.ts#L31)
 
 ___
 
@@ -130,7 +130,7 @@ IAuthSecureClient.clientType
 
 #### Defined in
 
-[services/authentication-service/src/models/auth-secure-client.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/models/auth-secure-client.model.ts#L17)
+[services/authentication-service/src/models/auth-secure-client.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/auth-secure-client.model.ts#L17)
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/auth-client.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/models/auth-client.model.ts#L17)
+[services/authentication-service/src/models/auth-client.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/auth-client.model.ts#L17)
 
 ___
 
@@ -218,7 +218,7 @@ IAuthSecureClient.redirectUrl
 
 #### Defined in
 
-[services/authentication-service/src/models/auth-client.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/models/auth-client.model.ts#L44)
+[services/authentication-service/src/models/auth-client.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/auth-client.model.ts#L44)
 
 ___
 
@@ -232,7 +232,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/auth-client.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/models/auth-client.model.ts#L58)
+[services/authentication-service/src/models/auth-client.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/auth-client.model.ts#L58)
 
 ___
 
@@ -246,4 +246,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/auth-client.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/models/auth-client.model.ts#L38)
+[services/authentication-service/src/models/auth-client.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/auth-client.model.ts#L38)

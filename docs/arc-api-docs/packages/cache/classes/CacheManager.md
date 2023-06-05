@@ -30,13 +30,13 @@
 
 #### Defined in
 
-[mixins/cache.mixin.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/cache/src/mixins/cache.mixin.ts#L26)
+[mixins/cache.mixin.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/mixins/cache.mixin.ts#L27)
 
 ## Methods
 
 ### CacheRepositoryMixin
 
-▸ `Static` **CacheRepositoryMixin**<`M`, `ID`, `Relations`, `R`\>(`baseClass`, `cacheOptions`): `R` & `Constructor`<[`ICacheMixin`](../interfaces/ICacheMixin.md)<`M`, `ID`\>\>
+▸ `Static` **CacheRepositoryMixin**<`M`, `ID`, `Relations`, `R`\>(`baseClass`, `cacheOptions`): `R` & [`AbstractConstructor`](../modules.md#abstractconstructor)<[`ICacheMixin`](../interfaces/ICacheMixin.md)<`M`, `ID`\>\>
 
 #### Type parameters
 
@@ -45,7 +45,7 @@
 | `M` | extends `Entity`<`M`\> |
 | `ID` | `ID` |
 | `Relations` | extends `object` |
-| `R` | extends `MixinTarget`<`DefaultCrudRepository`<`M`, `ID`, `Relations`\>\> |
+| `R` | extends [`CacheMixinBase`](../modules.md#cachemixinbase)<`M`, `ID`, `Relations`\> |
 
 #### Parameters
 
@@ -56,8 +56,8 @@
 
 #### Returns
 
-`R` & `Constructor`<[`ICacheMixin`](../interfaces/ICacheMixin.md)<`M`, `ID`\>\>
+`R` & [`AbstractConstructor`](../modules.md#abstractconstructor)<[`ICacheMixin`](../interfaces/ICacheMixin.md)<`M`, `ID`\>\>
 
 #### Defined in
 
-[mixins/cache.mixin.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/cache/src/mixins/cache.mixin.ts#L29)
+[mixins/cache.mixin.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/mixins/cache.mixin.ts#L30)

@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts#L21)
+[services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts#L21)
 
 ## Properties
 
@@ -43,7 +43,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts#L23)
+[services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts#L23)
 
 ## Methods
 
@@ -63,7 +63,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts#L70)
+[services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts#L70)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts#L26)
+[services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts#L26)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts#L48)
+[services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts#L48)
 
 ___
 
@@ -117,4 +117,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts:94](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts#L94)
+[services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts:94](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/controllers/video-chat-archive.controller.ts#L94)

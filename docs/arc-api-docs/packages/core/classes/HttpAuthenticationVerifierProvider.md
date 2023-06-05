@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[src/components/swagger-authentication/providers/http-authentication.verifier.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/components/swagger-authentication/providers/http-authentication.verifier.ts#L13)
+[src/components/swagger-authentication/providers/http-authentication.verifier.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/providers/http-authentication.verifier.ts#L13)
 
 ## Properties
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[src/components/swagger-authentication/providers/http-authentication.verifier.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/components/swagger-authentication/providers/http-authentication.verifier.ts#L15)
+[src/components/swagger-authentication/providers/http-authentication.verifier.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/providers/http-authentication.verifier.ts#L15)
 
 ## Methods
 
@@ -62,4 +62,4 @@ Provider.value
 
 #### Defined in
 
-[src/components/swagger-authentication/providers/http-authentication.verifier.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/core/src/components/swagger-authentication/providers/http-authentication.verifier.ts#L17)
+[src/components/swagger-authentication/providers/http-authentication.verifier.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/providers/http-authentication.verifier.ts#L17)

@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.model.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.model.ts#L100)
+[services/scheduler-service/src/models/calendar.model.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/calendar.model.ts#L100)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.model.ts:101](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.model.ts#L101)
+[services/scheduler-service/src/models/calendar.model.ts:101](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/calendar.model.ts#L101)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.model.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/calendar.model.ts#L102)
+[services/scheduler-service/src/models/calendar.model.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/calendar.model.ts#L102)

@@ -30,4 +30,4 @@
 
 #### Defined in
 
-[services/audit-service/src/types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/audit-service/src/types.ts#L15)
+[services/audit-service/src/types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/audit-service/src/types.ts#L15)

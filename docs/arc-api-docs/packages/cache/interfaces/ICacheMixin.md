@@ -25,19 +25,19 @@
 
 ### getCacheDataSource
 
-• **getCacheDataSource**: () => `Promise`<`DataSource`\>
+• **getCacheDataSource**: () => `Promise`<`DataSource` \| `SequelizeDataSource`\>
 
 #### Type declaration
 
-▸ (): `Promise`<`DataSource`\>
+▸ (): `Promise`<`DataSource` \| `SequelizeDataSource`\>
 
 ##### Returns
 
-`Promise`<`DataSource`\>
+`Promise`<`DataSource` \| `SequelizeDataSource`\>
 
 #### Defined in
 
-[types.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/cache/src/types.ts#L29)
+[types.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/types.ts#L36)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[types.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/cache/src/types.ts#L30)
+[types.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/types.ts#L37)
 
 ## Methods
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[types.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/cache/src/types.ts#L31)
+[types.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/types.ts#L38)
 
 ___
 
@@ -82,4 +82,4 @@ ___
 
 #### Defined in
 
-[types.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/cache/src/types.ts#L32)
+[types.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/types.ts#L39)

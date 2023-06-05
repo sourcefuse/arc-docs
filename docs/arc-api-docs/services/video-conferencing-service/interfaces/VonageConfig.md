@@ -28,7 +28,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/providers/vonage/types.ts#L25)
+[services/video-conferencing-service/src/providers/vonage/types.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/providers/vonage/types.ts#L25)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/providers/vonage/types.ts#L26)
+[services/video-conferencing-service/src/providers/vonage/types.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/providers/vonage/types.ts#L26)
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/providers/vonage/types.ts#L27)
+[services/video-conferencing-service/src/providers/vonage/types.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/providers/vonage/types.ts#L27)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/providers/vonage/types.ts#L28)
+[services/video-conferencing-service/src/providers/vonage/types.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/providers/vonage/types.ts#L28)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/providers/vonage/types.ts#L30)
+[services/video-conferencing-service/src/providers/vonage/types.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/providers/vonage/types.ts#L30)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/providers/vonage/types.ts#L29)
+[services/video-conferencing-service/src/providers/vonage/types.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/providers/vonage/types.ts#L29)
 
 ___
 
@@ -92,4 +92,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/types.ts#L18)
+[services/video-conferencing-service/src/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/types.ts#L18)

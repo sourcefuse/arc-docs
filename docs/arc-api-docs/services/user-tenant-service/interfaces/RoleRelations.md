@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/user-tenant-service/src/models/role.model.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/role.model.ts#L67)
+[services/user-tenant-service/src/models/role.model.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/role.model.ts#L67)

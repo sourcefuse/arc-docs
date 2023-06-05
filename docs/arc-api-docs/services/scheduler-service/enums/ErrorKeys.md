@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/error-keys.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/enums/error-keys.ts#L7)
+[services/scheduler-service/src/models/enums/error-keys.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/enums/error-keys.ts#L7)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/error-keys.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/enums/error-keys.ts#L19)
+[services/scheduler-service/src/models/enums/error-keys.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/enums/error-keys.ts#L19)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/error-keys.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/enums/error-keys.ts#L15)
+[services/scheduler-service/src/models/enums/error-keys.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/enums/error-keys.ts#L15)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/error-keys.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/enums/error-keys.ts#L23)
+[services/scheduler-service/src/models/enums/error-keys.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/enums/error-keys.ts#L23)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/error-keys.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/enums/error-keys.ts#L9)
+[services/scheduler-service/src/models/enums/error-keys.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/enums/error-keys.ts#L9)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/error-keys.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/enums/error-keys.ts#L12)
+[services/scheduler-service/src/models/enums/error-keys.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/enums/error-keys.ts#L12)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/error-keys.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/enums/error-keys.ts#L21)
+[services/scheduler-service/src/models/enums/error-keys.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/enums/error-keys.ts#L21)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/error-keys.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/enums/error-keys.ts#L16)
+[services/scheduler-service/src/models/enums/error-keys.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/enums/error-keys.ts#L16)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/error-keys.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/enums/error-keys.ts#L8)
+[services/scheduler-service/src/models/enums/error-keys.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/enums/error-keys.ts#L8)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/error-keys.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/enums/error-keys.ts#L11)
+[services/scheduler-service/src/models/enums/error-keys.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/enums/error-keys.ts#L11)
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/error-keys.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/models/enums/error-keys.ts#L10)
+[services/scheduler-service/src/models/enums/error-keys.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/enums/error-keys.ts#L10)

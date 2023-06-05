@@ -18,4 +18,4 @@ Binding keys used by this component.
 
 #### Defined in
 
-[keys.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/payment-service/src/keys.ts#L12)
+[keys.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/payment-service/src/keys.ts#L12)

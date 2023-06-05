@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/authentication-service/src/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/types.ts#L23)
+[services/authentication-service/src/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/types.ts#L23)

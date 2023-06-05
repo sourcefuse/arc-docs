@@ -53,7 +53,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user-level-permission.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/repositories/user-level-permission.repository.ts#L27)
+[services/authentication-service/src/repositories/user-level-permission.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/repositories/user-level-permission.repository.ts#L27)
 
 ## Properties
 
@@ -67,7 +67,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user-level-permission.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/repositories/user-level-permission.repository.ts#L31)
+[services/authentication-service/src/repositories/user-level-permission.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/repositories/user-level-permission.repository.ts#L31)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user-level-permission.repository.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/repositories/user-level-permission.repository.ts#L22)
+[services/authentication-service/src/repositories/user-level-permission.repository.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/repositories/user-level-permission.repository.ts#L22)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user-level-permission.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/repositories/user-level-permission.repository.ts#L35)
+[services/authentication-service/src/repositories/user-level-permission.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/repositories/user-level-permission.repository.ts#L35)
 
 ## Methods
 

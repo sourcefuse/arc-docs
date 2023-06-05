@@ -47,7 +47,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-level-permission.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-level-permission.model.ts#L46)
+[services/user-tenant-service/src/models/user-level-permission.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/user-level-permission.model.ts#L46)
 
 ## Properties
 
@@ -61,7 +61,7 @@ UserPermission.allowed
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-level-permission.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-level-permission.model.ts#L34)
+[services/user-tenant-service/src/models/user-level-permission.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/user-level-permission.model.ts#L34)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-level-permission.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-level-permission.model.ts#L21)
+[services/user-tenant-service/src/models/user-level-permission.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/user-level-permission.model.ts#L21)
 
 ___
 
@@ -141,7 +141,7 @@ UserPermission.permission
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-level-permission.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-level-permission.model.ts#L27)
+[services/user-tenant-service/src/models/user-level-permission.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/user-level-permission.model.ts#L27)
 
 ___
 
@@ -151,4 +151,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-level-permission.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/user-level-permission.model.ts#L44)
+[services/user-tenant-service/src/models/user-level-permission.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/user-level-permission.model.ts#L44)

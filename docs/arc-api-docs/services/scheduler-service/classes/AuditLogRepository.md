@@ -41,4 +41,4 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/audit.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/scheduler-service/src/repositories/audit.repository.ts#L16)
+[services/scheduler-service/src/repositories/audit.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/repositories/audit.repository.ts#L16)

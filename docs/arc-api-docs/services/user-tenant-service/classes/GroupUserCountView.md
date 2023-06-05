@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group-user-count-view.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/group-user-count-view.model.ts#L21)
+[services/user-tenant-service/src/models/group-user-count-view.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/group-user-count-view.model.ts#L21)
 
 ## Properties
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/group.model.ts#L31)
+[services/user-tenant-service/src/models/group.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/group.model.ts#L31)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/group.model.ts#L47)
+[services/user-tenant-service/src/models/group.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/group.model.ts#L47)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/group.model.ts#L21)
+[services/user-tenant-service/src/models/group.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/group.model.ts#L21)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/group.model.ts#L26)
+[services/user-tenant-service/src/models/group.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/group.model.ts#L26)
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/group.model.ts#L38)
+[services/user-tenant-service/src/models/group.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/group.model.ts#L38)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group-user-count-view.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/group-user-count-view.model.ts#L19)
+[services/user-tenant-service/src/models/group-user-count-view.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/group-user-count-view.model.ts#L19)
 
 ___
 
@@ -196,4 +196,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/user-tenant-service/src/models/group.model.ts#L50)
+[services/user-tenant-service/src/models/group.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/group.model.ts#L50)

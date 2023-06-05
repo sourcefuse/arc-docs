@@ -22,4 +22,4 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/types.ts#L18)
+[services/video-conferencing-service/src/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/types.ts#L18)

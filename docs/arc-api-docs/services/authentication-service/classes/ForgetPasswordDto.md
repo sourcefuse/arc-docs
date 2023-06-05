@@ -42,7 +42,7 @@ Model.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/forget-password-dto.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/models/forget-password-dto.model.ts#L31)
+[services/authentication-service/src/models/forget-password-dto.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/forget-password-dto.model.ts#L31)
 
 ## Properties
 
@@ -56,7 +56,7 @@ Model.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/forget-password-dto.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/models/forget-password-dto.model.ts#L22)
+[services/authentication-service/src/models/forget-password-dto.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/forget-password-dto.model.ts#L22)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/forget-password-dto.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/models/forget-password-dto.model.ts#L28)
+[services/authentication-service/src/models/forget-password-dto.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/forget-password-dto.model.ts#L28)
 
 ___
 
@@ -80,4 +80,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/forget-password-dto.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/authentication-service/src/models/forget-password-dto.model.ts#L15)
+[services/authentication-service/src/models/forget-password-dto.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/forget-password-dto.model.ts#L15)

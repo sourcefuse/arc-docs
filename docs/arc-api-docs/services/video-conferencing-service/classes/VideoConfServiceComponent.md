@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/component.ts#L54)
+[services/video-conferencing-service/src/component.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/component.ts#L54)
 
 ## Properties
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/component.ts#L56)
+[services/video-conferencing-service/src/component.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/component.ts#L56)
 
 ___
 
@@ -65,7 +65,7 @@ Component.bindings
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:115](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/component.ts#L115)
+[services/video-conferencing-service/src/component.ts:115](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/component.ts#L115)
 
 ___
 
@@ -81,7 +81,7 @@ Component.controllers
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:132](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/component.ts#L132)
+[services/video-conferencing-service/src/component.ts:132](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/component.ts#L132)
 
 ___
 
@@ -94,7 +94,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:127](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/component.ts#L127)
+[services/video-conferencing-service/src/component.ts:127](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/component.ts#L127)
 
 ___
 
@@ -108,7 +108,7 @@ Component.providers
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/component.ts#L113)
+[services/video-conferencing-service/src/component.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/component.ts#L113)
 
 ___
 
@@ -121,7 +121,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:121](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/component.ts#L121)
+[services/video-conferencing-service/src/component.ts:121](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/component.ts#L121)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/component.ts#L58)
+[services/video-conferencing-service/src/component.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/component.ts#L58)
 
 ## Methods
 
@@ -153,4 +153,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:139](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/component.ts#L139)
+[services/video-conferencing-service/src/component.ts:139](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/component.ts#L139)

@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[services/feature-toggle-service/src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/feature-toggle-service/src/types.ts#L9)
+[services/feature-toggle-service/src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/feature-toggle-service/src/types.ts#L9)
 
 ___
 

@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[services/notification-service/src/component.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/component.ts#L49)
+[services/notification-service/src/component.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/notification-service/src/component.ts#L49)
 
 ## Properties
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[services/notification-service/src/component.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/component.ts#L51)
+[services/notification-service/src/component.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/notification-service/src/component.ts#L51)
 
 ___
 
@@ -65,7 +65,7 @@ Component.bindings
 
 #### Defined in
 
-[services/notification-service/src/component.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/component.ts#L108)
+[services/notification-service/src/component.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/notification-service/src/component.ts#L108)
 
 ___
 
@@ -81,7 +81,7 @@ Component.controllers
 
 #### Defined in
 
-[services/notification-service/src/component.ts:125](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/component.ts#L125)
+[services/notification-service/src/component.ts:125](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/notification-service/src/component.ts#L125)
 
 ___
 
@@ -94,7 +94,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/notification-service/src/component.ts:120](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/component.ts#L120)
+[services/notification-service/src/component.ts:120](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/notification-service/src/component.ts#L120)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/component.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/component.ts#L53)
+[services/notification-service/src/component.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/notification-service/src/component.ts#L53)
 
 ___
 
@@ -118,7 +118,7 @@ Component.providers
 
 #### Defined in
 
-[services/notification-service/src/component.ts:106](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/component.ts#L106)
+[services/notification-service/src/component.ts:106](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/notification-service/src/component.ts#L106)
 
 ___
 
@@ -131,7 +131,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/notification-service/src/component.ts:114](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/component.ts#L114)
+[services/notification-service/src/component.ts:114](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/notification-service/src/component.ts#L114)
 
 ## Methods
 
@@ -147,4 +147,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/notification-service/src/component.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/notification-service/src/component.ts#L131)
+[services/notification-service/src/component.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/notification-service/src/component.ts#L131)

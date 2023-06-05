@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[component.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/cache/src/component.ts#L24)
+[component.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/component.ts#L24)
 
 ## Properties
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[component.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/cache/src/component.ts#L26)
+[component.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/component.ts#L26)
 
 ___
 
@@ -52,4 +52,4 @@ ___
 
 #### Defined in
 
-[component.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/packages/cache/src/component.ts#L28)
+[component.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/component.ts#L28)

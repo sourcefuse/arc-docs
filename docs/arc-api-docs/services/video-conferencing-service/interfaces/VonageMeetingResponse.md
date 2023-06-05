@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/providers/vonage/types.ts#L55)
+[services/video-conferencing-service/src/providers/vonage/types.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/providers/vonage/types.ts#L55)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:155](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/types.ts#L155)
+[services/video-conferencing-service/src/types.ts:155](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/types.ts#L155)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/providers/vonage/types.ts#L54)
+[services/video-conferencing-service/src/providers/vonage/types.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/providers/vonage/types.ts#L54)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:156](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/types.ts#L156)
+[services/video-conferencing-service/src/types.ts:156](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/types.ts#L156)
 
 ___
 
@@ -78,4 +78,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:154](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/video-conferencing-service/src/types.ts#L154)
+[services/video-conferencing-service/src/types.ts:154](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/types.ts#L154)

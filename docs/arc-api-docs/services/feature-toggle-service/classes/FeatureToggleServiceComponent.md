@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[services/feature-toggle-service/src/component.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/feature-toggle-service/src/component.ts#L44)
+[services/feature-toggle-service/src/component.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/feature-toggle-service/src/component.ts#L44)
 
 ## Properties
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[services/feature-toggle-service/src/component.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/feature-toggle-service/src/component.ts#L46)
+[services/feature-toggle-service/src/component.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/feature-toggle-service/src/component.ts#L46)
 
 ___
 
@@ -65,7 +65,7 @@ Component.bindings
 
 #### Defined in
 
-[services/feature-toggle-service/src/component.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/feature-toggle-service/src/component.ts#L88)
+[services/feature-toggle-service/src/component.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/feature-toggle-service/src/component.ts#L88)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/component.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/feature-toggle-service/src/component.ts#L48)
+[services/feature-toggle-service/src/component.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/feature-toggle-service/src/component.ts#L48)
 
 ___
 
@@ -91,7 +91,7 @@ Component.controllers
 
 #### Defined in
 
-[services/feature-toggle-service/src/component.ts:104](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/feature-toggle-service/src/component.ts#L104)
+[services/feature-toggle-service/src/component.ts:104](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/feature-toggle-service/src/component.ts#L104)
 
 ___
 
@@ -104,7 +104,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/feature-toggle-service/src/component.ts:99](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/feature-toggle-service/src/component.ts#L99)
+[services/feature-toggle-service/src/component.ts:99](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/feature-toggle-service/src/component.ts#L99)
 
 ___
 
@@ -118,7 +118,7 @@ Component.providers
 
 #### Defined in
 
-[services/feature-toggle-service/src/component.ts:86](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/feature-toggle-service/src/component.ts#L86)
+[services/feature-toggle-service/src/component.ts:86](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/feature-toggle-service/src/component.ts#L86)
 
 ___
 
@@ -131,7 +131,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/feature-toggle-service/src/component.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/feature-toggle-service/src/component.ts#L93)
+[services/feature-toggle-service/src/component.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/feature-toggle-service/src/component.ts#L93)
 
 ## Methods
 
@@ -145,4 +145,4 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/feature-toggle-service/src/component.ts:105](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/bc2553587/services/feature-toggle-service/src/component.ts#L105)
+[services/feature-toggle-service/src/component.ts:105](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/feature-toggle-service/src/component.ts#L105)
