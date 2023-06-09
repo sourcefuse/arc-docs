@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[src/components/swagger-authentication/component.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/component.ts#L23)
+[src/components/swagger-authentication/component.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/swagger-authentication/component.ts#L23)
 
 ## Properties
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[src/components/swagger-authentication/component.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/component.ts#L25)
+[src/components/swagger-authentication/component.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/swagger-authentication/component.ts#L25)
 
 ___
 
@@ -58,7 +58,7 @@ Component.bindings
 
 #### Defined in
 
-[src/components/swagger-authentication/component.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/component.ts#L20)
+[src/components/swagger-authentication/component.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/swagger-authentication/component.ts#L20)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[src/components/swagger-authentication/component.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/component.ts#L22)
+[src/components/swagger-authentication/component.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/swagger-authentication/component.ts#L22)
 
 ___
 
@@ -82,7 +82,7 @@ Component.providers
 
 #### Defined in
 
-[src/components/swagger-authentication/component.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/component.ts#L19)
+[src/components/swagger-authentication/component.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/swagger-authentication/component.ts#L19)
 
 ___
 
@@ -92,4 +92,4 @@ ___
 
 #### Defined in
 
-[src/components/swagger-authentication/component.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/component.ts#L21)
+[src/components/swagger-authentication/component.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/swagger-authentication/component.ts#L21)

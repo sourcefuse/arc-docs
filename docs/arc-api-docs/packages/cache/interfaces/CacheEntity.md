@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[types.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/types.ts#L44)
+[types.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/cache/src/types.ts#L44)
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 #### Defined in
 
-[types.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/types.ts#L43)
+[types.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/cache/src/types.ts#L43)

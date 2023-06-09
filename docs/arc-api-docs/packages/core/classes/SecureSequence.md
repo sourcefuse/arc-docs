@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[src/secure-sequence.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L59)
+[src/secure-sequence.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L59)
 
 ## Properties
 
@@ -74,7 +74,7 @@
 
 #### Defined in
 
-[src/secure-sequence.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L72)
+[src/secure-sequence.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L72)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L70)
+[src/secure-sequence.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L70)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L74)
+[src/secure-sequence.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L74)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L57)
+[src/secure-sequence.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L57)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L61)
+[src/secure-sequence.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L61)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L76)
+[src/secure-sequence.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L76)
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L84)
+[src/secure-sequence.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L84)
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L80)
+[src/secure-sequence.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L80)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L65)
+[src/secure-sequence.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L65)
 
 ___
 
@@ -167,7 +167,7 @@ To be injected via SequenceActions.INVOKE_MIDDLEWARE.
 
 #### Defined in
 
-[src/secure-sequence.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L55)
+[src/secure-sequence.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L55)
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L68)
+[src/secure-sequence.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L68)
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L63)
+[src/secure-sequence.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L63)
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L78)
+[src/secure-sequence.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L78)
 
 ___
 
@@ -207,7 +207,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L82)
+[src/secure-sequence.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L82)
 
 ___
 
@@ -217,7 +217,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L67)
+[src/secure-sequence.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L67)
 
 ___
 
@@ -227,7 +227,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L66)
+[src/secure-sequence.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L66)
 
 ## Methods
 
@@ -247,7 +247,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:158](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L158)
+[src/secure-sequence.ts:158](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L158)
 
 ___
 
@@ -267,7 +267,7 @@ ___
 
 #### Defined in
 
-[src/secure-sequence.ts:178](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L178)
+[src/secure-sequence.ts:178](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L178)
 
 ___
 
@@ -291,4 +291,4 @@ SequenceHandler.handle
 
 #### Defined in
 
-[src/secure-sequence.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/secure-sequence.ts#L87)
+[src/secure-sequence.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/secure-sequence.ts#L87)

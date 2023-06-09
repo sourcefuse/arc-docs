@@ -40,7 +40,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/otp-cache.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/otp-cache.model.ts#L34)
+[services/authentication-service/src/models/otp-cache.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/otp-cache.model.ts#L34)
 
 ## Properties
 
@@ -50,7 +50,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/otp-cache.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/otp-cache.model.ts#L27)
+[services/authentication-service/src/models/otp-cache.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/otp-cache.model.ts#L27)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/otp-cache.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/otp-cache.model.ts#L32)
+[services/authentication-service/src/models/otp-cache.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/otp-cache.model.ts#L32)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/otp-cache.model.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/otp-cache.model.ts#L12)
+[services/authentication-service/src/models/otp-cache.model.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/otp-cache.model.ts#L12)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/otp-cache.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/otp-cache.model.ts#L22)
+[services/authentication-service/src/models/otp-cache.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/otp-cache.model.ts#L22)
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/otp-cache.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/otp-cache.model.ts#L17)
+[services/authentication-service/src/models/otp-cache.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/otp-cache.model.ts#L17)

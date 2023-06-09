@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[src/components/tenant-utilities/keys.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/tenant-utilities/keys.ts#L7)
+[src/components/tenant-utilities/keys.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/tenant-utilities/keys.ts#L7)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/keys.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/tenant-utilities/keys.ts#L10)
+[src/components/tenant-utilities/keys.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/tenant-utilities/keys.ts#L10)

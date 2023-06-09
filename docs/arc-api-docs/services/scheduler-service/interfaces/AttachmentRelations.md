@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/scheduler-service/src/models/attachment.model.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/models/attachment.model.ts#L83)
+[services/scheduler-service/src/models/attachment.model.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/models/attachment.model.ts#L83)

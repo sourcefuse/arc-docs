@@ -53,7 +53,7 @@
 
 #### Defined in
 
-[src/service-sequence.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/service-sequence.ts#L54)
+[src/service-sequence.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/service-sequence.ts#L54)
 
 ## Properties
 
@@ -63,7 +63,7 @@
 
 #### Defined in
 
-[src/service-sequence.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/service-sequence.ts#L65)
+[src/service-sequence.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/service-sequence.ts#L65)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[src/service-sequence.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/service-sequence.ts#L67)
+[src/service-sequence.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/service-sequence.ts#L67)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[src/service-sequence.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/service-sequence.ts#L52)
+[src/service-sequence.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/service-sequence.ts#L52)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[src/service-sequence.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/service-sequence.ts#L56)
+[src/service-sequence.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/service-sequence.ts#L56)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[src/service-sequence.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/service-sequence.ts#L69)
+[src/service-sequence.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/service-sequence.ts#L69)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[src/service-sequence.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/service-sequence.ts#L60)
+[src/service-sequence.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/service-sequence.ts#L60)
 
 ___
 
@@ -126,7 +126,7 @@ To be injected via SequenceActions.INVOKE_MIDDLEWARE.
 
 #### Defined in
 
-[src/service-sequence.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/service-sequence.ts#L50)
+[src/service-sequence.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/service-sequence.ts#L50)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/service-sequence.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/service-sequence.ts#L63)
+[src/service-sequence.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/service-sequence.ts#L63)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/service-sequence.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/service-sequence.ts#L58)
+[src/service-sequence.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/service-sequence.ts#L58)
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[src/service-sequence.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/service-sequence.ts#L62)
+[src/service-sequence.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/service-sequence.ts#L62)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[src/service-sequence.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/service-sequence.ts#L61)
+[src/service-sequence.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/service-sequence.ts#L61)
 
 ## Methods
 
@@ -186,7 +186,7 @@ ___
 
 #### Defined in
 
-[src/service-sequence.ts:160](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/service-sequence.ts#L160)
+[src/service-sequence.ts:160](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/service-sequence.ts#L160)
 
 ___
 
@@ -210,4 +210,4 @@ SequenceHandler.handle
 
 #### Defined in
 
-[src/service-sequence.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/service-sequence.ts#L72)
+[src/service-sequence.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/service-sequence.ts#L72)

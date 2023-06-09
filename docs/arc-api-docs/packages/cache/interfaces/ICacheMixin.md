@@ -37,7 +37,7 @@
 
 #### Defined in
 
-[types.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/types.ts#L36)
+[types.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/cache/src/types.ts#L36)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[types.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/types.ts#L37)
+[types.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/cache/src/types.ts#L37)
 
 ## Methods
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[types.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/types.ts#L38)
+[types.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/cache/src/types.ts#L38)
 
 ___
 
@@ -82,4 +82,4 @@ ___
 
 #### Defined in
 
-[types.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/cache/src/types.ts#L39)
+[types.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/cache/src/types.ts#L39)

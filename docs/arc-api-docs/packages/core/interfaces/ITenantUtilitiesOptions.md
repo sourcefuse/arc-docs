@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/tenant-utilities/types.ts#L13)
+[src/components/tenant-utilities/types.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/tenant-utilities/types.ts#L13)

@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/oidc-service/src/models/user-credentials.model.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/oidc-service/src/models/user-credentials.model.ts#L67)
+[services/oidc-service/src/models/user-credentials.model.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user-credentials.model.ts#L67)

@@ -49,7 +49,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/audit-service/src/models/audit-log.model.ts#L83)
+[services/audit-service/src/models/audit-log.model.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/audit-service/src/models/audit-log.model.ts#L83)
 
 ## Properties
 
@@ -59,7 +59,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/audit-service/src/models/audit-log.model.ts#L33)
+[services/audit-service/src/models/audit-log.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/audit-service/src/models/audit-log.model.ts#L33)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/audit-service/src/models/audit-log.model.ts#L39)
+[services/audit-service/src/models/audit-log.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/audit-service/src/models/audit-log.model.ts#L39)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/audit-service/src/models/audit-log.model.ts#L26)
+[services/audit-service/src/models/audit-log.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/audit-service/src/models/audit-log.model.ts#L26)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/audit-service/src/models/audit-log.model.ts#L75)
+[services/audit-service/src/models/audit-log.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/audit-service/src/models/audit-log.model.ts#L75)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/audit-service/src/models/audit-log.model.ts#L46)
+[services/audit-service/src/models/audit-log.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/audit-service/src/models/audit-log.model.ts#L46)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/audit-service/src/models/audit-log.model.ts#L59)
+[services/audit-service/src/models/audit-log.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/audit-service/src/models/audit-log.model.ts#L59)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/audit-service/src/models/audit-log.model.ts#L69)
+[services/audit-service/src/models/audit-log.model.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/audit-service/src/models/audit-log.model.ts#L69)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/audit-service/src/models/audit-log.model.ts#L64)
+[services/audit-service/src/models/audit-log.model.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/audit-service/src/models/audit-log.model.ts#L64)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/audit-service/src/models/audit-log.model.ts#L53)
+[services/audit-service/src/models/audit-log.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/audit-service/src/models/audit-log.model.ts#L53)
 
 ___
 
@@ -149,4 +149,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/audit-service/src/models/audit-log.model.ts#L20)
+[services/audit-service/src/models/audit-log.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/audit-service/src/models/audit-log.model.ts#L20)

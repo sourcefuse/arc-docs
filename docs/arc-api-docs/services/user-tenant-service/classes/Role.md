@@ -47,7 +47,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/role.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/role.model.ts#L61)
+[services/user-tenant-service/src/models/role.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/user-tenant-service/src/models/role.model.ts#L61)
 
 ## Properties
 
@@ -57,7 +57,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/role.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/role.model.ts#L50)
+[services/user-tenant-service/src/models/role.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/user-tenant-service/src/models/role.model.ts#L50)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/role.model.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/role.model.ts#L56)
+[services/user-tenant-service/src/models/role.model.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/user-tenant-service/src/models/role.model.ts#L56)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/role.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/role.model.ts#L20)
+[services/user-tenant-service/src/models/role.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/user-tenant-service/src/models/role.model.ts#L20)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/role.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/role.model.ts#L59)
+[services/user-tenant-service/src/models/role.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/user-tenant-service/src/models/role.model.ts#L59)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/role.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/role.model.ts#L26)
+[services/user-tenant-service/src/models/role.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/user-tenant-service/src/models/role.model.ts#L26)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/role.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/role.model.ts#L43)
+[services/user-tenant-service/src/models/role.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/user-tenant-service/src/models/role.model.ts#L43)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/role.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/role.model.ts#L37)
+[services/user-tenant-service/src/models/role.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/user-tenant-service/src/models/role.model.ts#L37)
 
 ___
 
@@ -183,4 +183,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/role.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/user-tenant-service/src/models/role.model.ts#L53)
+[services/user-tenant-service/src/models/role.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/user-tenant-service/src/models/role.model.ts#L53)

@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow.model.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/bpmn-service/src/models/workflow.model.ts#L77)
+[services/bpmn-service/src/models/workflow.model.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/bpmn-service/src/models/workflow.model.ts#L77)

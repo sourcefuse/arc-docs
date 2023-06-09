@@ -49,7 +49,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/repositories/working-hour.repository.ts#L38)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/working-hour.repository.ts#L38)
 
 ## Properties
 
@@ -59,7 +59,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/repositories/working-hour.repository.ts#L33)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/working-hour.repository.ts#L33)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/repositories/working-hour.repository.ts#L46)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/working-hour.repository.ts#L46)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/repositories/working-hour.repository.ts#L48)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/working-hour.repository.ts#L48)
 
 ___
 
@@ -100,4 +100,4 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/scheduler-service/src/repositories/working-hour.repository.ts#L42)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/working-hour.repository.ts#L42)

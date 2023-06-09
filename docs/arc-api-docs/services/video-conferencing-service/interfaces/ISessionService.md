@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:194](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/types.ts#L194)
+[services/video-conferencing-service/src/types.ts:194](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/types.ts#L194)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:186](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/types.ts#L186)
+[services/video-conferencing-service/src/types.ts:186](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/types.ts#L186)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:192](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/types.ts#L192)
+[services/video-conferencing-service/src/types.ts:192](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/types.ts#L192)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:201](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/types.ts#L201)
+[services/video-conferencing-service/src/types.ts:201](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/types.ts#L201)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:179](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/types.ts#L179)
+[services/video-conferencing-service/src/types.ts:179](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/types.ts#L179)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:181](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/types.ts#L181)
+[services/video-conferencing-service/src/types.ts:181](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/types.ts#L181)
 
 ___
 
@@ -157,4 +157,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:195](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/types.ts#L195)
+[services/video-conferencing-service/src/types.ts:195](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/types.ts#L195)

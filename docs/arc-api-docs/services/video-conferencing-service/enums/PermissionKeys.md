@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/permission-keys.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L6)
+[services/video-conferencing-service/src/enums/permission-keys.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L6)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/permission-keys.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L11)
+[services/video-conferencing-service/src/enums/permission-keys.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L11)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/permission-keys.enum.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L15)
+[services/video-conferencing-service/src/enums/permission-keys.enum.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L15)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/permission-keys.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L7)
+[services/video-conferencing-service/src/enums/permission-keys.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L7)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/permission-keys.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L10)
+[services/video-conferencing-service/src/enums/permission-keys.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L10)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/permission-keys.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L14)
+[services/video-conferencing-service/src/enums/permission-keys.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L14)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/permission-keys.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L13)
+[services/video-conferencing-service/src/enums/permission-keys.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L13)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/permission-keys.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L8)
+[services/video-conferencing-service/src/enums/permission-keys.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L8)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/permission-keys.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L9)
+[services/video-conferencing-service/src/enums/permission-keys.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L9)
 
 ___
 
@@ -115,4 +115,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/permission-keys.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L12)
+[services/video-conferencing-service/src/enums/permission-keys.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/enums/permission-keys.enum.ts#L12)

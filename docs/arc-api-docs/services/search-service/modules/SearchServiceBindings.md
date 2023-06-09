@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[services/search-service/src/keys.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/keys.ts#L20)
+[services/search-service/src/keys.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/keys.ts#L20)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/keys.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/keys.ts#L11)
+[services/search-service/src/keys.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/keys.ts#L11)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/keys.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/keys.ts#L22)
+[services/search-service/src/keys.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/keys.ts#L22)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/keys.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/keys.ts#L14)
+[services/search-service/src/keys.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/keys.ts#L14)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/keys.ts#L17)
+[services/search-service/src/keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/keys.ts#L17)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/keys.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/keys.ts#L24)
+[services/search-service/src/keys.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/keys.ts#L24)
 
 ___
 
@@ -82,4 +82,4 @@ ___
 
 #### Defined in
 
-[services/search-service/src/keys.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/keys.ts#L12)
+[services/search-service/src/keys.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/keys.ts#L12)

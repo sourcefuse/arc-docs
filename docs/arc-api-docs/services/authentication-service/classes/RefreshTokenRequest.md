@@ -36,7 +36,7 @@ Model.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/refresh-token-request.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/refresh-token-request.model.ts#L15)
+[services/authentication-service/src/models/refresh-token-request.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/refresh-token-request.model.ts#L15)
 
 ## Properties
 
@@ -46,4 +46,4 @@ Model.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/refresh-token-request.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/refresh-token-request.model.ts#L13)
+[services/authentication-service/src/models/refresh-token-request.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/refresh-token-request.model.ts#L13)

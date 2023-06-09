@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[services/search-service/src/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/types.ts#L33)
+[services/search-service/src/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/types.ts#L33)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/types.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/types.ts#L29)
+[services/search-service/src/types.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/types.ts#L29)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/types.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/types.ts#L32)
+[services/search-service/src/types.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/types.ts#L32)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/types.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/types.ts#L30)
+[services/search-service/src/types.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/types.ts#L30)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/types.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/types.ts#L31)
+[services/search-service/src/types.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/types.ts#L31)
 
 ___
 
@@ -77,4 +77,4 @@ ___
 
 #### Defined in
 
-[services/search-service/src/types.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/types.ts#L28)
+[services/search-service/src/types.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/types.ts#L28)

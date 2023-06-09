@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L27)
+[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L27)
 
 ## Properties
 
@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L31)
+[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L31)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L29)
+[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L29)
 
 ## Methods
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L60)
+[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L60)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L37)
+[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L37)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L74)
+[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L74)
 
 ___
 
@@ -146,7 +146,7 @@ context is RequestContext
 
 #### Defined in
 
-[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L82)
+[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L82)
 
 ___
 
@@ -177,4 +177,4 @@ Provider.value
 
 #### Defined in
 
-[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L33)
+[src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/swagger-authentication/middlewares/authenticate-swagger.middleware.ts#L33)

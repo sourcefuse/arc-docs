@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/services/login-helper.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/services/login-helper.service.ts#L17)
+[services/authentication-service/src/services/login-helper.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/services/login-helper.service.ts#L17)
 
 ## Properties
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/services/login-helper.service.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/services/login-helper.service.ts#L20)
+[services/authentication-service/src/services/login-helper.service.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/services/login-helper.service.ts#L20)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/services/login-helper.service.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/services/login-helper.service.ts#L19)
+[services/authentication-service/src/services/login-helper.service.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/services/login-helper.service.ts#L19)
 
 ## Methods
 
@@ -74,4 +74,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/services/login-helper.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/services/login-helper.service.ts#L23)
+[services/authentication-service/src/services/login-helper.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/services/login-helper.service.ts#L23)

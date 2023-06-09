@@ -43,7 +43,7 @@ Model.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/reset-password-with-client.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/reset-password-with-client.model.ts#L38)
+[services/authentication-service/src/models/reset-password-with-client.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/reset-password-with-client.model.ts#L38)
 
 ## Properties
 
@@ -57,7 +57,7 @@ Model.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/reset-password-with-client.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/reset-password-with-client.model.ts#L29)
+[services/authentication-service/src/models/reset-password-with-client.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/reset-password-with-client.model.ts#L29)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/reset-password-with-client.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/reset-password-with-client.model.ts#L35)
+[services/authentication-service/src/models/reset-password-with-client.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/reset-password-with-client.model.ts#L35)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/reset-password-with-client.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/reset-password-with-client.model.ts#L22)
+[services/authentication-service/src/models/reset-password-with-client.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/reset-password-with-client.model.ts#L22)
 
 ___
 
@@ -91,4 +91,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/reset-password-with-client.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/models/reset-password-with-client.model.ts#L16)
+[services/authentication-service/src/models/reset-password-with-client.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/reset-password-with-client.model.ts#L16)

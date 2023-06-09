@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/facebook-post-verify.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/providers/facebook-post-verify.provider.ts#L13)
+[services/authentication-service/src/providers/facebook-post-verify.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/providers/facebook-post-verify.provider.ts#L13)

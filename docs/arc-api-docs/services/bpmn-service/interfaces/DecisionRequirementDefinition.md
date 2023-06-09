@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L8)
+[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L8)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L12)
+[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L12)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L6)
+[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L6)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L7)
+[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L7)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L9)
+[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L9)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L11)
+[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L11)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L13)
+[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L13)
 
 ___
 
@@ -93,4 +93,4 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L10)
+[services/bpmn-service/src/types/camunda/decision-requirements-definition.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/bpmn-service/src/types/camunda/decision-requirements-definition.ts#L10)

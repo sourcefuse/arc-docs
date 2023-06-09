@@ -7,6 +7,7 @@
 ### Enumeration Members
 
 - [NotAllowed](PermissionKey.md#notallowed)
+- [ViewLoginActivity](PermissionKey.md#viewloginactivity)
 
 ## Enumeration Members
 
@@ -16,4 +17,14 @@
 
 #### Defined in
 
-[services/authentication-service/src/enums/permission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/authentication-service/src/enums/permission-key.enum.ts#L6)
+[services/authentication-service/src/enums/permission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/enums/permission-key.enum.ts#L6)
+
+___
+
+### ViewLoginActivity
+
+• **ViewLoginActivity** = ``"ViewLoginActivity"``
+
+#### Defined in
+
+[services/authentication-service/src/enums/permission-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/enums/permission-key.enum.ts#L7)

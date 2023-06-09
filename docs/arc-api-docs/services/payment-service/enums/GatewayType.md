@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[enums/payment-gateway-type.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/payment-service/src/enums/payment-gateway-type.enum.ts#L8)
+[enums/payment-gateway-type.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/enums/payment-gateway-type.enum.ts#L8)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[enums/payment-gateway-type.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/payment-service/src/enums/payment-gateway-type.enum.ts#L6)
+[enums/payment-gateway-type.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/enums/payment-gateway-type.enum.ts#L6)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[enums/payment-gateway-type.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/payment-service/src/enums/payment-gateway-type.enum.ts#L7)
+[enums/payment-gateway-type.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/enums/payment-gateway-type.enum.ts#L7)

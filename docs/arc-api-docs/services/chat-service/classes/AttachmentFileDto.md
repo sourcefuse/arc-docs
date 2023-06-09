@@ -44,7 +44,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file-dto.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/chat-service/src/models/attachment-file-dto.model.ts#L21)
+[services/chat-service/src/models/attachment-file-dto.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/models/attachment-file-dto.model.ts#L21)
 
 ## Properties
 
@@ -54,7 +54,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file-dto.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/chat-service/src/models/attachment-file-dto.model.ts#L13)
+[services/chat-service/src/models/attachment-file-dto.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/models/attachment-file-dto.model.ts#L13)
 
 ___
 

@@ -53,7 +53,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/oidc-service/src/models/auth-client.model.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/oidc-service/src/models/auth-client.model.ts#L81)
+[services/oidc-service/src/models/auth-client.model.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/auth-client.model.ts#L81)
 
 ## Properties
 
@@ -63,7 +63,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/oidc-service/src/models/auth-client.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/oidc-service/src/models/auth-client.model.ts#L65)
+[services/oidc-service/src/models/auth-client.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/auth-client.model.ts#L65)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/auth-client.model.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/oidc-service/src/models/auth-client.model.ts#L79)
+[services/oidc-service/src/models/auth-client.model.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/auth-client.model.ts#L79)
 
 ___
 
@@ -87,7 +87,7 @@ IAuthClient.clientId
 
 #### Defined in
 
-[services/oidc-service/src/models/auth-client.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/oidc-service/src/models/auth-client.model.ts#L24)
+[services/oidc-service/src/models/auth-client.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/auth-client.model.ts#L24)
 
 ___
 
@@ -101,7 +101,7 @@ IAuthClient.clientSecret
 
 #### Defined in
 
-[services/oidc-service/src/models/auth-client.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/oidc-service/src/models/auth-client.model.ts#L31)
+[services/oidc-service/src/models/auth-client.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/auth-client.model.ts#L31)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/auth-client.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/oidc-service/src/models/auth-client.model.ts#L51)
+[services/oidc-service/src/models/auth-client.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/auth-client.model.ts#L51)
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/auth-client.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/oidc-service/src/models/auth-client.model.ts#L17)
+[services/oidc-service/src/models/auth-client.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/auth-client.model.ts#L17)
 
 ___
 
@@ -191,7 +191,7 @@ IAuthClient.redirectUrl
 
 #### Defined in
 
-[services/oidc-service/src/models/auth-client.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/oidc-service/src/models/auth-client.model.ts#L44)
+[services/oidc-service/src/models/auth-client.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/auth-client.model.ts#L44)
 
 ___
 
@@ -201,7 +201,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/auth-client.model.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/oidc-service/src/models/auth-client.model.ts#L72)
+[services/oidc-service/src/models/auth-client.model.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/auth-client.model.ts#L72)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/auth-client.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/oidc-service/src/models/auth-client.model.ts#L58)
+[services/oidc-service/src/models/auth-client.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/auth-client.model.ts#L58)
 
 ___
 
@@ -221,4 +221,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/auth-client.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/oidc-service/src/models/auth-client.model.ts#L38)
+[services/oidc-service/src/models/auth-client.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/auth-client.model.ts#L38)

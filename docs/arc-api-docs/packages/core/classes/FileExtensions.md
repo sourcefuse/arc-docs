@@ -26,4 +26,4 @@
 
 #### Defined in
 
-[src/constants/file-extensions.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/packages/core/src/constants/file-extensions.ts#L6)
+[src/constants/file-extensions.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/constants/file-extensions.ts#L6)

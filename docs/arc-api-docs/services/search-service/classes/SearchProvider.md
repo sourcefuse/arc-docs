@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[services/search-service/src/services/search.provider.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/services/search.provider.ts#L22)
+[services/search-service/src/services/search.provider.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/services/search.provider.ts#L22)
 
 ## Properties
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[services/search-service/src/services/search.provider.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/services/search.provider.ts#L24)
+[services/search-service/src/services/search.provider.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/services/search.provider.ts#L24)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/services/search.provider.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/services/search.provider.ts#L26)
+[services/search-service/src/services/search.provider.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/services/search.provider.ts#L26)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/services/search.provider.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/services/search.provider.ts#L28)
+[services/search-service/src/services/search.provider.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/services/search.provider.ts#L28)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/services/search.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/services/search.provider.ts#L30)
+[services/search-service/src/services/search.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/services/search.provider.ts#L30)
 
 ## Methods
 
@@ -110,4 +110,4 @@ Provider.value
 
 #### Defined in
 
-[services/search-service/src/services/search.provider.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/search-service/src/services/search.provider.ts#L33)
+[services/search-service/src/services/search.provider.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/services/search.provider.ts#L33)

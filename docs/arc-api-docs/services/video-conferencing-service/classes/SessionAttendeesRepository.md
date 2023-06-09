@@ -46,7 +46,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L30)
+[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L30)
 
 ## Properties
 
@@ -56,7 +56,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L36)
+[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L36)
 
 ___
 
@@ -77,4 +77,4 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/b93c60ac7/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L34)
+[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L34)
