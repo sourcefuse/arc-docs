@@ -88,3 +88,14 @@ No resources.
 | <a name="output_extra_tags"></a> [extra\_tags](#output\_extra\_tags) | n/a |
 | <a name="output_tags"></a> [tags](#output\_tags) | n/a |
 <!-- END_TF_DOCS -->
+
+### Git commits
+
+while Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
+
+For Example
+
+```sh
+git commit -m "your commit message #major"
+```
+By specifying this , it will bump the version and if you dont specify this in your commit message then by default it will consider patch and will bump that accordingly
