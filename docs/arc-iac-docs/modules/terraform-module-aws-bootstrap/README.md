@@ -135,8 +135,15 @@ Our local state has now been migrated to the new backend. It is now safe to remo
 ## Development
 
 ### Versioning  
-Versioning is done manually at the moment and a tracking [issue](https://github.com/sourcefuse/terraform-module-aws-bootstrap/issues/1) has been created to automate the git tag task.  
-On commits to `master`, you are required to update the `version.json` at the root of this project to the next semantic version.  
+
+while Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
+
+For Example
+
+```sh
+git commit -m "your commit message #major"
+```
+By specifying this , it will bump the version and if you dont specify this in your commit message then by default it will consider patch and will bump that accordingly
 
 ### Prerequisites
 
