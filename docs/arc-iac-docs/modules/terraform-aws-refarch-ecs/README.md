@@ -180,13 +180,7 @@ The default SSM Parameter format used by this module is the following:
 ]
 ```  
 
-You can append to this array by adding values to `var.additional_ssm_params`.  
-
-## Versioning  
-This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.  
-
-When you intend to commit to `main`, you will need to increment this version. Once the project is merged,
-the pipeline will kick off and tag the latest git commit.  
+You can append to this array by adding values to `var.additional_ssm_params`.   
 
 ## Development
 
