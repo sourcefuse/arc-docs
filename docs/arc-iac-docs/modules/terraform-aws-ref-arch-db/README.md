@@ -225,6 +225,16 @@ module "aurora" {
 ```sh
 pre-commit install
 ```
+### Git commits
+
+while Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
+
+For Example
+
+```sh
+git commit -m "your commit message #major"
+```
+By specifying this , it will bump the version and if you dont specify this in your commit message then by default it will consider patch and will bump that accordingly
 
 ### Tests
 
