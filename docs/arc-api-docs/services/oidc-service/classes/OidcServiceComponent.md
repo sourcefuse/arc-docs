@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[services/oidc-service/src/component.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/component.ts#L51)
+[services/oidc-service/src/component.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/component.ts#L51)
 
 ## Properties
 
@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[services/oidc-service/src/component.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/component.ts#L53)
+[services/oidc-service/src/component.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/component.ts#L53)
 
 ___
 
@@ -64,13 +64,13 @@ Component.bindings
 
 #### Defined in
 
-[services/oidc-service/src/component.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/component.ts#L50)
+[services/oidc-service/src/component.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/component.ts#L50)
 
 ___
 
 ### controllers
 
-• `Optional` **controllers**: `ControllerClass`[]
+• `Optional` **controllers**: `ControllerClass`<`any`\>[]
 
 An array of controller classes
 
@@ -80,7 +80,7 @@ Component.controllers
 
 #### Defined in
 
-[services/oidc-service/src/component.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/component.ts#L49)
+[services/oidc-service/src/component.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/component.ts#L49)
 
 ___
 
@@ -93,7 +93,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/oidc-service/src/component.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/component.ts#L38)
+[services/oidc-service/src/component.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/component.ts#L38)
 
 ___
 
@@ -107,7 +107,7 @@ Component.providers
 
 #### Defined in
 
-[services/oidc-service/src/component.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/component.ts#L40)
+[services/oidc-service/src/component.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/component.ts#L40)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/component.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/component.ts#L32)
+[services/oidc-service/src/component.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/component.ts#L32)
 
 ___
 
@@ -131,7 +131,7 @@ Component.services
 
 #### Defined in
 
-[services/oidc-service/src/component.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/component.ts#L45)
+[services/oidc-service/src/component.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/component.ts#L45)
 
 ## Methods
 
@@ -147,4 +147,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/oidc-service/src/component.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/component.ts#L88)
+[services/oidc-service/src/component.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/component.ts#L88)

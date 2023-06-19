@@ -42,7 +42,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/notification-service/src/models/notification-access.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/notification-service/src/models/notification-access.model.ts#L32)
+[services/notification-service/src/models/notification-access.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/notification-service/src/models/notification-access.model.ts#L32)
 
 ## Properties
 
@@ -56,7 +56,7 @@ Config.options
 
 #### Defined in
 
-[services/notification-service/src/models/notification-access.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/notification-service/src/models/notification-access.model.ts#L30)
+[services/notification-service/src/models/notification-access.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/notification-service/src/models/notification-access.model.ts#L30)
 
 ___
 
@@ -70,7 +70,7 @@ Config.receiver
 
 #### Defined in
 
-[services/notification-service/src/models/notification-access.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/notification-service/src/models/notification-access.model.ts#L18)
+[services/notification-service/src/models/notification-access.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/notification-service/src/models/notification-access.model.ts#L18)
 
 ___
 
@@ -84,4 +84,4 @@ Config.type
 
 #### Defined in
 
-[services/notification-service/src/models/notification-access.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/notification-service/src/models/notification-access.model.ts#L24)
+[services/notification-service/src/models/notification-access.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/notification-service/src/models/notification-access.model.ts#L24)

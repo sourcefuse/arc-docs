@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[services/chat-service/src/component.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/component.ts#L53)
+[services/chat-service/src/component.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/component.ts#L53)
 
 ## Properties
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[services/chat-service/src/component.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/component.ts#L55)
+[services/chat-service/src/component.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/component.ts#L55)
 
 ___
 
@@ -65,7 +65,7 @@ Component.bindings
 
 #### Defined in
 
-[services/chat-service/src/component.ts:106](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/component.ts#L106)
+[services/chat-service/src/component.ts:106](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/component.ts#L106)
 
 ___
 
@@ -75,13 +75,13 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/component.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/component.ts#L57)
+[services/chat-service/src/component.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/component.ts#L57)
 
 ___
 
 ### controllers
 
-• `Optional` **controllers**: `ControllerClass`[]
+• `Optional` **controllers**: `ControllerClass`<`any`\>[]
 
 An array of controller classes
 
@@ -91,7 +91,7 @@ Component.controllers
 
 #### Defined in
 
-[services/chat-service/src/component.ts:123](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/component.ts#L123)
+[services/chat-service/src/component.ts:123](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/component.ts#L123)
 
 ___
 
@@ -104,7 +104,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/chat-service/src/component.ts:118](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/component.ts#L118)
+[services/chat-service/src/component.ts:118](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/component.ts#L118)
 
 ___
 
@@ -118,7 +118,7 @@ Component.providers
 
 #### Defined in
 
-[services/chat-service/src/component.ts:105](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/component.ts#L105)
+[services/chat-service/src/component.ts:105](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/component.ts#L105)
 
 ___
 
@@ -131,7 +131,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/chat-service/src/component.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/component.ts#L112)
+[services/chat-service/src/component.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/component.ts#L112)
 
 ## Methods
 
@@ -147,4 +147,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/chat-service/src/component.ts:130](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/component.ts#L130)
+[services/chat-service/src/component.ts:130](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/component.ts#L130)

@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L28)
+[providers/paypal/paypal-provider.service.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L28)
 
 ## Properties
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L27)
+[providers/paypal/paypal-provider.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L27)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L37)
+[providers/paypal/paypal-provider.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L37)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L26)
+[providers/paypal/paypal-provider.service.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L26)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L35)
+[providers/paypal/paypal-provider.service.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L35)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L32)
+[providers/paypal/paypal-provider.service.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L32)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L34)
+[providers/paypal/paypal-provider.service.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L34)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L30)
+[providers/paypal/paypal-provider.service.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L30)
 
 ## Methods
 
@@ -129,7 +129,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `charge` | (`chargeResponse`: { `orderId`: `string`  }) => `Promise`<{ `orderId`: `undefined` \| `string` = orderDetails.id; `res`: [`ResponseMessage`](../enums/ResponseMessage.md) = ResponseMessage.Sucess }\> |
-| `create` | (`payorder`: [`Orders`](Orders.md), `paymentTemplate`: `string`) => `Promise`<{ `orderId`: `undefined` \| `string` = payorder.id; `orderPayLink?`: `undefined` = payorder.metaData.paypalOrderPayLink; `payOrderId?`: `undefined` = order.id; `res`: `string` = 'Payment already Done for this Order'; `status`: [`Status`](../enums/Status.md) = Status.AlreadyPaid } \| { `orderId`: `undefined` \| `string` = payorder.id; `orderPayLink`: `any` = payorder.metaData.paypalOrderPayLink; `payOrderId`: `any` = order.id; `res?`: `undefined` = 'Payment already Done for this Order'; `status?`: `undefined` = Status.AlreadyPaid }\> |
+| `create` | (`payorder`: [`Orders`](Orders.md), `paymentTemplate`: `string`) => `Promise`<{ `orderId`: `undefined` \| `string` = payorder.id; `orderPayLink`: `undefined` = payorder.metaData.paypalOrderPayLink; `payOrderId`: `undefined` = order.id; `res`: `string` = 'Payment already Done for this Order'; `status`: [`Status`](../enums/Status.md) = Status.AlreadyPaid } \| { `orderId`: `undefined` \| `string` = payorder.id; `orderPayLink`: `any` = payorder.metaData.paypalOrderPayLink; `payOrderId`: `any` = order.id; `res`: `undefined` = 'Payment already Done for this Order'; `status`: `undefined` = Status.AlreadyPaid }\> |
 | `refund` | (`transactionId`: `string`, `note?`: `string`) => `Promise`<`any`\> |
 | `subscriptionCharge` | (`chargeResponse`: `AnyObject`) => `Promise`<`void`\> |
 | `subscriptionCreate` | (`subscriptions`: [`Subscriptions`](Subscriptions.md), `paymentTemplate`: `string`) => `Promise`<{ `res`: `string` = '' }\> |
@@ -141,4 +141,4 @@ Provider.value
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L57)
+[providers/paypal/paypal-provider.service.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L57)

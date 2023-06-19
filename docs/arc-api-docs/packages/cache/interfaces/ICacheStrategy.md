@@ -47,7 +47,7 @@ Interface defining the component's options object
 
 #### Defined in
 
-[types.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/cache/src/types.ts#L21)
+[types.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/types.ts#L21)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[strategies/cache-strategy.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/cache/src/strategies/cache-strategy.ts#L10)
+[strategies/cache-strategy.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/strategies/cache-strategy.ts#L10)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/cache/src/types.ts#L22)
+[types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/types.ts#L22)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/cache/src/types.ts#L23)
+[types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/types.ts#L23)
 
 ## Methods
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[strategies/cache-strategy.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/cache/src/strategies/cache-strategy.ts#L13)
+[strategies/cache-strategy.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/strategies/cache-strategy.ts#L13)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[strategies/cache-strategy.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/cache/src/strategies/cache-strategy.ts#L12)
+[strategies/cache-strategy.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/strategies/cache-strategy.ts#L12)
 
 ___
 
@@ -148,4 +148,4 @@ ___
 
 #### Defined in
 
-[strategies/cache-strategy.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/cache/src/strategies/cache-strategy.ts#L11)
+[strategies/cache-strategy.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/strategies/cache-strategy.ts#L11)

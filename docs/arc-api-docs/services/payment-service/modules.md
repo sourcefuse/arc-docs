@@ -66,7 +66,7 @@ Default options for the component
 
 #### Defined in
 
-[types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/types.ts#L17)
+[types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/types.ts#L17)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/keys.ts#L17)
+[keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/keys.ts#L17)

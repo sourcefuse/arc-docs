@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/services/event.service.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/services/event.service.ts#L16)
+[services/scheduler-service/src/services/event.service.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/event.service.ts#L16)
 
 ## Properties
 
@@ -43,7 +43,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/services/event.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/services/event.service.ts#L18)
+[services/scheduler-service/src/services/event.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/event.service.ts#L18)
 
 ## Methods
 
@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/services/event.service.ts:99](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/services/event.service.ts#L99)
+[services/scheduler-service/src/services/event.service.ts:99](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/event.service.ts#L99)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/services/event.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/services/event.service.ts#L21)
+[services/scheduler-service/src/services/event.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/event.service.ts#L21)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/services/event.service.ts:116](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/services/event.service.ts#L116)
+[services/scheduler-service/src/services/event.service.ts:116](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/event.service.ts#L116)
 
 ___
 
@@ -128,4 +128,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/services/event.service.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/services/event.service.ts#L89)
+[services/scheduler-service/src/services/event.service.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/event.service.ts#L89)

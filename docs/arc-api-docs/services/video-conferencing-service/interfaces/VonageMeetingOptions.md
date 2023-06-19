@@ -56,7 +56,7 @@ is false, else set a later time for scheduling meeting
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/providers/vonage/types.ts#L48)
+[services/video-conferencing-service/src/providers/vonage/types.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/providers/vonage/types.ts#L48)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/providers/vonage/types.ts#L47)
+[services/video-conferencing-service/src/providers/vonage/types.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/providers/vonage/types.ts#L47)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/providers/vonage/types.ts#L49)
+[services/video-conferencing-service/src/providers/vonage/types.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/providers/vonage/types.ts#L49)
 
 ___
 
@@ -94,4 +94,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/vonage/types.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/providers/vonage/types.ts#L50)
+[services/video-conferencing-service/src/providers/vonage/types.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/providers/vonage/types.ts#L50)

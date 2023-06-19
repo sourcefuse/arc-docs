@@ -48,7 +48,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/user-level-resource.model.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/user-level-resource.model.ts#L57)
+[services/authentication-service/src/models/user-level-resource.model.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/authentication-service/src/models/user-level-resource.model.ts#L57)
 
 ## Properties
 
@@ -62,7 +62,7 @@ IUserResource.allowed
 
 #### Defined in
 
-[services/authentication-service/src/models/user-level-resource.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/user-level-resource.model.ts#L55)
+[services/authentication-service/src/models/user-level-resource.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/authentication-service/src/models/user-level-resource.model.ts#L55)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-level-resource.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/user-level-resource.model.ts#L23)
+[services/authentication-service/src/models/user-level-resource.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/authentication-service/src/models/user-level-resource.model.ts#L23)
 
 ___
 
@@ -142,7 +142,7 @@ IUserResource.resourceName
 
 #### Defined in
 
-[services/authentication-service/src/models/user-level-resource.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/user-level-resource.model.ts#L40)
+[services/authentication-service/src/models/user-level-resource.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/authentication-service/src/models/user-level-resource.model.ts#L40)
 
 ___
 
@@ -156,7 +156,7 @@ IUserResource.resourceValue
 
 #### Defined in
 
-[services/authentication-service/src/models/user-level-resource.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/user-level-resource.model.ts#L47)
+[services/authentication-service/src/models/user-level-resource.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/authentication-service/src/models/user-level-resource.model.ts#L47)
 
 ___
 
@@ -166,4 +166,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-level-resource.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/models/user-level-resource.model.ts#L33)
+[services/authentication-service/src/models/user-level-resource.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/authentication-service/src/models/user-level-resource.model.ts#L33)

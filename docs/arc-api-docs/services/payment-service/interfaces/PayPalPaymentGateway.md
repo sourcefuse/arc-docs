@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[providers/paypal/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/types.ts#L9)
+[providers/paypal/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/types.ts#L9)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/types.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/types.ts#L5)
+[providers/paypal/types.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/types.ts#L5)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/types.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/types.ts#L12)
+[providers/paypal/types.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/types.ts#L12)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/types.ts#L17)
+[providers/paypal/types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/types.ts#L17)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/types.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/types.ts#L13)
+[providers/paypal/types.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/types.ts#L13)
 
 ___
 
@@ -135,4 +135,4 @@ ___
 
 #### Defined in
 
-[providers/paypal/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/paypal/types.ts#L18)
+[providers/paypal/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/paypal/types.ts#L18)

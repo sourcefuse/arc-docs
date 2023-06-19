@@ -12,8 +12,8 @@
 
 ### Config
 
-• `Const` **Config**: `BindingKey`<``null`` \| `IInMailServiceConfig`\>
+• `Const` **Config**: `BindingKey`<``null`` \| [`IInMailServiceConfig`](../interfaces/IInMailServiceConfig.md)\>
 
 #### Defined in
 
-[keys.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/in-mail-service/src/keys.ts#L10)
+[services/in-mail-service/src/keys.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/in-mail-service/src/keys.ts#L10)

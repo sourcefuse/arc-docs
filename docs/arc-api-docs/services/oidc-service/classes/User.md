@@ -57,7 +57,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:117](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L117)
+[services/oidc-service/src/models/user.model.ts:117](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L117)
 
 ## Properties
 
@@ -67,7 +67,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L75)
+[services/oidc-service/src/models/user.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L75)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L102)
+[services/oidc-service/src/models/user.model.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L102)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L112)
+[services/oidc-service/src/models/user.model.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L112)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L89)
+[services/oidc-service/src/models/user.model.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L89)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L61)
+[services/oidc-service/src/models/user.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L61)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L38)
+[services/oidc-service/src/models/user.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L38)
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:99](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L99)
+[services/oidc-service/src/models/user.model.ts:99](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L99)
 
 ___
 
@@ -169,7 +169,7 @@ IAuthUser.id
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L31)
+[services/oidc-service/src/models/user.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L31)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L84)
+[services/oidc-service/src/models/user.model.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L84)
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L44)
+[services/oidc-service/src/models/user.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L44)
 
 ___
 
@@ -199,7 +199,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L50)
+[services/oidc-service/src/models/user.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L50)
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L69)
+[services/oidc-service/src/models/user.model.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L69)
 
 ___
 
@@ -247,7 +247,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:115](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L115)
+[services/oidc-service/src/models/user.model.ts:115](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L115)
 
 ___
 
@@ -261,4 +261,4 @@ IAuthUser.username
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user.model.ts#L56)
+[services/oidc-service/src/models/user.model.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user.model.ts#L56)

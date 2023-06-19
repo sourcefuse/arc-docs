@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/keys.ts#L27)
+[services/video-conferencing-service/src/keys.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/keys.ts#L27)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/video-conferencing-service/src/keys.ts#L30)
+[services/video-conferencing-service/src/keys.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/keys.ts#L30)

@@ -47,7 +47,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/models/message-recipient.model.ts#L68)
+[services/chat-service/src/models/message-recipient.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/models/message-recipient.model.ts#L68)
 
 ## Properties
 
@@ -57,7 +57,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/models/message-recipient.model.ts#L25)
+[services/chat-service/src/models/message-recipient.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/models/message-recipient.model.ts#L25)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/models/message-recipient.model.ts#L31)
+[services/chat-service/src/models/message-recipient.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/models/message-recipient.model.ts#L31)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/models/message-recipient.model.ts#L18)
+[services/chat-service/src/models/message-recipient.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/models/message-recipient.model.ts#L18)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/models/message-recipient.model.ts#L38)
+[services/chat-service/src/models/message-recipient.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/models/message-recipient.model.ts#L38)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/models/message-recipient.model.ts#L45)
+[services/chat-service/src/models/message-recipient.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/models/message-recipient.model.ts#L45)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/models/message-recipient.model.ts#L52)
+[services/chat-service/src/models/message-recipient.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/models/message-recipient.model.ts#L52)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/models/message-recipient.model.ts#L66)
+[services/chat-service/src/models/message-recipient.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/models/message-recipient.model.ts#L66)
 
 ___
 
@@ -183,4 +183,4 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/chat-service/src/models/message-recipient.model.ts#L59)
+[services/chat-service/src/models/message-recipient.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/models/message-recipient.model.ts#L59)

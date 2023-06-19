@@ -55,7 +55,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/calendar.repository.ts#L60)
+[services/scheduler-service/src/repositories/calendar.repository.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/repositories/calendar.repository.ts#L60)
 
 ## Properties
 
@@ -65,7 +65,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/calendar.repository.ts#L72)
+[services/scheduler-service/src/repositories/calendar.repository.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/repositories/calendar.repository.ts#L72)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/calendar.repository.ts#L68)
+[services/scheduler-service/src/repositories/calendar.repository.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/repositories/calendar.repository.ts#L68)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/calendar.repository.ts#L45)
+[services/scheduler-service/src/repositories/calendar.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/repositories/calendar.repository.ts#L45)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/calendar.repository.ts#L74)
+[services/scheduler-service/src/repositories/calendar.repository.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/repositories/calendar.repository.ts#L74)
 
 ___
 
@@ -116,7 +116,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/calendar.repository.ts#L64)
+[services/scheduler-service/src/repositories/calendar.repository.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/repositories/calendar.repository.ts#L64)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/calendar.repository.ts#L55)
+[services/scheduler-service/src/repositories/calendar.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/repositories/calendar.repository.ts#L55)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/calendar.repository.ts#L70)
+[services/scheduler-service/src/repositories/calendar.repository.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/repositories/calendar.repository.ts#L70)
 
 ___
 
@@ -146,4 +146,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/calendar.repository.ts#L50)
+[services/scheduler-service/src/repositories/calendar.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/repositories/calendar.repository.ts#L50)

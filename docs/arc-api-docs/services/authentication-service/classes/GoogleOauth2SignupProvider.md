@@ -4,7 +4,7 @@
 
 ## Implements
 
-- `Provider`<[`GoogleSignUpFn`](../interfaces/GoogleSignUpFn.md)\>
+- `Provider`<[`GoogleSignUpFn`](../modules.md#googlesignupfn)\>
 
 ## Table of contents
 
@@ -26,11 +26,11 @@
 
 ### value
 
-▸ **value**(): [`GoogleSignUpFn`](../interfaces/GoogleSignUpFn.md)
+▸ **value**(): [`GoogleSignUpFn`](../modules.md#googlesignupfn)
 
 #### Returns
 
-[`GoogleSignUpFn`](../interfaces/GoogleSignUpFn.md)
+[`GoogleSignUpFn`](../modules.md#googlesignupfn)
 
 #### Implementation of
 
@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/google-oauth2-signup.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/authentication-service/src/providers/google-oauth2-signup.provider.ts#L10)
+[services/authentication-service/src/providers/google-oauth2-signup.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/authentication-service/src/providers/google-oauth2-signup.provider.ts#L10)

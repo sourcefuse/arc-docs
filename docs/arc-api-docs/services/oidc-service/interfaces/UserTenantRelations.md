@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[services/oidc-service/src/models/user-tenant.model.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user-tenant.model.ts#L79)
+[services/oidc-service/src/models/user-tenant.model.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user-tenant.model.ts#L79)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user-tenant.model.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user-tenant.model.ts#L78)
+[services/oidc-service/src/models/user-tenant.model.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user-tenant.model.ts#L78)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user-tenant.model.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/models/user-tenant.model.ts#L77)
+[services/oidc-service/src/models/user-tenant.model.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user-tenant.model.ts#L77)

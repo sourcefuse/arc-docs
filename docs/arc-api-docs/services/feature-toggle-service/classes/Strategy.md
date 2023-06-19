@@ -43,7 +43,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/strategy.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/feature-toggle-service/src/models/strategy.model.ts#L36)
+[services/feature-toggle-service/src/models/strategy.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/models/strategy.model.ts#L36)
 
 ## Properties
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/strategy.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/feature-toggle-service/src/models/strategy.model.ts#L17)
+[services/feature-toggle-service/src/models/strategy.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/models/strategy.model.ts#L17)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/strategy.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/feature-toggle-service/src/models/strategy.model.ts#L29)
+[services/feature-toggle-service/src/models/strategy.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/models/strategy.model.ts#L29)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/strategy.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/feature-toggle-service/src/models/strategy.model.ts#L23)
+[services/feature-toggle-service/src/models/strategy.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/models/strategy.model.ts#L23)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/strategy.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/feature-toggle-service/src/models/strategy.model.ts#L34)
+[services/feature-toggle-service/src/models/strategy.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/models/strategy.model.ts#L34)

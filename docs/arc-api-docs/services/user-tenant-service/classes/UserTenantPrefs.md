@@ -43,17 +43,17 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L48)
+[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L48)
 
 ## Properties
 
 ### configKey
 
-• **configKey**: `LastAccessedUrl`
+• **configKey**: [`LastAccessedUrl`](../enums/UserConfigKey.md#lastaccessedurl)
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L29)
+[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L29)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L36)
+[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L36)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L22)
+[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L22)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L46)
+[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L46)

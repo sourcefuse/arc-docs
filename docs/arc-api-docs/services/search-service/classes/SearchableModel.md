@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[services/search-service/src/types.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/types.ts#L54)
+[services/search-service/src/types.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/types.ts#L54)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/types.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/types.ts#L55)
+[services/search-service/src/types.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/types.ts#L55)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[services/search-service/src/types.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/types.ts#L53)
+[services/search-service/src/types.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/types.ts#L53)

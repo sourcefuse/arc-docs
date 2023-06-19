@@ -64,7 +64,7 @@ SoftCrudRepository&lt;T, ID, Relations\&gt;.constructor
 
 #### Defined in
 
-[src/repositories/default-user-modify-crud.repository.base.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L26)
+[src/repositories/default-user-modify-crud.repository.base.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L26)
 
 ## Properties
 
@@ -78,7 +78,7 @@ SoftCrudRepository.getCurrentUser
 
 #### Defined in
 
-[src/repositories/default-user-modify-crud.repository.base.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L31)
+[src/repositories/default-user-modify-crud.repository.base.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L31)
 
 ## Methods
 
@@ -103,7 +103,7 @@ SoftCrudRepository.create
 
 #### Defined in
 
-[src/repositories/default-user-modify-crud.repository.base.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L38)
+[src/repositories/default-user-modify-crud.repository.base.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L38)
 
 ___
 
@@ -128,7 +128,7 @@ SoftCrudRepository.createAll
 
 #### Defined in
 
-[src/repositories/default-user-modify-crud.repository.base.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L50)
+[src/repositories/default-user-modify-crud.repository.base.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L50)
 
 ___
 
@@ -154,7 +154,7 @@ SoftCrudRepository.replaceById
 
 #### Defined in
 
-[src/repositories/default-user-modify-crud.repository.base.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L113)
+[src/repositories/default-user-modify-crud.repository.base.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L113)
 
 ___
 
@@ -179,7 +179,7 @@ SoftCrudRepository.save
 
 #### Defined in
 
-[src/repositories/default-user-modify-crud.repository.base.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L64)
+[src/repositories/default-user-modify-crud.repository.base.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L64)
 
 ___
 
@@ -204,7 +204,7 @@ SoftCrudRepository.update
 
 #### Defined in
 
-[src/repositories/default-user-modify-crud.repository.base.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L74)
+[src/repositories/default-user-modify-crud.repository.base.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L74)
 
 ___
 
@@ -230,7 +230,7 @@ SoftCrudRepository.updateAll
 
 #### Defined in
 
-[src/repositories/default-user-modify-crud.repository.base.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L84)
+[src/repositories/default-user-modify-crud.repository.base.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L84)
 
 ___
 
@@ -256,4 +256,4 @@ SoftCrudRepository.updateById
 
 #### Defined in
 
-[src/repositories/default-user-modify-crud.repository.base.ts:99](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L99)
+[src/repositories/default-user-modify-crud.repository.base.ts:99](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-user-modify-crud.repository.base.ts#L99)

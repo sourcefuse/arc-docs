@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/services/calendar-event.service.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/services/calendar-event.service.ts#L12)
+[services/scheduler-service/src/services/calendar-event.service.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/calendar-event.service.ts#L12)
 
 ## Properties
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/services/calendar-event.service.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/services/calendar-event.service.ts#L14)
+[services/scheduler-service/src/services/calendar-event.service.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/calendar-event.service.ts#L14)
 
 ## Methods
 
@@ -55,7 +55,7 @@
 | Name | Type |
 | :------ | :------ |
 | `identifier` | `string` |
-| `whereClause` | `Where` |
+| `whereClause` | `Where`<`AnyObject`\> |
 | `filter?` | `Filter`<[`EventAttendeeView`](EventAttendeeView.md)\> |
 
 #### Returns
@@ -64,13 +64,13 @@
 
 #### Defined in
 
-[services/scheduler-service/src/services/calendar-event.service.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/services/calendar-event.service.ts#L54)
+[services/scheduler-service/src/services/calendar-event.service.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/calendar-event.service.ts#L54)
 
 ___
 
 ### getWhereClause
 
-▸ **getWhereClause**(`timeMin?`, `timeMax?`): `Where`
+▸ **getWhereClause**(`timeMin?`, `timeMax?`): `Where`<`AnyObject`\>
 
 #### Parameters
 
@@ -81,11 +81,11 @@ ___
 
 #### Returns
 
-`Where`
+`Where`<`AnyObject`\>
 
 #### Defined in
 
-[services/scheduler-service/src/services/calendar-event.service.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/services/calendar-event.service.ts#L25)
+[services/scheduler-service/src/services/calendar-event.service.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/calendar-event.service.ts#L25)
 
 ___
 
@@ -105,4 +105,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/services/calendar-event.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/services/calendar-event.service.ts#L17)
+[services/scheduler-service/src/services/calendar-event.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/calendar-event.service.ts#L17)

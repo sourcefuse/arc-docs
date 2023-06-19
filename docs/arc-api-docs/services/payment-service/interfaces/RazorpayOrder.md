@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[providers/razorpay/types.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/razorpay/types.ts#L29)
+[providers/razorpay/types.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/razorpay/types.ts#L29)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[providers/razorpay/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/razorpay/types.ts#L33)
+[providers/razorpay/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/razorpay/types.ts#L33)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[providers/razorpay/types.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/razorpay/types.ts#L32)
+[providers/razorpay/types.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/razorpay/types.ts#L32)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[providers/razorpay/types.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/razorpay/types.ts#L31)
+[providers/razorpay/types.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/razorpay/types.ts#L31)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[providers/razorpay/types.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/payment-service/src/providers/razorpay/types.ts#L30)
+[providers/razorpay/types.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/providers/razorpay/types.ts#L30)

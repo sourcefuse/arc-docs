@@ -42,7 +42,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/search-service/src/models/recent-search.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/models/recent-search.model.ts#L35)
+[services/search-service/src/models/recent-search.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/models/recent-search.model.ts#L35)
 
 ## Properties
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/recent-search.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/models/recent-search.model.ts#L24)
+[services/search-service/src/models/recent-search.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/models/recent-search.model.ts#L24)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/recent-search.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/models/recent-search.model.ts#L33)
+[services/search-service/src/models/recent-search.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/models/recent-search.model.ts#L33)
 
 ___
 
@@ -128,4 +128,4 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/recent-search.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/search-service/src/models/recent-search.model.ts#L30)
+[services/search-service/src/models/recent-search.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/models/recent-search.model.ts#L30)

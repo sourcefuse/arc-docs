@@ -42,7 +42,7 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user-credentials.repository.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/repositories/user-credentials.repository.ts#L23)
+[services/oidc-service/src/repositories/user-credentials.repository.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user-credentials.repository.ts#L23)
 
 ## Properties
 
@@ -52,7 +52,7 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user-credentials.repository.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/repositories/user-credentials.repository.ts#L18)
+[services/oidc-service/src/repositories/user-credentials.repository.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user-credentials.repository.ts#L18)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user-credentials.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/oidc-service/src/repositories/user-credentials.repository.ts#L27)
+[services/oidc-service/src/repositories/user-credentials.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user-credentials.repository.ts#L27)

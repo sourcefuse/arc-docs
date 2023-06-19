@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[src/components/tenant-utilities/error-keys.ts:3](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/tenant-utilities/error-keys.ts#L3)
+[src/components/tenant-utilities/error-keys.ts:3](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/components/tenant-utilities/error-keys.ts#L3)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/error-keys.ts:2](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/packages/core/src/components/tenant-utilities/error-keys.ts#L2)
+[src/components/tenant-utilities/error-keys.ts:2](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/components/tenant-utilities/error-keys.ts#L2)

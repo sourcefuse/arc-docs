@@ -46,7 +46,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L32)
+[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L32)
 
 ## Properties
 
@@ -56,7 +56,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L40)
+[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L40)
 
 ___
 
@@ -77,4 +77,4 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L36)
+[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L36)

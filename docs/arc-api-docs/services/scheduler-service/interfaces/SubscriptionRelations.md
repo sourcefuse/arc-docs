@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:114](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/models/subscription.model.ts#L114)
+[services/scheduler-service/src/models/subscription.model.ts:114](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/subscription.model.ts#L114)

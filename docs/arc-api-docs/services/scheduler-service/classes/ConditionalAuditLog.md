@@ -46,7 +46,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit.model.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/models/audit.model.ts#L67)
+[services/scheduler-service/src/models/audit.model.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/audit.model.ts#L67)
 
 ## Properties
 
@@ -56,7 +56,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/models/audit.model.ts#L29)
+[services/scheduler-service/src/models/audit.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/audit.model.ts#L29)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/models/audit.model.ts#L35)
+[services/scheduler-service/src/models/audit.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/audit.model.ts#L35)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/models/audit.model.ts#L22)
+[services/scheduler-service/src/models/audit.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/audit.model.ts#L22)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/models/audit.model.ts#L42)
+[services/scheduler-service/src/models/audit.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/audit.model.ts#L42)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/models/audit.model.ts#L55)
+[services/scheduler-service/src/models/audit.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/audit.model.ts#L55)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/models/audit.model.ts#L65)
+[services/scheduler-service/src/models/audit.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/audit.model.ts#L65)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit.model.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/models/audit.model.ts#L60)
+[services/scheduler-service/src/models/audit.model.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/audit.model.ts#L60)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/models/audit.model.ts#L49)
+[services/scheduler-service/src/models/audit.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/audit.model.ts#L49)
 
 ___
 
@@ -136,4 +136,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/audit.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/77bb890a2/services/scheduler-service/src/models/audit.model.ts#L16)
+[services/scheduler-service/src/models/audit.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/audit.model.ts#L16)
