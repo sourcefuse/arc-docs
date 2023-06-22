@@ -69,7 +69,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L57)
+[services/oidc-service/src/repositories/user.repository.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L57)
 
 ## Properties
 
@@ -79,7 +79,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L46)
+[services/oidc-service/src/repositories/user.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L46)
 
 ___
 
@@ -93,7 +93,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L65)
+[services/oidc-service/src/repositories/user.repository.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L65)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L63)
+[services/oidc-service/src/repositories/user.repository.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L63)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L72)
+[services/oidc-service/src/repositories/user.repository.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L72)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L50)
+[services/oidc-service/src/repositories/user.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L50)
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L69)
+[services/oidc-service/src/repositories/user.repository.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L69)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L71)
+[services/oidc-service/src/repositories/user.repository.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L71)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L52)
+[services/oidc-service/src/repositories/user.repository.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L52)
 
 ## Methods
 
@@ -175,7 +175,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:175](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L175)
+[services/oidc-service/src/repositories/user.repository.ts:175](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L175)
 
 ___
 
@@ -200,7 +200,7 @@ DefaultUserModifyCrudRepository.create
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L102)
+[services/oidc-service/src/repositories/user.repository.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L102)
 
 ___
 
@@ -246,7 +246,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:121](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L121)
+[services/oidc-service/src/repositories/user.repository.ts:121](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L121)
 
 ___
 
@@ -266,7 +266,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:224](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L224)
+[services/oidc-service/src/repositories/user.repository.ts:224](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L224)
 
 ___
 
@@ -414,7 +414,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:212](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L212)
+[services/oidc-service/src/repositories/user.repository.ts:212](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L212)
 
 ___
 
@@ -436,7 +436,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:147](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L147)
+[services/oidc-service/src/repositories/user.repository.ts:147](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L147)
 
 ___
 
@@ -457,4 +457,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user.repository.ts:128](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/user.repository.ts#L128)
+[services/oidc-service/src/repositories/user.repository.ts:128](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/user.repository.ts#L128)

@@ -48,7 +48,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-level-permission.repository.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-level-permission.repository.ts#L37)
+[services/user-tenant-service/src/repositories/user-level-permission.repository.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-level-permission.repository.ts#L37)
 
 ## Properties
 
@@ -58,7 +58,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-level-permission.repository.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-level-permission.repository.ts#L47)
+[services/user-tenant-service/src/repositories/user-level-permission.repository.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-level-permission.repository.ts#L47)
 
 ___
 
@@ -78,7 +78,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-level-permission.repository.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-level-permission.repository.ts#L43)
+[services/user-tenant-service/src/repositories/user-level-permission.repository.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-level-permission.repository.ts#L43)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-level-permission.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-level-permission.repository.ts#L32)
+[services/user-tenant-service/src/repositories/user-level-permission.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-level-permission.repository.ts#L32)
 
 ___
 
@@ -98,4 +98,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-level-permission.repository.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-level-permission.repository.ts#L41)
+[services/user-tenant-service/src/repositories/user-level-permission.repository.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-level-permission.repository.ts#L41)

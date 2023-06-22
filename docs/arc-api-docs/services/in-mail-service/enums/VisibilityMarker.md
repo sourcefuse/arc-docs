@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[services/in-mail-service/src/types/visible-marker.type.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/in-mail-service/src/types/visible-marker.type.ts#L10)
+[services/in-mail-service/src/types/visible-marker.type.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/visible-marker.type.ts#L10)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/visible-marker.type.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/in-mail-service/src/types/visible-marker.type.ts#L9)
+[services/in-mail-service/src/types/visible-marker.type.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/visible-marker.type.ts#L9)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/visible-marker.type.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/in-mail-service/src/types/visible-marker.type.ts#L7)
+[services/in-mail-service/src/types/visible-marker.type.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/visible-marker.type.ts#L7)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/visible-marker.type.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/in-mail-service/src/types/visible-marker.type.ts#L6)
+[services/in-mail-service/src/types/visible-marker.type.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/visible-marker.type.ts#L6)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/visible-marker.type.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/in-mail-service/src/types/visible-marker.type.ts#L8)
+[services/in-mail-service/src/types/visible-marker.type.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/visible-marker.type.ts#L8)

@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/types.ts#L63)
+[services/video-conferencing-service/src/types.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/types.ts#L63)
 
 ___
 
@@ -66,7 +66,7 @@ Promise then returns a successful message for deleting if promise is resolved
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/types.ts#L50)
+[services/video-conferencing-service/src/types.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/types.ts#L50)
 
 ___
 
@@ -92,7 +92,7 @@ a list of archives after resolving promise
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/types.ts#L42)
+[services/video-conferencing-service/src/types.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/types.ts#L42)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/types.ts#L61)
+[services/video-conferencing-service/src/types.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/types.ts#L61)
 
 ___
 
@@ -140,7 +140,7 @@ Promise when resolved returns object of
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/types.ts#L27)
+[services/video-conferencing-service/src/types.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/types.ts#L27)
 
 ___
 
@@ -175,7 +175,7 @@ Promise when resolved returns object of type
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/types.ts#L33)
+[services/video-conferencing-service/src/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/types.ts#L33)
 
 ___
 
@@ -207,4 +207,4 @@ AzureTargetOptions
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/types.ts#L55)
+[services/video-conferencing-service/src/types.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/types.ts#L55)

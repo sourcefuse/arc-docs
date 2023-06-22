@@ -47,7 +47,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-credentials.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-credentials.repository.ts#L35)
+[services/user-tenant-service/src/repositories/user-credentials.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-credentials.repository.ts#L35)
 
 ## Properties
 
@@ -57,7 +57,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-credentials.repository.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-credentials.repository.ts#L41)
+[services/user-tenant-service/src/repositories/user-credentials.repository.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-credentials.repository.ts#L41)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-credentials.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-credentials.repository.ts#L30)
+[services/user-tenant-service/src/repositories/user-credentials.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-credentials.repository.ts#L30)
 
 ___
 
@@ -77,4 +77,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-credentials.repository.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-credentials.repository.ts#L39)
+[services/user-tenant-service/src/repositories/user-credentials.repository.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-credentials.repository.ts#L39)

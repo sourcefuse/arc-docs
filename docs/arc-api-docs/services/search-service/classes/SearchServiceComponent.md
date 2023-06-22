@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[services/search-service/src/component.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/component.ts#L48)
+[services/search-service/src/component.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/search-service/src/component.ts#L48)
 
 ## Properties
 
@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[services/search-service/src/component.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/component.ts#L50)
+[services/search-service/src/component.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/search-service/src/component.ts#L50)
 
 ___
 
@@ -78,7 +78,7 @@ Component.bindings
 
 #### Defined in
 
-[services/search-service/src/component.ts:134](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/component.ts#L134)
+[services/search-service/src/component.ts:134](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/search-service/src/component.ts#L134)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/component.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/component.ts#L52)
+[services/search-service/src/component.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/search-service/src/component.ts#L52)
 
 ___
 
@@ -104,7 +104,7 @@ Component.controllers
 
 #### Defined in
 
-[services/search-service/src/component.ts:151](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/component.ts#L151)
+[services/search-service/src/component.ts:151](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/search-service/src/component.ts#L151)
 
 ___
 
@@ -117,7 +117,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/search-service/src/component.ts:146](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/component.ts#L146)
+[services/search-service/src/component.ts:146](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/search-service/src/component.ts#L146)
 
 ___
 
@@ -131,7 +131,7 @@ Component.providers
 
 #### Defined in
 
-[services/search-service/src/component.ts:132](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/component.ts#L132)
+[services/search-service/src/component.ts:132](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/search-service/src/component.ts#L132)
 
 ___
 
@@ -144,7 +144,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/search-service/src/component.ts:140](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/component.ts#L140)
+[services/search-service/src/component.ts:140](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/search-service/src/component.ts#L140)
 
 ## Methods
 
@@ -165,7 +165,7 @@ typeof `Model`
 
 #### Defined in
 
-[services/search-service/src/component.ts:184](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/component.ts#L184)
+[services/search-service/src/component.ts:184](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/search-service/src/component.ts#L184)
 
 ___
 
@@ -181,4 +181,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/search-service/src/component.ts:159](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/component.ts#L159)
+[services/search-service/src/component.ts:159](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/search-service/src/component.ts#L159)

@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/saml-pre-verify.provider.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/authentication-service/src/providers/saml-pre-verify.provider.ts#L8)
+[services/authentication-service/src/providers/saml-pre-verify.provider.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/authentication-service/src/providers/saml-pre-verify.provider.ts#L8)

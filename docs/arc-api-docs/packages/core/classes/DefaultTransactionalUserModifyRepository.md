@@ -64,7 +64,7 @@ DefaultTransactionSoftCrudRepository&lt;T, ID, Relations\&gt;.constructor
 
 #### Defined in
 
-[src/repositories/default-transactional-user-modify-repository.base.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L25)
+[src/repositories/default-transactional-user-modify-repository.base.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L25)
 
 ## Properties
 
@@ -78,7 +78,7 @@ DefaultTransactionSoftCrudRepository.getCurrentUser
 
 #### Defined in
 
-[src/repositories/default-transactional-user-modify-repository.base.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L30)
+[src/repositories/default-transactional-user-modify-repository.base.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L30)
 
 ## Methods
 
@@ -103,7 +103,7 @@ DefaultTransactionSoftCrudRepository.create
 
 #### Defined in
 
-[src/repositories/default-transactional-user-modify-repository.base.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L37)
+[src/repositories/default-transactional-user-modify-repository.base.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L37)
 
 ___
 
@@ -128,7 +128,7 @@ DefaultTransactionSoftCrudRepository.createAll
 
 #### Defined in
 
-[src/repositories/default-transactional-user-modify-repository.base.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L49)
+[src/repositories/default-transactional-user-modify-repository.base.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L49)
 
 ___
 
@@ -154,7 +154,7 @@ DefaultTransactionSoftCrudRepository.replaceById
 
 #### Defined in
 
-[src/repositories/default-transactional-user-modify-repository.base.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L113)
+[src/repositories/default-transactional-user-modify-repository.base.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L113)
 
 ___
 
@@ -179,7 +179,7 @@ DefaultTransactionSoftCrudRepository.save
 
 #### Defined in
 
-[src/repositories/default-transactional-user-modify-repository.base.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L63)
+[src/repositories/default-transactional-user-modify-repository.base.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L63)
 
 ___
 
@@ -204,7 +204,7 @@ DefaultTransactionSoftCrudRepository.update
 
 #### Defined in
 
-[src/repositories/default-transactional-user-modify-repository.base.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L73)
+[src/repositories/default-transactional-user-modify-repository.base.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L73)
 
 ___
 
@@ -230,7 +230,7 @@ DefaultTransactionSoftCrudRepository.updateAll
 
 #### Defined in
 
-[src/repositories/default-transactional-user-modify-repository.base.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L83)
+[src/repositories/default-transactional-user-modify-repository.base.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L83)
 
 ___
 
@@ -256,4 +256,4 @@ DefaultTransactionSoftCrudRepository.updateById
 
 #### Defined in
 
-[src/repositories/default-transactional-user-modify-repository.base.ts:98](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L98)
+[src/repositories/default-transactional-user-modify-repository.base.ts:98](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/repositories/default-transactional-user-modify-repository.base.ts#L98)

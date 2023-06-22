@@ -89,7 +89,7 @@
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L37)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L37)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L75)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L75)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L21)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L21)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L59)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L59)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L13)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L13)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L51)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L51)
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L31)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L31)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L69)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L69)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L22)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L22)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L60)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L60)
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L23)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L23)
 
 ___
 
@@ -199,7 +199,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L61)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L61)
 
 ___
 
@@ -209,7 +209,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L6)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L6)
 
 ___
 
@@ -219,7 +219,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L44)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L44)
 
 ___
 
@@ -229,7 +229,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L28)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L28)
 
 ___
 
@@ -239,7 +239,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L66)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L66)
 
 ___
 
@@ -249,7 +249,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L15)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L15)
 
 ___
 
@@ -259,7 +259,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L53)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L53)
 
 ___
 
@@ -269,7 +269,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L10)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L10)
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L48)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L48)
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L36)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L36)
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L74)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L74)
 
 ___
 
@@ -309,7 +309,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L29)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L29)
 
 ___
 
@@ -319,7 +319,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L67)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L67)
 
 ___
 
@@ -329,7 +329,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L30)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L30)
 
 ___
 
@@ -339,7 +339,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L68)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L68)
 
 ___
 
@@ -349,7 +349,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L9)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L9)
 
 ___
 
@@ -359,7 +359,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L47)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L47)
 
 ___
 
@@ -369,7 +369,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L40)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L40)
 
 ___
 
@@ -379,7 +379,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L78)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L78)
 
 ___
 
@@ -389,7 +389,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L12)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L12)
 
 ___
 
@@ -399,7 +399,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L50)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L50)
 
 ___
 
@@ -409,7 +409,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L39)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L39)
 
 ___
 
@@ -419,7 +419,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L77)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L77)
 
 ___
 
@@ -429,7 +429,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L24)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L24)
 
 ___
 
@@ -439,7 +439,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L62)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L62)
 
 ___
 
@@ -449,7 +449,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L38)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L38)
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L76)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L76)
 
 ___
 
@@ -469,7 +469,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L35)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L35)
 
 ___
 
@@ -479,7 +479,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L73)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L73)
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L25)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L25)
 
 ___
 
@@ -499,7 +499,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L63)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L63)
 
 ___
 
@@ -509,7 +509,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L14)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L14)
 
 ___
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L52)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L52)
 
 ___
 
@@ -529,7 +529,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L33)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L33)
 
 ___
 
@@ -539,7 +539,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L71)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L71)
 
 ___
 
@@ -549,7 +549,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L26)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L26)
 
 ___
 
@@ -559,7 +559,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L64)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L64)
 
 ___
 
@@ -569,7 +569,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L27)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L27)
 
 ___
 
@@ -579,7 +579,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L65)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L65)
 
 ___
 
@@ -589,7 +589,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L8)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L8)
 
 ___
 
@@ -599,7 +599,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L46)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L46)
 
 ___
 
@@ -609,7 +609,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L41)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L41)
 
 ___
 
@@ -619,7 +619,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L79)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L79)
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L19)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L19)
 
 ___
 
@@ -639,7 +639,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L57)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L57)
 
 ___
 
@@ -649,7 +649,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L16)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L16)
 
 ___
 
@@ -659,7 +659,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L54)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L54)
 
 ___
 
@@ -669,7 +669,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L34)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L34)
 
 ___
 
@@ -679,7 +679,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L72)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L72)
 
 ___
 
@@ -689,7 +689,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L20)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L20)
 
 ___
 
@@ -699,7 +699,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L58)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L58)
 
 ___
 
@@ -709,7 +709,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L11)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L11)
 
 ___
 
@@ -719,7 +719,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L49)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L49)
 
 ___
 
@@ -729,7 +729,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L32)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L32)
 
 ___
 
@@ -739,7 +739,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L70)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L70)
 
 ___
 
@@ -749,7 +749,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L17)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L17)
 
 ___
 
@@ -759,7 +759,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L55)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L55)
 
 ___
 
@@ -769,7 +769,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L18)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L18)
 
 ___
 
@@ -779,7 +779,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L56)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L56)
 
 ___
 
@@ -789,7 +789,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L7)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L7)
 
 ___
 
@@ -799,7 +799,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L45)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L45)
 
 ___
 
@@ -809,7 +809,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L42)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L42)
 
 ___
 
@@ -819,4 +819,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/permission-key.enum.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/permission-key.enum.ts#L80)
+[services/user-tenant-service/src/enums/permission-key.enum.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/permission-key.enum.ts#L80)

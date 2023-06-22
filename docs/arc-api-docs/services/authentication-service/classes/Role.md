@@ -43,7 +43,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/authentication-service/src/models/role.model.ts#L41)
+[services/authentication-service/src/models/role.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/authentication-service/src/models/role.model.ts#L41)
 
 ## Properties
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/authentication-service/src/models/role.model.ts#L16)
+[services/authentication-service/src/models/role.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/authentication-service/src/models/role.model.ts#L16)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/authentication-service/src/models/role.model.ts#L22)
+[services/authentication-service/src/models/role.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/authentication-service/src/models/role.model.ts#L22)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/authentication-service/src/models/role.model.ts#L39)
+[services/authentication-service/src/models/role.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/authentication-service/src/models/role.model.ts#L39)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/authentication-service/src/models/role.model.ts#L33)
+[services/authentication-service/src/models/role.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/authentication-service/src/models/role.model.ts#L33)

@@ -36,7 +36,7 @@ Model.constructor
 
 #### Defined in
 
-[services/in-mail-service/src/models/id-response.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/in-mail-service/src/models/id-response.model.ts#L14)
+[services/in-mail-service/src/models/id-response.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/models/id-response.model.ts#L14)
 
 ## Properties
 
@@ -46,4 +46,4 @@ Model.constructor
 
 #### Defined in
 
-[services/in-mail-service/src/models/id-response.model.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/in-mail-service/src/models/id-response.model.ts#L12)
+[services/in-mail-service/src/models/id-response.model.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/models/id-response.model.ts#L12)

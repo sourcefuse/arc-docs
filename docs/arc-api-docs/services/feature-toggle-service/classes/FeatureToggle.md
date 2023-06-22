@@ -44,7 +44,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature-toggle.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/models/feature-toggle.model.ts#L42)
+[services/feature-toggle-service/src/models/feature-toggle.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/models/feature-toggle.model.ts#L42)
 
 ## Properties
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature-toggle.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/models/feature-toggle.model.ts#L23)
+[services/feature-toggle-service/src/models/feature-toggle.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/models/feature-toggle.model.ts#L23)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature-toggle.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/models/feature-toggle.model.ts#L17)
+[services/feature-toggle-service/src/models/feature-toggle.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/models/feature-toggle.model.ts#L17)
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature-toggle.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/models/feature-toggle.model.ts#L40)
+[services/feature-toggle-service/src/models/feature-toggle.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/models/feature-toggle.model.ts#L40)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature-toggle.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/models/feature-toggle.model.ts#L35)
+[services/feature-toggle-service/src/models/feature-toggle.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/models/feature-toggle.model.ts#L35)
 
 ___
 
@@ -150,4 +150,4 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature-toggle.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/models/feature-toggle.model.ts#L29)
+[services/feature-toggle-service/src/models/feature-toggle.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/models/feature-toggle.model.ts#L29)

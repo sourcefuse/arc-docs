@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/user-config-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/user-config-key.enum.ts#L6)
+[services/user-tenant-service/src/enums/user-config-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/user-config-key.enum.ts#L6)

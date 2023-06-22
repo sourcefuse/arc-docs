@@ -61,7 +61,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/repositories/message.repository.ts#L50)
+[services/chat-service/src/repositories/message.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/chat-service/src/repositories/message.repository.ts#L50)
 
 ## Properties
 
@@ -71,7 +71,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/repositories/message.repository.ts#L61)
+[services/chat-service/src/repositories/message.repository.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/chat-service/src/repositories/message.repository.ts#L61)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/repositories/message.repository.ts#L45)
+[services/chat-service/src/repositories/message.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/chat-service/src/repositories/message.repository.ts#L45)
 
 ___
 
@@ -95,7 +95,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/repositories/message.repository.ts#L53)
+[services/chat-service/src/repositories/message.repository.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/chat-service/src/repositories/message.repository.ts#L53)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/repositories/message.repository.ts#L57)
+[services/chat-service/src/repositories/message.repository.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/chat-service/src/repositories/message.repository.ts#L57)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/repositories/message.repository.ts#L31)
+[services/chat-service/src/repositories/message.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/chat-service/src/repositories/message.repository.ts#L31)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/repositories/message.repository.ts#L59)
+[services/chat-service/src/repositories/message.repository.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/chat-service/src/repositories/message.repository.ts#L59)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/repositories/message.repository.ts#L41)
+[services/chat-service/src/repositories/message.repository.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/chat-service/src/repositories/message.repository.ts#L41)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/message.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/chat-service/src/repositories/message.repository.ts#L36)
+[services/chat-service/src/repositories/message.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/chat-service/src/repositories/message.repository.ts#L36)
 
 ## Methods
 

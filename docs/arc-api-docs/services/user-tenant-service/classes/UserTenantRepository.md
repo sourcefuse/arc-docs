@@ -59,7 +59,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-tenant.repository.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L65)
+[services/user-tenant-service/src/repositories/user-tenant.repository.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L65)
 
 ## Properties
 
@@ -69,7 +69,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-tenant.repository.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L79)
+[services/user-tenant-service/src/repositories/user-tenant.repository.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L79)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-tenant.repository.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L51)
+[services/user-tenant-service/src/repositories/user-tenant.repository.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L51)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-tenant.repository.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L73)
+[services/user-tenant-service/src/repositories/user-tenant.repository.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L73)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-tenant.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L46)
+[services/user-tenant-service/src/repositories/user-tenant.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L46)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-tenant.repository.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L71)
+[services/user-tenant-service/src/repositories/user-tenant.repository.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L71)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-tenant.repository.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L58)
+[services/user-tenant-service/src/repositories/user-tenant.repository.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L58)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-tenant.repository.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L77)
+[services/user-tenant-service/src/repositories/user-tenant.repository.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L77)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-tenant.repository.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L60)
+[services/user-tenant-service/src/repositories/user-tenant.repository.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L60)
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-tenant.repository.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L75)
+[services/user-tenant-service/src/repositories/user-tenant.repository.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L75)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-tenant.repository.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L53)
+[services/user-tenant-service/src/repositories/user-tenant.repository.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L53)
 
 ___
 
@@ -169,4 +169,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-tenant.repository.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L69)
+[services/user-tenant-service/src/repositories/user-tenant.repository.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-tenant.repository.ts#L69)

@@ -52,7 +52,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-group.repository.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-group.repository.ts#L44)
+[services/user-tenant-service/src/repositories/user-group.repository.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-group.repository.ts#L44)
 
 ## Properties
 
@@ -62,7 +62,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-group.repository.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-group.repository.ts#L56)
+[services/user-tenant-service/src/repositories/user-group.repository.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-group.repository.ts#L56)
 
 ___
 
@@ -83,7 +83,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-group.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-group.repository.ts#L48)
+[services/user-tenant-service/src/repositories/user-group.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-group.repository.ts#L48)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-group.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-group.repository.ts#L34)
+[services/user-tenant-service/src/repositories/user-group.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-group.repository.ts#L34)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-group.repository.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-group.repository.ts#L52)
+[services/user-tenant-service/src/repositories/user-group.repository.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-group.repository.ts#L52)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-group.repository.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-group.repository.ts#L39)
+[services/user-tenant-service/src/repositories/user-group.repository.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-group.repository.ts#L39)
 
 ___
 
@@ -123,4 +123,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-group.repository.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/user-group.repository.ts#L54)
+[services/user-tenant-service/src/repositories/user-group.repository.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/user-group.repository.ts#L54)

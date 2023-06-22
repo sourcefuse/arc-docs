@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/user-tenant-group.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/user-tenant-group.enum.ts#L6)
+[services/user-tenant-service/src/enums/user-tenant-group.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/user-tenant-group.enum.ts#L6)

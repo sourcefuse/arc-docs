@@ -52,7 +52,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/group.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/in-mail-service/src/repositories/group.repository.ts#L26)
+[services/in-mail-service/src/repositories/group.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/repositories/group.repository.ts#L26)
 
 ## Properties
 
@@ -66,7 +66,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/group.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/in-mail-service/src/repositories/group.repository.ts#L30)
+[services/in-mail-service/src/repositories/group.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/repositories/group.repository.ts#L30)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/group.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/in-mail-service/src/repositories/group.repository.ts#L19)
+[services/in-mail-service/src/repositories/group.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/repositories/group.repository.ts#L19)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/group.repository.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/in-mail-service/src/repositories/group.repository.ts#L24)
+[services/in-mail-service/src/repositories/group.repository.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/repositories/group.repository.ts#L24)
 
 ## Methods
 

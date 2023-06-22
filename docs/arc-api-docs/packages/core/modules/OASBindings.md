@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[src/keys.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/keys.ts#L31)
+[src/keys.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/keys.ts#L31)

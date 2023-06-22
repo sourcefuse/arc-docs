@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/services/chat-session.service.ts#L31)
+[services/video-conferencing-service/src/services/chat-session.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/services/chat-session.service.ts#L31)
 
 ## Properties
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/services/chat-session.service.ts#L41)
+[services/video-conferencing-service/src/services/chat-session.service.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/services/chat-session.service.ts#L41)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/services/chat-session.service.ts#L37)
+[services/video-conferencing-service/src/services/chat-session.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/services/chat-session.service.ts#L37)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/services/chat-session.service.ts#L39)
+[services/video-conferencing-service/src/services/chat-session.service.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/services/chat-session.service.ts#L39)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/services/chat-session.service.ts#L35)
+[services/video-conferencing-service/src/services/chat-session.service.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/services/chat-session.service.ts#L35)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/services/chat-session.service.ts#L33)
+[services/video-conferencing-service/src/services/chat-session.service.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/services/chat-session.service.ts#L33)
 
 ## Methods
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:237](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/services/chat-session.service.ts#L237)
+[services/video-conferencing-service/src/services/chat-session.service.ts:237](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/services/chat-session.service.ts#L237)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:152](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/services/chat-session.service.ts#L152)
+[services/video-conferencing-service/src/services/chat-session.service.ts:152](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/services/chat-session.service.ts#L152)
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:208](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/services/chat-session.service.ts#L208)
+[services/video-conferencing-service/src/services/chat-session.service.ts:208](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/services/chat-session.service.ts#L208)
 
 ___
 
@@ -176,7 +176,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:262](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/services/chat-session.service.ts#L262)
+[services/video-conferencing-service/src/services/chat-session.service.ts:262](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/services/chat-session.service.ts#L262)
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/services/chat-session.service.ts#L44)
+[services/video-conferencing-service/src/services/chat-session.service.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/services/chat-session.service.ts#L44)
 
 ___
 
@@ -217,7 +217,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/services/chat-session.service.ts#L84)
+[services/video-conferencing-service/src/services/chat-session.service.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/services/chat-session.service.ts#L84)
 
 ___
 
@@ -239,4 +239,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:240](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/services/chat-session.service.ts#L240)
+[services/video-conferencing-service/src/services/chat-session.service.ts:240](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/services/chat-session.service.ts#L240)

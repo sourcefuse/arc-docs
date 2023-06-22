@@ -55,7 +55,7 @@ Interface defining the component's options object
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L27)
+[strategies/redis/redis-cache-strategy.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L27)
 
 ## Properties
 
@@ -69,7 +69,7 @@ Interface defining the component's options object
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L22)
+[strategies/redis/redis-cache-strategy.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L22)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L25)
+[strategies/redis/redis-cache-strategy.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L25)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L21)
+[strategies/redis/redis-cache-strategy.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L21)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L23)
+[strategies/redis/redis-cache-strategy.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L23)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L24)
+[strategies/redis/redis-cache-strategy.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L24)
 
 ## Methods
 
@@ -147,7 +147,7 @@ ___
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L78)
+[strategies/redis/redis-cache-strategy.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L78)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L88)
+[strategies/redis/redis-cache-strategy.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L88)
 
 ___
 
@@ -199,7 +199,7 @@ ___
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L59)
+[strategies/redis/redis-cache-strategy.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L59)
 
 ___
 
@@ -223,4 +223,4 @@ ___
 
 #### Defined in
 
-[strategies/redis/redis-cache-strategy.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L33)
+[strategies/redis/redis-cache-strategy.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/cache/src/strategies/redis/redis-cache-strategy.ts#L33)

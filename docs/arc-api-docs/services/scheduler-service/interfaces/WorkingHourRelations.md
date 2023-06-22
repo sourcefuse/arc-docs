@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/scheduler-service/src/models/working-hour.model.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/working-hour.model.ts#L81)
+[services/scheduler-service/src/models/working-hour.model.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/working-hour.model.ts#L81)

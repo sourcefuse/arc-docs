@@ -47,7 +47,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/oidc-service/src/models/user-level-permission.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user-level-permission.model.ts#L47)
+[services/oidc-service/src/models/user-level-permission.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/models/user-level-permission.model.ts#L47)
 
 ## Properties
 
@@ -61,7 +61,7 @@ UserPermission.allowed
 
 #### Defined in
 
-[services/oidc-service/src/models/user-level-permission.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user-level-permission.model.ts#L45)
+[services/oidc-service/src/models/user-level-permission.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/models/user-level-permission.model.ts#L45)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user-level-permission.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user-level-permission.model.ts#L22)
+[services/oidc-service/src/models/user-level-permission.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/models/user-level-permission.model.ts#L22)
 
 ___
 
@@ -141,7 +141,7 @@ UserPermission.permission
 
 #### Defined in
 
-[services/oidc-service/src/models/user-level-permission.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user-level-permission.model.ts#L38)
+[services/oidc-service/src/models/user-level-permission.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/models/user-level-permission.model.ts#L38)
 
 ___
 
@@ -151,4 +151,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user-level-permission.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/models/user-level-permission.model.ts#L32)
+[services/oidc-service/src/models/user-level-permission.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/models/user-level-permission.model.ts#L32)

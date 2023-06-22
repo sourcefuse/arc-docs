@@ -35,4 +35,4 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[repositories/payment-gateways.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/payment-service/src/repositories/payment-gateways.repository.ts#L14)
+[repositories/payment-gateways.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/repositories/payment-gateways.repository.ts#L14)

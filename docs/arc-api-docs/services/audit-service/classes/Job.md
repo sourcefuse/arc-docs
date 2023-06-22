@@ -39,7 +39,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/audit-service/src/models/job.model.ts#L33)
+[services/audit-service/src/models/job.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/job.model.ts#L33)
 
 ## Properties
 
@@ -49,7 +49,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/audit-service/src/models/job.model.ts#L26)
+[services/audit-service/src/models/job.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/job.model.ts#L26)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/audit-service/src/models/job.model.ts#L15)
+[services/audit-service/src/models/job.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/job.model.ts#L15)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/audit-service/src/models/job.model.ts#L31)
+[services/audit-service/src/models/job.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/job.model.ts#L31)
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/audit-service/src/models/job.model.ts#L21)
+[services/audit-service/src/models/job.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/job.model.ts#L21)

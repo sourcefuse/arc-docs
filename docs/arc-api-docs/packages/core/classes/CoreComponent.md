@@ -37,7 +37,7 @@
 
 #### Defined in
 
-[src/component.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/component.ts#L28)
+[src/component.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/component.ts#L28)
 
 ## Properties
 
@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[src/component.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/component.ts#L30)
+[src/component.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/component.ts#L30)
 
 ___
 
@@ -61,7 +61,7 @@ Component.bindings
 
 #### Defined in
 
-[src/component.ts:114](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/component.ts#L114)
+[src/component.ts:114](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/component.ts#L114)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[src/component.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/component.ts#L32)
+[src/component.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/component.ts#L32)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[src/component.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/component.ts#L34)
+[src/component.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/component.ts#L34)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[src/component.ts:110](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/component.ts#L110)
+[src/component.ts:110](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/component.ts#L110)
 
 ___
 
@@ -105,4 +105,4 @@ Component.providers
 
 #### Defined in
 
-[src/component.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/component.ts#L112)
+[src/component.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/component.ts#L112)

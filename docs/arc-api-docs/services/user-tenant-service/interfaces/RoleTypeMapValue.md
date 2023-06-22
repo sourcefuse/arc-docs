@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/role-type.enum.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/role-type.enum.ts#L24)
+[services/user-tenant-service/src/enums/role-type.enum.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/role-type.enum.ts#L24)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/role-type.enum.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/enums/role-type.enum.ts#L25)
+[services/user-tenant-service/src/enums/role-type.enum.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/enums/role-type.enum.ts#L25)

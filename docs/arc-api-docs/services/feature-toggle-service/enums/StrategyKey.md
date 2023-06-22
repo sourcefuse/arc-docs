@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/strategy-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/enums/strategy-key.enum.ts#L6)
+[services/feature-toggle-service/src/enums/strategy-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/enums/strategy-key.enum.ts#L6)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/strategy-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/enums/strategy-key.enum.ts#L7)
+[services/feature-toggle-service/src/enums/strategy-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/enums/strategy-key.enum.ts#L7)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/strategy-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/enums/strategy-key.enum.ts#L8)
+[services/feature-toggle-service/src/enums/strategy-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/enums/strategy-key.enum.ts#L8)

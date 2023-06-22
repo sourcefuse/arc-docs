@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[services/oidc-service/src/providers/find-account.provider.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/providers/find-account.provider.ts#L17)
+[services/oidc-service/src/providers/find-account.provider.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/providers/find-account.provider.ts#L17)
 
 ## Properties
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[services/oidc-service/src/providers/find-account.provider.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/providers/find-account.provider.ts#L19)
+[services/oidc-service/src/providers/find-account.provider.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/providers/find-account.provider.ts#L19)
 
 ## Methods
 
@@ -62,4 +62,4 @@ Provider.value
 
 #### Defined in
 
-[services/oidc-service/src/providers/find-account.provider.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/providers/find-account.provider.ts#L22)
+[services/oidc-service/src/providers/find-account.provider.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/providers/find-account.provider.ts#L22)

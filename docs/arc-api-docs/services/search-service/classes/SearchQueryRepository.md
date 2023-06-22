@@ -53,7 +53,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/search-service/src/repositories/search-query.repository.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/repositories/search-query.repository.ts#L20)
+[services/search-service/src/repositories/search-query.repository.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/search-service/src/repositories/search-query.repository.ts#L20)
 
 ## Properties
 
@@ -63,7 +63,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/search-service/src/repositories/search-query.repository.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/repositories/search-query.repository.ts#L24)
+[services/search-service/src/repositories/search-query.repository.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/search-service/src/repositories/search-query.repository.ts#L24)
 
 ___
 
@@ -77,7 +77,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/search-service/src/repositories/search-query.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/repositories/search-query.repository.ts#L26)
+[services/search-service/src/repositories/search-query.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/search-service/src/repositories/search-query.repository.ts#L26)
 
 ## Methods
 
@@ -152,7 +152,7 @@ DefaultUserModifyCrudRepository.deleteAll
 
 #### Defined in
 
-[services/search-service/src/repositories/search-query.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/search-service/src/repositories/search-query.repository.ts#L33)
+[services/search-service/src/repositories/search-query.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/search-service/src/repositories/search-query.repository.ts#L33)
 
 ___
 

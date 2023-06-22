@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[src/enums/auth-provider.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/enums/auth-provider.enum.ts#L10)
+[src/enums/auth-provider.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/enums/auth-provider.enum.ts#L10)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[src/enums/auth-provider.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/enums/auth-provider.enum.ts#L9)
+[src/enums/auth-provider.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/enums/auth-provider.enum.ts#L9)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[src/enums/auth-provider.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/enums/auth-provider.enum.ts#L8)
+[src/enums/auth-provider.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/enums/auth-provider.enum.ts#L8)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[src/enums/auth-provider.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/enums/auth-provider.enum.ts#L11)
+[src/enums/auth-provider.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/enums/auth-provider.enum.ts#L11)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[src/enums/auth-provider.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/enums/auth-provider.enum.ts#L6)
+[src/enums/auth-provider.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/enums/auth-provider.enum.ts#L6)
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[src/enums/auth-provider.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/enums/auth-provider.enum.ts#L7)
+[src/enums/auth-provider.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/enums/auth-provider.enum.ts#L7)

@@ -49,7 +49,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/group.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/group.repository.ts#L42)
+[services/user-tenant-service/src/repositories/group.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/group.repository.ts#L42)
 
 ## Properties
 
@@ -59,7 +59,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/group.repository.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/group.repository.ts#L52)
+[services/user-tenant-service/src/repositories/group.repository.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/group.repository.ts#L52)
 
 ___
 
@@ -80,7 +80,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/group.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/group.repository.ts#L46)
+[services/user-tenant-service/src/repositories/group.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/group.repository.ts#L46)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/group.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/group.repository.ts#L50)
+[services/user-tenant-service/src/repositories/group.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/group.repository.ts#L50)
 
 ___
 
@@ -100,4 +100,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/group.repository.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/group.repository.ts#L37)
+[services/user-tenant-service/src/repositories/group.repository.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/group.repository.ts#L37)

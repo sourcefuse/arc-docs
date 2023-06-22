@@ -32,4 +32,4 @@ DefaultKeyValueRepository&lt;RevokedToken\&gt;.constructor
 
 #### Defined in
 
-[src/components/bearer-verifier/repositories/revoked-token.repository.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/packages/core/src/components/bearer-verifier/repositories/revoked-token.repository.ts#L12)
+[src/components/bearer-verifier/repositories/revoked-token.repository.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/bearer-verifier/repositories/revoked-token.repository.ts#L12)

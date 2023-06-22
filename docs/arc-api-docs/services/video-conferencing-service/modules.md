@@ -96,7 +96,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/meeting-link-id-generator.provider.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/services/meeting-link-id-generator.provider.ts#L8)
+[services/video-conferencing-service/src/services/meeting-link-id-generator.provider.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/services/meeting-link-id-generator.provider.ts#L8)
 
 ## Variables
 
@@ -106,7 +106,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/keys.ts#L35)
+[services/video-conferencing-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/keys.ts#L35)
 
 ___
 
@@ -116,4 +116,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/keys.ts#L40)
+[services/video-conferencing-service/src/keys.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/keys.ts#L40)

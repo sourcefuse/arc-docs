@@ -40,7 +40,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/auth-client.repository.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/auth-client.repository.ts#L23)
+[services/user-tenant-service/src/repositories/auth-client.repository.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/auth-client.repository.ts#L23)
 
 ## Properties
 
@@ -50,4 +50,4 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/auth-client.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/auth-client.repository.ts#L27)
+[services/user-tenant-service/src/repositories/auth-client.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/auth-client.repository.ts#L27)

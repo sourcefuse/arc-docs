@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/video-chat.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/enums/video-chat.enum.ts#L13)
+[services/video-conferencing-service/src/enums/video-chat.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/enums/video-chat.enum.ts#L13)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/video-chat.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/video-conferencing-service/src/enums/video-chat.enum.ts#L12)
+[services/video-conferencing-service/src/enums/video-chat.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/enums/video-chat.enum.ts#L12)

@@ -42,7 +42,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts#L27)
+[services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts#L27)
 
 ## Properties
 
@@ -52,7 +52,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts#L35)
+[services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts#L35)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts#L31)
+[services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts#L31)

@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[services/audit-service/src/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/audit-service/src/types.ts#L33)
+[services/audit-service/src/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/types.ts#L33)
 
 ## Methods
 
@@ -40,4 +40,4 @@
 
 #### Defined in
 
-[services/audit-service/src/types.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/audit-service/src/types.ts#L34)
+[services/audit-service/src/types.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/types.ts#L34)

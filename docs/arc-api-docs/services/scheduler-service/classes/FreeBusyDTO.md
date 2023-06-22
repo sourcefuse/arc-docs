@@ -48,7 +48,7 @@ services/scheduler-service/node_modules/@loopback/repository/dist/model.d.ts:180
 
 #### Defined in
 
-[services/scheduler-service/src/models/free-busy.dto.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/free-busy.dto.ts#L23)
+[services/scheduler-service/src/models/free-busy.dto.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/free-busy.dto.ts#L23)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/free-busy.dto.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/free-busy.dto.ts#L14)
+[services/scheduler-service/src/models/free-busy.dto.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/free-busy.dto.ts#L14)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/free-busy.dto.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/models/free-busy.dto.ts#L20)
+[services/scheduler-service/src/models/free-busy.dto.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/free-busy.dto.ts#L20)

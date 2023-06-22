@@ -53,7 +53,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/role.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/role.repository.ts#L55)
+[services/user-tenant-service/src/repositories/role.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/role.repository.ts#L55)
 
 ## Properties
 
@@ -63,7 +63,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/role.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/role.repository.ts#L45)
+[services/user-tenant-service/src/repositories/role.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/role.repository.ts#L45)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/role.repository.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/role.repository.ts#L67)
+[services/user-tenant-service/src/repositories/role.repository.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/role.repository.ts#L67)
 
 ___
 
@@ -94,7 +94,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/role.repository.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/role.repository.ts#L59)
+[services/user-tenant-service/src/repositories/role.repository.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/role.repository.ts#L59)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/role.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/role.repository.ts#L50)
+[services/user-tenant-service/src/repositories/role.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/role.repository.ts#L50)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/role.repository.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/role.repository.ts#L63)
+[services/user-tenant-service/src/repositories/role.repository.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/role.repository.ts#L63)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/role.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/role.repository.ts#L40)
+[services/user-tenant-service/src/repositories/role.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/role.repository.ts#L40)
 
 ___
 
@@ -134,4 +134,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/role.repository.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/user-tenant-service/src/repositories/role.repository.ts#L65)
+[services/user-tenant-service/src/repositories/role.repository.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/role.repository.ts#L65)

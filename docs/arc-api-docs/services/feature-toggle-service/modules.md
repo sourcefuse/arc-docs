@@ -45,7 +45,7 @@
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature-toggle.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/models/feature-toggle.model.ts#L47)
+[services/feature-toggle-service/src/models/feature-toggle.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/models/feature-toggle.model.ts#L47)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/models/feature.model.ts#L49)
+[services/feature-toggle-service/src/models/feature.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/models/feature.model.ts#L49)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/strategy.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/models/strategy.model.ts#L41)
+[services/feature-toggle-service/src/models/strategy.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/models/strategy.model.ts#L41)
 
 ## Variables
 
@@ -75,4 +75,4 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/types.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/feature-toggle-service/src/types.ts#L7)
+[services/feature-toggle-service/src/types.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/types.ts#L7)

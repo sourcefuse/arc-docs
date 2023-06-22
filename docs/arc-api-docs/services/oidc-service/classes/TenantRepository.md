@@ -53,7 +53,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/oidc-service/src/repositories/tenant.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/tenant.repository.ts#L30)
+[services/oidc-service/src/repositories/tenant.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/tenant.repository.ts#L30)
 
 ## Properties
 
@@ -67,7 +67,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/oidc-service/src/repositories/tenant.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/tenant.repository.ts#L33)
+[services/oidc-service/src/repositories/tenant.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/tenant.repository.ts#L33)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/tenant.repository.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/tenant.repository.ts#L37)
+[services/oidc-service/src/repositories/tenant.repository.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/tenant.repository.ts#L37)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/tenant.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/oidc-service/src/repositories/tenant.repository.ts#L25)
+[services/oidc-service/src/repositories/tenant.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/repositories/tenant.repository.ts#L25)
 
 ## Methods
 

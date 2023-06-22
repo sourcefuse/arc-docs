@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/services/calendar-event.service.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/calendar-event.service.ts#L12)
+[services/scheduler-service/src/services/calendar-event.service.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/services/calendar-event.service.ts#L12)
 
 ## Properties
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/services/calendar-event.service.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/calendar-event.service.ts#L14)
+[services/scheduler-service/src/services/calendar-event.service.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/services/calendar-event.service.ts#L14)
 
 ## Methods
 
@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/services/calendar-event.service.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/calendar-event.service.ts#L54)
+[services/scheduler-service/src/services/calendar-event.service.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/services/calendar-event.service.ts#L54)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/services/calendar-event.service.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/calendar-event.service.ts#L25)
+[services/scheduler-service/src/services/calendar-event.service.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/services/calendar-event.service.ts#L25)
 
 ___
 
@@ -105,4 +105,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/services/calendar-event.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/68ec38a2a/services/scheduler-service/src/services/calendar-event.service.ts#L17)
+[services/scheduler-service/src/services/calendar-event.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/services/calendar-event.service.ts#L17)
