@@ -1,5 +1,21 @@
 # Control Tower AFT Setup
 
+The article below contains a step-by-step guide for setting up a Landing Zone via Control Tower and the necessary steps to deploy the Account Factory for Terraform.
+
+Introduction
+When this has completed running, it allows you to create and manage a standardized set of accounts, with consistent configurations, policies, and permissions across all accounts.
+
+As additional accounts are created, you can define a set of common configurations and policies in code and apply them consistently across all created accounts; reducing the likelihood of errors, and making it easier to manage and maintain the accounts over time. Consistency comes from a templated configuration customized to accommodate the inputs of the user, all managed via code.
+
+We can create external Terraform modules with dynamic inputs upstream that configure:
+* Specific VPC configuration
+* Standard set of IAM roles and policies
+* Default security group configuration(s)
+* Standard logging and monitoring setup 
+
+While LZA and AFT are similar, the benefits of using AFT over LZA it is more flexible and customizable whereas LZA is more prescriptive and opinionated. 
+With AFT, you can define your own configurations and policies. With LZA you are provided with a pre-built framework that may or may not fit your specific needs.
+
 ## Special Notes
 
 * Cannot have CloudTrail already configured in the management account.
@@ -39,25 +55,34 @@ If you had existing accounts configured in your organization, you can enroll the
 
 **Notes on enrolling existing accounts**:
 
-* The existing account first needs to be set up with a role to allow access to control tower. You need to log into the existing account and follow the steps outlined here:
+* The existing account first needs to be set up with a role to allow access to control tower. You need to log into the existing account and follow the steps outlined [here](https://docs.aws.amazon.com/en_us/controltower/latest/userguide/enroll-manually.html)
 * You cannot be the root user while enrolling existing accounts. Must be an IAM user
 * IAM user must be in the AWSControlTowerAdmins group
   * You can assign the user to this group from IAM Identity Center in the AWS console
-![iam_identity_center.png](assets/control_tower/iam_identity_center.png)
+    ![iam_identity_center.png](assets/control_tower/iam_identity_center.png)
 
 **Enrollment Process**
 
 1. Log into the Management Account with an Administrator account
 2. Navigate to Services > Control Tower
 3. Select Organization.
-4. From the Organization Dashboard, you can select the OU or Account you want to enroll > Actions > Under Account, select Enroll
+4. From the Organization Dashboard, you can select the OU or Account you want to enroll > Actions > Under Account, select Enroll:  
 	![ou_1.png](assets/control_tower/ou_1.png)
 	![ou_2.png](assets/control_tower/ou_2.png)
 
 ### Configuring AWS Profile
 Once you have SSO configured, you can set up the AWS CLI for SSO authentication. You will need to do this in order to run the Terraform configuration and provision the AFT and Logging Accounts.
 
-For more information on how to configure SSO with the AWS CLI, see the official docs for:
+For more information on how to configure SSO with the AWS CLI, see the official docs for [Configure the AWS CLI to use AWS IAM Identity Center](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html)
+
+**TL;DR:**
+```
+$ aws configure sso
+SSO start URL [None]: https://<subdomain>.awsapps.com/start
+SSO region [None]: <region>
+``` 
+This will open your browser where you will enter the code presented on the terminal, then you will be able to allow access.****
+When you are redirected back to the terminal, you will have different accounts to choose from. Be sure to select the account you want to configure your CLI profile for:
 ```
 There are 2 AWS accounts available to you.
 > DeveloperAccount, developer-account-admin@example.com (123456789011) 
@@ -79,14 +104,14 @@ There are four repositories that need to be managed for creating the resources i
 3. [Global customizations](https://github.com/sourcefuse/terraform-aws-refarch-aft-global-customizations) – This repository manages customizations that are applied to all accounts created by and managed with AFT. [Examples available](https://github.com/aws-ia/terraform-aws-control_tower_account_factory/tree/main/sources/aft-customizations-repos/aft-global-customizations).
 4. [Account customizations](https://github.com/sourcefuse/terraform-aws-refarch-aft-account-customizations) – This repository manages customizations that are applied only to specific accounts created by and managed with AFT. [Examples available](https://github.com/aws-ia/terraform-aws-control_tower_account_factory/tree/main/sources/aft-customizations-repos/aft-account-customizations).
 
-AFT expects that each of these repositories follow a specific directory structure. The templates that are used to populate your repositories and instructions that describe how to populate the templates are available in the Account Factory for Terraform module in the AFT GitHub repository.
+AFT expects that each of these repositories follow a specific directory structure. The templates that are used to populate your repositories and instructions that describe how to populate the templates are available in the Account Factory for Terraform module in the [AFT GitHub repository](https://github.com/aws-ia/terraform-aws-control_tower_account_factory/tree/main/sources/aft-customizations-repos).
 Supported VCS repositories for AFT are:
 * CodeCommit
 * GitHub
 * GitHub Enterprise
 * BitBucket
 
-Azure DevOps is not natively supported, however, we can work around this by implementing a mirror. For more information on this, see Use AWS CodeCommit to mirror an Azure DevOps repository using an Azure DevOps pipeline.
+Azure DevOps is not natively supported, however, we can work around this by implementing a mirror. For more information on this, see [Use AWS CodeCommit to mirror an Azure DevOps repository using an Azure DevOps pipeline](https://aws.amazon.com/blogs/devops/use-aws-codecommit-to-mirror-an-azure-devops-repository-using-an-azure-devops-pipeline/).
 
 ### Deploying the infrastructure
 Once the Control Tower instance has been created, you can configure AFT. 
@@ -103,9 +128,9 @@ For more in-depth information, see the AWS Doc on [Deploy AWS Control Tower Acco
 5. Ensure your Terraform environment is available for deployment. Terraform version `1.3` or greater is required.
 6. Create a `main.tf` and use the source of the [terraform-aws-refarch-control-tower-aft](https://github.com/sourcefuse/terraform-aws-refarch-control-tower-aft) module, then update the variables where applicable. See the `example` folder for additional configuration details.
 7. You must be authenticated to your Management Account using the **AdministratorAccess** credentials.
-   a. Configure the AWS profile. See Configuring AWS Profile for information on setting this up.  
+   a. Configure the AWS profile. See [Configuring AWS Profile](#configuring-aws-profile) for information on setting this up.  
 8. Execute terraform while authenticated as the Administrator of the Management Account. 
-   If you didn’t configure a backend state bucket, be sure to save your state file somewhere safe!
+   :warning: If you didn’t configure a backend state bucket, be sure to save your state file somewhere safe! :warning:  
 	**Initialize terraform**:  
 	```
     terraform init
@@ -133,10 +158,17 @@ The following will need to be configured in the Management Account (where Contro
 The following will need to be configured in the AFT-Management account
 
 #### CodeStar Connection
+1. Navigate to CodeBuild, in the left pane, expand Settings > Select Connections
+2. Select the pending connection and complete the connection to your VCS provider. 
+	![codestar-connection.png](assets/control_tower/codestar-connection.png)
+3. This will link to the provider where you complete will select the organization to connect to.
+
+#### CodePipeline
 Once the CodeStar connection is complete, you will need to re-trigger the Pipelines that failed (they couldn’t connect to GitHub)
-1. Navigate to CodePipeline > Pipelines
-2. Select the failed pipeline(s) > Release change > Release
-	![codepipeline.png](assets/control_tower/codepipeline.png)
+
+1. Navigate to CodePipeline > Pipelines  
+2. Select the failed pipeline(s) > Release change > Release  
+   ![codepipeline.png](assets/control_tower/codepipeline.png)
 3. Expand Build > Select Build projects. From here, you can see the status of the different builds for managing AFT resources
 
 ### GitHub Organization Settings
