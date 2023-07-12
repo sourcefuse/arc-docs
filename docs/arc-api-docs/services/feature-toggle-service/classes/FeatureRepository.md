@@ -50,7 +50,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/feature-toggle-service/src/repositories/feature.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/repositories/feature.repository.ts#L19)
+[services/feature-toggle-service/src/repositories/feature.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/feature-toggle-service/src/repositories/feature.repository.ts#L19)
 
 ## Properties
 
@@ -64,7 +64,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/feature-toggle-service/src/repositories/feature.repository.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/feature-toggle-service/src/repositories/feature.repository.ts#L23)
+[services/feature-toggle-service/src/repositories/feature.repository.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/feature-toggle-service/src/repositories/feature.repository.ts#L23)
 
 ## Methods
 

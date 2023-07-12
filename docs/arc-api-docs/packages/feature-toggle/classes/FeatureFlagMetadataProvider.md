@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-metadata.provider.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts#L18)
+[feature-toggle/src/providers/feature-flag-metadata.provider.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts#L18)
 
 ## Properties
 
@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-metadata.provider.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts#L20)
+[feature-toggle/src/providers/feature-flag-metadata.provider.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts#L20)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-metadata.provider.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts#L22)
+[feature-toggle/src/providers/feature-flag-metadata.provider.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts#L22)
 
 ## Methods
 
@@ -74,4 +74,4 @@ Provider.value
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-metadata.provider.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts#L24)
+[feature-toggle/src/providers/feature-flag-metadata.provider.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts#L24)

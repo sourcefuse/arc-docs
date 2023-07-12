@@ -12,24 +12,29 @@
 
 - [FeatureFlagActionProvider](classes/FeatureFlagActionProvider.md)
 - [FeatureFlagMetadataProvider](classes/FeatureFlagMetadataProvider.md)
+- [FeatureHandlerService](classes/FeatureHandlerService.md)
 - [FeatureToggleComponent](classes/FeatureToggleComponent.md)
 
 ### Interfaces
 
 - [FeatureFlagMetadata](interfaces/FeatureFlagMetadata.md)
+- [FeatureHandler](interfaces/FeatureHandler.md)
 - [IAuthUserWithDisabledFeat](interfaces/IAuthUserWithDisabledFeat.md)
 
 ### Type Aliases
 
 - [FeatureFlagFn](modules.md#featureflagfn)
+- [FeatureFlagOptions](modules.md#featureflagoptions)
 - [FeatureInterface](modules.md#featureinterface)
 
 ### Variables
 
 - [FEATURE\_FLAG\_METADATA\_ACCESSOR](modules.md#feature_flag_metadata_accessor)
+- [HANDLER\_EXTENSION\_POINT\_NAME](modules.md#handler_extension_point_name)
 
 ### Functions
 
+- [asFeatureHandler](modules.md#asfeaturehandler)
 - [featureFlag](modules.md#featureflag)
 - [getFeatureFlagMetadata](modules.md#getfeatureflagmetadata)
 
@@ -49,7 +54,27 @@
 
 #### Defined in
 
-[feature-toggle/src/types.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/feature-toggle/src/types.ts#L14)
+[feature-toggle/src/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L19)
+
+___
+
+### FeatureFlagOptions
+
+Ƭ **FeatureFlagOptions**: `Object`
+
+#### Index signature
+
+▪ [property: `string`]: `any`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `handler` | `string` |
+
+#### Defined in
+
+[feature-toggle/src/types.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L11)
 
 ___
 
@@ -67,7 +92,7 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/types.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/feature-toggle/src/types.ts#L12)
+[feature-toggle/src/types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L17)
 
 ## Variables
 
@@ -77,9 +102,43 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/keys.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/feature-toggle/src/keys.ts#L8)
+[feature-toggle/src/keys.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/keys.ts#L8)
+
+___
+
+### HANDLER\_EXTENSION\_POINT\_NAME
+
+• `Const` **HANDLER\_EXTENSION\_POINT\_NAME**: ``"handlers"``
+
+Name/id of the handler extension point
+
+#### Defined in
+
+[feature-toggle/src/types.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L43)
 
 ## Functions
+
+### asFeatureHandler
+
+▸ **asFeatureHandler**(`binding`): `void`
+
+A binding template for handler extensions
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `binding` | `Binding`<`unknown`\> |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+feature-toggle/node_modules/@loopback/context/dist/binding.d.ts:202
+
+___
 
 ### featureFlag
 
@@ -97,7 +156,7 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/decorators/feature-flag.decorator.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/feature-toggle/src/decorators/feature-flag.decorator.ts#L9)
+[feature-toggle/src/decorators/feature-flag.decorator.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/decorators/feature-flag.decorator.ts#L9)
 
 ___
 
@@ -118,4 +177,4 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-metadata.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts#L30)
+[feature-toggle/src/providers/feature-flag-metadata.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts#L30)

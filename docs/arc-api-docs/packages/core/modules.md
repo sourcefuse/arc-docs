@@ -132,7 +132,7 @@
 
 #### Defined in
 
-[src/mixins/types.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/mixins/types.ts#L25)
+[src/mixins/types.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/mixins/types.ts#L25)
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/tenant-utilities/types.ts#L67)
+[src/components/tenant-utilities/types.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/tenant-utilities/types.ts#L67)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/tenant-utilities/types.ts#L16)
+[src/components/tenant-utilities/types.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/tenant-utilities/types.ts#L16)
 
 ___
 
@@ -184,7 +184,7 @@ ___
 
 #### Defined in
 
-[src/components/swagger-authentication/types.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/swagger-authentication/types.ts#L5)
+[src/components/swagger-authentication/types.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/swagger-authentication/types.ts#L5)
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-[src/components/swagger-authentication/types.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/swagger-authentication/types.ts#L10)
+[src/components/swagger-authentication/types.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/swagger-authentication/types.ts#L10)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-[src/keys.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/keys.ts#L25)
+[src/keys.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/keys.ts#L25)
 
 ___
 
@@ -225,7 +225,7 @@ ___
 
 #### Defined in
 
-[src/security-specs.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/security-specs.ts#L7)
+[src/security-specs.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/security-specs.ts#L7)
 
 ## Variables
 
@@ -235,7 +235,7 @@ ___
 
 #### Defined in
 
-[src/components/bearer-verifier/types.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/bearer-verifier/types.ts#L5)
+[src/components/bearer-verifier/types.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/bearer-verifier/types.ts#L5)
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-[src/constants/globals.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/constants/globals.ts#L5)
+[src/constants/globals.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/constants/globals.ts#L5)
 
 ___
 
@@ -264,7 +264,7 @@ ___
 
 #### Defined in
 
-[src/constants/content-type.constant.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/constants/content-type.constant.ts#L5)
+[src/constants/content-type.constant.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/constants/content-type.constant.ts#L5)
 
 ___
 
@@ -274,7 +274,7 @@ ___
 
 #### Defined in
 
-[src/enums/roles.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/enums/roles.enum.ts#L10)
+[src/enums/roles.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/enums/roles.enum.ts#L10)
 
 ___
 
@@ -297,7 +297,7 @@ ___
 
 #### Defined in
 
-[src/enums/status-codes.enum.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/enums/status-codes.enum.ts#L63)
+[src/enums/status-codes.enum.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/enums/status-codes.enum.ts#L63)
 
 ___
 
@@ -307,7 +307,7 @@ ___
 
 #### Defined in
 
-[src/security-specs.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/security-specs.ts#L6)
+[src/security-specs.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/security-specs.ts#L6)
 
 ___
 
@@ -317,7 +317,7 @@ ___
 
 #### Defined in
 
-[src/enums/http-oas.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/enums/http-oas.enum.ts#L13)
+[src/enums/http-oas.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/enums/http-oas.enum.ts#L13)
 
 ___
 
@@ -327,7 +327,7 @@ ___
 
 #### Defined in
 
-[src/security-specs.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/security-specs.ts#L10)
+[src/security-specs.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/security-specs.ts#L10)
 
 ___
 
@@ -337,7 +337,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/keys.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/tenant-utilities/keys.ts#L5)
+[src/components/tenant-utilities/keys.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/tenant-utilities/keys.ts#L5)
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-[src/constants/globals.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/constants/globals.ts#L6)
+[src/constants/globals.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/constants/globals.ts#L6)
 
 ## Functions
 
@@ -375,7 +375,7 @@ typeof `base` & [`AbstractConstructor`](modules.md#abstractconstructor)<[`IBaseE
 
 #### Defined in
 
-[src/mixins/base-entity.mixin.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/mixins/base-entity.mixin.ts#L5)
+[src/mixins/base-entity.mixin.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/mixins/base-entity.mixin.ts#L5)
 
 ___
 
@@ -404,7 +404,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/mixins/tenant-guard.mixin.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/tenant-utilities/mixins/tenant-guard.mixin.ts#L20)
+[src/components/tenant-utilities/mixins/tenant-guard.mixin.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/tenant-utilities/mixins/tenant-guard.mixin.ts#L20)
 
 ___
 
@@ -432,7 +432,7 @@ typeof `base` & [`AbstractConstructor`](modules.md#abstractconstructor)<[`IUserM
 
 #### Defined in
 
-[src/mixins/user-modifiable-entity.mixin.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/mixins/user-modifiable-entity.mixin.ts#L10)
+[src/mixins/user-modifiable-entity.mixin.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/mixins/user-modifiable-entity.mixin.ts#L10)
 
 ___
 
@@ -452,7 +452,7 @@ ___
 
 #### Defined in
 
-[src/utils.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/utils.ts#L23)
+[src/utils.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/utils.ts#L23)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-[src/utils.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/utils.ts#L29)
+[src/utils.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/utils.ts#L29)
 
 ___
 
@@ -492,7 +492,7 @@ ___
 
 #### Defined in
 
-[src/utils.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/utils.ts#L12)
+[src/utils.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/utils.ts#L12)
 
 ___
 
@@ -512,7 +512,7 @@ ___
 
 #### Defined in
 
-[src/utils.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/utils.ts#L34)
+[src/utils.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/utils.ts#L34)
 
 ___
 
@@ -532,7 +532,7 @@ ___
 
 #### Defined in
 
-[src/utils.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/utils.ts#L40)
+[src/utils.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/utils.ts#L40)
 
 ___
 
@@ -570,4 +570,4 @@ to the given repository class.
 
 #### Defined in
 
-[src/components/tenant-utilities/decorators/tenant-guard.decorator.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/tenant-utilities/decorators/tenant-guard.decorator.ts#L12)
+[src/components/tenant-utilities/decorators/tenant-guard.decorator.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/tenant-utilities/decorators/tenant-guard.decorator.ts#L12)

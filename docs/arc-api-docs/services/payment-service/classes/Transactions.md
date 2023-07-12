@@ -47,7 +47,7 @@ Entity.constructor
 
 #### Defined in
 
-[models/transactions.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/models/transactions.model.ts#L66)
+[models/transactions.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/transactions.model.ts#L66)
 
 ## Properties
 
@@ -57,7 +57,7 @@ Entity.constructor
 
 #### Defined in
 
-[models/transactions.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/models/transactions.model.ts#L22)
+[models/transactions.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/transactions.model.ts#L22)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[models/transactions.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/models/transactions.model.ts#L28)
+[models/transactions.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/transactions.model.ts#L28)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[models/transactions.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/models/transactions.model.ts#L15)
+[models/transactions.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/transactions.model.ts#L15)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[models/transactions.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/models/transactions.model.ts#L52)
+[models/transactions.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/transactions.model.ts#L52)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[models/transactions.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/models/transactions.model.ts#L40)
+[models/transactions.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/transactions.model.ts#L40)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[models/transactions.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/models/transactions.model.ts#L46)
+[models/transactions.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/transactions.model.ts#L46)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[models/transactions.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/models/transactions.model.ts#L58)
+[models/transactions.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/transactions.model.ts#L58)
 
 ___
 
@@ -127,4 +127,4 @@ ___
 
 #### Defined in
 
-[models/transactions.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/models/transactions.model.ts#L34)
+[models/transactions.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/transactions.model.ts#L34)

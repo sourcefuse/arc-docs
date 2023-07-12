@@ -32,4 +32,4 @@ DefaultKeyValueRepository&lt;Otp\&gt;.constructor
 
 #### Defined in
 
-[services/authentication-service/src/repositories/otp.repository.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/authentication-service/src/repositories/otp.repository.ts#L12)
+[services/authentication-service/src/repositories/otp.repository.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/otp.repository.ts#L12)

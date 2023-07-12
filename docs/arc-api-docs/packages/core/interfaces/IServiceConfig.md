@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/types.ts#L9)
+[src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/types.ts#L9)

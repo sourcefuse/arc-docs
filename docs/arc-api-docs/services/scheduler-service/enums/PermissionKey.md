@@ -83,7 +83,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L25)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L25)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L68)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L68)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L30)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L30)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L73)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L73)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L20)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L20)
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L63)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L63)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L14)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L14)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L57)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L57)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L35)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L35)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L78)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L78)
 
 ___
 
@@ -183,7 +183,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L9)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L9)
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L52)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L52)
 
 ___
 
@@ -203,7 +203,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L40)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L40)
 
 ___
 
@@ -213,7 +213,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L83)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L83)
 
 ___
 
@@ -223,7 +223,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L45)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L45)
 
 ___
 
@@ -233,7 +233,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L88)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L88)
 
 ___
 
@@ -243,7 +243,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L27)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L27)
 
 ___
 
@@ -253,7 +253,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L70)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L70)
 
 ___
 
@@ -263,7 +263,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L32)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L32)
 
 ___
 
@@ -273,7 +273,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L75)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L75)
 
 ___
 
@@ -283,7 +283,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L22)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L22)
 
 ___
 
@@ -293,7 +293,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L65)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L65)
 
 ___
 
@@ -303,7 +303,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L16)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L16)
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L59)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L59)
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L37)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L37)
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L80)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L80)
 
 ___
 
@@ -343,7 +343,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L11)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L11)
 
 ___
 
@@ -353,7 +353,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L54)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L54)
 
 ___
 
@@ -363,7 +363,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L42)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L42)
 
 ___
 
@@ -373,7 +373,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:85](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L85)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:85](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L85)
 
 ___
 
@@ -383,7 +383,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L47)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L47)
 
 ___
 
@@ -393,7 +393,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:90](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L90)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:90](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L90)
 
 ___
 
@@ -403,7 +403,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L17)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L17)
 
 ___
 
@@ -413,7 +413,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L60)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L60)
 
 ___
 
@@ -423,7 +423,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L6)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L6)
 
 ___
 
@@ -433,7 +433,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L49)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L49)
 
 ___
 
@@ -443,7 +443,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L26)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L26)
 
 ___
 
@@ -453,7 +453,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L69)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L69)
 
 ___
 
@@ -463,7 +463,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L31)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L31)
 
 ___
 
@@ -473,7 +473,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L74)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L74)
 
 ___
 
@@ -483,7 +483,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L21)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L21)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L64)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L64)
 
 ___
 
@@ -503,7 +503,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L15)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L15)
 
 ___
 
@@ -513,7 +513,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L58)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L58)
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L36)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L36)
 
 ___
 
@@ -533,7 +533,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L79)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L79)
 
 ___
 
@@ -543,7 +543,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L10)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L10)
 
 ___
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L53)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L53)
 
 ___
 
@@ -563,7 +563,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L41)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L41)
 
 ___
 
@@ -573,7 +573,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L84)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L84)
 
 ___
 
@@ -583,7 +583,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L46)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L46)
 
 ___
 
@@ -593,7 +593,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L89)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L89)
 
 ___
 
@@ -603,7 +603,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L24)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L24)
 
 ___
 
@@ -613,7 +613,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L67)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L67)
 
 ___
 
@@ -623,7 +623,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L29)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L29)
 
 ___
 
@@ -633,7 +633,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L72)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L72)
 
 ___
 
@@ -643,7 +643,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L19)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L19)
 
 ___
 
@@ -653,7 +653,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L62)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L62)
 
 ___
 
@@ -663,7 +663,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L13)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L13)
 
 ___
 
@@ -673,7 +673,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L56)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L56)
 
 ___
 
@@ -683,7 +683,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L34)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L34)
 
 ___
 
@@ -693,7 +693,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L77)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L77)
 
 ___
 
@@ -703,7 +703,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L8)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L8)
 
 ___
 
@@ -713,7 +713,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L51)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L51)
 
 ___
 
@@ -723,7 +723,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L39)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L39)
 
 ___
 
@@ -733,7 +733,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L82)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L82)
 
 ___
 
@@ -743,7 +743,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L44)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L44)
 
 ___
 
@@ -753,4 +753,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/permission-key.enum.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/permission-key.enum.ts#L87)
+[services/scheduler-service/src/models/enums/permission-key.enum.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/permission-key.enum.ts#L87)

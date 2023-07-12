@@ -54,7 +54,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/chat-service/src/repositories/attachment-file.repository.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/chat-service/src/repositories/attachment-file.repository.ts#L23)
+[services/chat-service/src/repositories/attachment-file.repository.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/repositories/attachment-file.repository.ts#L23)
 
 ## Properties
 
@@ -68,7 +68,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/chat-service/src/repositories/attachment-file.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/chat-service/src/repositories/attachment-file.repository.ts#L26)
+[services/chat-service/src/repositories/attachment-file.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/repositories/attachment-file.repository.ts#L26)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/attachment-file.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/chat-service/src/repositories/attachment-file.repository.ts#L19)
+[services/chat-service/src/repositories/attachment-file.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/repositories/attachment-file.repository.ts#L19)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/repositories/attachment-file.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/chat-service/src/repositories/attachment-file.repository.ts#L30)
+[services/chat-service/src/repositories/attachment-file.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/repositories/attachment-file.repository.ts#L30)
 
 ## Methods
 

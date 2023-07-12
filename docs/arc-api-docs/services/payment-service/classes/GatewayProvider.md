@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[providers/gateway.provider.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/providers/gateway.provider.ts#L15)
+[providers/gateway.provider.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/gateway.provider.ts#L15)
 
 ## Properties
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[providers/gateway.provider.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/providers/gateway.provider.ts#L23)
+[providers/gateway.provider.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/gateway.provider.ts#L23)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[providers/gateway.provider.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/providers/gateway.provider.ts#L19)
+[providers/gateway.provider.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/gateway.provider.ts#L19)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[providers/gateway.provider.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/providers/gateway.provider.ts#L17)
+[providers/gateway.provider.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/gateway.provider.ts#L17)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[providers/gateway.provider.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/providers/gateway.provider.ts#L16)
+[providers/gateway.provider.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/gateway.provider.ts#L16)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[providers/gateway.provider.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/providers/gateway.provider.ts#L21)
+[providers/gateway.provider.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/gateway.provider.ts#L21)
 
 ## Methods
 
@@ -119,4 +119,4 @@ Provider.value
 
 #### Defined in
 
-[providers/gateway.provider.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/providers/gateway.provider.ts#L26)
+[providers/gateway.provider.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/gateway.provider.ts#L26)

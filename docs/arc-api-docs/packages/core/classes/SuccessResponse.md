@@ -40,7 +40,7 @@ Model.constructor
 
 #### Defined in
 
-[src/models/success-response.dto.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/models/success-response.dto.ts#L18)
+[src/models/success-response.dto.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/models/success-response.dto.ts#L18)
 
 ## Properties
 
@@ -50,4 +50,4 @@ Model.constructor
 
 #### Defined in
 
-[src/models/success-response.dto.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/models/success-response.dto.ts#L12)
+[src/models/success-response.dto.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/models/success-response.dto.ts#L12)

@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/access-role.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/access-role.enum.ts#L6)
+[services/scheduler-service/src/models/enums/access-role.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/access-role.enum.ts#L6)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/access-role.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/access-role.enum.ts#L9)
+[services/scheduler-service/src/models/enums/access-role.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/access-role.enum.ts#L9)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/access-role.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/access-role.enum.ts#L7)
+[services/scheduler-service/src/models/enums/access-role.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/access-role.enum.ts#L7)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/enums/access-role.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/scheduler-service/src/models/enums/access-role.enum.ts#L8)
+[services/scheduler-service/src/models/enums/access-role.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/enums/access-role.enum.ts#L8)

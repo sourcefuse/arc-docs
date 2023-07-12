@@ -41,4 +41,4 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/audit.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/repositories/audit.repository.ts#L16)
+[services/user-tenant-service/src/repositories/audit.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/audit.repository.ts#L16)

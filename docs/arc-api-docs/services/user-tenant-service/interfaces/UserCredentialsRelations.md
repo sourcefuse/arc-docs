@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-credentials.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/models/user-credentials.model.ts#L66)
+[services/user-tenant-service/src/models/user-credentials.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-credentials.model.ts#L66)

@@ -6,36 +6,36 @@
 
 ### Enumeration Members
 
-- [Completed](FileStatusKey.md#completed)
-- [Failed](FileStatusKey.md#failed)
-- [Pending](FileStatusKey.md#pending)
+- [COMPLETED](FileStatusKey.md#completed)
+- [FAILED](FileStatusKey.md#failed)
+- [PENDING](FileStatusKey.md#pending)
 
 ## Enumeration Members
 
-### Completed
+### COMPLETED
 
-• **Completed** = ``"COMPLETED"``
+• **COMPLETED** = ``"COMPLETED"``
 
 #### Defined in
 
-[services/audit-service/src/enums/file-status-key.enum.ts:3](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/enums/file-status-key.enum.ts#L3)
+[services/audit-service/src/enums/file-status-key.enum.ts:3](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/file-status-key.enum.ts#L3)
 
 ___
 
-### Failed
+### FAILED
 
-• **Failed** = ``"FAILED"``
+• **FAILED** = ``"FAILED"``
 
 #### Defined in
 
-[services/audit-service/src/enums/file-status-key.enum.ts:4](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/enums/file-status-key.enum.ts#L4)
+[services/audit-service/src/enums/file-status-key.enum.ts:4](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/file-status-key.enum.ts#L4)
 
 ___
 
-### Pending
+### PENDING
 
-• **Pending** = ``"PENDING"``
+• **PENDING** = ``"PENDING"``
 
 #### Defined in
 
-[services/audit-service/src/enums/file-status-key.enum.ts:2](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/enums/file-status-key.enum.ts#L2)
+[services/audit-service/src/enums/file-status-key.enum.ts:2](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/file-status-key.enum.ts#L2)

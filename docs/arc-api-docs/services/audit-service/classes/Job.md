@@ -18,6 +18,7 @@
 
 - [filterUsed](Job.md#filterused)
 - [id](Job.md#id)
+- [operation](Job.md#operation)
 - [result](Job.md#result)
 - [status](Job.md#status)
 
@@ -39,7 +40,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/job.model.ts#L33)
+[services/audit-service/src/models/job.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/job.model.ts#L40)
 
 ## Properties
 
@@ -49,7 +50,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/job.model.ts#L26)
+[services/audit-service/src/models/job.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/job.model.ts#L33)
 
 ___
 
@@ -59,7 +60,17 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/job.model.ts#L15)
+[services/audit-service/src/models/job.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/job.model.ts#L16)
+
+___
+
+### operation
+
+• **operation**: `OperationKey`
+
+#### Defined in
+
+[services/audit-service/src/models/job.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/job.model.ts#L27)
 
 ___
 
@@ -69,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/job.model.ts#L31)
+[services/audit-service/src/models/job.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/job.model.ts#L38)
 
 ___
 
@@ -79,4 +90,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/job.model.ts#L21)
+[services/audit-service/src/models/job.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/job.model.ts#L22)

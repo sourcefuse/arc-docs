@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/apple-post-verify.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/authentication-service/src/providers/apple-post-verify.provider.ts#L12)
+[services/authentication-service/src/providers/apple-post-verify.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/providers/apple-post-verify.provider.ts#L12)

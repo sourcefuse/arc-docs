@@ -12,6 +12,8 @@
 - [CreateAuditNum](PermissionKey.md#createauditnum)
 - [DeleteAudit](PermissionKey.md#deleteaudit)
 - [DeleteAuditNum](PermissionKey.md#deleteauditnum)
+- [ExportAuditNum](PermissionKey.md#exportauditnum)
+- [ExportLogs](PermissionKey.md#exportlogs)
 - [UpdateAudit](PermissionKey.md#updateaudit)
 - [UpdateAuditNum](PermissionKey.md#updateauditnum)
 - [ViewAudit](PermissionKey.md#viewaudit)
@@ -25,7 +27,7 @@
 
 #### Defined in
 
-[services/audit-service/src/enums/permission-key.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/enums/permission-key.enum.ts#L10)
+[services/audit-service/src/enums/permission-key.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/permission-key.enum.ts#L11)
 
 ___
 
@@ -35,7 +37,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/enums/permission-key.enum.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/enums/permission-key.enum.ts#L15)
+[services/audit-service/src/enums/permission-key.enum.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/permission-key.enum.ts#L17)
 
 ___
 
@@ -45,7 +47,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/enums/permission-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/enums/permission-key.enum.ts#L7)
+[services/audit-service/src/enums/permission-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/permission-key.enum.ts#L7)
 
 ___
 
@@ -55,7 +57,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/enums/permission-key.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/enums/permission-key.enum.ts#L12)
+[services/audit-service/src/enums/permission-key.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/permission-key.enum.ts#L13)
 
 ___
 
@@ -65,7 +67,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/enums/permission-key.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/enums/permission-key.enum.ts#L9)
+[services/audit-service/src/enums/permission-key.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/permission-key.enum.ts#L9)
 
 ___
 
@@ -75,7 +77,27 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/enums/permission-key.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/enums/permission-key.enum.ts#L14)
+[services/audit-service/src/enums/permission-key.enum.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/permission-key.enum.ts#L15)
+
+___
+
+### ExportAuditNum
+
+• **ExportAuditNum** = ``"5"``
+
+#### Defined in
+
+[services/audit-service/src/enums/permission-key.enum.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/permission-key.enum.ts#L16)
+
+___
+
+### ExportLogs
+
+• **ExportLogs** = ``"ExportLogs"``
+
+#### Defined in
+
+[services/audit-service/src/enums/permission-key.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/permission-key.enum.ts#L10)
 
 ___
 
@@ -85,7 +107,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/enums/permission-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/enums/permission-key.enum.ts#L8)
+[services/audit-service/src/enums/permission-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/permission-key.enum.ts#L8)
 
 ___
 
@@ -95,7 +117,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/enums/permission-key.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/enums/permission-key.enum.ts#L13)
+[services/audit-service/src/enums/permission-key.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/permission-key.enum.ts#L14)
 
 ___
 
@@ -105,7 +127,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/enums/permission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/enums/permission-key.enum.ts#L6)
+[services/audit-service/src/enums/permission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/permission-key.enum.ts#L6)
 
 ___
 
@@ -115,4 +137,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/enums/permission-key.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/enums/permission-key.enum.ts#L11)
+[services/audit-service/src/enums/permission-key.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/enums/permission-key.enum.ts#L12)

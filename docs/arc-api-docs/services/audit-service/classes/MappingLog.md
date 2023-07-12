@@ -38,7 +38,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/audit-service/src/models/mapping-log.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/mapping-log.model.ts#L27)
+[services/audit-service/src/models/mapping-log.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/mapping-log.model.ts#L27)
 
 ## Properties
 
@@ -48,7 +48,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/audit-service/src/models/mapping-log.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/mapping-log.model.ts#L25)
+[services/audit-service/src/models/mapping-log.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/mapping-log.model.ts#L25)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/mapping-log.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/mapping-log.model.ts#L18)
+[services/audit-service/src/models/mapping-log.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/mapping-log.model.ts#L18)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/mapping-log.model.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/mapping-log.model.ts#L11)
+[services/audit-service/src/models/mapping-log.model.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/mapping-log.model.ts#L11)

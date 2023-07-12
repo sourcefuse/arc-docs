@@ -38,7 +38,7 @@
 
 #### Defined in
 
-[services/oidc-service/src/providers/oidc.provider.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/providers/oidc.provider.ts#L51)
+[services/oidc-service/src/providers/oidc.provider.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/providers/oidc.provider.ts#L51)
 
 ## Properties
 
@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[services/oidc-service/src/providers/oidc.provider.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/providers/oidc.provider.ts#L53)
+[services/oidc-service/src/providers/oidc.provider.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/providers/oidc.provider.ts#L53)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/providers/oidc.provider.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/providers/oidc.provider.ts#L55)
+[services/oidc-service/src/providers/oidc.provider.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/providers/oidc.provider.ts#L55)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/providers/oidc.provider.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/providers/oidc.provider.ts#L57)
+[services/oidc-service/src/providers/oidc.provider.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/providers/oidc.provider.ts#L57)
 
 ## Methods
 
@@ -86,4 +86,4 @@ Provider.value
 
 #### Defined in
 
-[services/oidc-service/src/providers/oidc.provider.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/oidc-service/src/providers/oidc.provider.ts#L60)
+[services/oidc-service/src/providers/oidc.provider.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/providers/oidc.provider.ts#L60)

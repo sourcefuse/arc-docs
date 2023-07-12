@@ -37,7 +37,7 @@ Model.constructor
 
 #### Defined in
 
-[services/in-mail-service/src/models/id-array.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/models/id-array.model.ts#L24)
+[services/in-mail-service/src/models/id-array.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/id-array.model.ts#L24)
 
 ## Properties
 
@@ -47,7 +47,7 @@ Model.constructor
 
 #### Defined in
 
-[services/in-mail-service/src/models/id-array.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/models/id-array.model.ts#L15)
+[services/in-mail-service/src/models/id-array.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/id-array.model.ts#L15)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/id-array.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/models/id-array.model.ts#L22)
+[services/in-mail-service/src/models/id-array.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/id-array.model.ts#L22)

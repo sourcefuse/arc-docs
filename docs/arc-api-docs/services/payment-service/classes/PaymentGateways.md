@@ -43,7 +43,7 @@ Entity.constructor
 
 #### Defined in
 
-[models/payment-gateways.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/models/payment-gateways.model.ts#L42)
+[models/payment-gateways.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/payment-gateways.model.ts#L42)
 
 ## Properties
 
@@ -53,7 +53,7 @@ Entity.constructor
 
 #### Defined in
 
-[models/payment-gateways.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/models/payment-gateways.model.ts#L34)
+[models/payment-gateways.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/payment-gateways.model.ts#L34)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[models/payment-gateways.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/models/payment-gateways.model.ts#L28)
+[models/payment-gateways.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/payment-gateways.model.ts#L28)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[models/payment-gateways.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/models/payment-gateways.model.ts#L15)
+[models/payment-gateways.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/payment-gateways.model.ts#L15)
 
 ___
 
@@ -83,4 +83,4 @@ ___
 
 #### Defined in
 
-[models/payment-gateways.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/models/payment-gateways.model.ts#L21)
+[models/payment-gateways.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/payment-gateways.model.ts#L21)

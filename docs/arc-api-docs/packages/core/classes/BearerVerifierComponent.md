@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[src/components/bearer-verifier/component.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/bearer-verifier/component.ts#L23)
+[src/components/bearer-verifier/component.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/bearer-verifier/component.ts#L23)
 
 ## Properties
 
@@ -50,7 +50,7 @@ Component.bindings
 
 #### Defined in
 
-[src/components/bearer-verifier/component.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/bearer-verifier/component.ts#L54)
+[src/components/bearer-verifier/component.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/bearer-verifier/component.ts#L54)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[src/components/bearer-verifier/component.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/bearer-verifier/component.ts#L25)
+[src/components/bearer-verifier/component.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/bearer-verifier/component.ts#L25)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[src/components/bearer-verifier/component.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/bearer-verifier/component.ts#L26)
+[src/components/bearer-verifier/component.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/bearer-verifier/component.ts#L26)
 
 ___
 
@@ -83,7 +83,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[src/components/bearer-verifier/component.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/bearer-verifier/component.ts#L66)
+[src/components/bearer-verifier/component.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/bearer-verifier/component.ts#L66)
 
 ___
 
@@ -97,7 +97,7 @@ Component.providers
 
 #### Defined in
 
-[src/components/bearer-verifier/component.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/bearer-verifier/component.ts#L53)
+[src/components/bearer-verifier/component.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/bearer-verifier/component.ts#L53)
 
 ___
 
@@ -110,4 +110,4 @@ via `app.repository()` API.
 
 #### Defined in
 
-[src/components/bearer-verifier/component.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/bearer-verifier/component.ts#L60)
+[src/components/bearer-verifier/component.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/bearer-verifier/component.ts#L60)

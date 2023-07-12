@@ -27,4 +27,4 @@
 
 #### Defined in
 
-[src/components/tenant-utilities/component.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/core/src/components/tenant-utilities/component.ts#L19)
+[src/components/tenant-utilities/component.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/tenant-utilities/component.ts#L19)

@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/feature-toggle/src/types.ts#L17)
+[feature-toggle/src/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L22)
 
 ___
 

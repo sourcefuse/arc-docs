@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/video-chat.enum.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/enums/video-chat.enum.ts#L22)
+[services/video-conferencing-service/src/enums/video-chat.enum.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/enums/video-chat.enum.ts#L22)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/video-chat.enum.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/enums/video-chat.enum.ts#L23)
+[services/video-conferencing-service/src/enums/video-chat.enum.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/enums/video-chat.enum.ts#L23)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/video-chat.enum.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/enums/video-chat.enum.ts#L24)
+[services/video-conferencing-service/src/enums/video-chat.enum.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/enums/video-chat.enum.ts#L24)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/video-chat.enum.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/enums/video-chat.enum.ts#L25)
+[services/video-conferencing-service/src/enums/video-chat.enum.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/enums/video-chat.enum.ts#L25)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/enums/video-chat.enum.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/enums/video-chat.enum.ts#L26)
+[services/video-conferencing-service/src/enums/video-chat.enum.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/enums/video-chat.enum.ts#L26)

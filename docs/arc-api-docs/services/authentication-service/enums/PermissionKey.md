@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/enums/permission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/authentication-service/src/enums/permission-key.enum.ts#L6)
+[services/authentication-service/src/enums/permission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/enums/permission-key.enum.ts#L6)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/enums/permission-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/authentication-service/src/enums/permission-key.enum.ts#L7)
+[services/authentication-service/src/enums/permission-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/enums/permission-key.enum.ts#L7)

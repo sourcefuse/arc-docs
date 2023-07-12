@@ -35,4 +35,4 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[repositories/subscriptions.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/repositories/subscriptions.repository.ts#L14)
+[repositories/subscriptions.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/repositories/subscriptions.repository.ts#L14)

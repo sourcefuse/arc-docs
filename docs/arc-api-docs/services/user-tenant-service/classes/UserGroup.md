@@ -43,7 +43,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-group.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/models/user-group.model.ts#L51)
+[services/user-tenant-service/src/models/user-group.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-group.model.ts#L51)
 
 ## Properties
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-group.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/models/user-group.model.ts#L32)
+[services/user-tenant-service/src/models/user-group.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-group.model.ts#L32)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-group.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/models/user-group.model.ts#L22)
+[services/user-tenant-service/src/models/user-group.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-group.model.ts#L22)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-group.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/models/user-group.model.ts#L49)
+[services/user-tenant-service/src/models/user-group.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-group.model.ts#L49)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-group.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/models/user-group.model.ts#L42)
+[services/user-tenant-service/src/models/user-group.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-group.model.ts#L42)

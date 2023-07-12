@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/chat-service/src/keys.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/chat-service/src/keys.ts#L10)
+[services/chat-service/src/keys.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/keys.ts#L10)

@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/types.ts#L63)
+[services/video-conferencing-service/src/types.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/types.ts#L63)
 
 ___
 
@@ -72,7 +72,7 @@ Promise then returns a successful message for deleting if promise is resolved
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/providers/twilio/types.ts#L45)
+[services/video-conferencing-service/src/providers/twilio/types.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/providers/twilio/types.ts#L45)
 
 ___
 
@@ -102,7 +102,7 @@ a list of archives after resolving promise
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/providers/twilio/types.ts#L44)
+[services/video-conferencing-service/src/providers/twilio/types.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/providers/twilio/types.ts#L44)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/providers/twilio/types.ts#L47)
+[services/video-conferencing-service/src/providers/twilio/types.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/providers/twilio/types.ts#L47)
 
 ___
 
@@ -158,7 +158,7 @@ Promise when resolved returns object of
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/providers/twilio/types.ts#L43)
+[services/video-conferencing-service/src/providers/twilio/types.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/providers/twilio/types.ts#L43)
 
 ___
 
@@ -197,7 +197,7 @@ Promise when resolved returns object of type
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/providers/twilio/types.ts#L39)
+[services/video-conferencing-service/src/providers/twilio/types.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/providers/twilio/types.ts#L39)
 
 ___
 
@@ -233,4 +233,4 @@ AzureTargetOptions
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/video-conferencing-service/src/providers/twilio/types.ts#L46)
+[services/video-conferencing-service/src/providers/twilio/types.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/providers/twilio/types.ts#L46)

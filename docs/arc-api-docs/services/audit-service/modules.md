@@ -6,7 +6,10 @@
 
 ### Namespaces
 
+- [AuditLogExportServiceBindings](modules/AuditLogExportServiceBindings.md)
 - [AuditServiceBindings](modules/AuditServiceBindings.md)
+- [ColumnBuilderServiceBindings](modules/ColumnBuilderServiceBindings.md)
+- [ExportHandlerServiceBindings](modules/ExportHandlerServiceBindings.md)
 - [ExportToCsvServiceBindings](modules/ExportToCsvServiceBindings.md)
 - [QuerySelectedFilesServiceBindings](modules/QuerySelectedFilesServiceBindings.md)
 
@@ -18,9 +21,12 @@
 ### Classes
 
 - [AuditLog](classes/AuditLog.md)
+- [AuditLogExportProvider](classes/AuditLogExportProvider.md)
 - [AuditLogRepository](classes/AuditLogRepository.md)
 - [AuditServiceComponent](classes/AuditServiceComponent.md)
+- [ColumnBuilderProvider](classes/ColumnBuilderProvider.md)
 - [CustomFilter](classes/CustomFilter.md)
+- [ExportHandlerProvider](classes/ExportHandlerProvider.md)
 - [ExportToCsvProvider](classes/ExportToCsvProvider.md)
 - [Job](classes/Job.md)
 - [JobProcessingService](classes/JobProcessingService.md)
@@ -32,12 +38,15 @@
 ### Interfaces
 
 - [ArchiveOutput](interfaces/ArchiveOutput.md)
+- [ExportResponse](interfaces/ExportResponse.md)
 - [IAuditServiceConfig](interfaces/IAuditServiceConfig.md)
-- [IColumnHandler](interfaces/IColumnHandler.md)
 
 ### Type Aliases
 
+- [AuditLogExportFn](modules.md#auditlogexportfn)
+- [ColumnBuilderFn](modules.md#columnbuilderfn)
 - [CustomFilterWithRelations](modules.md#customfilterwithrelations)
+- [ExportHandlerFn](modules.md#exporthandlerfn)
 - [ExportToCsvFn](modules.md#exporttocsvfn)
 - [JobWithRelations](modules.md#jobwithrelations)
 - [MappingLogsWithRelations](modules.md#mappinglogswithrelations)
@@ -49,13 +58,85 @@
 
 ## Type Aliases
 
+### AuditLogExportFn
+
+Ƭ **AuditLogExportFn**: (`data`: `AnyObject`[]) => `Promise`<`void`\>
+
+#### Type declaration
+
+▸ (`data`): `Promise`<`void`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data` | `AnyObject`[] |
+
+##### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[services/audit-service/src/types.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/types.ts#L24)
+
+___
+
+### ColumnBuilderFn
+
+Ƭ **ColumnBuilderFn**: (`auditLogs`: [`AuditLog`](classes/AuditLog.md)[]) => `Promise`<`AnyObject`[]\>
+
+#### Type declaration
+
+▸ (`auditLogs`): `Promise`<`AnyObject`[]\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `auditLogs` | [`AuditLog`](classes/AuditLog.md)[] |
+
+##### Returns
+
+`Promise`<`AnyObject`[]\>
+
+#### Defined in
+
+[services/audit-service/src/types.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/types.ts#L25)
+
+___
+
 ### CustomFilterWithRelations
 
 Ƭ **CustomFilterWithRelations**: [`CustomFilter`](classes/CustomFilter.md)
 
 #### Defined in
 
-[services/audit-service/src/models/custom-filter.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/custom-filter.model.ts#L45)
+[services/audit-service/src/models/custom-filter.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/custom-filter.model.ts#L45)
+
+___
+
+### ExportHandlerFn
+
+Ƭ **ExportHandlerFn**: (`fileBuffer`: `Buffer`) => `Promise`<`void`\>
+
+#### Type declaration
+
+▸ (`fileBuffer`): `Promise`<`void`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `fileBuffer` | `Buffer` |
+
+##### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[services/audit-service/src/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/types.ts#L23)
 
 ___
 
@@ -79,7 +160,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/types.ts#L20)
+[services/audit-service/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/types.ts#L20)
 
 ___
 
@@ -89,7 +170,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/job.model.ts#L38)
+[services/audit-service/src/models/job.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/job.model.ts#L45)
 
 ___
 
@@ -99,7 +180,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/mapping-log.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/models/mapping-log.model.ts#L32)
+[services/audit-service/src/models/mapping-log.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/mapping-log.model.ts#L32)
 
 ___
 
@@ -124,7 +205,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/types.ts#L15)
+[services/audit-service/src/types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/types.ts#L15)
 
 ## Variables
 
@@ -134,4 +215,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/types.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/types.ts#L31)
+[services/audit-service/src/types.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/types.ts#L37)

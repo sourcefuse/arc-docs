@@ -10,7 +10,9 @@
 
 ### Properties
 
+- [auditLogExport](JobProcessingService.md#auditlogexport)
 - [auditLogRepository](JobProcessingService.md#auditlogrepository)
+- [columnBuilder](JobProcessingService.md#columnbuilder)
 - [jobRepository](JobProcessingService.md#jobrepository)
 - [mappingLogRepository](JobProcessingService.md#mappinglogrepository)
 - [querySelectedFiles](JobProcessingService.md#queryselectedfiles)
@@ -23,22 +25,34 @@
 
 ### constructor
 
-• **new JobProcessingService**(`querySelectedFiles`, `mappingLogRepository`, `jobRepository`, `auditLogRepository`)
+• **new JobProcessingService**(`querySelectedFiles`, `auditLogExport`, `columnBuilder`, `mappingLogRepository`, `jobRepository`, `auditLogRepository`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `querySelectedFiles` | [`QuerySelectedFilesFn`](../modules.md#queryselectedfilesfn) |
+| `auditLogExport` | [`AuditLogExportFn`](../modules.md#auditlogexportfn) |
+| `columnBuilder` | [`ColumnBuilderFn`](../modules.md#columnbuilderfn) |
 | `mappingLogRepository` | [`MappingLogRepository`](MappingLogRepository.md) |
 | `jobRepository` | [`JobRepository`](JobRepository.md) |
 | `auditLogRepository` | `AuditLogRepository` |
 
 #### Defined in
 
-[services/audit-service/src/services/job-processing.service.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/services/job-processing.service.ts#L13)
+[services/audit-service/src/services/job-processing.service.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/job-processing.service.ts#L22)
 
 ## Properties
+
+### auditLogExport
+
+• **auditLogExport**: [`AuditLogExportFn`](../modules.md#auditlogexportfn)
+
+#### Defined in
+
+[services/audit-service/src/services/job-processing.service.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/job-processing.service.ts#L26)
+
+___
 
 ### auditLogRepository
 
@@ -46,7 +60,17 @@
 
 #### Defined in
 
-[services/audit-service/src/services/job-processing.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/services/job-processing.service.ts#L21)
+[services/audit-service/src/services/job-processing.service.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/job-processing.service.ts#L34)
+
+___
+
+### columnBuilder
+
+• **columnBuilder**: [`ColumnBuilderFn`](../modules.md#columnbuilderfn)
+
+#### Defined in
+
+[services/audit-service/src/services/job-processing.service.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/job-processing.service.ts#L28)
 
 ___
 
@@ -56,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/services/job-processing.service.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/services/job-processing.service.ts#L19)
+[services/audit-service/src/services/job-processing.service.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/job-processing.service.ts#L32)
 
 ___
 
@@ -66,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/services/job-processing.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/services/job-processing.service.ts#L17)
+[services/audit-service/src/services/job-processing.service.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/job-processing.service.ts#L30)
 
 ___
 
@@ -76,7 +100,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/services/job-processing.service.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/services/job-processing.service.ts#L15)
+[services/audit-service/src/services/job-processing.service.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/job-processing.service.ts#L24)
 
 ## Methods
 
@@ -96,4 +120,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/services/job-processing.service.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/audit-service/src/services/job-processing.service.ts#L24)
+[services/audit-service/src/services/job-processing.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/job-processing.service.ts#L37)

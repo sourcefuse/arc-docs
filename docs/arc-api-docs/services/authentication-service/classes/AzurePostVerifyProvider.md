@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/azure-post-verify.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/authentication-service/src/providers/azure-post-verify.provider.ts#L11)
+[services/authentication-service/src/providers/azure-post-verify.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/providers/azure-post-verify.provider.ts#L11)

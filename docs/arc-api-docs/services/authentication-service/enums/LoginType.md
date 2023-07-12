@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/enums/login-type.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/authentication-service/src/enums/login-type.enum.ts#L7)
+[services/authentication-service/src/enums/login-type.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/enums/login-type.enum.ts#L7)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/enums/login-type.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/authentication-service/src/enums/login-type.enum.ts#L9)
+[services/authentication-service/src/enums/login-type.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/enums/login-type.enum.ts#L9)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/enums/login-type.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/authentication-service/src/enums/login-type.enum.ts#L8)
+[services/authentication-service/src/enums/login-type.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/enums/login-type.enum.ts#L8)

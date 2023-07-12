@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/notification-service/src/models/notification.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/notification-service/src/models/notification.model.ts#L70)
+[services/notification-service/src/models/notification.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/models/notification.model.ts#L70)

@@ -37,7 +37,7 @@
 
 #### Defined in
 
-[services/user-tenant-service/src/component.ts:95](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/component.ts#L95)
+[services/user-tenant-service/src/component.ts:95](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/component.ts#L95)
 
 ## Properties
 
@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[services/user-tenant-service/src/component.ts:97](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/component.ts#L97)
+[services/user-tenant-service/src/component.ts:97](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/component.ts#L97)
 
 ___
 
@@ -61,7 +61,7 @@ Component.bindings
 
 #### Defined in
 
-[services/user-tenant-service/src/component.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/component.ts#L93)
+[services/user-tenant-service/src/component.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/component.ts#L93)
 
 ___
 
@@ -77,7 +77,7 @@ Component.controllers
 
 #### Defined in
 
-[services/user-tenant-service/src/component.ts:92](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/component.ts#L92)
+[services/user-tenant-service/src/component.ts:92](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/component.ts#L92)
 
 ___
 
@@ -90,7 +90,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/user-tenant-service/src/component.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/component.ts#L87)
+[services/user-tenant-service/src/component.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/component.ts#L87)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/component.ts:99](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/component.ts#L99)
+[services/user-tenant-service/src/component.ts:99](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/component.ts#L99)
 
 ___
 
@@ -114,7 +114,7 @@ Component.providers
 
 #### Defined in
 
-[services/user-tenant-service/src/component.ts:94](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/component.ts#L94)
+[services/user-tenant-service/src/component.ts:94](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/component.ts#L94)
 
 ___
 
@@ -124,4 +124,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/component.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/user-tenant-service/src/component.ts#L81)
+[services/user-tenant-service/src/component.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/component.ts#L81)

@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L9)
+[services/in-mail-service/src/types/permissions.type.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L9)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L23)
+[services/in-mail-service/src/types/permissions.type.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L23)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L6)
+[services/in-mail-service/src/types/permissions.type.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L6)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L20)
+[services/in-mail-service/src/types/permissions.type.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L20)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L18)
+[services/in-mail-service/src/types/permissions.type.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L18)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L32)
+[services/in-mail-service/src/types/permissions.type.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L32)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L13)
+[services/in-mail-service/src/types/permissions.type.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L13)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L16)
+[services/in-mail-service/src/types/permissions.type.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L16)
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L30)
+[services/in-mail-service/src/types/permissions.type.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L30)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L27)
+[services/in-mail-service/src/types/permissions.type.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L27)
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L12)
+[services/in-mail-service/src/types/permissions.type.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L12)
 
 ___
 
@@ -151,7 +151,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L26)
+[services/in-mail-service/src/types/permissions.type.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L26)
 
 ___
 
@@ -161,7 +161,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L17)
+[services/in-mail-service/src/types/permissions.type.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L17)
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L31)
+[services/in-mail-service/src/types/permissions.type.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L31)
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L11)
+[services/in-mail-service/src/types/permissions.type.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L11)
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L25)
+[services/in-mail-service/src/types/permissions.type.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L25)
 
 ___
 
@@ -201,7 +201,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L10)
+[services/in-mail-service/src/types/permissions.type.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L10)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L24)
+[services/in-mail-service/src/types/permissions.type.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L24)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L8)
+[services/in-mail-service/src/types/permissions.type.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L8)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L22)
+[services/in-mail-service/src/types/permissions.type.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L22)
 
 ___
 
@@ -241,7 +241,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L15)
+[services/in-mail-service/src/types/permissions.type.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L15)
 
 ___
 
@@ -251,7 +251,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L29)
+[services/in-mail-service/src/types/permissions.type.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L29)
 
 ___
 
@@ -261,7 +261,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L14)
+[services/in-mail-service/src/types/permissions.type.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L14)
 
 ___
 
@@ -271,7 +271,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L28)
+[services/in-mail-service/src/types/permissions.type.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L28)
 
 ___
 
@@ -281,7 +281,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L7)
+[services/in-mail-service/src/types/permissions.type.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L7)
 
 ___
 
@@ -291,4 +291,4 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/permissions.type.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/in-mail-service/src/types/permissions.type.ts#L21)
+[services/in-mail-service/src/types/permissions.type.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/types/permissions.type.ts#L21)

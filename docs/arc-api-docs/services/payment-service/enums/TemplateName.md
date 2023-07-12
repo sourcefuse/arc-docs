@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[enums/template.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/payment-service/src/enums/template.enum.ts#L6)
+[enums/template.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/enums/template.enum.ts#L6)

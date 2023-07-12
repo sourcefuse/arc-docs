@@ -17,14 +17,14 @@
 
 #### Defined in
 
-[feature-toggle/src/types.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/feature-toggle/src/types.ts#L8)
+[feature-toggle/src/types.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L8)
 
 ___
 
 ### options
 
-• `Optional` **options**: `Object`
+• `Optional` **options**: [`FeatureFlagOptions`](../modules.md#featureflagoptions)
 
 #### Defined in
 
-[feature-toggle/src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/packages/feature-toggle/src/types.ts#L9)
+[feature-toggle/src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L9)

@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[services/bpmn-service/src/keys.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/bpmn-service/src/keys.ts#L20)
+[services/bpmn-service/src/keys.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/keys.ts#L20)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/keys.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/bpmn-service/src/keys.ts#L23)
+[services/bpmn-service/src/keys.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/keys.ts#L23)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/keys.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/bpmn-service/src/keys.ts#L27)
+[services/bpmn-service/src/keys.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/keys.ts#L27)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/bpmn-service/src/keys.ts#L35)
+[services/bpmn-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/keys.ts#L35)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/keys.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/bpmn-service/src/keys.ts#L31)
+[services/bpmn-service/src/keys.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/keys.ts#L31)
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/00e854d46/services/bpmn-service/src/keys.ts#L17)
+[services/bpmn-service/src/keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/keys.ts#L17)
