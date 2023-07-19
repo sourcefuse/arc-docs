@@ -28,6 +28,7 @@ plugins:
 docs_dir: docs
 
 markdown_extensions:
+  - attr_list
   - tables
   - pymdownx.highlight:
       anchor_linenums: true
