@@ -9,8 +9,9 @@ This module creates and configures a S3 bucket backend and DynamoDB lock table f
 module "bootstrap" {
   source = "git::https://github.com/sourcefuse/terraform-module-aws-bootstrap"
 
-  bucket_name   = "thisisasamplebucket"
-  dynamodb_name = "terraform-lock"
+  bucket_name              = var.bucket_name
+  dynamodb_name            = var.dynamodb_name
+  dynamo_kms_master_key_id = var.dynamo_kms_master_key_id
 }
 ```
 
