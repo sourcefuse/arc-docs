@@ -14,7 +14,7 @@ ARC is a comprehensive development framework consisting of three key branches: I
 
 The IaC branch of ARC focuses on managing and provisioning the underlying infrastructure needed to deploy your applications. With reusable Terraform modules, you can define your infrastructure requirements and deploy them consistently across both private and public clouds. This branch ensures the scalability, resilience, and security of your application's foundation.
 
-[Get Started with ARC IaC](./../arc-iac-docs){ .md-button .md-button--secondary }
+[Get Started with ARC IaC](./arc-iac-docs){ .md-button .md-button--secondary }
 
 ### 2. Backend
 
@@ -22,13 +22,13 @@ The API branch of ARC provides a collection of reusable microservices and compon
 
 <iframe width="674" height="375" src="https://www.youtube.com/embed/7_mReOx8RT0" title="Introducing ARC API • Rapid Application Development Made Easy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-[Get Started with ARC API](./../arc-api-docs){ .md-button .md-button--secondary }
+[Get Started with ARC API](./arc-api-docs){ .md-button .md-button--secondary }
 
 ### 3. Frontend
 
 The UI branch of ARC offers preconfigured boilerplates and components for building modern and responsive user interfaces. Whether you prefer Angular or React, ARC UI provides a solid foundation to kickstart frontend development. With reusable components like search, navigation, and form elements, developers can accelerate UI development and deliver engaging user experiences.
 
-[Get Started with ARC UI](./../arc-ui-docs/arc-react/){ .md-button .md-button--secondary }
+[Get Started with ARC UI](./arc-ui-docs/arc-react/){ .md-button .md-button--secondary }
 
 ---
 
