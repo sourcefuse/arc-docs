@@ -180,7 +180,7 @@ The default SSM Parameter format used by this module is the following:
 ]
 ```  
 
-You can append to this array by adding values to `var.additional_ssm_params`.   
+You can append to this array by adding values to `var.additional_ssm_params`.  
 
 ## Development
 
@@ -208,7 +208,7 @@ For Example
 ```sh
 git commit -m "your commit message #major"
 ```
-By specifying this , it will bump the version and if you dont specify this in your commit message then by default it will consider patch and will bump that accordingly
+By specifying this , it will bump the version and if you don't specify this in your commit message then by default it will consider patch and will bump that accordingly
 
 ### Tests
 - Tests are available in `test` directory
