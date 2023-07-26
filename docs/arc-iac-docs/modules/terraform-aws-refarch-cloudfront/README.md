@@ -178,6 +178,7 @@ module "cloudfront" {
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | 4.67.0 |
+| <a name="provider_aws.acm"></a> [aws.acm](#provider\_aws.acm) | 4.67.0 |
 
 ## Modules
 
