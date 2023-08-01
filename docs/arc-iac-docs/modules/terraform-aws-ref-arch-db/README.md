@@ -76,6 +76,7 @@ module "aurora" {
 
 | Name | Type |
 |------|------|
+| [aws_db_instance_role_association.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance_role_association) | resource |
 | [aws_db_option_group.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_option_group) | resource |
 | [aws_iam_policy.option_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy) | resource |
 | [aws_iam_role.enhanced_monitoring](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
@@ -91,6 +92,7 @@ module "aurora" {
 | [random_password.rds_db_admin_password](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password) | resource |
 | [aws_iam_policy_document.enhanced_monitoring](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 | [aws_kms_alias.rds](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/kms_alias) | data source |
+| [aws_partition.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/partition) | data source |
 
 ## Inputs
 
@@ -109,6 +111,7 @@ module "aurora" {
 | <a name="input_aurora_db_admin_password"></a> [aurora\_db\_admin\_password](#input\_aurora\_db\_admin\_password) | Password of the DB admin | `string` | `""` | no |
 | <a name="input_aurora_db_admin_username"></a> [aurora\_db\_admin\_username](#input\_aurora\_db\_admin\_username) | Name of the default DB admin user role | `string` | `""` | no |
 | <a name="input_aurora_db_name"></a> [aurora\_db\_name](#input\_aurora\_db\_name) | Database name. | `string` | `"auroradb"` | no |
+| <a name="input_aurora_db_port"></a> [aurora\_db\_port](#input\_aurora\_db\_port) | Port for the Aurora DB instance to use. | `number` | `5432` | no |
 | <a name="input_aurora_engine"></a> [aurora\_engine](#input\_aurora\_engine) | The name of the database engine to be used for this DB cluster. Valid values: `aurora`, `aurora-mysql`, `aurora-postgresql` | `string` | `"aurora-postgresql"` | no |
 | <a name="input_aurora_engine_mode"></a> [aurora\_engine\_mode](#input\_aurora\_engine\_mode) | The database engine mode. Valid values: `parallelquery`, `provisioned`, `serverless` | `string` | `"provisioned"` | no |
 | <a name="input_aurora_engine_version"></a> [aurora\_engine\_version](#input\_aurora\_engine\_version) | The version of the database engine tocl use. See `aws rds describe-db-engine-versions` | `string` | `"14.5"` | no |
@@ -124,7 +127,6 @@ module "aurora" {
 | <a name="input_deletion_window_in_days"></a> [deletion\_window\_in\_days](#input\_deletion\_window\_in\_days) | n/a | `number` | `10` | no |
 | <a name="input_delimiter"></a> [delimiter](#input\_delimiter) | Delimiter to be used between ID elements.<br>Defaults to `-` (hyphen). Set to `""` to use no delimiter at all. | `string` | `null` | no |
 | <a name="input_descriptor_formats"></a> [descriptor\_formats](#input\_descriptor\_formats) | Describe additional descriptors to be output in the `descriptors` output map.<br>Map of maps. Keys are names of descriptors. Values are maps of the form<br>`{<br>   format = string<br>   labels = list(string)<br>}`<br>(Type is `any` so the map values can later be enhanced to provide additional options.)<br>`format` is a Terraform format string to be passed to the `format()` function.<br>`labels` is a list of labels, in order, to pass to `format()` function.<br>Label values will be normalized before being passed to `format()` so they will be<br>identical to how they appear in `id`.<br>Default is `{}` (`descriptors` output will be empty). | `any` | `{}` | no |
-| <a name="input_enable_custom_option_group"></a> [enable\_custom\_option\_group](#input\_enable\_custom\_option\_group) | Enable the custom Option Group for restoring backups via S3 | `bool` | `false` | no |
 | <a name="input_enable_key_rotation"></a> [enable\_key\_rotation](#input\_enable\_key\_rotation) | n/a | `bool` | `true` | no |
 | <a name="input_enabled"></a> [enabled](#input\_enabled) | Set to false to prevent the module from creating any resources | `bool` | `null` | no |
 | <a name="input_enhanced_monitoring_arn"></a> [enhanced\_monitoring\_arn](#input\_enhanced\_monitoring\_arn) | ARN to the enhanced monitoring policy | `string` | `"arn:aws:iam::aws:policy/service-role/AmazonRDSEnhancedMonitoringRole"` | no |
@@ -141,6 +143,7 @@ module "aurora" {
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | ID element. Usually an abbreviation of your organization name, e.g. 'eg' or 'cp', to help ensure generated IDs are globally unique | `string` | n/a | yes |
 | <a name="input_performance_insights_enabled"></a> [performance\_insights\_enabled](#input\_performance\_insights\_enabled) | Whether to enable Performance Insights | `bool` | `false` | no |
 | <a name="input_performance_insights_retention_period"></a> [performance\_insights\_retention\_period](#input\_performance\_insights\_retention\_period) | Amount of time in days to retain Performance Insights data. Either 7 (7 days) or 731 (2 years) | `number` | `null` | no |
+| <a name="input_rds_enable_custom_option_group"></a> [rds\_enable\_custom\_option\_group](#input\_rds\_enable\_custom\_option\_group) | Enable the custom Option Group for restoring backups via S3 | `bool` | `false` | no |
 | <a name="input_rds_instance_allocated_storage"></a> [rds\_instance\_allocated\_storage](#input\_rds\_instance\_allocated\_storage) | The allocated storage in GBs. Required unless a snapshot\_identifier or replicate\_source\_db is provided. | `number` | `20` | no |
 | <a name="input_rds_instance_allow_major_version_upgrade"></a> [rds\_instance\_allow\_major\_version\_upgrade](#input\_rds\_instance\_allow\_major\_version\_upgrade) | Allow major version upgrade | `bool` | `false` | no |
 | <a name="input_rds_instance_allowed_cidr_blocks"></a> [rds\_instance\_allowed\_cidr\_blocks](#input\_rds\_instance\_allowed\_cidr\_blocks) | The whitelisted CIDRs which to allow ingress traffic to the DB instance | `list(string)` | `[]` | no |
@@ -163,6 +166,7 @@ module "aurora" {
 | <a name="input_rds_instance_engine_version"></a> [rds\_instance\_engine\_version](#input\_rds\_instance\_engine\_version) | Database engine version, depends on engine type. Required unless a snapshot\_identifier or replicate\_source\_db is provided. | `string` | `"14.3"` | no |
 | <a name="input_rds_instance_host_name"></a> [rds\_instance\_host\_name](#input\_rds\_instance\_host\_name) | The DB host name created in Route53 | `string` | `"db"` | no |
 | <a name="input_rds_instance_instance_class"></a> [rds\_instance\_instance\_class](#input\_rds\_instance\_instance\_class) | Class of RDS instance | `string` | `"db.t2.medium"` | no |
+| <a name="input_rds_instance_iops"></a> [rds\_instance\_iops](#input\_rds\_instance\_iops) | RDS instance IOPS | `number` | `0` | no |
 | <a name="input_rds_instance_license_model"></a> [rds\_instance\_license\_model](#input\_rds\_instance\_license\_model) | License model for this DB. Optional, but required for some DB Engines. Valid values: license-included \| bring-your-own-license \| general-public-license | `string` | `""` | no |
 | <a name="input_rds_instance_maintenance_window"></a> [rds\_instance\_maintenance\_window](#input\_rds\_instance\_maintenance\_window) | The window to perform maintenance in. Syntax: 'ddd:hh24:mi-ddd:hh24:mi' UTC | `string` | `"Mon:03:00-Mon:04:00"` | no |
 | <a name="input_rds_instance_major_engine_version"></a> [rds\_instance\_major\_engine\_version](#input\_rds\_instance\_major\_engine\_version) | major\_engine\_version	Database MAJOR engine version, depends on engine type | `string` | `"14"` | no |
