@@ -18,7 +18,7 @@ Our modules and resources play a pivotal role in expediting the critical cloud i
 
 ```hcl
 module "my_arc_module" {
-  source = "git::https://github.com/sourcefuse/terraform-refarch-module-name?ref=0.1.0"
+  source = "git::https://github.com/sourcefuse/terraform-aws-refarch-module-name?ref=0.1.0"
 
   # Set other module-specific variables here
 }
