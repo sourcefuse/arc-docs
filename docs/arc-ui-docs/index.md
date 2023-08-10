@@ -202,3 +202,19 @@ export default function Login() {
 | <a name="ENABLE_SESSION_TIMEOUT"></a> `ENABLE_SESSION_TIMEOUT`                       | Session timeout for idle timer                                                                 | `boolean` | false   |    no    |
 | <a name="EXPIRY_TIME_IN_MINUTE"></a> `EXPIRY_TIME_IN_MINUTE`                         | Session expiry time                                                                            | `number`  | 15      |    no    |
 | <a name="PROMPT_TIME_BEFORE_IDLE_IN_MINUTE"></a> `PROMPT_TIME_BEFORE_IDLE_IN_MINUTE` | The duration (in minutes) before the user becomes idle, when the warning dialog will be shown. | `number`  | 1       |    no    |
+
+## Related Projects
+
+At ARC, we are driven by a steadfast mission – to empower developers and organizations with seamless solutions for both backend and frontend application development and deployment. Our unwavering commitment to the highest security and industry standards ensures that every facet of app development contributes to a smooth and secure user experience.
+
+In our dedication to the open-source community, we actively contribute to a diverse range of projects that reflect our values of innovation and collaboration. Some of our notable contributions include:
+
+- **[React Boilerplate](https://arc-react-boilerplate.sfarcpoc.com/)**: Discover our meticulously crafted React Boilerplate application, designed to accelerate your development process.
+  <a href="https://github.com/sourcefuse/react-boilerplate-ts-ui/"><div style="display: inline-block; border-radius: 50%; overflow: hidden; width: 20px; height: 20px;"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/9cfce4fc8777a8db73e98f9520ef63c855f7c0b9/images/svg/github.svg" alt="GitHub Icon" width="20" height="20"></div> React Boilerplate </a>
+- **[Telemed App](https://arc-telemed.sfarcpoc.com)**: The ARC Telemedicine App establishes seamless communication channels between medical professionals and patients through video calls and chat. This app is meticulously crafted using the ARC React Boilerplate.
+  <a href="https://github.com/sourcefuse/loopback4-microservice-catalog/tree/master/sandbox/telemed-app/frontend"><div style="display: inline-block; border-radius: 50%; overflow: hidden; width: 20px; height: 20px;"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/9cfce4fc8777a8db73e98f9520ef63c855f7c0b9/images/svg/github.svg" alt="GitHub Icon" width="20" height="20"></div> Telemed App UI </a>
+- **[Storybook](https://arc-react-storybook.sfarcpoc.com/)**: Components within the ARC React Boilerplate through our comprehensive Storybook.
+  <a href="https://github.com/sourcefuse/react-boilerplate-ts-ui/"><div style="display: inline-block; border-radius: 50%; overflow: hidden; width: 20px; height: 20px;"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/9cfce4fc8777a8db73e98f9520ef63c855f7c0b9/images/svg/github.svg" alt="GitHub Icon" width="20" height="20"></div> Storybook </a>
+- **[ARC API](https://github.com/sourcefuse/loopback4-microservice-catalog/)**: ARC API, is a collection of pre-built microservices designed to accelerate the development timeline for enterprise projects. These services address common challenges encountered by large enterprises during the development of cloud-native platforms for digital transformation initiatives or new product creation
+- **[ARC Lambda](https://github.com/sourcefuse/arc-lambda)**: Easily deploy your services to a serverless environment on AWS.
+- **[ARC IAC](https://sourcefuse.github.io/arc-docs/arc-iac-docs/)**: Explore the intricacies of Infrastructure as Code with our comprehensive documentation on ARC IAC.
