@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[src/components/logger-extension/component.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/logger-extension/component.ts#L11)
+[src/components/logger-extension/component.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/logger-extension/component.ts#L11)
 
 ## Properties
 
@@ -38,4 +38,4 @@ Component.providers
 
 #### Defined in
 
-[src/components/logger-extension/component.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/logger-extension/component.ts#L10)
+[src/components/logger-extension/component.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/logger-extension/component.ts#L10)

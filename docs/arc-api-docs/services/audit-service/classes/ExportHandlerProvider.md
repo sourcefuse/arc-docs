@@ -22,10 +22,6 @@
 
 • **new ExportHandlerProvider**()
 
-#### Defined in
-
-[services/audit-service/src/services/export-handler.service.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/export-handler.service.ts#L7)
-
 ## Methods
 
 ### value
@@ -42,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/audit-service/src/services/export-handler.service.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/export-handler.service.ts#L11)
+[services/audit-service/src/services/export-handler.service.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/services/export-handler.service.ts#L7)

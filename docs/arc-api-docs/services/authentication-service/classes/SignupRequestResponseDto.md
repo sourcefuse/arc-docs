@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Model`
+- `CoreModel`<[`SignupRequestResponseDto`](SignupRequestResponseDto.md)\>
 
   ↳ **`SignupRequestResponseDto`**
 
@@ -32,13 +32,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`SignupRequestResponseDto`](SignupRequestResponseDto.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Model.constructor
+CoreModel<SignupRequestResponseDto\>.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/signup-request-response-dto.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/signup-request-response-dto.model.ts#L27)
+packages/core/dist/models/core-model.d.ts:3
 
 ## Properties
 
@@ -48,7 +48,7 @@ Model.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/signup-request-response-dto.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/signup-request-response-dto.model.ts#L13)
+[services/authentication-service/src/models/signup-request-response-dto.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/signup-request-response-dto.model.ts#L14)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/signup-request-response-dto.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/signup-request-response-dto.model.ts#L25)
+[services/authentication-service/src/models/signup-request-response-dto.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/signup-request-response-dto.model.ts#L26)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/signup-request-response-dto.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/signup-request-response-dto.model.ts#L19)
+[services/authentication-service/src/models/signup-request-response-dto.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/signup-request-response-dto.model.ts#L20)

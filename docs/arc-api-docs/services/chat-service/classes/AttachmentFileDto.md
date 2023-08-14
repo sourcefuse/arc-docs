@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`AttachmentFileDto`](AttachmentFileDto.md)\>
 
   ↳ **`AttachmentFileDto`**
 
@@ -38,13 +38,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`AttachmentFileDto`](AttachmentFileDto.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<AttachmentFileDto\>.constructor
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file-dto.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/attachment-file-dto.model.ts#L21)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -54,7 +54,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file-dto.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/attachment-file-dto.model.ts#L13)
+[services/chat-service/src/models/attachment-file-dto.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/attachment-file-dto.model.ts#L13)
 
 ___
 
@@ -68,7 +68,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -82,7 +82,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -96,7 +96,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -110,4 +110,4 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5

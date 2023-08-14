@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`Role`](Role.md)\>
 
   ↳ **`Role`**
 
@@ -37,13 +37,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`Role`](Role.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<Role\>.constructor
 
 #### Defined in
 
-[services/oidc-service/src/models/role.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/role.model.ts#L41)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -57,7 +57,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -71,7 +71,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/role.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/role.model.ts#L16)
+[services/oidc-service/src/models/role.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/role.model.ts#L16)
 
 ___
 
@@ -95,7 +95,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -109,7 +109,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/role.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/role.model.ts#L22)
+[services/oidc-service/src/models/role.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/role.model.ts#L22)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/role.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/role.model.ts#L39)
+[services/oidc-service/src/models/role.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/role.model.ts#L39)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/role.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/role.model.ts#L33)
+[services/oidc-service/src/models/role.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/role.model.ts#L33)

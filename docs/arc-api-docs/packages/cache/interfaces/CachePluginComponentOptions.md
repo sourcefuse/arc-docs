@@ -26,7 +26,7 @@ Interface defining the component's options object
 
 #### Defined in
 
-[types.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/cache/src/types.ts#L21)
+[types.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/cache/src/types.ts#L21)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/cache/src/types.ts#L22)
+[types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/cache/src/types.ts#L22)
 
 ___
 
@@ -46,4 +46,4 @@ ___
 
 #### Defined in
 
-[types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/cache/src/types.ts#L23)
+[types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/cache/src/types.ts#L23)

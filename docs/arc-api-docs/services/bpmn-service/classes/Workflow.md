@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`Workflow`](Workflow.md)\>
 
   ↳ **`Workflow`**
 
@@ -41,13 +41,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`Workflow`](Workflow.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<Workflow\>.constructor
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow.model.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow.model.ts#L71)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -61,7 +61,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -75,7 +75,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow.model.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow.model.ts#L63)
+[services/bpmn-service/src/models/workflow.model.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow.model.ts#L63)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow.model.ts#L35)
+[services/bpmn-service/src/models/workflow.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow.model.ts#L35)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow.model.ts#L18)
+[services/bpmn-service/src/models/workflow.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow.model.ts#L18)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow.model.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow.model.ts#L57)
+[services/bpmn-service/src/models/workflow.model.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow.model.ts#L57)
 
 ___
 
@@ -129,7 +129,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -143,7 +143,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow.model.ts#L42)
+[services/bpmn-service/src/models/workflow.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow.model.ts#L42)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow.model.ts#L50)
+[services/bpmn-service/src/models/workflow.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow.model.ts#L50)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow.model.ts#L26)
+[services/bpmn-service/src/models/workflow.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow.model.ts#L26)
 
 ___
 
@@ -183,4 +183,4 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow.model.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow.model.ts#L69)
+[services/bpmn-service/src/models/workflow.model.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow.model.ts#L69)

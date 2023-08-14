@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/scheduler-service/src/keys.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/keys.ts#L9)
+[services/scheduler-service/src/keys.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/keys.ts#L9)

@@ -22,10 +22,6 @@
 
 • **new NotificationFilterProvider**()
 
-#### Defined in
-
-[services/notification-service/src/providers/notification-filter.service.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/providers/notification-filter.service.ts#L13)
-
 ## Methods
 
 ### value
@@ -54,4 +50,4 @@ Provider.value
 
 #### Defined in
 
-[services/notification-service/src/providers/notification-filter.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/providers/notification-filter.service.ts#L17)
+[services/notification-service/src/providers/notification-filter.service.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/providers/notification-filter.service.ts#L13)

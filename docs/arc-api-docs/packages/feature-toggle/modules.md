@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[feature-toggle/src/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L19)
+[feature-toggle/src/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/types.ts#L19)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/types.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L11)
+[feature-toggle/src/types.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/types.ts#L11)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L17)
+[feature-toggle/src/types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/types.ts#L17)
 
 ## Variables
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/keys.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/keys.ts#L8)
+[feature-toggle/src/keys.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/keys.ts#L8)
 
 ___
 
@@ -114,7 +114,7 @@ Name/id of the handler extension point
 
 #### Defined in
 
-[feature-toggle/src/types.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L43)
+[feature-toggle/src/types.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/types.ts#L43)
 
 ## Functions
 
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/decorators/feature-flag.decorator.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/decorators/feature-flag.decorator.ts#L9)
+[feature-toggle/src/decorators/feature-flag.decorator.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/decorators/feature-flag.decorator.ts#L9)
 
 ___
 
@@ -177,4 +177,4 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-metadata.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts#L30)
+[feature-toggle/src/providers/feature-flag-metadata.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts#L30)

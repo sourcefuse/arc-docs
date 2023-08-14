@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`Feature`](Feature.md)\>
 
   ↳ **`Feature`**
 
@@ -38,13 +38,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`Feature`](Feature.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<Feature\>.constructor
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/feature-toggle-service/src/models/feature.model.ts#L44)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -58,7 +58,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -72,7 +72,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/feature-toggle-service/src/models/feature.model.ts#L42)
+[services/feature-toggle-service/src/models/feature.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/feature-toggle-service/src/models/feature.model.ts#L42)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/feature-toggle-service/src/models/feature.model.ts#L35)
+[services/feature-toggle-service/src/models/feature.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/feature-toggle-service/src/models/feature.model.ts#L35)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/feature-toggle-service/src/models/feature.model.ts#L17)
+[services/feature-toggle-service/src/models/feature.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/feature-toggle-service/src/models/feature.model.ts#L17)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/feature-toggle-service/src/models/feature.model.ts#L29)
+[services/feature-toggle-service/src/models/feature.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/feature-toggle-service/src/models/feature.model.ts#L29)
 
 ___
 
@@ -126,7 +126,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -140,7 +140,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -150,4 +150,4 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/feature-toggle-service/src/models/feature.model.ts#L23)
+[services/feature-toggle-service/src/models/feature.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/feature-toggle-service/src/models/feature.model.ts#L23)

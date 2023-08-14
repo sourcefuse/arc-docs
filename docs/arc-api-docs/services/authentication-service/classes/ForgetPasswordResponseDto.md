@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Model`
+- `CoreModel`<[`ForgetPasswordResponseDto`](ForgetPasswordResponseDto.md)\>
 
   ↳ **`ForgetPasswordResponseDto`**
 
@@ -33,13 +33,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`ForgetPasswordResponseDto`](ForgetPasswordResponseDto.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Model.constructor
+CoreModel<ForgetPasswordResponseDto\>.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/forget-password-response-dto.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/forget-password-response-dto.model.ts#L33)
+packages/core/dist/models/core-model.d.ts:3
 
 ## Properties
 
@@ -49,7 +49,7 @@ Model.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/forget-password-response-dto.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/forget-password-response-dto.model.ts#L14)
+[services/authentication-service/src/models/forget-password-response-dto.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/forget-password-response-dto.model.ts#L15)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/forget-password-response-dto.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/forget-password-response-dto.model.ts#L26)
+[services/authentication-service/src/models/forget-password-response-dto.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/forget-password-response-dto.model.ts#L27)
 
 ___
 
@@ -69,14 +69,14 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/forget-password-response-dto.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/forget-password-response-dto.model.ts#L20)
+[services/authentication-service/src/models/forget-password-response-dto.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/forget-password-response-dto.model.ts#L21)
 
 ___
 
 ### user
 
-• **user**: [`User`](User.md)
+• **user**: [`User`](User.md)<`DataObject`<`Model`\>\>
 
 #### Defined in
 
-[services/authentication-service/src/models/forget-password-response-dto.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/forget-password-response-dto.model.ts#L31)
+[services/authentication-service/src/models/forget-password-response-dto.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/forget-password-response-dto.model.ts#L32)

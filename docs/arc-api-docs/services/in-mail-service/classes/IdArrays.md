@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Model`
+- `CoreModel`<[`IdArrays`](IdArrays.md)\>
 
   ↳ **`IdArrays`**
 
@@ -31,13 +31,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`IdArrays`](IdArrays.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Model.constructor
+CoreModel<IdArrays\>.constructor
 
 #### Defined in
 
-[services/in-mail-service/src/models/id-array.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/id-array.model.ts#L24)
+packages/core/dist/models/core-model.d.ts:3
 
 ## Properties
 
@@ -47,7 +47,7 @@ Model.constructor
 
 #### Defined in
 
-[services/in-mail-service/src/models/id-array.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/id-array.model.ts#L15)
+[services/in-mail-service/src/models/id-array.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/id-array.model.ts#L16)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/id-array.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/id-array.model.ts#L22)
+[services/in-mail-service/src/models/id-array.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/id-array.model.ts#L23)

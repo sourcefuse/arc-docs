@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`AttachmentFile`](AttachmentFile.md)\>
 
   ↳ **`AttachmentFile`**
 
@@ -38,13 +38,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`AttachmentFile`](AttachmentFile.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<AttachmentFile\>.constructor
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/attachment-file.model.ts#L45)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -54,7 +54,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/attachment-file.model.ts#L21)
+[services/chat-service/src/models/attachment-file.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/attachment-file.model.ts#L21)
 
 ___
 
@@ -68,7 +68,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -82,7 +82,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/attachment-file.model.ts#L27)
+[services/chat-service/src/models/attachment-file.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/attachment-file.model.ts#L27)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/attachment-file.model.ts#L14)
+[services/chat-service/src/models/attachment-file.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/attachment-file.model.ts#L14)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/attachment-file.model.ts#L36)
+[services/chat-service/src/models/attachment-file.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/attachment-file.model.ts#L36)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/attachment-file.model.ts#L43)
+[services/chat-service/src/models/attachment-file.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/attachment-file.model.ts#L43)
 
 ___
 
@@ -136,7 +136,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -150,4 +150,4 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5

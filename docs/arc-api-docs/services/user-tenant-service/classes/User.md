@@ -1,10 +1,16 @@
 [@sourceloop/user-tenant-service](../README.md) / [Exports](../modules.md) / User
 
-# Class: User
+# Class: User<T\>
+
+## Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `DataObject`<`Model`\> |
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<`T` & [`User`](User.md)\>
 
   ↳ **`User`**
 
@@ -49,21 +55,27 @@
 
 ### constructor
 
-• **new User**(`data?`)
+• **new User**<`T`\>(`data?`)
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `DataObject`<`Model`\> |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `Partial`<[`User`](User.md)\> |
+| `data?` | `Partial`<`T` & [`User`](User.md)<`DataObject`<`Model`\>\>\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<T & User\>.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:134](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L134)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -73,7 +85,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L82)
+[services/user-tenant-service/src/models/user.model.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L87)
 
 ___
 
@@ -87,7 +99,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -101,7 +113,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -111,7 +123,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:129](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L129)
+[services/user-tenant-service/src/models/user.model.ts:134](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L134)
 
 ___
 
@@ -121,7 +133,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:126](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L126)
+[services/user-tenant-service/src/models/user.model.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L131)
 
 ___
 
@@ -131,7 +143,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L68)
+[services/user-tenant-service/src/models/user.model.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L73)
 
 ___
 
@@ -141,7 +153,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L112)
+[services/user-tenant-service/src/models/user.model.ts:117](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L117)
 
 ___
 
@@ -151,7 +163,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L63)
+[services/user-tenant-service/src/models/user.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L68)
 
 ___
 
@@ -161,7 +173,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L39)
+[services/user-tenant-service/src/models/user.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L44)
 
 ___
 
@@ -171,7 +183,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:107](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L107)
+[services/user-tenant-service/src/models/user.model.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L112)
 
 ___
 
@@ -185,7 +197,7 @@ IAuthUser.id
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L32)
+[services/user-tenant-service/src/models/user.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L37)
 
 ___
 
@@ -195,7 +207,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:91](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L91)
+[services/user-tenant-service/src/models/user.model.ts:96](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L96)
 
 ___
 
@@ -205,7 +217,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L45)
+[services/user-tenant-service/src/models/user.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L50)
 
 ___
 
@@ -215,7 +227,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L51)
+[services/user-tenant-service/src/models/user.model.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L56)
 
 ___
 
@@ -229,7 +241,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -243,7 +255,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -253,7 +265,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L76)
+[services/user-tenant-service/src/models/user.model.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L81)
 
 ___
 
@@ -263,7 +275,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:97](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L97)
+[services/user-tenant-service/src/models/user.model.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L102)
 
 ___
 
@@ -273,7 +285,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:132](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L132)
+[services/user-tenant-service/src/models/user.model.ts:137](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L137)
 
 ___
 
@@ -287,4 +299,4 @@ IAuthUser.username
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user.model.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user.model.ts#L57)
+[services/user-tenant-service/src/models/user.model.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user.model.ts#L62)

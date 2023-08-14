@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Model`
+- `CoreModel`<[`IdResponse`](IdResponse.md)\>
 
   ↳ **`IdResponse`**
 
@@ -30,13 +30,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`IdResponse`](IdResponse.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Model.constructor
+CoreModel<IdResponse\>.constructor
 
 #### Defined in
 
-[services/in-mail-service/src/models/id-response.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/id-response.model.ts#L14)
+packages/core/dist/models/core-model.d.ts:3
 
 ## Properties
 
@@ -46,4 +46,4 @@ Model.constructor
 
 #### Defined in
 
-[services/in-mail-service/src/models/id-response.model.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/id-response.model.ts#L12)
+[services/in-mail-service/src/models/id-response.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/id-response.model.ts#L13)

@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[mixins/cache.mixin.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/cache/src/mixins/cache.mixin.ts#L28)
+[mixins/cache.mixin.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/cache/src/mixins/cache.mixin.ts#L28)
 
 ## Methods
 
@@ -60,4 +60,4 @@
 
 #### Defined in
 
-[mixins/cache.mixin.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/cache/src/mixins/cache.mixin.ts#L31)
+[mixins/cache.mixin.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/cache/src/mixins/cache.mixin.ts#L31)

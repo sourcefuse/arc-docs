@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`Theme`](Theme.md)\>
 
   ↳ **`Theme`**
 
@@ -44,13 +44,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`Theme`](Theme.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<Theme\>.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/theme.model.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/theme.model.ts#L72)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -60,7 +60,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/theme.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/theme.model.ts#L31)
+[services/scheduler-service/src/models/theme.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/theme.model.ts#L31)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/theme.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/theme.model.ts#L40)
+[services/scheduler-service/src/models/theme.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/theme.model.ts#L40)
 
 ___
 
@@ -84,7 +84,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -98,7 +98,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/theme.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/theme.model.ts#L49)
+[services/scheduler-service/src/models/theme.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/theme.model.ts#L49)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/theme.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/theme.model.ts#L58)
+[services/scheduler-service/src/models/theme.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/theme.model.ts#L58)
 
 ___
 
@@ -132,7 +132,7 @@ ExternalIdentifierEnabledEntity.extId
 
 #### Defined in
 
-[services/scheduler-service/src/models/theme.model.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/theme.model.ts#L64)
+[services/scheduler-service/src/models/theme.model.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/theme.model.ts#L64)
 
 ___
 
@@ -146,7 +146,7 @@ ExternalIdentifierEnabledEntity.extMetadata
 
 #### Defined in
 
-[services/scheduler-service/src/models/theme.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/theme.model.ts#L70)
+[services/scheduler-service/src/models/theme.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/theme.model.ts#L70)
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/theme.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/theme.model.ts#L22)
+[services/scheduler-service/src/models/theme.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/theme.model.ts#L22)
 
 ___
 
@@ -170,7 +170,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -184,4 +184,4 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5

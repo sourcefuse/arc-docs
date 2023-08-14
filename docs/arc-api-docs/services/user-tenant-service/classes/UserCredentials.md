@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `BaseEntity`
+- `BaseEntity`<[`UserCredentials`](UserCredentials.md)\>
 
   ↳ **`UserCredentials`**
 
@@ -38,13 +38,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`UserCredentials`](UserCredentials.md)\> |
 
-#### Overrides
+#### Inherited from
 
-BaseEntity.constructor
+BaseEntity<UserCredentials\>.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-credentials.model.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-credentials.model.ts#L60)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -54,7 +54,7 @@ BaseEntity.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-credentials.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-credentials.model.ts#L30)
+[services/user-tenant-service/src/models/user-credentials.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user-credentials.model.ts#L30)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-credentials.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-credentials.model.ts#L24)
+[services/user-tenant-service/src/models/user-credentials.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user-credentials.model.ts#L24)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-credentials.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-credentials.model.ts#L36)
+[services/user-tenant-service/src/models/user-credentials.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user-credentials.model.ts#L36)
 
 ___
 
@@ -88,7 +88,7 @@ BaseEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-credentials.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-credentials.model.ts#L17)
+[services/user-tenant-service/src/models/user-credentials.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user-credentials.model.ts#L17)
 
 ___
 
@@ -112,7 +112,7 @@ BaseEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-credentials.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-credentials.model.ts#L48)
+[services/user-tenant-service/src/models/user-credentials.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user-credentials.model.ts#L48)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-credentials.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-credentials.model.ts#L43)
+[services/user-tenant-service/src/models/user-credentials.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user-credentials.model.ts#L43)
 
 ___
 
@@ -142,4 +142,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-credentials.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-credentials.model.ts#L58)
+[services/user-tenant-service/src/models/user-credentials.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user-credentials.model.ts#L58)

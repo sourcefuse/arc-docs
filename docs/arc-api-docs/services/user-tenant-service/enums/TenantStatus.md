@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/tenant-status.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/enums/tenant-status.enum.ts#L6)
+[services/user-tenant-service/src/enums/tenant-status.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/enums/tenant-status.enum.ts#L6)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/enums/tenant-status.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/enums/tenant-status.enum.ts#L7)
+[services/user-tenant-service/src/enums/tenant-status.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/enums/tenant-status.enum.ts#L7)

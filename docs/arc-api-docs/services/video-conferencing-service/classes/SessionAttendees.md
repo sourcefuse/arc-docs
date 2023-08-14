@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Entity`
+- `CoreEntity`<[`SessionAttendees`](SessionAttendees.md)\>
 
   ↳ **`SessionAttendees`**
 
@@ -41,13 +41,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`SessionAttendees`](SessionAttendees.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Entity.constructor
+CoreEntity<SessionAttendees\>.constructor
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/session-attendees.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/session-attendees.model.ts#L59)
+packages/core/dist/models/core-entity.d.ts:3
 
 ## Properties
 
@@ -57,7 +57,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/session-attendees.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/session-attendees.model.ts#L31)
+[services/video-conferencing-service/src/models/session-attendees.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/session-attendees.model.ts#L31)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/session-attendees.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/session-attendees.model.ts#L37)
+[services/video-conferencing-service/src/models/session-attendees.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/session-attendees.model.ts#L37)
 
 ___
 
@@ -81,7 +81,7 @@ ExternalIdentifierEnabledEntity.extId
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/session-attendees.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/session-attendees.model.ts#L53)
+[services/video-conferencing-service/src/models/session-attendees.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/session-attendees.model.ts#L53)
 
 ___
 
@@ -95,7 +95,7 @@ ExternalIdentifierEnabledEntity.extMetadata
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/session-attendees.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/session-attendees.model.ts#L58)
+[services/video-conferencing-service/src/models/session-attendees.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/session-attendees.model.ts#L58)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/session-attendees.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/session-attendees.model.ts#L19)
+[services/video-conferencing-service/src/models/session-attendees.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/session-attendees.model.ts#L19)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/session-attendees.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/session-attendees.model.ts#L48)
+[services/video-conferencing-service/src/models/session-attendees.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/session-attendees.model.ts#L48)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/session-attendees.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/session-attendees.model.ts#L42)
+[services/video-conferencing-service/src/models/session-attendees.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/session-attendees.model.ts#L42)
 
 ___
 
@@ -135,4 +135,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/session-attendees.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/session-attendees.model.ts#L25)
+[services/video-conferencing-service/src/models/session-attendees.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/session-attendees.model.ts#L25)

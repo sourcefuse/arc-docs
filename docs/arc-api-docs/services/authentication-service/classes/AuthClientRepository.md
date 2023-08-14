@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultSoftCrudRepository`<[`AuthClient`](AuthClient.md), typeof [`id`](AuthClient.md#id)\>
+- `DefaultSoftCrudRepository`<[`AuthClient`](AuthClient.md), typeof [`id`](AuthSecureClient.md#id)\>
 
   ↳ **`AuthClientRepository`**
 
@@ -35,4 +35,4 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/auth-client.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/auth-client.repository.ts#L16)
+[services/authentication-service/src/repositories/auth-client.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/auth-client.repository.ts#L16)

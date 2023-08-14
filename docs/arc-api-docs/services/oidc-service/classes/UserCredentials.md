@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`UserCredentials`](UserCredentials.md)\>
 
   ↳ **`UserCredentials`**
 
@@ -40,13 +40,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`UserCredentials`](UserCredentials.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<UserCredentials\>.constructor
 
 #### Defined in
 
-[services/oidc-service/src/models/user-credentials.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/user-credentials.model.ts#L61)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -56,7 +56,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/oidc-service/src/models/user-credentials.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/user-credentials.model.ts#L41)
+[services/oidc-service/src/models/user-credentials.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-credentials.model.ts#L41)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user-credentials.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/user-credentials.model.ts#L35)
+[services/oidc-service/src/models/user-credentials.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-credentials.model.ts#L35)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user-credentials.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/user-credentials.model.ts#L47)
+[services/oidc-service/src/models/user-credentials.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-credentials.model.ts#L47)
 
 ___
 
@@ -90,7 +90,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -104,7 +104,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user-credentials.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/user-credentials.model.ts#L18)
+[services/oidc-service/src/models/user-credentials.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-credentials.model.ts#L18)
 
 ___
 
@@ -128,7 +128,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -142,7 +142,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user-credentials.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/user-credentials.model.ts#L59)
+[services/oidc-service/src/models/user-credentials.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-credentials.model.ts#L59)
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user-credentials.model.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/user-credentials.model.ts#L54)
+[services/oidc-service/src/models/user-credentials.model.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-credentials.model.ts#L54)
 
 ___
 
@@ -172,4 +172,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user-credentials.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/user-credentials.model.ts#L28)
+[services/oidc-service/src/models/user-credentials.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-credentials.model.ts#L28)

@@ -10,7 +10,7 @@
 
 ## Hierarchy
 
-- `Model`
+- `CoreModel`<[`ExecuteWorkflowDto`](ExecuteWorkflowDto.md)<`T`\>\>
 
   ↳ **`ExecuteWorkflowDto`**
 
@@ -43,13 +43,15 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`ExecuteWorkflowDto`](ExecuteWorkflowDto.md)<`T`\>\> |
 
-#### Overrides
+#### Inherited from
 
-Model.constructor
+CoreModel<
+  ExecuteWorkflowDto<T\>
+\>.constructor
 
 #### Defined in
 
-[services/bpmn-service/src/models/execute-workflow-dto.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/execute-workflow-dto.ts#L20)
+packages/core/dist/models/core-model.d.ts:3
 
 ## Properties
 
@@ -59,7 +61,7 @@ Model.constructor
 
 #### Defined in
 
-[services/bpmn-service/src/models/execute-workflow-dto.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/execute-workflow-dto.ts#L18)
+[services/bpmn-service/src/models/execute-workflow-dto.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/execute-workflow-dto.ts#L21)
 
 ___
 
@@ -69,4 +71,4 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/execute-workflow-dto.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/execute-workflow-dto.ts#L12)
+[services/bpmn-service/src/models/execute-workflow-dto.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/execute-workflow-dto.ts#L15)

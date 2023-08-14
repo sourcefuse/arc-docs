@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`User`](User.md), `undefined` \| `string`, [`UserRelations`](../interfaces/UserRelations.md), `this`\> & `DefaultCrudRepository`<[`User`](User.md), `undefined` \| `string`, `object`, `this`\>
+- `DefaultUserModifyCrudRepository`<[`User`](User.md)<`DataObject`<`Model`\>\>, `undefined` \| `string`, [`UserRelations`](../interfaces/UserRelations.md), `this`\> & `DefaultCrudRepository`<[`User`](User.md)<`DataObject`<`Model`\>\>, `undefined` \| `string`, `object`, `this`\>
 
   ↳ **`UserRepository`**
 
@@ -47,7 +47,7 @@
 | `tenantRepositoryGetter` | `Getter`<[`TenantRepository`](TenantRepository.md)\> |
 | `userCredentialsRepositoryGetter` | `Getter`<[`UserCredentialsRepository`](UserCredentialsRepository.md)\> |
 | `userTenantRepositoryGetter` | `Getter`<[`UserTenantRepository`](UserTenantRepository.md)\> |
-| `user` | typeof `Entity` & { `prototype`: [`User`](User.md)  } |
+| `user` | typeof `Entity` & { `prototype`: [`User`](User.md)<`DataObject`<`Model`\>\>  } |
 | `getAuditLogRepository` | `Getter`<[`AuditLogRepository`](AuditLogRepository.md)\> |
 
 #### Overrides
@@ -63,7 +63,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user.repository.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user.repository.ts#L67)
+[services/user-tenant-service/src/repositories/user.repository.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user.repository.ts#L67)
 
 ## Properties
 
@@ -73,7 +73,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user.repository.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user.repository.ts#L57)
+[services/user-tenant-service/src/repositories/user.repository.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user.repository.ts#L57)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user.repository.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user.repository.ts#L83)
+[services/user-tenant-service/src/repositories/user.repository.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user.repository.ts#L83)
 
 ___
 
@@ -104,7 +104,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user.repository.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user.repository.ts#L71)
+[services/user-tenant-service/src/repositories/user.repository.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user.repository.ts#L71)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user.repository.ts#L55)
+[services/user-tenant-service/src/repositories/user.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user.repository.ts#L55)
 
 ___
 
@@ -124,17 +124,17 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user.repository.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user.repository.ts#L75)
+[services/user-tenant-service/src/repositories/user.repository.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user.repository.ts#L75)
 
 ___
 
 ### user
 
-• `Private` `Readonly` **user**: typeof `Entity` & { `prototype`: [`User`](User.md)  }
+• `Private` `Readonly` **user**: typeof `Entity` & { `prototype`: [`User`](User.md)<`DataObject`<`Model`\>\>  }
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user.repository.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user.repository.ts#L81)
+[services/user-tenant-service/src/repositories/user.repository.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user.repository.ts#L81)
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user.repository.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user.repository.ts#L77)
+[services/user-tenant-service/src/repositories/user.repository.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user.repository.ts#L77)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user.repository.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user.repository.ts#L79)
+[services/user-tenant-service/src/repositories/user.repository.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user.repository.ts#L79)
 
 ___
 
@@ -164,24 +164,24 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user.repository.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user.repository.ts#L62)
+[services/user-tenant-service/src/repositories/user.repository.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user.repository.ts#L62)
 
 ## Methods
 
 ### create
 
-▸ **create**(`entity`, `options?`): `Promise`<[`User`](User.md)\>
+▸ **create**(`entity`, `options?`): `Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `entity` | `DataObject`<[`User`](User.md)\> |
+| `entity` | `DataObject`<[`User`](User.md)<`DataObject`<`Model`\>\>\> |
 | `options?` | `AnyObject` |
 
 #### Returns
 
-`Promise`<[`User`](User.md)\>
+`Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Overrides
 
@@ -196,13 +196,13 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user.repository.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user.repository.ts#L112)
+[services/user-tenant-service/src/repositories/user.repository.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user.repository.ts#L112)
 
 ___
 
 ### updatePassword
 
-▸ **updatePassword**(`username`, `password`, `newPassword`): `Promise`<[`User`](User.md)\>
+▸ **updatePassword**(`username`, `password`, `newPassword`): `Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Parameters
 
@@ -214,17 +214,17 @@ ___
 
 #### Returns
 
-`Promise`<[`User`](User.md)\>
+`Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user.repository.ts:172](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user.repository.ts#L172)
+[services/user-tenant-service/src/repositories/user.repository.ts:172](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user.repository.ts#L172)
 
 ___
 
 ### verifyPassword
 
-▸ **verifyPassword**(`username`, `password`): `Promise`<[`User`](User.md)\>
+▸ **verifyPassword**(`username`, `password`): `Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Parameters
 
@@ -235,8 +235,8 @@ ___
 
 #### Returns
 
-`Promise`<[`User`](User.md)\>
+`Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user.repository.ts:153](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user.repository.ts#L153)
+[services/user-tenant-service/src/repositories/user.repository.ts:153](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user.repository.ts#L153)

@@ -41,7 +41,7 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/notification-service/src/repositories/notification-user.repository.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/repositories/notification-user.repository.ts#L22)
+[services/notification-service/src/repositories/notification-user.repository.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/repositories/notification-user.repository.ts#L22)
 
 ## Properties
 
@@ -51,7 +51,7 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/notification-service/src/repositories/notification-user.repository.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/repositories/notification-user.repository.ts#L17)
+[services/notification-service/src/repositories/notification-user.repository.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/repositories/notification-user.repository.ts#L17)
 
 ___
 
@@ -61,4 +61,4 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/repositories/notification-user.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/repositories/notification-user.repository.ts#L26)
+[services/notification-service/src/repositories/notification-user.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/repositories/notification-user.repository.ts#L26)

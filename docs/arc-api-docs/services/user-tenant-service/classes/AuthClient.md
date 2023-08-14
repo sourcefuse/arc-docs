@@ -1,10 +1,16 @@
 [@sourceloop/user-tenant-service](../README.md) / [Exports](../modules.md) / AuthClient
 
-# Class: AuthClient
+# Class: AuthClient<T\>
+
+## Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `DataObject`<`Model`\> |
 
 ## Hierarchy
 
-- `BaseEntity`
+- `BaseEntity`<`T` & [`AuthClient`](AuthClient.md)\>
 
   ↳ **`AuthClient`**
 
@@ -35,21 +41,27 @@
 
 ### constructor
 
-• **new AuthClient**(`data?`)
+• **new AuthClient**<`T`\>(`data?`)
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `DataObject`<`Model`\> |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `Partial`<[`AuthClient`](AuthClient.md)\> |
+| `data?` | `Partial`<`T` & [`AuthClient`](AuthClient.md)<`DataObject`<`Model`\>\>\> |
 
-#### Overrides
+#### Inherited from
 
-BaseEntity.constructor
+BaseEntity<T & AuthClient\>.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/auth-client.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/auth-client.model.ts#L65)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -59,7 +71,7 @@ BaseEntity.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/auth-client.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/auth-client.model.ts#L49)
+[services/user-tenant-service/src/models/auth-client.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/auth-client.model.ts#L52)
 
 ___
 
@@ -69,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/auth-client.model.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/auth-client.model.ts#L63)
+[services/user-tenant-service/src/models/auth-client.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/auth-client.model.ts#L66)
 
 ___
 
@@ -83,7 +95,7 @@ IAuthClient.clientId
 
 #### Defined in
 
-[services/user-tenant-service/src/models/auth-client.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/auth-client.model.ts#L24)
+[services/user-tenant-service/src/models/auth-client.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/auth-client.model.ts#L27)
 
 ___
 
@@ -97,7 +109,7 @@ IAuthClient.clientSecret
 
 #### Defined in
 
-[services/user-tenant-service/src/models/auth-client.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/auth-client.model.ts#L30)
+[services/user-tenant-service/src/models/auth-client.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/auth-client.model.ts#L33)
 
 ___
 
@@ -111,7 +123,7 @@ BaseEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -121,7 +133,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/auth-client.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/auth-client.model.ts#L17)
+[services/user-tenant-service/src/models/auth-client.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/auth-client.model.ts#L20)
 
 ___
 
@@ -135,7 +147,7 @@ BaseEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -149,7 +161,7 @@ IAuthClient.redirectUrl
 
 #### Defined in
 
-[services/user-tenant-service/src/models/auth-client.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/auth-client.model.ts#L36)
+[services/user-tenant-service/src/models/auth-client.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/auth-client.model.ts#L39)
 
 ___
 
@@ -159,7 +171,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/auth-client.model.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/auth-client.model.ts#L56)
+[services/user-tenant-service/src/models/auth-client.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/auth-client.model.ts#L59)
 
 ___
 
@@ -169,4 +181,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/auth-client.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/auth-client.model.ts#L42)
+[services/user-tenant-service/src/models/auth-client.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/auth-client.model.ts#L45)

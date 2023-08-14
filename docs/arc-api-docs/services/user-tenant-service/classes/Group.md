@@ -1,10 +1,16 @@
 [@sourceloop/user-tenant-service](../README.md) / [Exports](../modules.md) / Group
 
-# Class: Group
+# Class: Group<T\>
+
+## Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `DataObject`<`Model`\> |
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<`T` & [`Group`](Group.md)\>
 
   ↳ **`Group`**
 
@@ -35,21 +41,29 @@
 
 ### constructor
 
-• **new Group**(`data?`)
+• **new Group**<`T`\>(`data?`)
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `DataObject`<`Model`\> |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `Partial`<[`Group`](Group.md)\> |
+| `data?` | `Partial`<`T` & [`Group`](Group.md)<`DataObject`<`Model`\>\>\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<
+  T & Group
+\>.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/group.model.ts#L52)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -63,7 +77,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -77,7 +91,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -87,7 +101,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/group.model.ts#L31)
+[services/user-tenant-service/src/models/group.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/group.model.ts#L39)
 
 ___
 
@@ -97,7 +111,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/group.model.ts#L47)
+[services/user-tenant-service/src/models/group.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/group.model.ts#L55)
 
 ___
 
@@ -107,7 +121,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/group.model.ts#L21)
+[services/user-tenant-service/src/models/group.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/group.model.ts#L29)
 
 ___
 
@@ -121,7 +135,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -135,7 +149,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -145,7 +159,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/group.model.ts#L26)
+[services/user-tenant-service/src/models/group.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/group.model.ts#L34)
 
 ___
 
@@ -155,7 +169,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/group.model.ts#L38)
+[services/user-tenant-service/src/models/group.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/group.model.ts#L46)
 
 ___
 
@@ -165,4 +179,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/group.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/group.model.ts#L50)
+[services/user-tenant-service/src/models/group.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/group.model.ts#L58)

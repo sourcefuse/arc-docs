@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`MessageRecipient`](MessageRecipient.md)\>
 
   ↳ **`MessageRecipient`**
 
@@ -41,13 +41,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`MessageRecipient`](MessageRecipient.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<MessageRecipient\>.constructor
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/message-recipient.model.ts#L68)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -57,7 +57,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/message-recipient.model.ts#L25)
+[services/chat-service/src/models/message-recipient.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/message-recipient.model.ts#L25)
 
 ___
 
@@ -71,7 +71,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -85,7 +85,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/message-recipient.model.ts#L31)
+[services/chat-service/src/models/message-recipient.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/message-recipient.model.ts#L31)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/message-recipient.model.ts#L18)
+[services/chat-service/src/models/message-recipient.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/message-recipient.model.ts#L18)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/message-recipient.model.ts#L38)
+[services/chat-service/src/models/message-recipient.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/message-recipient.model.ts#L38)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/message-recipient.model.ts#L45)
+[services/chat-service/src/models/message-recipient.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/message-recipient.model.ts#L45)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/message-recipient.model.ts#L52)
+[services/chat-service/src/models/message-recipient.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/message-recipient.model.ts#L52)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/message-recipient.model.ts#L66)
+[services/chat-service/src/models/message-recipient.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/message-recipient.model.ts#L66)
 
 ___
 
@@ -159,7 +159,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -173,7 +173,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -183,4 +183,4 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message-recipient.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/message-recipient.model.ts#L59)
+[services/chat-service/src/models/message-recipient.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/message-recipient.model.ts#L59)

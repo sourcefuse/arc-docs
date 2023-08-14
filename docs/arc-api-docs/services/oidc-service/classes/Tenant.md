@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`Tenant`](Tenant.md)\>
 
   ↳ **`Tenant`**
 
@@ -43,13 +43,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`Tenant`](Tenant.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<Tenant\>.constructor
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/tenant.model.ts#L70)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -59,7 +59,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/tenant.model.ts#L35)
+[services/oidc-service/src/models/tenant.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/tenant.model.ts#L35)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/tenant.model.ts#L40)
+[services/oidc-service/src/models/tenant.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/tenant.model.ts#L40)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/tenant.model.ts#L55)
+[services/oidc-service/src/models/tenant.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/tenant.model.ts#L55)
 
 ___
 
@@ -93,7 +93,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -107,7 +107,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/tenant.model.ts#L18)
+[services/oidc-service/src/models/tenant.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/tenant.model.ts#L18)
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/tenant.model.ts#L30)
+[services/oidc-service/src/models/tenant.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/tenant.model.ts#L30)
 
 ___
 
@@ -141,7 +141,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -155,7 +155,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -165,7 +165,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/tenant.model.ts#L24)
+[services/oidc-service/src/models/tenant.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/tenant.model.ts#L24)
 
 ___
 
@@ -175,7 +175,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/tenant.model.ts#L45)
+[services/oidc-service/src/models/tenant.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/tenant.model.ts#L45)
 
 ___
 
@@ -185,7 +185,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/tenant.model.ts#L65)
+[services/oidc-service/src/models/tenant.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/tenant.model.ts#L65)
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/tenant.model.ts#L68)
+[services/oidc-service/src/models/tenant.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/tenant.model.ts#L68)
 
 ___
 
@@ -205,4 +205,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/tenant.model.ts#L50)
+[services/oidc-service/src/models/tenant.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/tenant.model.ts#L50)

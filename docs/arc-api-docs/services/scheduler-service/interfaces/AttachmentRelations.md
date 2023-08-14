@@ -12,8 +12,8 @@
 
 ### event
 
-• `Optional` **event**: [`Event`](../classes/Event.md)
+• `Optional` **event**: [`Event`](../classes/Event.md)<`DataObject`<`Model`\>\>
 
 #### Defined in
 
-[services/scheduler-service/src/models/attachment.model.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/attachment.model.ts#L83)
+[services/scheduler-service/src/models/attachment.model.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/attachment.model.ts#L79)

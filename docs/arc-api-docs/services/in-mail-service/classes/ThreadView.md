@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`ThreadView`](ThreadView.md)\>
 
   ↳ **`ThreadView`**
 
@@ -47,13 +47,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`ThreadView`](ThreadView.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<ThreadView\>.constructor
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread-view.model.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/thread-view.model.ts#L80)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -63,7 +63,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread-view.model.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/thread-view.model.ts#L72)
+[services/in-mail-service/src/models/thread-view.model.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread-view.model.ts#L72)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread-view.model.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/thread-view.model.ts#L60)
+[services/in-mail-service/src/models/thread-view.model.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread-view.model.ts#L60)
 
 ___
 
@@ -87,7 +87,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -101,7 +101,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -115,7 +115,7 @@ ExternalIdentifierEnabledEntity.extId
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread-view.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/thread-view.model.ts#L38)
+[services/in-mail-service/src/models/thread-view.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread-view.model.ts#L38)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread-view.model.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/thread-view.model.ts#L78)
+[services/in-mail-service/src/models/thread-view.model.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread-view.model.ts#L78)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread-view.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/thread-view.model.ts#L27)
+[services/in-mail-service/src/models/thread-view.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread-view.model.ts#L27)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread-view.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/thread-view.model.ts#L66)
+[services/in-mail-service/src/models/thread-view.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread-view.model.ts#L66)
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread-view.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/thread-view.model.ts#L50)
+[services/in-mail-service/src/models/thread-view.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread-view.model.ts#L50)
 
 ___
 
@@ -169,7 +169,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -183,7 +183,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread-view.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/thread-view.model.ts#L55)
+[services/in-mail-service/src/models/thread-view.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread-view.model.ts#L55)
 
 ___
 
@@ -203,7 +203,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread-view.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/thread-view.model.ts#L32)
+[services/in-mail-service/src/models/thread-view.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread-view.model.ts#L32)
 
 ___
 
@@ -213,4 +213,4 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread-view.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/thread-view.model.ts#L44)
+[services/in-mail-service/src/models/thread-view.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread-view.model.ts#L44)

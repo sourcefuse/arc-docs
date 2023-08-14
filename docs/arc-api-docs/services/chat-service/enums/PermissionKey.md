@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L25)
+[services/chat-service/src/enums/permission-key.enum.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L25)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L7)
+[services/chat-service/src/enums/permission-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L7)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L17)
+[services/chat-service/src/enums/permission-key.enum.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L17)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L11)
+[services/chat-service/src/enums/permission-key.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L11)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L21)
+[services/chat-service/src/enums/permission-key.enum.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L21)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L28)
+[services/chat-service/src/enums/permission-key.enum.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L28)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L9)
+[services/chat-service/src/enums/permission-key.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L9)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L19)
+[services/chat-service/src/enums/permission-key.enum.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L19)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L14)
+[services/chat-service/src/enums/permission-key.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L14)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L24)
+[services/chat-service/src/enums/permission-key.enum.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L24)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L27)
+[services/chat-service/src/enums/permission-key.enum.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L27)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L8)
+[services/chat-service/src/enums/permission-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L8)
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L18)
+[services/chat-service/src/enums/permission-key.enum.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L18)
 
 ___
 
@@ -165,7 +165,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L13)
+[services/chat-service/src/enums/permission-key.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L13)
 
 ___
 
@@ -175,7 +175,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L23)
+[services/chat-service/src/enums/permission-key.enum.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L23)
 
 ___
 
@@ -185,7 +185,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L26)
+[services/chat-service/src/enums/permission-key.enum.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L26)
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L6)
+[services/chat-service/src/enums/permission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L6)
 
 ___
 
@@ -205,7 +205,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L16)
+[services/chat-service/src/enums/permission-key.enum.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L16)
 
 ___
 
@@ -215,7 +215,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L12)
+[services/chat-service/src/enums/permission-key.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L12)
 
 ___
 
@@ -225,4 +225,4 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/enums/permission-key.enum.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/enums/permission-key.enum.ts#L22)
+[services/chat-service/src/enums/permission-key.enum.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/enums/permission-key.enum.ts#L22)

@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Model`
+- `CoreModel`<[`EventDTO`](EventDTO.md)\>
 
   ↳ **`EventDTO`**
 
@@ -51,13 +51,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`EventDTO`](EventDTO.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Model.constructor
+CoreModel<EventDTO\>.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:147](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L147)
+packages/core/dist/models/core-model.d.ts:3
 
 ## Properties
 
@@ -67,7 +67,7 @@ Model.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:130](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L130)
+[services/scheduler-service/src/models/event.dto.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L131)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:133](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L133)
+[services/scheduler-service/src/models/event.dto.ts:134](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L134)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L22)
+[services/scheduler-service/src/models/event.dto.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L23)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:122](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L122)
+[services/scheduler-service/src/models/event.dto.ts:123](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L123)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L27)
+[services/scheduler-service/src/models/event.dto.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L28)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L33)
+[services/scheduler-service/src/models/event.dto.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L34)
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:139](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L139)
+[services/scheduler-service/src/models/event.dto.ts:140](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L140)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:145](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L145)
+[services/scheduler-service/src/models/event.dto.ts:146](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L146)
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L39)
+[services/scheduler-service/src/models/event.dto.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L40)
 
 ___
 
@@ -157,7 +157,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L45)
+[services/scheduler-service/src/models/event.dto.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L46)
 
 ___
 
@@ -167,7 +167,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L16)
+[services/scheduler-service/src/models/event.dto.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L17)
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L87)
+[services/scheduler-service/src/models/event.dto.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L88)
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L52)
+[services/scheduler-service/src/models/event.dto.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L53)
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L59)
+[services/scheduler-service/src/models/event.dto.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L60)
 
 ___
 
@@ -207,7 +207,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L64)
+[services/scheduler-service/src/models/event.dto.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L65)
 
 ___
 
@@ -217,7 +217,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L72)
+[services/scheduler-service/src/models/event.dto.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L73)
 
 ___
 
@@ -227,7 +227,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L78)
+[services/scheduler-service/src/models/event.dto.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L79)
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:127](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L127)
+[services/scheduler-service/src/models/event.dto.ts:128](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L128)
 
 ___
 
@@ -247,7 +247,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L93)
+[services/scheduler-service/src/models/event.dto.ts:94](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L94)
 
 ___
 
@@ -257,7 +257,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:106](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L106)
+[services/scheduler-service/src/models/event.dto.ts:107](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L107)
 
 ___
 
@@ -267,7 +267,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:111](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L111)
+[services/scheduler-service/src/models/event.dto.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L112)
 
 ___
 
@@ -277,4 +277,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.dto.ts:116](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.dto.ts#L116)
+[services/scheduler-service/src/models/event.dto.ts:117](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.dto.ts#L117)

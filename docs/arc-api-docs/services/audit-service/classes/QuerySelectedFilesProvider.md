@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[services/audit-service/src/services/query-selected-files.service.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/query-selected-files.service.ts#L19)
+[services/audit-service/src/services/query-selected-files.service.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/services/query-selected-files.service.ts#L19)
 
 ## Properties
 
@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[services/audit-service/src/services/query-selected-files.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/query-selected-files.service.ts#L21)
+[services/audit-service/src/services/query-selected-files.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/services/query-selected-files.service.ts#L21)
 
 ## Methods
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[services/audit-service/src/services/query-selected-files.service.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/query-selected-files.service.ts#L66)
+[services/audit-service/src/services/query-selected-files.service.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/services/query-selected-files.service.ts#L66)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/services/query-selected-files.service.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/query-selected-files.service.ts#L30)
+[services/audit-service/src/services/query-selected-files.service.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/services/query-selected-files.service.ts#L30)
 
 ___
 
@@ -105,4 +105,4 @@ Provider.value
 
 #### Defined in
 
-[services/audit-service/src/services/query-selected-files.service.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/services/query-selected-files.service.ts#L24)
+[services/audit-service/src/services/query-selected-files.service.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/services/query-selected-files.service.ts#L24)

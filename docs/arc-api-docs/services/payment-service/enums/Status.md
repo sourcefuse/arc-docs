@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[enums/status.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/enums/status.enum.ts#L8)
+[services/payment-service/src/enums/status.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/enums/status.enum.ts#L8)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[enums/status.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/enums/status.enum.ts#L10)
+[services/payment-service/src/enums/status.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/enums/status.enum.ts#L10)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[enums/status.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/enums/status.enum.ts#L9)
+[services/payment-service/src/enums/status.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/enums/status.enum.ts#L9)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[enums/status.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/enums/status.enum.ts#L6)
+[services/payment-service/src/enums/status.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/enums/status.enum.ts#L6)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[enums/status.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/enums/status.enum.ts#L7)
+[services/payment-service/src/enums/status.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/enums/status.enum.ts#L7)

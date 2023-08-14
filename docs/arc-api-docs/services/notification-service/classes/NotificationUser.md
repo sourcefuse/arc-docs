@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `BaseEntity`
+- `BaseEntity`<[`NotificationUser`](NotificationUser.md)\>
 
   ↳ **`NotificationUser`**
 
@@ -40,13 +40,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`NotificationUser`](NotificationUser.md)\> |
 
-#### Overrides
+#### Inherited from
 
-BaseEntity.constructor
+BaseEntity<NotificationUser\>.constructor
 
 #### Defined in
 
-[services/notification-service/src/models/notification-user.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/models/notification-user.model.ts#L59)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -56,7 +56,7 @@ BaseEntity.constructor
 
 #### Defined in
 
-[services/notification-service/src/models/notification-user.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/models/notification-user.model.ts#L51)
+[services/notification-service/src/models/notification-user.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification-user.model.ts#L51)
 
 ___
 
@@ -70,7 +70,7 @@ BaseEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/notification-user.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/models/notification-user.model.ts#L20)
+[services/notification-service/src/models/notification-user.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification-user.model.ts#L20)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/notification-user.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/models/notification-user.model.ts#L44)
+[services/notification-service/src/models/notification-user.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification-user.model.ts#L44)
 
 ___
 
@@ -104,7 +104,7 @@ BaseEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/notification-user.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/models/notification-user.model.ts#L30)
+[services/notification-service/src/models/notification-user.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification-user.model.ts#L30)
 
 ___
 
@@ -124,4 +124,4 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/notification-user.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/models/notification-user.model.ts#L37)
+[services/notification-service/src/models/notification-user.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification-user.model.ts#L37)

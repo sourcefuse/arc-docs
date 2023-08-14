@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Model`
+- `CoreModel`<[`AccessResponseDto`](AccessResponseDto.md)\>
 
   ↳ **`AccessResponseDto`**
 
@@ -31,13 +31,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`AccessResponseDto`](AccessResponseDto.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Model.constructor
+CoreModel<AccessResponseDto\>.constructor
 
 #### Defined in
 
-[services/notification-service/src/models/access-response-dto.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/models/access-response-dto.model.ts#L19)
+packages/core/dist/models/core-model.d.ts:3
 
 ## Properties
 
@@ -47,7 +47,7 @@ Model.constructor
 
 #### Defined in
 
-[services/notification-service/src/models/access-response-dto.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/models/access-response-dto.model.ts#L17)
+[services/notification-service/src/models/access-response-dto.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/access-response-dto.model.ts#L18)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/access-response-dto.model.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/models/access-response-dto.model.ts#L12)
+[services/notification-service/src/models/access-response-dto.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/access-response-dto.model.ts#L13)

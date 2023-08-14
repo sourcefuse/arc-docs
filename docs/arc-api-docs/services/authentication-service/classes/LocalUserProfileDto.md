@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Model`
+- `CoreModel`<[`LocalUserProfileDto`](LocalUserProfileDto.md)\>
 
   ↳ **`LocalUserProfileDto`**
 
@@ -31,13 +31,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`LocalUserProfileDto`](LocalUserProfileDto.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Model.constructor
+CoreModel<LocalUserProfileDto\>.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/local-user-profile.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/local-user-profile.ts#L25)
+packages/core/dist/models/core-model.d.ts:3
 
 ## Properties
 
@@ -47,7 +47,7 @@ Model.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/local-user-profile.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/local-user-profile.ts#L17)
+[services/authentication-service/src/models/local-user-profile.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/local-user-profile.ts#L18)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/local-user-profile.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/local-user-profile.ts#L23)
+[services/authentication-service/src/models/local-user-profile.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/local-user-profile.ts#L24)

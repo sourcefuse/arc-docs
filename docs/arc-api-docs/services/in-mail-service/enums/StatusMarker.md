@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/in-mail-service/src/models/message.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/message.model.ts#L22)
+[services/in-mail-service/src/models/message.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/message.model.ts#L22)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/message.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/message.model.ts#L23)
+[services/in-mail-service/src/models/message.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/message.model.ts#L23)

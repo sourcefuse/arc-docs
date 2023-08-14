@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Model`
+- `CoreModel`<[`SearchResult`](SearchResult.md)\>
 
   ↳ **`SearchResult`**
 
@@ -31,13 +31,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`SearchResult`](SearchResult.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Model.constructor
+CoreModel<SearchResult\>.constructor
 
 #### Defined in
 
-[services/search-service/src/models/search-result.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/search-result.model.ts#L21)
+packages/core/dist/models/core-model.d.ts:3
 
 ## Properties
 
@@ -47,7 +47,7 @@ Model.constructor
 
 #### Defined in
 
-[services/search-service/src/models/search-result.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/search-result.model.ts#L19)
+[services/search-service/src/models/search-result.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-result.model.ts#L20)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-result.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/search-result.model.ts#L13)
+[services/search-service/src/models/search-result.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-result.model.ts#L14)

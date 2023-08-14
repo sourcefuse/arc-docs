@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`UserView`](UserView.md), `undefined` \| `string`, {}, `this`\> & `DefaultCrudRepository`<[`UserView`](UserView.md), `undefined` \| `string`, `object`, `this`\>
+- `DefaultUserModifyCrudRepository`<[`UserView`](UserView.md)<`DataObject`<`Model`\>\>, `undefined` \| `string`, {}, `this`\> & `DefaultCrudRepository`<[`UserView`](UserView.md)<`DataObject`<`Model`\>\>, `undefined` \| `string`, `object`, `this`\>
 
   ↳ **`UserViewRepository`**
 
@@ -42,7 +42,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-view.repository.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user-view.repository.ts#L29)
+[services/user-tenant-service/src/repositories/user-view.repository.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user-view.repository.ts#L29)
 
 ## Properties
 
@@ -52,7 +52,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-view.repository.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user-view.repository.ts#L37)
+[services/user-tenant-service/src/repositories/user-view.repository.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user-view.repository.ts#L37)
 
 ___
 
@@ -69,4 +69,4 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/user-view.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/user-view.repository.ts#L33)
+[services/user-tenant-service/src/repositories/user-view.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/user-view.repository.ts#L33)

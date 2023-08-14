@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`Subscription`](Subscription.md)\>
 
   ↳ **`Subscription`**
 
@@ -49,13 +49,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`Subscription`](Subscription.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<Subscription\>.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/subscription.model.ts#L108)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -65,7 +65,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/subscription.model.ts#L39)
+[services/scheduler-service/src/models/subscription.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/subscription.model.ts#L39)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/subscription.model.ts#L45)
+[services/scheduler-service/src/models/subscription.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/subscription.model.ts#L45)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:94](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/subscription.model.ts#L94)
+[services/scheduler-service/src/models/subscription.model.ts:94](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/subscription.model.ts#L94)
 
 ___
 
@@ -99,7 +99,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -113,7 +113,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/subscription.model.ts#L78)
+[services/scheduler-service/src/models/subscription.model.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/subscription.model.ts#L78)
 
 ___
 
@@ -137,7 +137,7 @@ ExternalIdentifierEnabledEntity.extId
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/subscription.model.ts#L100)
+[services/scheduler-service/src/models/subscription.model.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/subscription.model.ts#L100)
 
 ___
 
@@ -151,7 +151,7 @@ ExternalIdentifierEnabledEntity.extMetadata
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:106](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/subscription.model.ts#L106)
+[services/scheduler-service/src/models/subscription.model.ts:106](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/subscription.model.ts#L106)
 
 ___
 
@@ -161,7 +161,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/subscription.model.ts#L51)
+[services/scheduler-service/src/models/subscription.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/subscription.model.ts#L51)
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/subscription.model.ts#L24)
+[services/scheduler-service/src/models/subscription.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/subscription.model.ts#L24)
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/subscription.model.ts#L72)
+[services/scheduler-service/src/models/subscription.model.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/subscription.model.ts#L72)
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/subscription.model.ts#L58)
+[services/scheduler-service/src/models/subscription.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/subscription.model.ts#L58)
 
 ___
 
@@ -201,7 +201,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/subscription.model.ts#L65)
+[services/scheduler-service/src/models/subscription.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/subscription.model.ts#L65)
 
 ___
 
@@ -215,7 +215,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -229,7 +229,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -239,4 +239,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/subscription.model.ts#L84)
+[services/scheduler-service/src/models/subscription.model.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/subscription.model.ts#L84)

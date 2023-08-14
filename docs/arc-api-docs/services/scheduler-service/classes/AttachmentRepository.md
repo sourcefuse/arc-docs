@@ -49,17 +49,17 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attachment.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/repositories/attachment.repository.ts#L38)
+[services/scheduler-service/src/repositories/attachment.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attachment.repository.ts#L38)
 
 ## Properties
 
 ### event
 
-• `Readonly` **event**: `BelongsToAccessor`<[`Event`](Event.md), `undefined` \| `string`\>
+• `Readonly` **event**: `BelongsToAccessor`<[`Event`](Event.md)<`DataObject`<`Model`\>\>, `undefined` \| `string`\>
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attachment.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/repositories/attachment.repository.ts#L33)
+[services/scheduler-service/src/repositories/attachment.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attachment.repository.ts#L33)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attachment.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/repositories/attachment.repository.ts#L46)
+[services/scheduler-service/src/repositories/attachment.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attachment.repository.ts#L46)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attachment.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/repositories/attachment.repository.ts#L48)
+[services/scheduler-service/src/repositories/attachment.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attachment.repository.ts#L48)
 
 ___
 
@@ -100,4 +100,4 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attachment.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/repositories/attachment.repository.ts#L42)
+[services/scheduler-service/src/repositories/attachment.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attachment.repository.ts#L42)

@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Model`
+- `CoreModel`<[`UserSignupCheckDto`](UserSignupCheckDto.md)\>
 
   ↳ **`UserSignupCheckDto`**
 
@@ -30,13 +30,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`UserSignupCheckDto`](UserSignupCheckDto.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Model.constructor
+CoreModel<UserSignupCheckDto\>.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-signup-check-dto.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-signup-check-dto.model.ts#L15)
+packages/core/dist/models/core-model.d.ts:3
 
 ## Properties
 
@@ -46,4 +46,4 @@ Model.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-signup-check-dto.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-signup-check-dto.model.ts#L13)
+[services/user-tenant-service/src/models/user-signup-check-dto.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user-signup-check-dto.model.ts#L14)

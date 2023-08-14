@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[src/components/bearer-verifier/keys.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/bearer-verifier/keys.ts#L24)
+[src/components/bearer-verifier/keys.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/bearer-verifier/keys.ts#L24)

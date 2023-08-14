@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultCrudRepository`<[`UserView`](UserView.md), `undefined` \| `string`, {}, `this`\>
+- `DefaultCrudRepository`<[`UserView`](UserView.md)<`DataObject`<`Model`\>\>, `undefined` \| `string`, {}, `this`\>
 
   ↳ **`NonRestrictedUserViewRepository`**
 
@@ -42,7 +42,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts#L27)
+[services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts#L27)
 
 ## Properties
 
@@ -52,7 +52,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts#L35)
+[services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts#L35)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts#L31)
+[services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/repositories/non-restricted-user-view.repository.ts#L31)

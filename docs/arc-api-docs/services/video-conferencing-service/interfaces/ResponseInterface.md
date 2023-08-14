@@ -24,4 +24,4 @@ describes sucess/failure or any descriptive message w.r.t any API/function execu
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/types.ts#L15)
+[services/video-conferencing-service/src/types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/types.ts#L15)

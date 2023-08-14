@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[providers/razorpay/types.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/razorpay/types.ts#L29)
+[services/payment-service/src/providers/razorpay/types.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/types.ts#L29)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[providers/razorpay/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/razorpay/types.ts#L33)
+[services/payment-service/src/providers/razorpay/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/types.ts#L33)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[providers/razorpay/types.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/razorpay/types.ts#L32)
+[services/payment-service/src/providers/razorpay/types.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/types.ts#L32)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[providers/razorpay/types.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/razorpay/types.ts#L31)
+[services/payment-service/src/providers/razorpay/types.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/types.ts#L31)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[providers/razorpay/types.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/razorpay/types.ts#L30)
+[services/payment-service/src/providers/razorpay/types.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/types.ts#L30)

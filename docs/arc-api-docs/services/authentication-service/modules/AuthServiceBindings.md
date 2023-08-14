@@ -13,6 +13,7 @@
 - [MarkUserActivity](AuthServiceBindings.md#markuseractivity)
 - [MfaConfig](AuthServiceBindings.md#mfaconfig)
 - [OtpConfig](AuthServiceBindings.md#otpconfig)
+- [PASSWORD\_DECRYPTION\_PROVIDER](AuthServiceBindings.md#password_decryption_provider)
 
 ## Variables
 
@@ -22,7 +23,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/keys.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/keys.ts#L38)
+[services/authentication-service/src/keys.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/keys.ts#L45)
 
 ___
 
@@ -32,7 +33,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/keys.ts#L17)
+[services/authentication-service/src/keys.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/keys.ts#L21)
 
 ___
 
@@ -42,7 +43,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/keys.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/keys.ts#L33)
+[services/authentication-service/src/keys.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/keys.ts#L40)
 
 ___
 
@@ -52,7 +53,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/keys.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/keys.ts#L29)
+[services/authentication-service/src/keys.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/keys.ts#L33)
 
 ___
 
@@ -62,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/keys.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/keys.ts#L42)
+[services/authentication-service/src/keys.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/keys.ts#L49)
 
 ___
 
@@ -72,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/keys.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/keys.ts#L21)
+[services/authentication-service/src/keys.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/keys.ts#L25)
 
 ___
 
@@ -82,4 +83,14 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/keys.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/keys.ts#L25)
+[services/authentication-service/src/keys.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/keys.ts#L29)
+
+___
+
+### PASSWORD\_DECRYPTION\_PROVIDER
+
+• `Const` **PASSWORD\_DECRYPTION\_PROVIDER**: `BindingKey`<[`PasswordDecryptionFn`](../modules.md#passworddecryptionfn)\>
+
+#### Defined in
+
+[services/authentication-service/src/keys.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/keys.ts#L36)

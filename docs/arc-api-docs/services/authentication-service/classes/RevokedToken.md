@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Entity`
+- `CoreEntity`<[`RevokedToken`](RevokedToken.md)\>
 
   ↳ **`RevokedToken`**
 
@@ -30,13 +30,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`RevokedToken`](RevokedToken.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Entity.constructor
+CoreEntity<RevokedToken\>.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/revoked-token.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/revoked-token.model.ts#L16)
+packages/core/dist/models/core-entity.d.ts:3
 
 ## Properties
 
@@ -46,4 +46,4 @@ Entity.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/revoked-token.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/revoked-token.model.ts#L14)
+[services/authentication-service/src/models/revoked-token.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/revoked-token.model.ts#L15)

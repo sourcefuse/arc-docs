@@ -50,4 +50,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/jwt-symmetric-signer.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/providers/jwt-symmetric-signer.provider.ts#L11)
+[services/authentication-service/src/providers/jwt-symmetric-signer.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/providers/jwt-symmetric-signer.provider.ts#L11)

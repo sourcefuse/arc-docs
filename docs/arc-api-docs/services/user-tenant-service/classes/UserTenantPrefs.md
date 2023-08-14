@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`UserTenantPrefs`](UserTenantPrefs.md)\>
 
   ↳ **`UserTenantPrefs`**
 
@@ -37,13 +37,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`UserTenantPrefs`](UserTenantPrefs.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<UserTenantPrefs\>.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L48)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -53,7 +53,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L29)
+[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L29)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L36)
+[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L36)
 
 ___
 
@@ -77,7 +77,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -91,7 +91,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L22)
+[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L22)
 
 ___
 
@@ -115,7 +115,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -129,7 +129,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L46)
+[services/user-tenant-service/src/models/user-tenant-prefs.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/user-tenant-service/src/models/user-tenant-prefs.model.ts#L46)

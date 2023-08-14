@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[feature-toggle/src/types.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L8)
+[feature-toggle/src/types.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/types.ts#L8)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L9)
+[feature-toggle/src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/types.ts#L9)

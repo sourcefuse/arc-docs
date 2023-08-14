@@ -1,10 +1,16 @@
 [@sourceloop/authentication-service](../README.md) / [Exports](../modules.md) / RefreshTokenRequest
 
-# Class: RefreshTokenRequest
+# Class: RefreshTokenRequest<T\>
+
+## Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `DataObject`<`Model`\> |
 
 ## Hierarchy
 
-- `Model`
+- `CoreModel`<`T` & [`RefreshTokenRequest`](RefreshTokenRequest.md)\>
 
   ↳ **`RefreshTokenRequest`**
 
@@ -22,21 +28,29 @@
 
 ### constructor
 
-• **new RefreshTokenRequest**(`data?`)
+• **new RefreshTokenRequest**<`T`\>(`data?`)
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `DataObject`<`Model`\> |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `Partial`<[`RefreshTokenRequest`](RefreshTokenRequest.md)\> |
+| `data?` | `Partial`<`T` & [`RefreshTokenRequest`](RefreshTokenRequest.md)<`DataObject`<`Model`\>\>\> |
 
-#### Overrides
+#### Inherited from
 
-Model.constructor
+CoreModel<
+  T & RefreshTokenRequest
+\>.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/refresh-token-request.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/refresh-token-request.model.ts#L15)
+packages/core/dist/models/core-model.d.ts:3
 
 ## Properties
 
@@ -46,4 +60,4 @@ Model.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/refresh-token-request.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/refresh-token-request.model.ts#L13)
+[services/authentication-service/src/models/refresh-token-request.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/refresh-token-request.model.ts#L16)

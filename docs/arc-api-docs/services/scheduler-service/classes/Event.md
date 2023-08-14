@@ -1,10 +1,16 @@
 [@sourceloop/scheduler-service](../README.md) / [Exports](../modules.md) / Event
 
-# Class: Event
+# Class: Event<T\>
+
+## Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `DataObject`<`Model`\> |
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<`T` & [`Event`](Event.md)\>
 
   ↳ **`Event`**
 
@@ -53,21 +59,27 @@
 
 ### constructor
 
-• **new Event**(`data?`)
+• **new Event**<`T`\>(`data?`)
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `DataObject`<`Model`\> |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `Partial`<[`Event`](Event.md)\> |
+| `data?` | `Partial`<`T` & [`Event`](Event.md)<`DataObject`<`Model`\>\>\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<T & Event\>.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:170](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L170)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -77,7 +89,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:156](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L156)
+[services/scheduler-service/src/models/event.model.ts:158](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L158)
 
 ___
 
@@ -87,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:153](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L153)
+[services/scheduler-service/src/models/event.model.ts:155](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L155)
 
 ___
 
@@ -97,7 +109,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L37)
+[services/scheduler-service/src/models/event.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L39)
 
 ___
 
@@ -107,7 +119,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:141](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L141)
+[services/scheduler-service/src/models/event.model.ts:143](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L143)
 
 ___
 
@@ -121,7 +133,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -135,7 +147,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -145,7 +157,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L42)
+[services/scheduler-service/src/models/event.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L44)
 
 ___
 
@@ -155,7 +167,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L48)
+[services/scheduler-service/src/models/event.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L50)
 
 ___
 
@@ -169,7 +181,7 @@ ExternalIdentifierEnabledEntity.extId
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:162](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L162)
+[services/scheduler-service/src/models/event.model.ts:164](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L164)
 
 ___
 
@@ -183,7 +195,7 @@ ExternalIdentifierEnabledEntity.extMetadata
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:168](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L168)
+[services/scheduler-service/src/models/event.model.ts:170](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L170)
 
 ___
 
@@ -193,7 +205,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L54)
+[services/scheduler-service/src/models/event.model.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L56)
 
 ___
 
@@ -203,7 +215,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L60)
+[services/scheduler-service/src/models/event.model.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L62)
 
 ___
 
@@ -213,7 +225,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L31)
+[services/scheduler-service/src/models/event.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L33)
 
 ___
 
@@ -223,7 +235,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L102)
+[services/scheduler-service/src/models/event.model.ts:104](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L104)
 
 ___
 
@@ -233,7 +245,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L67)
+[services/scheduler-service/src/models/event.model.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L69)
 
 ___
 
@@ -243,7 +255,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L74)
+[services/scheduler-service/src/models/event.model.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L76)
 
 ___
 
@@ -253,7 +265,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L79)
+[services/scheduler-service/src/models/event.model.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L81)
 
 ___
 
@@ -263,7 +275,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L87)
+[services/scheduler-service/src/models/event.model.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L89)
 
 ___
 
@@ -273,7 +285,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L93)
+[services/scheduler-service/src/models/event.model.ts:95](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L95)
 
 ___
 
@@ -287,7 +299,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -301,7 +313,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -311,7 +323,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:150](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L150)
+[services/scheduler-service/src/models/event.model.ts:152](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L152)
 
 ___
 
@@ -321,7 +333,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L108)
+[services/scheduler-service/src/models/event.model.ts:110](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L110)
 
 ___
 
@@ -331,7 +343,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:121](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L121)
+[services/scheduler-service/src/models/event.model.ts:123](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L123)
 
 ___
 
@@ -341,7 +353,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:126](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L126)
+[services/scheduler-service/src/models/event.model.ts:128](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L128)
 
 ___
 
@@ -351,4 +363,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/event.model.ts#L131)
+[services/scheduler-service/src/models/event.model.ts:133](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L133)

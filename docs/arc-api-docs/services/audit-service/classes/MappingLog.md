@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Entity`
+- `CoreEntity`<[`MappingLog`](MappingLog.md)\>
 
   ↳ **`MappingLog`**
 
@@ -32,13 +32,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`MappingLog`](MappingLog.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Entity.constructor
+CoreEntity<MappingLog\>.constructor
 
 #### Defined in
 
-[services/audit-service/src/models/mapping-log.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/mapping-log.model.ts#L27)
+packages/core/dist/models/core-entity.d.ts:3
 
 ## Properties
 
@@ -48,7 +48,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/audit-service/src/models/mapping-log.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/mapping-log.model.ts#L25)
+[services/audit-service/src/models/mapping-log.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/mapping-log.model.ts#L26)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/mapping-log.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/mapping-log.model.ts#L18)
+[services/audit-service/src/models/mapping-log.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/mapping-log.model.ts#L19)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/mapping-log.model.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/mapping-log.model.ts#L11)
+[services/audit-service/src/models/mapping-log.model.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/mapping-log.model.ts#L12)

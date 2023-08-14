@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Entity`
+- `CoreEntity`<[`PaymentGateways`](PaymentGateways.md)\>
 
   ↳ **`PaymentGateways`**
 
@@ -37,13 +37,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`PaymentGateways`](PaymentGateways.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Entity.constructor
+CoreEntity<PaymentGateways\>.constructor
 
 #### Defined in
 
-[models/payment-gateways.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/payment-gateways.model.ts#L42)
+packages/core/dist/models/core-entity.d.ts:3
 
 ## Properties
 
@@ -53,7 +53,7 @@ Entity.constructor
 
 #### Defined in
 
-[models/payment-gateways.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/payment-gateways.model.ts#L34)
+[services/payment-service/src/models/payment-gateways.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/models/payment-gateways.model.ts#L35)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[models/payment-gateways.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/payment-gateways.model.ts#L28)
+[services/payment-service/src/models/payment-gateways.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/models/payment-gateways.model.ts#L29)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[models/payment-gateways.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/payment-gateways.model.ts#L15)
+[services/payment-service/src/models/payment-gateways.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/models/payment-gateways.model.ts#L16)
 
 ___
 
@@ -83,4 +83,4 @@ ___
 
 #### Defined in
 
-[models/payment-gateways.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/payment-gateways.model.ts#L21)
+[services/payment-service/src/models/payment-gateways.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/models/payment-gateways.model.ts#L22)

@@ -23,7 +23,7 @@ extensions to implement
 
 #### Defined in
 
-[feature-toggle/src/types.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L32)
+[feature-toggle/src/types.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/types.ts#L32)
 
 ## Methods
 
@@ -44,4 +44,4 @@ extensions to implement
 
 #### Defined in
 
-[feature-toggle/src/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/feature-toggle/src/types.ts#L33)
+[feature-toggle/src/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/types.ts#L33)

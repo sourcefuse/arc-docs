@@ -35,4 +35,4 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[repositories/orders.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/repositories/orders.repository.ts#L14)
+[services/payment-service/src/repositories/orders.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/repositories/orders.repository.ts#L14)

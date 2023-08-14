@@ -54,7 +54,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/oidc-service/src/repositories/tenant-config.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/repositories/tenant-config.repository.ts#L27)
+[services/oidc-service/src/repositories/tenant-config.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/repositories/tenant-config.repository.ts#L27)
 
 ## Properties
 
@@ -68,7 +68,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/oidc-service/src/repositories/tenant-config.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/repositories/tenant-config.repository.ts#L30)
+[services/oidc-service/src/repositories/tenant-config.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/repositories/tenant-config.repository.ts#L30)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/tenant-config.repository.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/repositories/tenant-config.repository.ts#L22)
+[services/oidc-service/src/repositories/tenant-config.repository.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/repositories/tenant-config.repository.ts#L22)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/tenant-config.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/repositories/tenant-config.repository.ts#L34)
+[services/oidc-service/src/repositories/tenant-config.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/repositories/tenant-config.repository.ts#L34)
 
 ## Methods
 

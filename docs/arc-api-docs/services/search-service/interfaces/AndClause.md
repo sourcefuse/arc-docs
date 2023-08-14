@@ -22,4 +22,4 @@
 
 #### Defined in
 
-[services/search-service/src/types.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/types.ts#L77)
+[services/search-service/src/types.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/types.ts#L77)

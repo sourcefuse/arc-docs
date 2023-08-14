@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`User`](User.md), typeof [`id`](User.md#id), [`UserRelations`](../interfaces/UserRelations.md)\>
+- `DefaultUserModifyCrudRepository`<[`User`](User.md), typeof `User.prototype.id`, [`UserRelations`](../interfaces/UserRelations.md)\>
 
   ↳ **`UserRepository`**
 
@@ -20,6 +20,7 @@
 - [getCurrentUser](UserRepository.md#getcurrentuser)
 - [getOtpRepository](UserRepository.md#getotprepository)
 - [logger](UserRepository.md#logger)
+- [passwordDecryptionFn](UserRepository.md#passworddecryptionfn)
 - [tenant](UserRepository.md#tenant)
 - [tenantRepositoryGetter](UserRepository.md#tenantrepositorygetter)
 - [userTenantRepositoryGetter](UserRepository.md#usertenantrepositorygetter)
@@ -31,6 +32,7 @@
 - [create](UserRepository.md#create)
 - [createAll](UserRepository.md#createall)
 - [createWithoutPassword](UserRepository.md#createwithoutpassword)
+- [decryptPassword](UserRepository.md#decryptpassword)
 - [firstTimeUser](UserRepository.md#firsttimeuser)
 - [replaceById](UserRepository.md#replacebyid)
 - [save](UserRepository.md#save)
@@ -45,7 +47,7 @@
 
 ### constructor
 
-• **new UserRepository**(`dataSource`, `getUserCredsRepository`, `getOtpRepository`, `getCurrentUser`, `tenantRepositoryGetter`, `userTenantRepositoryGetter`, `logger`)
+• **new UserRepository**(`dataSource`, `getUserCredsRepository`, `getOtpRepository`, `getCurrentUser`, `tenantRepositoryGetter`, `userTenantRepositoryGetter`, `logger`, `passwordDecryptionFn`)
 
 #### Parameters
 
@@ -58,6 +60,7 @@
 | `tenantRepositoryGetter` | `Getter`<[`TenantRepository`](TenantRepository.md)\> |
 | `userTenantRepositoryGetter` | `Getter`<[`UserTenantRepository`](UserTenantRepository.md)\> |
 | `logger` | `ILogger` |
+| `passwordDecryptionFn` | [`PasswordDecryptionFn`](../modules.md#passworddecryptionfn) |
 
 #### Overrides
 
@@ -69,7 +72,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L57)
+[services/authentication-service/src/repositories/user.repository.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L58)
 
 ## Properties
 
@@ -79,7 +82,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L46)
+[services/authentication-service/src/repositories/user.repository.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L47)
 
 ___
 
@@ -93,7 +96,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L65)
+[services/authentication-service/src/repositories/user.repository.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L66)
 
 ___
 
@@ -103,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L63)
+[services/authentication-service/src/repositories/user.repository.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L64)
 
 ___
 
@@ -113,7 +116,17 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L72)
+[services/authentication-service/src/repositories/user.repository.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L73)
+
+___
+
+### passwordDecryptionFn
+
+• `Private` `Readonly` **passwordDecryptionFn**: [`PasswordDecryptionFn`](../modules.md#passworddecryptionfn)
+
+#### Defined in
+
+[services/authentication-service/src/repositories/user.repository.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L75)
 
 ___
 
@@ -123,7 +136,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L50)
+[services/authentication-service/src/repositories/user.repository.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L51)
 
 ___
 
@@ -133,7 +146,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L69)
+[services/authentication-service/src/repositories/user.repository.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L70)
 
 ___
 
@@ -143,7 +156,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L71)
+[services/authentication-service/src/repositories/user.repository.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L72)
 
 ___
 
@@ -153,13 +166,13 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L52)
+[services/authentication-service/src/repositories/user.repository.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L53)
 
 ## Methods
 
 ### changePassword
 
-▸ **changePassword**(`username`, `newPassword`, `oldPassword?`): `Promise`<[`User`](User.md)\>
+▸ **changePassword**(`username`, `newPassword`, `oldPassword?`): `Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Parameters
 
@@ -171,28 +184,28 @@ ___
 
 #### Returns
 
-`Promise`<[`User`](User.md)\>
+`Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:175](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L175)
+[services/authentication-service/src/repositories/user.repository.ts:186](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L186)
 
 ___
 
 ### create
 
-▸ **create**(`entity`, `options?`): `Promise`<[`User`](User.md)\>
+▸ **create**(`entity`, `options?`): `Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `entity` | `DataObject`<[`User`](User.md)\> |
+| `entity` | `DataObject`<[`User`](User.md)<`DataObject`<`Model`\>\>\> |
 | `options?` | `AnyObject` |
 
 #### Returns
 
-`Promise`<[`User`](User.md)\>
+`Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Overrides
 
@@ -200,24 +213,24 @@ DefaultUserModifyCrudRepository.create
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L102)
+[services/authentication-service/src/repositories/user.repository.ts:105](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L105)
 
 ___
 
 ### createAll
 
-▸ **createAll**(`entities`, `options?`): `Promise`<[`User`](User.md)[]\>
+▸ **createAll**(`entities`, `options?`): `Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>[]\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `entities` | `DataObject`<[`User`](User.md)\>[] |
+| `entities` | `DataObject`<[`User`](User.md)<`DataObject`<`Model`\>\>\>[] |
 | `options?` | `Options` |
 
 #### Returns
 
-`Promise`<[`User`](User.md)[]\>
+`Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>[]\>
 
 #### Inherited from
 
@@ -231,22 +244,42 @@ ___
 
 ### createWithoutPassword
 
-▸ **createWithoutPassword**(`entity`, `options?`): `Promise`<[`User`](User.md)\>
+▸ **createWithoutPassword**(`entity`, `options?`): `Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `entity` | `DataObject`<[`User`](User.md)\> |
+| `entity` | `DataObject`<[`User`](User.md)<`DataObject`<`Model`\>\>\> |
 | `options?` | `AnyObject` |
 
 #### Returns
 
-`Promise`<[`User`](User.md)\>
+`Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:121](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L121)
+[services/authentication-service/src/repositories/user.repository.ts:124](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L124)
+
+___
+
+### decryptPassword
+
+▸ **decryptPassword**(`password`): `Promise`<`string`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `password` | `string` |
+
+#### Returns
+
+`Promise`<`string`\>
+
+#### Defined in
+
+[services/authentication-service/src/repositories/user.repository.ts:154](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L154)
 
 ___
 
@@ -266,7 +299,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:224](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L224)
+[services/authentication-service/src/repositories/user.repository.ts:235](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L235)
 
 ___
 
@@ -279,7 +312,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `id` | `undefined` \| `string` |
-| `data` | `DataObject`<[`User`](User.md)\> |
+| `data` | `DataObject`<[`User`](User.md)<`DataObject`<`Model`\>\>\> |
 | `options?` | `Options` |
 
 #### Returns
@@ -298,18 +331,18 @@ ___
 
 ### save
 
-▸ **save**(`entity`, `options?`): `Promise`<[`User`](User.md)\>
+▸ **save**(`entity`, `options?`): `Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `entity` | [`User`](User.md) |
+| `entity` | [`User`](User.md)<`DataObject`<`Model`\>\> |
 | `options?` | `Options` |
 
 #### Returns
 
-`Promise`<[`User`](User.md)\>
+`Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Inherited from
 
@@ -329,7 +362,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `entity` | [`User`](User.md) |
+| `entity` | [`User`](User.md)<`DataObject`<`Model`\>\> |
 | `options?` | `Options` |
 
 #### Returns
@@ -354,8 +387,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `data` | `DataObject`<[`User`](User.md)\> |
-| `where?` | `Where`<[`User`](User.md)\> |
+| `data` | `DataObject`<[`User`](User.md)<`DataObject`<`Model`\>\>\> |
+| `where?` | `Where`<[`User`](User.md)<`DataObject`<`Model`\>\>\> |
 | `options?` | `Options` |
 
 #### Returns
@@ -381,7 +414,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `id` | `undefined` \| `string` |
-| `data` | `DataObject`<[`User`](User.md)\> |
+| `data` | `DataObject`<[`User`](User.md)<`DataObject`<`Model`\>\>\> |
 | `options?` | `Options` |
 
 #### Returns
@@ -414,13 +447,13 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:212](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L212)
+[services/authentication-service/src/repositories/user.repository.ts:223](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L223)
 
 ___
 
 ### updatePassword
 
-▸ **updatePassword**(`username`, `password`, `newPassword`): `Promise`<[`User`](User.md)\>
+▸ **updatePassword**(`username`, `password`, `newPassword`): `Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Parameters
 
@@ -432,17 +465,17 @@ ___
 
 #### Returns
 
-`Promise`<[`User`](User.md)\>
+`Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:147](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L147)
+[services/authentication-service/src/repositories/user.repository.ts:158](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L158)
 
 ___
 
 ### verifyPassword
 
-▸ **verifyPassword**(`username`, `password`): `Promise`<[`User`](User.md)\>
+▸ **verifyPassword**(`username`, `password`): `Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Parameters
 
@@ -453,8 +486,8 @@ ___
 
 #### Returns
 
-`Promise`<[`User`](User.md)\>
+`Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:128](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/repositories/user.repository.ts#L128)
+[services/authentication-service/src/repositories/user.repository.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L131)

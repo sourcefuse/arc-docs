@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`RecentSearch`](RecentSearch.md)\>
 
   ↳ **`RecentSearch`**
 
@@ -36,13 +36,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`RecentSearch`](RecentSearch.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<RecentSearch\>.constructor
 
 #### Defined in
 
-[services/search-service/src/models/recent-search.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/recent-search.model.ts#L35)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -56,7 +56,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -70,7 +70,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/recent-search.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/recent-search.model.ts#L24)
+[services/search-service/src/models/recent-search.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/recent-search.model.ts#L24)
 
 ___
 
@@ -94,7 +94,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -108,7 +108,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/recent-search.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/recent-search.model.ts#L33)
+[services/search-service/src/models/recent-search.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/recent-search.model.ts#L33)
 
 ___
 
@@ -128,4 +128,4 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/recent-search.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/recent-search.model.ts#L30)
+[services/search-service/src/models/recent-search.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/recent-search.model.ts#L30)

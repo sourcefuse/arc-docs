@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Entity`
+- `CoreEntity`<[`Templates`](Templates.md)\>
 
   ↳ **`Templates`**
 
@@ -38,13 +38,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`Templates`](Templates.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Entity.constructor
+CoreEntity<Templates\>.constructor
 
 #### Defined in
 
-[models/templates.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/templates.model.ts#L48)
+packages/core/dist/models/core-entity.d.ts:3
 
 ## Properties
 
@@ -54,7 +54,7 @@ Entity.constructor
 
 #### Defined in
 
-[models/templates.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/templates.model.ts#L15)
+[services/payment-service/src/models/templates.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/models/templates.model.ts#L16)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[models/templates.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/templates.model.ts#L28)
+[services/payment-service/src/models/templates.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/models/templates.model.ts#L29)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[models/templates.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/templates.model.ts#L22)
+[services/payment-service/src/models/templates.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/models/templates.model.ts#L23)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[models/templates.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/templates.model.ts#L34)
+[services/payment-service/src/models/templates.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/models/templates.model.ts#L35)
 
 ___
 
@@ -94,4 +94,4 @@ ___
 
 #### Defined in
 
-[models/templates.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/models/templates.model.ts#L40)
+[services/payment-service/src/models/templates.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/models/templates.model.ts#L41)

@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Model`
+- [`CoreModel`](CoreModel.md)<[`UpsertResponse`](UpsertResponse.md)\>
 
   ↳ **`UpsertResponse`**
 
@@ -36,13 +36,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`UpsertResponse`](UpsertResponse.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Model.constructor
+[CoreModel](CoreModel.md).[constructor](CoreModel.md#constructor)
 
 #### Defined in
 
-[src/models/upsert-response.dto.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/models/upsert-response.dto.ts#L28)
+[src/models/core-model.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/core-model.ts#L9)
 
 ## Properties
 
@@ -52,7 +52,7 @@ Model.constructor
 
 #### Defined in
 
-[src/models/upsert-response.dto.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/models/upsert-response.dto.ts#L12)
+[src/models/upsert-response.dto.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/upsert-response.dto.ts#L13)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[src/models/upsert-response.dto.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/models/upsert-response.dto.ts#L22)
+[src/models/upsert-response.dto.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/upsert-response.dto.ts#L23)
 
 ___
 
@@ -72,4 +72,4 @@ ___
 
 #### Defined in
 
-[src/models/upsert-response.dto.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/models/upsert-response.dto.ts#L17)
+[src/models/upsert-response.dto.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/upsert-response.dto.ts#L18)

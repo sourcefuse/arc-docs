@@ -6,6 +6,7 @@
 
 ### Namespaces
 
+- [AWSS3Bindings](modules/AWSS3Bindings.md)
 - [AuditLogExportServiceBindings](modules/AuditLogExportServiceBindings.md)
 - [AuditServiceBindings](modules/AuditServiceBindings.md)
 - [ColumnBuilderServiceBindings](modules/ColumnBuilderServiceBindings.md)
@@ -38,6 +39,7 @@
 ### Interfaces
 
 - [ArchiveOutput](interfaces/ArchiveOutput.md)
+- [AwsS3Config](interfaces/AwsS3Config.md)
 - [ExportResponse](interfaces/ExportResponse.md)
 - [IAuditServiceConfig](interfaces/IAuditServiceConfig.md)
 
@@ -78,7 +80,7 @@
 
 #### Defined in
 
-[services/audit-service/src/types.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/types.ts#L24)
+[services/audit-service/src/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/types.ts#L23)
 
 ___
 
@@ -102,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/types.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/types.ts#L25)
+[services/audit-service/src/types.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/types.ts#L24)
 
 ___
 
@@ -112,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/custom-filter.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/custom-filter.model.ts#L45)
+[services/audit-service/src/models/custom-filter.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/custom-filter.model.ts#L44)
 
 ___
 
@@ -136,17 +138,17 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/types.ts#L23)
+[services/audit-service/src/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/types.ts#L22)
 
 ___
 
 ### ExportToCsvFn
 
-Ƭ **ExportToCsvFn**: (`selectedAuditLogs`: [`AuditLog`](classes/AuditLog.md)[]) => `Promise`<`AWS.S3.ManagedUpload.SendData`\>
+Ƭ **ExportToCsvFn**: (`selectedAuditLogs`: [`AuditLog`](classes/AuditLog.md)[]) => `Promise`<`string`\>
 
 #### Type declaration
 
-▸ (`selectedAuditLogs`): `Promise`<`AWS.S3.ManagedUpload.SendData`\>
+▸ (`selectedAuditLogs`): `Promise`<`string`\>
 
 ##### Parameters
 
@@ -156,11 +158,11 @@ ___
 
 ##### Returns
 
-`Promise`<`AWS.S3.ManagedUpload.SendData`\>
+`Promise`<`string`\>
 
 #### Defined in
 
-[services/audit-service/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/types.ts#L20)
+[services/audit-service/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/types.ts#L20)
 
 ___
 
@@ -170,7 +172,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/job.model.ts#L45)
+[services/audit-service/src/models/job.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/job.model.ts#L42)
 
 ___
 
@@ -180,7 +182,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/mapping-log.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/mapping-log.model.ts#L32)
+[services/audit-service/src/models/mapping-log.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/mapping-log.model.ts#L29)
 
 ___
 
@@ -205,7 +207,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/types.ts#L15)
+[services/audit-service/src/types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/types.ts#L15)
 
 ## Variables
 
@@ -215,4 +217,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/types.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/types.ts#L37)
+[services/audit-service/src/types.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/types.ts#L36)

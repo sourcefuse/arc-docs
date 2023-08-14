@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[providers/keys.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/keys.ts#L8)
+[services/payment-service/src/providers/keys.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/keys.ts#L8)

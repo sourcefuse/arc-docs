@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:107](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L107)
+[services/authentication-service/src/component.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L108)
 
 ## Properties
 
@@ -60,7 +60,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:109](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L109)
+[services/authentication-service/src/component.ts:110](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L110)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:115](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L115)
+[services/authentication-service/src/component.ts:116](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L116)
 
 ___
 
@@ -84,7 +84,7 @@ Component.bindings
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:177](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L177)
+[services/authentication-service/src/component.ts:178](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L178)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:117](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L117)
+[services/authentication-service/src/component.ts:118](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L118)
 
 ___
 
@@ -110,7 +110,7 @@ Component.controllers
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:194](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L194)
+[services/authentication-service/src/component.ts:195](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L195)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:111](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L111)
+[services/authentication-service/src/component.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L112)
 
 ___
 
@@ -133,7 +133,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:189](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L189)
+[services/authentication-service/src/component.ts:190](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L190)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L113)
+[services/authentication-service/src/component.ts:114](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L114)
 
 ___
 
@@ -157,7 +157,7 @@ Component.providers
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:175](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L175)
+[services/authentication-service/src/component.ts:176](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L176)
 
 ___
 
@@ -170,7 +170,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:183](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L183)
+[services/authentication-service/src/component.ts:184](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L184)
 
 ## Methods
 
@@ -190,7 +190,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:205](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L205)
+[services/authentication-service/src/component.ts:206](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L206)
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:324](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L324)
+[services/authentication-service/src/component.ts:327](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L327)
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:332](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L332)
+[services/authentication-service/src/component.ts:335](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L335)
 
 ___
 
@@ -234,4 +234,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/authentication-service/src/component.ts:201](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/component.ts#L201)
+[services/authentication-service/src/component.ts:202](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/component.ts#L202)

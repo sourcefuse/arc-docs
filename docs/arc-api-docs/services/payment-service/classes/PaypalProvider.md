@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L28)
+[services/payment-service/src/providers/paypal/paypal-provider.service.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L28)
 
 ## Properties
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L27)
+[services/payment-service/src/providers/paypal/paypal-provider.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L27)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L37)
+[services/payment-service/src/providers/paypal/paypal-provider.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L37)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L26)
+[services/payment-service/src/providers/paypal/paypal-provider.service.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L26)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L35)
+[services/payment-service/src/providers/paypal/paypal-provider.service.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L35)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L32)
+[services/payment-service/src/providers/paypal/paypal-provider.service.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L32)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L34)
+[services/payment-service/src/providers/paypal/paypal-provider.service.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L34)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L30)
+[services/payment-service/src/providers/paypal/paypal-provider.service.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L30)
 
 ## Methods
 
@@ -141,4 +141,4 @@ Provider.value
 
 #### Defined in
 
-[providers/paypal/paypal-provider.service.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L57)
+[services/payment-service/src/providers/paypal/paypal-provider.service.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/paypal/paypal-provider.service.ts#L57)

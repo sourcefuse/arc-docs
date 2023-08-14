@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`Attendee`](Attendee.md)\>
 
   ↳ **`Attendee`**
 
@@ -46,13 +46,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`Attendee`](Attendee.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<Attendee\>.constructor
 
 #### Defined in
 
-[services/scheduler-service/src/models/attendee.model.ts:92](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/attendee.model.ts#L92)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -66,7 +66,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -80,7 +80,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/attendee.model.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/attendee.model.ts#L78)
+[services/scheduler-service/src/models/attendee.model.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/attendee.model.ts#L78)
 
 ___
 
@@ -104,7 +104,7 @@ ExternalIdentifierEnabledEntity.extId
 
 #### Defined in
 
-[services/scheduler-service/src/models/attendee.model.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/attendee.model.ts#L84)
+[services/scheduler-service/src/models/attendee.model.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/attendee.model.ts#L84)
 
 ___
 
@@ -118,7 +118,7 @@ ExternalIdentifierEnabledEntity.extMetadata
 
 #### Defined in
 
-[services/scheduler-service/src/models/attendee.model.ts:90](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/attendee.model.ts#L90)
+[services/scheduler-service/src/models/attendee.model.ts:90](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/attendee.model.ts#L90)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/attendee.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/attendee.model.ts#L24)
+[services/scheduler-service/src/models/attendee.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/attendee.model.ts#L24)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/attendee.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/attendee.model.ts#L34)
+[services/scheduler-service/src/models/attendee.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/attendee.model.ts#L34)
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/attendee.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/attendee.model.ts#L41)
+[services/scheduler-service/src/models/attendee.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/attendee.model.ts#L41)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/attendee.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/attendee.model.ts#L48)
+[services/scheduler-service/src/models/attendee.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/attendee.model.ts#L48)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/attendee.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/attendee.model.ts#L53)
+[services/scheduler-service/src/models/attendee.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/attendee.model.ts#L53)
 
 ___
 
@@ -182,7 +182,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -196,7 +196,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -206,4 +206,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/attendee.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/attendee.model.ts#L68)
+[services/scheduler-service/src/models/attendee.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/attendee.model.ts#L68)

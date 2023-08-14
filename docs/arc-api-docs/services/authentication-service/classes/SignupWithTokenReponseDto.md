@@ -10,7 +10,7 @@
 
 ## Hierarchy
 
-- `Model`
+- `CoreModel`<[`SignupWithTokenReponseDto`](SignupWithTokenReponseDto.md)<`T`\>\>
 
   ↳ **`SignupWithTokenReponseDto`**
 
@@ -43,13 +43,15 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`SignupWithTokenReponseDto`](SignupWithTokenReponseDto.md)<`T`\>\> |
 
-#### Overrides
+#### Inherited from
 
-Model.constructor
+CoreModel<
+  SignupWithTokenReponseDto<T\>
+\>.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/signup-with-token-response-dto.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/signup-with-token-response-dto.model.ts#L21)
+packages/core/dist/models/core-model.d.ts:3
 
 ## Properties
 
@@ -59,7 +61,7 @@ Model.constructor
 
 #### Defined in
 
-[services/authentication-service/src/models/signup-with-token-response-dto.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/signup-with-token-response-dto.model.ts#L13)
+[services/authentication-service/src/models/signup-with-token-response-dto.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/signup-with-token-response-dto.model.ts#L16)
 
 ___
 
@@ -69,4 +71,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/signup-with-token-response-dto.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/models/signup-with-token-response-dto.model.ts#L19)
+[services/authentication-service/src/models/signup-with-token-response-dto.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/signup-with-token-response-dto.model.ts#L22)

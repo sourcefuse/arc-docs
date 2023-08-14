@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/cognito-pre-verify.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/authentication-service/src/providers/cognito-pre-verify.provider.ts#L10)
+[services/authentication-service/src/providers/cognito-pre-verify.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/providers/cognito-pre-verify.provider.ts#L10)

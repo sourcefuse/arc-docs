@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[providers/stripe/types.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/stripe/types.ts#L49)
+[services/payment-service/src/providers/stripe/types.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/stripe/types.ts#L49)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[providers/stripe/types.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/stripe/types.ts#L50)
+[services/payment-service/src/providers/stripe/types.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/stripe/types.ts#L50)

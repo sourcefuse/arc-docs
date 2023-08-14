@@ -20,4 +20,4 @@ Binding keys used by this component.
 
 #### Defined in
 
-[src/components/logger-extension/keys.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/logger-extension/keys.ts#L19)
+[src/components/logger-extension/keys.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/logger-extension/keys.ts#L19)

@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[providers/paypal/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/paypal/types.ts#L22)
+[services/payment-service/src/providers/paypal/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/paypal/types.ts#L22)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[providers/paypal/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/payment-service/src/providers/paypal/types.ts#L23)
+[services/payment-service/src/providers/paypal/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/paypal/types.ts#L23)

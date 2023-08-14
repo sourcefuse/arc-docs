@@ -20,7 +20,7 @@ typeof AuditLog.prototype.id
 
 ## Hierarchy
 
-- `Entity`
+- `CoreEntity`<[`AuditLogs`](AuditLogs.md)\>
 
   ↳ **`AuditLogs`**
 
@@ -60,13 +60,13 @@ typeof AuditLog.prototype.id
 | :------ | :------ |
 | `data?` | `Partial`<[`AuditLogs`](AuditLogs.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Entity.constructor
+CoreEntity<AuditLogs\>.constructor
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit-logs.model.ts:94](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/audit-logs.model.ts#L94)
+packages/core/dist/models/core-entity.d.ts:3
 
 ## Properties
 
@@ -76,7 +76,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit-logs.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/audit-logs.model.ts#L59)
+[services/video-conferencing-service/src/models/audit-logs.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit-logs.model.ts#L59)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit-logs.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/audit-logs.model.ts#L65)
+[services/video-conferencing-service/src/models/audit-logs.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit-logs.model.ts#L65)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit-logs.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/audit-logs.model.ts#L41)
+[services/video-conferencing-service/src/models/audit-logs.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit-logs.model.ts#L41)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit-logs.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/audit-logs.model.ts#L48)
+[services/video-conferencing-service/src/models/audit-logs.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit-logs.model.ts#L48)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit-logs.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/audit-logs.model.ts#L53)
+[services/video-conferencing-service/src/models/audit-logs.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit-logs.model.ts#L53)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit-logs.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/audit-logs.model.ts#L75)
+[services/video-conferencing-service/src/models/audit-logs.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit-logs.model.ts#L75)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit-logs.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/audit-logs.model.ts#L70)
+[services/video-conferencing-service/src/models/audit-logs.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit-logs.model.ts#L70)
 
 ___
 
@@ -150,7 +150,7 @@ ExternalIdentifierEnabledEntity.extId
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit-logs.model.ts:86](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/audit-logs.model.ts#L86)
+[services/video-conferencing-service/src/models/audit-logs.model.ts:86](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit-logs.model.ts#L86)
 
 ___
 
@@ -164,7 +164,7 @@ ExternalIdentifierEnabledEntity.extMetadata
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit-logs.model.ts:92](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/audit-logs.model.ts#L92)
+[services/video-conferencing-service/src/models/audit-logs.model.ts:92](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit-logs.model.ts#L92)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit-logs.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/audit-logs.model.ts#L35)
+[services/video-conferencing-service/src/models/audit-logs.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit-logs.model.ts#L35)
 
 ___
 
@@ -184,4 +184,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit-logs.model.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/models/audit-logs.model.ts#L80)
+[services/video-conferencing-service/src/models/audit-logs.model.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit-logs.model.ts#L80)

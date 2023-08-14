@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Entity`
+- `CoreEntity`<[`WorkflowVersion`](WorkflowVersion.md)\>
 
   ↳ **`WorkflowVersion`**
 
@@ -35,13 +35,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`WorkflowVersion`](WorkflowVersion.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Entity.constructor
+CoreEntity<WorkflowVersion\>.constructor
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow-version.model.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow-version.model.ts#L67)
+packages/core/dist/models/core-entity.d.ts:3
 
 ## Properties
 
@@ -51,7 +51,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow-version.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow-version.model.ts#L37)
+[services/bpmn-service/src/models/workflow-version.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow-version.model.ts#L32)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow-version.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow-version.model.ts#L46)
+[services/bpmn-service/src/models/workflow-version.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow-version.model.ts#L41)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow-version.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow-version.model.ts#L23)
+[services/bpmn-service/src/models/workflow-version.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow-version.model.ts#L18)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow-version.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow-version.model.ts#L53)
+[services/bpmn-service/src/models/workflow-version.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow-version.model.ts#L48)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow-version.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow-version.model.ts#L30)
+[services/bpmn-service/src/models/workflow-version.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow-version.model.ts#L25)
 
 ___
 
@@ -101,4 +101,4 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow-version.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/bpmn-service/src/models/workflow-version.model.ts#L65)
+[services/bpmn-service/src/models/workflow-version.model.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow-version.model.ts#L60)

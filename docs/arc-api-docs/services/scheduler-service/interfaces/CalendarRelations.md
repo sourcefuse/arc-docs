@@ -14,11 +14,11 @@
 
 ### event
 
-• `Optional` **event**: [`Event`](../classes/Event.md)
+• `Optional` **event**: [`Event`](../classes/Event.md)<`DataObject`<`Model`\>\>
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.model.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/calendar.model.ts#L100)
+[services/scheduler-service/src/models/calendar.model.ts:96](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/calendar.model.ts#L96)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.model.ts:101](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/calendar.model.ts#L101)
+[services/scheduler-service/src/models/calendar.model.ts:97](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/calendar.model.ts#L97)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.model.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/scheduler-service/src/models/calendar.model.ts#L102)
+[services/scheduler-service/src/models/calendar.model.ts:98](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/calendar.model.ts#L98)

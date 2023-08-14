@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/message.model.ts#L84)
+[services/chat-service/src/models/message.model.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/message.model.ts#L80)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/message.model.ts#L82)
+[services/chat-service/src/models/message.model.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/message.model.ts#L78)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/message.model.ts#L81)
+[services/chat-service/src/models/message.model.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/message.model.ts#L77)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/chat-service/src/models/message.model.ts#L83)
+[services/chat-service/src/models/message.model.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/message.model.ts#L79)

@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Entity`
+- `CoreEntity`<[`Job`](Job.md)\>
 
   ↳ **`Job`**
 
@@ -34,13 +34,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`Job`](Job.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Entity.constructor
+CoreEntity<Job\>.constructor
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/job.model.ts#L40)
+packages/core/dist/models/core-entity.d.ts:3
 
 ## Properties
 
@@ -50,7 +50,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/job.model.ts#L33)
+[services/audit-service/src/models/job.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/job.model.ts#L34)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/job.model.ts#L16)
+[services/audit-service/src/models/job.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/job.model.ts#L17)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/job.model.ts#L27)
+[services/audit-service/src/models/job.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/job.model.ts#L28)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/job.model.ts#L38)
+[services/audit-service/src/models/job.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/job.model.ts#L39)
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/audit-service/src/models/job.model.ts#L22)
+[services/audit-service/src/models/job.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/job.model.ts#L23)

@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`SearchQuery`](SearchQuery.md)\>
 
   ↳ **`SearchQuery`**
 
@@ -42,13 +42,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`SearchQuery`](SearchQuery.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<SearchQuery\>.constructor
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/search-query.model.ts#L68)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -62,7 +62,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -76,7 +76,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/search-query.model.ts#L25)
+[services/search-service/src/models/search-query.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L25)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/search-query.model.ts#L36)
+[services/search-service/src/models/search-query.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L36)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/search-query.model.ts#L47)
+[services/search-service/src/models/search-query.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L47)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/search-query.model.ts#L31)
+[services/search-service/src/models/search-query.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L31)
 
 ___
 
@@ -130,7 +130,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -144,7 +144,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/search-query.model.ts#L52)
+[services/search-service/src/models/search-query.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L52)
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/search-query.model.ts#L41)
+[services/search-service/src/models/search-query.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L41)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/search-query.model.ts#L66)
+[services/search-service/src/models/search-query.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L66)
 
 ___
 
@@ -184,7 +184,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/search-query.model.ts#L58)
+[services/search-service/src/models/search-query.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L58)
 
 ___
 
@@ -194,4 +194,4 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/search-service/src/models/search-query.model.ts#L63)
+[services/search-service/src/models/search-query.model.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L63)

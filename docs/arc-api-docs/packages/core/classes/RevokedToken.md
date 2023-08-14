@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Entity`
+- [`CoreEntity`](CoreEntity.md)<[`RevokedToken`](RevokedToken.md)\>
 
   ↳ **`RevokedToken`**
 
@@ -30,13 +30,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`RevokedToken`](RevokedToken.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Entity.constructor
+[CoreEntity](CoreEntity.md).[constructor](CoreEntity.md#constructor)
 
 #### Defined in
 
-[src/components/bearer-verifier/models/revoked-token.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/bearer-verifier/models/revoked-token.model.ts#L16)
+[src/models/core-entity.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/core-entity.ts#L11)
 
 ## Properties
 
@@ -46,4 +46,4 @@ Entity.constructor
 
 #### Defined in
 
-[src/components/bearer-verifier/models/revoked-token.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/components/bearer-verifier/models/revoked-token.model.ts#L14)
+[src/components/bearer-verifier/models/revoked-token.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/bearer-verifier/models/revoked-token.model.ts#L15)

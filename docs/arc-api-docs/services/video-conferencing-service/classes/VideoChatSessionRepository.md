@@ -46,7 +46,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/video-chat-session.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/repositories/video-chat-session.repository.ts#L34)
+[services/video-conferencing-service/src/repositories/video-chat-session.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/repositories/video-chat-session.repository.ts#L34)
 
 ## Properties
 
@@ -56,7 +56,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/video-chat-session.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/repositories/video-chat-session.repository.ts#L40)
+[services/video-conferencing-service/src/repositories/video-chat-session.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/repositories/video-chat-session.repository.ts#L40)
 
 ___
 
@@ -77,4 +77,4 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/video-chat-session.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/video-conferencing-service/src/repositories/video-chat-session.repository.ts#L38)
+[services/video-conferencing-service/src/repositories/video-chat-session.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/repositories/video-chat-session.repository.ts#L38)

@@ -1,10 +1,16 @@
 [@sourceloop/core](../README.md) / [Exports](../modules.md) / UserModifiableEntity
 
-# Class: UserModifiableEntity
+# Class: UserModifiableEntity<T\>
+
+## Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `DataObject`<`Model`\> |
 
 ## Hierarchy
 
-- [`BaseEntity`](BaseEntity.md)
+- [`BaseEntity`](BaseEntity.md)<`T`\>
 
   ↳ **`UserModifiableEntity`**
 
@@ -25,13 +31,19 @@
 
 ### constructor
 
-• **new UserModifiableEntity**(`data?`)
+• **new UserModifiableEntity**<`T`\>(`data?`)
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `DataObject`<`Model`\> |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data?` | `Partial`<`SoftDeleteEntity`\> |
+| `data?` | `Partial`<`T`\> |
 
 #### Inherited from
 
@@ -39,7 +51,7 @@
 
 #### Defined in
 
-node_modules/loopback4-soft-delete/dist/models/soft-delete-entity.d.ts:15
+[src/models/base-entity.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/base-entity.model.ts#L25)
 
 ## Properties
 
@@ -49,7 +61,7 @@ node_modules/loopback4-soft-delete/dist/models/soft-delete-entity.d.ts:15
 
 #### Defined in
 
-[src/models/user-modifiable-entity.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/models/user-modifiable-entity.model.ts#L14)
+[src/models/user-modifiable-entity.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/user-modifiable-entity.model.ts#L16)
 
 ___
 
@@ -63,7 +75,7 @@ ___
 
 #### Defined in
 
-[src/models/base-entity.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/models/base-entity.model.ts#L14)
+[src/models/base-entity.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/base-entity.model.ts#L16)
 
 ___
 
@@ -73,7 +85,7 @@ ___
 
 #### Defined in
 
-[src/models/user-modifiable-entity.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/models/user-modifiable-entity.model.ts#L20)
+[src/models/user-modifiable-entity.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/user-modifiable-entity.model.ts#L22)
 
 ___
 
@@ -87,4 +99,4 @@ ___
 
 #### Defined in
 
-[src/models/base-entity.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/models/base-entity.model.ts#L21)
+[src/models/base-entity.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/base-entity.model.ts#L23)

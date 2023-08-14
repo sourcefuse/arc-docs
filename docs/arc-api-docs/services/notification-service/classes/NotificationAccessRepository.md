@@ -32,4 +32,4 @@ DefaultKeyValueRepository&lt;NotificationAccess\&gt;.constructor
 
 #### Defined in
 
-[services/notification-service/src/repositories/notification-access.repository.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/notification-service/src/repositories/notification-access.repository.ts#L12)
+[services/notification-service/src/repositories/notification-access.repository.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/repositories/notification-access.repository.ts#L12)

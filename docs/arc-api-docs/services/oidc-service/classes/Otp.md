@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Entity`
+- `CoreEntity`<[`Otp`](Otp.md)\>
 
   ↳ **`Otp`**
 
@@ -31,13 +31,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`Otp`](Otp.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Entity.constructor
+CoreEntity<Otp\>.constructor
 
 #### Defined in
 
-[services/oidc-service/src/models/otp.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/otp.model.ts#L21)
+packages/core/dist/models/core-entity.d.ts:3
 
 ## Properties
 
@@ -47,7 +47,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/oidc-service/src/models/otp.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/otp.model.ts#L13)
+[services/oidc-service/src/models/otp.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/otp.model.ts#L14)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/otp.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/otp.model.ts#L19)
+[services/oidc-service/src/models/otp.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/otp.model.ts#L20)

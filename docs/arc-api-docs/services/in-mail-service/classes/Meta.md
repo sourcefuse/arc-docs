@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`Meta`](Meta.md)\>
 
   ↳ **`Meta`**
 
@@ -43,13 +43,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`Meta`](Meta.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<Meta\>.constructor
 
 #### Defined in
 
-[services/in-mail-service/src/models/meta.model.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/meta.model.ts#L64)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -63,7 +63,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -77,7 +77,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -91,7 +91,7 @@ ExternalIdentifierEnabledEntity.extId
 
 #### Defined in
 
-[services/in-mail-service/src/models/meta.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/meta.model.ts#L44)
+[services/in-mail-service/src/models/meta.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/meta.model.ts#L44)
 
 ___
 
@@ -105,7 +105,7 @@ ExternalIdentifierEnabledEntity.extMetadata
 
 #### Defined in
 
-[services/in-mail-service/src/models/meta.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/meta.model.ts#L51)
+[services/in-mail-service/src/models/meta.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/meta.model.ts#L51)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/meta.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/meta.model.ts#L26)
+[services/in-mail-service/src/models/meta.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/meta.model.ts#L26)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/meta.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/meta.model.ts#L32)
+[services/in-mail-service/src/models/meta.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/meta.model.ts#L32)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/meta.model.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/meta.model.ts#L62)
+[services/in-mail-service/src/models/meta.model.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/meta.model.ts#L62)
 
 ___
 
@@ -149,7 +149,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -163,7 +163,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -173,4 +173,4 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/meta.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/models/meta.model.ts#L37)
+[services/in-mail-service/src/models/meta.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/meta.model.ts#L37)

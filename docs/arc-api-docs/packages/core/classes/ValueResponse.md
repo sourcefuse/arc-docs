@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `Model`
+- [`CoreModel`](CoreModel.md)<[`ValueResponse`](ValueResponse.md)\>
 
   ↳ **`ValueResponse`**
 
@@ -31,13 +31,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`ValueResponse`](ValueResponse.md)\> |
 
-#### Overrides
+#### Inherited from
 
-Model.constructor
+[CoreModel](CoreModel.md).[constructor](CoreModel.md#constructor)
 
 #### Defined in
 
-[src/models/value-response.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/models/value-response.model.ts#L25)
+[src/models/core-model.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/core-model.ts#L9)
 
 ## Properties
 
@@ -47,7 +47,7 @@ Model.constructor
 
 #### Defined in
 
-[src/models/value-response.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/models/value-response.model.ts#L15)
+[src/models/value-response.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/value-response.model.ts#L16)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[src/models/value-response.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/packages/core/src/models/value-response.model.ts#L23)
+[src/models/value-response.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/value-response.model.ts#L24)

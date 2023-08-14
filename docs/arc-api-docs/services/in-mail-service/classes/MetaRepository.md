@@ -51,7 +51,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/meta.repository.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/repositories/meta.repository.ts#L21)
+[services/in-mail-service/src/repositories/meta.repository.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/repositories/meta.repository.ts#L21)
 
 ## Properties
 
@@ -65,7 +65,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/meta.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/repositories/meta.repository.ts#L25)
+[services/in-mail-service/src/repositories/meta.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/repositories/meta.repository.ts#L25)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/meta.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/in-mail-service/src/repositories/meta.repository.ts#L19)
+[services/in-mail-service/src/repositories/meta.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/repositories/meta.repository.ts#L19)
 
 ## Methods
 

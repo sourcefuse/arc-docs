@@ -35,4 +35,4 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/oidc-service/src/repositories/auth-client.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/repositories/auth-client.repository.ts#L16)
+[services/oidc-service/src/repositories/auth-client.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/repositories/auth-client.repository.ts#L16)

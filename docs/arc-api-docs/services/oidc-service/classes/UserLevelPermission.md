@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `UserModifiableEntity`
+- `UserModifiableEntity`<[`UserLevelPermission`](UserLevelPermission.md)\>
 
   ↳ **`UserLevelPermission`**
 
@@ -41,13 +41,13 @@
 | :------ | :------ |
 | `data?` | `Partial`<[`UserLevelPermission`](UserLevelPermission.md)\> |
 
-#### Overrides
+#### Inherited from
 
-UserModifiableEntity.constructor
+UserModifiableEntity<UserLevelPermission\>.constructor
 
 #### Defined in
 
-[services/oidc-service/src/models/user-level-permission.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/user-level-permission.model.ts#L47)
+packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
 
@@ -61,7 +61,7 @@ UserPermission.allowed
 
 #### Defined in
 
-[services/oidc-service/src/models/user-level-permission.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/user-level-permission.model.ts#L45)
+[services/oidc-service/src/models/user-level-permission.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-level-permission.model.ts#L45)
 
 ___
 
@@ -75,7 +75,7 @@ UserModifiableEntity.createdBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:3
+packages/core/dist/models/user-modifiable-entity.model.d.ts:4
 
 ___
 
@@ -89,7 +89,7 @@ UserModifiableEntity.createdOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:3
+packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user-level-permission.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/user-level-permission.model.ts#L22)
+[services/oidc-service/src/models/user-level-permission.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-level-permission.model.ts#L22)
 
 ___
 
@@ -113,7 +113,7 @@ UserModifiableEntity.modifiedBy
 
 #### Defined in
 
-packages/core/dist/models/user-modifiable-entity.model.d.ts:4
+packages/core/dist/models/user-modifiable-entity.model.d.ts:5
 
 ___
 
@@ -127,7 +127,7 @@ UserModifiableEntity.modifiedOn
 
 #### Defined in
 
-packages/core/dist/models/base-entity.model.d.ts:4
+packages/core/dist/models/base-entity.model.d.ts:5
 
 ___
 
@@ -141,7 +141,7 @@ UserPermission.permission
 
 #### Defined in
 
-[services/oidc-service/src/models/user-level-permission.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/user-level-permission.model.ts#L38)
+[services/oidc-service/src/models/user-level-permission.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-level-permission.model.ts#L38)
 
 ___
 
@@ -151,4 +151,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user-level-permission.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/53060ad88/services/oidc-service/src/models/user-level-permission.model.ts#L32)
+[services/oidc-service/src/models/user-level-permission.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-level-permission.model.ts#L32)
