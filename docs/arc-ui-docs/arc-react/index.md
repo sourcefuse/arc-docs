@@ -15,15 +15,12 @@ src/
 ├── Helpers
 ├── Hooks/
 │   ├── useAuth.ts (Hook for auth related methods/properties)
-│   ├── useConfig.ts (Hook for fetching runtime app config and parsing values)
-│   ├── useAxios.ts (Hook for network calls)
-│   ├── useMutation.ts (Hook for mutation network calls, provides data caching and state management )
-│   └── useQuery.ts (Hook for Query network calls, provides data caching and state management)
+│   ├── useConfig.ts (Hook for fetching runtime app config and parsing values)management
 ├── Layouts (Reuseable page layouts , which will provide sub route config for accessing Pages)
 ├── Pages
-├── Providers/
+├── Providers
 │   ├── theme (mui theme config)
-│   ├── AuthProvider.ts (context provider for all auth activities)
+│   ├── Provider (Redux Provider)
 │   ├── ErrorBoundary.ts
 │   └── NotificationProvider.ts (provider for showing notifications)
 └── Routes/
@@ -40,7 +37,7 @@ To Use the template
 - cd into the folder and run `npm i` to install node_modules.
 - Add the [environment variables](#inputs) to connect to ARC backend service.
 - Run `npm start` to run the vite development server.
-  ![home.png](assets/home.png)
+  ![home.png](../assets/home.png)
 
 ## How to deploy
 
@@ -57,14 +54,18 @@ Creating a simple login page using ARC form components
   - Separate error block for each field
 
 ```javascript
-import './App.css';
-import {Formik} from 'formik';
-import * as Yup from 'yup';
+import "./App.css";
+import { Formik } from "formik";
+import * as Yup from "yup";
 
 // Creating schema
 const schema = Yup.object().shape({
-  email: Yup.string().required('Email is a required field').email('Invalid email format'),
-  password: Yup.string().required('Password is a required field').min(8, 'Password must be at least 8 characters'),
+  email: Yup.string()
+    .required("Email is a required field")
+    .email("Invalid email format"),
+  password: Yup.string()
+    .required("Password is a required field")
+    .min(8, "Password must be at least 8 characters"),
 });
 
 function App() {
@@ -73,13 +74,20 @@ function App() {
       {/* Wrapping form inside formik tag and passing our schema to validationSchema prop */}
       <Formik
         validationSchema={schema}
-        initialValues={{email: '', password: ''}}
+        initialValues={{ email: "", password: "" }}
         onSubmit={(values) => {
           // Alert the input values of the form that we filled
           alert(JSON.stringify(values));
         }}
       >
-        {({values, errors, touched, handleChange, handleBlur, handleSubmit}) => (
+        {({
+          values,
+          errors,
+          touched,
+          handleChange,
+          handleBlur,
+          handleSubmit,
+        }) => (
           <div className="login">
             <div className="form">
               {/* Passing handleSubmit parameter tohtml form onSubmit property */}
@@ -97,7 +105,9 @@ function App() {
                   id="email"
                 />
                 {/* If validation is not passed show errors */}
-                <p className="error">{errors.email && touched.email && errors.email}</p>
+                <p className="error">
+                  {errors.email && touched.email && errors.email}
+                </p>
                 {/* Our input html with passing formik parameters like handleChange, values, handleBlur to input properties */}
                 <input
                   type="password"
@@ -109,7 +119,9 @@ function App() {
                   className="form-control"
                 />
                 {/* If validation is not passed show errors */}
-                <p className="error">{errors.password && touched.password && errors.password}</p>
+                <p className="error">
+                  {errors.password && touched.password && errors.password}
+                </p>
                 {/* Click on submit button to submit the form */}
                 <button type="submit">Login</button>
               </form>
@@ -129,27 +141,27 @@ export default App;
   - Less amount of code on the actual page
 
 ```javascript
-import {Box, Stack} from '@mui/material';
-import Grid from '@mui/material/Grid';
-import Button from 'Components/Button/Button';
-import Form from 'Components/Forms/Form';
-import FormInput from 'Components/Forms/FormInput';
-import FormPasswordInput from 'Components/Forms/FormPasswordInput';
-import PagePaper from 'Components/PagePaper';
-import * as yup from 'yup';
-import {initialValues} from './utils';
+import { Box, Stack } from "@mui/material";
+import Grid from "@mui/material/Grid";
+import Button from "Components/Button/Button";
+import Form from "Components/Forms/Form";
+import FormInput from "Components/Forms/FormInput";
+import FormPasswordInput from "Components/Forms/FormPasswordInput";
+import PagePaper from "Components/PagePaper";
+import * as yup from "yup";
+import { initialValues } from "./utils";
 
-type LoginForm = {userName: string, password: string};
+type LoginForm = { userName: string, password: string };
 const validationSchema = () => {
   return yup.object({
-    userName: yup.string().required().label('User Name'),
-    password: yup.string().required().label('Password'),
+    userName: yup.string().required().label("User Name"),
+    password: yup.string().required().label("Password"),
   });
 };
 export default function Login() {
   return (
     <Stack direction="row">
-      <Box sx={{flexGrow: 1}}>
+      <Box sx={{ flexGrow: 1 }}>
         <PagePaper title="Form">
           <Form
             initialValues={initialValues}
@@ -164,7 +176,7 @@ export default function Login() {
                 <FormPasswordInput id="Password" label="Password" />
               </Grid>
             </Grid>
-            <Button variant="outlined" type="submit" sx={{marginTop: 1}}>
+            <Button variant="outlined" type="submit" sx={{ marginTop: 1 }}>
               Submit
             </Button>
           </Form>
@@ -175,7 +187,7 @@ export default function Login() {
 }
 ```
 
-![form.png](assets/form.png)
+![form.png](../assets/form.png)
 
 ## <a id="prereqs"></a> Pre-Requisites
 
@@ -197,12 +209,27 @@ export default function Login() {
 
 ## Inputs
 
-| Name                                                                             | Description                             | Type      | Default | Required |
-| -------------------------------------------------------------------------------- | --------------------------------------- | --------- | ------- | :------: |
-| <a name="CLIENT_ID"></a> `CLIENT_ID`                                             | Unique public Identifier for the app.   | `string`  |         |   yes    |
-| <a name="AUTH_API_BASE_URL"></a> `AUTH_API_BASE_URL`                             | Base URL of the authentication service. | `string`  |         |   yes    |
-| <a name="APP_API_BASE_URL"></a> `APP_API_BASE_URL`                               |                                         | `string`  |         |    no    |
-| <a name="ENABLE_SESSION_TIMEOUT"></a> `ENABLE_SESSION_TIMEOUT`                   | Session timeout for idle timer          | `boolean` | "true"  |    no    |
-| <a name="STORAGE_SESSION_TIMEKEY"></a> `STORAGE_SESSION_TIMEKEY`                 |                                         | `string`  |         |    no    |
-| <a name="EXPIRY_TIME_IN_MINUTE"></a> `EXPIRY_TIME_IN_MINUTE`                     | Session expiry time                     | `number`  |         |    no    |
-| <a name="WARNING_ALERT_TIMEOUT_IN_MINUTE"></a> `WARNING_ALERT_TIMEOUT_IN_MINUTE` | Session warning alert time              | `number`  |         |    no    |
+| Name                                                                                 | Description                                                                                    | Type      | Default | Required |
+| ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- | --------- | ------- | :------: |
+| <a name="CLIENT_ID"></a> `CLIENT_ID`                                                 | Unique public Identifier for the app.                                                          | `string`  |         |   yes    |
+| <a name="AUTH_API_BASE_URL"></a> `AUTH_API_BASE_URL`                                 | Base URL of the authentication service.                                                        | `string`  |         |   yes    |
+| <a name="APP_API_BASE_URL"></a> `APP_API_BASE_URL`                                   |                                                                                                | `string`  |         |    no    |
+| <a name="ENABLE_SESSION_TIMEOUT"></a> `ENABLE_SESSION_TIMEOUT`                       | Session timeout for idle timer                                                                 | `boolean` | false   |    no    |
+| <a name="EXPIRY_TIME_IN_MINUTE"></a> `EXPIRY_TIME_IN_MINUTE`                         | Session expiry time                                                                            | `number`  | 15      |    no    |
+| <a name="PROMPT_TIME_BEFORE_IDLE_IN_MINUTE"></a> `PROMPT_TIME_BEFORE_IDLE_IN_MINUTE` | The duration (in minutes) before the user becomes idle, when the warning dialog will be shown. | `number`  | 1       |    no    |
+
+## Related Projects
+
+At ARC, we are driven by a steadfast mission – to empower developers and organizations with seamless solutions for both backend and frontend application development and deployment. Our unwavering commitment to the highest security and industry standards ensures that every facet of app development contributes to a smooth and secure user experience.
+
+In our dedication to the open-source community, we actively contribute to a diverse range of projects that reflect our values of innovation and collaboration. Some of our notable contributions include:
+
+- **[React Boilerplate](https://arc-react-boilerplate.sfarcpoc.com/)**: Discover our meticulously crafted React Boilerplate application, designed to accelerate your development process.
+  <a href="https://github.com/sourcefuse/react-boilerplate-ts-ui/"><div style="display: inline-block; border-radius: 50%; overflow: hidden; width: 20px; height: 20px;"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/9cfce4fc8777a8db73e98f9520ef63c855f7c0b9/images/svg/github.svg" alt="GitHub Icon" width="20" height="20"></div> React Boilerplate </a>
+- **[Telemed App](https://arc-telemed.sfarcpoc.com)**: The ARC Telemedicine App establishes seamless communication channels between medical professionals and patients through video calls and chat. This app is meticulously crafted using the ARC React Boilerplate.
+  <a href="https://github.com/sourcefuse/loopback4-microservice-catalog/tree/master/sandbox/telemed-app/frontend"><div style="display: inline-block; border-radius: 50%; overflow: hidden; width: 20px; height: 20px;"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/9cfce4fc8777a8db73e98f9520ef63c855f7c0b9/images/svg/github.svg" alt="GitHub Icon" width="20" height="20"></div> Telemed App UI </a>
+- **[Storybook](https://arc-react-storybook.sfarcpoc.com/)**: Components within the ARC React Boilerplate through our comprehensive Storybook.
+  <a href="https://github.com/sourcefuse/react-boilerplate-ts-ui/"><div style="display: inline-block; border-radius: 50%; overflow: hidden; width: 20px; height: 20px;"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/9cfce4fc8777a8db73e98f9520ef63c855f7c0b9/images/svg/github.svg" alt="GitHub Icon" width="20" height="20"></div> Storybook </a>
+- **[ARC API](https://github.com/sourcefuse/loopback4-microservice-catalog/)**: ARC API, is a collection of pre-built microservices designed to accelerate the development timeline for enterprise projects. These services address common challenges encountered by large enterprises during the development of cloud-native platforms for digital transformation initiatives or new product creation
+- **[ARC Lambda](https://github.com/sourcefuse/arc-lambda)**: Easily deploy your services to a serverless environment on AWS.
+- **[ARC IAC](https://sourcefuse.github.io/arc-docs/arc-iac-docs/)**: Explore the intricacies of Infrastructure as Code with our comprehensive documentation on ARC IAC.
