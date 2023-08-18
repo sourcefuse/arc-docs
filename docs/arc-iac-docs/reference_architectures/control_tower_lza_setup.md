@@ -1,3 +1,4 @@
+# Control Tower LZA Setup
 The article below contains a step-by-step guide for setting up a Landing Zone via Control Tower and the necessary steps to deploy the Landing Zone Accelerator on AWS.
 
 At the end of this guide you’ll have the following implemented based on the config settings you selected:
@@ -263,8 +264,8 @@ For additional information on how to configure Landing Zone, see the official AW
 
 ### Setting up the LZA CloudFormation Pipeline
 
-1. Go to the following URL https://catalog.workshops.aws/landing-zone-accelerator/en-US/lza-administrators/prerequisites/deploy-landing-zone-accelerator
-2. Click the orange button named **Launch Stack**
+1. Go to the following URL https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/step-1.-launch-the-stack.html
+2. Click the blue button named **Launch Solution**
    1. This will automatically take you in to your AWS account, if not you may have to log in, but it will eventually get you to a CloudFormation **Create Stack** page
 3. Click **Next**
 4. Name the stack `AWSAccelerator-InstallerStack`
