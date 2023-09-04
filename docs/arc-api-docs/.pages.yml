@@ -1,4 +1,16 @@
 title: ARC API
 nav:
   - index.md
-  - ...
+  - packages
+  - services
+  - Extensions:
+      - Authentication: "arc-api-docs/extensions/loopback4-authentication"
+      - Authorization: "arc-api-docs/extensions/loopback4-authorization"
+      - Audit Logs: "arc-api-docs/extensions/loopback4-audit-log"
+      - Soft Delete: "arc-api-docs/extensions/loopback4-soft-delete"
+      - Rate Limiter: "arc-api-docs/extensions/loopback4-ratelimiter"
+      - AWS S3: "arc-api-docs/extensions/loopback4-s3"
+      - Kafka Client: "arc-api-docs/extensions/loopback4-kafka-client"
+      - Helmet.js: "arc-api-docs/extensions/loopback4-helmet"
+      - Notifications: "arc-api-docs/extensions/loopback4-notifications"
+      - HashiCorp's Vault: "arc-api-docs/extensions/loopback4-vault"
