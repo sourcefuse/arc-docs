@@ -4,6 +4,7 @@ nav:
   - packages
   - services
   - Extensions:
+      - Index: "arc-api-docs/extensions/"
       - Authentication: "arc-api-docs/extensions/loopback4-authentication"
       - Authorization: "arc-api-docs/extensions/loopback4-authorization"
       - Audit Logs: "arc-api-docs/extensions/loopback4-audit-log"
