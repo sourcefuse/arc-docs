@@ -82,6 +82,8 @@ respectively to use the ca certificate and key generated in this module for mutu
 | [aws_vpc_endpoint.elb_endpoint](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc_endpoint) | resource |
 | [aws_vpc_endpoint.kms_endpoint](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc_endpoint) | resource |
 | [aws_vpc_endpoint.s3_endpoint](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc_endpoint) | resource |
+| [aws_vpc_endpoint.sns_endpoint](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc_endpoint) | resource |
+| [aws_vpc_endpoint.sqs_endpoint](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc_endpoint) | resource |
 | [aws_vpn_gateway.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpn_gateway) | resource |
 | [aws_iam_policy_document.dynamodb](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 | [aws_iam_policy_document.ec2](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
@@ -147,8 +149,10 @@ respectively to use the ca certificate and key generated in this module for mutu
 | <a name="input_private_subnet_name_override"></a> [private\_subnet\_name\_override](#input\_private\_subnet\_name\_override) | Private Subnets name. If left undefined, this will use the naming convention of<br>`namespace-environment-private-subnet`. | `string` | `null` | no |
 | <a name="input_public_subnet_name_override"></a> [public\_subnet\_name\_override](#input\_public\_subnet\_name\_override) | Public Subnets name. If left undefined, this will use the naming convention of<br>`namespace-environment-public-subnet`. | `string` | `null` | no |
 | <a name="input_s3_endpoint_name_override"></a> [s3\_endpoint\_name\_override](#input\_s3\_endpoint\_name\_override) | S3 endpoint name. If left undefined, this will use the naming convention of<br>`namespace-environment-s3-endpoint`. | `string` | `null` | no |
+| <a name="input_sns_endpoint_name_override"></a> [sns\_endpoint\_name\_override](#input\_sns\_endpoint\_name\_override) | SNS endpoint name. If left undefined, this will use the naming convention of<br>`namespace-environment-sns-endpoint`. | `string` | `null` | no |
+| <a name="input_sqs_endpoint_name_override"></a> [sqs\_endpoint\_name\_override](#input\_sqs\_endpoint\_name\_override) | SQS endpoint name. If left undefined, this will use the naming convention of<br>`namespace-environment-sqs-endpoint`. | `string` | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Default tags to apply to every resource | `map(string)` | n/a | yes |
-| <a name="input_vpc_endpoint_config"></a> [vpc\_endpoint\_config](#input\_vpc\_endpoint\_config) | Map variable that toggles the enablement of an application | `map(bool)` | <pre>{<br>  "cloudwatch": false,<br>  "dynamodb": false,<br>  "ec2": false,<br>  "elb": false,<br>  "kms": false,<br>  "s3": false<br>}</pre> | no |
+| <a name="input_vpc_endpoint_config"></a> [vpc\_endpoint\_config](#input\_vpc\_endpoint\_config) | Map variable that toggles the enablement of an application | `map(bool)` | <pre>{<br>  "cloudwatch": false,<br>  "dynamodb": false,<br>  "ec2": false,<br>  "elb": false,<br>  "kms": false,<br>  "s3": false,<br>  "sns": false,<br>  "sqs": false<br>}</pre> | no |
 | <a name="input_vpc_endpoint_type"></a> [vpc\_endpoint\_type](#input\_vpc\_endpoint\_type) | The VPC endpoint type, Gateway, GatewayLoadBalancer, or Interface. | `string` | `"Interface"` | no |
 | <a name="input_vpc_endpoints_enabled"></a> [vpc\_endpoints\_enabled](#input\_vpc\_endpoints\_enabled) | Enable VPC endpoints. | `bool` | `false` | no |
 | <a name="input_vpc_ipv4_primary_cidr_block"></a> [vpc\_ipv4\_primary\_cidr\_block](#input\_vpc\_ipv4\_primary\_cidr\_block) | IPv4 CIDR block for the VPC to use. | `string` | n/a | yes |
