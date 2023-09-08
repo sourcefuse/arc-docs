@@ -16,6 +16,8 @@ nav:
           - TypeScript Lambda Boilerplate: "arc-iac-docs/modules/typescript-lambda-boilerplate"
           - Cloud Custodian: "arc-iac-docs/modules/terraform-aws-cloud-custodian"
           - CloudFront: "arc-iac-docs/modules/terraform-aws-refarch-cloudfront"
+          - Waf: "arc-iac-docs/modules/terraform-aws-refarch-waf"
+          - Vpn: "arc-iac-docs/modules/terraform-aws-refarch-vpn"
           - Backstage:
             - ECS: "arc-iac-docs/modules/arc-backstage-ecs-app"
       - Cloud Native:
