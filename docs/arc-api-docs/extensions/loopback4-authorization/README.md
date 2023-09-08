@@ -50,7 +50,7 @@ Where permissions are associated to roles and users have a specific role attache
 
 #### 3. Role Based Permissions with User Level Flexibility
 
-This is the most flexible architecture. In this case, method #2 is implemented as is.
+This is the most flexible architecture. In this case, method #2 is implemented as is. 
 
 On top of it, we also add user-level permissions override, allow/deny permissions over role permissions. So, say there is user who can perform all admin role actions except he cannot remove users from the system. So, DeleteUser permission can be denied at user level and role can be set as Admin for the user.
 
@@ -68,7 +68,7 @@ Add `AuthorizationComponent` to your application, Like below:
 
 ```ts
 this.bind(AuthorizationBindings.CONFIG).to({
-  allowAlwaysPaths: ["/explorer"],
+  allowAlwaysPaths: ['/explorer'],
 });
 this.component(AuthorizationComponent);
 ```
@@ -79,7 +79,7 @@ If using method #1 from above, implement Permissions interface in User model and
 
 ```ts
 @model({
-  name: "users",
+  name: 'users',
 })
 export class User extends Entity implements Permissions<string> {
   // .....
@@ -87,8 +87,8 @@ export class User extends Entity implements Permissions<string> {
   // .....
 
   @property({
-    type: "array",
-    itemType: "string",
+    type: 'array',
+    itemType: 'string',
   })
   permissions: string[];
 
@@ -102,7 +102,7 @@ If using method #2 or #3 from above, implement Permissions interface in Role mod
 
 ```ts
 @model({
-  name: "roles",
+  name: 'roles',
 })
 export class Role extends Entity implements Permissions<string> {
   // .....
@@ -110,8 +110,8 @@ export class Role extends Entity implements Permissions<string> {
   // .....
 
   @property({
-    type: "array",
-    itemType: "string",
+    type: 'array',
+    itemType: 'string',
   })
   permissions: string[];
 
@@ -124,12 +124,12 @@ export class Role extends Entity implements Permissions<string> {
 #### Implement `UserPermissionsOverride` Interface
 
 If using method #3 from above, implement UserPermissionsOverride interface in User model and add user level permissions array as below.
-Do this if there is a use-case of explicit allow/deny of permissions at user-level in the application.
-You can skip otherwise.
+  Do this if there is a use-case of explicit allow/deny of permissions at user-level in the application.
+  You can skip otherwise.
 
 ```ts
 @model({
-  name: "users",
+  name: 'users',
 })
 export class User extends Entity implements UserPermissionsOverride<string> {
   // .....
@@ -137,8 +137,8 @@ export class User extends Entity implements UserPermissionsOverride<string> {
   // .....
 
   @property({
-    type: "array",
-    itemType: "object",
+    type: 'array',
+    itemType: 'object',
   })
   permissions: UserPermission<string>[];
 
@@ -150,7 +150,7 @@ export class User extends Entity implements UserPermissionsOverride<string> {
 
 #### User Permissions Provider
 
-For method #3, This extension exposes a provider function [AuthorizationBindings.USER_PERMISSIONS](https://github.com/sourcefuse/loopback4-authorization/blob/master/src/providers/user-permissions.provider.ts) to evaluate the user permissions based on its role permissions and user-level overrides.
+For method #3, This extension exposes a provider function [AuthorizationBindings.USER_PERMISSIONS](https://github.com/sourcefuse/loopback4-authorization/blob/master/src/providers/user-permissions.provider.ts) to evaluate the user permissions based on its role permissions and user-level overrides. 
 
 Just inject it like below:
 
@@ -168,7 +168,7 @@ const permissions = this.getUserPermissions(user.permissions, role.permissions);
 Add a step in custom sequence to check for authorization whenever any endpoint is hit.
 
 ```ts
-import { inject } from "@loopback/context";
+import {inject} from '@loopback/context';
 import {
   FindRoute,
   HttpErrors,
@@ -179,20 +179,17 @@ import {
   RestBindings,
   Send,
   SequenceHandler,
-} from "@loopback/rest";
-import {
-  AuthenticateFn,
-  AuthenticationBindings,
-} from "loopback4-authentication";
+} from '@loopback/rest';
+import {AuthenticateFn, AuthenticationBindings} from 'loopback4-authentication';
 import {
   AuthorizationBindings,
   AuthorizeErrorKeys,
   AuthorizeFn,
   UserPermissionsFn,
-} from "loopback4-authorization";
+} from 'loopback4-authorization';
 
-import { AuthClient } from "./models/auth-client.model";
-import { User } from "./models/user.model";
+import {AuthClient} from './models/auth-client.model';
+import {User} from './models/user.model';
 
 const SequenceActions = RestBindings.SequenceActions;
 
@@ -210,13 +207,13 @@ export class MySequence implements SequenceHandler {
     @inject(AuthorizationBindings.AUTHORIZE_ACTION)
     protected checkAuthorisation: AuthorizeFn,
     @inject(AuthorizationBindings.USER_PERMISSIONS)
-    private readonly getUserPermissions: UserPermissionsFn<string>
+    private readonly getUserPermissions: UserPermissionsFn<string>,
   ) {}
 
   async handle(context: RequestContext) {
     const requestTime = Date.now();
     try {
-      const { request, response } = context;
+      const {request, response} = context;
       const route = this.findRoute(request);
       const args = await this.parseParams(request, route);
       request.body = args[args.length - 1];
@@ -226,12 +223,12 @@ export class MySequence implements SequenceHandler {
       // Do ths if you are using method #3
       const permissions = this.getUserPermissions(
         authUser.permissions,
-        authUser.role.permissions
+        authUser.role.permissions,
       );
       // This is the important line added for authorization. Needed for all 3 methods
       const isAccessAllowed: boolean = await this.checkAuthorisation(
         permissions, // do authUser.permissions if using method #1
-        request
+        request,
       );
       // Checking access to route here
       if (!isAccessAllowed) {
@@ -275,31 +272,31 @@ A good practice is to keep all permission strings in a separate enum file like t
 
 ```ts
 export const enum PermissionKey {
-  ViewOwnUser = "ViewOwnUser",
-  ViewAnyUser = "ViewAnyUser",
-  ViewTenantUser = "ViewTenantUser",
-  CreateAnyUser = "CreateAnyUser",
-  CreateTenantUser = "CreateTenantUser",
-  UpdateOwnUser = "UpdateOwnUser",
-  UpdateTenantUser = "UpdateTenantUser",
-  UpdateAnyUser = "UpdateAnyUser",
-  DeleteTenantUser = "DeleteTenantUser",
-  DeleteAnyUser = "DeleteAnyUser",
+  ViewOwnUser = 'ViewOwnUser',
+  ViewAnyUser = 'ViewAnyUser',
+  ViewTenantUser = 'ViewTenantUser',
+  CreateAnyUser = 'CreateAnyUser',
+  CreateTenantUser = 'CreateTenantUser',
+  UpdateOwnUser = 'UpdateOwnUser',
+  UpdateTenantUser = 'UpdateTenantUser',
+  UpdateAnyUser = 'UpdateAnyUser',
+  DeleteTenantUser = 'DeleteTenantUser',
+  DeleteAnyUser = 'DeleteAnyUser',
 
-  ViewTenant = "ViewTenant",
-  CreateTenant = "CreateTenant",
-  UpdateTenant = "UpdateTenant",
-  DeleteTenant = "DeleteTenant",
+  ViewTenant = 'ViewTenant',
+  CreateTenant = 'CreateTenant',
+  UpdateTenant = 'UpdateTenant',
+  DeleteTenant = 'DeleteTenant',
 
-  ViewRole = "ViewRole",
-  CreateRole = "CreateRole",
-  UpdateRole = "UpdateRole",
-  DeleteRole = "DeleteRole",
+  ViewRole = 'ViewRole',
+  CreateRole = 'CreateRole',
+  UpdateRole = 'UpdateRole',
+  DeleteRole = 'DeleteRole',
 
-  ViewAudit = "ViewAudit",
-  CreateAudit = "CreateAudit",
-  UpdateAudit = "UpdateAudit",
-  DeleteAudit = "DeleteAudit",
+  ViewAudit = 'ViewAudit',
+  CreateAudit = 'CreateAudit',
+  UpdateAudit = 'UpdateAudit',
+  DeleteAudit = 'DeleteAudit',
 }
 ```
 
@@ -310,7 +307,7 @@ API endpoints provided by ARC API (aka Sourceloop) services have their permissio
 In order to override them you can bind your custom permissions in the `AuthorizationBindings.PERMISSION` binding key.
 This accepts an object that should have Controller class name as the root level key and the value of which is another object of method to permissions array mapping.
 
-Like below:
+Like below: 
 
 ```ts
 this.bind(AuthorizationBindings.PERMISSION).to({
@@ -325,7 +322,7 @@ this.bind(AuthorizationBindings.PERMISSION).to({
 });
 ```
 
-You can easily check the name of the controller and it's method name from the source code of the services or from the Swagger UI (clicking the endpoint in swagger append the controller and method name in the URL like `LoginController.login` where `login` is the method name).
+You can easily check the name of the controller and it's method name from the source code of the services or from the Swagger UI (clicking the endpoint in swagger append the controller and method name in the URL like `LoginController.login` where `login` is the method name). 
 
 ## Serving the static files:
 
@@ -369,29 +366,29 @@ In order to use this enhacement into your LoopBack application, please follow be
 
 ```ts
 this.bind(AuthorizationBindings.CONFIG).to({
-  allowAlwaysPaths: ["/explorer"],
+  allowAlwaysPaths: ['/explorer'],
 });
 this.component(AuthorizationComponent);
 
 this.bind(AuthorizationBindings.CASBIN_ENFORCER_CONFIG_GETTER).toProvider(
-  CasbinEnforcerConfigProvider
+  CasbinEnforcerConfigProvider,
 );
 
 this.bind(AuthorizationBindings.CASBIN_RESOURCE_MODIFIER_FN).toProvider(
-  CasbinResValModifierProvider
+  CasbinResValModifierProvider,
 );
 ```
 
 - Implement the **Casbin Resource value modifier provider**. Customise the resource value based on business logic using route arguments parameter in the provider.
 
 ```ts
-import { Getter, inject, Provider } from "@loopback/context";
-import { HttpErrors } from "@loopback/rest";
+import {Getter, inject, Provider} from '@loopback/context';
+import {HttpErrors} from '@loopback/rest';
 import {
   AuthorizationBindings,
   AuthorizationMetadata,
   CasbinResourceModifierFn,
-} from "loopback4-authorization";
+} from 'loopback4-authorization';
 
 export class CasbinResValModifierProvider
   implements Provider<CasbinResourceModifierFn>
@@ -400,7 +397,7 @@ export class CasbinResValModifierProvider
     @inject.getter(AuthorizationBindings.METADATA)
     private readonly getCasbinMetadata: Getter<AuthorizationMetadata>,
     @inject(AuthorizationBindings.PATHS_TO_ALLOW_ALWAYS)
-    private readonly allowAlwaysPath: string[]
+    private readonly allowAlwaysPath: string[],
   ) {}
 
   value(): CasbinResourceModifierFn {
@@ -412,9 +409,9 @@ export class CasbinResValModifierProvider
 
     if (
       !metadata &&
-      !!this.allowAlwaysPath.find((path) => req.path.indexOf(path) === 0)
+      !!this.allowAlwaysPath.find(path => req.path.indexOf(path) === 0)
     ) {
-      return "";
+      return '';
     }
 
     if (!metadata) {
@@ -436,13 +433,13 @@ export class CasbinResValModifierProvider
   **NOTE**: In the second case, if model is initialized from .CONF file, then any of the above formats can be used for policy. But if model is being initialised from code or string, then policy should be provided as [casbin adapter](https://casbin.org/docs/en/adapters) only.
 
 ```ts
-import { Provider } from "@loopback/context";
+import {Provider} from '@loopback/context';
 import {
   CasbinConfig,
   CasbinEnforcerConfigGetterFn,
   IAuthUserWithPermissions,
-} from "loopback4-authorization";
-import * as path from "path";
+} from 'loopback4-authorization';
+import * as path from 'path';
 
 export class CasbinEnforcerConfigProvider
   implements Provider<CasbinEnforcerConfigGetterFn>
@@ -453,16 +450,16 @@ export class CasbinEnforcerConfigProvider
     return (
       authUser: IAuthUserWithPermissions,
       resource: string,
-      isCasbinPolicy?: boolean
+      isCasbinPolicy?: boolean,
     ) => this.action(authUser, resource, isCasbinPolicy);
   }
 
   async action(
     authUser: IAuthUserWithPermissions,
     resource: string,
-    isCasbinPolicy?: boolean
+    isCasbinPolicy?: boolean,
   ): Promise<CasbinConfig> {
-    const model = path.resolve(__dirname, "./../../fixtures/casbin/model.conf"); // Model initialization from file path
+    const model = path.resolve(__dirname, './../../fixtures/casbin/model.conf'); // Model initialization from file path
     /**
      * import * as casbin from 'casbin';
      *
@@ -492,7 +489,7 @@ export class CasbinEnforcerConfigProvider
 
     const policy = path.resolve(
       __dirname,
-      "./../../fixtures/casbin/policy.csv"
+      './../../fixtures/casbin/policy.csv',
     );
 
     const result: CasbinConfig = {
@@ -518,7 +515,7 @@ export class CasbinEnforcerConfigProvider
   point is hit.
 
 ```ts
-import { inject } from "@loopback/context";
+import {inject} from '@loopback/context';
 import {
   FindRoute,
   HttpErrors,
@@ -529,20 +526,17 @@ import {
   RestBindings,
   Send,
   SequenceHandler,
-} from "@loopback/rest";
-import {
-  AuthenticateFn,
-  AuthenticationBindings,
-} from "loopback4-authentication";
+} from '@loopback/rest';
+import {AuthenticateFn, AuthenticationBindings} from 'loopback4-authentication';
 import {
   AuthorizationBindings,
   AuthorizeErrorKeys,
   AuthorizeFn,
   UserPermissionsFn,
-} from "loopback4-authorization";
+} from 'loopback4-authorization';
 
-import { AuthClient } from "./models/auth-client.model";
-import { User } from "./models/user.model";
+import {AuthClient} from './models/auth-client.model';
+import {User} from './models/user.model';
 
 const SequenceActions = RestBindings.SequenceActions;
 
@@ -560,13 +554,13 @@ export class MySequence implements SequenceHandler {
     @inject(AuthorizationBindings.CASBIN_AUTHORIZE_ACTION)
     protected checkAuthorisation: CasbinAuthorizeFn,
     @inject(AuthorizationBindings.CASBIN_RESOURCE_MODIFIER_FN)
-    protected casbinResModifierFn: CasbinResourceModifierFn
+    protected casbinResModifierFn: CasbinResourceModifierFn,
   ) {}
 
   async handle(context: RequestContext) {
     const requestTime = Date.now();
     try {
-      const { request, response } = context;
+      const {request, response} = context;
       const route = this.findRoute(request);
       const args = await this.parseParams(request, route);
       request.body = args[args.length - 1];
@@ -580,7 +574,7 @@ export class MySequence implements SequenceHandler {
       const isAccessAllowed: boolean = await this.checkAuthorisation(
         authUser,
         resVal,
-        request
+        request,
       );
       // Checking access to route here
       if (!isAccessAllowed) {
