@@ -1,4 +1,6 @@
-# terraform-aws-refarch-vpn
+# [terraform-aws-refarch-vpn](https://github.com/sourcefuse/terraform-aws-refarch-vpn)
+
+[![Snyk](https://github.com/sourcefuse/terraform-aws-refarch-vpn/actions/workflows/test.yml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-vpn/actions/workflows/test.yml)
 
 ## Overview
 
@@ -6,11 +8,34 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing a Clie
 
 ## Usage
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.  
+To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.
 
 ```hcl
 module "this" {
   source = "git::https://github.com/sourcefuse/terraform-aws-refarch-vpn"
+  vpc_id = data.aws_vpc.this.id
+
+  authentication_options_type                       = "certificate-authentication"
+  authentication_options_root_certificate_chain_arn = module.self_signed_cert_root.certificate_arn
+
+  ## access
+  client_vpn_authorize_all_groups = true
+  client_vpn_subnet_ids           = data.aws_subnets.private.ids
+  client_vpn_target_network_cidr  = data.aws_vpc.this.cidr_block
+
+  ## self signed certificate
+  create_self_signed_server_cert             = true
+  self_signed_server_cert_server_common_name = "${var.namespace}-${var.environment}.arc-vpn-example.client"
+  self_signed_server_cert_organization_name  = var.namespace
+  self_signed_server_cert_ca_pem             = module.self_signed_cert_ca.certificate_pem
+  self_signed_server_cert_private_ca_key_pem = join("", data.aws_ssm_parameter.ca_key[*].value)
+
+  ## client vpn
+  client_cidr             = cidrsubnet(data.aws_vpc.this.cidr_block, 6, 1)
+  client_vpn_name         = "${var.namespace}-${var.environment}-client-vpn-example"
+  client_vpn_gateway_name = "${var.namespace}-${var.environment}-vpn-gateway-example"
+
+  tags = module.tags.tags
 }
 ```
 
@@ -92,11 +117,12 @@ module "this" {
 | <a name="output_client_vpn_id"></a> [client\_vpn\_id](#output\_client\_vpn\_id) | The client vpn ID |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Versioning  
-This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.  
+## Versioning
+
+This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.
 
 When you intend to commit to `main`, you will need to increment this version. Once the project is merged,
-the pipeline will kick off and tag the latest git commit.  
+the pipeline will kick off and tag the latest git commit.
 
 ## Development
 
@@ -116,6 +142,7 @@ the pipeline will kick off and tag the latest git commit.
   ```
 
 ### Tests
+
 - Tests are available in `test` directory
 - Configure the dependencies
   ```sh
@@ -123,7 +150,7 @@ the pipeline will kick off and tag the latest git commit.
   go mod init github.com/sourcefuse/terraform-aws-refarch-vpn
   go get github.com/gruntwork-io/terratest/modules/terraform
   ```
-- Now execute the test  
+- Now execute the test
   ```sh
   go test -timeout  30m
   ```
@@ -131,4 +158,5 @@ the pipeline will kick off and tag the latest git commit.
 ## Authors
 
 This project is authored by:
+
 - SourceFuse
