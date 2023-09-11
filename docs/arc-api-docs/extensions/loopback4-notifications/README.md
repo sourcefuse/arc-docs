@@ -20,6 +20,7 @@
 </a>
 </p>
 
+
 ## Overview
 
 This is a loopback-next extension for adding different notification mechanisms vis-à-vis, Push, SMS, Email to any loopback 4 based REST API application or microservice.
@@ -52,10 +53,10 @@ Add component to application.
 
 ```ts
 // application.ts
-import { NotificationsComponent } from "loopback4-notifications";
+import {NotificationsComponent} from 'loopback4-notifications';
 
 export class NotificationServiceApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
@@ -76,11 +77,11 @@ This extension provides in-built support of AWS Simple Email Service integration
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
-import { SesProvider } from "loopback4-notifications/ses";
+} from 'loopback4-notifications';
+import {SesProvider} from 'loopback4-notifications/ses';
 
 export class NotificationServiceApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
@@ -98,11 +99,11 @@ There are some additional configurations needed in order to allow SES to connect
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
-import { SesProvider, SESBindings } from "loopback4-notifications/ses";
+} from 'loopback4-notifications';
+import {SesProvider, SESBindings} from 'loopback4-notifications/ses';
 
 export class NotificationServiceApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
@@ -127,11 +128,11 @@ In addition to this, some general configurations can also be done, like below.
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
-import { SesProvider, SESBindings } from "loopback4-notifications/ses";
+} from 'loopback4-notifications';
+import {SesProvider, SESBindings} from 'loopback4-notifications/ses';
 
 export class NotificationServiceApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
@@ -139,7 +140,7 @@ export class NotificationServiceApplication extends BootMixin(
     this.component(NotificationsComponent);
     this.bind(NotificationBindings.Config).to({
       sendToMultipleReceivers: false,
-      senderEmail: "support@myapp.com",
+      senderEmail: 'support@myapp.com',
     });
     this.bind(SESBindings.Config).to({
       accessKeyId: process.env.SES_ACCESS_KEY_ID,
@@ -173,18 +174,18 @@ This extension provides in-built support of Nodemailer integration for sending e
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
-import { NodemailerProvider } from "loopback4-notifications/nodemailer";
+} from 'loopback4-notifications';
+import {NodemailerProvider} from 'loopback4-notifications/nodemailer';
 
 export class NotificationServiceApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
 
     this.component(NotificationsComponent);
     this.bind(NotificationBindings.EmailProvider).toProvider(
-      NodemailerProvider
+      NodemailerProvider,
     );
     // ...
   }
@@ -197,14 +198,14 @@ There are some additional configurations needed in order to allow NodeMailer to 
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
+} from 'loopback4-notifications';
 import {
   NodemailerProvider,
   NodemailerBindings,
-} from "loopback4-notifications/nodemailer";
+} from 'loopback4-notifications/nodemailer';
 
 export class NotificationServiceApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
@@ -213,20 +214,20 @@ export class NotificationServiceApplication extends BootMixin(
     this.bind(NodemailerBindings.Config).to({
       pool: true,
       maxConnections: 100,
-      url: "",
-      host: "smtp.example.com",
+      url: '',
+      host: 'smtp.example.com',
       port: 80,
       secure: false,
       auth: {
-        user: "username",
-        pass: "password",
+        user: 'username',
+        pass: 'password',
       },
       tls: {
         rejectUnauthorized: true,
       },
     });
     this.bind(NotificationBindings.EmailProvider).toProvider(
-      NodemailerProvider
+      NodemailerProvider,
     );
     // ...
   }
@@ -241,14 +242,14 @@ In addition to this, some general configurations can also be done, like below.
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
+} from 'loopback4-notifications';
 import {
   NodemailerProvider,
   NodemailerBindings,
-} from "loopback4-notifications/nodemailer";
+} from 'loopback4-notifications/nodemailer';
 
 export class NotificationServiceApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
@@ -256,25 +257,25 @@ export class NotificationServiceApplication extends BootMixin(
     this.component(NotificationsComponent);
     this.bind(NotificationBindings.Config).to({
       sendToMultipleReceivers: false,
-      senderEmail: "support@myapp.com",
+      senderEmail: 'support@myapp.com',
     });
     this.bind(NodemailerBindings.Config).to({
       pool: true,
       maxConnections: 100,
-      url: "",
-      host: "smtp.example.com",
+      url: '',
+      host: 'smtp.example.com',
       port: 80,
       secure: false,
       auth: {
-        user: "username",
-        pass: "password",
+        user: 'username',
+        pass: 'password',
       },
       tls: {
         rejectUnauthorized: true,
       },
     });
     this.bind(NotificationBindings.EmailProvider).toProvider(
-      NodemailerProvider
+      NodemailerProvider,
     );
     // ...
   }
@@ -302,12 +303,12 @@ This extension provides in-built support of AWS Simple Notification Service inte
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
-import { SnsProvider } from "loopback4-notification/sns";
+} from 'loopback4-notifications';
+import {SnsProvider} from 'loopback4-notification/sns';
 // ...
 
 export class NotificationServiceApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
@@ -325,11 +326,11 @@ There are some additional configurations needed in order to allow SNS to connect
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
-import { SNSBindings, SnsProvider } from "loopback4-notification/sns";
+} from 'loopback4-notifications';
+import {SNSBindings, SnsProvider} from 'loopback4-notification/sns';
 
 export class NotificationServiceApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
@@ -425,11 +426,11 @@ This extension provides in-built support of Pubnub integration for sending realt
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
-import { PubNubProvider } from "loopback4-notifications/pubnub";
+} from 'loopback4-notifications';
+import {PubNubProvider} from 'loopback4-notifications/pubnub';
 
 export class NotificationServiceApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
@@ -447,11 +448,11 @@ There are some additional configurations needed in order to allow Pubnub connect
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
-import { PubnubBindings, PubNubProvider } from "loopback4-notifications/pubnub";
+} from 'loopback4-notifications';
+import {PubnubBindings, PubNubProvider} from 'loopback4-notifications/pubnub';
 
 export class NotificationServiceApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
@@ -463,10 +464,10 @@ export class NotificationServiceApplication extends BootMixin(
       secretKey: process.env.PUBNUB_SECRET_KEY,
       ssl: true,
       logVerbosity: true,
-      uuid: "my-app",
+      uuid: 'my-app',
       cipherKey: process.env.PUBNUB_CIPHER_KEY,
-      apns2Env: "production",
-      apns2BundleId: "com.app.myapp",
+      apns2Env: 'production',
+      apns2BundleId: 'com.app.myapp',
     });
     this.bind(NotificationBindings.PushProvider).toProvider(PubNubProvider);
     // ...
@@ -497,11 +498,11 @@ The interface could be imported into the project by the name SocketMessage.
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
-import { SocketIOProvider } from "loopback4-notifications/socketio";
+} from 'loopback4-notifications';
+import {SocketIOProvider} from 'loopback4-notifications/socketio';
 
 export class NotificationServiceApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
@@ -519,14 +520,14 @@ There are some additional configurations needed in order to allow Socket connect
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
+} from 'loopback4-notifications';
 import {
   SocketBindings,
   SocketIOProvider,
-} from "loopback4-notifications/socketio";
+} from 'loopback4-notifications/socketio';
 
 export class NotificationServiceApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
@@ -555,10 +556,10 @@ This extension provides in-built support of Firebase Cloud Messaging integration
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
-import { FcmProvider } from "loopback4-notifications/fcm";
+} from 'loopback4-notifications';
+import {FcmProvider} from 'loopback4-notifications/fcm';
 export class MyApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
@@ -575,25 +576,25 @@ There are some additional configurations needed in order to use Firebase Cloud M
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
-import { FcmProvider, FcmBindings } from "loopback4-notifications/fcm";
+} from 'loopback4-notifications';
+import {FcmProvider, FcmBindings} from 'loopback4-notifications/fcm';
 export class MyApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
     this.component(NotificationsComponent);
     this.bind(FcmBindings.Config).to({
-      apiKey: "API_KEY",
-      authDomain: "PROJECT_ID.firebaseapp.com",
+      apiKey: 'API_KEY',
+      authDomain: 'PROJECT_ID.firebaseapp.com',
       // The value of `databaseURL` depends on the location of the database
-      databaseURL: "https://DATABASE_NAME.firebaseio.com",
-      projectId: "PROJECT_ID",
-      storageBucket: "PROJECT_ID.appspot.com",
-      messagingSenderId: "SENDER_ID",
-      appId: "APP_ID",
+      databaseURL: 'https://DATABASE_NAME.firebaseio.com',
+      projectId: 'PROJECT_ID',
+      storageBucket: 'PROJECT_ID.appspot.com',
+      messagingSenderId: 'SENDER_ID',
+      appId: 'APP_ID',
       // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
-      measurementId: "G-MEASUREMENT_ID",
+      measurementId: 'G-MEASUREMENT_ID',
     });
     this.bind(NotificationBindings.PushProvider).toProvider(FcmProvider);
     // ...
@@ -615,10 +616,10 @@ This extension provides in-built support of Apple Push Notification service for 
 import {
   NotificationsComponent,
   NotificationBindings,
-} from "loopback4-notifications";
-import { ApnsProvider } from "loopback4-notifications/apns";
+} from 'loopback4-notifications';
+import {ApnsProvider} from 'loopback4-notifications/apns';
 export class MyApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     // ...
@@ -671,26 +672,26 @@ this.bind(NotificationBindings.PushProvider).toProvider(MyOwnProvider);
 Once the providers are set, the implementation of notification is very easy. Just add an entity implementing the Message interface provided by the component. For specific type, you can also implement specific interfaces like, SMSMessage, PushMessage, EmailMessage. See example below.
 
 ```ts
-import { Entity, model, property } from "@loopback/repository";
+import {Entity, model, property} from '@loopback/repository';
 import {
   Message,
   Receiver,
   MessageType,
   MessageOptions,
-} from "loopback4-notifications";
+} from 'loopback4-notifications';
 
 @model({
-  name: "notifications",
+  name: 'notifications',
 })
 export class Notification extends Entity implements Message {
   @property({
-    type: "string",
+    type: 'string',
     id: true,
   })
   id?: string;
 
   @property({
-    type: "string",
+    type: 'string',
     jsonSchema: {
       nullable: true,
     },
@@ -698,31 +699,31 @@ export class Notification extends Entity implements Message {
   subject?: string;
 
   @property({
-    type: "string",
+    type: 'string',
     required: true,
   })
   body: string;
 
   @property({
-    type: "object",
+    type: 'object',
     required: true,
   })
   receiver: Receiver;
 
   @property({
-    type: "number",
+    type: 'number',
     required: true,
   })
   type: MessageType;
 
   @property({
-    type: "date",
-    name: "sent",
+    type: 'date',
+    name: 'sent',
   })
   sentDate: Date;
 
   @property({
-    type: "object",
+    type: 'object',
   })
   options?: MessageOptions;
 
@@ -739,15 +740,15 @@ export class NotificationController {
   constructor(
     // ...
     @inject(NotificationBindings.NotificationProvider)
-    private readonly notifProvider: INotification
+    private readonly notifProvider: INotification,
   ) {}
 
-  @post("/notifications", {
+  @post('/notifications', {
     responses: {
       [STATUS_CODE.OK]: {
-        description: "Notification model instance",
+        description: 'Notification model instance',
         content: {
-          [CONTENT_TYPE.JSON]: { schema: getModelSchemaRef(Notification) },
+          [CONTENT_TYPE.JSON]: {schema: getModelSchemaRef(Notification)},
         },
       },
     },
@@ -756,11 +757,11 @@ export class NotificationController {
     @requestBody({
       content: {
         [CONTENT_TYPE.JSON]: {
-          schema: getModelSchemaRef(Notification, { exclude: ["id"] }),
+          schema: getModelSchemaRef(Notification, {exclude: ['id']}),
         },
       },
     })
-    notification: Omit<Notification, "id">
+    notification: Omit<Notification, 'id'>,
   ): Promise<Notification> {
     await this.notifProvider.publish(notification);
   }
