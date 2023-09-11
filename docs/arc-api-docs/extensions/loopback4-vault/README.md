@@ -20,6 +20,7 @@
 </a>
 </p>
 
+
 ## Overview
 
 A simple loopback-next extension for Hashicorp's [Vault](https://learn.hashicorp.com/vault) integration in loopback applications based on node.js vault client [node-vault](https://github.com/kr1sp1n/node-vault).
