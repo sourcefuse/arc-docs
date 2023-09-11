@@ -20,6 +20,7 @@
 </a>
 </p>
 
+
 ## Overview
 
 A Kafka Client for Loopback4 built on top of [KafkaJS](https://kafka.js.org/).
@@ -42,10 +43,10 @@ import {
   KafkaClientBindings,
   KafkaClientComponent,
   KafkaClientOptions,
-} from "loopback4-kafka-client";
+} from 'loopback4-kafka-client';
 // ...
 export class MyApplication extends BootMixin(
-  ServiceMixin(RepositoryMixin(RestApplication))
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     this.configure<KafkaClientOptions>(KafkaClientBindings.Component).to({
@@ -53,7 +54,7 @@ export class MyApplication extends BootMixin(
       topics: [Topics.First], // if you want to use producers for given topics
       connection: {
         // refer https://kafka.js.org/docs/configuration
-        brokers: [process.env.KAFKA_SERVER ?? ""],
+        brokers: [process.env.KAFKA_SERVER ?? ''],
       },
     });
     this.bind(KafkaClientBindings.ProducerConfiguration).to({
@@ -111,8 +112,8 @@ this.configure(KafkaConnectorComponentBindings.COMPONENT).to({
 @consumer<TestStream, Events.start>()
 export class StartConsumer implements IConsumer<TestStream, Events.start> {
   constructor(
-    @inject("test.handler.start")
-    public handler: StreamHandler<TestStream, Events.start>
+    @inject('test.handler.start')
+    public handler: StreamHandler<TestStream, Events.start>,
   ) {}
   topic: Topics.First = Topics.First;
   event: Events.start = Events.start;
@@ -131,7 +132,7 @@ this.bind(eventHandlerKey(Events.Start)).to((payload: StartEvent) => {
   console.log(payload);
 });
 this.bind(eventHandlerKey<TestStream, Events.Stop>(Events.Stop)).toProvider(
-  CustomEventHandlerProvider
+  CustomEventHandlerProvider,
 );
 ```
 
@@ -143,7 +144,7 @@ and then you can use the handler using the `@eventHandler` decorator -
 export class StartConsumer implements IConsumer<TestStream, Events.start> {
   constructor(
     @eventHandler<TestStream>(Events.Start)
-    public handler: StreamHandler<TestStream, Events.start>
+    public handler: StreamHandler<TestStream, Events.start>,
   ) {}
   topic: Topics.First = Topics.First;
   event: Events.start = Events.start;
