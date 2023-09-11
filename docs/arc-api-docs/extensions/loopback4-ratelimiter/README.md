@@ -46,8 +46,8 @@ For redis datasource, you have to pass the name of a loopback4 datasource
 
 ```ts
 this.bind(RateLimitSecurityBindings.CONFIG).to({
-  name: "redis",
-  type: "RedisStore",
+  name: 'redis',
+  type: 'RedisStore',
 });
 ```
 
@@ -56,7 +56,7 @@ For memcache datasource
 ```ts
 this.bind(RateLimitSecurityBindings.CONFIG).to({
   client: memoryClient,
-  type: "MemcachedStore",
+  type: 'MemcachedStore',
 });
 ```
 
