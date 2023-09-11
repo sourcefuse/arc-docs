@@ -20,6 +20,7 @@
 </a>
 </p>
 
+
 ## Overview
 
 A simple loopback-next extension for [helmetjs](https://helmetjs.github.io/) integration in loopback applications.
@@ -45,7 +46,7 @@ this.component(Loopback4HelmetComponent);
 ```ts
 this.bind(HelmetSecurityBindings.CONFIG).to({
   referrerPolicy: {
-    policy: "same-origin",
+    policy: 'same-origin',
   },
   contentSecurityPolicy: {
     directives: {
