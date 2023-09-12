@@ -41,69 +41,69 @@ In order to use this component into your LoopBack application, please follow bel
 - Add audit model class as Entity.
 
 ```ts
-import { Entity, model, property } from "@loopback/repository";
-import { Action } from "@sourceloop/audit-log";
+import {Entity, model, property} from '@loopback/repository';
+import {Action} from '@sourceloop/audit-log';
 
 @model({
-  name: "audit_logs",
+  name: 'audit_logs',
   settings: {
     strict: false,
   },
 })
 export class AuditLog extends Entity {
   @property({
-    type: "string",
+    type: 'string',
     id: true,
     generated: false,
   })
   id?: string;
 
   @property({
-    type: "string",
+    type: 'string',
     required: true,
   })
   action: Action;
 
   @property({
-    name: "acted_at",
-    type: "date",
+    name: 'acted_at',
+    type: 'date',
     required: true,
   })
   actedAt: Date;
 
   @property({
-    name: "acted_on",
-    type: "string",
+    name: 'acted_on',
+    type: 'string',
   })
   actedOn?: string;
 
   @property({
-    name: "action_key",
-    type: "string",
+    name: 'action_key',
+    type: 'string',
     required: true,
   })
   actionKey: string;
 
   @property({
-    name: "entity_id",
-    type: "string",
+    name: 'entity_id',
+    type: 'string',
     required: true,
   })
   entityId: string;
 
   @property({
-    type: "string",
+    type: 'string',
     required: true,
   })
   actor: string;
 
   @property({
-    type: "object",
+    type: 'object',
   })
   before?: object;
 
   @property({
-    type: "object",
+    type: 'object',
   })
   after?: object;
 
@@ -122,22 +122,22 @@ export class AuditLog extends Entity {
 - Using `lb4 datasource` command create your own datasource using your preferred connector. Here is an example of datasource using postgres connector. Notice the statement `static dataSourceName = AuditDbSourceName;`. Make sure you change the data source name as per this in order to ensure connection work from extension.
 
 ```ts
-import { inject, lifeCycleObserver, LifeCycleObserver } from "@loopback/core";
-import { juggler } from "@loopback/repository";
-import { AuditDbSourceName } from "@sourceloop/audit-log";
+import {inject, lifeCycleObserver, LifeCycleObserver} from '@loopback/core';
+import {juggler} from '@loopback/repository';
+import {AuditDbSourceName} from '@sourceloop/audit-log';
 
 const config = {
-  name: "audit",
-  connector: "postgresql",
-  url: "",
-  host: "",
+  name: 'audit',
+  connector: 'postgresql',
+  url: '',
+  host: '',
   port: 0,
-  user: "",
-  password: "",
-  database: "",
+  user: '',
+  password: '',
+  database: '',
 };
 
-@lifeCycleObserver("datasource")
+@lifeCycleObserver('datasource')
 export class AuditDataSource
   extends juggler.DataSource
   implements LifeCycleObserver
@@ -146,8 +146,8 @@ export class AuditDataSource
   static readonly defaultConfig = config;
 
   constructor(
-    @inject("datasources.config.audit", { optional: true })
-    dsConfig: object = config
+    @inject('datasources.config.audit', {optional: true})
+    dsConfig: object = config,
   ) {
     super(dsConfig);
   }
@@ -160,19 +160,19 @@ export class AuditDataSource
 One example below.
 
 ```ts
-import { inject } from "@loopback/core";
-import { DefaultCrudRepository } from "@loopback/repository";
-import { AuditDbSourceName } from "@sourceloop/audit-log";
+import {inject} from '@loopback/core';
+import {DefaultCrudRepository} from '@loopback/repository';
+import {AuditDbSourceName} from '@sourceloop/audit-log';
 
-import { AuditDataSource } from "../datasources";
-import { AuditLog } from "../models";
+import {AuditDataSource} from '../datasources';
+import {AuditLog} from '../models';
 
 export class AuditLogRepository extends DefaultCrudRepository<
   AuditLog,
   typeof AuditLog.prototype.id
 > {
   constructor(
-    @inject(`datasources.${AuditDbSourceName}`) dataSource: AuditDataSource
+    @inject(`datasources.${AuditDbSourceName}`) dataSource: AuditDataSource,
   ) {
     super(AuditLog, dataSource);
   }
@@ -182,16 +182,16 @@ export class AuditLogRepository extends DefaultCrudRepository<
 - The component exposes a mixin for your repository classes. Just extend your repository class with `AuditRepositoryMixin`, for all those repositories where you need audit data. See an example below. For a model `Group`, here we are extending the `GroupRepository` with `AuditRepositoryMixin`.
 
 ```ts
-import { repository } from "@loopback/repository";
-import { Group, GroupRelations } from "../models";
-import { PgdbDataSource } from "../datasources";
-import { inject, Getter, Constructor } from "@loopback/core";
-import { AuthenticationBindings, IAuthUser } from "loopback4-authentication";
-import { AuditRepositoryMixin } from "@sourceloop/audit-log";
-import { AuditLogRepository } from "./audit-log.repository";
+import {repository} from '@loopback/repository';
+import {Group, GroupRelations} from '../models';
+import {PgdbDataSource} from '../datasources';
+import {inject, Getter, Constructor} from '@loopback/core';
+import {AuthenticationBindings, IAuthUser} from 'loopback4-authentication';
+import {AuditRepositoryMixin} from '@sourceloop/audit-log';
+import {AuditLogRepository} from './audit-log.repository';
 
 const groupAuditOpts: IAuditMixinOptions = {
-  actionKey: "Group_Logs",
+  actionKey: 'Group_Logs',
 };
 
 export class GroupRepository extends AuditRepositoryMixin<
@@ -204,11 +204,11 @@ export class GroupRepository extends AuditRepositoryMixin<
   >
 >(DefaultCrudRepository, groupAuditOpts) {
   constructor(
-    @inject("datasources.pgdb") dataSource: PgdbDataSource,
+    @inject('datasources.pgdb') dataSource: PgdbDataSource,
     @inject.getter(AuthenticationBindings.CURRENT_USER)
     public getCurrentUser: Getter<IAuthUser>,
-    @repository.getter("AuditLogRepository")
-    public getAuditLogRepository: Getter<AuditLogRepository>
+    @repository.getter('AuditLogRepository')
+    public getAuditLogRepository: Getter<AuditLogRepository>,
   ) {
     super(Group, dataSource, getCurrentUser);
   }
@@ -224,7 +224,7 @@ This will create all insert, update, delete audits for this model.
 - Option to disable audit logging on specific functions by just passing `noAudit:true` flag with options
 
 ```ts
-create(data, { noAudit: true });
+create(data, {noAudit: true});
 ```
 
 - The Actor field is now configurable and can save any string type value in the field.
@@ -255,7 +255,7 @@ export interface User<ID = string, TID = string, UTID = string> {
 1. All you need to do is bind a User key to the ActorIdKey in application.ts
 
 ```ts
-this.bind(AuthServiceBindings.ActorIdKey).to("username");
+this.bind(AuthServiceBindings.ActorIdKey).to('username');
 ```
 
 2. Pass the actorIdKey argument in the constructor
@@ -268,16 +268,16 @@ public actorIdKey?: ActorId,
 - The package exposes a conditional mixin for your repository classes. Just extend your repository class with `ConditionalAuditRepositoryMixin`, for all those repositories where you need audit data based on condition whether `ADD_AUDIT_LOG_MIXIN` is set true. See an example below. For a model `Group`, here we are extending the `GroupRepository` with `AuditRepositoryMixin`.
 
 ```ts
-import { repository } from "@loopback/repository";
-import { Group, GroupRelations } from "../models";
-import { PgdbDataSource } from "../datasources";
-import { inject, Getter, Constructor } from "@loopback/core";
-import { AuthenticationBindings, IAuthUser } from "loopback4-authentication";
-import { ConditionalAuditRepositoryMixin } from "@sourceloop/audit-log";
-import { AuditLogRepository } from "./audit-log.repository";
+import {repository} from '@loopback/repository';
+import {Group, GroupRelations} from '../models';
+import {PgdbDataSource} from '../datasources';
+import {inject, Getter, Constructor} from '@loopback/core';
+import {AuthenticationBindings, IAuthUser} from 'loopback4-authentication';
+import {ConditionalAuditRepositoryMixin} from '@sourceloop/audit-log';
+import {AuditLogRepository} from './audit-log.repository';
 
 const groupAuditOpts: IAuditMixinOptions = {
-  actionKey: "Group_Logs",
+  actionKey: 'Group_Logs',
 };
 
 export class GroupRepository extends ConditionalAuditRepositoryMixin(
@@ -286,14 +286,14 @@ export class GroupRepository extends ConditionalAuditRepositoryMixin(
     typeof Group.prototype.id,
     GroupRelations
   >,
-  groupAuditOpts
+  groupAuditOpts,
 ) {
   constructor(
-    @inject("datasources.pgdb") dataSource: PgdbDataSource,
+    @inject('datasources.pgdb') dataSource: PgdbDataSource,
     @inject.getter(AuthenticationBindings.CURRENT_USER)
     public getCurrentUser: Getter<IAuthUser>,
-    @repository.getter("AuditLogRepository")
-    public getAuditLogRepository: Getter<AuditLogRepository>
+    @repository.getter('AuditLogRepository')
+    public getAuditLogRepository: Getter<AuditLogRepository>,
   ) {
     super(Group, dataSource, getCurrentUser);
   }
@@ -306,7 +306,7 @@ Incase you dont have current user binded in your application context and wish to
 options just like
 
 ```ts
-await productRepo.create(product, { noAudit: false, actorId: "userId" });
+await productRepo.create(product, {noAudit: false, actorId: 'userId'});
 ```
 
 ## Using with Sequelize ORM
@@ -321,13 +321,13 @@ If your loopback project is already using `SequelizeCrudRepository` from [@loopb
 import {
   AuditRepositoryMixin,
   AuditLogRepository,
-} from "@sourceloop/audit-log/sequelize";
+} from '@sourceloop/audit-log/sequelize';
 ```
 
 2. The Audit datasource's parent class should be `SequelizeDataSource`.
 
 ```ts
-import { SequelizeDataSource } from "@loopback/sequelize";
+import {SequelizeDataSource} from '@loopback/sequelize';
 
 export class AuditDataSource
   extends SequelizeDataSource
@@ -337,8 +337,8 @@ export class AuditDataSource
   static readonly defaultConfig = config;
 
   constructor(
-    @inject("datasources.config.audit", { optional: true })
-    dsConfig: object = config
+    @inject('datasources.config.audit', {optional: true})
+    dsConfig: object = config,
   ) {
     super(dsConfig);
   }
