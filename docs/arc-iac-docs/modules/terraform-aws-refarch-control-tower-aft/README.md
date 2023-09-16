@@ -128,4 +128,4 @@ the pipeline will kick off and tag the latest git commit.
 ## Authors
 
 This project is authored by:
-- SourceFuse
+- SourceFuse ARC Team
