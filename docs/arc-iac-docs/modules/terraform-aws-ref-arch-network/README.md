@@ -17,12 +17,102 @@ Create the following resources in a single region.
 * Configurable VPC Endpoints
 
 ## Usage
-See the `example` folder for a complete example.
+See the `examples` folder for a complete example.
 
 ```shell
 
 module "network" {
-  source = "git::https://github.com/sourcefuse/terraform-aws-ref-arch-network"
+  source = "git::https://github.com/sourcefuse/terraform-aws-ref-arch-network?ref=2.4.1"
+  namespace                   = var.namespace
+  environment                 = var.environment
+  availability_zones          = var.availability_zones
+  vpc_ipv4_primary_cidr_block = var.vpc_ipv4_primary_cidr_block
+  client_vpn_enabled          = false
+  tags                        = module.tags.tags
+  client_vpn_authorization_rules = [
+    {
+      target_network_cidr  = var.vpc_ipv4_primary_cidr_block
+      authorize_all_groups = true
+      description          = "default authorization group to allow all authenticated clients to access the vpc"
+    }
+  ]
+
+  vpc_endpoint_config = {
+    s3         = true
+    kms        = false
+    cloudwatch = false
+    elb        = false
+    dynamodb   = true
+    ec2        = false
+    sns        = true
+    sqs        = true
+  }
+  gateway_endpoint_route_table_filter = ["*private*"]
+}
+
+```
+## custom-subnets example
+
+```shell
+
+module "network" {
+  source = "git::https://github.com/sourcefuse/terraform-aws-ref-arch-network?ref=2.4.1"
+
+  namespace                   = var.namespace
+  environment                 = var.environment
+  availability_zones          = var.availability_zones
+  vpc_ipv4_primary_cidr_block = var.vpc_ipv4_primary_cidr_block
+  client_vpn_enabled          = true
+
+  ## custom subnets
+  custom_subnets_enabled = true
+  custom_private_subnets = [
+    {
+      name              = "${var.namespace}-${var.environment}-private-${var.region}a"
+      availability_zone = "${var.region}a"
+      cidr_block        = "10.0.0.0/19"
+    },
+    {
+      name              = "${var.namespace}-${var.environment}-private-${var.region}b"
+      availability_zone = "${var.region}b"
+      cidr_block        = "10.0.64.0/19"
+    }
+  ]
+  custom_public_subnets = [
+    {
+      name              = "${var.namespace}-${var.environment}-public-${var.region}a"
+      availability_zone = "${var.region}a"
+      cidr_block        = "10.0.96.0/20"
+    },
+    {
+      name              = "${var.namespace}-${var.environment}-public-${var.region}b"
+      availability_zone = "${var.region}b"
+      cidr_block        = "10.0.112.0/20"
+    }
+  ]
+
+  client_vpn_authorization_rules = [
+    {
+      target_network_cidr  = var.vpc_ipv4_primary_cidr_block
+      authorize_all_groups = true
+      description          = "default authorization group to allow all authenticated clients to access the vpc"
+    }
+  ]
+  ## if no vpc endpoint is required then you can remove this block with gateway_endpoint_route_table_filter
+  vpc_endpoint_config = {
+    s3         = true
+    kms        = false
+    cloudwatch = false
+    elb        = false
+    dynamodb   = true
+    ec2        = false
+    sns        = true
+    sqs        = true
+  }
+
+  gateway_endpoint_route_table_filter = ["*private*"]
+
+  tags = module.tags.tags
 }
 
 ```
@@ -86,7 +176,6 @@ respectively to use the ca certificate and key generated in this module for mutu
 | [aws_vpc_endpoint.sqs_endpoint](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc_endpoint) | resource |
 | [aws_vpn_gateway.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpn_gateway) | resource |
 | [aws_iam_policy_document.dynamodb](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
-| [aws_iam_policy_document.ec2](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 | [aws_route_tables.gateway](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/route_tables) | data source |
 
 ## Inputs
