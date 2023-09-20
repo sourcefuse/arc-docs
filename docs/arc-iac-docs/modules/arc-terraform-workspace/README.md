@@ -8,7 +8,7 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Worksp
 
 ## Usage
 
-To see a Microsoft AD example, check out the [main.tf](https://github.com/sourcefuse/arc-terraform-workspace/blob/main/example/Microsoft-AD/main.tf) file in the example folder.  
+To see a Microsoft AD example, check out the [main.tf](https://github.com/sourcefuse/arc-terraform-workspace/blob/main/examples/Microsoft-AD/main.tf) file in the example folder.  
 
 ```hcl
 module "workspaces" {
