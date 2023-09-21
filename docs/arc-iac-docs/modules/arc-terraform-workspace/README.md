@@ -11,7 +11,7 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Worksp
 To see a Microsoft AD example, check out the [main.tf](https://github.com/sourcefuse/arc-terraform-workspace/blob/main/examples/Microsoft-AD/main.tf) file in the example folder.  
 
 ```hcl
-module "workspaces" {
+module "microsoft-ad-workspace" {
   source = "../../"
   region                             = var.region
   vpc_id                             = data.aws_vpc.vpc.id
@@ -26,10 +26,38 @@ module "workspaces" {
   workspaces_self_service_access_arn = data.aws_iam_policy.workspaces_self_service_access.arn
   user_names                         = var.user_names
   workspace_properties               = var.workspace_properties
+  volume_encryption_key              = var.volume_encryption_key
   ip_rules                           = var.ip_rules // change it according to your requirement
   tags                               = module.tags.tags
 }
 ```
+
+To see a AD Connector example, check out the [main.tf](https://github.com/sourcefuse/arc-terraform-workspace/blob/main/examples/AD-Connector/main.tf) file in the example folder.
+
+```hcl
+module "ad-connector-workspace" {
+  source = "../../"
+  region                             = var.region
+  vpc_id                             = data.aws_vpc.vpc.id
+  subnet_ids                         = data.aws_subnets.private.ids
+  directory_type                     = var.directory_type
+  directory_name                     = var.directory_name
+  directory_size                     = var.directory_size
+  self_service_permissions           = var.self_service_permissions
+  workspace_access_properties        = var.workspace_access_properties
+  workspace_creation_properties      = var.workspace_creation_properties
+  workspaces_service_access_arn      = data.aws_iam_policy.workspaces_service_access.arn
+  workspaces_self_service_access_arn = data.aws_iam_policy.workspaces_self_service_access.arn
+  user_names                         = var.user_names
+  customer_dns_ips                   = var.customer_dns_ips
+  customer_username                  = var.customer_username
+  workspace_properties               = var.workspace_properties
+  volume_encryption_key              = var.volume_encryption_key
+  ip_rules                           = var.ip_rules // change it according to your requirement
+  tags                               = module.tags.tags
+}
+```
+Both Examples look similar but the difference between them is ```customer_dns_ips``` and ```customer_username``` which is required for ADConnector but not required for AWS Managed Microsoft-AD
 ## IMPORTANT NOTE
 
 For user_names attribute which is shown in example. There are two approaches you can follow
@@ -113,6 +141,7 @@ No modules.
 | <a name="input_directory_size"></a> [directory\_size](#input\_directory\_size) | The size of the directory (Small or Large are accepted values). Large by default. | `string` | `"Small"` | no |
 | <a name="input_directory_type"></a> [directory\_type](#input\_directory\_type) | Type of the directory service (MicrosoftAD or ADConnector). | `string` | `"MicrosoftAD"` | no |
 | <a name="input_egress_rules"></a> [egress\_rules](#input\_egress\_rules) | List of egress rules | <pre>list(object({<br>    from_port   = number<br>    to_port     = number<br>    protocol    = any<br>    cidr_blocks = optional(list(string), [])<br>  }))</pre> | <pre>[<br>  {<br>    "cidr_blocks": [<br>      "0.0.0.0/0"<br>    ],<br>    "from_port": 0,<br>    "protocol": -1,<br>    "to_port": 0<br>  }<br>]</pre> | no |
+| <a name="input_iam_role_name"></a> [iam\_role\_name](#input\_iam\_role\_name) | workspace iam-role-name | `string` | `"workspaces_DefaultRole"` | no |
 | <a name="input_ingress_rules"></a> [ingress\_rules](#input\_ingress\_rules) | List of ingress rules | <pre>list(object({<br>    from_port   = number<br>    to_port     = number<br>    protocol    = string<br>    cidr_blocks = optional(list(string), [])<br>  }))</pre> | <pre>[<br>  {<br>    "cidr_blocks": [<br>      "0.0.0.0/0"<br>    ],<br>    "from_port": 443,<br>    "protocol": "tcp",<br>    "to_port": 443<br>  }<br>]</pre> | no |
 | <a name="input_ip_group_description"></a> [ip\_group\_description](#input\_ip\_group\_description) | Description of the IP access control group | `string` | `"nat-gateway-ip-list control group"` | no |
 | <a name="input_ip_group_name"></a> [ip\_group\_name](#input\_ip\_group\_name) | Name of the IP access control group | `string` | `"nat-gateway-ip-list"` | no |
@@ -121,6 +150,8 @@ No modules.
 | <a name="input_security_group_description"></a> [security\_group\_description](#input\_security\_group\_description) | Description of the security group | `string` | `"My security group description"` | no |
 | <a name="input_security_group_name"></a> [security\_group\_name](#input\_security\_group\_name) | Name of the security group | `string` | `"workspace-SG"` | no |
 | <a name="input_self_service_permissions"></a> [self\_service\_permissions](#input\_self\_service\_permissions) | Self-service permissions configuration. | <pre>object({<br>    change_compute_type  = bool<br>    increase_volume_size = bool<br>    rebuild_workspace    = bool<br>    restart_workspace    = bool<br>    switch_running_mode  = bool<br>  })</pre> | <pre>{<br>  "change_compute_type": false,<br>  "increase_volume_size": false,<br>  "rebuild_workspace": false,<br>  "restart_workspace": true,<br>  "switch_running_mode": false<br>}</pre> | no |
+| <a name="input_ssm_ad_connector_parameter_name"></a> [ssm\_ad\_connector\_parameter\_name](#input\_ssm\_ad\_connector\_parameter\_name) | ssm parameter name for microsoft AD | `string` | `"/workspace/Connector/password"` | no |
+| <a name="input_ssm_parameter_name"></a> [ssm\_parameter\_name](#input\_ssm\_parameter\_name) | ssm parameter name for microsoft AD | `string` | `"/workspace/microsoft-ad/password"` | no |
 | <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | private subnet\_ids | `list(string)` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | tags to add to your resources | `map(string)` | n/a | yes |
 | <a name="input_user_names"></a> [user\_names](#input\_user\_names) | List of usernames to create workspaces for | `map(string)` | `{}` | no |
