@@ -18,7 +18,7 @@ nav:
           - CloudFront: "arc-iac-docs/modules/terraform-aws-refarch-cloudfront"
           - Waf: "arc-iac-docs/modules/terraform-aws-refarch-waf"
           - Vpn: "arc-iac-docs/modules/terraform-aws-refarch-vpn"
-          - Workspaces: "arc-iac-docs/modules/arc-terraform-workspace"
+          - Workspaces: "arc-iac-docs/modules/terraform-aws-arc-workspace"
           - Backstage:
             - ECS: "arc-iac-docs/modules/arc-backstage-ecs-app"
       - Cloud Native:
