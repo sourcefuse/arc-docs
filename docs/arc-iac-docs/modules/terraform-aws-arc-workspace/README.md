@@ -12,8 +12,8 @@ To see a Microsoft AD example, check out the [main.tf](https://github.com/source
 
 ```hcl
 module "microsoft-ad-workspace" {
-  source                             = "sourcefuse/workspace/aws"
-  version                            = "1.0.7"
+  source                             = "sourcefuse/arc-workspace/aws"
+  version                            = "1.0.9"
   region                             = var.region
   vpc_id                             = data.aws_vpc.vpc.id
   subnet_ids                         = data.aws_subnets.private.ids
@@ -37,8 +37,8 @@ To see a AD Connector example, check out the [main.tf](https://github.com/source
 
 ```hcl
 module "ad-connector-workspace" {
-  source                             = "sourcefuse/workspace/aws"
-  version                            = "1.0.7"
+  source                             = "sourcefuse/arc-workspace/aws"
+  version                            = "1.0.9"
   region                             = var.region
   vpc_id                             = data.aws_vpc.vpc.id
   subnet_ids                         = data.aws_subnets.private.ids
