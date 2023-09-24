@@ -1,6 +1,6 @@
-# [terraform-aws-refarch-opensearch](https://github.com/sourcefuse/terraform-aws-refarch-opensearch)
+# [terraform-aws-arc-opensearch](https://github.com/sourcefuse/terraform-aws-arc-opensearch)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-refarch-opensearch/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-opensearch/actions/workflows/snyk.yaml)
+[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-opensearch/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-opensearch/actions/workflows/snyk.yaml)
 ## Overview
 Terraform module for supporting AWS OpenSearch. Creates an admin role and outputs parameters to SSM for downstream utilization or additional automation.
 
@@ -13,8 +13,8 @@ See the `example` folder for a working module example.
 ## opensearch
 ################################################################################
 module "opensearch" {
-  source = "git::https://github.com/sourcefuse/terraform-aws-refarch-opensearch"
-
+  source                         = "sourcefuse/arc-opensearch/aws"
+  version                        = "0.1.2"
   environment                    = var.environment
   namespace                      = var.namespace
   vpc_id                         = data.aws_vpc.default.id
@@ -145,4 +145,4 @@ the pipeline will kick off and tag the latest git commit.
 ## Authors
 
 This project is authored by:  
-* SourceFuse  
+* SourceFuse ARC Team
