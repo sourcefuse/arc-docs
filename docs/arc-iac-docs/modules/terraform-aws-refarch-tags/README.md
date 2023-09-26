@@ -1,17 +1,17 @@
-# [terraform-aws-refarch-tags](https://github.com/sourcefuse/terraform-aws-refarch-tags)
+# [terraform-aws-arc-tags](https://github.com/sourcefuse/terraform-aws-arc-tags)
 
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-refarch-tags/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-tags/actions/workflows/snyk.yaml)
 
-## terraform-aws-refarch-tags
+## terraform-aws-arc-tags
 
-This module is responsible for managing the tags we use at SourceFuse when creating resources in AWS.  
+This module is responsible for managing the tags we use at SourceFuse when creating resources in AWS.
 
 ## Usage
 
 ```hcl
-module "terraform-aws-refarch-tags" {
-  source = "git::https://github.com/sourcefuse/terraform-aws-refarch-tags"
-
+module "terraform-aws-arc-tags" {
+  source      = "sourcefuse/arc-tags/aws"
+  version     = "1.2.2"
   environment = var.environment
   project     = "Example"
 
@@ -21,12 +21,14 @@ module "terraform-aws-refarch-tags" {
   }
 }
 ```
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
-| Name | Version |
-|------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.4 |
+| Name                                                                     | Version |
+| ------------------------------------------------------------------------ | ------- |
+| <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | ~> 1.4  |
 
 ## Providers
 
@@ -42,21 +44,23 @@ No resources.
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_environment"></a> [environment](#input\_environment) | The environment the resource will be created in. | `string` | n/a | yes |
-| <a name="input_extra_tags"></a> [extra\_tags](#input\_extra\_tags) | Additional tags to add to your resources. | `map(string)` | `{}` | no |
-| <a name="input_project"></a> [project](#input\_project) | The name of the project being worked on. | `string` | n/a | yes |
+| Name                                                               | Description                                      | Type          | Default | Required |
+| ------------------------------------------------------------------ | ------------------------------------------------ | ------------- | ------- | :------: |
+| <a name="input_environment"></a> [environment](#input_environment) | The environment the resource will be created in. | `string`      | n/a     |   yes    |
+| <a name="input_extra_tags"></a> [extra_tags](#input_extra_tags)    | Additional tags to add to your resources.        | `map(string)` | `{}`    |    no    |
+| <a name="input_project"></a> [project](#input_project)             | The name of the project being worked on.         | `string`      | n/a     |   yes    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_extra_tags"></a> [extra\_tags](#output\_extra\_tags) | n/a |
-| <a name="output_tags"></a> [tags](#output\_tags) | n/a |
+| Name                                                              | Description |
+| ----------------------------------------------------------------- | ----------- |
+| <a name="output_extra_tags"></a> [extra_tags](#output_extra_tags) | n/a         |
+| <a name="output_tags"></a> [tags](#output_tags)                   | n/a         |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 <!-- BEGIN_TF_DOCS -->
+
 ## Requirements
 
 No requirements.
@@ -75,18 +79,19 @@ No resources.
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_environment"></a> [environment](#input\_environment) | The environment the resource will be created in. | `any` | n/a | yes |
-| <a name="input_extra_tags"></a> [extra\_tags](#input\_extra\_tags) | Additional tags to add to your resources. | `map(string)` | `{}` | no |
-| <a name="input_project"></a> [project](#input\_project) | The name of the project being worked on. | `any` | n/a | yes |
+| Name                                                               | Description                                      | Type          | Default | Required |
+| ------------------------------------------------------------------ | ------------------------------------------------ | ------------- | ------- | :------: |
+| <a name="input_environment"></a> [environment](#input_environment) | The environment the resource will be created in. | `any`         | n/a     |   yes    |
+| <a name="input_extra_tags"></a> [extra_tags](#input_extra_tags)    | Additional tags to add to your resources.        | `map(string)` | `{}`    |    no    |
+| <a name="input_project"></a> [project](#input_project)             | The name of the project being worked on.         | `any`         | n/a     |   yes    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_extra_tags"></a> [extra\_tags](#output\_extra\_tags) | n/a |
-| <a name="output_tags"></a> [tags](#output\_tags) | n/a |
+| Name                                                              | Description |
+| ----------------------------------------------------------------- | ----------- |
+| <a name="output_extra_tags"></a> [extra_tags](#output_extra_tags) | n/a         |
+| <a name="output_tags"></a> [tags](#output_tags)                   | n/a         |
+
 <!-- END_TF_DOCS -->
 
 ### Git commits
@@ -98,4 +103,5 @@ For Example
 ```sh
 git commit -m "your commit message #major"
 ```
+
 By specifying this , it will bump the version and if you dont specify this in your commit message then by default it will consider patch and will bump that accordingly
