@@ -1,4 +1,4 @@
-# [Terraform Module: Bootstrap](https://github.com/sourcefuse/terraform-module-aws-bootstrap)
+# [terraform-aws-arc-bootstrap](https://github.com/sourcefuse/terraform-aws-arc-bootstrap)
 
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-module-aws-bootstrap/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-module-aws-bootstrap/actions/workflows/snyk.yaml)
 
@@ -7,8 +7,8 @@ This module creates and configures a S3 bucket backend and DynamoDB lock table f
 ## Getting Started  
 ```hcl
 module "bootstrap" {
-  source = "git::https://github.com/sourcefuse/terraform-module-aws-bootstrap"
-
+  source  = "sourcefuse/arc-bootstrap/aws"
+  version = "1.0.9"
   bucket_name              = var.bucket_name
   dynamodb_name            = var.dynamodb_name
   dynamo_kms_master_key_id = var.dynamo_kms_master_key_id
@@ -20,7 +20,7 @@ module "bootstrap" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.8 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.4 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 3.0 |
 
 ## Providers
