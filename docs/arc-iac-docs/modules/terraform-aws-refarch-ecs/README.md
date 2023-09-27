@@ -27,7 +27,8 @@ Our approach to ECS Fargate clusters is to provision a cluster and allow downstr
 
 ```hcl
 module "ecs" {
-  source = "git::https://github.com/sourcefuse/terraform-aws-refarch-ecs"
+  source      = "sourcefuse/arc-ecs/aws"
+  version     = "1.3.7"
 
   environment = var.environment
   namespace   = var.namespace
@@ -226,4 +227,4 @@ By specifying this , it will bump the version and if you don't specify this in y
 ## Authors
 
 This project is authored by:
-- SourceFuse
+- SourceFuse ARC Team
