@@ -1,4 +1,4 @@
-# [terraform-aws-ref-arch-db](https://github.com/sourcefuse/terraform-aws-ref-arch-db)
+# [terraform-aws-arc-db](https://github.com/sourcefuse/terraform-aws-arc-db)
 
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-ref-arch-db/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-ref-arch-db/actions/workflows/snyk.yaml)
 
@@ -8,11 +8,12 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Aurora
 
 ## Usage
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.
+To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-db/blob/main/example/main.tf) file in the example folder.
 
 ```hcl
 module "aurora" {
-  source = "git::https://github.com/sourcefuse/terraform-aws-ref-arch-db"
+  source  = "sourcefuse/arc-db/aws"
+  version = "2.0.3"
 
   environment              = "dev"
   namespace                = "arc"
@@ -266,4 +267,4 @@ go test
 
 This project is authored by:
 
-- SourceFuse
+- SourceFuse ARC Team
