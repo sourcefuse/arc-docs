@@ -1,4 +1,4 @@
-# [terraform-aws-refarch-waf](https://github.com/sourcefuse/terraform-aws-refarch-waf)
+# [terraform-aws-arc-waf](https://github.com/sourcefuse/terraform-aws-arc-waf)
 
 [![Test](https://github.com/sourcefuse/terraform-aws-refarch-waf/actions/workflows/test.yml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-waf/actions/workflows/test.yml)
 ## Overview
@@ -7,11 +7,12 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing WAF.
 
 ## Usage
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.  
+To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-waf/blob/main/example/main.tf) file in the example folder.  
 
 ```hcl
 module "this" {
-  source = "git::https://github.com/sourcefuse/terraform-aws-refarch-waf"
+  source  = "sourcefuse/arc-waf/aws"
+  version = "0.0.4"
   ## web acl
   create_web_acl         = true
   web_acl_name           = "${var.namespace}-${var.environment}-waf-web-acl"
