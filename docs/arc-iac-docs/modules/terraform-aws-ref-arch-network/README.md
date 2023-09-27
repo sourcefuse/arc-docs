@@ -22,7 +22,8 @@ See the `examples` folder for a complete example.
 ```shell
 
 module "network" {
-  source = "git::https://github.com/sourcefuse/terraform-aws-ref-arch-network?ref=2.4.1"
+  source  = "sourcefuse/arc-network/aws"
+  version = "2.4.2"
   namespace                   = var.namespace
   environment                 = var.environment
   availability_zones          = var.availability_zones
@@ -56,7 +57,8 @@ module "network" {
 ```shell
 
 module "network" {
-  source = "git::https://github.com/sourcefuse/terraform-aws-ref-arch-network?ref=2.4.1"
+  source  = "sourcefuse/arc-network/aws"
+  version = "2.4.2"
 
   namespace                   = var.namespace
   environment                 = var.environment
