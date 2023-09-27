@@ -1,4 +1,4 @@
-# [terraform-aws-refarch-cloudfront](https://github.com/sourcefuse/terraform-aws-refarch-cloudfront)
+# [terraform-aws-arc-cloudfront](https://github.com/sourcefuse/terraform-aws-arc-cloudfront)
 
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-refarch-cloudfront/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-cloudfront/actions/workflows/snyk.yaml)
 
@@ -8,11 +8,12 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Cloudf
 
 ## Usage
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.
+To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-cloudfront/blob/main/example/main.tf) file in the example folder.
 
 ``` hcl
 module "tags" {
-  source = "git::https://github.com/sourcefuse/terraform-aws-refarch-tags?ref=1.1.0"
+  source  = "sourcefuse/arc-tags/aws"
+  version = "1.2.3"
 
   environment = "dev"
   project     = "test"
@@ -23,7 +24,8 @@ module "tags" {
 }
 
 module "cloudfront" {
-  source = "../"
+  source  = "sourcefuse/arc-cloudfront/aws"
+  version = "4.0.1"
 
   origins = [{
     origin_type   = "custom",
