@@ -1,4 +1,4 @@
-# [terraform-aws-refarch-vpn](https://github.com/sourcefuse/terraform-aws-refarch-vpn)
+# [terraform-aws-arc-vpn](https://github.com/sourcefuse/terraform-aws-arc-vpn)
 
 [![Snyk](https://github.com/sourcefuse/terraform-aws-refarch-vpn/actions/workflows/test.yml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-vpn/actions/workflows/test.yml)
 
@@ -8,11 +8,12 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing a Clie
 
 ## Usage
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.
+To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-vpn/blob/main/example/main.tf) file in the example folder.
 
 ```hcl
 module "this" {
-  source = "git::https://github.com/sourcefuse/terraform-aws-refarch-vpn"
+  source  = "sourcefuse/arc-vpn/aws"
+  version = "0.0.4"
   vpc_id = data.aws_vpc.this.id
 
   authentication_options_type                       = "certificate-authentication"
