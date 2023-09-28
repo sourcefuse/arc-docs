@@ -1,4 +1,4 @@
-# [terraform-aws-refarch-control-tower-aft](https://github.com/sourcefuse/terraform-aws-refarch-control-tower-aft)
+# [terraform-aws-arc-control-tower-aft](https://github.com/sourcefuse/terraform-aws-arc-control-tower-aft)
 
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-refarch-control-tower-aft/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-control-tower-aft/actions/workflows/snyk.yaml)
 ## Overview
@@ -16,7 +16,8 @@ To see a full example, check out the [main.tf](https://github.com/sourcefuse/ter
 ## control tower
 ################################################################################
 module "aft" {
-  source = "git::https://github.com/sourcefuse/terraform-aws-refarch-control-tower-aft"
+  source  = "sourcefuse/arc-control-tower-aft/aws"
+  version = "0.3.6"
 
   account_ids                        = var.account_ids
   aft_vpc_cidr                       = var.aft_vpc_cidr
