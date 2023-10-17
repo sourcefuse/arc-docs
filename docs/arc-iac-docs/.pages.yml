@@ -18,6 +18,7 @@ nav:
           - CloudFront: "arc-iac-docs/modules/terraform-aws-refarch-cloudfront"
           - Healthcheck: "arc-iac-docs/modules/terraform-aws-arc-healthcheck"
           - KMS: "arc-iac-docs/modules/terraform-aws-arc-kms"
+          - ARC Common Data: "arc-iac-docs/modules/terraform-aws-arc-common-data"
           - Waf: "arc-iac-docs/modules/terraform-aws-refarch-waf"
           - Vpn: "arc-iac-docs/modules/terraform-aws-refarch-vpn"
           - Workspaces: "arc-iac-docs/modules/terraform-aws-arc-workspace"
