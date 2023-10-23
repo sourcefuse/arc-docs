@@ -13,6 +13,7 @@ Upstream dependencies:
 * Secret in secrets manager with the following properties.
 ```json
 {
+  "ENABLE_GITHUB_SYNC": "<<To enable Github sync while bootstrap>>",
   "POSTGRES_USER": "<<Backstage PostgreSQL service account username>>",
   "POSTGRES_PASSWORD": "<<Backstage PostgreSQL account password>>",
   "GITHUB_TOKEN": "<<GitHub PAT for API access>>",
