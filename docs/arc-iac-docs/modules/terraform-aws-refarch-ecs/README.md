@@ -137,8 +137,9 @@ module "ecs" {
 | <a name="output_alb_certificate_arn"></a> [alb\_certificate\_arn](#output\_alb\_certificate\_arn) | ACM Certificate ARN |
 | <a name="output_alb_dns_name"></a> [alb\_dns\_name](#output\_alb\_dns\_name) | External DNS name to the ALB |
 | <a name="output_alb_dns_zone_id"></a> [alb\_dns\_zone\_id](#output\_alb\_dns\_zone\_id) | External DNS name to the ALB |
-| <a name="output_alb_https_listener_arn"></a> [alb\_https\_listener\_arn](#output\_alb\_https\_listener\_arn) | HTTPs listener ARN for downstream services to use |
-| <a name="output_alb_security_group_id"></a> [alb\_security\_group\_id](#output\_alb\_security\_group\_id) | HTTPs listener ARN for downstream services to use |
+| <a name="output_alb_http_listener_arn"></a> [alb\_http\_listener\_arn](#output\_alb\_http\_listener\_arn) | HTTP listener ARN for downstream services to use |
+| <a name="output_alb_https_listener_arn"></a> [alb\_https\_listener\_arn](#output\_alb\_https\_listener\_arn) | HTTPS listener ARN for downstream services to use |
+| <a name="output_alb_security_group_id"></a> [alb\_security\_group\_id](#output\_alb\_security\_group\_id) | ALB Security Group |
 | <a name="output_cluster_arn"></a> [cluster\_arn](#output\_cluster\_arn) | ECS Cluster ARN |
 | <a name="output_cluster_id"></a> [cluster\_id](#output\_cluster\_id) | ECS Cluster ID |
 | <a name="output_cluster_name"></a> [cluster\_name](#output\_cluster\_name) | ECS Cluster name |
