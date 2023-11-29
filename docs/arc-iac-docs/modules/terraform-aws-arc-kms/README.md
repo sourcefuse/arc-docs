@@ -1,4 +1,6 @@
-# terraform-aws-arc-kms
+# [terraform-aws-arc-kms](https://github.com/sourcefuse/terraform-aws-arc-kms)
+
+[![snyk](https://github.com/sourcefuse/terraform-aws-arc-kms/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-kms/actions/workflows/snyk.yaml)
 
 ## Overview
 
@@ -11,7 +13,8 @@ To see a full example, check out the [main.tf](https://github.com/sourcefuse/ter
 ```hcl
 
 module "kms" {
-  source                  = "../" # Use the local path to your kms-module directory
+  source  = "sourcefuse/arc-kms/aws"
+  version = "0.0.1"
   enabled                 = var.enabled
   deletion_window_in_days = var.deletion_window_in_days
   enable_key_rotation     = var.enable_key_rotation
