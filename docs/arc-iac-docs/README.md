@@ -36,6 +36,9 @@ For enterprise grade projects, ARC IaC is an excellent foundation and accelerato
   * [KMS](modules/terraform-aws-arc-kms/README.md)
   * [WAF](modules/terraform-aws-refarch-waf/README.md)
   * [VPN](modules/terraform-aws-refarch-vpn/README.md)
+  * [Postgres-Management](modules/terraform-postgresql-aws-arc-mgmt/README.md)
+  * [Security](modules/terraform-aws-arc-security/README.md)
+  * [Billing](modules/terraform-aws-arc-billing/README.md)
 * Cloud Native
   * [Kubernetes App](modules/terraform-k8s-app/README.md)
 
