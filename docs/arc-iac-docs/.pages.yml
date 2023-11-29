@@ -22,6 +22,9 @@ nav:
           - Waf: "arc-iac-docs/modules/terraform-aws-refarch-waf"
           - Vpn: "arc-iac-docs/modules/terraform-aws-refarch-vpn"
           - Workspaces: "arc-iac-docs/modules/terraform-aws-arc-workspace"
+          - Postgres-Management: "arc-iac-docs/modules/terraform-postgresql-aws-arc-mgmt"
+          - Security: "arc-iac-docs/modules/terraform-aws-arc-security"
+          - Billing: "arc-iac-docs/modules/terraform-aws-arc-billing"
           - Backstage:
             - ECS: "arc-iac-docs/modules/arc-backstage-ecs-app"
       - Cloud Native:
