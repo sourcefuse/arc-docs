@@ -35,3 +35,48 @@ required_providers {
   ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.4 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.0 |
+| <a name="requirement_postgresql"></a> [postgresql](#requirement\_postgresql) | ~> 1.21 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.28.0 |
+| <a name="provider_postgresql"></a> [postgresql](#provider\_postgresql) | 1.21.0 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [aws_ssm_parameter.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ssm_parameter) | resource |
+| [postgresql_database.pg_db](https://registry.terraform.io/providers/cyrilgdn/postgresql/latest/docs/resources/database) | resource |
+| [postgresql_default_privileges.pg_default_privileges](https://registry.terraform.io/providers/cyrilgdn/postgresql/latest/docs/resources/default_privileges) | resource |
+| [postgresql_role.pg_role](https://registry.terraform.io/providers/cyrilgdn/postgresql/latest/docs/resources/role) | resource |
+| [postgresql_schema.pg_schema](https://registry.terraform.io/providers/cyrilgdn/postgresql/latest/docs/resources/schema) | resource |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_pg_roles"></a> [pg\_roles](#input\_pg\_roles) | A map of objects where each key-value pair represents a PostgreSQL role | <pre>map(object({<br>    postgres_role_name = string<br>    login              = string<br>    password           = string<br>  }))</pre> | n/a | yes |
+| <a name="input_pg_ssm_parameters"></a> [pg\_ssm\_parameters](#input\_pg\_ssm\_parameters) | postgresql SSM parameters | <pre>map(object({<br>    name     = string<br>    type     = string<br>    password = string<br>  }))</pre> | n/a | yes |
+| <a name="input_postgresql_database"></a> [postgresql\_database](#input\_postgresql\_database) | A map where each key-value pair represents a PostgreSQL database configuration | <pre>map(object({<br>    db_name           = string<br>    db_owner          = string<br>    template          = optional(string, null)<br>    lc_collate        = optional(string, null)<br>    connection_limit  = optional(string, null)<br>    allow_connections = optional(string, null)<br>  }))</pre> | n/a | yes |
+| <a name="input_postgresql_default_privileges"></a> [postgresql\_default\_privileges](#input\_postgresql\_default\_privileges) | configuration block for postgresql default privileges | <pre>map(object({<br>    role        = string<br>    database    = string<br>    schema      = string<br>    owner       = string<br>    object_type = string<br>    privileges  = list(string)<br>  }))</pre> | n/a | yes |
+| <a name="input_postgresql_schema"></a> [postgresql\_schema](#input\_postgresql\_schema) | configuration block for postgresql schema | <pre>map(object({<br>    schema_name   = string<br>    schema_owner  = optional(string, null)<br>    database      = optional(string, null)<br>    if_not_exists = optional(string, null)<br>    drop_cascade  = optional(string, null)<br><br>    policy = optional(list(object({<br>      usage = optional(string, null)<br>      role  = optional(string, null)<br>    })), [])<br>  }))</pre> | n/a | yes |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| <a name="output_arn"></a> [arn](#output\_arn) | ARN of the parameter |
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
