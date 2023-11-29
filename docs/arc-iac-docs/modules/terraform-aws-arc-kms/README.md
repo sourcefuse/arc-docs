@@ -13,8 +13,8 @@ To see a full example, check out the [main.tf](https://github.com/sourcefuse/ter
 ```hcl
 
 module "kms" {
-  source  = "sourcefuse/arc-kms/aws"
-  version = "0.0.1"
+  source                  = "sourcefuse/arc-kms/aws"
+  version                 = "0.0.1"    "This is not latest version. please check out in registry to use the latest version"
   enabled                 = var.enabled
   deletion_window_in_days = var.deletion_window_in_days
   enable_key_rotation     = var.enable_key_rotation
@@ -62,7 +62,7 @@ No modules.
 | <a name="input_enabled"></a> [enabled](#input\_enabled) | Set to false to prevent the module from creating any resources | `bool` | `true` | no |
 | <a name="input_key_usage"></a> [key\_usage](#input\_key\_usage) | Specifies the intended use of the key. Valid values: `ENCRYPT_DECRYPT` or `SIGN_VERIFY`. | `string` | `"ENCRYPT_DECRYPT"` | no |
 | <a name="input_multi_region"></a> [multi\_region](#input\_multi\_region) | Indicates whether the KMS key is a multi-Region (true) or regional (false) key. | `bool` | `false` | no |
-| <a name="input_policy"></a> [policy](#input\_policy) | A valid KMS policy JSON document. Note that if the policy document is not specific enough (but still valid), Terraform may view the policy as constantly changing in a terraform plan. In this case, please make sure you use the verbose/specific version of the policy. | `string` | `""` | no |
+| <a name="input_policy"></a> [policy](#input\_policy) | A valid KMS policy JSON document. Note that if the policy document is not specific enough (but still valid), Terraform may view the policy as constantly changing in a terraform plan. In this case, please make sure you use the verbose/specific version of the policy. | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | tags to add to your resources | `map(string)` | `{}` | no |
 
 ## Outputs
