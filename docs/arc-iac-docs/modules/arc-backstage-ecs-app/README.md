@@ -66,7 +66,7 @@ module "backstage" {
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_backstage_container_definition"></a> [backstage\_container\_definition](#module\_backstage\_container\_definition) | ./ecs-container-definition | n/a |
-| <a name="module_ecs-service-autoscaling"></a> [ecs-service-autoscaling](#module\_ecs-service-autoscaling) | git@github.com:cn-terraform/terraform-aws-ecs-service-autoscaling | 1.0.6 |
+| <a name="module_ecs_service_autoscaling"></a> [ecs\_service\_autoscaling](#module\_ecs\_service\_autoscaling) | git@github.com:cn-terraform/terraform-aws-ecs-service-autoscaling | 1.0.6 |
 
 ## Resources
 
@@ -125,6 +125,17 @@ module "backstage" {
 
 No outputs.
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+### Git commits
+
+while Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
+
+For Example
+
+```sh
+git commit -m "your commit message #major"
+```
+By specifying this , it will bump the version and if you don't specify this in your commit message then by default it will consider patch and will bump that accordingly
 
 ## Development
 
