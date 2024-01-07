@@ -9,7 +9,7 @@ nav:
           - RDBMS: "arc-iac-docs/modules/terraform-aws-ref-arch-db"
           - ARC Lambda: "arc-iac-docs/modules/arc-lambda"
           - ARC CDK: "arc-iac-docs/modules/arc-cdk"
-          - ECS: "arc-iac-docs/modules/terraform-aws-refarch-ecs"
+          - ECS: "arc-iac-docs/modules/terraform-aws-arc-ecs"
           - EKS: "arc-iac-docs/modules/terraform-aws-ref-arch-eks"
           - Tags: "arc-iac-docs/modules/terraform-aws-refarch-tags"
           - OpenSearch: "arc-iac-docs/modules/terraform-aws-refarch-opensearch"
