@@ -1,5 +1,7 @@
 # [terraform-aws-arc-billing](https://github.com/sourcefuse/terraform-aws-arc-billing)
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-billing)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-billing)
+
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-billing/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-billing/actions/workflows/snyk.yaml)
 
 ## Overview
