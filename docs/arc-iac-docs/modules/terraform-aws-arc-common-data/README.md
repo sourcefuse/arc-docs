@@ -1,5 +1,7 @@
 # [terraform-aws-arc-common-data](https://github.com/sourcefuse/terraform-aws-arc-common-data)
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-common-data)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-common-data)
+
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-common-data/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-common-data/actions/workflows/snyk.yaml)
 
 ## Overview
@@ -89,6 +91,17 @@ the pipeline will kick off and tag the latest git commit.
   pre-commit install
   ```
 
+### Git commits
+
+while Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
+
+For Example
+
+```sh
+git commit -m "your commit message #major"
+```
+By specifying this , it will bump the version and if you dont specify this in your commit message then by default it will consider patch and will bump that accordingly
+
 ### Tests
 - Tests are available in `test` directory
 - Configure the dependencies
@@ -105,4 +118,4 @@ the pipeline will kick off and tag the latest git commit.
 ## Authors
 
 This project is authored by:
-- SourceFuse
+- SourceFuse ARC Team
