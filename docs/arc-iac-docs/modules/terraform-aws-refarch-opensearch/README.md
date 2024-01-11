@@ -1,5 +1,7 @@
 # [terraform-aws-arc-opensearch](https://github.com/sourcefuse/terraform-aws-arc-opensearch)
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-opensearch)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-opensearch)
+
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-opensearch/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-opensearch/actions/workflows/snyk.yaml)
 ## Overview
 Terraform module for supporting AWS OpenSearch. Creates an admin role and outputs parameters to SSM for downstream utilization or additional automation.
