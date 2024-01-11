@@ -1,5 +1,7 @@
 # [terraform-postgresql-aws-arc-mgmt](https://github.com/sourcefuse/terraform-postgresql-aws-arc-mgmt)
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-postgresql-mgmt)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-postgresql-mgmt)
+
 [![snyk](https://github.com/sourcefuse/terraform-postgresql-aws-arc-mgmt/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-postgresql-aws-arc-mgmt/actions/workflows/snyk.yaml)
 
 ## Overview
@@ -80,3 +82,55 @@ No modules.
 |------|-------------|
 | <a name="output_arn"></a> [arn](#output\_arn) | ARN of the parameter |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+## Development
+
+### Prerequisites
+
+- [terraform](https://learn.hashicorp.com/terraform/getting-started/install#installing-terraform)
+- [terraform-docs](https://github.com/segmentio/terraform-docs)
+- [pre-commit](https://pre-commit.com/#install)
+- [golang](https://golang.org/doc/install#install)
+- [golint](https://github.com/golang/lint#installation)
+
+### Configurations
+
+- Configure pre-commit hooks
+
+```sh
+pre-commit install
+```
+### Git commits
+
+while Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
+
+For Example
+
+```sh
+git commit -m "your commit message #major"
+```
+By specifying this , it will bump the version and if you dont specify this in your commit message then by default it will consider patch and will bump that accordingly
+
+### Tests
+
+- Tests are available in `test` directory
+- Configure the dependencies
+
+```sh
+cd test
+go mod init github.com/sourcefuse/terraform-aws-ref-arch-db
+go get github.com/gruntwork-io/terratest/modules/terraform
+```
+
+- Now execute the test
+
+```sh
+cd test/
+go test
+```
+
+## Authors
+
+This project is authored by:
+
+- SourceFuse ARC Team
