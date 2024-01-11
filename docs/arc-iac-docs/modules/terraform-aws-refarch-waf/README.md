@@ -1,5 +1,7 @@
 # [terraform-aws-arc-waf](https://github.com/sourcefuse/terraform-aws-arc-waf)
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-waf)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-waf)
+
 [![Test](https://github.com/sourcefuse/terraform-aws-refarch-waf/actions/workflows/test.yml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-waf/actions/workflows/test.yml)
 ## Overview
 
