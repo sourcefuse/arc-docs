@@ -1,5 +1,7 @@
 # [terraform-aws-arc-bootstrap](https://github.com/sourcefuse/terraform-aws-arc-bootstrap)
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-bootstrap)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-bootstrap)
+
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-module-aws-bootstrap/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-module-aws-bootstrap/actions/workflows/snyk.yaml)
 
 This module creates and configures a S3 bucket backend and DynamoDB lock table for terraform state files.  
