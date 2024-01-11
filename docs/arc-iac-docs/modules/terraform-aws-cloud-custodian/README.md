@@ -1,5 +1,7 @@
 # [Terraform AWS: Cloud Custodian](https://github.com/sourcefuse/terraform-aws-cloud-custodian)
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-cloud-custodian)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-cloud-custodian)
+
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-cloud-custodian/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-cloud-custodian/actions/workflows/snyk.yaml)
 ## Overview
 
