@@ -1,7 +1,9 @@
 # [terraform-aws-arc-security](https://github.com/sourcefuse/terraform-aws-arc-security)
 
-## Overview
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-security)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-security)
+
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-security/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-security/actions/workflows/snyk.yaml)
+## Overview
 
 SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Security Hub components.
 
@@ -52,7 +54,7 @@ module "cloud_security" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.31.0 |
 
 ## Modules
 
