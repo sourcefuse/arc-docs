@@ -13,7 +13,7 @@ This module is responsible for managing the tags we use at SourceFuse when creat
 ```hcl
 module "terraform-aws-arc-tags" {
   source      = "sourcefuse/arc-tags/aws"
-  version     = "1.2.2"
+  version     = "1.2.4"
   environment = var.environment
   project     = "Example"
 
