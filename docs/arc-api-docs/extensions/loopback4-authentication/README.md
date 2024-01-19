@@ -6,8 +6,14 @@
 <a href="https://www.npmjs.com/package/loopback4-authentication">
 <img src="https://img.shields.io/npm/v/loopback4-authentication.svg" alt="npm version" />
 </a>
+<a href="https://sonarcloud.io/summary/new_code?id=sourcefuse_loopback4-authentication" target="_blank">
+<img alt="Sonar Quality Gate" src="https://img.shields.io/sonar/quality_gate/sourcefuse_loopback4-authentication?server=https%3A%2F%2Fsonarcloud.io">
+</a>
+<a href="https://app.snyk.io/org/ashishkaushik/reporting?context[page]=issues-detail&project_target=%255B%2522sourcefuse%252Floopback4-authentication%2522%255D&project_origin=%255B%2522github%2522%255D&issue_status=%255B%2522Open%2522%255D&issue_by=Severity&table_issues_detail_cols=SCORE%257CCVE%257CCWE%257CPROJECT%257CEXPLOIT%2520MATURITY%257CAUTO%2520FIXABLE%257CINTRODUCED%257CSNYK%2520PRODUCT&v=1">
+<img alt="Synk Status" src="https://img.shields.io/badge/SYNK_SECURITY-MONITORED-GREEN">
+</a>
 <a href="https://github.com/sourcefuse/loopback4-authentication/graphs/contributors" target="_blank">
-<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/sourcefuse/loopback4-authentication">
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/sourcefuse/loopback4-authentication?">
 </a>
 <a href="https://www.npmjs.com/package/loopback4-authentication" target="_blank">
 <img alt="downloads" src="https://img.shields.io/npm/dw/loopback4-authentication.svg">
@@ -81,7 +87,6 @@ Once this is done, you are ready to configure any of the available strategy in t
 
 ### Oauth2-client-password
 
-In order to use it, run `npm install passport-oauth2-client-password`.
 First, create an AuthClient model implementing the IAuthClient interface. The purpose of this model is to store oauth registered clients for the app in the DB. See sample below.
 
 ```ts
@@ -244,7 +249,6 @@ For accessing the authenticated AuthClient model reference, you can inject the C
 
 ### Http-bearer
 
-In order to use it, run `npm install passport-http-bearer`.
 First, create a AuthUser model implementing the IAuthUser interface. You can implement the interface in the user model itself. See sample below.
 
 ```ts
@@ -330,7 +334,7 @@ export class BearerTokenVerifyProvider
   ) {}
 
   value(): VerifyFunction.BearerFn {
-    return async (token) => {
+    return async token => {
       if (token && (await this.revokedTokenRepository.get(token))) {
         throw new HttpErrors.Unauthorized('Token Revoked');
       }
@@ -1182,13 +1186,13 @@ this.bind(Strategies.Passport.GOOGLE_OAUTH2_VERIFIER).toProvider(
 Now, bind this provider to the application in application.ts.
 
 ```ts
-import { GoogleAuthStrategyFactoryProvider } from 'loopback4-authentication/passport-google-oauth2';
+import {GoogleAuthStrategyFactoryProvider} from 'loopback4-authentication/passport-google-oauth2';
 ```
 
 ```ts
 this.bind(Strategies.Passport.GOOGLE_OAUTH2_STRATEGY_FACTORY.key).toProvider(
-    GoogleAuthStrategyFactoryProvider
-  );
+  GoogleAuthStrategyFactoryProvider,
+);
 ```
 
 Finally, add the authenticate function as a sequence action to sequence.ts.
@@ -2727,7 +2731,7 @@ export class SamlVerifyProvider implements Provider<VerifyFunction.SamlFn> {
     public userCredsRepository: UserCredentialsRepository,
   ) {}
   value(): VerifyFunction.SamlFn {
-    return async (profile) => {
+    return async profile => {
       const user = await this.userRepository.findOne({
         where: {
           /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
