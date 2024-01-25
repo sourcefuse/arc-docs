@@ -8,7 +8,8 @@
 
 SourceFuse AWS Reference Architecture (ARC) Terraform module for managing GitHub OIDC IAM access to your account.
 
-Please note, this module creates an identity provider for your AWS account. You can only have **ONE** GitHub identity provider per AWS account.
+Please note, this module creates a GitHub identity provider by default for your AWS account. You can only have **ONE** GitHub identity provider per AWS account.
+If you already have the identity provider configured, or you need to run this multiple times for your account, set `var.create_github_oidc_provider` to `false`.
 
 ## Usage
 To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.
@@ -66,13 +67,15 @@ No modules.
 | [aws_iam_role.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
 | [aws_iam_role_policy_attachment.created](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
 | [aws_iam_role_policy_attachment.managed](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
+| [aws_iam_openid_connect_provider.github](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_openid_connect_provider) | data source |
 | [aws_iam_policy.managed](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_aws_managed_iam_policy_names"></a> [aws\_managed\_iam\_policy\_names](#input\_aws\_managed\_iam\_policy\_names) | List of AWS Managed IAM Policy names to assign to the created IAM Role | `list(string)` | `[]` | no |
+| <a name="input_additional_iam_policy_names"></a> [additional\_iam\_policy\_names](#input\_additional\_iam\_policy\_names) | List of IAM Policy names to lookup and assign to the created IAM Role | `list(string)` | `[]` | no |
+| <a name="input_create_github_oidc_provider"></a> [create\_github\_oidc\_provider](#input\_create\_github\_oidc\_provider) | Create the OIDC GitHub Provider. If false, this module assume it exists and does a data lookup. | `bool` | `true` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | ID element. Usually used for region e.g. 'uw2', 'us-west-2', OR role 'prod', 'staging', 'dev', 'UAT' | `string` | n/a | yes |
 | <a name="input_github_subscriptions"></a> [github\_subscriptions](#input\_github\_subscriptions) | GitHub repo subscriptions for AWS account access | `list(string)` | n/a | yes |
 | <a name="input_github_thumbprint_list"></a> [github\_thumbprint\_list](#input\_github\_thumbprint\_list) | GitHub thumbprint list | `list(string)` | <pre>[<br>  "6938fd4d98bab03faadb97b34396831e3780aea1",<br>  "1c58a3a8518e8759bf075b76b750d4f2df264fcd"<br>]</pre> | no |
