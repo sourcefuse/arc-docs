@@ -1,5 +1,7 @@
 # [terraform-aws-arc-ecs](https://github.com/sourcefuse/terraform-aws-arc-ecs)
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-ecs)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-ecs)
+
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-ecs/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-ecs/actions/workflows/snyk.yaml)
 ## Overview
 
