@@ -3,6 +3,7 @@
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-waf)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-waf)
 
 [![Test](https://github.com/sourcefuse/terraform-aws-refarch-waf/actions/workflows/test.yml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-waf/actions/workflows/test.yml)
+
 ## Overview
 
 SourceFuse AWS Reference Architecture (ARC) Terraform module for managing WAF.
@@ -94,11 +95,17 @@ No modules.
 | <a name="output_tags_all"></a> [tags\_all](#output\_tags\_all) | Map of tags assigned to the resource, including those inherited from the provider default\_tags configuration block. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Versioning  
-This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.  
+### Git commits
 
-When you intend to commit to `main`, you will need to increment this version. Once the project is merged,
-the pipeline will kick off and tag the latest git commit.  
+while Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
+
+For Example
+
+```sh
+git commit -m "your commit message #major"
+```
+By specifying this , it will bump the version and if you dont specify this in your commit message then by default it will consider patch and will bump that accordingly
+
 
 ## Development
 
