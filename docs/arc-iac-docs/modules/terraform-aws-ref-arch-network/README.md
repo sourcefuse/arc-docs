@@ -5,7 +5,9 @@
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-ref-arch-network/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-ref-arch-network/actions/workflows/snyk.yaml)
 ## Overview
 
-AWS Terraform module for the SourceFuse Reference Architecture.
+SourceFuse AWS Reference Architecture (ARC) Terraform module for managing AWS VPC and related AWS networking resources.
+
+For more information about this repository and its usage, please see [Terraform AWS ARC GitHub IAM Module Usage Guide](docs/module-usage-guide/README.md).
 
 ![arc_network_hla](./static/arc_network_hla.png)
 
