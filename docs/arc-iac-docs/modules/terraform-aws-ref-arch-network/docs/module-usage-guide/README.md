@@ -8,7 +8,7 @@ This document provides guidelines and instructions for users looking to implemen
 
 ### Module Overview
 
-The [Terraform AWS ARC GitHub IAM](https://github.com/sourcefuse/terraform-aws-arc-network) module provides a secure and modular foundation for building robust and secure VPC and network resources on AWS.
+The [Terraform AWS ARC Network](https://github.com/sourcefuse/terraform-aws-arc-network) module provides a secure and modular foundation for building robust and secure VPC and network resources on AWS.
 
 ![arc_network_hla](../../static/arc_network_hla.png)
 
@@ -27,7 +27,7 @@ Before using this module, ensure you have the following:
 To use the module in your Terraform configuration, include the following source block:
 
 ```hcl
-module "github_iam" {
+module "network" {
   source  = "sourcefuse/arc-network/aws"
   version = "2.6.3"
   # insert the 6 required variables here
@@ -93,7 +93,7 @@ If you encounter a bug or issue, please report it on the [GitHub repository](htt
 
 Understand the security considerations related to Network Security on AWS when using this module.
 
-### Best Practices for IAM Roles
+### Best Practices for AWS Network
 
 Follow best practices to ensure secure Network configurations:
 
