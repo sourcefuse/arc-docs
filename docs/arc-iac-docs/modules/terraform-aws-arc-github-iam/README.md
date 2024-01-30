@@ -10,7 +10,7 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing GitHub
 Please note, this module creates a GitHub identity provider by default for your AWS account. You can only have **ONE** GitHub identity provider per AWS account.
 If you already have the identity provider configured, or you need to run this multiple times for your account, set `var.create_github_oidc_provider` to `false`.
 
-For more information about this repository and its usage, please see [Terraform AWS ARC GitHub IAM Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-github-iam/blob/main/.docs/terraform-aws-arc-github-iam-module-usage-guide.md).
+For more information about this repository and its usage, please see [Terraform AWS ARC GitHub IAM Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-github-iam/blob/main/.docs/module-usage-guide/README.md).
 
 ## Usage
 To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-github-iam/blob/main/example/main.tf) file in the example folder.
@@ -82,7 +82,7 @@ No modules.
 | <a name="input_github_thumbprint_list"></a> [github\_thumbprint\_list](#input\_github\_thumbprint\_list) | GitHub thumbprint list | `list(string)` | <pre>[<br>  "6938fd4d98bab03faadb97b34396831e3780aea1",<br>  "1c58a3a8518e8759bf075b76b750d4f2df264fcd"<br>]</pre> | no |
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | Namespace for the resources. | `string` | n/a | yes |
 | <a name="input_policies"></a> [policies](#input\_policies) | The IAM policies to create and attach to the IAM role for managing AWS resources | <pre>list(object({<br>    name        = string<br>    path        = optional(string, "/")<br>    policy_json = any<br>  }))</pre> | `[]` | no |
-| <a name="input_role_max_session_duration"></a> [role\_max\_session\_duration](#input\_role\_max\_session\_duration) | Session duration of the assumed role | `number` | `3600` | no |
+| <a name="input_role_max_session_duration"></a> [role\_max\_session\_duration](#input\_role\_max\_session\_duration) | Session duration of the assumed role, in seconds | `number` | `3600` | no |
 | <a name="input_role_name_override"></a> [role\_name\_override](#input\_role\_name\_override) | Base name to assign resources. If null, it will default to `{var.namespace}-{var.environment}-github-oidc` | `string` | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags to assign created resources | `map(string)` | `{}` | no |
 
