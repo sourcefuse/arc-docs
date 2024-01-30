@@ -28,7 +28,7 @@ nav:
           - Document-DB: "arc-iac-docs/modules/terraform-aws-arc-document-db"
           - GitHub:
             - IAM: "arc-iac-docs/modules/terraform-aws-arc-github-iam"
-            - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-github-iam/.docs/module-usage-guide"
+            - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-github-iam/docs/module-usage-guide"
           - Backstage:
             - ECS: "arc-iac-docs/modules/arc-backstage-ecs-app"
       - Cloud Native:
