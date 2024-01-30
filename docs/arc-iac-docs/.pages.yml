@@ -26,8 +26,7 @@ nav:
           - Security: "arc-iac-docs/modules/terraform-aws-arc-security"
           - Billing: "arc-iac-docs/modules/terraform-aws-arc-billing"
           - Document-DB: "arc-iac-docs/modules/terraform-aws-arc-document-db"
-          - Github IAM:
-            - "arc-iac-docs/modules/terraform-aws-arc-github-iam"
+          - Github IAM: "arc-iac-docs/modules/terraform-aws-arc-github-iam"
             - Terraform AWS ARC GitHub IAM Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-github-iam/.docs/terraform-aws-arc-github-iam-module-usage-guide.md/terraform-aws-arc-github-iam-module-usage-guide.md"
           - Backstage:
             - ECS: "arc-iac-docs/modules/arc-backstage-ecs-app"
