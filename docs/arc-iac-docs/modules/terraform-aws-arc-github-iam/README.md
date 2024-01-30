@@ -5,14 +5,15 @@
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-github-iam/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-github-iam/actions/workflows/snyk.yaml)
 
 ## Overview
-
 SourceFuse AWS Reference Architecture (ARC) Terraform module for managing GitHub OIDC IAM access to your account.
 
 Please note, this module creates a GitHub identity provider by default for your AWS account. You can only have **ONE** GitHub identity provider per AWS account.
 If you already have the identity provider configured, or you need to run this multiple times for your account, set `var.create_github_oidc_provider` to `false`.
 
+For more information about this repository and its usage, please see [Terraform AWS ARC GitHub IAM Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-github-iam/blob/main/.docs/terraform-aws-arc-github-iam-module-usage-guide.md).
+
 ## Usage
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.
+To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-github-iam/blob/main/example/main.tf) file in the example folder.
 
 ```hcl
 module "github_iam" {
