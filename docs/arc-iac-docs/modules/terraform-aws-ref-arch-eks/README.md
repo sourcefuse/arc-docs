@@ -1,4 +1,4 @@
-# [terraform-aws-ref-arch-eks](https://github.com/sourcefuse/terraform-aws-ref-arch-eks)
+# [terraform-aws-arc-eks](https://github.com/sourcefuse/terraform-aws-arc-eks)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-eks)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-eks)
 
