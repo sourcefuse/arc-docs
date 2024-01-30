@@ -5,7 +5,9 @@ nav:
       - AWS:
           - Control Tower AFT: "arc-iac-docs/modules/terraform-aws-refarch-control-tower-aft"
           - Environment Bootstrap: "arc-iac-docs/modules/terraform-module-aws-bootstrap"
-          - Network: "arc-iac-docs/modules/terraform-aws-ref-arch-network"
+          - Network: 
+            - Network: "arc-iac-docs/modules/terraform-aws-ref-arch-network"
+            - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-ref-arch-network/docs/module-usage-guide"
           - RDBMS: "arc-iac-docs/modules/terraform-aws-ref-arch-db"
           - ARC Lambda: "arc-iac-docs/modules/arc-lambda"
           - ARC CDK: "arc-iac-docs/modules/arc-cdk"
