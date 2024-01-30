@@ -10,7 +10,7 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing GitHub
 Please note, this module creates a GitHub identity provider by default for your AWS account. You can only have **ONE** GitHub identity provider per AWS account.
 If you already have the identity provider configured, or you need to run this multiple times for your account, set `var.create_github_oidc_provider` to `false`.
 
-For more information about this repository and its usage, please see [Terraform AWS ARC GitHub IAM Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-github-iam/blob/main/.docs/module-usage-guide/README.md).
+For more information about this repository and its usage, please see [Terraform AWS ARC GitHub IAM Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-github-iam/blob/main/docs/module-usage-guide/README.md).
 
 ## Usage
 To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-github-iam/blob/main/example/main.tf) file in the example folder.
@@ -29,11 +29,11 @@ module "github_iam" {
   ## policies
   policies = [
     {
-      name   = "${var.namespace}-${var.environment}-s3-access"
+      name        = "${var.namespace}-${var.environment}-s3-access"
       policy_json = data.aws_iam_policy_document.s3.json
     }
   ]
-  aws_managed_iam_policy_names = [
+  additional_iam_policy_names = [
     "ReadOnlyAccess"
   ]
 
