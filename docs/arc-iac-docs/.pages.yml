@@ -12,7 +12,9 @@ nav:
           - ARC Lambda: "arc-iac-docs/modules/arc-lambda"
           - ARC CDK: "arc-iac-docs/modules/arc-cdk"
           - ECS: "arc-iac-docs/modules/terraform-aws-arc-ecs"
-          - EKS: "arc-iac-docs/modules/terraform-aws-ref-arch-eks"
+          - EKS:
+            - EKS: "arc-iac-docs/modules/terraform-aws-ref-arch-eks"
+            - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-ref-arch-eks/docs/module-usage-guide"
           - Tags: "arc-iac-docs/modules/terraform-aws-refarch-tags"
           - OpenSearch: "arc-iac-docs/modules/terraform-aws-refarch-opensearch"
           - TypeScript Lambda Boilerplate: "arc-iac-docs/modules/typescript-lambda-boilerplate"
