@@ -28,8 +28,7 @@ To use the module in your Terraform configuration, include the following source 
 module "example_doc_db_cluster" {
   source = "sourcefuse/arc-document-db/aws"
   // we recommend to pin the version we aren't simply for an example reference against our latest changes.
-  version = "2.6.3"
-  # insert the 6 required variables here
+  # insert the required variables here
 }
 ```
 
@@ -93,7 +92,7 @@ Understand the security considerations related to Document DB clusters on AWS wh
 
 Follow best practices to ensure secure Document DB configurations:
 
-- [Document DB security on AWS](https://docs.aws.amazon.com/documentdb/latest/developerguide/security.html/)
+[DocumentDB security on AWS](https://docs.aws.amazon.com/documentdb/latest/developerguide/security.html)
 
 ## Contributing and Community Support
 
