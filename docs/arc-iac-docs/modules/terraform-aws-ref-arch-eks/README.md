@@ -6,7 +6,9 @@
 
 ## Overview
 
-AWS Terraform module for the EKS implementation of the SourceFuse reference architecture.
+SourceFuse AWS Reference Architecture (ARC) Terraform module for managing EKS clusters on AWS.
+
+For more information about this repository and its usage, please see [Terraform AWS ARC EKS Module Usage Guide](docs/module-usage-guide/README.md).
 
 ![arc_eks_hla](./static/arc_eks_hla.png)
 
@@ -16,7 +18,7 @@ Create the following AWS resources in a single region
 * eks fargate profile
 * eks node group
 
-Bootstrap the eks cluster with the following components
+Bootstrap the eks cluster with the following components (WIP, currently unavailable)
 
 * cluster autoscaler
 * metrics server
