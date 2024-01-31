@@ -8,7 +8,9 @@ nav:
           - Network: 
             - Network: "arc-iac-docs/modules/terraform-aws-ref-arch-network"
             - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-ref-arch-network/docs/module-usage-guide"
-          - RDBMS: "arc-iac-docs/modules/terraform-aws-ref-arch-db"
+          - RDBMS: 
+            - Aurora: "arc-iac-docs/modules/terraform-aws-ref-arch-db"
+            - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-ref-arch-db/docs/module-usage-guide"
           - ARC Lambda: "arc-iac-docs/modules/arc-lambda"
           - ARC CDK: "arc-iac-docs/modules/arc-cdk"
           - ECS:
@@ -29,7 +31,7 @@ nav:
           - Vpn: "arc-iac-docs/modules/terraform-aws-refarch-vpn"
           - Workspaces:
             - Workspace: "arc-iac-docs/modules/terraform-aws-arc-workspace"
-            - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-workspace/docs/module-usage-guide"
+            - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-workspace/docs/module-usage-guide" 
           - Postgres-Management: 
             - Postgresql: "arc-iac-docs/modules/terraform-postgresql-aws-arc-mgmt"
             - Module Usage Guide: "arc-iac-docs/modules/terraform-postgresql-aws-arc-mgmt/docs/module-usage-guide"
