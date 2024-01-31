@@ -7,7 +7,7 @@
 
 SourceFuse AWS Reference Architecture (ARC) Terraform module for managing AWS VPC and related AWS networking resources.
 
-For more information about this repository and its usage, please see [Terraform AWS ARC GitHub IAM Module Usage Guide](docs/module-usage-guide/README.md).
+For more information about this repository and its usage, please see [Terraform AWS ARC Network Module Usage Guide](docs/module-usage-guide/README.md).
 
 ![arc_network_hla](./static/arc_network_hla.png)
 
