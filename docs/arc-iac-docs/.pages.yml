@@ -28,7 +28,9 @@ nav:
           - Waf: "arc-iac-docs/modules/terraform-aws-refarch-waf"
           - Vpn: "arc-iac-docs/modules/terraform-aws-refarch-vpn"
           - Workspaces: "arc-iac-docs/modules/terraform-aws-arc-workspace"
-          - Postgres-Management: "arc-iac-docs/modules/terraform-postgresql-aws-arc-mgmt"
+          - Postgres-Management: 
+            - Postgresql: "arc-iac-docs/modules/terraform-postgresql-aws-arc-mgmt"
+            - Module Usage Guide: "arc-iac-docs/modules/terraform-postgresql-aws-arc-mgmt/docs/module-usage-guide"
           - Security: "arc-iac-docs/modules/terraform-aws-arc-security"
           - Billing: "arc-iac-docs/modules/terraform-aws-arc-billing"
           - Document-DB: 
