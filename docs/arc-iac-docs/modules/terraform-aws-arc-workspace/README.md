@@ -89,7 +89,7 @@ As we specified three custom user_names that means three workspaces for each use
 
 7. Last thing but not the least and this is very important that if you are trying to deploy in us-east-1 then below AZs are supported. When you are creating a virtual private cloud (VPC) for use with Amazon WorkSpaces, your VPC's subnets must reside in different Availability Zones in the Region where you're launching WorkSpaces. Availability Zones are distinct locations that are engineered to be isolated from failures in other Availability Zones. By launching instances in separate Availability Zones, you can protect your applications from the failure of a single location. Each subnet must reside entirely within one Availability Zone and cannot span zones. Here is the picture of supported Availability Zones For Workspaces.
 
-![availability zones](https://github.com/sourcefuse/terraform-aws-arc-workspace/blob/main/static/az.png)
+![availability zones](./static/az.png)
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -178,11 +178,16 @@ No modules.
 | <a name="output_workspace_volume_encryption_key"></a> [workspace\_volume\_encryption\_key](#output\_workspace\_volume\_encryption\_key) | The encryption key used for AWS Workspaces volumes. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Versioning  
-This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.  
+### Git commits
 
-When you intend to commit to `main`, you will need to increment this version. Once the project is merged,
-the pipeline will kick off and tag the latest git commit.  
+while Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
+
+For Example
+
+```sh
+git commit -m "your commit message #major"
+```
+By specifying this , it will bump the version and if you don't specify this in your commit message then by default it will consider patch and will bump that accordingly  
 
 ## Development
 
