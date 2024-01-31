@@ -11,7 +11,9 @@ nav:
           - RDBMS: "arc-iac-docs/modules/terraform-aws-ref-arch-db"
           - ARC Lambda: "arc-iac-docs/modules/arc-lambda"
           - ARC CDK: "arc-iac-docs/modules/arc-cdk"
-          - ECS: "arc-iac-docs/modules/terraform-aws-arc-ecs"
+          - ECS:
+            - ECS: "arc-iac-docs/modules/terraform-aws-arc-ecs"
+            - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-ecs/docs/module-usage-guide"
           - EKS:
             - EKS: "arc-iac-docs/modules/terraform-aws-ref-arch-eks"
             - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-ref-arch-eks/docs/module-usage-guide"
