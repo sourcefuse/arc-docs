@@ -9,7 +9,7 @@ nav:
             - Network: "arc-iac-docs/modules/terraform-aws-ref-arch-network"
             - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-ref-arch-network/docs/module-usage-guide"
           - RDBMS: 
-            - Aurora: "arc-iac-docs/modules/terraform-aws-arc-db-aurora"
+            - Aurora: "arc-iac-docs/modules/terraform-aws-ref-arch-db"
             - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-ref-arch-db/docs/module-usage-guide"
           - ARC Lambda: "arc-iac-docs/modules/arc-lambda"
           - ARC CDK: "arc-iac-docs/modules/arc-cdk"
