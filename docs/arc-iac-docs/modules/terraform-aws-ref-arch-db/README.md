@@ -8,7 +8,7 @@
 
 SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Aurora and RDS instances.
 
-## Usage
+## Module Usage
 
 To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-db/blob/main/example/main.tf) file in the example folder.
 
