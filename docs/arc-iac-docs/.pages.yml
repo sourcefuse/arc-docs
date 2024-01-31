@@ -27,7 +27,9 @@ nav:
           - ARC Common Data: "arc-iac-docs/modules/terraform-aws-arc-common-data"
           - Waf: "arc-iac-docs/modules/terraform-aws-refarch-waf"
           - Vpn: "arc-iac-docs/modules/terraform-aws-refarch-vpn"
-          - Workspaces: "arc-iac-docs/modules/terraform-aws-arc-workspace"
+          - Workspaces:
+            - Workspace: "arc-iac-docs/modules/terraform-aws-arc-workspace"
+            - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-workspace/docs/module-usage-guide"
           - Postgres-Management: 
             - Postgresql: "arc-iac-docs/modules/terraform-postgresql-aws-arc-mgmt"
             - Module Usage Guide: "arc-iac-docs/modules/terraform-postgresql-aws-arc-mgmt/docs/module-usage-guide"
