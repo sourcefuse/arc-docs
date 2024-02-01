@@ -37,7 +37,9 @@ nav:
           - Postgres-Management:
               - Postgresql: "arc-iac-docs/modules/terraform-postgresql-aws-arc-mgmt"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-postgresql-aws-arc-mgmt/docs/module-usage-guide"
-          - Security: "arc-iac-docs/modules/terraform-aws-arc-security"
+          - Security: 
+              - Security: "arc-iac-docs/modules/terraform-aws-arc-security"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-security/docs/module-usage-guide"
           - Billing: 
               - Billing: "arc-iac-docs/modules/terraform-aws-arc-billing"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-billing/docs/module-usage-guide"
