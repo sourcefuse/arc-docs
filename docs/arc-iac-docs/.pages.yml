@@ -20,7 +20,9 @@ nav:
               - EKS: "arc-iac-docs/modules/terraform-aws-ref-arch-eks"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-ref-arch-eks/docs/module-usage-guide"
           - Tags: "arc-iac-docs/modules/terraform-aws-refarch-tags"
-          - OpenSearch: "arc-iac-docs/modules/terraform-aws-refarch-opensearch"
+          - OpenSearch: 
+              - OpenSearch: "arc-iac-docs/modules/terraform-aws-arc-opensearch"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-opensearch/docs/module-usage-guide"
           - TypeScript Lambda Boilerplate: "arc-iac-docs/modules/typescript-lambda-boilerplate"
           - Cloud Custodian: "arc-iac-docs/modules/terraform-aws-cloud-custodian"
           - CloudFront: "arc-iac-docs/modules/terraform-aws-refarch-cloudfront"
