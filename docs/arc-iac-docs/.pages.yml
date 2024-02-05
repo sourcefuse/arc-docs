@@ -30,7 +30,9 @@ nav:
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-kms/docs/module-usage-guide"
           - ARC Common Data: "arc-iac-docs/modules/terraform-aws-arc-common-data"
           - Waf: "arc-iac-docs/modules/terraform-aws-refarch-waf"
-          - Vpn: "arc-iac-docs/modules/terraform-aws-refarch-vpn"
+          - Vpn: 
+              - Vpn: "arc-iac-docs/modules/terraform-aws-arc-vpn"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-vpn/docs/module-usage-guide"
           - GitHub-Runner:
                - GitHub-Runner: "arc-iac-docs/modules/terraform-aws-arc-github-runner"
                - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-github-runner/docs/module-usage-guide"
