@@ -101,7 +101,7 @@ terraform {
 }
 ```
 
-Then run `terraform init` to initialize the new backend:  
+Then run `terraform init` to initialize the new backend:
 ```
 Initializing modules...
 
@@ -205,7 +205,7 @@ No modules.
 
 ## Development
 
-### Versioning  
+### Versioning
 
 while Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
 

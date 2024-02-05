@@ -80,4 +80,3 @@ new LambdaStack(app, "example", {
 });
 app.synth();
 ```
-

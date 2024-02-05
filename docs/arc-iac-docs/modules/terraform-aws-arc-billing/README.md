@@ -10,7 +10,7 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing AWS bu
 
 ## Usage
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.  
+To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.
 
 ```hcl
 module "example_budgets" {
@@ -34,10 +34,10 @@ module "example_budgets" {
 
 ```
 
-Edit the [dev.tfvars](./example/dev.tfvars) file and provide desired values.  
-The `budgets` variable is used to define list billing budgets to be managed by terraform  
-This module sends notifications to both slack and email.  
-Use the `billing_notification_emails`, to pass emails that will receive the billing alarms  
+Edit the [dev.tfvars](./example/dev.tfvars) file and provide desired values.
+The `budgets` variable is used to define list billing budgets to be managed by terraform
+This module sends notifications to both slack and email.
+Use the `billing_notification_emails`, to pass emails that will receive the billing alarms
 
 ```hcl
 region      = "us-east-1"
@@ -150,18 +150,18 @@ terraform plan -var-file prod.tfvars
 
 Apply Terraform
 ```shell
-terraform apply -var-file prod.tfvars  
+terraform apply -var-file prod.tfvars
 ```
 
-## Cleanup  
+## Cleanup
 Destroy Terraform
 ```shell
-terraform destroy -var-file dev.tfvars  
+terraform destroy -var-file dev.tfvars
 ```
 
-***Note:***  
-&emsp;&emsp;***The emails will need to confirm subscription to SNS, in order to continue to receive billing alarms.***  
-&emsp;&emsp;***An email will be sent from AWS to the emails***  
+***Note:***
+&emsp;&emsp;***The emails will need to confirm subscription to SNS, in order to continue to receive billing alarms.***
+&emsp;&emsp;***An email will be sent from AWS to the emails***
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -254,7 +254,7 @@ By specifying this , it will bump the version and if you dont specify this in yo
   go mod init github.com/sourcefuse/terraform-aws-refarch-<module_name>
   go get github.com/gruntwork-io/terratest/modules/terraform
   ```
-- Now execute the test  
+- Now execute the test
   ```sh
   go test -timeout  30m
   ```

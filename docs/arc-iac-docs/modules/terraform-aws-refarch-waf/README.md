@@ -10,7 +10,7 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing WAF.
 
 ## Usage
 
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-waf/blob/main/example/main.tf) file in the example folder.  
+To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-waf/blob/main/example/main.tf) file in the example folder.
 
 ```hcl
 module "this" {
@@ -132,7 +132,7 @@ By specifying this , it will bump the version and if you dont specify this in yo
   go mod init github.com/sourcefuse/terraform-aws-refarch-<module_name>
   go get github.com/gruntwork-io/terratest/modules/terraform
   ```
-- Now execute the test  
+- Now execute the test
   ```sh
   go test -timeout  30m
   ```

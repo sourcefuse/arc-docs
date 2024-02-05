@@ -13,7 +13,7 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for querying the mo
 
 ## Usage
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.  
+To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.
 
 ```hcl
 module "this" {
@@ -68,11 +68,11 @@ No modules.
 | <a name="output_vpc_name"></a> [vpc\_name](#output\_vpc\_name) | Name of the VPC |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Versioning  
-This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.  
+## Versioning
+This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.
 
 When you intend to commit to `main`, you will need to increment this version. Once the project is merged,
-the pipeline will kick off and tag the latest git commit.  
+the pipeline will kick off and tag the latest git commit.
 
 ## Development
 
@@ -110,7 +110,7 @@ By specifying this , it will bump the version and if you dont specify this in yo
   go mod init github.com/sourcefuse/terraform-aws-refarch-<module_name>
   go get github.com/gruntwork-io/terratest/modules/terraform
   ```
-- Now execute the test  
+- Now execute the test
   ```sh
   go test -timeout  30m
   ```

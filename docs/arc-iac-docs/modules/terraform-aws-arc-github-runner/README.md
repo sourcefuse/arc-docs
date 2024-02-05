@@ -6,9 +6,9 @@
 
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing GitHub Runner.  
+SourceFuse AWS Reference Architecture (ARC) Terraform module for managing GitHub Runner.
 
-This module will create the following resources in a specified AWS Account:  
+This module will create the following resources in a specified AWS Account:
 * S3 bucket: used for storing the generated `docker-compose.yml`
 * EC2 instance: Used for running the runner container on
 * SSH Key Pair: Used for decrypting EC2 password
@@ -18,15 +18,15 @@ This module will create the following resources in a specified AWS Account:
 
 This module utilizes different `local-exec` provisioners to execute scripts for obtaining the needed GitHub Runner token
 and remove the runner from the organization when the resources are destroyed.
-See [Pre-Requisites](#pre-requisites) for information on the needed permissions these scripts will require.  
+See [Pre-Requisites](#pre-requisites) for information on the needed permissions these scripts will require.
 
 ### Pre-Requisites
 You will need to have a GitHub Personal Access Token (PAT) with `admin:org` permissions in order to manage GitHub runners for the Organization.
-If you do not have sufficient permissions to GitHub, the runner will not register.  
+If you do not have sufficient permissions to GitHub, the runner will not register.
 
 Once you've obtained a PAT, you will need to set it so Terraform can access it.
 The recommended approach to this is to save it in _Systems Manager Parameter Store_ with the Parameter name of: `/<namespace>/<environment>/github/token`
-You can reference this parameter via a data lookup:  
+You can reference this parameter via a data lookup:
 ```hcl
 data "aws_ssm_parameter" "github_token" {
   name = "/${var.namespace}/${var.environment}/github/token"
@@ -35,9 +35,9 @@ data "aws_ssm_parameter" "github_token" {
 
 ## Usage
 :warning: At this time, this module only supports **Debian** / **Ubuntu** AMIs.
-When choosing an AMI, please be sure to select either **Ubuntu** or **Debian**.  
+When choosing an AMI, please be sure to select either **Ubuntu** or **Debian**.
 
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-github-runner/blob/main/example/main.tf) file in the example folder.  
+To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-github-runner/blob/main/example/main.tf) file in the example folder.
 
 ```hcl
 module "runner" {
@@ -182,7 +182,7 @@ By specifying this , it will bump the version and if you dont specify this in yo
   go mod init github.com/sourcefuse/terraform-aws-refarch-github-runner
   go get github.com/gruntwork-io/terratest/modules/terraform
   ```
-- Now execute the test  
+- Now execute the test
   ```sh
   go test -timeout  30m
   ```

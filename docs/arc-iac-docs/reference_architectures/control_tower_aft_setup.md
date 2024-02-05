@@ -11,9 +11,9 @@ We can create external Terraform modules with dynamic inputs upstream that confi
 * Specific VPC configuration
 * Standard set of IAM roles and policies
 * Default security group configuration(s)
-* Standard logging and monitoring setup 
+* Standard logging and monitoring setup
 
-While LZA and AFT are similar, the benefits of using AFT over LZA it is more flexible and customizable whereas LZA is more prescriptive and opinionated. 
+While LZA and AFT are similar, the benefits of using AFT over LZA it is more flexible and customizable whereas LZA is more prescriptive and opinionated.
 With AFT, you can define your own configurations and policies. With LZA you are provided with a pre-built framework that may or may not fit your specific needs.
 
 ## Special Notes
@@ -66,7 +66,7 @@ If you had existing accounts configured in your organization, you can enroll the
 1. Log into the Management Account with an Administrator account
 2. Navigate to Services > Control Tower
 3. Select Organization.
-4. From the Organization Dashboard, you can select the OU or Account you want to enroll > Actions > Under Account, select Enroll:  
+4. From the Organization Dashboard, you can select the OU or Account you want to enroll > Actions > Under Account, select Enroll:
 	![ou_1.png](assets/control_tower/ou_1.png)
 	![ou_2.png](assets/control_tower/ou_2.png)
 
@@ -80,12 +80,12 @@ For more information on how to configure SSO with the AWS CLI, see the official 
 $ aws configure sso
 SSO start URL [None]: https://<subdomain>.awsapps.com/start
 SSO region [None]: <region>
-``` 
+```
 This will open your browser where you will enter the code presented on the terminal, then you will be able to allow access.****
 When you are redirected back to the terminal, you will have different accounts to choose from. Be sure to select the account you want to configure your CLI profile for:
 ```
 There are 2 AWS accounts available to you.
-> DeveloperAccount, developer-account-admin@example.com (123456789011) 
+> DeveloperAccount, developer-account-admin@example.com (123456789011)
   ProductionAccount, production-account-admin@example.com (123456789022)
 ```
 
@@ -100,7 +100,7 @@ There are 2 AWS accounts available to you.
 There are four repositories that need to be managed for creating the resources in the accounts:
 
 1. [Account requests](https://github.com/sourcefuse/terraform-aws-refarch-aft-account-request) – This repository handles placing or updating account requests. [Examples available](https://github.com/aws-ia/terraform-aws-control_tower_account_factory/tree/main/sources/aft-customizations-repos/aft-account-request).
-2. [AFT account provisioning customizations](https://github.com/sourcefuse/terraform-aws-refarch-aft-account-provisioning-customizations) – This repository manages customizations that are applied to all accounts created by and managed with AFT, before beginning the global customizations stage. [Examples available](https://github.com/aws-ia/terraform-aws-control_tower_account_factory/tree/main/sources/aft-customizations-repos/aft-account-provisioning-customizations).  
+2. [AFT account provisioning customizations](https://github.com/sourcefuse/terraform-aws-refarch-aft-account-provisioning-customizations) – This repository manages customizations that are applied to all accounts created by and managed with AFT, before beginning the global customizations stage. [Examples available](https://github.com/aws-ia/terraform-aws-control_tower_account_factory/tree/main/sources/aft-customizations-repos/aft-account-provisioning-customizations).
 3. [Global customizations](https://github.com/sourcefuse/terraform-aws-refarch-aft-global-customizations) – This repository manages customizations that are applied to all accounts created by and managed with AFT. [Examples available](https://github.com/aws-ia/terraform-aws-control_tower_account_factory/tree/main/sources/aft-customizations-repos/aft-global-customizations).
 4. [Account customizations](https://github.com/sourcefuse/terraform-aws-refarch-aft-account-customizations) – This repository manages customizations that are applied only to specific accounts created by and managed with AFT. [Examples available](https://github.com/aws-ia/terraform-aws-control_tower_account_factory/tree/main/sources/aft-customizations-repos/aft-account-customizations).
 
@@ -114,7 +114,7 @@ Supported VCS repositories for AFT are:
 Azure DevOps is not natively supported, however, we can work around this by implementing a mirror. For more information on this, see [Use AWS CodeCommit to mirror an Azure DevOps repository using an Azure DevOps pipeline](https://aws.amazon.com/blogs/devops/use-aws-codecommit-to-mirror-an-azure-devops-repository-using-an-azure-devops-pipeline/).
 
 ### Deploying the infrastructure
-Once the Control Tower instance has been created, you can configure AFT. 
+Once the Control Tower instance has been created, you can configure AFT.
 You **WILL** need AWSServiceCatalogEndUserAccess Management Console access to complete this task.
 For more in-depth information, see the AWS Doc on [Deploy AWS Control Tower Account Factory for Terraform (AFT)](https://docs.aws.amazon.com/controltower/latest/userguide/aft-getting-started.html)
 
@@ -128,10 +128,10 @@ For more in-depth information, see the AWS Doc on [Deploy AWS Control Tower Acco
 5. Ensure your Terraform environment is available for deployment. Terraform version `1.3` or greater is required.
 6. Create a `main.tf` and use the source of the [terraform-aws-refarch-control-tower-aft](https://github.com/sourcefuse/terraform-aws-refarch-control-tower-aft) module, then update the variables where applicable. See the `example` folder for additional configuration details.
 7. You must be authenticated to your Management Account using the **AdministratorAccess** credentials.
-   a. Configure the AWS profile. See [Configuring AWS Profile](#configuring-aws-profile) for information on setting this up.  
-8. Execute terraform while authenticated as the Administrator of the Management Account. 
-   :warning: If you didn’t configure a backend state bucket, be sure to save your state file somewhere safe! :warning:  
-	**Initialize terraform**:  
+   a. Configure the AWS profile. See [Configuring AWS Profile](#configuring-aws-profile) for information on setting this up.
+8. Execute terraform while authenticated as the Administrator of the Management Account.
+   :warning: If you didn’t configure a backend state bucket, be sure to save your state file somewhere safe! :warning:
+	**Initialize terraform**:
 	```
     terraform init
     ```
@@ -143,7 +143,7 @@ For more in-depth information, see the AWS Doc on [Deploy AWS Control Tower Acco
     ```
     terraform apply
     ```
-   
+
 ## Post Deploy
 Once the infrastructure is in place, you will need to complete the setup.
 
@@ -159,15 +159,15 @@ The following will need to be configured in the AFT-Management account
 
 #### CodeStar Connection
 1. Navigate to CodeBuild, in the left pane, expand Settings > Select Connections
-2. Select the pending connection and complete the connection to your VCS provider. 
+2. Select the pending connection and complete the connection to your VCS provider.
 	![codestar-connection.png](assets/control_tower/codestar-connection.png)
 3. This will link to the provider where you complete will select the organization to connect to.
 
 #### CodePipeline
 Once the CodeStar connection is complete, you will need to re-trigger the Pipelines that failed (they couldn’t connect to GitHub)
 
-1. Navigate to CodePipeline > Pipelines  
-2. Select the failed pipeline(s) > Release change > Release  
+1. Navigate to CodePipeline > Pipelines
+2. Select the failed pipeline(s) > Release change > Release
    ![codepipeline.png](assets/control_tower/codepipeline.png)
 3. Expand Build > Select Build projects. From here, you can see the status of the different builds for managing AFT resources
 
@@ -195,14 +195,14 @@ For more setup information, see [AWS Control Tower workshops](https://controltow
      * `SSOUserEmail`
      * `SSOUserFirstName`
      * `SSOUserLastName`
-   * The parameter `account_tags` captures user-defined keys and values that can tag AWS accounts according to your business criteria.  
+   * The parameter `account_tags` captures user-defined keys and values that can tag AWS accounts according to your business criteria.
      For more information about account tags, see the [Tagging AWS Organizations resources](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_tagging.html) in the _AWS Organizations User Guide_.
    * The parameter `change_management_parameters` captures additional information that you may want to keep, such as the reason for the account request, and the identifier of who initiated the request.
      * `change_requested_by`
      * `change_reason`
-     * The parameter `custom_fields` captures custom keys and values. The values are deployed as SSM Parameters in the vended account under the namespace: `/aft/account-request/custom-fields/`. 
-       If a custom field is removed from the account request, the field is removed from the SSM Parameter Store for that vended account. The `custom_fields` parameter allows you to collect additional metadata with the account request. 
-       This metadata can trigger additional processing, either during provisioning or when updating an account. You can refer to this metadata during account customizations to determine the proper guardrails to deploy. 
+     * The parameter `custom_fields` captures custom keys and values. The values are deployed as SSM Parameters in the vended account under the namespace: `/aft/account-request/custom-fields/`.
+       If a custom field is removed from the account request, the field is removed from the SSM Parameter Store for that vended account. The `custom_fields` parameter allows you to collect additional metadata with the account request.
+       This metadata can trigger additional processing, either during provisioning or when updating an account. You can refer to this metadata during account customizations to determine the proper guardrails to deploy.
        For example, an account that is subject to regulatory compliance could deploy additional AWS Config Rules.
      * The parameter `account_customizations_name` is optional. It captures the specified account template folder for account customizations. See [Account customizations](https://docs.aws.amazon.com/controltower/latest/userguide/aft-account-customization-options.html) for more information.
 
@@ -212,7 +212,7 @@ You will update the configuration for previously configured AFT vended accounts 
 
 ## Deleting an account from AFT
 For more information, see the [AWS documentation](https://docs.aws.amazon.com/controltower/latest/userguide/aft-remove-account.html) on Removing an account from AFT.
-> Removing an account from AFT is not the same process as removing an account from AWS Control Tower or deleting it from AWS. 
+> Removing an account from AFT is not the same process as removing an account from AWS Control Tower or deleting it from AWS.
 > When you follow these steps, the account is not deleted, it is only removed from management by AFT. It is still managed by AWS Control Tower.
 
 :warning: Removing an account from the AFT pipeline is irreversible! It can result in a loss of state!
@@ -222,11 +222,11 @@ For more information, see the [AWS documentation](https://docs.aws.amazon.com/co
    :exclamation: This occurs AFTER Step 1 has been merged. :exclamation:
 3. (If applicable) Delete the account customizations pipeline from the _AFT-Management_ account. This pipeline is prefixed with the account ID.
 4. Delete the Terraform state from the S3 backend buckets in the _AFT-Management_ account. The bucket names should appear as _aft-backend-<aft_account_id>-primary-region_ and _aft-backend-<aft_account_id>-secondary-region_.
-	a. Navigate to S3 and select the bucket  
+	a. Navigate to S3 and select the bucket
 	b. Delete the account specific objects related to “customizations pipeline”, “global customizations,” and “account customizations”
 5. Delete the account metadata (if present) from the DynamoDB table in the AFT-Management account.
 	a. Navigate to DynamoDB
-	b. Select the table `aft-request-metadata` 
+	b. Select the table `aft-request-metadata`
 
 Now that the account has been removed from AFT configuration, it will need to be deleted / removed from Control Tower.
 

@@ -15,7 +15,7 @@ At the end of this guide you’ll have the following implemented based on the co
       - Contains accounts named: Testing-Workload
   - SecurityHub
     - AWS Foundational Security Best Practices v1.0.0
-      - [Security Hub controls reference - AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.html) 
+      - [Security Hub controls reference - AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.html)
     - PCI DSS v3.2.1
     - CIS AWS Foundations Benchmark v1.4.0
     - NIST Special Publication 800-53 Revision 5
@@ -35,7 +35,7 @@ At the end of this guide you’ll have the following implemented based on the co
   - Cost Usage Reports and Budget Notifications
   - AWS Backup Vault in Root OU
   - Cloudwatch alarms for any policy changes regarding encryption, logging, vpcs, etc
-  - [Best practices configuration - Landing Zone Accelerator on AWS](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/best-practices-configuration.html) 
+  - [Best practices configuration - Landing Zone Accelerator on AWS](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/best-practices-configuration.html)
 - HIPAA
   - **Organizational Units (OUs)**
     - Root (contains all OUs and accounts below)
@@ -55,7 +55,7 @@ At the end of this guide you’ll have the following implemented based on the co
       - Contains accounts named: Audit, LogArchive
   - SecurityHub
     - AWS Foundational Security Best Practices v1.0.0
-      - [Security Hub controls reference - AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.html) 
+      - [Security Hub controls reference - AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.html)
     - PCI DSS v3.2.1
     - CIS AWS Foundations Benchmark v1.4.0
     - NIST Special Publication 800-53 Revision 5
@@ -87,7 +87,7 @@ At the end of this guide you’ll have the following implemented based on the co
 - You will need to be an Organization Administrator to complete this
 - You will need the ability to create, at a minimum, of **Six** unique email distribution lists (or individual email addresses) for the additional accounts the instructions will walk through setting up.
 
-### Pre-Requisites 
+### Pre-Requisites
 
 - AWS CLI Version >= 2.7
 - Root access to the account where you want to spin up Control Tower
@@ -148,7 +148,7 @@ For additional information on how to configure Landing Zone, see the official AW
 
    11. On the **Review** step modify the **Key policy** JSON and make sure the code generated all 3 of statement blocks below, if not, overwrite it with what’s below and add in your account number where required.. This will allow AWS Config and CloudTrail to use the key.
 
-       1. 
+       1.
             ```
                 {
                   "Id": "key-consolepolicy-3",
@@ -198,7 +198,7 @@ For additional information on how to configure Landing Zone, see the official AW
                 }
                   ]
                 }
-            ``` 
+            ```
 
    12. Click **Finish**
 
@@ -243,7 +243,7 @@ For additional information on how to configure Landing Zone, see the official AW
 
 ### Configure Github Credentials to access LZA repository
 
-1. Follow these instructions [Managing your personal access tokens - GitHub Docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic) 
+1. Follow these instructions [Managing your personal access tokens - GitHub Docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic)
 2. When creating the token:
    1. Deselect the checkbox for **repo** that selects everything under it
    2. Select the **public_repo** option
@@ -295,7 +295,7 @@ For additional information on how to configure Landing Zone, see the official AW
 
 ### Configuring AWS Profile
 
-Once you have SSO configured, you can set up the AWS CLI for SSO authentication. You will need to do this in order to run the Terraform configuration and provision the AFT and Logging Accounts.  
+Once you have SSO configured, you can set up the AWS CLI for SSO authentication. You will need to do this in order to run the Terraform configuration and provision the AFT and Logging Accounts.
 
 For more information on how to configure SSO with the AWS CLI, see the official docs for [Configure the AWS CLI to use AWS IAM Identity Center (successor to AWS Single Sign-On) - AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html).
 
@@ -319,14 +319,14 @@ Then enter the code: <code>
 
 ****-****
 There are 3 AWS accounts available to you.
-  Log Archive, user+log@email.com (<log account id>)                 
-  Audit, user+audit@emal.com (<audit account id>)                           
+  Log Archive, user+log@email.com (<log account id>)
+  Audit, user+audit@emal.com (<audit account id>)
 > Sourcefuse, user@email.com (<root account id>)  <---- Pick your root account
 
 Using the account ID <root account id>
 There are 2 roles available to you.
 > AWSAdministratorAccess  <---- Pick your Admin role
-  AWSServiceCatalogAdminFullAccess   
+  AWSServiceCatalogAdminFullAccess
 Using the role name "AWSAdministratorAccess"
 CLI default client Region [us-east-1]:  <---- Leave blank, just press enter
 CLI default output format [json]:  <---- Leave blank, just press enter
@@ -341,13 +341,13 @@ aws s3 ls --profile AWSAdministratorAccess-<root account id>
 ### Apply basic Best Practices & deploy with LZA
 
 1. Clone the repo created in CodeCommit
-   1. If you do not have `python` installed, install `python` [Download Python](https://www.python.org/downloads/) 
+   1. If you do not have `python` installed, install `python` [Download Python](https://www.python.org/downloads/)
    2. Make sure `python` is added to your path and can be run in your terminal of choice
-   3. Check if `pip` was automatically installed, if not install `pip` [Installation - pip documentation v23.1.2](https://pip.pypa.io/en/stable/installation/) 
+   3. Check if `pip` was automatically installed, if not install `pip` [Installation - pip documentation v23.1.2](https://pip.pypa.io/en/stable/installation/)
    4. Run the command `pip install git-remote-codecommit`
    5. Navigate to where you want the repository to live on your local machine
    6. Run the command `git clone codecommit://AWSAdministratorAccess-<your root account id>@aws-accelerator-config`
-2. Navigate to where you want the sourcefuse best practices repo to live and clone it [sourcefuse/arc-lza-config](https://github.com/sourcefuse/arc-lza-config) 
+2. Navigate to where you want the sourcefuse best practices repo to live and clone it [sourcefuse/arc-lza-config](https://github.com/sourcefuse/arc-lza-config)
 3. Copy all the files from sourcefuse/arc-lza-config over the files cloned from CodeCommit in aws-accelerator-config (replace everything that came from AWS)
 4. Navigate back to aws-accelerator-config and modify the `accounts-config.yml` file:
    1. Replace the line asking for the Root account email
@@ -377,13 +377,13 @@ aws s3 ls --profile AWSAdministratorAccess-<root account id>
 ### Apply HIPAA Best Practices & deploy with LZA
 
 1. Clone the repo created in CodeCommit
-   1. If you do not have `python` installed, install `python` [Download Python](https://www.python.org/downloads/) 
+   1. If you do not have `python` installed, install `python` [Download Python](https://www.python.org/downloads/)
    2. Make sure `python` is added to your path and can be run in your terminal of choice
-   3. Check if `pip` was automatically installed, if not install `pip` [Installation - pip documentation v23.1.2](https://pip.pypa.io/en/stable/installation/) 
+   3. Check if `pip` was automatically installed, if not install `pip` [Installation - pip documentation v23.1.2](https://pip.pypa.io/en/stable/installation/)
    4. Run the command `pip install git-remote-codecommit`
    5. Navigate to where you want the repository to live on your local machine
    6. Run the command `git clone codecommit://AWSAdministratorAccess-<your root account id>@aws-accelerator-config`
-2. Navigate to where you want the sourcefuse best practices repo to live and clone it [sourcefuse/arc-lza-config](https://github.com/sourcefuse/arc-lza-config) 
+2. Navigate to where you want the sourcefuse best practices repo to live and clone it [sourcefuse/arc-lza-config](https://github.com/sourcefuse/arc-lza-config)
 3. Copy all the files from sourcefuse/arc-lza-config/best-practices over the files cloned from CodeCommit in aws-accelerator-config (replace everything that came from AWS)
 4. Copy all the files from sourcefuse/arc-lza-config/hipaa over the top of the best practices files you just copied in to aws-accelerator-config
    1. When your file system asks you about overwriting or skipping files, select overwrite for all of them
@@ -422,7 +422,7 @@ aws s3 ls --profile AWSAdministratorAccess-<root account id>
 12. Click **Release**
 13. Wait very patiently, as this will take upwards of 2 hours
 
- 
+
 
 - [Special Notes](https://sourcefuse.atlassian.net/wiki/spaces/SOURCEFUSE/pages/3657334895/Control+Tower+LZA+Setup#Special-Notes)
   - [Pre-Requisites ](https://sourcefuse.atlassian.net/wiki/spaces/SOURCEFUSE/pages/3657334895/Control+Tower+LZA+Setup#Pre-Requisites)
@@ -435,5 +435,3 @@ aws s3 ls --profile AWSAdministratorAccess-<root account id>
 - [Choose which section below relates to your use case; Basic, HIPAA, Financial](https://sourcefuse.atlassian.net/wiki/spaces/SOURCEFUSE/pages/3657334895/Control+Tower+LZA+Setup#Choose-which-section-below-relates-to-your-use-case;-Basic,-HIPAA,-Financial)
   - [Apply basic Best Practices & deploy with LZA](https://sourcefuse.atlassian.net/wiki/spaces/SOURCEFUSE/pages/3657334895/Control+Tower+LZA+Setup#Apply-basic-Best-Practices-&-deploy-with-LZA)
   - [Apply HIPAA Best Practices & deploy with LZA](https://sourcefuse.atlassian.net/wiki/spaces/SOURCEFUSE/pages/3657334895/Control+Tower+LZA+Setup#Apply-HIPAA-Best-Practices-&-deploy-with-LZA)
-
- 
