@@ -7,26 +7,26 @@
 
 The purpose of this module is to provide a Terraform based interface for administering Cloud Custodian to assist with managing the state of template files and to allow for easier runtime interpolation via Terraform.
 
-## Requirements 
+## Requirements
 
 ```shell
-Terraform >= 1.0.5  
-Pip >= 20.0.2   
-Python >= 3.8 
-``` 
+Terraform >= 1.0.5
+Pip >= 20.0.2
+Python >= 3.8
+```
 
-## Getting started 
+## Getting started
 You must have Python 3.8 or above installed.
 
 To install Cloud Custodian, you can download it using Pip:
 
 ```shell
-pip install c7n 
+pip install c7n
 ```
 * Pip package notes
   * c7n is for AWS
   * c7n_azure us for Azure
-  * c7n_gcp is for Google Compute  
+  * c7n_gcp is for Google Compute
 
 ## Usage
 ```hcl
@@ -173,10 +173,10 @@ module "cloud_custodian" {
 | <a name="output_sqs_arn"></a> [sqs\_arn](#output\_sqs\_arn) | ARN of the SQS queue |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Versioning  
-This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.  
+## Versioning
+This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.
 
-On commits to `main`, you will need to increment this version. Once the project is merged, the pipeline will kick off and tag the latest git commit.  
+On commits to `main`, you will need to increment this version. Once the project is merged, the pipeline will kick off and tag the latest git commit.
 
 ## Development
 
@@ -187,7 +187,7 @@ Install the prerequisites:
 * [terraform](https://learn.hashicorp.com/terraform/getting-started/install#installing-terraform)
 * [terraform-docs](https://github.com/segmentio/terraform-docs)
 
-Then run `pre-commit` on the repo:  
+Then run `pre-commit` on the repo:
 
 ```shell
 pre-commit install
@@ -196,5 +196,5 @@ pre-commit run --all-files
 
 ## Authors
 
-This project is authored by:  
+This project is authored by:
 * SourceFuse ARC Team

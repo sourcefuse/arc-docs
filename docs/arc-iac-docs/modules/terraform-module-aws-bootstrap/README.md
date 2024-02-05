@@ -4,9 +4,9 @@
 
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-module-aws-bootstrap/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-module-aws-bootstrap/actions/workflows/snyk.yaml)
 
-This module creates and configures a S3 bucket backend and DynamoDB lock table for terraform state files.  
+This module creates and configures a S3 bucket backend and DynamoDB lock table for terraform state files.
 
-## Getting Started  
+## Getting Started
 ```hcl
 module "bootstrap" {
   source  = "sourcefuse/arc-bootstrap/aws"
@@ -91,15 +91,15 @@ No modules.
 | <a name="output_dynamodb_name"></a> [dynamodb\_name](#output\_dynamodb\_name) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-# Bootstrapping  
+# Bootstrapping
 
 ## Initial Setup
-On initial run, this project will create a local terraform state file. **DO NOT** delete this file. Once our backend and lock table are created, we will migrate the state to the new backend.  
+On initial run, this project will create a local terraform state file. **DO NOT** delete this file. Once our backend and lock table are created, we will migrate the state to the new backend.
 
 ## Migrating local state to backend
-:warning: This can only be done once without affecting all workspaces. :warning:  
+:warning: This can only be done once without affecting all workspaces. :warning:
 
-After the initial apply of terraform, you can uncomment this section and save the state to the backend.  
+After the initial apply of terraform, you can uncomment this section and save the state to the backend.
 ```hcl
 terraform {
   required_version = "~> 1.0.3"
@@ -114,7 +114,7 @@ terraform {
 }
 ```
 
-Then run `terraform init` to initialize the new backend:  
+Then run `terraform init` to initialize the new backend:
 ```
 Initializing modules...
 
@@ -137,7 +137,7 @@ Our local state has now been migrated to the new backend. It is now safe to remo
 
 ## Development
 
-### Versioning  
+### Versioning
 
 while Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
 

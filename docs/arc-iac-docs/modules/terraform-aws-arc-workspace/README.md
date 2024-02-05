@@ -8,7 +8,7 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Worksp
 
 ## Usage
 
-To see a Microsoft AD example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-workspace/blob/main/examples/Microsoft-AD/main.tf) file in the example folder.  
+To see a Microsoft AD example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-workspace/blob/main/examples/Microsoft-AD/main.tf) file in the example folder.
 
 ```hcl
 module "microsoft-ad-workspace" {
@@ -187,7 +187,7 @@ For Example
 ```sh
 git commit -m "your commit message #major"
 ```
-By specifying this , it will bump the version and if you don't specify this in your commit message then by default it will consider patch and will bump that accordingly  
+By specifying this , it will bump the version and if you don't specify this in your commit message then by default it will consider patch and will bump that accordingly
 
 ## Development
 
@@ -214,7 +214,7 @@ By specifying this , it will bump the version and if you don't specify this in y
   go mod init github.com/sourcefuse/arc-terraform-workspace
   go get github.com/gruntwork-io/terratest/modules/terraform
   ```
-- Now execute the test  
+- Now execute the test
   ```sh
   cd test
   go test

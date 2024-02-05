@@ -7,10 +7,10 @@
 | :exclamation: **Contributors:** See [Development](#dev) |
 | ------------------------------------------------------- |
 
-The boilerplate serves as the starting point for rolling out a new Lambda. The boilerplate includes 
+The boilerplate serves as the starting point for rolling out a new Lambda. The boilerplate includes
 
 * Terraform
-* Terraform CDK in TypeScript 
+* Terraform CDK in TypeScript
 * Example Lambda Handlers and common interfaces, utilities, etc.
 
 The following patterns are shown in the boilerplate in Terraform, Terraform CDK in TypeScript, and TypeScript Lambda handlers.
@@ -31,7 +31,7 @@ The following patterns are shown in the boilerplate in Terraform, Terraform CDK 
 
 ## <a id="getting_started"></a> Getting Started: Build out Lambda
 
-This assumes you have the [pre-requisites](#prereqs) already configured, an AWS Profile configured, and a KMS Key admin role.  
+This assumes you have the [pre-requisites](#prereqs) already configured, an AWS Profile configured, and a KMS Key admin role.
 For more information on how to configure an AWS Profile on your workstation, please see [Adding a profile by editing the shared AWS credentials file
 ](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/keys-profiles-credentials.html#adding-a-profile-to-the-aws-credentials-profile-file)
 

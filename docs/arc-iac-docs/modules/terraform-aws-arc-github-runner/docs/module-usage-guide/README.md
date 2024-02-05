@@ -17,11 +17,11 @@ Before using this module, ensure you have the following:
 - AWS credentials configured.
 - Terraform installed.
 - You will need to have a GitHub Personal Access Token (PAT) with `admin:org` permissions in order to manage GitHub runners for the Organization.
-If you do not have sufficient permissions to GitHub, the runner will not register.  
+If you do not have sufficient permissions to GitHub, the runner will not register.
 
 Once you've obtained a PAT, you will need to set it so Terraform can access it.
 The recommended approach to this is to save it in _Systems Manager Parameter Store_ with the Parameter name of: `/<namespace>/<environment>/github/token`
-You can reference this parameter via a data lookup:  
+You can reference this parameter via a data lookup:
 ```hcl
 data "aws_ssm_parameter" "github_token" {
   name = "/${var.namespace}/${var.environment}/github/token"
@@ -78,7 +78,7 @@ For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-a
 
 This example will create:
 
-This module will create the following resources in a specified AWS Account:  
+This module will create the following resources in a specified AWS Account:
 * S3 bucket: used for storing the generated `docker-compose.yml`
 * EC2 instance: Used for running the runner container on
 * SSH Key Pair: Used for decrypting EC2 password

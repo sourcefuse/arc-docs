@@ -105,11 +105,11 @@ No resources.
 | <a name="output_vcs_provider"></a> [vcs\_provider](#output\_vcs\_provider) | VCS Provider where the repos are configure for the different accounts. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Versioning  
-This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.  
+## Versioning
+This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.
 
 When you intend to commit to `main`, you will need to increment this version. Once the project is merged,
-the pipeline will kick off and tag the latest git commit.  
+the pipeline will kick off and tag the latest git commit.
 
 ## Development
 

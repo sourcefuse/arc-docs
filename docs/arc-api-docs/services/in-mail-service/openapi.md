@@ -13,7 +13,7 @@ Base URLs:
 
 # Authentication
 
-- HTTP Authentication, scheme: bearer 
+- HTTP Authentication, scheme: bearer
 
 <h1 id="in-mail-service-originatorcontroller">OriginatorController</h1>
 
@@ -4457,4 +4457,3 @@ Thread
 |messageCounts|number|false|none|none|
 |extId|string|false|none|none|
 |extMetadata|object|false|none|none|
-

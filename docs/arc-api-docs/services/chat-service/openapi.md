@@ -13,7 +13,7 @@ Base URLs:
 
 # Authentication
 
-- HTTP Authentication, scheme: bearer 
+- HTTP Authentication, scheme: bearer
 
 <h1 id="chat-service-attachmentfilecontroller">AttachmentFileController</h1>
 
@@ -6798,4 +6798,3 @@ or
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |» *anonymous*|string|false|none|none|
-

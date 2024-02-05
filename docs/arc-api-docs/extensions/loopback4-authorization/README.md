@@ -50,7 +50,7 @@ Where permissions are associated to roles and users have a specific role attache
 
 #### 3. Role Based Permissions with User Level Flexibility
 
-This is the most flexible architecture. In this case, method #2 is implemented as is. 
+This is the most flexible architecture. In this case, method #2 is implemented as is.
 
 On top of it, we also add user-level permissions override, allow/deny permissions over role permissions. So, say there is user who can perform all admin role actions except he cannot remove users from the system. So, DeleteUser permission can be denied at user level and role can be set as Admin for the user.
 
@@ -150,7 +150,7 @@ export class User extends Entity implements UserPermissionsOverride<string> {
 
 #### User Permissions Provider
 
-For method #3, This extension exposes a provider function [AuthorizationBindings.USER_PERMISSIONS](https://github.com/sourcefuse/loopback4-authorization/blob/master/src/providers/user-permissions.provider.ts) to evaluate the user permissions based on its role permissions and user-level overrides. 
+For method #3, This extension exposes a provider function [AuthorizationBindings.USER_PERMISSIONS](https://github.com/sourcefuse/loopback4-authorization/blob/master/src/providers/user-permissions.provider.ts) to evaluate the user permissions based on its role permissions and user-level overrides.
 
 Just inject it like below:
 
@@ -307,7 +307,7 @@ API endpoints provided by ARC API (aka Sourceloop) services have their permissio
 In order to override them you can bind your custom permissions in the `AuthorizationBindings.PERMISSION` binding key.
 This accepts an object that should have Controller class name as the root level key and the value of which is another object of method to permissions array mapping.
 
-Like below: 
+Like below:
 
 ```ts
 this.bind(AuthorizationBindings.PERMISSION).to({
@@ -322,7 +322,7 @@ this.bind(AuthorizationBindings.PERMISSION).to({
 });
 ```
 
-You can easily check the name of the controller and it's method name from the source code of the services or from the Swagger UI (clicking the endpoint in swagger append the controller and method name in the URL like `LoginController.login` where `login` is the method name). 
+You can easily check the name of the controller and it's method name from the source code of the services or from the Swagger UI (clicking the endpoint in swagger append the controller and method name in the URL like `LoginController.login` where `login` is the method name).
 
 ## Serving the static files:
 
