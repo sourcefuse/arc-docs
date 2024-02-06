@@ -28,7 +28,9 @@ nav:
           - CloudFront: 
               - CloudFront: "arc-iac-docs/modules/terraform-aws-arc-cloudfront"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-cloudfront/docs/module-usage-guide"
-          - Healthcheck: "arc-iac-docs/modules/terraform-aws-arc-healthcheck"
+          - Healthcheck: 
+              - Healthcheck: "arc-iac-docs/modules/terraform-aws-arc-healthcheck"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-healthcheck/docs/module-usage-guide"
           - KMS:
               - KMS: "arc-iac-docs/modules/terraform-aws-arc-kms"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-kms/docs/module-usage-guide"
