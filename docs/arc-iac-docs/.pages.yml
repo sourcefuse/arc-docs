@@ -25,7 +25,9 @@ nav:
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-opensearch/docs/module-usage-guide"
           - TypeScript Lambda Boilerplate: "arc-iac-docs/modules/typescript-lambda-boilerplate"
           - Cloud Custodian: "arc-iac-docs/modules/terraform-aws-cloud-custodian"
-          - CloudFront: "arc-iac-docs/modules/terraform-aws-refarch-cloudfront"
+          - CloudFront: 
+              - CloudFront: "arc-iac-docs/modules/terraform-aws-arc-cloudfront"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-cloudfront/docs/module-usage-guide"
           - Healthcheck: "arc-iac-docs/modules/terraform-aws-arc-healthcheck"
           - KMS:
               - KMS: "arc-iac-docs/modules/terraform-aws-arc-kms"
