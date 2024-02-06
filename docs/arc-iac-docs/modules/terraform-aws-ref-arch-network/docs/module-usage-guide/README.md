@@ -80,6 +80,10 @@ This example will create:
 ### Tips and Recommendations
 
 - If you want to create custom subnet ranges, check [example](https://github.com/sourcefuse/terraform-aws-arc-network/tree/main/examples/cistom-subnets)
+- When creating custom subnet ranges with this module, if you `set custom_nat_gateway_enabled` to `false` then make sure that you either
+  a) set the variable `custom_az_ngw_ids` with an appropriate map of availability zone to nat gateway id
+  OR
+  b) set your own default route using aws_route resource
 
 ## Troubleshooting
 
