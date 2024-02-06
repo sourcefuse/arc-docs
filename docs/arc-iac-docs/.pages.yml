@@ -35,7 +35,9 @@ nav:
               - KMS: "arc-iac-docs/modules/terraform-aws-arc-kms"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-kms/docs/module-usage-guide"
           - ARC Common Data: "arc-iac-docs/modules/terraform-aws-arc-common-data"
-          - Waf: "arc-iac-docs/modules/terraform-aws-refarch-waf"
+          - Waf: 
+              - Waf: "arc-iac-docs/modules/terraform-aws-arc-waf"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-waf/docs/module-usage-guide"
           - Vpn: 
               - Vpn: "arc-iac-docs/modules/terraform-aws-arc-vpn"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-vpn/docs/module-usage-guide"
