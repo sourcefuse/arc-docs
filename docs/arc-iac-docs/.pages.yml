@@ -4,7 +4,7 @@ nav:
   - IaC Modules:
       - AWS:
           - Control Tower AFT: "arc-iac-docs/modules/terraform-aws-refarch-control-tower-aft"
-          - Environment Bootstrap: "arc-iac-docs/modules/terraform-module-aws-bootstrap"
+          - Environment Bootstrap: "arc-iac-docs/modules/terraform-aws-arc-bootstrap"
           - Network:
               - Network: "arc-iac-docs/modules/terraform-aws-ref-arch-network"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-ref-arch-network/docs/module-usage-guide"
