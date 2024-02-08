@@ -113,13 +113,13 @@ module "opensearch" {
 | <a name="output_opensearch_user_iam_role_arn"></a> [opensearch\_user\_iam\_role\_arn](#output\_opensearch\_user\_iam\_role\_arn) | The ARN of the IAM role to allow access to OpenSearch cluster |
 | <a name="output_opensearch_user_iam_role_name"></a> [opensearch\_user\_iam\_role\_name](#output\_opensearch\_user\_iam\_role\_name) | The name of the IAM role to allow access to OpenSearch cluster |
 | <a name="output_security_group_id"></a> [security\_group\_id](#output\_security\_group\_id) | Security Group ID to control access to the OpenSearch domain |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->  
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Versioning  
-This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.  
+## Versioning
+This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.
 
 When you intend to commit to `main`, you will need to increment this version. Once the project is merged,
-the pipeline will kick off and tag the latest git commit.  
+the pipeline will kick off and tag the latest git commit.
 
 ## Development
 
@@ -146,12 +146,12 @@ the pipeline will kick off and tag the latest git commit.
   go mod init github.com/sourcefuse/terraform-aws-refarch-opensearch
   go get github.com/gruntwork-io/terratest/modules/terraform
   ```
-- Now execute the test  
+- Now execute the test
   ```sh
   go test -timeout  30m
   ```
 
 ## Authors
 
-This project is authored by:  
+This project is authored by:
 * SourceFuse ARC Team

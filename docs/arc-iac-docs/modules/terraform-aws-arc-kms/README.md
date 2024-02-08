@@ -8,7 +8,7 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing KMS.
 
 ## Usage
 
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-kms/blob/main/example/main.tf) file in the example folder.  
+To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-kms/blob/main/example/main.tf) file in the example folder.
 
 ```hcl
 
@@ -75,11 +75,11 @@ No modules.
 | <a name="output_key_id"></a> [key\_id](#output\_key\_id) | Key ID |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Versioning  
-This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.  
+## Versioning
+This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.
 
 When you intend to commit to `main`, you will need to increment this version. Once the project is merged,
-the pipeline will kick off and tag the latest git commit.  
+the pipeline will kick off and tag the latest git commit.
 
 ## Development
 
@@ -106,7 +106,7 @@ the pipeline will kick off and tag the latest git commit.
   go mod init github.com/sourcefuse/terraform-aws-refarch-<module_name>
   go get github.com/gruntwork-io/terratest/modules/terraform
   ```
-- Now execute the test  
+- Now execute the test
   ```sh
   go test -timeout  30m
   ```

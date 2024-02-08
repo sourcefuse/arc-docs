@@ -26,7 +26,7 @@ To use the module in your Terraform configuration, include the following source 
 ```hcl
 module "kms" {
  source                  = "sourcefuse/arc-kms/aws"
-  version                 = "0.0.5" 
+  version                 = "0.0.5"
   # insert the required variables here
 }
 ```
@@ -67,8 +67,8 @@ For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-a
 
 This example will create:
 
-module "kms" : This module creates an AWS KMS key. The key's properties are configured with variables. 
-The tags created by the "tags" module are attached to this key. 
+module "kms" : This module creates an AWS KMS key. The key's properties are configured with variables.
+The tags created by the "tags" module are attached to this key.
 The policy for the key is specified by a local value kms_policy.
 
 ### Tips and Recommendations
