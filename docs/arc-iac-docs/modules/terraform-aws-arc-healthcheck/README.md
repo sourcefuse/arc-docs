@@ -1,47 +1,150 @@
 # [terraform-aws-refarch-healthcheck](https://github.com/sourcefuse/terraform-aws-refarch-healthcheck)
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-billing)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-billing)
+
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-refarch-healthcheck/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-healthcheck/actions/workflows/snyk.yaml)
 
-## Overview
+## Introduction
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for Endpoint health check using Route53
-## Usage
+The SourceFuse AWS Reference Architecture (ARC) Terraform module facilitates endpoint health checks using Route53, enabling automated monitoring and management of endpoint health within AWS infrastructures for enhanced reliability and availability.
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.
+### Prerequisites
+Before using this module, ensure you have the following:
+
+- AWS credentials configured.
+- Terraform installed.
+- A working knowledge of Terraform.
+
+
+## Getting Started
+
+1. **Define the Module**
+
+Initially, it's essential to define a Terraform module, which is organized as a distinct directory encompassing Terraform configuration files. Within this module directory, input variables and output values must be defined in the variables.tf and outputs.tf files, respectively. The following illustrates an example directory structure:
+
+
+```plaintext
+healthcheck/
+|-- main.tf
+|-- variables.tf
+|-- outputs.tf
+```
+
+2. **Define Input Variables**
+
+Inside the `variables.tf` or in `*.tfvars` file, you should define values for the variables that the module requires.
+
+3. **Use the Module in Your Main Configuration**
+In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
 
 ``` hcl
 
-module "tags" {
-  source  = "sourcefuse/arc-tags/aws"
-  version = "1.2.3"
-
-  environment = "dev"
-  project     = "test"
-
-  extra_tags = {
-    RepoName = "terraform-aws-refarch-healthcheck"
-  }
-}
-
 module "health_check" {
-  source            = "../"
-  name              = "test-health-check"
-  domain_name       = "microservices.io"
-  resource_path     = "/patterns/observability/health-check-api.html"
-  type              = "HTTPS_STR_MATCH"
-  measure_latency   = true
-  alarm_prefix      = "test"
-  failure_threshold = 2
-  request_interval  = 10
-  search_string     = "Pattern: Health Check API"
-  alarm_endpoint    = "https://api.opsgenie.com/v1/json/cloudwatch?apiKey=75f8c6f7-5655-4a1c-b826-cef87e52e5c9"
+ source  = "sourcefuse/arc-healthcheck/aws"
+  version = "0.0.3"
 
-  tags = module.tags.tags
+  name              = var.name
+  domain_name       = var.domain_name
+  resource_path     = var.resource_path
+  type              = var.type
+  measure_latency   = var.measure_latency
+  alarm_prefix      = var.alarm_prefix
+  failure_threshold = var.failure_threshold
+  request_interval  = var.request_interval
+  search_string     = var.search_string
+  alarm_endpoint    = var.alarm_endpoint
 
 }
 
+```
+
+4. **Output Values**
+
+Inside the `outputs.tf` file of the module, you can define output values that can be referenced in the main configuration. For example:
+
+```hcl
+
+output "cloudwatch_alarm_arn" {
+  value       = aws_cloudwatch_metric_alarm.this.arn
+}
+
+output "route53_health_check_arn" {
+  value       = aws_route53_health_check.this.arn
+}
+
+```
+
+5. **.tfvars**
+
+Inside the `.tfvars` file of the module, you can provide desired values that can be referenced in the main configuration. For example:
+
+Edit the [dev.tfvars](./example/dev.tfvars) file and provide desired values.  
+
+```hcl
+region      = "us-east-1"
+namespace   = "arc"
+environment = "dev"
+
+name              = "test-health-check"
+domain_name       = "microservices.io"
+resource_path     = "/patterns/observability/health-check-api.html"
+type              = "HTTPS_STR_MATCH"
+measure_latency   = true
+alarm_prefix      = "test"
+failure_threshold = 2
+request_interval  = 10
+search_string     = "Health"  // Note:- string with space(eg. "Health API") is not working , it always goes to in-alarm state
+alarm_endpoint    = "https://api.opsgenie.com/v1/json/cloudwatch?apiKey=xxxxx-xx-4xxc9c-xx-xxxx"
 
 
+```
+
+## First Time Usage
+***uncomment the backend block in [main.tf](./example/main.tf)***
+```shell
+terraform init -backend-config=config.dev.hcl
+```
+***If testing locally, `terraform init` should be fine***
+
+Create a `dev` workspace
+```shell
+terraform workspace new dev
+```
+
+Plan Terraform
+```shell
+terraform plan -var-file dev.tfvars
+```
+
+Apply Terraform
+```shell
+terraform apply -var-file dev.tfvars
+```
+
+## Production Setup
+```shell
+terraform init -backend-config=config.prod.hcl
+```
+
+Create a `prod` workspace
+```shell
+terraform workspace new prod
+```
+
+Plan Terraform
+```shell
+terraform plan -var-file prod.tfvars
+```
+
+Apply Terraform
+```shell
+terraform apply -var-file prod.tfvars  
+```
+
+## Cleanup  
+Destroy Terraform
+```shell
+terraform destroy -var-file dev.tfvars  
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
@@ -105,21 +208,7 @@ No modules.
 
 ## Development
 
-### Prerequisites
-
-- [terraform](https://learn.hashicorp.com/terraform/getting-started/install#installing-terraform)
-- [terraform-docs](https://github.com/segmentio/terraform-docs)
-- [pre-commit](https://pre-commit.com/#install)
-
-### Configurations
-
-- Configure pre-commit hooks
-
-```sh
-pre-commit install
-```
-
-### Git commits
+### Versioning  
 
 while Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
 
@@ -130,25 +219,30 @@ git commit -m "your commit message #major"
 ```
 By specifying this , it will bump the version and if you dont specify this in your commit message then by default it will consider patch and will bump that accordingly
 
-### Tests
+### Prerequisites
 
-- Tests are available in `test` directory
+- [terraform](https://learn.hashicorp.com/terraform/getting-started/install#installing-terraform)
+- [terraform-docs](https://github.com/segmentio/terraform-docs)
+- [pre-commit](https://pre-commit.com/#install)
+
+### Configurations
+
+- Configure pre-commit hooks
+```shell
+pre-commit install
+```
+
 - Configure the dependencies
-
 ```sh
 cd test
 go mod init github.com/sourcefuse/terraform-aws-refarch-healthcheck
 go get github.com/gruntwork-io/terratest/modules/terraform
 ```
-
-- Now execute the test
-
-```sh
-cd test/
-go test
+- Execute pre-commit
+```shell
+pre-commit run -a
 ```
 ## Authors
 
 This project is authored by:
-
-- SourceFuse ARC Team
+- SourceFuse
