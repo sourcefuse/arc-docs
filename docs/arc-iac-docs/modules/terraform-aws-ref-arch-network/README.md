@@ -3,9 +3,9 @@
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-network)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-network)
 
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-ref-arch-network/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-ref-arch-network/actions/workflows/snyk.yaml)
-## Overview
+## Introduction
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing AWS VPC and related AWS networking resources.
+SourceFuse's AWS Reference Architecture (ARC) Terraform module for managing AWS VPC and related AWS networking resources.
 
 For more information about this repository and its usage, please see [Terraform AWS ARC Network Module Usage Guide](docs/module-usage-guide/README.md).
 
@@ -19,6 +19,13 @@ Create the following resources in a single region.
 * Configurable VPN Gateway
 * Configurable Client VPN Endpoint
 * Configurable VPC Endpoints
+
+### Prerequisites
+Before using this module, ensure you have the following:
+
+- AWS credentials configured.
+- Terraform installed.
+- A working knowledge of Terraform.
 
 ## Usage
 See the `examples` folder for a complete example.
