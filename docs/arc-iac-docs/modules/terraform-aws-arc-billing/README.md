@@ -4,13 +4,40 @@
 
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-billing/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-billing/actions/workflows/snyk.yaml)
 
-## Overview
+## Introduction
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing AWS budgets, and sending billing alarms to Slack.
+SourceFuse's AWS Reference Architecture (ARC) Terraform module streamlines budget management and billing alarms in AWS environments. With predefined budgets and real-time Slack and email alerts, organizations stay on top of spending trends and prevent cost overruns. This proactive approach optimizes resource usage and ensures financial transparency across cloud deployments.
 
-## Usage
+### Prerequisites
+Before using this module, ensure you have the following:
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.
+- AWS credentials configured.
+- Terraform installed.
+- A working knowledge of Terraform.
+- IAM billing role
+
+## Getting Started
+
+1. **Define the Module**
+
+Initially, it's essential to define a Terraform module, which is organized as a distinct directory encompassing Terraform configuration files. Within this module directory, input variables and output values must be defined in the variables.tf and outputs.tf files, respectively. The following illustrates an example directory structure:
+
+
+
+```plaintext
+billing/
+|-- main.tf
+|-- variables.tf
+|-- outputs.tf
+```
+
+
+2. **Define Input Variables**
+
+Inside the `variables.tf` or in `*.tfvars` file, you should define values for the variables that the module requires.
+
+3. **Use the Module in Your Main Configuration**
+In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
 
 ```hcl
 module "example_budgets" {
@@ -34,10 +61,28 @@ module "example_budgets" {
 
 ```
 
-Edit the [dev.tfvars](./example/dev.tfvars) file and provide desired values.
-The `budgets` variable is used to define list billing budgets to be managed by terraform
-This module sends notifications to both slack and email.
-Use the `billing_notification_emails`, to pass emails that will receive the billing alarms
+4. **Output Values**
+
+Inside the `outputs.tf` file of the module, you can define output values that can be referenced in the main configuration. For example:
+
+```hcl
+output "sns_topic_name" {
+  value       = module.budgets.sns_topic_name
+}
+
+output "lambda_function_arn" {
+  value       = module.budgets.lambda_function_arn
+}
+```
+
+5. **.tfvars**
+
+Inside the `.tfvars` file of the module, you can provide desired values that can be referenced in the main configuration. For example:
+
+Edit the [dev.tfvars](./example/dev.tfvars) file and provide desired values.  
+The `budgets` variable is used to define list billing budgets to be managed by terraform  
+This module sends notifications to both slack and email.  
+Use the `billing_notification_emails`, to pass emails that will receive the billing alarms  
 
 ```hcl
 region      = "us-east-1"
@@ -150,18 +195,24 @@ terraform plan -var-file prod.tfvars
 
 Apply Terraform
 ```shell
-terraform apply -var-file prod.tfvars
+terraform apply -var-file prod.tfvars  
 ```
 
-## Cleanup
+## Cleanup  
 Destroy Terraform
 ```shell
-terraform destroy -var-file dev.tfvars
+terraform destroy -var-file dev.tfvars  
 ```
 
-***Note:***
-&emsp;&emsp;***The emails will need to confirm subscription to SNS, in order to continue to receive billing alarms.***
-&emsp;&emsp;***An email will be sent from AWS to the emails***
+***Note:***  
+&emsp;&emsp;***The emails will need to confirm subscription to SNS, in order to continue to receive billing alarms.***  
+&emsp;&emsp;***An email will be sent from AWS to the emails***                                                
+&emsp;&emsp;***The services mentioned in cost_filter have to be accurate; otherwise, budgeted data doesn’t get generated.***
+```shell
+  cost_filter = {
+      Service = ["Amazon Elastic Compute Cloud - Compute"]
+    }
+```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -254,7 +305,7 @@ By specifying this , it will bump the version and if you dont specify this in yo
   go mod init github.com/sourcefuse/terraform-aws-refarch-<module_name>
   go get github.com/gruntwork-io/terratest/modules/terraform
   ```
-- Now execute the test
+- Now execute the test  
   ```sh
   go test -timeout  30m
   ```
