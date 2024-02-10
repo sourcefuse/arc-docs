@@ -22,7 +22,7 @@
 
 ## Overview
 
-THE `@sourceloop/audit-log` package is a powerful LoopBack 4 extension designed to seamlessly implement audit logs in your LoopBack applications. With this extension, you can effortlessly track and record audit data for all database transactions within your application.
+The `@sourceloop/audit-log` package is a powerful LoopBack 4 extension designed to seamlessly implement audit logs in your LoopBack applications. With this extension, you can effortlessly track and record audit data for all database transactions within your application.
 
 This package provides a generic model that enables the storage of audit logs, which can be backed by any datasource of your choice. Whether you're using MySQL, PostgreSQL, MongoDB, or any other database, the Audit Logs package ensures compatibility and flexibility.
 
