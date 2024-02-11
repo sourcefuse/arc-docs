@@ -13,7 +13,6 @@ The [terraform-aws-arc-security](https://github.com/sourcefuse/terraform-aws-arc
 ### Prerequisites
 
 Before using this module, ensure you have the following:
-
 - AWS credentials configured.
 - Terraform installed.
 - A working knowledge of AWS Security
@@ -27,10 +26,11 @@ To use the module in your Terraform configuration, include the following source 
 ```hcl
 module "cloud_security" {
   source  = "sourcefuse/arc-security/aws"
-  version = "1.0.0"
+  version = "1.0.2"
   # insert the required variables here
 }
 ```
+Refer to the [Terraform Registry](https://registry.terraform.io/modules/sourcefuse/arc-security/aws/latest) for the latest version.
 
 ### Integration with Existing Terraform Configurations
 
