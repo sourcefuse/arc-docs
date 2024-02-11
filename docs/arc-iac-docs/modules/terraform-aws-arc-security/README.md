@@ -5,16 +5,18 @@
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-security/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-security/actions/workflows/snyk.yaml)
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Security Hub components.
+The SourceFuse AWS Reference Architecture (ARC) Terraform module streamlines the management of Security Hub components, enhancing security posture and compliance for AWS environments. This module offers simplified configuration and deployment for Security Hub, optimizing resource allocation and threat detection capabilities.
+
+For more information about this repository and its usage, please see [Terraform AWS ARC GitHub SECURITY Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-security/blob/main/docs/module-usage-guide/README.md).
 
 ## Usage
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.
+To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.  
 
 ```hcl
 module "cloud_security" {
   source      = "sourcefuse/arc-security/aws"
-  version     = "0.0.4"
+  version     = "1.0.2"
   region      = var.region
   environment = var.environment
   namespace   = var.namespace
@@ -54,7 +56,7 @@ module "cloud_security" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.31.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.36.0 |
 
 ## Modules
 
@@ -159,7 +161,7 @@ By specifying this , it will bump the version and if you dont specify this in yo
   go mod init github.com/sourcefuse/terraform-aws-refarch-<module_name>
   go get github.com/gruntwork-io/terratest/modules/terraform
   ```
-- Now execute the test
+- Now execute the test  
   ```sh
   go test -timeout  30m
   ```
