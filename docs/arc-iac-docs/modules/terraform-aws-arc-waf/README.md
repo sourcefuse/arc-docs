@@ -10,7 +10,7 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing WAF.
 
 ## Usage
 
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-waf/blob/main/example/main.tf) file in the example folder.
+To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-waf/blob/main/example/main.tf) file in the example folder.  
 
 ```hcl
 module "this" {
@@ -76,7 +76,7 @@ No modules.
 | <a name="input_create_web_acl"></a> [create\_web\_acl](#input\_create\_web\_acl) | A Boolean indicates whether to create WAF Web ACL or not | `bool` | `true` | no |
 | <a name="input_ip_set"></a> [ip\_set](#input\_ip\_set) | Configuration for WAFv2 IP Set.<br>  * name: A friendly name of the IP set.<br>  * description: A friendly description of the IP set. Default is "Terraform managed IP Set configuration."<br>  * scope: Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are CLOUDFRONT or REGIONAL. Default is "REGIONAL."<br>  * ip\_address\_version: Specify IPV4 or IPV6. Valid values are IPV4 or IPV6. Default is "IPV4."<br>  * addresses: Contains an array of strings that specifies zero or more IP addresses or blocks of IP addresses. All addresses must be specified using Classless Inter-Domain Routing (CIDR) notation. WAF supports all IPv4 and IPv6 CIDR ranges except for /0. | <pre>list(object({<br>    name               = string<br>    description        = optional(string, "Terraform managed IP Set configuration")<br>    scope              = optional(string, "REGIONAL")<br>    ip_address_version = optional(string, "IPV4")<br>    addresses          = optional(list(string), [])<br>  }))</pre> | `[]` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to assign to the resource. If configured with a provider default\_tags configuration block present, tags with matching keys will overwrite those defined at the provider-level. | `map(string)` | `{}` | no |
-| <a name="input_web_acl_custom_response_body"></a> [web\_acl\_custom\_response\_body](#input\_web\_acl\_custom\_response\_body) | Defines custom response bodies that can be referenced by custom\_response actions | `any` | `[]` | no |
+| <a name="input_web_acl_custom_response_body"></a> [web\_acl\_custom\_response\_body](#input\_web\_acl\_custom\_response\_body) | Defines custom response bodies that can be referenced by custom\_response actions | <pre>list(object({<br>    key          = string<br>    content      = string<br>    content_type = string<br>  }))</pre> | `[]` | no |
 | <a name="input_web_acl_default_action"></a> [web\_acl\_default\_action](#input\_web\_acl\_default\_action) | Action to perform if none of the rules contained in the WebACL match. Options are `allow` or `block` | `string` | n/a | yes |
 | <a name="input_web_acl_description"></a> [web\_acl\_description](#input\_web\_acl\_description) | Description of the WebACL | `string` | `"Terraform managed Web ACL Configuration"` | no |
 | <a name="input_web_acl_name"></a> [web\_acl\_name](#input\_web\_acl\_name) | Name of the WAFv2 Web ACL | `string` | n/a | yes |
@@ -132,7 +132,7 @@ By specifying this , it will bump the version and if you dont specify this in yo
   go mod init github.com/sourcefuse/terraform-aws-refarch-<module_name>
   go get github.com/gruntwork-io/terratest/modules/terraform
   ```
-- Now execute the test
+- Now execute the test  
   ```sh
   go test -timeout  30m
   ```
