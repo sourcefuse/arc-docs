@@ -28,6 +28,7 @@ nav:
           - CloudFront:
               - CloudFront: "arc-iac-docs/modules/terraform-aws-arc-cloudfront"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-cloudfront/docs/module-usage-guide"
+          - Elasticache: "arc-iac-docs/modules/terraform-aws-elasticache"
           - Healthcheck:
               - Healthcheck: "arc-iac-docs/modules/terraform-aws-arc-healthcheck"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-healthcheck/docs/module-usage-guide"
@@ -38,7 +39,6 @@ nav:
           - Waf:
               - Waf: "arc-iac-docs/modules/terraform-aws-arc-waf"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-waf/docs/module-usage-guide"
-          - Elasticache: "arc-iac-docs/modules/terraform-aws-elasticache"
           - Vpn:
               - Vpn: "arc-iac-docs/modules/terraform-aws-arc-vpn"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-vpn/docs/module-usage-guide"
