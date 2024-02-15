@@ -38,8 +38,7 @@ nav:
           - Waf:
               - Waf: "arc-iac-docs/modules/terraform-aws-arc-waf"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-waf/docs/module-usage-guide"
-          - Elasticache:
-              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-elasticache/README.md"
+          - Elasticache: "arc-iac-docs/modules/terraform-aws-elasticache"
           - Vpn:
               - Vpn: "arc-iac-docs/modules/terraform-aws-arc-vpn"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-vpn/docs/module-usage-guide"
