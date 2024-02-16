@@ -11,6 +11,11 @@ This document has been sourced from [MAP 2.0 Customer Documentation](https://s3-
 	Tagging your migrated resources is a requirement as part of the MAP 2.0 program. Not enabling CUR or not tagging the migrated resources will result in not applying MAP credits in your account.
 </details>
 
+## Background
+The following videos are helpful and explain the Migration Acceleration Program and what achieves.
+* https://www.youtube.com/watch?v=_MTDN2r5-oI -- At the `27:15` mark, this will be broken down explaining the different pillars of the program.
+* https://youtu.be/lR27wRbmzoo?t=111&feature=shared
+
 ## Setup
 This section will cover the migration tracking process via Tagging.
 
