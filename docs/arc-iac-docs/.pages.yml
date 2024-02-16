@@ -71,7 +71,7 @@ nav:
       - AWS Account Baseline: "arc-iac-docs/reference_architectures/aws_account_baseline"
       - Control Tower and AFT: "arc-iac-docs/reference_architectures/control_tower_aft_setup"
       - Control Tower and LZA: "arc-iac-docs/reference_architectures/control_tower_lza_setup"
-      - MAP Migrations: "arc-iac-docs/reference_architectures/map_migrations.md"
+      - MAP Migrations: "arc-iac-docs/reference_architectures/map_migrations"
       - ARC IaC and LZA: "arc-iac-docs/reference_architectures/arc_iac_lza"
       - Network Baseline: "arc-iac-docs/reference_architectures/network_baseline"
       - ECS Platform Baseline: "arc-iac-docs/reference_architectures/ecs_platform_baseline"
