@@ -1,4 +1,5 @@
 ---
+exclude: ^docs/arc-iac-docs/modules/  # externally managed by push from repos' documentation
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
