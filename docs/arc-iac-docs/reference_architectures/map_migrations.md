@@ -30,6 +30,7 @@ Once implemented, it will track the cost and usage reports of all resources with
 
 ### What is Tagging?
 Tagging is simply a way to assign labels to an AWS resource. This is important during migration, as it’s the most accurate way to track migrated resources, and cost and usage associated with the migration.
+
 * Migration inventory scope overtime, as resources are migrated from another environment to AWS.
 * Identifying resources used during Pre-migration (testing), and during migration (production)
 * Accurately collecting cost of usage, to be used to calculate TCO
