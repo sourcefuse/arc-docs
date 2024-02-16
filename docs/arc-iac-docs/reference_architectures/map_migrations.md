@@ -40,3 +40,9 @@ Once CUR, Server ID, and tags are activated (link to #Setup), be sure to tag the
 * A custom script to tag high-value resources if any of the above are not feasible.
   * This is a WORK IN PROGRESS to support new services.
   * This, in combination with [resource-identifiers](https://github.com/sourcefuse/arc-helpful-scripts/tree/main/python/resource-identifiers) (needs additional service support) will be able to tag the identified resources in the generated CSV from the script.
+
+### Validation and MRR
+You can validate tagged resources are being reported correctly by navigating to Cost Explorer and filtering for the `map-migrated` tag.
+
+See [Cost Explorer Validation](https://s3-us-west-2.amazonaws.com/map-2.0-customer-documentation/html/latest/en/troubleshooting/cost_explorer.html) for step-by-step instructions on how to check this.
+This is how we will also pull the Monthly Recurring Revenue (MRR) for internal reporting.
