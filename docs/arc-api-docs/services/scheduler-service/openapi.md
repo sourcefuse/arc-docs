@@ -13,7 +13,7 @@ Base URLs:
 
 # Authentication
 
-- HTTP Authentication, scheme: bearer
+- HTTP Authentication, scheme: bearer 
 
 <h1 id="scheduler-service-attachmentcontroller">AttachmentController</h1>
 
@@ -504,7 +504,8 @@ fetch('/attachments/{id}',
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ],
       "subscriptions": [
@@ -528,10 +529,12 @@ fetch('/attachments/{id}',
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ]
     },
+    "foreignKey": null,
     "parentEvent": {},
     "attendees": [
       {
@@ -551,7 +554,8 @@ fetch('/attachments/{id}',
         "eventId": "string",
         "extId": "string",
         "extMetadata": {},
-        "event": {}
+        "event": {},
+        "foreignKey": null
       }
     ],
     "attachments": [
@@ -571,10 +575,12 @@ fetch('/attachments/{id}',
         "eventId": "string",
         "extId": "string",
         "extMetadata": {},
-        "event": {}
+        "event": {},
+        "foreignKey": null
       }
     ]
-  }
+  },
+  "foreignKey": null
 }
 ```
 
@@ -1098,7 +1104,8 @@ fetch('/attachments',
             "calendarId": "string",
             "extId": "string",
             "extMetadata": {},
-            "calendar": {}
+            "calendar": {},
+            "foreignKey": null
           }
         ],
         "subscriptions": [
@@ -1122,10 +1129,12 @@ fetch('/attachments',
             "calendarId": "string",
             "extId": "string",
             "extMetadata": {},
-            "calendar": {}
+            "calendar": {},
+            "foreignKey": null
           }
         ]
       },
+      "foreignKey": null,
       "parentEvent": {},
       "attendees": [
         {
@@ -1145,13 +1154,15 @@ fetch('/attachments',
           "eventId": "string",
           "extId": "string",
           "extMetadata": {},
-          "event": {}
+          "event": {},
+          "foreignKey": null
         }
       ],
       "attachments": [
         {}
       ]
-    }
+    },
+    "foreignKey": null
   }
 ]
 ```
@@ -1249,6 +1260,7 @@ Status Code **200**
 |»»»»»» extId|string|false|none|none|
 |»»»»»» extMetadata|object|false|none|none|
 |»»»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»» foreignKey|any|false|none|none|
 |»»»» subscriptions|[[SubscriptionWithRelations](#schemasubscriptionwithrelations)]|false|none|(tsType: SubscriptionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» SubscriptionWithRelations|[SubscriptionWithRelations](#schemasubscriptionwithrelations)|false|none|(tsType: SubscriptionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» deleted|boolean|false|none|none|
@@ -1271,6 +1283,8 @@ Status Code **200**
 |»»»»»» extId|string|false|none|none|
 |»»»»»» extMetadata|object|false|none|none|
 |»»»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»» foreignKey|any|false|none|none|
+|»»» foreignKey|any|false|none|none|
 |»»» parentEvent|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
 |»»» attendees|[[AttendeeWithRelations](#schemaattendeewithrelations)]|false|none|(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» AttendeeWithRelations|[AttendeeWithRelations](#schemaattendeewithrelations)|false|none|(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })|
@@ -1291,8 +1305,10 @@ Status Code **200**
 |»»»»» extId|string|false|none|none|
 |»»»»» extMetadata|object|false|none|none|
 |»»»»» event|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
 |»»» attachments|[[AttachmentWithRelations](#schemaattachmentwithrelations)]|false|none|(tsType: AttachmentWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» AttachmentWithRelations|[AttachmentWithRelations](#schemaattachmentwithrelations)|false|none|(tsType: AttachmentWithRelations, schemaOptions: { includeRelations: true })|
+|»» foreignKey|any|false|none|none|
 
 #### Enumerated Values
 
@@ -1819,7 +1835,8 @@ fetch('/attendees/{id}',
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ],
       "subscriptions": [
@@ -1843,10 +1860,12 @@ fetch('/attendees/{id}',
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ]
     },
+    "foreignKey": null,
     "parentEvent": {},
     "attendees": [
       {
@@ -1866,7 +1885,8 @@ fetch('/attendees/{id}',
         "eventId": "string",
         "extId": "string",
         "extMetadata": {},
-        "event": {}
+        "event": {},
+        "foreignKey": null
       }
     ],
     "attachments": [
@@ -1886,10 +1906,12 @@ fetch('/attendees/{id}',
         "eventId": "string",
         "extId": "string",
         "extMetadata": {},
-        "event": {}
+        "event": {},
+        "foreignKey": null
       }
     ]
-  }
+  },
+  "foreignKey": null
 }
 ```
 
@@ -2421,7 +2443,8 @@ fetch('/attendees',
             "calendarId": "string",
             "extId": "string",
             "extMetadata": {},
-            "calendar": {}
+            "calendar": {},
+            "foreignKey": null
           }
         ],
         "subscriptions": [
@@ -2445,10 +2468,12 @@ fetch('/attendees',
             "calendarId": "string",
             "extId": "string",
             "extMetadata": {},
-            "calendar": {}
+            "calendar": {},
+            "foreignKey": null
           }
         ]
       },
+      "foreignKey": null,
       "parentEvent": {},
       "attendees": [
         {}
@@ -2470,10 +2495,12 @@ fetch('/attendees',
           "eventId": "string",
           "extId": "string",
           "extMetadata": {},
-          "event": {}
+          "event": {},
+          "foreignKey": null
         }
       ]
-    }
+    },
+    "foreignKey": null
   }
 ]
 ```
@@ -2572,6 +2599,7 @@ Status Code **200**
 |»»»»»» extId|string|false|none|none|
 |»»»»»» extMetadata|object|false|none|none|
 |»»»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»» foreignKey|any|false|none|none|
 |»»»» subscriptions|[[SubscriptionWithRelations](#schemasubscriptionwithrelations)]|false|none|(tsType: SubscriptionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» SubscriptionWithRelations|[SubscriptionWithRelations](#schemasubscriptionwithrelations)|false|none|(tsType: SubscriptionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» deleted|boolean|false|none|none|
@@ -2594,6 +2622,8 @@ Status Code **200**
 |»»»»»» extId|string|false|none|none|
 |»»»»»» extMetadata|object|false|none|none|
 |»»»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»» foreignKey|any|false|none|none|
+|»»» foreignKey|any|false|none|none|
 |»»» parentEvent|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
 |»»» attendees|[[AttendeeWithRelations](#schemaattendeewithrelations)]|false|none|(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» AttendeeWithRelations|[AttendeeWithRelations](#schemaattendeewithrelations)|false|none|(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })|
@@ -2615,6 +2645,8 @@ Status Code **200**
 |»»»»» extId|string|false|none|none|
 |»»»»» extMetadata|object|false|none|none|
 |»»»»» event|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
+|»» foreignKey|any|false|none|none|
 
 #### Enumerated Values
 
@@ -3043,8 +3075,8 @@ fetch('/calendars/{id}',
 
 This api is to update the calendar by passing an id.
      This action will be allowed only to the owner of the calendar or the admin.
-      To identify the ‘owner’ we will check for the email passed in the token
-      and the corresponding access level, whereas to identify the admin we will
+      To identify the ‘owner’ we will check for the email passed in the token 
+      and the corresponding access level, whereas to identify the admin we will 
       check for the permission.
 
 | Permissions |
@@ -3386,7 +3418,8 @@ These requests will be available to everyone in the event to look at.
             "calendarId": "string",
             "extId": "string",
             "extMetadata": {},
-            "calendar": {}
+            "calendar": {},
+            "foreignKey": null
           }
         ],
         "subscriptions": [
@@ -3410,10 +3443,12 @@ These requests will be available to everyone in the event to look at.
             "calendarId": "string",
             "extId": "string",
             "extMetadata": {},
-            "calendar": {}
+            "calendar": {},
+            "foreignKey": null
           }
         ]
       },
+      "foreignKey": null,
       "parentEvent": {},
       "attendees": [
         {
@@ -3433,7 +3468,8 @@ These requests will be available to everyone in the event to look at.
           "eventId": "string",
           "extId": "string",
           "extMetadata": {},
-          "event": {}
+          "event": {},
+          "foreignKey": null
         }
       ],
       "attachments": [
@@ -3453,7 +3489,8 @@ These requests will be available to everyone in the event to look at.
           "eventId": "string",
           "extId": "string",
           "extMetadata": {},
-          "event": {}
+          "event": {},
+          "foreignKey": null
         }
       ]
     }
@@ -3521,6 +3558,7 @@ These requests will be available to everyone in the event to look at.
             "extId": "string",
             "extMetadata": {},
             "calendar": {},
+            "foreignKey": null,
             "parentEvent": {},
             "attendees": [
               {
@@ -3540,7 +3578,8 @@ These requests will be available to everyone in the event to look at.
                 "eventId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "event": {}
+                "event": {},
+                "foreignKey": null
               }
             ],
             "attachments": [
@@ -3560,7 +3599,8 @@ These requests will be available to everyone in the event to look at.
                 "eventId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "event": {}
+                "event": {},
+                "foreignKey": null
               }
             ]
           }
@@ -3587,10 +3627,12 @@ These requests will be available to everyone in the event to look at.
             "calendarId": "string",
             "extId": "string",
             "extMetadata": {},
-            "calendar": {}
+            "calendar": {},
+            "foreignKey": null
           }
         ]
-      }
+      },
+      "foreignKey": null
     }
   ],
   "subscriptions": [
@@ -3661,6 +3703,7 @@ These requests will be available to everyone in the event to look at.
             "extId": "string",
             "extMetadata": {},
             "calendar": {},
+            "foreignKey": null,
             "parentEvent": {},
             "attendees": [
               {
@@ -3680,7 +3723,8 @@ These requests will be available to everyone in the event to look at.
                 "eventId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "event": {}
+                "event": {},
+                "foreignKey": null
               }
             ],
             "attachments": [
@@ -3700,7 +3744,8 @@ These requests will be available to everyone in the event to look at.
                 "eventId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "event": {}
+                "event": {},
+                "foreignKey": null
               }
             ]
           }
@@ -3721,11 +3766,13 @@ These requests will be available to everyone in the event to look at.
             "calendarId": "string",
             "extId": "string",
             "extMetadata": {},
-            "calendar": {}
+            "calendar": {},
+            "foreignKey": null
           }
         ],
         "subscriptions": []
-      }
+      },
+      "foreignKey": null
     }
   ]
 }
@@ -3792,9 +3839,9 @@ fetch('/calendars/{id}',
 `DELETE /calendars/{id}`
 
 This api is to update the calendar by passing an id.
-     This action will be allowed only to the owner of the calendar or the admin.
-     To identify the ‘owner’ we will check for the email passed in the token
-     and the corresponding access level, whereas to identify the admin we will
+     This action will be allowed only to the owner of the calendar or the admin. 
+     To identify the ‘owner’ we will check for the email passed in the token 
+     and the corresponding access level, whereas to identify the admin we will 
     check for the permission.
 
 | Permissions |
@@ -3928,8 +3975,8 @@ fetch('/calendars',
 
 `POST /calendars`
 
-This is an api to create a calendar for any user.
-      Recommendation: Use this while adding a user to the main application, in order to create
+This is an api to create a calendar for any user. 
+      Recommendation: Use this while adding a user to the main application, in order to create 
       a primary calendar for that particular user.
 
 | Permissions |
@@ -4273,6 +4320,7 @@ These requests will be available to everyone in the event to look at.
         "extId": "string",
         "extMetadata": {},
         "calendar": {},
+        "foreignKey": null,
         "parentEvent": {},
         "attendees": [
           {
@@ -4292,7 +4340,8 @@ These requests will be available to everyone in the event to look at.
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ],
         "attachments": [
@@ -4312,7 +4361,8 @@ These requests will be available to everyone in the event to look at.
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ]
       }
@@ -4333,7 +4383,8 @@ These requests will be available to everyone in the event to look at.
         "calendarId": "string",
         "extId": "string",
         "extMetadata": {},
-        "calendar": {}
+        "calendar": {},
+        "foreignKey": null
       }
     ],
     "subscriptions": [
@@ -4357,7 +4408,8 @@ These requests will be available to everyone in the event to look at.
         "calendarId": "string",
         "extId": "string",
         "extMetadata": {},
-        "calendar": {}
+        "calendar": {},
+        "foreignKey": null
       }
     ]
   }
@@ -4424,6 +4476,7 @@ Status Code **200**
 |»»»» extId|string|false|none|none|
 |»»»» extMetadata|object|false|none|none|
 |»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»» foreignKey|any|false|none|none|
 |»»»» parentEvent|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» attendees|[[AttendeeWithRelations](#schemaattendeewithrelations)]|false|none|(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» AttendeeWithRelations|[AttendeeWithRelations](#schemaattendeewithrelations)|false|none|(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })|
@@ -4444,6 +4497,7 @@ Status Code **200**
 |»»»»»» extId|string|false|none|none|
 |»»»»»» extMetadata|object|false|none|none|
 |»»»»»» event|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»» foreignKey|any|false|none|none|
 |»»»» attachments|[[AttachmentWithRelations](#schemaattachmentwithrelations)]|false|none|(tsType: AttachmentWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» AttachmentWithRelations|[AttachmentWithRelations](#schemaattachmentwithrelations)|false|none|(tsType: AttachmentWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» deleted|boolean|false|none|none|
@@ -4462,6 +4516,7 @@ Status Code **200**
 |»»»»»» extId|string|false|none|none|
 |»»»»»» extMetadata|object|false|none|none|
 |»»»»»» event|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»» foreignKey|any|false|none|none|
 |»» workingHours|[[WorkingHourWithRelations](#schemaworkinghourwithrelations)]|false|none|(tsType: WorkingHourWithRelations, schemaOptions: { includeRelations: true })|
 |»»» WorkingHourWithRelations|[WorkingHourWithRelations](#schemaworkinghourwithrelations)|false|none|(tsType: WorkingHourWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» deleted|boolean|false|none|none|
@@ -4479,6 +4534,7 @@ Status Code **200**
 |»»»» extId|string|false|none|none|
 |»»»» extMetadata|object|false|none|none|
 |»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»» foreignKey|any|false|none|none|
 |»» subscriptions|[[SubscriptionWithRelations](#schemasubscriptionwithrelations)]|false|none|(tsType: SubscriptionWithRelations, schemaOptions: { includeRelations: true })|
 |»»» SubscriptionWithRelations|[SubscriptionWithRelations](#schemasubscriptionwithrelations)|false|none|(tsType: SubscriptionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» deleted|boolean|false|none|none|
@@ -4501,6 +4557,7 @@ Status Code **200**
 |»»»» extId|string|false|none|none|
 |»»»» extMetadata|object|false|none|none|
 |»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»» foreignKey|any|false|none|none|
 
 #### Enumerated Values
 
@@ -4668,6 +4725,7 @@ fetch('/calendars/subscriptions/me',
           "extId": "string",
           "extMetadata": {},
           "calendar": {},
+          "foreignKey": null,
           "parentEvent": {},
           "attendees": [
             {
@@ -4687,7 +4745,8 @@ fetch('/calendars/subscriptions/me',
               "eventId": "string",
               "extId": "string",
               "extMetadata": {},
-              "event": {}
+              "event": {},
+              "foreignKey": null
             }
           ],
           "attachments": [
@@ -4707,7 +4766,8 @@ fetch('/calendars/subscriptions/me',
               "eventId": "string",
               "extId": "string",
               "extMetadata": {},
-              "event": {}
+              "event": {},
+              "foreignKey": null
             }
           ]
         }
@@ -4728,13 +4788,15 @@ fetch('/calendars/subscriptions/me',
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ],
       "subscriptions": [
         {}
       ]
-    }
+    },
+    "foreignKey": null
   }
 ]
 ```
@@ -4819,6 +4881,7 @@ Status Code **200**
 |»»»»» extId|string|false|none|none|
 |»»»»» extMetadata|object|false|none|none|
 |»»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
 |»»»»» parentEvent|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» attendees|[[AttendeeWithRelations](#schemaattendeewithrelations)]|false|none|(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» AttendeeWithRelations|[AttendeeWithRelations](#schemaattendeewithrelations)|false|none|(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })|
@@ -4839,6 +4902,7 @@ Status Code **200**
 |»»»»»»» extId|string|false|none|none|
 |»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»» event|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»»»» attachments|[[AttachmentWithRelations](#schemaattachmentwithrelations)]|false|none|(tsType: AttachmentWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» AttachmentWithRelations|[AttachmentWithRelations](#schemaattachmentwithrelations)|false|none|(tsType: AttachmentWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»» deleted|boolean|false|none|none|
@@ -4857,6 +4921,7 @@ Status Code **200**
 |»»»»»»» extId|string|false|none|none|
 |»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»» event|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»» workingHours|[[WorkingHourWithRelations](#schemaworkinghourwithrelations)]|false|none|(tsType: WorkingHourWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» WorkingHourWithRelations|[WorkingHourWithRelations](#schemaworkinghourwithrelations)|false|none|(tsType: WorkingHourWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» deleted|boolean|false|none|none|
@@ -4874,8 +4939,10 @@ Status Code **200**
 |»»»»» extId|string|false|none|none|
 |»»»»» extMetadata|object|false|none|none|
 |»»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
 |»»» subscriptions|[[SubscriptionWithRelations](#schemasubscriptionwithrelations)]|false|none|(tsType: SubscriptionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» SubscriptionWithRelations|[SubscriptionWithRelations](#schemasubscriptionwithrelations)|false|none|(tsType: SubscriptionWithRelations, schemaOptions: { includeRelations: true })|
+|»» foreignKey|any|false|none|none|
 
 #### Enumerated Values
 
@@ -5404,6 +5471,7 @@ fetch('/subscriptions/{id}',
         "extId": "string",
         "extMetadata": {},
         "calendar": {},
+        "foreignKey": null,
         "parentEvent": {},
         "attendees": [
           {
@@ -5423,7 +5491,8 @@ fetch('/subscriptions/{id}',
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ],
         "attachments": [
@@ -5443,7 +5512,8 @@ fetch('/subscriptions/{id}',
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ]
       }
@@ -5464,7 +5534,8 @@ fetch('/subscriptions/{id}',
         "calendarId": "string",
         "extId": "string",
         "extMetadata": {},
-        "calendar": {}
+        "calendar": {},
+        "foreignKey": null
       }
     ],
     "subscriptions": [
@@ -5488,10 +5559,12 @@ fetch('/subscriptions/{id}',
         "calendarId": "string",
         "extId": "string",
         "extMetadata": {},
-        "calendar": {}
+        "calendar": {},
+        "foreignKey": null
       }
     ]
-  }
+  },
+  "foreignKey": null
 }
 ```
 
@@ -6030,6 +6103,7 @@ fetch('/subscriptions',
           "extId": "string",
           "extMetadata": {},
           "calendar": {},
+          "foreignKey": null,
           "parentEvent": {},
           "attendees": [
             {
@@ -6049,7 +6123,8 @@ fetch('/subscriptions',
               "eventId": "string",
               "extId": "string",
               "extMetadata": {},
-              "event": {}
+              "event": {},
+              "foreignKey": null
             }
           ],
           "attachments": [
@@ -6069,7 +6144,8 @@ fetch('/subscriptions',
               "eventId": "string",
               "extId": "string",
               "extMetadata": {},
-              "event": {}
+              "event": {},
+              "foreignKey": null
             }
           ]
         }
@@ -6090,13 +6166,15 @@ fetch('/subscriptions',
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ],
       "subscriptions": [
         {}
       ]
-    }
+    },
+    "foreignKey": null
   }
 ]
 ```
@@ -6181,6 +6259,7 @@ Status Code **200**
 |»»»»» extId|string|false|none|none|
 |»»»»» extMetadata|object|false|none|none|
 |»»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
 |»»»»» parentEvent|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» attendees|[[AttendeeWithRelations](#schemaattendeewithrelations)]|false|none|(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» AttendeeWithRelations|[AttendeeWithRelations](#schemaattendeewithrelations)|false|none|(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })|
@@ -6201,6 +6280,7 @@ Status Code **200**
 |»»»»»»» extId|string|false|none|none|
 |»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»» event|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»»»» attachments|[[AttachmentWithRelations](#schemaattachmentwithrelations)]|false|none|(tsType: AttachmentWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» AttachmentWithRelations|[AttachmentWithRelations](#schemaattachmentwithrelations)|false|none|(tsType: AttachmentWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»» deleted|boolean|false|none|none|
@@ -6219,6 +6299,7 @@ Status Code **200**
 |»»»»»»» extId|string|false|none|none|
 |»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»» event|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»» workingHours|[[WorkingHourWithRelations](#schemaworkinghourwithrelations)]|false|none|(tsType: WorkingHourWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» WorkingHourWithRelations|[WorkingHourWithRelations](#schemaworkinghourwithrelations)|false|none|(tsType: WorkingHourWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» deleted|boolean|false|none|none|
@@ -6236,8 +6317,10 @@ Status Code **200**
 |»»»»» extId|string|false|none|none|
 |»»»»» extMetadata|object|false|none|none|
 |»»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
 |»»» subscriptions|[[SubscriptionWithRelations](#schemasubscriptionwithrelations)]|false|none|(tsType: SubscriptionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» SubscriptionWithRelations|[SubscriptionWithRelations](#schemasubscriptionwithrelations)|false|none|(tsType: SubscriptionWithRelations, schemaOptions: { includeRelations: true })|
+|»» foreignKey|any|false|none|none|
 
 #### Enumerated Values
 
@@ -7153,10 +7236,10 @@ fetch('/calendars/{id}/subscriptions',
 
 `PATCH /calendars/{id}/subscriptions`
 
-This api is to update the calendar subscription by passing an `id`.
+This api is to update the calendar subscription by passing an `id`. 
       This action will be allowed only to the owner of the calendar or the admin.
-      To identify the `owner` we will check for the email passed in the token and
-      the corresponding access level, whereas to identify the admin we will check
+      To identify the `owner` we will check for the email passed in the token and 
+      the corresponding access level, whereas to identify the admin we will check 
       for the permission.
 
 | Permissions |
@@ -7413,9 +7496,9 @@ fetch('/calendars/{id}/subscriptions',
 
 `DELETE /calendars/{id}/subscriptions`
 
-This api is to update the calendar subscription by passing an id.
-      This action will be allowed only to the owner of the calendar or the admin.
-      To identify the ‘owner’ we will check for the email passed in the token and the
+This api is to update the calendar subscription by passing an id. 
+      This action will be allowed only to the owner of the calendar or the admin. 
+      To identify the ‘owner’ we will check for the email passed in the token and the 
       corresponding access level, whereas to identify the admin we will check for the permission.
 
 | Permissions |
@@ -8600,7 +8683,7 @@ fetch('/events/{id}',
 
 `PATCH /events/{id}`
 
-This api will be responsible for making any updates on an event.
+This api will be responsible for making any updates on an event. 
       This action is only allowed to the organizer or the admin(based on permission).
 
 | Permissions |
@@ -8711,7 +8794,7 @@ fetch('/events/{id}',
 
 `GET /events/{id}`
 
-This api will return events data based on the id.
+This api will return events data based on the id. 
       Sending the data of participants will be optional and will depend on the query.
 
 | Permissions |
@@ -8806,6 +8889,7 @@ This api will return events data based on the id.
         "extId": "string",
         "extMetadata": {},
         "calendar": {},
+        "foreignKey": null,
         "parentEvent": {},
         "attendees": [
           {
@@ -8825,7 +8909,8 @@ This api will return events data based on the id.
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ],
         "attachments": [
@@ -8845,7 +8930,8 @@ This api will return events data based on the id.
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ]
       }
@@ -8866,7 +8952,8 @@ This api will return events data based on the id.
         "calendarId": "string",
         "extId": "string",
         "extMetadata": {},
-        "calendar": {}
+        "calendar": {},
+        "foreignKey": null
       }
     ],
     "subscriptions": [
@@ -8890,10 +8977,12 @@ This api will return events data based on the id.
         "calendarId": "string",
         "extId": "string",
         "extMetadata": {},
-        "calendar": {}
+        "calendar": {},
+        "foreignKey": null
       }
     ]
   },
+  "foreignKey": null,
   "parentEvent": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -8958,7 +9047,8 @@ This api will return events data based on the id.
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ],
       "subscriptions": [
@@ -8982,10 +9072,12 @@ This api will return events data based on the id.
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ]
     },
+    "foreignKey": null,
     "parentEvent": {},
     "attendees": [
       {
@@ -9005,7 +9097,8 @@ This api will return events data based on the id.
         "eventId": "string",
         "extId": "string",
         "extMetadata": {},
-        "event": {}
+        "event": {},
+        "foreignKey": null
       }
     ],
     "attachments": [
@@ -9025,7 +9118,8 @@ This api will return events data based on the id.
         "eventId": "string",
         "extId": "string",
         "extMetadata": {},
-        "event": {}
+        "event": {},
+        "foreignKey": null
       }
     ]
   },
@@ -9111,7 +9205,8 @@ This api will return events data based on the id.
               "calendarId": "string",
               "extId": "string",
               "extMetadata": {},
-              "calendar": {}
+              "calendar": {},
+              "foreignKey": null
             }
           ],
           "subscriptions": [
@@ -9135,10 +9230,12 @@ This api will return events data based on the id.
               "calendarId": "string",
               "extId": "string",
               "extMetadata": {},
-              "calendar": {}
+              "calendar": {},
+              "foreignKey": null
             }
           ]
         },
+        "foreignKey": null,
         "parentEvent": {},
         "attendees": [],
         "attachments": [
@@ -9158,10 +9255,12 @@ This api will return events data based on the id.
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ]
-      }
+      },
+      "foreignKey": null
     }
   ],
   "attachments": [
@@ -9245,7 +9344,8 @@ This api will return events data based on the id.
               "calendarId": "string",
               "extId": "string",
               "extMetadata": {},
-              "calendar": {}
+              "calendar": {},
+              "foreignKey": null
             }
           ],
           "subscriptions": [
@@ -9269,10 +9369,12 @@ This api will return events data based on the id.
               "calendarId": "string",
               "extId": "string",
               "extMetadata": {},
-              "calendar": {}
+              "calendar": {},
+              "foreignKey": null
             }
           ]
         },
+        "foreignKey": null,
         "parentEvent": {},
         "attendees": [
           {
@@ -9292,11 +9394,13 @@ This api will return events data based on the id.
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ],
         "attachments": []
-      }
+      },
+      "foreignKey": null
     }
   ]
 }
@@ -9558,11 +9662,11 @@ fetch('/events',
 
 `POST /events`
 
-While an organizer creates an event, we get participants details along with it.
-      This api will check for slot availability of all the participants in that particular
-      time slot. If the slot is free the event will be created. Events can be scheduled on
-      behalf of someone else, In this case we will be saving the creator details
-      (generally the organiser is the creator themselves, so we will be keeping the organiser
+While an organizer creates an event, we get participants details along with it. 
+      This api will check for slot availability of all the participants in that particular 
+      time slot. If the slot is free the event will be created. Events can be scheduled on 
+      behalf of someone else, In this case we will be saving the creator details 
+      (generally the organiser is the creator themselves, so we will be keeping the organiser 
         and created_by the same).
 
 | Permissions |
@@ -9999,7 +10103,8 @@ This api will return the events data, based on the filter provided.
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ],
       "subscriptions": [
@@ -10023,10 +10128,12 @@ This api will return the events data, based on the filter provided.
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ]
     },
+    "foreignKey": null,
     "parentEvent": {},
     "attendees": [
       {
@@ -10046,7 +10153,8 @@ This api will return the events data, based on the filter provided.
         "eventId": "string",
         "extId": "string",
         "extMetadata": {},
-        "event": {}
+        "event": {},
+        "foreignKey": null
       }
     ],
     "attachments": [
@@ -10066,7 +10174,8 @@ This api will return the events data, based on the filter provided.
         "eventId": "string",
         "extId": "string",
         "extMetadata": {},
-        "event": {}
+        "event": {},
+        "foreignKey": null
       }
     ]
   }
@@ -10150,6 +10259,7 @@ Status Code **200**
 |»»»»» extId|string|false|none|none|
 |»»»»» extMetadata|object|false|none|none|
 |»»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
 |»»» subscriptions|[[SubscriptionWithRelations](#schemasubscriptionwithrelations)]|false|none|(tsType: SubscriptionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» SubscriptionWithRelations|[SubscriptionWithRelations](#schemasubscriptionwithrelations)|false|none|(tsType: SubscriptionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» deleted|boolean|false|none|none|
@@ -10172,6 +10282,8 @@ Status Code **200**
 |»»»»» extId|string|false|none|none|
 |»»»»» extMetadata|object|false|none|none|
 |»»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
+|»» foreignKey|any|false|none|none|
 |»» parentEvent|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
 |»» attendees|[[AttendeeWithRelations](#schemaattendeewithrelations)]|false|none|(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })|
 |»»» AttendeeWithRelations|[AttendeeWithRelations](#schemaattendeewithrelations)|false|none|(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })|
@@ -10192,6 +10304,7 @@ Status Code **200**
 |»»»» extId|string|false|none|none|
 |»»»» extMetadata|object|false|none|none|
 |»»»» event|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
+|»»»» foreignKey|any|false|none|none|
 |»» attachments|[[AttachmentWithRelations](#schemaattachmentwithrelations)]|false|none|(tsType: AttachmentWithRelations, schemaOptions: { includeRelations: true })|
 |»»» AttachmentWithRelations|[AttachmentWithRelations](#schemaattachmentwithrelations)|false|none|(tsType: AttachmentWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» deleted|boolean|false|none|none|
@@ -10210,6 +10323,7 @@ Status Code **200**
 |»»»» extId|string|false|none|none|
 |»»»» extMetadata|object|false|none|none|
 |»»»» event|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
+|»»»» foreignKey|any|false|none|none|
 
 #### Enumerated Values
 
@@ -13499,7 +13613,7 @@ fetch('/working-hours/{id}',
 
 `GET /working-hours/{id}`
 
-These requests will be available to everyone to look at.
+These requests will be available to everyone to look at. 
       This will be represent the work timings for the owner of the calendar.
 
 | Permissions |
@@ -13581,6 +13695,7 @@ These requests will be available to everyone to look at.
         "extId": "string",
         "extMetadata": {},
         "calendar": {},
+        "foreignKey": null,
         "parentEvent": {},
         "attendees": [
           {
@@ -13600,7 +13715,8 @@ These requests will be available to everyone to look at.
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ],
         "attachments": [
@@ -13620,7 +13736,8 @@ These requests will be available to everyone to look at.
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ]
       }
@@ -13641,7 +13758,8 @@ These requests will be available to everyone to look at.
         "calendarId": "string",
         "extId": "string",
         "extMetadata": {},
-        "calendar": {}
+        "calendar": {},
+        "foreignKey": null
       }
     ],
     "subscriptions": [
@@ -13665,10 +13783,12 @@ These requests will be available to everyone to look at.
         "calendarId": "string",
         "extId": "string",
         "extMetadata": {},
-        "calendar": {}
+        "calendar": {},
+        "foreignKey": null
       }
     ]
-  }
+  },
+  "foreignKey": null
 }
 ```
 
@@ -13732,9 +13852,9 @@ fetch('/working-hours/{id}',
 
 `DELETE /working-hours/{id}`
 
-This api is to update the calendar by passing an `id`. This action will
-      be allowed only to the owner of the calendar or the admin. To identify the ‘owner’
-      we will check for the email passed in the token and the corresponding access level,
+This api is to update the calendar by passing an `id`. This action will 
+      be allowed only to the owner of the calendar or the admin. To identify the ‘owner’ 
+      we will check for the email passed in the token and the corresponding access level, 
       whereas to identify the admin we will check for the permission.
 
 | Permissions |
@@ -14172,6 +14292,7 @@ fetch('/working-hours',
           "extId": "string",
           "extMetadata": {},
           "calendar": {},
+          "foreignKey": null,
           "parentEvent": {},
           "attendees": [
             {
@@ -14191,7 +14312,8 @@ fetch('/working-hours',
               "eventId": "string",
               "extId": "string",
               "extMetadata": {},
-              "event": {}
+              "event": {},
+              "foreignKey": null
             }
           ],
           "attachments": [
@@ -14211,7 +14333,8 @@ fetch('/working-hours',
               "eventId": "string",
               "extId": "string",
               "extMetadata": {},
-              "event": {}
+              "event": {},
+              "foreignKey": null
             }
           ]
         }
@@ -14240,10 +14363,12 @@ fetch('/working-hours',
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ]
-    }
+    },
+    "foreignKey": null
   }
 ]
 ```
@@ -14323,6 +14448,7 @@ Status Code **200**
 |»»»»» extId|string|false|none|none|
 |»»»»» extMetadata|object|false|none|none|
 |»»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
 |»»»»» parentEvent|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» attendees|[[AttendeeWithRelations](#schemaattendeewithrelations)]|false|none|(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» AttendeeWithRelations|[AttendeeWithRelations](#schemaattendeewithrelations)|false|none|(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })|
@@ -14343,6 +14469,7 @@ Status Code **200**
 |»»»»»»» extId|string|false|none|none|
 |»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»» event|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»»»» attachments|[[AttachmentWithRelations](#schemaattachmentwithrelations)]|false|none|(tsType: AttachmentWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» AttachmentWithRelations|[AttachmentWithRelations](#schemaattachmentwithrelations)|false|none|(tsType: AttachmentWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»» deleted|boolean|false|none|none|
@@ -14361,6 +14488,7 @@ Status Code **200**
 |»»»»»»» extId|string|false|none|none|
 |»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»» event|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»» workingHours|[[WorkingHourWithRelations](#schemaworkinghourwithrelations)]|false|none|(tsType: WorkingHourWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» WorkingHourWithRelations|[WorkingHourWithRelations](#schemaworkinghourwithrelations)|false|none|(tsType: WorkingHourWithRelations, schemaOptions: { includeRelations: true })|
 |»»» subscriptions|[[SubscriptionWithRelations](#schemasubscriptionwithrelations)]|false|none|(tsType: SubscriptionWithRelations, schemaOptions: { includeRelations: true })|
@@ -14385,6 +14513,8 @@ Status Code **200**
 |»»»»» extId|string|false|none|none|
 |»»»»» extMetadata|object|false|none|none|
 |»»»»» calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
+|»» foreignKey|any|false|none|none|
 
 #### Enumerated Values
 
@@ -14604,7 +14734,8 @@ NewAttachment
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ],
       "subscriptions": [
@@ -14628,10 +14759,12 @@ NewAttachment
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ]
     },
+    "foreignKey": null,
     "parentEvent": {},
     "attendees": [
       {
@@ -14651,7 +14784,8 @@ NewAttachment
         "eventId": "string",
         "extId": "string",
         "extMetadata": {},
-        "event": {}
+        "event": {},
+        "foreignKey": null
       }
     ],
     "attachments": [
@@ -14671,10 +14805,12 @@ NewAttachment
         "eventId": "string",
         "extId": "string",
         "extMetadata": {},
-        "event": {}
+        "event": {},
+        "foreignKey": null
       }
     ]
-  }
+  },
+  "foreignKey": null
 }
 
 ```
@@ -14702,6 +14838,7 @@ AttendeeWithRelations
 |extId|string|false|none|none|
 |extMetadata|object|false|none|none|
 |event|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
+|foreignKey|any|false|none|none|
 
 #### Enumerated Values
 
@@ -14795,6 +14932,7 @@ AttendeeWithRelations
         "extId": "string",
         "extMetadata": {},
         "calendar": {},
+        "foreignKey": null,
         "parentEvent": {},
         "attendees": [
           {
@@ -14814,7 +14952,8 @@ AttendeeWithRelations
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ],
         "attachments": [
@@ -14834,7 +14973,8 @@ AttendeeWithRelations
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ]
       }
@@ -14855,7 +14995,8 @@ AttendeeWithRelations
         "calendarId": "string",
         "extId": "string",
         "extMetadata": {},
-        "calendar": {}
+        "calendar": {},
+        "foreignKey": null
       }
     ],
     "subscriptions": [
@@ -14879,10 +15020,12 @@ AttendeeWithRelations
         "calendarId": "string",
         "extId": "string",
         "extMetadata": {},
-        "calendar": {}
+        "calendar": {},
+        "foreignKey": null
       }
     ]
   },
+  "foreignKey": null,
   "parentEvent": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -14947,7 +15090,8 @@ AttendeeWithRelations
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ],
       "subscriptions": [
@@ -14971,10 +15115,12 @@ AttendeeWithRelations
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ]
     },
+    "foreignKey": null,
     "parentEvent": {},
     "attendees": [
       {
@@ -14994,7 +15140,8 @@ AttendeeWithRelations
         "eventId": "string",
         "extId": "string",
         "extMetadata": {},
-        "event": {}
+        "event": {},
+        "foreignKey": null
       }
     ],
     "attachments": [
@@ -15014,7 +15161,8 @@ AttendeeWithRelations
         "eventId": "string",
         "extId": "string",
         "extMetadata": {},
-        "event": {}
+        "event": {},
+        "foreignKey": null
       }
     ]
   },
@@ -15100,7 +15248,8 @@ AttendeeWithRelations
               "calendarId": "string",
               "extId": "string",
               "extMetadata": {},
-              "calendar": {}
+              "calendar": {},
+              "foreignKey": null
             }
           ],
           "subscriptions": [
@@ -15124,10 +15273,12 @@ AttendeeWithRelations
               "calendarId": "string",
               "extId": "string",
               "extMetadata": {},
-              "calendar": {}
+              "calendar": {},
+              "foreignKey": null
             }
           ]
         },
+        "foreignKey": null,
         "parentEvent": {},
         "attendees": [],
         "attachments": [
@@ -15147,10 +15298,12 @@ AttendeeWithRelations
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ]
-      }
+      },
+      "foreignKey": null
     }
   ],
   "attachments": [
@@ -15234,7 +15387,8 @@ AttendeeWithRelations
               "calendarId": "string",
               "extId": "string",
               "extMetadata": {},
-              "calendar": {}
+              "calendar": {},
+              "foreignKey": null
             }
           ],
           "subscriptions": [
@@ -15258,10 +15412,12 @@ AttendeeWithRelations
               "calendarId": "string",
               "extId": "string",
               "extMetadata": {},
-              "calendar": {}
+              "calendar": {},
+              "foreignKey": null
             }
           ]
         },
+        "foreignKey": null,
         "parentEvent": {},
         "attendees": [
           {
@@ -15281,11 +15437,13 @@ AttendeeWithRelations
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ],
         "attachments": []
-      }
+      },
+      "foreignKey": null
     }
   ]
 }
@@ -15326,6 +15484,7 @@ EventWithRelations
 |extId|string|false|none|none|
 |extMetadata|object|false|none|none|
 |calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|foreignKey|any|false|none|none|
 |parentEvent|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
 |attendees|[[AttendeeWithRelations](#schemaattendeewithrelations)]|false|none|[(tsType: AttendeeWithRelations, schemaOptions: { includeRelations: true })]|
 |attachments|[[AttachmentWithRelations](#schemaattachmentwithrelations)]|false|none|[(tsType: AttachmentWithRelations, schemaOptions: { includeRelations: true })]|
@@ -15427,7 +15586,8 @@ EventWithRelations
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ],
       "subscriptions": [
@@ -15451,10 +15611,12 @@ EventWithRelations
           "calendarId": "string",
           "extId": "string",
           "extMetadata": {},
-          "calendar": {}
+          "calendar": {},
+          "foreignKey": null
         }
       ]
     },
+    "foreignKey": null,
     "parentEvent": {},
     "attendees": [
       {
@@ -15474,7 +15636,8 @@ EventWithRelations
         "eventId": "string",
         "extId": "string",
         "extMetadata": {},
-        "event": {}
+        "event": {},
+        "foreignKey": null
       }
     ],
     "attachments": [
@@ -15494,10 +15657,12 @@ EventWithRelations
         "eventId": "string",
         "extId": "string",
         "extMetadata": {},
-        "event": {}
+        "event": {},
+        "foreignKey": null
       }
     ]
-  }
+  },
+  "foreignKey": null
 }
 
 ```
@@ -15524,6 +15689,7 @@ AttachmentWithRelations
 |extId|string|false|none|none|
 |extMetadata|object|false|none|none|
 |event|[EventWithRelations](#schemaeventwithrelations)|false|none|(tsType: EventWithRelations, schemaOptions: { includeRelations: true })|
+|foreignKey|any|false|none|none|
 
 <h2 id="tocS_AttachmentPartial">AttachmentPartial</h2>
 <!-- backwards compatibility -->
@@ -16072,7 +16238,8 @@ CalendarDTO
             "calendarId": "string",
             "extId": "string",
             "extMetadata": {},
-            "calendar": {}
+            "calendar": {},
+            "foreignKey": null
           }
         ],
         "subscriptions": [
@@ -16096,10 +16263,12 @@ CalendarDTO
             "calendarId": "string",
             "extId": "string",
             "extMetadata": {},
-            "calendar": {}
+            "calendar": {},
+            "foreignKey": null
           }
         ]
       },
+      "foreignKey": null,
       "parentEvent": {},
       "attendees": [
         {
@@ -16119,7 +16288,8 @@ CalendarDTO
           "eventId": "string",
           "extId": "string",
           "extMetadata": {},
-          "event": {}
+          "event": {},
+          "foreignKey": null
         }
       ],
       "attachments": [
@@ -16139,7 +16309,8 @@ CalendarDTO
           "eventId": "string",
           "extId": "string",
           "extMetadata": {},
-          "event": {}
+          "event": {},
+          "foreignKey": null
         }
       ]
     }
@@ -16207,6 +16378,7 @@ CalendarDTO
             "extId": "string",
             "extMetadata": {},
             "calendar": {},
+            "foreignKey": null,
             "parentEvent": {},
             "attendees": [
               {
@@ -16226,7 +16398,8 @@ CalendarDTO
                 "eventId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "event": {}
+                "event": {},
+                "foreignKey": null
               }
             ],
             "attachments": [
@@ -16246,7 +16419,8 @@ CalendarDTO
                 "eventId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "event": {}
+                "event": {},
+                "foreignKey": null
               }
             ]
           }
@@ -16273,10 +16447,12 @@ CalendarDTO
             "calendarId": "string",
             "extId": "string",
             "extMetadata": {},
-            "calendar": {}
+            "calendar": {},
+            "foreignKey": null
           }
         ]
-      }
+      },
+      "foreignKey": null
     }
   ],
   "subscriptions": [
@@ -16347,6 +16523,7 @@ CalendarDTO
             "extId": "string",
             "extMetadata": {},
             "calendar": {},
+            "foreignKey": null,
             "parentEvent": {},
             "attendees": [
               {
@@ -16366,7 +16543,8 @@ CalendarDTO
                 "eventId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "event": {}
+                "event": {},
+                "foreignKey": null
               }
             ],
             "attachments": [
@@ -16386,7 +16564,8 @@ CalendarDTO
                 "eventId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "event": {}
+                "event": {},
+                "foreignKey": null
               }
             ]
           }
@@ -16407,11 +16586,13 @@ CalendarDTO
             "calendarId": "string",
             "extId": "string",
             "extMetadata": {},
-            "calendar": {}
+            "calendar": {},
+            "foreignKey": null
           }
         ],
         "subscriptions": []
-      }
+      },
+      "foreignKey": null
     }
   ]
 }
@@ -17386,6 +17567,7 @@ NewSubscription
         "extId": "string",
         "extMetadata": {},
         "calendar": {},
+        "foreignKey": null,
         "parentEvent": {},
         "attendees": [
           {
@@ -17405,7 +17587,8 @@ NewSubscription
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ],
         "attachments": [
@@ -17425,7 +17608,8 @@ NewSubscription
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ]
       }
@@ -17446,7 +17630,8 @@ NewSubscription
         "calendarId": "string",
         "extId": "string",
         "extMetadata": {},
-        "calendar": {}
+        "calendar": {},
+        "foreignKey": null
       }
     ],
     "subscriptions": [
@@ -17470,10 +17655,12 @@ NewSubscription
         "calendarId": "string",
         "extId": "string",
         "extMetadata": {},
-        "calendar": {}
+        "calendar": {},
+        "foreignKey": null
       }
     ]
-  }
+  },
+  "foreignKey": null
 }
 
 ```
@@ -17504,6 +17691,7 @@ SubscriptionWithRelations
 |extId|string|false|none|none|
 |extMetadata|object|false|none|none|
 |calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|foreignKey|any|false|none|none|
 
 #### Enumerated Values
 
@@ -17899,6 +18087,7 @@ NewWorkingHour
         "extId": "string",
         "extMetadata": {},
         "calendar": {},
+        "foreignKey": null,
         "parentEvent": {},
         "attendees": [
           {
@@ -17918,7 +18107,8 @@ NewWorkingHour
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ],
         "attachments": [
@@ -17938,7 +18128,8 @@ NewWorkingHour
             "eventId": "string",
             "extId": "string",
             "extMetadata": {},
-            "event": {}
+            "event": {},
+            "foreignKey": null
           }
         ]
       }
@@ -17959,7 +18150,8 @@ NewWorkingHour
         "calendarId": "string",
         "extId": "string",
         "extMetadata": {},
-        "calendar": {}
+        "calendar": {},
+        "foreignKey": null
       }
     ],
     "subscriptions": [
@@ -17983,10 +18175,12 @@ NewWorkingHour
         "calendarId": "string",
         "extId": "string",
         "extMetadata": {},
-        "calendar": {}
+        "calendar": {},
+        "foreignKey": null
       }
     ]
-  }
+  },
+  "foreignKey": null
 }
 
 ```
@@ -18012,6 +18206,7 @@ WorkingHourWithRelations
 |extId|string|false|none|none|
 |extMetadata|object|false|none|none|
 |calendar|[CalendarWithRelations](#schemacalendarwithrelations)|false|none|(tsType: CalendarWithRelations, schemaOptions: { includeRelations: true })|
+|foreignKey|any|false|none|none|
 
 #### Enumerated Values
 
@@ -21149,3 +21344,4 @@ or
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |» *anonymous*|string|false|none|none|
+

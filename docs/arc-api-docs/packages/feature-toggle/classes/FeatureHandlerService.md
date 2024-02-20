@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[feature-toggle/src/services/feature-handler-service.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/services/feature-handler-service.ts#L12)
+[packages/feature-toggle/src/services/feature-handler-service.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/services/feature-handler-service.ts#L12)
 
 ## Properties
 
@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[feature-toggle/src/services/feature-handler-service.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/services/feature-handler-service.ts#L14)
+[packages/feature-toggle/src/services/feature-handler-service.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/services/feature-handler-service.ts#L14)
 
 ## Methods
 
@@ -61,7 +61,7 @@
 
 #### Defined in
 
-[feature-toggle/src/services/feature-handler-service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/services/feature-handler-service.ts#L17)
+[packages/feature-toggle/src/services/feature-handler-service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/services/feature-handler-service.ts#L17)
 
 ___
 
@@ -82,4 +82,4 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/services/feature-handler-service.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/services/feature-handler-service.ts#L22)
+[packages/feature-toggle/src/services/feature-handler-service.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/services/feature-handler-service.ts#L22)

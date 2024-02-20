@@ -13,11 +13,11 @@
 
 ### featureKey
 
-• **featureKey**: `string`
+• **featureKey**: `string` \| `string`[]
 
 #### Defined in
 
-[feature-toggle/src/types.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/types.ts#L8)
+[packages/feature-toggle/src/types.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/types.ts#L8)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/types.ts#L9)
+[packages/feature-toggle/src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/types.ts#L9)

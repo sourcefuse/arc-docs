@@ -53,7 +53,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user-level-permission.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/repositories/user-level-permission.repository.ts#L27)
+[services/oidc-service/src/repositories/user-level-permission.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/repositories/user-level-permission.repository.ts#L27)
 
 ## Properties
 
@@ -67,7 +67,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user-level-permission.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/repositories/user-level-permission.repository.ts#L31)
+[services/oidc-service/src/repositories/user-level-permission.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/repositories/user-level-permission.repository.ts#L31)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user-level-permission.repository.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/repositories/user-level-permission.repository.ts#L22)
+[services/oidc-service/src/repositories/user-level-permission.repository.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/repositories/user-level-permission.repository.ts#L22)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/repositories/user-level-permission.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/repositories/user-level-permission.repository.ts#L35)
+[services/oidc-service/src/repositories/user-level-permission.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/repositories/user-level-permission.repository.ts#L35)
 
 ## Methods
 

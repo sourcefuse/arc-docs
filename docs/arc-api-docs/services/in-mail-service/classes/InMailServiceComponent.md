@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[services/in-mail-service/src/component.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/component.ts#L59)
+[services/in-mail-service/src/component.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/component.ts#L59)
 
 ## Properties
 
@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[services/in-mail-service/src/component.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/component.ts#L61)
+[services/in-mail-service/src/component.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/component.ts#L61)
 
 ___
 
@@ -64,7 +64,7 @@ Component.bindings
 
 #### Defined in
 
-[services/in-mail-service/src/component.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/component.ts#L58)
+[services/in-mail-service/src/component.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/component.ts#L58)
 
 ___
 
@@ -80,7 +80,7 @@ Component.controllers
 
 #### Defined in
 
-[services/in-mail-service/src/component.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/component.ts#L57)
+[services/in-mail-service/src/component.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/component.ts#L57)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/component.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/component.ts#L63)
+[services/in-mail-service/src/component.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/component.ts#L63)
 
 ___
 
@@ -103,7 +103,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/in-mail-service/src/component.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/component.ts#L52)
+[services/in-mail-service/src/component.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/component.ts#L52)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/component.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/component.ts#L46)
+[services/in-mail-service/src/component.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/component.ts#L46)
 
 ## Methods
 
@@ -129,4 +129,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/in-mail-service/src/component.ts:115](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/component.ts#L115)
+[services/in-mail-service/src/component.ts:115](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/component.ts#L115)

@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`Event`](Event.md)<`DataObject`<`Model`\>\>, `undefined` \| `string`, [`EventRelations`](../interfaces/EventRelations.md), `this`\> & `DefaultCrudRepository`<[`Event`](Event.md)<`DataObject`<`Model`\>\>, `undefined` \| `string`, `object`, `this`\>
+- `DefaultUserModifyCrudRepository`<[`Event`](Event.md)<`DataObject`<`Model`\>\>, `undefined` \| `string`, [`EventRelations`](../interfaces/EventRelations.md), `this`\> & {}
 
   ↳ **`EventRepository`**
 
@@ -25,6 +25,10 @@
 - [getAuditLogRepository](EventRepository.md#getauditlogrepository)
 - [getCurrentUser](EventRepository.md#getcurrentuser)
 - [parentEvent](EventRepository.md#parentevent)
+
+### Methods
+
+- [save](EventRepository.md#save)
 
 ## Constructors
 
@@ -56,7 +60,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/event.repository.ts#L59)
+[services/scheduler-service/src/repositories/event.repository.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L59)
 
 ## Properties
 
@@ -66,7 +70,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/event.repository.ts#L71)
+[services/scheduler-service/src/repositories/event.repository.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L71)
 
 ___
 
@@ -76,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/event.repository.ts#L54)
+[services/scheduler-service/src/repositories/event.repository.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L54)
 
 ___
 
@@ -86,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/event.repository.ts#L69)
+[services/scheduler-service/src/repositories/event.repository.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L69)
 
 ___
 
@@ -96,7 +100,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/event.repository.ts#L49)
+[services/scheduler-service/src/repositories/event.repository.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L49)
 
 ___
 
@@ -106,7 +110,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/event.repository.ts#L39)
+[services/scheduler-service/src/repositories/event.repository.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L39)
 
 ___
 
@@ -116,7 +120,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/event.repository.ts#L67)
+[services/scheduler-service/src/repositories/event.repository.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L67)
 
 ___
 
@@ -126,7 +130,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/event.repository.ts#L73)
+[services/scheduler-service/src/repositories/event.repository.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L73)
 
 ___
 
@@ -147,7 +151,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/event.repository.ts#L63)
+[services/scheduler-service/src/repositories/event.repository.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L63)
 
 ___
 
@@ -157,4 +161,36 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/event.repository.ts#L44)
+[services/scheduler-service/src/repositories/event.repository.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L44)
+
+## Methods
+
+### save
+
+▸ **save**(`entity`, `options?`): `Promise`<[`Event`](Event.md)<`DataObject`<`Model`\>\>\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `entity` | [`Event`](Event.md)<`DataObject`<`Model`\>\> |
+| `options?` | `Options` |
+
+#### Returns
+
+`Promise`<[`Event`](Event.md)<`DataObject`<`Model`\>\>\>
+
+#### Inherited from
+
+ConditionalAuditRepositoryMixin(
+  DefaultUserModifyCrudRepository<
+    Event,
+    typeof Event.prototype.id,
+    EventRelations
+  \>,
+  EventAuditOpts,
+).save
+
+#### Defined in
+
+packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:13

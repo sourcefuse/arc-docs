@@ -10,6 +10,7 @@
 - [authentication](CoreConfig.md#authentication)
 - [configObject](CoreConfig.md#configobject)
 - [enableObf](CoreConfig.md#enableobf)
+- [modifyPathDefinition](CoreConfig.md#modifypathdefinition)
 - [name](CoreConfig.md#name)
 - [obfPath](CoreConfig.md#obfpath)
 - [openapiSpec](CoreConfig.md#openapispec)
@@ -26,7 +27,7 @@
 
 #### Defined in
 
-[src/types.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/types.ts#L21)
+[packages/core/src/types.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L36)
 
 ___
 
@@ -36,7 +37,7 @@ ___
 
 #### Defined in
 
-[src/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/types.ts#L18)
+[packages/core/src/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L33)
 
 ___
 
@@ -46,7 +47,7 @@ ___
 
 #### Defined in
 
-[src/types.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/types.ts#L14)
+[packages/core/src/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L18)
 
 ___
 
@@ -56,7 +57,37 @@ ___
 
 #### Defined in
 
-[src/types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/types.ts#L15)
+[packages/core/src/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L19)
+
+___
+
+### modifyPathDefinition
+
+• `Optional` **modifyPathDefinition**: (`path`: `string`, `pathDefinition`: [`OASPathDefinition`](../modules.md#oaspathdefinition)) => ``null`` \| [`OASPathDefinition`](../modules.md#oaspathdefinition)
+
+#### Type declaration
+
+▸ (`path`, `pathDefinition`): ``null`` \| [`OASPathDefinition`](../modules.md#oaspathdefinition)
+
+In order to hide or alter some path from the definition provided by swagger stats, `modifyPathDefinition`
+callback can be used. It'll get called for each of the path specified in the `openapiSpec` provided.
+
+##### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `path` | `string` | The name of the API path. |
+| `pathDefinition` | [`OASPathDefinition`](../modules.md#oaspathdefinition) | The definition object containing method and other details. |
+
+##### Returns
+
+``null`` \| [`OASPathDefinition`](../modules.md#oaspathdefinition)
+
+`null` if the path needs to be omitted from the spec else return the `pathDefinition` either in the original form as received in the argument or by modifying it as per the needs.
+
+#### Defined in
+
+[packages/core/src/types.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L29)
 
 ___
 
@@ -66,7 +97,7 @@ ___
 
 #### Defined in
 
-[src/types.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/types.ts#L13)
+[packages/core/src/types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L17)
 
 ___
 
@@ -76,7 +107,7 @@ ___
 
 #### Defined in
 
-[src/types.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/types.ts#L16)
+[packages/core/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L20)
 
 ___
 
@@ -86,7 +117,7 @@ ___
 
 #### Defined in
 
-[src/types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/types.ts#L17)
+[packages/core/src/types.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L21)
 
 ___
 
@@ -112,7 +143,7 @@ ___
 
 #### Defined in
 
-[src/types.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/types.ts#L28)
+[packages/core/src/types.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L43)
 
 ___
 
@@ -122,7 +153,7 @@ ___
 
 #### Defined in
 
-[src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/types.ts#L20)
+[packages/core/src/types.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L35)
 
 ___
 
@@ -132,7 +163,7 @@ ___
 
 #### Defined in
 
-[src/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/types.ts#L23)
+[packages/core/src/types.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L38)
 
 ___
 
@@ -142,4 +173,4 @@ ___
 
 #### Defined in
 
-[src/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/types.ts#L19)
+[packages/core/src/types.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L34)

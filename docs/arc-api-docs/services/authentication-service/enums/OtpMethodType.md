@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/enums/mfa-config.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/enums/mfa-config.enum.ts#L7)
+[services/authentication-service/src/enums/mfa-config.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/enums/mfa-config.enum.ts#L7)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/enums/mfa-config.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/enums/mfa-config.enum.ts#L6)
+[services/authentication-service/src/enums/mfa-config.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/enums/mfa-config.enum.ts#L6)

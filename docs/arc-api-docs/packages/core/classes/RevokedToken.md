@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[src/models/core-entity.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/core-entity.ts#L11)
+[packages/core/src/models/core-entity.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/models/core-entity.ts#L11)
 
 ## Properties
 
@@ -46,4 +46,4 @@
 
 #### Defined in
 
-[src/components/bearer-verifier/models/revoked-token.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/bearer-verifier/models/revoked-token.model.ts#L15)
+[packages/core/src/components/bearer-verifier/models/revoked-token.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/models/revoked-token.model.ts#L15)

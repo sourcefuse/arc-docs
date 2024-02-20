@@ -26,4 +26,4 @@ Injection key constant
 
 #### Defined in
 
-[src/components/logger-extension/keys.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/logger-extension/keys.ts#L13)
+[packages/core/src/components/logger-extension/keys.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/logger-extension/keys.ts#L13)

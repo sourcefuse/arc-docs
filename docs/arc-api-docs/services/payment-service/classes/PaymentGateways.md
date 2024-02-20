@@ -53,7 +53,7 @@ packages/core/dist/models/core-entity.d.ts:3
 
 #### Defined in
 
-[services/payment-service/src/models/payment-gateways.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/models/payment-gateways.model.ts#L35)
+[services/payment-service/src/models/payment-gateways.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/payment-gateways.model.ts#L35)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/payment-gateways.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/models/payment-gateways.model.ts#L29)
+[services/payment-service/src/models/payment-gateways.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/payment-gateways.model.ts#L29)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/payment-gateways.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/models/payment-gateways.model.ts#L16)
+[services/payment-service/src/models/payment-gateways.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/payment-gateways.model.ts#L16)
 
 ___
 
@@ -83,4 +83,4 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/payment-gateways.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/models/payment-gateways.model.ts#L22)
+[services/payment-service/src/models/payment-gateways.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/payment-gateways.model.ts#L22)

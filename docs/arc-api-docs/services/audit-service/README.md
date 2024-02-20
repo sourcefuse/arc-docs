@@ -24,7 +24,7 @@
 
 ## Overview
 
-The `@sourceloop/audit-service` is a powerful LoopBack microservice specifically designed for managing audit logs. It offers extensive functionality to track and record user actions such as inserts, updates, and deletes. Built on the foundation of [@sourceloop/audit-log](https://www.npmjs.com/package/@sourceloop/audit-log), this service provides a repository mixin for easy integration.
+The `@sourceloop/audit-service` is a powerful microservice specifically designed for managing audit logs. It offers extensive functionality to track and record user actions such as inserts, updates, and deletes. Built on the foundation of [@sourceloop/audit-log](https://www.npmjs.com/package/@sourceloop/audit-log), this service provides a repository mixin for easy integration.
 
 While the repository mixin logs all actions by default, the audit-service takes customization to the next level. It allows you to selectively audit specific scenarios or cases, giving you complete control over the auditing process. With the service's exposed APIs, you can effortlessly insert and retrieve audited data, enabling you to tailor your auditing approach to your unique needs.
 
@@ -128,6 +128,9 @@ export class AuditDbDataSource
 ### Migrations
 
 The migrations required for this service are processed during the installation automatically if you set the `AUDIT_MIGRATION` or `SOURCELOOP_MIGRATION` env variable. The migrations use [`db-migrate`](https://www.npmjs.com/package/db-migrate) with [`db-migrate-pg`](https://www.npmjs.com/package/db-migrate-pg) driver for migrations, so you will have to install these packages to use auto-migration. Please note that if you are using some pre-existing migrations or databases, they may be affected. In such a scenario, it is advised that you copy the migration files in your project root, using the `AUDIT_MIGRATION_COPY` or `SOURCELOOP_MIGRATION_COPY` env variables. You can customize or cherry-pick the migrations in the copied files according to your specific requirements and then apply them to the DB.
+
+Additionally, there is now an option to choose between SQL migration or PostgreSQL migration.
+NOTE : for [`@sourceloop/cli`](https://www.npmjs.com/package/@sourceloop/cli?activeTab=readme) users, this choice can be specified during the scaffolding process by selecting the "type of datasource" option.
 
 ## Usage
 
@@ -378,10 +381,25 @@ Implementation for this can be seen [here](src/services/export-handler.service.t
       <td></td>
       <td>Specifies the path to store the archived files on S3 bucket.</td>
     </tr>
-
-
+    
+    
   </tbody>
 </table>
+
+### Using with Sequelize
+
+This service supports Sequelize as the underlying ORM using [@loopback/sequelize](https://www.npmjs.com/package/@loopback/sequelize) extension. And in order to use it, you'll need to do following changes.
+
+1.To use Sequelize in your application, add following to application.ts:
+
+```ts
+this.bind(AuditServiceBindings.Config).to({
+  useCustomSequence: false,
+  useSequelize: true,
+});
+```
+
+2. Use the `SequelizeDataSource` in your audit datasource as the parent class. Refer [this](https://www.npmjs.com/package/@loopback/sequelize#step-1-configure-datasource) for more.
 
 ### API Documentation
 

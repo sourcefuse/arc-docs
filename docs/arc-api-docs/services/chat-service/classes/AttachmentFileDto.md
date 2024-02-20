@@ -54,7 +54,7 @@ packages/core/dist/models/base-entity.model.d.ts:6
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file-dto.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/attachment-file-dto.model.ts#L13)
+[services/chat-service/src/models/attachment-file-dto.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/chat-service/src/models/attachment-file-dto.model.ts#L13)
 
 ___
 

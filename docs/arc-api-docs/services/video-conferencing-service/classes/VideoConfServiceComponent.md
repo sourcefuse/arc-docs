@@ -20,7 +20,7 @@
 - [models](VideoConfServiceComponent.md#models)
 - [providers](VideoConfServiceComponent.md#providers)
 - [repositories](VideoConfServiceComponent.md#repositories)
-- [videChatConfig](VideoConfServiceComponent.md#videchatconfig)
+- [videoChatConfig](VideoConfServiceComponent.md#videochatconfig)
 
 ### Methods
 
@@ -30,18 +30,18 @@
 
 ### constructor
 
-• **new VideoConfServiceComponent**(`application`, `videChatConfig?`)
+• **new VideoConfServiceComponent**(`application`, `videoChatConfig?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `application` | `RestApplication` |
-| `videChatConfig?` | `IServiceConfig` |
+| `videoChatConfig?` | `IServiceConfig` |
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/component.ts#L54)
+[services/video-conferencing-service/src/component.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L60)
 
 ## Properties
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/component.ts#L56)
+[services/video-conferencing-service/src/component.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L62)
 
 ___
 
@@ -65,7 +65,7 @@ Component.bindings
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:115](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/component.ts#L115)
+[services/video-conferencing-service/src/component.ts:127](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L127)
 
 ___
 
@@ -81,7 +81,7 @@ Component.controllers
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:132](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/component.ts#L132)
+[services/video-conferencing-service/src/component.ts:144](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L144)
 
 ___
 
@@ -94,7 +94,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:127](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/component.ts#L127)
+[services/video-conferencing-service/src/component.ts:139](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L139)
 
 ___
 
@@ -108,7 +108,7 @@ Component.providers
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/component.ts#L113)
+[services/video-conferencing-service/src/component.ts:125](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L125)
 
 ___
 
@@ -121,17 +121,17 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:121](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/component.ts#L121)
+[services/video-conferencing-service/src/component.ts:133](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L133)
 
 ___
 
-### videChatConfig
+### videoChatConfig
 
-• `Private` `Optional` `Readonly` **videChatConfig**: `IServiceConfig`
+• `Private` `Optional` `Readonly` **videoChatConfig**: `IServiceConfig`
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/component.ts#L58)
+[services/video-conferencing-service/src/component.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L64)
 
 ## Methods
 
@@ -153,4 +153,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:139](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/component.ts#L139)
+[services/video-conferencing-service/src/component.ts:151](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L151)

@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[services/audit-service/src/component.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/component.ts#L57)
+[services/audit-service/src/component.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/component.ts#L63)
 
 ## Properties
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[services/audit-service/src/component.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/component.ts#L59)
+[services/audit-service/src/component.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/component.ts#L65)
 
 ___
 
@@ -66,7 +66,7 @@ Component.bindings
 
 #### Defined in
 
-[services/audit-service/src/component.ts:116](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/component.ts#L116)
+[services/audit-service/src/component.ts:132](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/component.ts#L132)
 
 ___
 
@@ -82,7 +82,7 @@ Component.controllers
 
 #### Defined in
 
-[services/audit-service/src/component.ts:135](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/component.ts#L135)
+[services/audit-service/src/component.ts:151](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/component.ts#L151)
 
 ___
 
@@ -95,7 +95,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/audit-service/src/component.ts:130](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/component.ts#L130)
+[services/audit-service/src/component.ts:146](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/component.ts#L146)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/component.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/component.ts#L61)
+[services/audit-service/src/component.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/component.ts#L67)
 
 ___
 
@@ -119,7 +119,7 @@ Component.providers
 
 #### Defined in
 
-[services/audit-service/src/component.ts:114](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/component.ts#L114)
+[services/audit-service/src/component.ts:130](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/component.ts#L130)
 
 ___
 
@@ -132,7 +132,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/audit-service/src/component.ts:124](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/component.ts#L124)
+[services/audit-service/src/component.ts:140](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/component.ts#L140)
 
 ___
 
@@ -146,7 +146,7 @@ Component.services
 
 #### Defined in
 
-[services/audit-service/src/component.ts:118](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/component.ts#L118)
+[services/audit-service/src/component.ts:134](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/component.ts#L134)
 
 ## Methods
 
@@ -162,4 +162,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/audit-service/src/component.ts:141](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/component.ts#L141)
+[services/audit-service/src/component.ts:157](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/component.ts#L157)

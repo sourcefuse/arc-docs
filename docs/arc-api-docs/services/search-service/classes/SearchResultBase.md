@@ -47,7 +47,7 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/search-service/src/models/search-result-base.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-result-base.model.ts#L20)
+[services/search-service/src/models/search-result-base.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/models/search-result-base.model.ts#L20)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-result-base.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-result-base.model.ts#L14)
+[services/search-service/src/models/search-result-base.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/models/search-result-base.model.ts#L14)

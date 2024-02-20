@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`Attachment`](Attachment.md), `undefined` \| `string`, [`AttachmentRelations`](../interfaces/AttachmentRelations.md), `this`\> & `DefaultCrudRepository`<[`Attachment`](Attachment.md), `undefined` \| `string`, `object`, `this`\>
+- `DefaultUserModifyCrudRepository`<[`Attachment`](Attachment.md), `undefined` \| `string`, [`AttachmentRelations`](../interfaces/AttachmentRelations.md), `this`\> & {}
 
   ↳ **`AttachmentRepository`**
 
@@ -20,6 +20,10 @@
 - [eventRepositoryGetter](AttachmentRepository.md#eventrepositorygetter)
 - [getAuditLogRepository](AttachmentRepository.md#getauditlogrepository)
 - [getCurrentUser](AttachmentRepository.md#getcurrentuser)
+
+### Methods
+
+- [save](AttachmentRepository.md#save)
 
 ## Constructors
 
@@ -49,7 +53,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attachment.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attachment.repository.ts#L38)
+[services/scheduler-service/src/repositories/attachment.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attachment.repository.ts#L38)
 
 ## Properties
 
@@ -59,7 +63,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attachment.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attachment.repository.ts#L33)
+[services/scheduler-service/src/repositories/attachment.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attachment.repository.ts#L33)
 
 ___
 
@@ -69,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attachment.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attachment.repository.ts#L46)
+[services/scheduler-service/src/repositories/attachment.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attachment.repository.ts#L46)
 
 ___
 
@@ -79,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attachment.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attachment.repository.ts#L48)
+[services/scheduler-service/src/repositories/attachment.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attachment.repository.ts#L48)
 
 ___
 
@@ -100,4 +104,36 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attachment.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attachment.repository.ts#L42)
+[services/scheduler-service/src/repositories/attachment.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attachment.repository.ts#L42)
+
+## Methods
+
+### save
+
+▸ **save**(`entity`, `options?`): `Promise`<[`Attachment`](Attachment.md)\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `entity` | [`Attachment`](Attachment.md) |
+| `options?` | `Options` |
+
+#### Returns
+
+`Promise`<[`Attachment`](Attachment.md)\>
+
+#### Inherited from
+
+ConditionalAuditRepositoryMixin(
+  DefaultUserModifyCrudRepository<
+    Attachment,
+    typeof Attachment.prototype.id,
+    AttachmentRelations
+  \>,
+  AttachementAuditOpts,
+).save
+
+#### Defined in
+
+packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:13

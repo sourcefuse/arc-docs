@@ -24,7 +24,7 @@ Enum to define the supported log levels
 
 #### Defined in
 
-[src/components/logger-extension/keys.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/logger-extension/keys.ts#L27)
+[packages/core/src/components/logger-extension/keys.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/logger-extension/keys.ts#L27)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[src/components/logger-extension/keys.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/logger-extension/keys.ts#L30)
+[packages/core/src/components/logger-extension/keys.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/logger-extension/keys.ts#L30)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[src/components/logger-extension/keys.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/logger-extension/keys.ts#L28)
+[packages/core/src/components/logger-extension/keys.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/logger-extension/keys.ts#L28)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[src/components/logger-extension/keys.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/logger-extension/keys.ts#L31)
+[packages/core/src/components/logger-extension/keys.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/logger-extension/keys.ts#L31)
 
 ___
 
@@ -64,4 +64,4 @@ ___
 
 #### Defined in
 
-[src/components/logger-extension/keys.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/logger-extension/keys.ts#L29)
+[packages/core/src/components/logger-extension/keys.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/logger-extension/keys.ts#L29)

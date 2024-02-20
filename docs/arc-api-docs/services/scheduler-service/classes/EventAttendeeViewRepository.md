@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`EventAttendeeView`](EventAttendeeView.md), `undefined` \| `string`, [`EventAttendeeView`](EventAttendeeView.md), `this`\> & `DefaultCrudRepository`<[`EventAttendeeView`](EventAttendeeView.md), `undefined` \| `string`, `object`, `this`\>
+- `DefaultUserModifyCrudRepository`<[`EventAttendeeView`](EventAttendeeView.md), `undefined` \| `string`, [`EventAttendeeView`](EventAttendeeView.md), `this`\> & {}
 
   ↳ **`EventAttendeeViewRepository`**
 
@@ -18,6 +18,10 @@
 
 - [getAuditLogRepository](EventAttendeeViewRepository.md#getauditlogrepository)
 - [getCurrentUser](EventAttendeeViewRepository.md#getcurrentuser)
+
+### Methods
+
+- [save](EventAttendeeViewRepository.md#save)
 
 ## Constructors
 
@@ -46,7 +50,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L32)
+[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L32)
 
 ## Properties
 
@@ -56,7 +60,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L40)
+[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L40)
 
 ___
 
@@ -77,4 +81,36 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L36)
+[services/scheduler-service/src/repositories/event-attendee-view.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event-attendee-view.repository.ts#L36)
+
+## Methods
+
+### save
+
+▸ **save**(`entity`, `options?`): `Promise`<[`EventAttendeeView`](EventAttendeeView.md)\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `entity` | [`EventAttendeeView`](EventAttendeeView.md) |
+| `options?` | `Options` |
+
+#### Returns
+
+`Promise`<[`EventAttendeeView`](EventAttendeeView.md)\>
+
+#### Inherited from
+
+ConditionalAuditRepositoryMixin(
+  DefaultUserModifyCrudRepository<
+    EventAttendeeView,
+    typeof EventAttendeeView.prototype.id,
+    EventAttendeeView
+  \>,
+  EventAttendeeViewAuditOpts,
+).save
+
+#### Defined in
+
+packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:13

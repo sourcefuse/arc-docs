@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-tenant.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/user-tenant.model.ts#L25)
+[services/authentication-service/src/models/user-tenant.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user-tenant.model.ts#L25)
 
 ___
 
@@ -102,7 +102,7 @@ IUserPrefs.locale
 
 #### Defined in
 
-[services/authentication-service/src/models/user-tenant.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/user-tenant.model.ts#L39)
+[services/authentication-service/src/models/user-tenant.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user-tenant.model.ts#L39)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-tenant.model.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/user-tenant.model.ts#L69)
+[services/authentication-service/src/models/user-tenant.model.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user-tenant.model.ts#L69)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-tenant.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/user-tenant.model.ts#L34)
+[services/authentication-service/src/models/user-tenant.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user-tenant.model.ts#L34)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-tenant.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/user-tenant.model.ts#L49)
+[services/authentication-service/src/models/user-tenant.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user-tenant.model.ts#L49)
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-tenant.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/user-tenant.model.ts#L59)
+[services/authentication-service/src/models/user-tenant.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user-tenant.model.ts#L59)
 
 ___
 
@@ -180,4 +180,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-tenant.model.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/user-tenant.model.ts#L72)
+[services/authentication-service/src/models/user-tenant.model.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user-tenant.model.ts#L72)

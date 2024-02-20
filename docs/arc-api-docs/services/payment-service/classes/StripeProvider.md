@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[services/payment-service/src/providers/stripe/stripe.provider.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/stripe/stripe.provider.ts#L26)
+[services/payment-service/src/providers/stripe/stripe.provider.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/stripe/stripe.provider.ts#L27)
 
 ## Properties
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[services/payment-service/src/providers/stripe/stripe.provider.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/stripe/stripe.provider.ts#L36)
+[services/payment-service/src/providers/stripe/stripe.provider.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/stripe/stripe.provider.ts#L37)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/providers/stripe/stripe.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/stripe/stripe.provider.ts#L30)
+[services/payment-service/src/providers/stripe/stripe.provider.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/stripe/stripe.provider.ts#L31)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/providers/stripe/stripe.provider.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/stripe/stripe.provider.ts#L45)
+[services/payment-service/src/providers/stripe/stripe.provider.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/stripe/stripe.provider.ts#L46)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/providers/stripe/stripe.provider.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/stripe/stripe.provider.ts#L32)
+[services/payment-service/src/providers/stripe/stripe.provider.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/stripe/stripe.provider.ts#L33)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/providers/stripe/stripe.provider.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/stripe/stripe.provider.ts#L28)
+[services/payment-service/src/providers/stripe/stripe.provider.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/stripe/stripe.provider.ts#L29)
 
 ## Methods
 
@@ -118,4 +118,4 @@ Provider.value
 
 #### Defined in
 
-[services/payment-service/src/providers/stripe/stripe.provider.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/stripe/stripe.provider.ts#L47)
+[services/payment-service/src/providers/stripe/stripe.provider.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/stripe/stripe.provider.ts#L48)

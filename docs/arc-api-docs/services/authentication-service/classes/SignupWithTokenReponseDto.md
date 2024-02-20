@@ -61,7 +61,7 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/authentication-service/src/models/signup-with-token-response-dto.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/signup-with-token-response-dto.model.ts#L16)
+[services/authentication-service/src/models/signup-with-token-response-dto.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/signup-with-token-response-dto.model.ts#L16)
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/signup-with-token-response-dto.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/signup-with-token-response-dto.model.ts#L22)
+[services/authentication-service/src/models/signup-with-token-response-dto.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/signup-with-token-response-dto.model.ts#L22)

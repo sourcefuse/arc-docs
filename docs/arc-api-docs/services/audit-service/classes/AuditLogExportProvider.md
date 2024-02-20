@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[services/audit-service/src/services/audit-log-export.service.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/services/audit-log-export.service.ts#L9)
+[services/audit-service/src/services/audit-log-export.service.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/audit-log-export.service.ts#L9)
 
 ## Properties
 
@@ -45,7 +45,7 @@
 
 #### Defined in
 
-[services/audit-service/src/services/audit-log-export.service.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/services/audit-log-export.service.ts#L11)
+[services/audit-service/src/services/audit-log-export.service.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/audit-log-export.service.ts#L11)
 
 ## Methods
 
@@ -65,7 +65,7 @@
 
 #### Defined in
 
-[services/audit-service/src/services/audit-log-export.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/services/audit-log-export.service.ts#L17)
+[services/audit-service/src/services/audit-log-export.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/audit-log-export.service.ts#L18)
 
 ___
 
@@ -83,4 +83,4 @@ Provider.value
 
 #### Defined in
 
-[services/audit-service/src/services/audit-log-export.service.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/services/audit-log-export.service.ts#L14)
+[services/audit-service/src/services/audit-log-export.service.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/audit-log-export.service.ts#L14)

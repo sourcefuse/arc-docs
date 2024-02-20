@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/types.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/types.ts#L42)
+[services/authentication-service/src/types.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/types.ts#L48)
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/types.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/types.ts#L43)
+[services/authentication-service/src/types.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/types.ts#L49)

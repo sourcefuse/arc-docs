@@ -22,8 +22,6 @@
 
 - [AuditLog](classes/AuditLog.md)
 - [AuditLogRepository](classes/AuditLogRepository.md)
-- [AuditLogs](classes/AuditLogs.md)
-- [AuditLogsRepository](classes/AuditLogsRepository.md)
 - [ChatArchiveService](classes/ChatArchiveService.md)
 - [ChatSessionService](classes/ChatSessionService.md)
 - [MeetingLinkIdGeneratorProvider](classes/MeetingLinkIdGeneratorProvider.md)
@@ -96,7 +94,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/meeting-link-id-generator.provider.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/services/meeting-link-id-generator.provider.ts#L8)
+[services/video-conferencing-service/src/services/meeting-link-id-generator.provider.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/meeting-link-id-generator.provider.ts#L8)
 
 ## Variables
 
@@ -106,7 +104,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/keys.ts#L35)
+[services/video-conferencing-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/keys.ts#L35)
 
 ___
 
@@ -116,4 +114,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/keys.ts#L40)
+[services/video-conferencing-service/src/keys.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/keys.ts#L40)

@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L25)
+[services/search-service/src/models/search-query.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/models/search-query.model.ts#L25)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L36)
+[services/search-service/src/models/search-query.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/models/search-query.model.ts#L36)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L47)
+[services/search-service/src/models/search-query.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/models/search-query.model.ts#L47)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L31)
+[services/search-service/src/models/search-query.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/models/search-query.model.ts#L31)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L52)
+[services/search-service/src/models/search-query.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/models/search-query.model.ts#L52)
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L41)
+[services/search-service/src/models/search-query.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/models/search-query.model.ts#L41)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L66)
+[services/search-service/src/models/search-query.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/models/search-query.model.ts#L66)
 
 ___
 
@@ -184,7 +184,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L58)
+[services/search-service/src/models/search-query.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/models/search-query.model.ts#L58)
 
 ___
 
@@ -194,4 +194,4 @@ ___
 
 #### Defined in
 
-[services/search-service/src/models/search-query.model.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/search-service/src/models/search-query.model.ts#L63)
+[services/search-service/src/models/search-query.model.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/models/search-query.model.ts#L63)

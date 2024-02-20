@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`Calendar`](Calendar.md), `undefined` \| `string`, [`CalendarRelations`](../interfaces/CalendarRelations.md), `this`\> & `DefaultCrudRepository`<[`Calendar`](Calendar.md), `undefined` \| `string`, `object`, `this`\>
+- `DefaultUserModifyCrudRepository`<[`Calendar`](Calendar.md), `undefined` \| `string`, [`CalendarRelations`](../interfaces/CalendarRelations.md), `this`\> & {}
 
   ↳ **`CalendarRepository`**
 
@@ -24,6 +24,10 @@
 - [subscriptions](CalendarRepository.md#subscriptions)
 - [workingHourRepositoryGetter](CalendarRepository.md#workinghourrepositorygetter)
 - [workingHours](CalendarRepository.md#workinghours)
+
+### Methods
+
+- [save](CalendarRepository.md#save)
 
 ## Constructors
 
@@ -55,7 +59,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/calendar.repository.ts#L60)
+[services/scheduler-service/src/repositories/calendar.repository.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/calendar.repository.ts#L60)
 
 ## Properties
 
@@ -65,7 +69,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/calendar.repository.ts#L72)
+[services/scheduler-service/src/repositories/calendar.repository.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/calendar.repository.ts#L72)
 
 ___
 
@@ -75,7 +79,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/calendar.repository.ts#L68)
+[services/scheduler-service/src/repositories/calendar.repository.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/calendar.repository.ts#L68)
 
 ___
 
@@ -85,7 +89,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/calendar.repository.ts#L45)
+[services/scheduler-service/src/repositories/calendar.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/calendar.repository.ts#L45)
 
 ___
 
@@ -95,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/calendar.repository.ts#L74)
+[services/scheduler-service/src/repositories/calendar.repository.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/calendar.repository.ts#L74)
 
 ___
 
@@ -116,7 +120,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/calendar.repository.ts#L64)
+[services/scheduler-service/src/repositories/calendar.repository.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/calendar.repository.ts#L64)
 
 ___
 
@@ -126,7 +130,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/calendar.repository.ts#L55)
+[services/scheduler-service/src/repositories/calendar.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/calendar.repository.ts#L55)
 
 ___
 
@@ -136,7 +140,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/calendar.repository.ts#L70)
+[services/scheduler-service/src/repositories/calendar.repository.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/calendar.repository.ts#L70)
 
 ___
 
@@ -146,4 +150,36 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/calendar.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/calendar.repository.ts#L50)
+[services/scheduler-service/src/repositories/calendar.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/calendar.repository.ts#L50)
+
+## Methods
+
+### save
+
+▸ **save**(`entity`, `options?`): `Promise`<[`Calendar`](Calendar.md)\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `entity` | [`Calendar`](Calendar.md) |
+| `options?` | `Options` |
+
+#### Returns
+
+`Promise`<[`Calendar`](Calendar.md)\>
+
+#### Inherited from
+
+ConditionalAuditRepositoryMixin(
+  DefaultUserModifyCrudRepository<
+    Calendar,
+    typeof Calendar.prototype.id,
+    CalendarRelations
+  \>,
+  CalenderAuditOpts,
+).save
+
+#### Defined in
+
+packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:13

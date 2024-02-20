@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/services/login-helper.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/services/login-helper.service.ts#L17)
+[services/authentication-service/src/services/login-helper.service.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/services/login-helper.service.ts#L16)
 
 ## Properties
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/services/login-helper.service.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/services/login-helper.service.ts#L20)
+[services/authentication-service/src/services/login-helper.service.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/services/login-helper.service.ts#L19)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/services/login-helper.service.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/services/login-helper.service.ts#L19)
+[services/authentication-service/src/services/login-helper.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/services/login-helper.service.ts#L18)
 
 ## Methods
 
@@ -66,7 +66,7 @@ ___
 | :------ | :------ |
 | `req` | [`IAuthClientDTO`](../interfaces/IAuthClientDTO.md) |
 | `client?` | [`AuthClient`](AuthClient.md)<`DataObject`<`Model`\>\> |
-| `reqUser?` | ``null`` \| `Pick`<`AuthUser`, ``"id"`` \| ``"authClientIds"``\> |
+| `reqUser?` | ``null`` \| `Pick`<[`AuthUser`](AuthUser.md), ``"id"`` \| ``"authClientIds"``\> |
 
 #### Returns
 
@@ -74,4 +74,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/services/login-helper.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/services/login-helper.service.ts#L23)
+[services/authentication-service/src/services/login-helper.service.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/services/login-helper.service.ts#L22)

@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/chat-service/src/models/attachment-file.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/chat-service/src/models/attachment-file.model.ts#L47)
+[services/chat-service/src/models/attachment-file.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/chat-service/src/models/attachment-file.model.ts#L47)

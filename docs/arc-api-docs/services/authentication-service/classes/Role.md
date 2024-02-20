@@ -16,14 +16,17 @@
 
 ### Properties
 
+- [allowedClients](Role.md#allowedclients)
 - [createdBy](Role.md#createdby)
 - [createdOn](Role.md#createdon)
+- [description](Role.md#description)
 - [id](Role.md#id)
 - [modifiedBy](Role.md#modifiedby)
 - [modifiedOn](Role.md#modifiedon)
 - [name](Role.md#name)
 - [permissions](Role.md#permissions)
 - [roleType](Role.md#roletype)
+- [tenantId](Role.md#tenantid)
 
 ## Constructors
 
@@ -46,6 +49,16 @@ UserModifiableEntity<Role\>.constructor
 packages/core/dist/models/base-entity.model.d.ts:6
 
 ## Properties
+
+### allowedClients
+
+• `Optional` **allowedClients**: `string`[]
+
+#### Defined in
+
+[services/authentication-service/src/models/role.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L44)
+
+___
 
 ### createdBy
 
@@ -75,13 +88,23 @@ packages/core/dist/models/base-entity.model.d.ts:4
 
 ___
 
+### description
+
+• `Optional` **description**: `string`
+
+#### Defined in
+
+[services/authentication-service/src/models/role.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L27)
+
+___
+
 ### id
 
 • `Optional` **id**: `string`
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/role.model.ts#L16)
+[services/authentication-service/src/models/role.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L16)
 
 ___
 
@@ -119,7 +142,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/role.model.ts#L22)
+[services/authentication-service/src/models/role.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L22)
 
 ___
 
@@ -129,7 +152,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/role.model.ts#L39)
+[services/authentication-service/src/models/role.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L61)
 
 ___
 
@@ -139,4 +162,14 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/role.model.ts#L33)
+[services/authentication-service/src/models/role.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L55)
+
+___
+
+### tenantId
+
+• **tenantId**: `string`
+
+#### Defined in
+
+[services/authentication-service/src/models/role.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L34)

@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[strategy-types.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/cache/src/strategy-types.enum.ts#L6)
+[strategy-types.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/cache/src/strategy-types.enum.ts#L6)

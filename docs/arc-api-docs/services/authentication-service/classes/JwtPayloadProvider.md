@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/jwt-payload.provider.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/providers/jwt-payload.provider.ts#L32)
+[services/authentication-service/src/providers/jwt-payload.provider.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/jwt-payload.provider.ts#L31)
 
 ## Properties
 
@@ -56,7 +56,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/jwt-payload.provider.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/providers/jwt-payload.provider.ts#L42)
+[services/authentication-service/src/providers/jwt-payload.provider.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/jwt-payload.provider.ts#L41)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/jwt-payload.provider.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/providers/jwt-payload.provider.ts#L43)
+[services/authentication-service/src/providers/jwt-payload.provider.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/jwt-payload.provider.ts#L42)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/jwt-payload.provider.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/providers/jwt-payload.provider.ts#L34)
+[services/authentication-service/src/providers/jwt-payload.provider.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/jwt-payload.provider.ts#L33)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/jwt-payload.provider.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/providers/jwt-payload.provider.ts#L40)
+[services/authentication-service/src/providers/jwt-payload.provider.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/jwt-payload.provider.ts#L39)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/jwt-payload.provider.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/providers/jwt-payload.provider.ts#L38)
+[services/authentication-service/src/providers/jwt-payload.provider.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/jwt-payload.provider.ts#L37)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/jwt-payload.provider.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/providers/jwt-payload.provider.ts#L36)
+[services/authentication-service/src/providers/jwt-payload.provider.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/jwt-payload.provider.ts#L35)
 
 ## Methods
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/jwt-payload.provider.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/providers/jwt-payload.provider.ts#L112)
+[services/authentication-service/src/providers/jwt-payload.provider.ts:111](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/jwt-payload.provider.ts#L111)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `authUser` | `AuthUser` |
+| `authUser` | [`AuthUser`](AuthUser.md) |
 | `userTenant` | [`UserTenant`](UserTenant.md) |
 
 #### Returns
@@ -147,7 +147,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/jwt-payload.provider.ts:125](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/providers/jwt-payload.provider.ts#L125)
+[services/authentication-service/src/providers/jwt-payload.provider.ts:124](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/jwt-payload.provider.ts#L124)
 
 ___
 
@@ -179,4 +179,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/jwt-payload.provider.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/providers/jwt-payload.provider.ts#L46)
+[services/authentication-service/src/providers/jwt-payload.provider.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/jwt-payload.provider.ts#L45)

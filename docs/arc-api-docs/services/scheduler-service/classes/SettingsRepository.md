@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`Settings`](Settings.md), `undefined` \| `string`, {}, `this`\> & `DefaultCrudRepository`<[`Settings`](Settings.md), `undefined` \| `string`, `object`, `this`\>
+- `DefaultUserModifyCrudRepository`<[`Settings`](Settings.md), `undefined` \| `string`, {}, `this`\> & {}
 
   ↳ **`SettingsRepository`**
 
@@ -18,6 +18,10 @@
 
 - [getAuditLogRepository](SettingsRepository.md#getauditlogrepository)
 - [getCurrentUser](SettingsRepository.md#getcurrentuser)
+
+### Methods
+
+- [save](SettingsRepository.md#save)
 
 ## Constructors
 
@@ -42,7 +46,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/settings.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/settings.repository.ts#L27)
+[services/scheduler-service/src/repositories/settings.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/settings.repository.ts#L27)
 
 ## Properties
 
@@ -52,7 +56,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/settings.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/settings.repository.ts#L35)
+[services/scheduler-service/src/repositories/settings.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/settings.repository.ts#L35)
 
 ___
 
@@ -69,4 +73,32 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/settings.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/settings.repository.ts#L31)
+[services/scheduler-service/src/repositories/settings.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/settings.repository.ts#L31)
+
+## Methods
+
+### save
+
+▸ **save**(`entity`, `options?`): `Promise`<[`Settings`](Settings.md)\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `entity` | [`Settings`](Settings.md) |
+| `options?` | `Options` |
+
+#### Returns
+
+`Promise`<[`Settings`](Settings.md)\>
+
+#### Inherited from
+
+ConditionalAuditRepositoryMixin(
+  DefaultUserModifyCrudRepository<Settings, typeof Settings.prototype.id, {}\>,
+  SettingsAuditOpts,
+).save
+
+#### Defined in
+
+packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:13

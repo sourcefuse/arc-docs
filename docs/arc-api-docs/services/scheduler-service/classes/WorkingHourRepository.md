@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`WorkingHour`](WorkingHour.md), `undefined` \| `string`, [`WorkingHourRelations`](../interfaces/WorkingHourRelations.md), `this`\> & `DefaultCrudRepository`<[`WorkingHour`](WorkingHour.md), `undefined` \| `string`, `object`, `this`\>
+- `DefaultUserModifyCrudRepository`<[`WorkingHour`](WorkingHour.md), `undefined` \| `string`, [`WorkingHourRelations`](../interfaces/WorkingHourRelations.md), `this`\> & {}
 
   ↳ **`WorkingHourRepository`**
 
@@ -20,6 +20,10 @@
 - [calendarRepositoryGetter](WorkingHourRepository.md#calendarrepositorygetter)
 - [getAuditLogRepository](WorkingHourRepository.md#getauditlogrepository)
 - [getCurrentUser](WorkingHourRepository.md#getcurrentuser)
+
+### Methods
+
+- [save](WorkingHourRepository.md#save)
 
 ## Constructors
 
@@ -49,7 +53,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/working-hour.repository.ts#L38)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/working-hour.repository.ts#L38)
 
 ## Properties
 
@@ -59,7 +63,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/working-hour.repository.ts#L33)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/working-hour.repository.ts#L33)
 
 ___
 
@@ -69,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/working-hour.repository.ts#L46)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/working-hour.repository.ts#L46)
 
 ___
 
@@ -79,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/working-hour.repository.ts#L48)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/working-hour.repository.ts#L48)
 
 ___
 
@@ -100,4 +104,36 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/working-hour.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/working-hour.repository.ts#L42)
+[services/scheduler-service/src/repositories/working-hour.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/working-hour.repository.ts#L42)
+
+## Methods
+
+### save
+
+▸ **save**(`entity`, `options?`): `Promise`<[`WorkingHour`](WorkingHour.md)\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `entity` | [`WorkingHour`](WorkingHour.md) |
+| `options?` | `Options` |
+
+#### Returns
+
+`Promise`<[`WorkingHour`](WorkingHour.md)\>
+
+#### Inherited from
+
+ConditionalAuditRepositoryMixin(
+  DefaultUserModifyCrudRepository<
+    WorkingHour,
+    typeof WorkingHour.prototype.id,
+    WorkingHourRelations
+  \>,
+  WorkingHourAuditOpts,
+).save
+
+#### Defined in
+
+packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:13

@@ -19,6 +19,7 @@
 
 - [FeatureFlagMetadata](interfaces/FeatureFlagMetadata.md)
 - [FeatureHandler](interfaces/FeatureHandler.md)
+- [FilterStrategy](interfaces/FilterStrategy.md)
 - [IAuthUserWithDisabledFeat](interfaces/IAuthUserWithDisabledFeat.md)
 
 ### Type Aliases
@@ -26,6 +27,7 @@
 - [FeatureFlagFn](modules.md#featureflagfn)
 - [FeatureFlagOptions](modules.md#featureflagoptions)
 - [FeatureInterface](modules.md#featureinterface)
+- [FilterType](modules.md#filtertype)
 
 ### Variables
 
@@ -54,7 +56,7 @@
 
 #### Defined in
 
-[feature-toggle/src/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/types.ts#L19)
+[packages/feature-toggle/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/types.ts#L20)
 
 ___
 
@@ -70,11 +72,12 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `handler` | `string` |
+| `handler?` | `string` |
+| `operator?` | ``"AND"`` \| ``"OR"`` |
 
 #### Defined in
 
-[feature-toggle/src/types.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/types.ts#L11)
+[packages/feature-toggle/src/types.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/types.ts#L11)
 
 ___
 
@@ -92,7 +95,17 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/types.ts#L17)
+[packages/feature-toggle/src/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/types.ts#L18)
+
+___
+
+### FilterType
+
+Ƭ **FilterType**: ``"AND"`` \| ``"OR"``
+
+#### Defined in
+
+[packages/feature-toggle/src/types.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/types.ts#L58)
 
 ## Variables
 
@@ -102,7 +115,7 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/keys.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/keys.ts#L8)
+[packages/feature-toggle/src/keys.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/keys.ts#L8)
 
 ___
 
@@ -114,7 +127,7 @@ Name/id of the handler extension point
 
 #### Defined in
 
-[feature-toggle/src/types.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/types.ts#L43)
+[packages/feature-toggle/src/types.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/types.ts#L44)
 
 ## Functions
 
@@ -136,7 +149,7 @@ A binding template for handler extensions
 
 #### Defined in
 
-feature-toggle/node_modules/@loopback/context/dist/binding.d.ts:202
+node_modules/@loopback/context/dist/binding.d.ts:202
 
 ___
 
@@ -156,7 +169,7 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/decorators/feature-flag.decorator.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/decorators/feature-flag.decorator.ts#L9)
+[packages/feature-toggle/src/decorators/feature-flag.decorator.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/decorators/feature-flag.decorator.ts#L9)
 
 ___
 
@@ -177,4 +190,4 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-metadata.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts#L30)
+[packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/providers/feature-flag-metadata.provider.ts#L30)

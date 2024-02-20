@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[src/enums/http-oas.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/enums/http-oas.enum.ts#L10)
+[packages/core/src/enums/http-oas.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/http-oas.enum.ts#L10)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[src/enums/http-oas.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/enums/http-oas.enum.ts#L6)
+[packages/core/src/enums/http-oas.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/http-oas.enum.ts#L6)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[src/enums/http-oas.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/enums/http-oas.enum.ts#L9)
+[packages/core/src/enums/http-oas.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/http-oas.enum.ts#L9)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[src/enums/http-oas.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/enums/http-oas.enum.ts#L7)
+[packages/core/src/enums/http-oas.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/http-oas.enum.ts#L7)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[src/enums/http-oas.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/enums/http-oas.enum.ts#L8)
+[packages/core/src/enums/http-oas.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/http-oas.enum.ts#L8)

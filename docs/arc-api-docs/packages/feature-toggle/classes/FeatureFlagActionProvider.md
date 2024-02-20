@@ -14,6 +14,7 @@
 
 ### Properties
 
+- [filterStrategyMapping](FeatureFlagActionProvider.md#filterstrategymapping)
 - [getMetadata](FeatureFlagActionProvider.md#getmetadata)
 - [handlerService](FeatureFlagActionProvider.md#handlerservice)
 - [user](FeatureFlagActionProvider.md#user)
@@ -21,6 +22,7 @@
 ### Methods
 
 - [action](FeatureFlagActionProvider.md#action)
+- [getStrategy](FeatureFlagActionProvider.md#getstrategy)
 - [value](FeatureFlagActionProvider.md#value)
 
 ## Constructors
@@ -39,9 +41,19 @@
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-action.provider.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L18)
+[packages/feature-toggle/src/providers/feature-flag-action.provider.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L36)
 
 ## Properties
+
+### filterStrategyMapping
+
+• **filterStrategyMapping**: { `filterType`: [`FilterType`](../modules.md#filtertype) ; `strategy`: [`FilterStrategy`](../interfaces/FilterStrategy.md)  }[]
+
+#### Defined in
+
+[packages/feature-toggle/src/providers/feature-flag-action.provider.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L23)
+
+___
 
 ### getMetadata
 
@@ -49,17 +61,17 @@
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-action.provider.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L20)
+[packages/feature-toggle/src/providers/feature-flag-action.provider.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L38)
 
 ___
 
 ### handlerService
 
-• `Private` `Optional` **handlerService**: [`FeatureHandlerService`](FeatureHandlerService.md)
+• `Private` `Optional` `Readonly` **handlerService**: [`FeatureHandlerService`](FeatureHandlerService.md)
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-action.provider.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L24)
+[packages/feature-toggle/src/providers/feature-flag-action.provider.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L42)
 
 ___
 
@@ -69,7 +81,7 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-action.provider.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L22)
+[packages/feature-toggle/src/providers/feature-flag-action.provider.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L40)
 
 ## Methods
 
@@ -83,7 +95,27 @@ ___
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-action.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L30)
+[packages/feature-toggle/src/providers/feature-flag-action.provider.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L48)
+
+___
+
+### getStrategy
+
+▸ **getStrategy**(`operator`): [`FilterStrategy`](../interfaces/FilterStrategy.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `operator` | `undefined` \| [`FilterType`](../modules.md#filtertype) |
+
+#### Returns
+
+[`FilterStrategy`](../interfaces/FilterStrategy.md)
+
+#### Defined in
+
+[packages/feature-toggle/src/providers/feature-flag-action.provider.ts:94](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L94)
 
 ___
 
@@ -101,4 +133,4 @@ Provider.value
 
 #### Defined in
 
-[feature-toggle/src/providers/feature-flag-action.provider.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L26)
+[packages/feature-toggle/src/providers/feature-flag-action.provider.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/providers/feature-flag-action.provider.ts#L44)

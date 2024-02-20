@@ -35,4 +35,4 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/auth-secure-client.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/auth-secure-client.repository.ts#L16)
+[services/authentication-service/src/repositories/auth-secure-client.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/auth-secure-client.repository.ts#L16)

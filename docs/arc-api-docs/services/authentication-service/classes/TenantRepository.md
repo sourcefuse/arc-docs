@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`Tenant`](Tenant.md), typeof [`id`](Tenant.md#id)\>
+- `DefaultSoftCrudRepository`<[`Tenant`](Tenant.md), typeof [`id`](Tenant.md#id)\>
 
   ↳ **`TenantRepository`**
 
@@ -16,58 +16,44 @@
 
 ### Properties
 
-- [getCurrentUser](TenantRepository.md#getcurrentuser)
+- [tenant](TenantRepository.md#tenant)
 - [tenantConfigRepositoryGetter](TenantRepository.md#tenantconfigrepositorygetter)
 - [tenantConfigs](TenantRepository.md#tenantconfigs)
-
-### Methods
-
-- [create](TenantRepository.md#create)
-- [createAll](TenantRepository.md#createall)
-- [replaceById](TenantRepository.md#replacebyid)
-- [save](TenantRepository.md#save)
-- [update](TenantRepository.md#update)
-- [updateAll](TenantRepository.md#updateall)
-- [updateById](TenantRepository.md#updatebyid)
 
 ## Constructors
 
 ### constructor
 
-• **new TenantRepository**(`dataSource`, `getCurrentUser`, `tenantConfigRepositoryGetter`)
+• **new TenantRepository**(`dataSource`, `tenantConfigRepositoryGetter`, `tenant`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `dataSource` | `DataSource` |
-| `getCurrentUser` | `Getter`<`undefined` \| `IAuthUserWithPermissions`<`string`, `string`, `string`\>\> |
 | `tenantConfigRepositoryGetter` | `Getter`<[`TenantConfigRepository`](TenantConfigRepository.md)\> |
+| `tenant` | typeof `Entity` & { `prototype`: [`Tenant`](Tenant.md)  } |
 
 #### Overrides
 
-DefaultUserModifyCrudRepository&lt;
+DefaultSoftCrudRepository&lt;
   Tenant,
   typeof Tenant.prototype.id
 \&gt;.constructor
 
 #### Defined in
 
-[services/authentication-service/src/repositories/tenant.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/tenant.repository.ts#L30)
+[services/authentication-service/src/repositories/tenant.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/tenant.repository.ts#L27)
 
 ## Properties
 
-### getCurrentUser
+### tenant
 
-• `Protected` `Readonly` **getCurrentUser**: `Getter`<`undefined` \| `IAuthUserWithPermissions`<`string`, `string`, `string`\>\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.getCurrentUser
+• `Private` `Readonly` **tenant**: typeof `Entity` & { `prototype`: [`Tenant`](Tenant.md)  }
 
 #### Defined in
 
-[services/authentication-service/src/repositories/tenant.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/tenant.repository.ts#L33)
+[services/authentication-service/src/repositories/tenant.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/tenant.repository.ts#L32)
 
 ___
 
@@ -77,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/tenant.repository.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/tenant.repository.ts#L37)
+[services/authentication-service/src/repositories/tenant.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/tenant.repository.ts#L30)
 
 ___
 
@@ -87,182 +73,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/tenant.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/tenant.repository.ts#L25)
-
-## Methods
-
-### create
-
-▸ **create**(`entity`, `options?`): `Promise`<[`Tenant`](Tenant.md)\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entity` | `DataObject`<[`Tenant`](Tenant.md)\> |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<[`Tenant`](Tenant.md)\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.create
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:11
-
-___
-
-### createAll
-
-▸ **createAll**(`entities`, `options?`): `Promise`<[`Tenant`](Tenant.md)[]\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entities` | `DataObject`<[`Tenant`](Tenant.md)\>[] |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<[`Tenant`](Tenant.md)[]\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.createAll
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:12
-
-___
-
-### replaceById
-
-▸ **replaceById**(`id`, `data`, `options?`): `Promise`<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `id` | `undefined` \| `string` |
-| `data` | `DataObject`<[`Tenant`](Tenant.md)\> |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<`void`\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.replaceById
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:17
-
-___
-
-### save
-
-▸ **save**(`entity`, `options?`): `Promise`<[`Tenant`](Tenant.md)\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entity` | [`Tenant`](Tenant.md) |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<[`Tenant`](Tenant.md)\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.save
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:13
-
-___
-
-### update
-
-▸ **update**(`entity`, `options?`): `Promise`<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entity` | [`Tenant`](Tenant.md) |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<`void`\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.update
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:14
-
-___
-
-### updateAll
-
-▸ **updateAll**(`data`, `where?`, `options?`): `Promise`<`Count`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `DataObject`<[`Tenant`](Tenant.md)\> |
-| `where?` | `Where`<[`Tenant`](Tenant.md)\> |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<`Count`\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.updateAll
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:15
-
-___
-
-### updateById
-
-▸ **updateById**(`id`, `data`, `options?`): `Promise`<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `id` | `undefined` \| `string` |
-| `data` | `DataObject`<[`Tenant`](Tenant.md)\> |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<`void`\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.updateById
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:16
+[services/authentication-service/src/repositories/tenant.repository.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/tenant.repository.ts#L22)

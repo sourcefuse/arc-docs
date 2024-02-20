@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L24)
+[packages/core/src/components/tenant-utilities/types.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L58)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L26)
+[packages/core/src/components/tenant-utilities/types.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L60)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L27)
+[packages/core/src/components/tenant-utilities/types.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L61)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L54)
+[packages/core/src/components/tenant-utilities/types.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L88)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L58)
+[packages/core/src/components/tenant-utilities/types.ts:92](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L92)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L59)
+[packages/core/src/components/tenant-utilities/types.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L93)
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L25)
+[packages/core/src/components/tenant-utilities/types.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L59)
 
 ___
 
@@ -192,7 +192,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L21)
+[packages/core/src/components/tenant-utilities/types.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L55)
 
 ___
 
@@ -213,7 +213,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L22)
+[packages/core/src/components/tenant-utilities/types.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L56)
 
 ___
 
@@ -233,7 +233,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L23)
+[packages/core/src/components/tenant-utilities/types.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L57)
 
 ___
 
@@ -254,7 +254,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L47)
+[packages/core/src/components/tenant-utilities/types.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L81)
 
 ___
 
@@ -274,7 +274,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L28)
+[packages/core/src/components/tenant-utilities/types.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L62)
 
 ___
 
@@ -288,7 +288,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L60)
+[packages/core/src/components/tenant-utilities/types.ts:94](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L94)
 
 ___
 
@@ -308,7 +308,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L29)
+[packages/core/src/components/tenant-utilities/types.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L63)
 
 ___
 
@@ -329,7 +329,7 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L33)
+[packages/core/src/components/tenant-utilities/types.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L67)
 
 ___
 
@@ -350,4 +350,4 @@ ___
 
 #### Defined in
 
-[src/components/tenant-utilities/types.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/components/tenant-utilities/types.ts#L40)
+[packages/core/src/components/tenant-utilities/types.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L74)

@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/audit-service/src/services/export-handler.service.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/services/export-handler.service.ts#L7)
+[services/audit-service/src/services/export-handler.service.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/export-handler.service.ts#L7)

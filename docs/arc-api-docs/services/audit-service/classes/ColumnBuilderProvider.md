@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[services/audit-service/src/services/column-builder.service.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/services/column-builder.service.ts#L11)
+[services/audit-service/src/services/column-builder.service.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/column-builder.service.ts#L11)
 
 ___
 
@@ -59,4 +59,4 @@ Provider.value
 
 #### Defined in
 
-[services/audit-service/src/services/column-builder.service.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/services/column-builder.service.ts#L8)
+[services/audit-service/src/services/column-builder.service.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/column-builder.service.ts#L8)
