@@ -13,6 +13,7 @@
 ### Properties
 
 - [useCustomSequence](IChatServiceConfig.md#usecustomsequence)
+- [useSequelize](IChatServiceConfig.md#usesequelize)
 
 ## Properties
 
@@ -26,4 +27,18 @@ IServiceConfig.useCustomSequence
 
 #### Defined in
 
-packages/core/dist/types.d.ts:6
+packages/core/dist/types.d.ts:7
+
+___
+
+### useSequelize
+
+• `Optional` **useSequelize**: `boolean`
+
+#### Inherited from
+
+IServiceConfig.useSequelize
+
+#### Defined in
+
+packages/core/dist/types.d.ts:8

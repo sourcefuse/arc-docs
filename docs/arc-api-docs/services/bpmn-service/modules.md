@@ -18,6 +18,7 @@
 - [BPMTask](classes/BPMTask.md)
 - [ExecuteWorkflowDto](classes/ExecuteWorkflowDto.md)
 - [Workflow](classes/Workflow.md)
+- [WorkflowController](classes/WorkflowController.md)
 - [WorkflowDto](classes/WorkflowDto.md)
 - [WorkflowProvider](classes/WorkflowProvider.md)
 - [WorkflowRepository](classes/WorkflowRepository.md)
@@ -73,7 +74,7 @@
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L28)
+[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L28)
 
 ___
 
@@ -87,7 +88,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L32)
+[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L32)
 
 ___
 
@@ -101,7 +102,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L36)
+[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L36)
 
 ___
 
@@ -115,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L24)
+[services/bpmn-service/src/types/camunda/deployement-with-definitions.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/deployement-with-definitions.ts#L24)
 
 ___
 
@@ -146,7 +147,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/types.ts#L41)
+[services/bpmn-service/src/types/types.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/types.ts#L41)
 
 ___
 
@@ -164,7 +165,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/types.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/types.ts#L5)
+[services/bpmn-service/src/types/camunda/types.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/types.ts#L5)
 
 ___
 
@@ -184,7 +185,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/types.ts#L66)
+[services/bpmn-service/src/types/types.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/types.ts#L66)
 
 ___
 
@@ -215,7 +216,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/types.ts#L62)
+[services/bpmn-service/src/types/types.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/types.ts#L62)
 
 ___
 
@@ -236,7 +237,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/types.ts#L52)
+[services/bpmn-service/src/types/types.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/types.ts#L52)
 
 ___
 
@@ -261,7 +262,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/types.ts#L56)
+[services/bpmn-service/src/types/types.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/types.ts#L56)
 
 ___
 
@@ -294,7 +295,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/types.ts#L46)
+[services/bpmn-service/src/types/types.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/types.ts#L46)
 
 ___
 
@@ -304,7 +305,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow-version.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow-version.model.ts#L68)
+[services/bpmn-service/src/models/workflow-version.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/models/workflow-version.model.ts#L68)
 
 ___
 
@@ -314,7 +315,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow.model.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow.model.ts#L76)
+[services/bpmn-service/src/models/workflow.model.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/models/workflow.model.ts#L76)
 
 ## Variables
 
@@ -324,4 +325,4 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/types.ts#L74)
+[services/bpmn-service/src/types/types.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/types.ts#L74)

@@ -49,7 +49,7 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/authentication-service/src/models/forget-password-response-dto.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/forget-password-response-dto.model.ts#L15)
+[services/authentication-service/src/models/forget-password-response-dto.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/forget-password-response-dto.model.ts#L15)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/forget-password-response-dto.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/forget-password-response-dto.model.ts#L27)
+[services/authentication-service/src/models/forget-password-response-dto.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/forget-password-response-dto.model.ts#L27)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/forget-password-response-dto.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/forget-password-response-dto.model.ts#L21)
+[services/authentication-service/src/models/forget-password-response-dto.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/forget-password-response-dto.model.ts#L21)
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/forget-password-response-dto.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/forget-password-response-dto.model.ts#L32)
+[services/authentication-service/src/models/forget-password-response-dto.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/forget-password-response-dto.model.ts#L32)

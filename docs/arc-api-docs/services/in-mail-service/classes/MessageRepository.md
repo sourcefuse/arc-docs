@@ -55,7 +55,7 @@ DefaultTransactionSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/message.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/repositories/message.repository.ts#L55)
+[services/in-mail-service/src/repositories/message.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/repositories/message.repository.ts#L55)
 
 ## Properties
 
@@ -65,7 +65,7 @@ DefaultTransactionSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/message.repository.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/repositories/message.repository.ts#L59)
+[services/in-mail-service/src/repositories/message.repository.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/repositories/message.repository.ts#L59)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/message.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/repositories/message.repository.ts#L35)
+[services/in-mail-service/src/repositories/message.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/repositories/message.repository.ts#L35)
 
 ___
 
@@ -89,7 +89,7 @@ DefaultTransactionSoftCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/message.repository.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/repositories/message.repository.ts#L65)
+[services/in-mail-service/src/repositories/message.repository.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/repositories/message.repository.ts#L65)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/message.repository.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/repositories/message.repository.ts#L61)
+[services/in-mail-service/src/repositories/message.repository.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/repositories/message.repository.ts#L61)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/message.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/repositories/message.repository.ts#L40)
+[services/in-mail-service/src/repositories/message.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/repositories/message.repository.ts#L40)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/message.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/repositories/message.repository.ts#L45)
+[services/in-mail-service/src/repositories/message.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/repositories/message.repository.ts#L45)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/message.repository.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/repositories/message.repository.ts#L63)
+[services/in-mail-service/src/repositories/message.repository.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/repositories/message.repository.ts#L63)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/message.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/repositories/message.repository.ts#L50)
+[services/in-mail-service/src/repositories/message.repository.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/repositories/message.repository.ts#L50)
 
 ## Methods
 
@@ -160,4 +160,4 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/message.repository.ts:90](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/repositories/message.repository.ts#L90)
+[services/in-mail-service/src/repositories/message.repository.ts:90](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/repositories/message.repository.ts#L90)

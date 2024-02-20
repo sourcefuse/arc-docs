@@ -56,7 +56,7 @@ packages/core/dist/models/core-entity.d.ts:3
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit.model.ts#L30)
+[services/video-conferencing-service/src/models/audit.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/models/audit.model.ts#L30)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit.model.ts#L36)
+[services/video-conferencing-service/src/models/audit.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/models/audit.model.ts#L36)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit.model.ts#L23)
+[services/video-conferencing-service/src/models/audit.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/models/audit.model.ts#L23)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit.model.ts#L43)
+[services/video-conferencing-service/src/models/audit.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/models/audit.model.ts#L43)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit.model.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit.model.ts#L56)
+[services/video-conferencing-service/src/models/audit.model.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/models/audit.model.ts#L56)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit.model.ts#L66)
+[services/video-conferencing-service/src/models/audit.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/models/audit.model.ts#L66)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit.model.ts#L61)
+[services/video-conferencing-service/src/models/audit.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/models/audit.model.ts#L61)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit.model.ts#L50)
+[services/video-conferencing-service/src/models/audit.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/models/audit.model.ts#L50)
 
 ___
 
@@ -136,4 +136,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/models/audit.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/models/audit.model.ts#L17)
+[services/video-conferencing-service/src/models/audit.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/models/audit.model.ts#L17)

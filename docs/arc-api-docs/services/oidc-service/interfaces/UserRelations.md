@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:120](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user.model.ts#L120)
+[services/oidc-service/src/models/user.model.ts:120](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/user.model.ts#L120)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:119](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user.model.ts#L119)
+[services/oidc-service/src/models/user.model.ts:119](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/user.model.ts#L119)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user.model.ts:121](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user.model.ts#L121)
+[services/oidc-service/src/models/user.model.ts:121](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/user.model.ts#L121)

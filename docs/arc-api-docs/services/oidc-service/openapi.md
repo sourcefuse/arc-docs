@@ -13,7 +13,7 @@ Base URLs:
 
 # Authentication
 
-- HTTP Authentication, scheme: bearer
+- HTTP Authentication, scheme: bearer 
 
 <h1 id="oidc-service-oidccontroller">OidcController</h1>
 
@@ -200,3 +200,4 @@ fetch('/interaction/{uid}',
 <aside class="success">
 This operation does not require authentication
 </aside>
+

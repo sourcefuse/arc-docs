@@ -61,7 +61,7 @@ UserPermission.allowed
 
 #### Defined in
 
-[services/authentication-service/src/models/user-level-permission.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/user-level-permission.model.ts#L44)
+[services/authentication-service/src/models/user-level-permission.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user-level-permission.model.ts#L44)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-level-permission.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/user-level-permission.model.ts#L21)
+[services/authentication-service/src/models/user-level-permission.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user-level-permission.model.ts#L21)
 
 ___
 
@@ -141,7 +141,7 @@ UserPermission.permission
 
 #### Defined in
 
-[services/authentication-service/src/models/user-level-permission.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/user-level-permission.model.ts#L37)
+[services/authentication-service/src/models/user-level-permission.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user-level-permission.model.ts#L37)
 
 ___
 
@@ -151,4 +151,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-level-permission.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/models/user-level-permission.model.ts#L31)
+[services/authentication-service/src/models/user-level-permission.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user-level-permission.model.ts#L31)

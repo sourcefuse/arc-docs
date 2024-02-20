@@ -21,7 +21,10 @@
 ### Properties
 
 - [body](Notification.md#body)
+- [groupKey](Notification.md#groupkey)
 - [id](Notification.md#id)
+- [isCritical](Notification.md#iscritical)
+- [isDraft](Notification.md#isdraft)
 - [notificationUsers](Notification.md#notificationusers)
 - [options](Notification.md#options)
 - [receiver](Notification.md#receiver)
@@ -61,7 +64,17 @@ Message.body
 
 #### Defined in
 
-[services/notification-service/src/models/notification.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification.model.ts#L37)
+[services/notification-service/src/models/notification.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification.model.ts#L37)
+
+___
+
+### groupKey
+
+• `Optional` **groupKey**: `string`
+
+#### Defined in
+
+[services/notification-service/src/models/notification.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification.model.ts#L70)
 
 ___
 
@@ -71,7 +84,27 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/notification.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification.model.ts#L23)
+[services/notification-service/src/models/notification.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification.model.ts#L23)
+
+___
+
+### isCritical
+
+• `Optional` **isCritical**: `boolean`
+
+#### Defined in
+
+[services/notification-service/src/models/notification.model.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification.model.ts#L76)
+
+___
+
+### isDraft
+
+• `Optional` **isDraft**: `boolean`
+
+#### Defined in
+
+[services/notification-service/src/models/notification.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification.model.ts#L65)
 
 ___
 
@@ -81,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/notification.model.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification.model.ts#L63)
+[services/notification-service/src/models/notification.model.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification.model.ts#L79)
 
 ___
 
@@ -95,7 +128,7 @@ Message.options
 
 #### Defined in
 
-[services/notification-service/src/models/notification.model.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification.model.ts#L60)
+[services/notification-service/src/models/notification.model.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification.model.ts#L60)
 
 ___
 
@@ -109,7 +142,7 @@ Message.receiver
 
 #### Defined in
 
-[services/notification-service/src/models/notification.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification.model.ts#L43)
+[services/notification-service/src/models/notification.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification.model.ts#L43)
 
 ___
 
@@ -123,7 +156,7 @@ Message.sentDate
 
 #### Defined in
 
-[services/notification-service/src/models/notification.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification.model.ts#L55)
+[services/notification-service/src/models/notification.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification.model.ts#L55)
 
 ___
 
@@ -137,7 +170,7 @@ Message.subject
 
 #### Defined in
 
-[services/notification-service/src/models/notification.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification.model.ts#L31)
+[services/notification-service/src/models/notification.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification.model.ts#L31)
 
 ___
 
@@ -151,4 +184,4 @@ Message.type
 
 #### Defined in
 
-[services/notification-service/src/models/notification.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification.model.ts#L49)
+[services/notification-service/src/models/notification.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification.model.ts#L49)

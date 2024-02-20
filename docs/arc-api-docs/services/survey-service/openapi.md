@@ -13,7 +13,7 @@ Base URLs:
 
 # Authentication
 
-- HTTP Authentication, scheme: bearer
+- HTTP Authentication, scheme: bearer 
 
 <h1 id="survey-service-optioncontroller">OptionController</h1>
 
@@ -604,6 +604,7 @@ fetch('/question/{questionId}/options/{id}',
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -623,6 +624,7 @@ fetch('/question/{questionId}/options/{id}',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -715,7 +717,8 @@ fetch('/question/{questionId}/options/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -739,6 +742,7 @@ fetch('/question/{questionId}/options/{id}',
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -799,9 +803,11 @@ fetch('/question/{questionId}/options/{id}',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -862,6 +868,7 @@ fetch('/question/{questionId}/options/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -882,12 +889,14 @@ fetch('/question/{questionId}/options/{id}',
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -906,6 +915,7 @@ fetch('/question/{questionId}/options/{id}',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -947,7 +957,8 @@ fetch('/question/{questionId}/options/{id}',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -970,6 +981,7 @@ fetch('/question/{questionId}/options/{id}',
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -985,7 +997,8 @@ fetch('/question/{questionId}/options/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -1008,6 +1021,7 @@ fetch('/question/{questionId}/options/{id}',
       ]
     }
   },
+  "foreignKey": null,
   "followupQuestion": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -1030,6 +1044,7 @@ fetch('/question/{questionId}/options/{id}',
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -1049,6 +1064,7 @@ fetch('/question/{questionId}/options/{id}',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -1141,7 +1157,8 @@ fetch('/question/{questionId}/options/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -1165,6 +1182,7 @@ fetch('/question/{questionId}/options/{id}',
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -1225,9 +1243,11 @@ fetch('/question/{questionId}/options/{id}',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -1288,6 +1308,7 @@ fetch('/question/{questionId}/options/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -1308,12 +1329,14 @@ fetch('/question/{questionId}/options/{id}',
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -1332,6 +1355,7 @@ fetch('/question/{questionId}/options/{id}',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -1373,7 +1397,8 @@ fetch('/question/{questionId}/options/{id}',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -1396,6 +1421,7 @@ fetch('/question/{questionId}/options/{id}',
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -1411,7 +1437,8 @@ fetch('/question/{questionId}/options/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -1923,6 +1950,7 @@ fetch('/question/{questionId}/options',
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {}
@@ -2016,7 +2044,8 @@ fetch('/question/{questionId}/options',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -2040,6 +2069,7 @@ fetch('/question/{questionId}/options',
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -2100,9 +2130,11 @@ fetch('/question/{questionId}/options',
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -2163,6 +2195,7 @@ fetch('/question/{questionId}/options',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -2183,12 +2216,14 @@ fetch('/question/{questionId}/options',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {}
       },
@@ -2230,7 +2265,8 @@ fetch('/question/{questionId}/options',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -2253,6 +2289,7 @@ fetch('/question/{questionId}/options',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -2268,7 +2305,8 @@ fetch('/question/{questionId}/options',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -2291,6 +2329,7 @@ fetch('/question/{questionId}/options',
         ]
       }
     },
+    "foreignKey": null,
     "followupQuestion": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -2313,6 +2352,7 @@ fetch('/question/{questionId}/options',
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {}
@@ -2406,7 +2446,8 @@ fetch('/question/{questionId}/options',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -2430,6 +2471,7 @@ fetch('/question/{questionId}/options',
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -2490,9 +2532,11 @@ fetch('/question/{questionId}/options',
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -2553,6 +2597,7 @@ fetch('/question/{questionId}/options',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -2573,12 +2618,14 @@ fetch('/question/{questionId}/options',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {}
       },
@@ -2620,7 +2667,8 @@ fetch('/question/{questionId}/options',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -2643,6 +2691,7 @@ fetch('/question/{questionId}/options',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -2658,7 +2707,8 @@ fetch('/question/{questionId}/options',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -2736,6 +2786,7 @@ Status Code **200**
 |»»» parentQuestionId|string¦null|false|none|none|
 |»»» surveyId|string|false|none|none|
 |»»» rootQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»» foreignKey|any|false|none|none|
 |»»» parentQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»» options|[[OptionsWithRelations](#schemaoptionswithrelations)]|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» OptionsWithRelations|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
@@ -2827,6 +2878,7 @@ Status Code **200**
 |»»»»»»»»» extId|string|false|none|none|
 |»»»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»» surveyResponders|[[SurveyResponderWithRelations](#schemasurveyresponderwithrelations)]|false|none|(tsType: SurveyResponderWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»»» SurveyResponderWithRelations|[SurveyResponderWithRelations](#schemasurveyresponderwithrelations)|false|none|(tsType: SurveyResponderWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»» sections|[[SectionWithRelations](#schemasectionwithrelations)]|false|none|[(tsType: SectionWithRelations, schemaOptions: { includeRelations: true })]|
@@ -2844,13 +2896,17 @@ Status Code **200**
 |»»»»»»»»» surveyId|string|false|none|none|
 |»»»»»»»»» extId|string|false|none|none|
 |»»»»»»»»» extMetadata|object|false|none|none|
+|»»»»»» foreignKey|any|false|none|none|
 |»»»»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
 |»»»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» surveyResponseDetails|[[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)]|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» SurveyResponseDetailWithRelations|[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
+|»»»» foreignKey|any|false|none|none|
 |»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» option|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
+|»» foreignKey|any|false|none|none|
 |»» followupQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 
 #### Enumerated Values
@@ -3203,6 +3259,7 @@ fetch('/question-template/{templateId}/template-questions/{id}',
     "extId": "string",
     "extMetadata": {}
   },
+  "foreignKey": null,
   "question": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -3225,6 +3282,7 @@ fetch('/question-template/{templateId}/template-questions/{id}',
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -3244,6 +3302,7 @@ fetch('/question-template/{templateId}/template-questions/{id}',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -3336,7 +3395,8 @@ fetch('/question-template/{templateId}/template-questions/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -3360,6 +3420,7 @@ fetch('/question-template/{templateId}/template-questions/{id}',
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -3420,9 +3481,11 @@ fetch('/question-template/{templateId}/template-questions/{id}',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -3483,6 +3546,7 @@ fetch('/question-template/{templateId}/template-questions/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -3503,12 +3567,14 @@ fetch('/question-template/{templateId}/template-questions/{id}',
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -3527,6 +3593,7 @@ fetch('/question-template/{templateId}/template-questions/{id}',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -3568,7 +3635,8 @@ fetch('/question-template/{templateId}/template-questions/{id}',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -3591,6 +3659,7 @@ fetch('/question-template/{templateId}/template-questions/{id}',
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -3606,7 +3675,8 @@ fetch('/question-template/{templateId}/template-questions/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -3662,6 +3732,7 @@ fetch('/question-template/{templateId}/template-questions/{id}',
       "extId": "string",
       "extMetadata": {}
     },
+    "foreignKey": null,
     "question": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -3684,6 +3755,7 @@ fetch('/question-template/{templateId}/template-questions/{id}',
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {
@@ -3703,6 +3775,7 @@ fetch('/question-template/{templateId}/template-questions/{id}',
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       ],
@@ -3795,7 +3868,8 @@ fetch('/question-template/{templateId}/template-questions/{id}',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -3819,6 +3893,7 @@ fetch('/question-template/{templateId}/template-questions/{id}',
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -3879,9 +3954,11 @@ fetch('/question-template/{templateId}/template-questions/{id}',
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -3942,6 +4019,7 @@ fetch('/question-template/{templateId}/template-questions/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -3962,12 +4040,14 @@ fetch('/question-template/{templateId}/template-questions/{id}',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {
           "deleted": true,
@@ -3986,6 +4066,7 @@ fetch('/question-template/{templateId}/template-questions/{id}',
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       },
@@ -4027,7 +4108,8 @@ fetch('/question-template/{templateId}/template-questions/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -4050,6 +4132,7 @@ fetch('/question-template/{templateId}/template-questions/{id}',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -4065,7 +4148,8 @@ fetch('/question-template/{templateId}/template-questions/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -4577,6 +4661,7 @@ fetch('/question-template/{templateId}/template-questions',
       "extId": "string",
       "extMetadata": {}
     },
+    "foreignKey": null,
     "question": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -4599,6 +4684,7 @@ fetch('/question-template/{templateId}/template-questions',
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {
@@ -4618,6 +4704,7 @@ fetch('/question-template/{templateId}/template-questions',
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       ],
@@ -4710,7 +4797,8 @@ fetch('/question-template/{templateId}/template-questions',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -4734,6 +4822,7 @@ fetch('/question-template/{templateId}/template-questions',
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -4794,9 +4883,11 @@ fetch('/question-template/{templateId}/template-questions',
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -4857,6 +4948,7 @@ fetch('/question-template/{templateId}/template-questions',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -4877,12 +4969,14 @@ fetch('/question-template/{templateId}/template-questions',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {
           "deleted": true,
@@ -4901,6 +4995,7 @@ fetch('/question-template/{templateId}/template-questions',
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       },
@@ -4942,7 +5037,8 @@ fetch('/question-template/{templateId}/template-questions',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -4965,6 +5061,7 @@ fetch('/question-template/{templateId}/template-questions',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -4980,7 +5077,8 @@ fetch('/question-template/{templateId}/template-questions',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -5053,6 +5151,7 @@ Status Code **200**
 |»»» isEnableWeight|boolean|false|none|none|
 |»»» extId|string|false|none|none|
 |»»» extMetadata|object|false|none|none|
+|»» foreignKey|any|false|none|none|
 |»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»» deleted|boolean|false|none|none|
 |»»» deletedOn|string(date-time)¦null|false|none|none|
@@ -5075,6 +5174,7 @@ Status Code **200**
 |»»» parentQuestionId|string¦null|false|none|none|
 |»»» surveyId|string|false|none|none|
 |»»» rootQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»» foreignKey|any|false|none|none|
 |»»» parentQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»» options|[[OptionsWithRelations](#schemaoptionswithrelations)]|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» OptionsWithRelations|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
@@ -5094,6 +5194,7 @@ Status Code **200**
 |»»»»» extId|string|false|none|none|
 |»»»»» extMetadata|object|false|none|none|
 |»»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
 |»»»»» followupQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»» followUpQuestions|[[QuestionWithRelations](#schemaquestionwithrelations)]|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» QuestionWithRelations|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
@@ -5183,6 +5284,7 @@ Status Code **200**
 |»»»»»»»»» extId|string|false|none|none|
 |»»»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»» surveyResponders|[[SurveyResponderWithRelations](#schemasurveyresponderwithrelations)]|false|none|(tsType: SurveyResponderWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»»» SurveyResponderWithRelations|[SurveyResponderWithRelations](#schemasurveyresponderwithrelations)|false|none|(tsType: SurveyResponderWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»» sections|[[SectionWithRelations](#schemasectionwithrelations)]|false|none|[(tsType: SectionWithRelations, schemaOptions: { includeRelations: true })]|
@@ -5200,10 +5302,13 @@ Status Code **200**
 |»»»»»»»»» surveyId|string|false|none|none|
 |»»»»»»»»» extId|string|false|none|none|
 |»»»»»»»»» extMetadata|object|false|none|none|
+|»»»»»» foreignKey|any|false|none|none|
 |»»»»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
 |»»»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» surveyResponseDetails|[[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)]|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» SurveyResponseDetailWithRelations|[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
+|»»»» foreignKey|any|false|none|none|
 |»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» option|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
@@ -5806,6 +5911,7 @@ fetch('/questions/{id}',
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -5825,6 +5931,7 @@ fetch('/questions/{id}',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -5917,7 +6024,8 @@ fetch('/questions/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -5941,6 +6049,7 @@ fetch('/questions/{id}',
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -6001,9 +6110,11 @@ fetch('/questions/{id}',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -6064,6 +6175,7 @@ fetch('/questions/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -6084,12 +6196,14 @@ fetch('/questions/{id}',
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -6108,6 +6222,7 @@ fetch('/questions/{id}',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -6149,7 +6264,8 @@ fetch('/questions/{id}',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -6172,6 +6288,7 @@ fetch('/questions/{id}',
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -6187,7 +6304,8 @@ fetch('/questions/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -6210,6 +6328,7 @@ fetch('/questions/{id}',
       ]
     }
   },
+  "foreignKey": null,
   "parentQuestion": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -6232,6 +6351,7 @@ fetch('/questions/{id}',
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -6251,6 +6371,7 @@ fetch('/questions/{id}',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -6343,7 +6464,8 @@ fetch('/questions/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -6367,6 +6489,7 @@ fetch('/questions/{id}',
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -6427,9 +6550,11 @@ fetch('/questions/{id}',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -6490,6 +6615,7 @@ fetch('/questions/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -6510,12 +6636,14 @@ fetch('/questions/{id}',
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -6534,6 +6662,7 @@ fetch('/questions/{id}',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -6575,7 +6704,8 @@ fetch('/questions/{id}',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -6598,6 +6728,7 @@ fetch('/questions/{id}',
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -6613,7 +6744,8 @@ fetch('/questions/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -6675,6 +6807,7 @@ fetch('/questions/{id}',
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [],
         "followUpQuestions": [
@@ -6766,7 +6899,8 @@ fetch('/questions/{id}',
                     "surveyId": "string",
                     "extId": "string",
                     "extMetadata": {},
-                    "survey": {}
+                    "survey": {},
+                    "foreignKey": null
                   }
                 ],
                 "surveyResponders": [
@@ -6790,6 +6924,7 @@ fetch('/questions/{id}',
                   }
                 ]
               },
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -6836,9 +6971,11 @@ fetch('/questions/{id}',
                   "sections": [
                     {}
                   ]
-                }
+                },
+                "foreignKey": null
               }
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -6899,6 +7036,7 @@ fetch('/questions/{id}',
                     "extId": "string",
                     "extMetadata": {},
                     "survey": {},
+                    "foreignKey": null,
                     "surveyCycle": {}
                   }
                 ],
@@ -6919,12 +7057,14 @@ fetch('/questions/{id}',
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             },
             "surveyResponseDetails": [
               {}
             ]
           },
+          "foreignKey": null,
           "question": {},
           "option": {}
         },
@@ -6966,7 +7106,8 @@ fetch('/questions/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -6989,6 +7130,7 @@ fetch('/questions/{id}',
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -7004,7 +7146,8 @@ fetch('/questions/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             }
           ],
@@ -7027,6 +7170,7 @@ fetch('/questions/{id}',
           ]
         }
       },
+      "foreignKey": null,
       "followupQuestion": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -7049,6 +7193,7 @@ fetch('/questions/{id}',
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [],
         "followUpQuestions": [
@@ -7140,7 +7285,8 @@ fetch('/questions/{id}',
                     "surveyId": "string",
                     "extId": "string",
                     "extMetadata": {},
-                    "survey": {}
+                    "survey": {},
+                    "foreignKey": null
                   }
                 ],
                 "surveyResponders": [
@@ -7164,6 +7310,7 @@ fetch('/questions/{id}',
                   }
                 ]
               },
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -7210,9 +7357,11 @@ fetch('/questions/{id}',
                   "sections": [
                     {}
                   ]
-                }
+                },
+                "foreignKey": null
               }
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -7273,6 +7422,7 @@ fetch('/questions/{id}',
                     "extId": "string",
                     "extMetadata": {},
                     "survey": {},
+                    "foreignKey": null,
                     "surveyCycle": {}
                   }
                 ],
@@ -7293,12 +7443,14 @@ fetch('/questions/{id}',
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             },
             "surveyResponseDetails": [
               {}
             ]
           },
+          "foreignKey": null,
           "question": {},
           "option": {}
         },
@@ -7340,7 +7492,8 @@ fetch('/questions/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -7363,6 +7516,7 @@ fetch('/questions/{id}',
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -7378,7 +7532,8 @@ fetch('/questions/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             }
           ],
@@ -7426,6 +7581,7 @@ fetch('/questions/{id}',
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {
@@ -7445,6 +7601,7 @@ fetch('/questions/{id}',
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       ],
@@ -7535,7 +7692,8 @@ fetch('/questions/{id}',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -7559,6 +7717,7 @@ fetch('/questions/{id}',
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -7619,9 +7778,11 @@ fetch('/questions/{id}',
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -7682,6 +7843,7 @@ fetch('/questions/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -7702,12 +7864,14 @@ fetch('/questions/{id}',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {
           "deleted": true,
@@ -7726,6 +7890,7 @@ fetch('/questions/{id}',
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       },
@@ -7767,7 +7932,8 @@ fetch('/questions/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -7790,6 +7956,7 @@ fetch('/questions/{id}',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -7805,7 +7972,8 @@ fetch('/questions/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -7919,6 +8087,7 @@ fetch('/questions/{id}',
               "parentQuestionId": "string",
               "surveyId": "string",
               "rootQuestion": {},
+              "foreignKey": null,
               "parentQuestion": {},
               "options": [
                 {
@@ -7938,6 +8107,7 @@ fetch('/questions/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               ],
@@ -7964,7 +8134,8 @@ fetch('/questions/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -7988,6 +8159,7 @@ fetch('/questions/{id}',
             }
           ]
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -8045,6 +8217,7 @@ fetch('/questions/{id}',
                 "parentQuestionId": "string",
                 "surveyId": "string",
                 "rootQuestion": {},
+                "foreignKey": null,
                 "parentQuestion": {},
                 "options": [
                   {
@@ -8064,6 +8237,7 @@ fetch('/questions/{id}',
                     "extId": "string",
                     "extMetadata": {},
                     "question": {},
+                    "foreignKey": null,
                     "followupQuestion": {}
                   }
                 ],
@@ -8097,9 +8271,11 @@ fetch('/questions/{id}',
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         }
       },
+      "foreignKey": null,
       "surveyCycle": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -8157,6 +8333,7 @@ fetch('/questions/{id}',
               "parentQuestionId": "string",
               "surveyId": "string",
               "rootQuestion": {},
+              "foreignKey": null,
               "parentQuestion": {},
               "options": [
                 {
@@ -8176,6 +8353,7 @@ fetch('/questions/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               ],
@@ -8209,6 +8387,7 @@ fetch('/questions/{id}',
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {}
             }
           ],
@@ -8229,12 +8408,14 @@ fetch('/questions/{id}',
               "extMetadata": {}
             }
           ]
-        }
+        },
+        "foreignKey": null
       },
       "surveyResponseDetails": [
         {}
       ]
     },
+    "foreignKey": null,
     "question": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -8257,6 +8438,7 @@ fetch('/questions/{id}',
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {
@@ -8276,6 +8458,7 @@ fetch('/questions/{id}',
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       ],
@@ -8321,7 +8504,8 @@ fetch('/questions/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -8344,6 +8528,7 @@ fetch('/questions/{id}',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -8359,7 +8544,8 @@ fetch('/questions/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -8420,6 +8606,7 @@ fetch('/questions/{id}',
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {}
@@ -8466,7 +8653,8 @@ fetch('/questions/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -8489,6 +8677,7 @@ fetch('/questions/{id}',
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -8504,7 +8693,8 @@ fetch('/questions/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             }
           ],
@@ -8527,6 +8717,7 @@ fetch('/questions/{id}',
           ]
         }
       },
+      "foreignKey": null,
       "followupQuestion": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -8549,6 +8740,7 @@ fetch('/questions/{id}',
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {}
@@ -8595,7 +8787,8 @@ fetch('/questions/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -8618,6 +8811,7 @@ fetch('/questions/{id}',
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -8633,7 +8827,8 @@ fetch('/questions/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             }
           ],
@@ -8700,6 +8895,7 @@ fetch('/questions/{id}',
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {
@@ -8719,6 +8915,7 @@ fetch('/questions/{id}',
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         ],
@@ -8774,6 +8971,7 @@ fetch('/questions/{id}',
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -8789,9 +8987,11 @@ fetch('/questions/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -8807,12 +9007,14 @@ fetch('/questions/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             },
             "surveyResponseDetails": [
               {}
             ]
           },
+          "foreignKey": null,
           "question": {},
           "option": {
             "deleted": true,
@@ -8831,6 +9033,7 @@ fetch('/questions/{id}',
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         },
@@ -8853,7 +9056,8 @@ fetch('/questions/{id}',
         "surveyId": "string",
         "extId": "string",
         "extMetadata": {},
-        "survey": {}
+        "survey": {},
+        "foreignKey": null
       }
     ],
     "surveyResponders": [
@@ -8876,6 +9080,7 @@ fetch('/questions/{id}',
         "extId": "string",
         "extMetadata": {},
         "survey": {},
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -8891,7 +9096,8 @@ fetch('/questions/{id}',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       }
     ],
@@ -9387,6 +9593,7 @@ fetch('/questions',
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -9406,6 +9613,7 @@ fetch('/questions',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -9498,7 +9706,8 @@ fetch('/questions',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -9522,6 +9731,7 @@ fetch('/questions',
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -9582,9 +9792,11 @@ fetch('/questions',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -9645,6 +9857,7 @@ fetch('/questions',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -9665,12 +9878,14 @@ fetch('/questions',
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -9689,6 +9904,7 @@ fetch('/questions',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -9730,7 +9946,8 @@ fetch('/questions',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -9753,6 +9970,7 @@ fetch('/questions',
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -9768,7 +9986,8 @@ fetch('/questions',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -9829,6 +10048,7 @@ Status Code **200**
 |»» parentQuestionId|string¦null|false|none|none|
 |»» surveyId|string|false|none|none|
 |»» rootQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»» foreignKey|any|false|none|none|
 |»» parentQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»» options|[[OptionsWithRelations](#schemaoptionswithrelations)]|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»» OptionsWithRelations|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
@@ -9848,6 +10068,7 @@ Status Code **200**
 |»»»» extId|string|false|none|none|
 |»»»» extMetadata|object|false|none|none|
 |»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»»» foreignKey|any|false|none|none|
 |»»»» followupQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»» followUpQuestions|[[QuestionWithRelations](#schemaquestionwithrelations)]|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»» QuestionWithRelations|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
@@ -9937,6 +10158,7 @@ Status Code **200**
 |»»»»»»»» extId|string|false|none|none|
 |»»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»»» foreignKey|any|false|none|none|
 |»»»»»» surveyResponders|[[SurveyResponderWithRelations](#schemasurveyresponderwithrelations)]|false|none|(tsType: SurveyResponderWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»» SurveyResponderWithRelations|[SurveyResponderWithRelations](#schemasurveyresponderwithrelations)|false|none|(tsType: SurveyResponderWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» sections|[[SectionWithRelations](#schemasectionwithrelations)]|false|none|[(tsType: SectionWithRelations, schemaOptions: { includeRelations: true })]|
@@ -9954,10 +10176,13 @@ Status Code **200**
 |»»»»»»»» surveyId|string|false|none|none|
 |»»»»»»»» extId|string|false|none|none|
 |»»»»»»»» extMetadata|object|false|none|none|
+|»»»»» foreignKey|any|false|none|none|
 |»»»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
+|»»»» foreignKey|any|false|none|none|
 |»»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» surveyResponseDetails|[[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)]|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» SurveyResponseDetailWithRelations|[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
+|»»» foreignKey|any|false|none|none|
 |»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»» option|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
@@ -10221,6 +10446,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -10240,6 +10466,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -10264,6 +10491,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
               "extId": "string",
               "extMetadata": {},
               "surveyResponse": {},
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -10282,6 +10510,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -10304,7 +10533,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -10328,6 +10558,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
           }
         ]
       },
+      "foreignKey": null,
       "surveyCycle": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -10385,6 +10616,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
               "parentQuestionId": "string",
               "surveyId": "string",
               "rootQuestion": {},
+              "foreignKey": null,
               "parentQuestion": {},
               "options": [
                 {
@@ -10404,6 +10636,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               ],
@@ -10428,6 +10661,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "surveyResponse": {},
+                "foreignKey": null,
                 "question": {},
                 "option": {
                   "deleted": true,
@@ -10446,6 +10680,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               },
@@ -10475,9 +10710,11 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
               "extMetadata": {}
             }
           ]
-        }
+        },
+        "foreignKey": null
       }
     },
+    "foreignKey": null,
     "surveyCycle": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -10535,6 +10772,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -10554,6 +10792,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -10578,6 +10817,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
               "extId": "string",
               "extMetadata": {},
               "surveyResponse": {},
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -10596,6 +10836,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -10625,6 +10866,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {}
           }
         ],
@@ -10645,7 +10887,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
             "extMetadata": {}
           }
         ]
-      }
+      },
+      "foreignKey": null
     },
     "surveyResponseDetails": [
       {
@@ -10666,6 +10909,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
         "extId": "string",
         "extMetadata": {},
         "surveyResponse": {},
+        "foreignKey": null,
         "question": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -10688,6 +10932,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {
@@ -10707,6 +10952,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           ],
@@ -10752,7 +10998,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -10775,6 +11022,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {
                   "deleted": true,
                   "deletedOn": "2019-08-24T14:15:22Z",
@@ -10790,7 +11038,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               }
             ],
@@ -10851,6 +11100,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {}
@@ -10897,7 +11147,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -10920,6 +11171,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {
                     "deleted": true,
                     "deletedOn": "2019-08-24T14:15:22Z",
@@ -10935,7 +11187,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                     "surveyId": "string",
                     "extId": "string",
                     "extMetadata": {},
-                    "survey": {}
+                    "survey": {},
+                    "foreignKey": null
                   }
                 }
               ],
@@ -10958,6 +11211,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
               ]
             }
           },
+          "foreignKey": null,
           "followupQuestion": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -10980,6 +11234,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {}
@@ -11026,7 +11281,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -11049,6 +11305,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {
                     "deleted": true,
                     "deletedOn": "2019-08-24T14:15:22Z",
@@ -11064,7 +11321,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                     "surveyId": "string",
                     "extId": "string",
                     "extMetadata": {},
-                    "survey": {}
+                    "survey": {},
+                    "foreignKey": null
                   }
                 }
               ],
@@ -11091,6 +11349,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
       }
     ]
   },
+  "foreignKey": null,
   "question": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -11113,6 +11372,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -11132,6 +11392,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -11224,7 +11485,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -11248,6 +11510,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -11308,9 +11571,11 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -11371,6 +11636,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -11391,12 +11657,14 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -11415,6 +11683,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -11456,7 +11725,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -11479,6 +11749,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -11494,7 +11765,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -11555,6 +11827,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {}
@@ -11648,7 +11921,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -11672,6 +11946,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -11732,9 +12007,11 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -11795,6 +12072,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -11815,12 +12093,14 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {}
       },
@@ -11862,7 +12142,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -11885,6 +12166,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -11900,7 +12182,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -11923,6 +12206,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
         ]
       }
     },
+    "foreignKey": null,
     "followupQuestion": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -11945,6 +12229,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {}
@@ -12038,7 +12323,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -12062,6 +12348,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -12122,9 +12409,11 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -12185,6 +12474,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -12205,12 +12495,14 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {}
       },
@@ -12252,7 +12544,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -12275,6 +12568,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -12290,7 +12584,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -12483,6 +12778,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
               "parentQuestionId": "string",
               "surveyId": "string",
               "rootQuestion": {},
+              "foreignKey": null,
               "parentQuestion": {},
               "options": [
                 {
@@ -12502,6 +12798,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               ],
@@ -12528,7 +12825,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -12552,6 +12850,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
             }
           ]
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -12609,6 +12908,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
                 "parentQuestionId": "string",
                 "surveyId": "string",
                 "rootQuestion": {},
+                "foreignKey": null,
                 "parentQuestion": {},
                 "options": [
                   {
@@ -12628,6 +12928,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
                     "extId": "string",
                     "extMetadata": {},
                     "question": {},
+                    "foreignKey": null,
                     "followupQuestion": {}
                   }
                 ],
@@ -12661,9 +12962,11 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         }
       },
+      "foreignKey": null,
       "surveyCycle": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -12721,6 +13024,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
               "parentQuestionId": "string",
               "surveyId": "string",
               "rootQuestion": {},
+              "foreignKey": null,
               "parentQuestion": {},
               "options": [
                 {
@@ -12740,6 +13044,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               ],
@@ -12773,6 +13078,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {}
             }
           ],
@@ -12793,12 +13099,14 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
               "extMetadata": {}
             }
           ]
-        }
+        },
+        "foreignKey": null
       },
       "surveyResponseDetails": [
         {}
       ]
     },
+    "foreignKey": null,
     "question": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -12821,6 +13129,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {
@@ -12840,6 +13149,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       ],
@@ -12885,7 +13195,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -12908,6 +13219,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -12923,7 +13235,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -12984,6 +13297,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {}
@@ -13030,7 +13344,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -13053,6 +13368,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -13068,7 +13384,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             }
           ],
@@ -13091,6 +13408,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
           ]
         }
       },
+      "foreignKey": null,
       "followupQuestion": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -13113,6 +13431,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {}
@@ -13159,7 +13478,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -13182,6 +13502,7 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -13197,7 +13518,8 @@ fetch('/survey-cycles/{surveyCycleId}/survey-response-detail-view',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             }
           ],
@@ -13328,6 +13650,7 @@ Status Code **200**
 |»»»»»»» parentQuestionId|string¦null|false|none|none|
 |»»»»»»» surveyId|string|false|none|none|
 |»»»»»»» rootQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»» parentQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»» options|[[OptionsWithRelations](#schemaoptionswithrelations)]|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»»» OptionsWithRelations|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
@@ -13347,6 +13670,7 @@ Status Code **200**
 |»»»»»»»»» extId|string|false|none|none|
 |»»»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»»»» followupQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»» followUpQuestions|[[QuestionWithRelations](#schemaquestionwithrelations)]|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»»» QuestionWithRelations|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
@@ -13369,6 +13693,7 @@ Status Code **200**
 |»»»»»»» extId|string|false|none|none|
 |»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»»»» surveyResponders|[[SurveyResponderWithRelations](#schemasurveyresponderwithrelations)]|false|none|(tsType: SurveyResponderWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» SurveyResponderWithRelations|[SurveyResponderWithRelations](#schemasurveyresponderwithrelations)|false|none|(tsType: SurveyResponderWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» sections|[[SectionWithRelations](#schemasectionwithrelations)]|false|none|[(tsType: SectionWithRelations, schemaOptions: { includeRelations: true })]|
@@ -13386,10 +13711,13 @@ Status Code **200**
 |»»»»»»» surveyId|string|false|none|none|
 |»»»»»»» extId|string|false|none|none|
 |»»»»»»» extMetadata|object|false|none|none|
+|»»»» foreignKey|any|false|none|none|
 |»»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
+|»»» foreignKey|any|false|none|none|
 |»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
 |»»» surveyResponseDetails|[[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)]|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» SurveyResponseDetailWithRelations|[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
+|»» foreignKey|any|false|none|none|
 |»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»» option|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 
@@ -13762,6 +14090,7 @@ fetch('/surveys/{id}',
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {
@@ -13781,6 +14110,7 @@ fetch('/surveys/{id}',
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       ],
@@ -13871,7 +14201,8 @@ fetch('/surveys/{id}',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -13895,6 +14226,7 @@ fetch('/surveys/{id}',
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -13953,9 +14285,11 @@ fetch('/surveys/{id}',
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -14014,6 +14348,7 @@ fetch('/surveys/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -14034,12 +14369,14 @@ fetch('/surveys/{id}',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {
           "deleted": true,
@@ -14058,6 +14395,7 @@ fetch('/surveys/{id}',
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       },
@@ -14097,7 +14435,8 @@ fetch('/surveys/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -14120,6 +14459,7 @@ fetch('/surveys/{id}',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -14135,7 +14475,8 @@ fetch('/surveys/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -14217,6 +14558,7 @@ fetch('/surveys/{id}',
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -14236,6 +14578,7 @@ fetch('/surveys/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -14291,13 +14634,16 @@ fetch('/surveys/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 },
+                "foreignKey": null,
                 "surveyCycle": {},
                 "surveyResponseDetails": [
                   {}
                 ]
               },
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -14316,6 +14662,7 @@ fetch('/surveys/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -14343,6 +14690,7 @@ fetch('/surveys/{id}',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {}
           }
         ],
@@ -14363,7 +14711,8 @@ fetch('/surveys/{id}',
             "extMetadata": {}
           }
         ]
-      }
+      },
+      "foreignKey": null
     }
   ],
   "surveyResponders": [
@@ -14427,6 +14776,7 @@ fetch('/surveys/{id}',
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -14446,6 +14796,7 @@ fetch('/surveys/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -14483,6 +14834,7 @@ fetch('/surveys/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "surveyResponder": {},
+                "foreignKey": null,
                 "surveyCycle": {
                   "deleted": true,
                   "deletedOn": "2019-08-24T14:15:22Z",
@@ -14498,12 +14850,14 @@ fetch('/surveys/{id}',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 },
                 "surveyResponseDetails": [
                   {}
                 ]
               },
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -14522,6 +14876,7 @@ fetch('/surveys/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -14544,7 +14899,8 @@ fetch('/surveys/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [],
@@ -14566,6 +14922,7 @@ fetch('/surveys/{id}',
           }
         ]
       },
+      "foreignKey": null,
       "surveyCycle": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -14623,6 +14980,7 @@ fetch('/surveys/{id}',
               "parentQuestionId": "string",
               "surveyId": "string",
               "rootQuestion": {},
+              "foreignKey": null,
               "parentQuestion": {},
               "options": [
                 {
@@ -14642,6 +15000,7 @@ fetch('/surveys/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               ],
@@ -14679,11 +15038,13 @@ fetch('/surveys/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "surveyResponder": {},
+                  "foreignKey": null,
                   "surveyCycle": {},
                   "surveyResponseDetails": [
                     {}
                   ]
                 },
+                "foreignKey": null,
                 "question": {},
                 "option": {
                   "deleted": true,
@@ -14702,6 +15063,7 @@ fetch('/surveys/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               },
@@ -14729,7 +15091,8 @@ fetch('/surveys/{id}',
               "extMetadata": {}
             }
           ]
-        }
+        },
+        "foreignKey": null
       }
     }
   ],
@@ -15268,6 +15631,7 @@ fetch('/surveys',
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {
@@ -15287,6 +15651,7 @@ fetch('/surveys',
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         ],
@@ -15379,7 +15744,8 @@ fetch('/surveys',
                     "surveyId": "string",
                     "extId": "string",
                     "extMetadata": {},
-                    "survey": {}
+                    "survey": {},
+                    "foreignKey": null
                   }
                 ],
                 "surveyResponders": [
@@ -15403,6 +15769,7 @@ fetch('/surveys',
                   }
                 ]
               },
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -15449,9 +15816,11 @@ fetch('/surveys',
                   "sections": [
                     {}
                   ]
-                }
+                },
+                "foreignKey": null
               }
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -15512,6 +15881,7 @@ fetch('/surveys',
                     "extId": "string",
                     "extMetadata": {},
                     "survey": {},
+                    "foreignKey": null,
                     "surveyCycle": {}
                   }
                 ],
@@ -15532,12 +15902,14 @@ fetch('/surveys',
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             },
             "surveyResponseDetails": [
               {}
             ]
           },
+          "foreignKey": null,
           "question": {},
           "option": {
             "deleted": true,
@@ -15556,6 +15928,7 @@ fetch('/surveys',
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         },
@@ -15597,7 +15970,8 @@ fetch('/surveys',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -15620,6 +15994,7 @@ fetch('/surveys',
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -15635,7 +16010,8 @@ fetch('/surveys',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             }
           ],
@@ -15717,6 +16093,7 @@ fetch('/surveys',
               "parentQuestionId": "string",
               "surveyId": "string",
               "rootQuestion": {},
+              "foreignKey": null,
               "parentQuestion": {},
               "options": [
                 {
@@ -15736,6 +16113,7 @@ fetch('/surveys',
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               ],
@@ -15791,13 +16169,16 @@ fetch('/surveys',
                     "extId": "string",
                     "extMetadata": {},
                     "survey": {},
+                    "foreignKey": null,
                     "surveyCycle": {}
                   },
+                  "foreignKey": null,
                   "surveyCycle": {},
                   "surveyResponseDetails": [
                     {}
                   ]
                 },
+                "foreignKey": null,
                 "question": {},
                 "option": {
                   "deleted": true,
@@ -15816,6 +16197,7 @@ fetch('/surveys',
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               },
@@ -15845,6 +16227,7 @@ fetch('/surveys',
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {}
             }
           ],
@@ -15865,7 +16248,8 @@ fetch('/surveys',
               "extMetadata": {}
             }
           ]
-        }
+        },
+        "foreignKey": null
       }
     ],
     "surveyResponders": [
@@ -15929,6 +16313,7 @@ fetch('/surveys',
               "parentQuestionId": "string",
               "surveyId": "string",
               "rootQuestion": {},
+              "foreignKey": null,
               "parentQuestion": {},
               "options": [
                 {
@@ -15948,6 +16333,7 @@ fetch('/surveys',
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               ],
@@ -15985,6 +16371,7 @@ fetch('/surveys',
                   "extId": "string",
                   "extMetadata": {},
                   "surveyResponder": {},
+                  "foreignKey": null,
                   "surveyCycle": {
                     "deleted": true,
                     "deletedOn": "2019-08-24T14:15:22Z",
@@ -16000,12 +16387,14 @@ fetch('/surveys',
                     "surveyId": "string",
                     "extId": "string",
                     "extMetadata": {},
-                    "survey": {}
+                    "survey": {},
+                    "foreignKey": null
                   },
                   "surveyResponseDetails": [
                     {}
                   ]
                 },
+                "foreignKey": null,
                 "question": {},
                 "option": {
                   "deleted": true,
@@ -16024,6 +16413,7 @@ fetch('/surveys',
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               },
@@ -16046,7 +16436,8 @@ fetch('/surveys',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -16070,6 +16461,7 @@ fetch('/surveys',
             }
           ]
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -16127,6 +16519,7 @@ fetch('/surveys',
                 "parentQuestionId": "string",
                 "surveyId": "string",
                 "rootQuestion": {},
+                "foreignKey": null,
                 "parentQuestion": {},
                 "options": [
                   {
@@ -16146,6 +16539,7 @@ fetch('/surveys',
                     "extId": "string",
                     "extMetadata": {},
                     "question": {},
+                    "foreignKey": null,
                     "followupQuestion": {}
                   }
                 ],
@@ -16183,9 +16577,11 @@ fetch('/surveys',
                     "extId": "string",
                     "extMetadata": {},
                     "surveyResponder": {},
+                    "foreignKey": null,
                     "surveyCycle": {},
                     "surveyResponseDetails": []
                   },
+                  "foreignKey": null,
                   "question": {},
                   "option": {
                     "deleted": true,
@@ -16204,6 +16600,7 @@ fetch('/surveys',
                     "extId": "string",
                     "extMetadata": {},
                     "question": {},
+                    "foreignKey": null,
                     "followupQuestion": {}
                   }
                 },
@@ -16233,7 +16630,8 @@ fetch('/surveys',
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         }
       }
     ],
@@ -16315,6 +16713,7 @@ Status Code **200**
 |»»»» parentQuestionId|string¦null|false|none|none|
 |»»»» surveyId|string|false|none|none|
 |»»»» rootQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»»» foreignKey|any|false|none|none|
 |»»»» parentQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» options|[[OptionsWithRelations](#schemaoptionswithrelations)]|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» OptionsWithRelations|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
@@ -16334,6 +16733,7 @@ Status Code **200**
 |»»»»»» extId|string|false|none|none|
 |»»»»»» extMetadata|object|false|none|none|
 |»»»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»» foreignKey|any|false|none|none|
 |»»»»»» followupQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» followUpQuestions|[[QuestionWithRelations](#schemaquestionwithrelations)]|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» QuestionWithRelations|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
@@ -16423,6 +16823,7 @@ Status Code **200**
 |»»»»»»»»»» extId|string|false|none|none|
 |»»»»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»»» surveyResponders|[[SurveyResponderWithRelations](#schemasurveyresponderwithrelations)]|false|none|(tsType: SurveyResponderWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»»»» SurveyResponderWithRelations|[SurveyResponderWithRelations](#schemasurveyresponderwithrelations)|false|none|(tsType: SurveyResponderWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»»» sections|[[SectionWithRelations](#schemasectionwithrelations)]|false|none|[(tsType: SectionWithRelations, schemaOptions: { includeRelations: true })]|
@@ -16440,10 +16841,13 @@ Status Code **200**
 |»»»»»»»»»» surveyId|string|false|none|none|
 |»»»»»»»»»» extId|string|false|none|none|
 |»»»»»»»»»» extMetadata|object|false|none|none|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»» foreignKey|any|false|none|none|
 |»»»»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» surveyResponseDetails|[[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)]|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»» SurveyResponseDetailWithRelations|[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
 |»»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» option|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
@@ -17479,6 +17883,7 @@ fetch('/surveys/{surveyId}/survey-cycles/{id}',
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {
@@ -17498,6 +17903,7 @@ fetch('/surveys/{surveyId}/survey-cycles/{id}',
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         ],
@@ -17553,6 +17959,7 @@ fetch('/surveys/{surveyId}/survey-cycles/{id}',
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -17568,9 +17975,11 @@ fetch('/surveys/{surveyId}/survey-cycles/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -17586,12 +17995,14 @@ fetch('/surveys/{surveyId}/survey-cycles/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             },
             "surveyResponseDetails": [
               {}
             ]
           },
+          "foreignKey": null,
           "question": {},
           "option": {
             "deleted": true,
@@ -17610,6 +18021,7 @@ fetch('/surveys/{surveyId}/survey-cycles/{id}',
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         },
@@ -17632,7 +18044,8 @@ fetch('/surveys/{surveyId}/survey-cycles/{id}',
         "surveyId": "string",
         "extId": "string",
         "extMetadata": {},
-        "survey": {}
+        "survey": {},
+        "foreignKey": null
       }
     ],
     "surveyResponders": [
@@ -17655,6 +18068,7 @@ fetch('/surveys/{surveyId}/survey-cycles/{id}',
         "extId": "string",
         "extMetadata": {},
         "survey": {},
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -17670,7 +18084,8 @@ fetch('/surveys/{surveyId}/survey-cycles/{id}',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       }
     ],
@@ -17691,7 +18106,8 @@ fetch('/surveys/{surveyId}/survey-cycles/{id}',
         "extMetadata": {}
       }
     ]
-  }
+  },
+  "foreignKey": null
 }
 ```
 
@@ -18193,6 +18609,7 @@ fetch('/surveys/{surveyId}/survey-cycles',
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {
@@ -18212,6 +18629,7 @@ fetch('/surveys/{surveyId}/survey-cycles',
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           ],
@@ -18267,13 +18685,16 @@ fetch('/surveys/{surveyId}/survey-cycles',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               },
+              "foreignKey": null,
               "surveyCycle": {},
               "surveyResponseDetails": [
                 {}
               ]
             },
+            "foreignKey": null,
             "question": {},
             "option": {
               "deleted": true,
@@ -18292,6 +18713,7 @@ fetch('/surveys/{surveyId}/survey-cycles',
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           },
@@ -18321,6 +18743,7 @@ fetch('/surveys/{surveyId}/survey-cycles',
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {}
         }
       ],
@@ -18341,7 +18764,8 @@ fetch('/surveys/{surveyId}/survey-cycles',
           "extMetadata": {}
         }
       ]
-    }
+    },
+    "foreignKey": null
   }
 ]
 ```
@@ -18416,6 +18840,7 @@ Status Code **200**
 |»»»»» parentQuestionId|string¦null|false|none|none|
 |»»»»» surveyId|string|false|none|none|
 |»»»»» rootQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
 |»»»»» parentQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» options|[[OptionsWithRelations](#schemaoptionswithrelations)]|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» OptionsWithRelations|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
@@ -18435,6 +18860,7 @@ Status Code **200**
 |»»»»»»» extId|string|false|none|none|
 |»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»» followupQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» followUpQuestions|[[QuestionWithRelations](#schemaquestionwithrelations)]|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» QuestionWithRelations|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
@@ -18487,10 +18913,13 @@ Status Code **200**
 |»»»»»»»» extId|string|false|none|none|
 |»»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»» surveyResponseDetails|[[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)]|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»»» SurveyResponseDetailWithRelations|[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»» foreignKey|any|false|none|none|
 |»»»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» option|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
@@ -18513,6 +18942,7 @@ Status Code **200**
 |»»»»» surveyId|string|false|none|none|
 |»»»»» extId|string|false|none|none|
 |»»»»» extMetadata|object|false|none|none|
+|»» foreignKey|any|false|none|none|
 
 #### Enumerated Values
 
@@ -18589,6 +19019,7 @@ fetch('/surveys/{surveyId}/survey-questions/count',
 | Permissions |
 | ------- |
 | 15047   |
+| 15021   |
 
 <h3 id="surveyquestioncontroller.count-parameters">Parameters</h3>
 
@@ -18953,6 +19384,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
 | Permissions |
 | ------- |
 | 15047   |
+| 15021   |
 
 <h3 id="surveyquestioncontroller.findbyid-parameters">Parameters</h3>
 
@@ -19004,6 +19436,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
     "extId": "string",
     "extMetadata": {},
     "dependentOnQuestion": {},
+    "foreignKey": null,
     "survey": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -19046,6 +19479,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {
@@ -19065,6 +19499,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           ],
@@ -19120,6 +19555,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {
                   "deleted": true,
                   "deletedOn": "2019-08-24T14:15:22Z",
@@ -19135,9 +19571,11 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               },
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -19153,12 +19591,14 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               },
               "surveyResponseDetails": [
                 {}
               ]
             },
+            "foreignKey": null,
             "question": {},
             "option": {
               "deleted": true,
@@ -19177,6 +19617,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           },
@@ -19199,7 +19640,8 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -19222,6 +19664,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -19237,7 +19680,8 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -19281,6 +19725,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {
@@ -19300,6 +19745,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       ],
@@ -19392,7 +19838,8 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -19416,6 +19863,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -19476,9 +19924,11 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -19539,6 +19989,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -19559,12 +20010,14 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {
           "deleted": true,
@@ -19583,6 +20036,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       },
@@ -19624,7 +20078,8 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -19647,6 +20102,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -19662,7 +20118,8 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -19701,6 +20158,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
       "extMetadata": {}
     }
   },
+  "foreignKey": null,
   "survey": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -19743,6 +20201,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {
@@ -19762,6 +20221,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         ],
@@ -19817,6 +20277,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -19832,9 +20293,11 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -19850,12 +20313,14 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             },
             "surveyResponseDetails": [
               {}
             ]
           },
+          "foreignKey": null,
           "question": {},
           "option": {
             "deleted": true,
@@ -19874,6 +20339,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         },
@@ -19896,7 +20362,8 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
         "surveyId": "string",
         "extId": "string",
         "extMetadata": {},
-        "survey": {}
+        "survey": {},
+        "foreignKey": null
       }
     ],
     "surveyResponders": [
@@ -19919,6 +20386,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
         "extId": "string",
         "extMetadata": {},
         "survey": {},
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -19934,7 +20402,8 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       }
     ],
@@ -19978,6 +20447,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -19997,6 +20467,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -20089,7 +20560,8 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -20113,6 +20585,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -20173,9 +20646,11 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -20236,6 +20711,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -20256,12 +20732,14 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -20280,6 +20758,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -20321,7 +20800,8 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -20344,6 +20824,7 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -20359,7 +20840,8 @@ fetch('/surveys/{surveyId}/survey-questions/{id}',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -20852,6 +21334,7 @@ fetch('/surveys/{surveyId}/survey-questions',
 | Permissions |
 | ------- |
 | 15047   |
+| 15021   |
 
 <h3 id="surveyquestioncontroller.find-parameters">Parameters</h3>
 
@@ -20885,6 +21368,7 @@ fetch('/surveys/{surveyId}/survey-questions',
     "extId": "string",
     "extMetadata": {},
     "dependentOnQuestion": {},
+    "foreignKey": null,
     "survey": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -20927,6 +21411,7 @@ fetch('/surveys/{surveyId}/survey-questions',
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {
@@ -20946,6 +21431,7 @@ fetch('/surveys/{surveyId}/survey-questions',
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           ],
@@ -21001,6 +21487,7 @@ fetch('/surveys/{surveyId}/survey-questions',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {
                   "deleted": true,
                   "deletedOn": "2019-08-24T14:15:22Z",
@@ -21016,9 +21503,11 @@ fetch('/surveys/{surveyId}/survey-questions',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               },
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -21034,12 +21523,14 @@ fetch('/surveys/{surveyId}/survey-questions',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               },
               "surveyResponseDetails": [
                 {}
               ]
             },
+            "foreignKey": null,
             "question": {},
             "option": {
               "deleted": true,
@@ -21058,6 +21549,7 @@ fetch('/surveys/{surveyId}/survey-questions',
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           },
@@ -21080,7 +21572,8 @@ fetch('/surveys/{surveyId}/survey-questions',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -21103,6 +21596,7 @@ fetch('/surveys/{surveyId}/survey-questions',
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -21118,7 +21612,8 @@ fetch('/surveys/{surveyId}/survey-questions',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -21162,6 +21657,7 @@ fetch('/surveys/{surveyId}/survey-questions',
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {
@@ -21181,6 +21677,7 @@ fetch('/surveys/{surveyId}/survey-questions',
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       ],
@@ -21273,7 +21770,8 @@ fetch('/surveys/{surveyId}/survey-questions',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -21297,6 +21795,7 @@ fetch('/surveys/{surveyId}/survey-questions',
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -21357,9 +21856,11 @@ fetch('/surveys/{surveyId}/survey-questions',
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -21420,6 +21921,7 @@ fetch('/surveys/{surveyId}/survey-questions',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -21440,12 +21942,14 @@ fetch('/surveys/{surveyId}/survey-questions',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {
           "deleted": true,
@@ -21464,6 +21968,7 @@ fetch('/surveys/{surveyId}/survey-questions',
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       },
@@ -21505,7 +22010,8 @@ fetch('/surveys/{surveyId}/survey-questions',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -21528,6 +22034,7 @@ fetch('/surveys/{surveyId}/survey-questions',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -21543,7 +22050,8 @@ fetch('/surveys/{surveyId}/survey-questions',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -21617,6 +22125,7 @@ Status Code **200**
 |»» extId|string|false|none|none|
 |»» extMetadata|object|false|none|none|
 |»» dependentOnQuestion|[SurveyQuestionWithRelations](#schemasurveyquestionwithrelations)|false|none|(tsType: SurveyQuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»» foreignKey|any|false|none|none|
 |»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
 |»»» deleted|boolean|false|none|none|
 |»»» deletedOn|string(date-time)¦null|false|none|none|
@@ -21659,6 +22168,7 @@ Status Code **200**
 |»»»»» parentQuestionId|string¦null|false|none|none|
 |»»»»» surveyId|string|false|none|none|
 |»»»»» rootQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
 |»»»»» parentQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» options|[[OptionsWithRelations](#schemaoptionswithrelations)]|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» OptionsWithRelations|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
@@ -21678,6 +22188,7 @@ Status Code **200**
 |»»»»»»» extId|string|false|none|none|
 |»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»» followupQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» followUpQuestions|[[QuestionWithRelations](#schemaquestionwithrelations)]|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» QuestionWithRelations|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
@@ -21730,6 +22241,7 @@ Status Code **200**
 |»»»»»»»» extId|string|false|none|none|
 |»»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»»»» deleted|boolean|false|none|none|
 |»»»»»»»»» deletedOn|string(date-time)¦null|false|none|none|
@@ -21746,9 +22258,12 @@ Status Code **200**
 |»»»»»»»»» extId|string|false|none|none|
 |»»»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»»»» foreignKey|any|false|none|none|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»» surveyResponseDetails|[[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)]|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»»» SurveyResponseDetailWithRelations|[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»» foreignKey|any|false|none|none|
 |»»»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» option|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
@@ -22555,6 +23070,7 @@ fetch('/surveys/{surveyId}/survey-responders',
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {
@@ -22574,6 +23090,7 @@ fetch('/surveys/{surveyId}/survey-responders',
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           ],
@@ -22611,6 +23128,7 @@ fetch('/surveys/{surveyId}/survey-responders',
               "extId": "string",
               "extMetadata": {},
               "surveyResponder": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -22626,12 +23144,14 @@ fetch('/surveys/{surveyId}/survey-responders',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               },
               "surveyResponseDetails": [
                 {}
               ]
             },
+            "foreignKey": null,
             "question": {},
             "option": {
               "deleted": true,
@@ -22650,6 +23170,7 @@ fetch('/surveys/{surveyId}/survey-responders',
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           },
@@ -22672,7 +23193,8 @@ fetch('/surveys/{surveyId}/survey-responders',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -22696,6 +23218,7 @@ fetch('/surveys/{surveyId}/survey-responders',
         }
       ]
     },
+    "foreignKey": null,
     "surveyCycle": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -22753,6 +23276,7 @@ fetch('/surveys/{surveyId}/survey-responders',
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -22772,6 +23296,7 @@ fetch('/surveys/{surveyId}/survey-responders',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -22809,11 +23334,13 @@ fetch('/surveys/{surveyId}/survey-responders',
                 "extId": "string",
                 "extMetadata": {},
                 "surveyResponder": {},
+                "foreignKey": null,
                 "surveyCycle": {},
                 "surveyResponseDetails": [
                   {}
                 ]
               },
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -22832,6 +23359,7 @@ fetch('/surveys/{surveyId}/survey-responders',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -22861,7 +23389,8 @@ fetch('/surveys/{surveyId}/survey-responders',
             "extMetadata": {}
           }
         ]
-      }
+      },
+      "foreignKey": null
     }
   }
 ]
@@ -22940,6 +23469,7 @@ Status Code **200**
 |»»»»» parentQuestionId|string¦null|false|none|none|
 |»»»»» surveyId|string|false|none|none|
 |»»»»» rootQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»» foreignKey|any|false|none|none|
 |»»»»» parentQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» options|[[OptionsWithRelations](#schemaoptionswithrelations)]|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» OptionsWithRelations|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
@@ -22959,6 +23489,7 @@ Status Code **200**
 |»»»»»»» extId|string|false|none|none|
 |»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»» followupQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» followUpQuestions|[[QuestionWithRelations](#schemaquestionwithrelations)]|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» QuestionWithRelations|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
@@ -22993,6 +23524,7 @@ Status Code **200**
 |»»»»»»» extId|string|false|none|none|
 |»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»» surveyResponder|[SurveyResponderWithRelations](#schemasurveyresponderwithrelations)|false|none|(tsType: SurveyResponderWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»»» deleted|boolean|false|none|none|
 |»»»»»»»» deletedOn|string(date-time)¦null|false|none|none|
@@ -23009,8 +23541,10 @@ Status Code **200**
 |»»»»»»»» extId|string|false|none|none|
 |»»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»» surveyResponseDetails|[[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)]|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»»» SurveyResponseDetailWithRelations|[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»» foreignKey|any|false|none|none|
 |»»»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» option|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
@@ -23033,6 +23567,7 @@ Status Code **200**
 |»»»»» surveyId|string|false|none|none|
 |»»»»» extId|string|false|none|none|
 |»»»»» extMetadata|object|false|none|none|
+|»» foreignKey|any|false|none|none|
 |»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
 
 #### Enumerated Values
@@ -23357,6 +23892,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {
@@ -23376,6 +23912,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           ],
@@ -23413,6 +23950,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
               "extId": "string",
               "extMetadata": {},
               "surveyResponder": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -23428,12 +23966,14 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               },
               "surveyResponseDetails": [
                 {}
               ]
             },
+            "foreignKey": null,
             "question": {},
             "option": {
               "deleted": true,
@@ -23452,6 +23992,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           },
@@ -23474,7 +24015,8 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -23498,6 +24040,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
         }
       ]
     },
+    "foreignKey": null,
     "surveyCycle": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -23555,6 +24098,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -23574,6 +24118,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -23611,11 +24156,13 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "surveyResponder": {},
+                "foreignKey": null,
                 "surveyCycle": {},
                 "surveyResponseDetails": [
                   {}
                 ]
               },
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -23634,6 +24181,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -23663,9 +24211,11 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
             "extMetadata": {}
           }
         ]
-      }
+      },
+      "foreignKey": null
     }
   },
+  "foreignKey": null,
   "surveyCycle": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -23723,6 +24273,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {
@@ -23742,6 +24293,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           ],
@@ -23797,13 +24349,16 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               },
+              "foreignKey": null,
               "surveyCycle": {},
               "surveyResponseDetails": [
                 {}
               ]
             },
+            "foreignKey": null,
             "question": {},
             "option": {
               "deleted": true,
@@ -23822,6 +24377,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           },
@@ -23851,6 +24407,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {}
         }
       ],
@@ -23871,7 +24428,8 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
           "extMetadata": {}
         }
       ]
-    }
+    },
+    "foreignKey": null
   },
   "surveyResponseDetails": [
     {
@@ -23964,6 +24522,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "parentQuestionId": "string",
                 "surveyId": "string",
                 "rootQuestion": {},
+                "foreignKey": null,
                 "parentQuestion": {},
                 "options": [
                   {
@@ -23983,6 +24542,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                     "extId": "string",
                     "extMetadata": {},
                     "question": {},
+                    "foreignKey": null,
                     "followupQuestion": {}
                   }
                 ],
@@ -24009,7 +24569,8 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -24033,6 +24594,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -24090,6 +24652,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                   "parentQuestionId": "string",
                   "surveyId": "string",
                   "rootQuestion": {},
+                  "foreignKey": null,
                   "parentQuestion": {},
                   "options": [
                     {}
@@ -24124,9 +24687,11 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -24184,6 +24749,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "parentQuestionId": "string",
                 "surveyId": "string",
                 "rootQuestion": {},
+                "foreignKey": null,
                 "parentQuestion": {},
                 "options": [
                   {
@@ -24203,6 +24769,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                     "extId": "string",
                     "extMetadata": {},
                     "question": {},
+                    "foreignKey": null,
                     "followupQuestion": {}
                   }
                 ],
@@ -24236,6 +24803,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -24256,10 +24824,12 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": []
       },
+      "foreignKey": null,
       "question": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -24282,6 +24852,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {
@@ -24301,6 +24872,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         ],
@@ -24346,7 +24918,8 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -24369,6 +24942,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -24384,7 +24958,8 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             }
           ],
@@ -24445,6 +25020,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {}
@@ -24491,7 +25067,8 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -24514,6 +25091,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {
                   "deleted": true,
                   "deletedOn": "2019-08-24T14:15:22Z",
@@ -24529,7 +25107,8 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               }
             ],
@@ -24552,6 +25131,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
             ]
           }
         },
+        "foreignKey": null,
         "followupQuestion": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -24574,6 +25154,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {}
@@ -24620,7 +25201,8 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -24643,6 +25225,7 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {
                   "deleted": true,
                   "deletedOn": "2019-08-24T14:15:22Z",
@@ -24658,7 +25241,8 @@ fetch('/surveys/{surveyId}/survey-responses/{id}',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               }
             ],
@@ -24957,6 +25541,7 @@ fetch('/surveys/{surveyId}/survey-responses',
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -24976,6 +25561,7 @@ fetch('/surveys/{surveyId}/survey-responses',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -25000,6 +25586,7 @@ fetch('/surveys/{surveyId}/survey-responses',
               "extId": "string",
               "extMetadata": {},
               "surveyResponse": {},
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -25018,6 +25605,7 @@ fetch('/surveys/{surveyId}/survey-responses',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -25040,7 +25628,8 @@ fetch('/surveys/{surveyId}/survey-responses',
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -25064,6 +25653,7 @@ fetch('/surveys/{surveyId}/survey-responses',
           }
         ]
       },
+      "foreignKey": null,
       "surveyCycle": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -25121,6 +25711,7 @@ fetch('/surveys/{surveyId}/survey-responses',
               "parentQuestionId": "string",
               "surveyId": "string",
               "rootQuestion": {},
+              "foreignKey": null,
               "parentQuestion": {},
               "options": [
                 {
@@ -25140,6 +25731,7 @@ fetch('/surveys/{surveyId}/survey-responses',
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               ],
@@ -25164,6 +25756,7 @@ fetch('/surveys/{surveyId}/survey-responses',
                 "extId": "string",
                 "extMetadata": {},
                 "surveyResponse": {},
+                "foreignKey": null,
                 "question": {},
                 "option": {
                   "deleted": true,
@@ -25182,6 +25775,7 @@ fetch('/surveys/{surveyId}/survey-responses',
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               },
@@ -25211,9 +25805,11 @@ fetch('/surveys/{surveyId}/survey-responses',
               "extMetadata": {}
             }
           ]
-        }
+        },
+        "foreignKey": null
       }
     },
+    "foreignKey": null,
     "surveyCycle": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -25271,6 +25867,7 @@ fetch('/surveys/{surveyId}/survey-responses',
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -25290,6 +25887,7 @@ fetch('/surveys/{surveyId}/survey-responses',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -25314,6 +25912,7 @@ fetch('/surveys/{surveyId}/survey-responses',
               "extId": "string",
               "extMetadata": {},
               "surveyResponse": {},
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -25332,6 +25931,7 @@ fetch('/surveys/{surveyId}/survey-responses',
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -25361,6 +25961,7 @@ fetch('/surveys/{surveyId}/survey-responses',
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {}
           }
         ],
@@ -25381,7 +25982,8 @@ fetch('/surveys/{surveyId}/survey-responses',
             "extMetadata": {}
           }
         ]
-      }
+      },
+      "foreignKey": null
     },
     "surveyResponseDetails": [
       {
@@ -25402,6 +26004,7 @@ fetch('/surveys/{surveyId}/survey-responses',
         "extId": "string",
         "extMetadata": {},
         "surveyResponse": {},
+        "foreignKey": null,
         "question": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -25424,6 +26027,7 @@ fetch('/surveys/{surveyId}/survey-responses',
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {
@@ -25443,6 +26047,7 @@ fetch('/surveys/{surveyId}/survey-responses',
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           ],
@@ -25488,7 +26093,8 @@ fetch('/surveys/{surveyId}/survey-responses',
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -25511,6 +26117,7 @@ fetch('/surveys/{surveyId}/survey-responses',
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {
                   "deleted": true,
                   "deletedOn": "2019-08-24T14:15:22Z",
@@ -25526,7 +26133,8 @@ fetch('/surveys/{surveyId}/survey-responses',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               }
             ],
@@ -25587,6 +26195,7 @@ fetch('/surveys/{surveyId}/survey-responses',
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {}
@@ -25633,7 +26242,8 @@ fetch('/surveys/{surveyId}/survey-responses',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -25656,6 +26266,7 @@ fetch('/surveys/{surveyId}/survey-responses',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {
                     "deleted": true,
                     "deletedOn": "2019-08-24T14:15:22Z",
@@ -25671,7 +26282,8 @@ fetch('/surveys/{surveyId}/survey-responses',
                     "surveyId": "string",
                     "extId": "string",
                     "extMetadata": {},
-                    "survey": {}
+                    "survey": {},
+                    "foreignKey": null
                   }
                 }
               ],
@@ -25694,6 +26306,7 @@ fetch('/surveys/{surveyId}/survey-responses',
               ]
             }
           },
+          "foreignKey": null,
           "followupQuestion": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -25716,6 +26329,7 @@ fetch('/surveys/{surveyId}/survey-responses',
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {}
@@ -25762,7 +26376,8 @@ fetch('/surveys/{surveyId}/survey-responses',
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -25785,6 +26400,7 @@ fetch('/surveys/{surveyId}/survey-responses',
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {
                     "deleted": true,
                     "deletedOn": "2019-08-24T14:15:22Z",
@@ -25800,7 +26416,8 @@ fetch('/surveys/{surveyId}/survey-responses',
                     "surveyId": "string",
                     "extId": "string",
                     "extMetadata": {},
-                    "survey": {}
+                    "survey": {},
+                    "foreignKey": null
                   }
                 }
               ],
@@ -25916,6 +26533,7 @@ Status Code **200**
 |»»»»»» parentQuestionId|string¦null|false|none|none|
 |»»»»»» surveyId|string|false|none|none|
 |»»»»»» rootQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»» foreignKey|any|false|none|none|
 |»»»»»» parentQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» options|[[OptionsWithRelations](#schemaoptionswithrelations)]|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»» OptionsWithRelations|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
@@ -25935,6 +26553,7 @@ Status Code **200**
 |»»»»»»»» extId|string|false|none|none|
 |»»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»»» followupQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» followUpQuestions|[[QuestionWithRelations](#schemaquestionwithrelations)]|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»» QuestionWithRelations|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
@@ -25956,6 +26575,7 @@ Status Code **200**
 |»»»»»»» extId|string|false|none|none|
 |»»»»»»» extMetadata|object|false|none|none|
 |»»»»»»» surveyResponse|[SurveyResponseWithRelations](#schemasurveyresponsewithrelations)|false|none|(tsType: SurveyResponseWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»»» foreignKey|any|false|none|none|
 |»»»»»»» question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»»» option|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
@@ -25976,6 +26596,7 @@ Status Code **200**
 |»»»»»» extId|string|false|none|none|
 |»»»»»» extMetadata|object|false|none|none|
 |»»»»»» survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
+|»»»»»» foreignKey|any|false|none|none|
 |»»»» surveyResponders|[[SurveyResponderWithRelations](#schemasurveyresponderwithrelations)]|false|none|(tsType: SurveyResponderWithRelations, schemaOptions: { includeRelations: true })|
 |»»»»» SurveyResponderWithRelations|[SurveyResponderWithRelations](#schemasurveyresponderwithrelations)|false|none|(tsType: SurveyResponderWithRelations, schemaOptions: { includeRelations: true })|
 |»»»» sections|[[SectionWithRelations](#schemasectionwithrelations)]|false|none|[(tsType: SectionWithRelations, schemaOptions: { includeRelations: true })]|
@@ -25993,7 +26614,9 @@ Status Code **200**
 |»»»»»» surveyId|string|false|none|none|
 |»»»»»» extId|string|false|none|none|
 |»»»»»» extMetadata|object|false|none|none|
+|»»» foreignKey|any|false|none|none|
 |»»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
+|»» foreignKey|any|false|none|none|
 |»» surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
 |»» surveyResponseDetails|[[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)]|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
 |»»» SurveyResponseDetailWithRelations|[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)|false|none|(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })|
@@ -26864,6 +27487,7 @@ NewQuestion
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {
@@ -26883,6 +27507,7 @@ NewQuestion
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         ],
@@ -26938,6 +27563,7 @@ NewQuestion
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -26953,9 +27579,11 @@ NewQuestion
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -26971,12 +27599,14 @@ NewQuestion
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             },
             "surveyResponseDetails": [
               {}
             ]
           },
+          "foreignKey": null,
           "question": {},
           "option": {
             "deleted": true,
@@ -26995,6 +27625,7 @@ NewQuestion
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         },
@@ -27017,7 +27648,8 @@ NewQuestion
         "surveyId": "string",
         "extId": "string",
         "extMetadata": {},
-        "survey": {}
+        "survey": {},
+        "foreignKey": null
       }
     ],
     "surveyResponders": [
@@ -27040,6 +27672,7 @@ NewQuestion
         "extId": "string",
         "extMetadata": {},
         "survey": {},
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -27055,7 +27688,8 @@ NewQuestion
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       }
     ],
@@ -27076,7 +27710,8 @@ NewQuestion
         "extMetadata": {}
       }
     ]
-  }
+  },
+  "foreignKey": null
 }
 
 ```
@@ -27102,6 +27737,7 @@ SurveyCycleWithRelations
 |extId|string|false|none|none|
 |extMetadata|object|false|none|none|
 |survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
+|foreignKey|any|false|none|none|
 
 <h2 id="tocS_SectionWithRelations">SectionWithRelations</h2>
 <!-- backwards compatibility -->
@@ -27199,6 +27835,7 @@ SectionWithRelations
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {
@@ -27218,6 +27855,7 @@ SectionWithRelations
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       ],
@@ -27308,7 +27946,8 @@ SectionWithRelations
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -27332,6 +27971,7 @@ SectionWithRelations
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -27390,9 +28030,11 @@ SectionWithRelations
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -27451,6 +28093,7 @@ SectionWithRelations
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -27471,12 +28114,14 @@ SectionWithRelations
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {
           "deleted": true,
@@ -27495,6 +28140,7 @@ SectionWithRelations
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       },
@@ -27534,7 +28180,8 @@ SectionWithRelations
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -27557,6 +28204,7 @@ SectionWithRelations
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -27572,7 +28220,8 @@ SectionWithRelations
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -27654,6 +28303,7 @@ SectionWithRelations
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -27673,6 +28323,7 @@ SectionWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -27728,13 +28379,16 @@ SectionWithRelations
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 },
+                "foreignKey": null,
                 "surveyCycle": {},
                 "surveyResponseDetails": [
                   {}
                 ]
               },
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -27753,6 +28407,7 @@ SectionWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -27780,6 +28435,7 @@ SectionWithRelations
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {}
           }
         ],
@@ -27800,7 +28456,8 @@ SectionWithRelations
             "extMetadata": {}
           }
         ]
-      }
+      },
+      "foreignKey": null
     }
   ],
   "surveyResponders": [
@@ -27864,6 +28521,7 @@ SectionWithRelations
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -27883,6 +28541,7 @@ SectionWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -27920,6 +28579,7 @@ SectionWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "surveyResponder": {},
+                "foreignKey": null,
                 "surveyCycle": {
                   "deleted": true,
                   "deletedOn": "2019-08-24T14:15:22Z",
@@ -27935,12 +28595,14 @@ SectionWithRelations
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 },
                 "surveyResponseDetails": [
                   {}
                 ]
               },
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -27959,6 +28621,7 @@ SectionWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -27981,7 +28644,8 @@ SectionWithRelations
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [],
@@ -28003,6 +28667,7 @@ SectionWithRelations
           }
         ]
       },
+      "foreignKey": null,
       "surveyCycle": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -28060,6 +28725,7 @@ SectionWithRelations
               "parentQuestionId": "string",
               "surveyId": "string",
               "rootQuestion": {},
+              "foreignKey": null,
               "parentQuestion": {},
               "options": [
                 {
@@ -28079,6 +28745,7 @@ SectionWithRelations
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               ],
@@ -28116,11 +28783,13 @@ SectionWithRelations
                   "extId": "string",
                   "extMetadata": {},
                   "surveyResponder": {},
+                  "foreignKey": null,
                   "surveyCycle": {},
                   "surveyResponseDetails": [
                     {}
                   ]
                 },
+                "foreignKey": null,
                 "question": {},
                 "option": {
                   "deleted": true,
@@ -28139,6 +28808,7 @@ SectionWithRelations
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               },
@@ -28166,7 +28836,8 @@ SectionWithRelations
               "extMetadata": {}
             }
           ]
-        }
+        },
+        "foreignKey": null
       }
     }
   ],
@@ -28288,6 +28959,7 @@ SurveyWithRelations
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {
@@ -28307,6 +28979,7 @@ SurveyWithRelations
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         ],
@@ -28362,6 +29035,7 @@ SurveyWithRelations
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -28377,9 +29051,11 @@ SurveyWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -28395,12 +29071,14 @@ SurveyWithRelations
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             },
             "surveyResponseDetails": [
               {}
             ]
           },
+          "foreignKey": null,
           "question": {},
           "option": {
             "deleted": true,
@@ -28419,6 +29097,7 @@ SurveyWithRelations
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         },
@@ -28441,7 +29120,8 @@ SurveyWithRelations
         "surveyId": "string",
         "extId": "string",
         "extMetadata": {},
-        "survey": {}
+        "survey": {},
+        "foreignKey": null
       }
     ],
     "surveyResponders": [
@@ -28464,6 +29144,7 @@ SurveyWithRelations
         "extId": "string",
         "extMetadata": {},
         "survey": {},
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -28479,7 +29160,8 @@ SurveyWithRelations
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       }
     ],
@@ -28501,6 +29183,7 @@ SurveyWithRelations
       }
     ]
   },
+  "foreignKey": null,
   "surveyCycle": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -28558,6 +29241,7 @@ SurveyWithRelations
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {
@@ -28577,6 +29261,7 @@ SurveyWithRelations
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           ],
@@ -28632,13 +29317,16 @@ SurveyWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               },
+              "foreignKey": null,
               "surveyCycle": {},
               "surveyResponseDetails": [
                 {}
               ]
             },
+            "foreignKey": null,
             "question": {},
             "option": {
               "deleted": true,
@@ -28657,6 +29345,7 @@ SurveyWithRelations
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           },
@@ -28686,6 +29375,7 @@ SurveyWithRelations
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {}
         }
       ],
@@ -28706,7 +29396,8 @@ SurveyWithRelations
           "extMetadata": {}
         }
       ]
-    }
+    },
+    "foreignKey": null
   }
 }
 
@@ -28736,6 +29427,7 @@ SurveyResponderWithRelations
 |extId|string|false|none|none|
 |extMetadata|object|false|none|none|
 |survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
+|foreignKey|any|false|none|none|
 |surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
 
 <h2 id="tocS_SurveyResponseWithRelations">SurveyResponseWithRelations</h2>
@@ -28819,6 +29511,7 @@ SurveyResponderWithRelations
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {
@@ -28838,6 +29531,7 @@ SurveyResponderWithRelations
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           ],
@@ -28875,6 +29569,7 @@ SurveyResponderWithRelations
               "extId": "string",
               "extMetadata": {},
               "surveyResponder": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -28890,12 +29585,14 @@ SurveyResponderWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               },
               "surveyResponseDetails": [
                 {}
               ]
             },
+            "foreignKey": null,
             "question": {},
             "option": {
               "deleted": true,
@@ -28914,6 +29611,7 @@ SurveyResponderWithRelations
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           },
@@ -28936,7 +29634,8 @@ SurveyResponderWithRelations
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -28960,6 +29659,7 @@ SurveyResponderWithRelations
         }
       ]
     },
+    "foreignKey": null,
     "surveyCycle": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -29017,6 +29717,7 @@ SurveyResponderWithRelations
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -29036,6 +29737,7 @@ SurveyResponderWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -29073,11 +29775,13 @@ SurveyResponderWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "surveyResponder": {},
+                "foreignKey": null,
                 "surveyCycle": {},
                 "surveyResponseDetails": [
                   {}
                 ]
               },
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -29096,6 +29800,7 @@ SurveyResponderWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -29125,9 +29830,11 @@ SurveyResponderWithRelations
             "extMetadata": {}
           }
         ]
-      }
+      },
+      "foreignKey": null
     }
   },
+  "foreignKey": null,
   "surveyCycle": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -29185,6 +29892,7 @@ SurveyResponderWithRelations
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {
@@ -29204,6 +29912,7 @@ SurveyResponderWithRelations
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           ],
@@ -29259,13 +29968,16 @@ SurveyResponderWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               },
+              "foreignKey": null,
               "surveyCycle": {},
               "surveyResponseDetails": [
                 {}
               ]
             },
+            "foreignKey": null,
             "question": {},
             "option": {
               "deleted": true,
@@ -29284,6 +29996,7 @@ SurveyResponderWithRelations
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           },
@@ -29313,6 +30026,7 @@ SurveyResponderWithRelations
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {}
         }
       ],
@@ -29333,7 +30047,8 @@ SurveyResponderWithRelations
           "extMetadata": {}
         }
       ]
-    }
+    },
+    "foreignKey": null
   },
   "surveyResponseDetails": [
     {
@@ -29426,6 +30141,7 @@ SurveyResponderWithRelations
                 "parentQuestionId": "string",
                 "surveyId": "string",
                 "rootQuestion": {},
+                "foreignKey": null,
                 "parentQuestion": {},
                 "options": [
                   {
@@ -29445,6 +30161,7 @@ SurveyResponderWithRelations
                     "extId": "string",
                     "extMetadata": {},
                     "question": {},
+                    "foreignKey": null,
                     "followupQuestion": {}
                   }
                 ],
@@ -29471,7 +30188,8 @@ SurveyResponderWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -29495,6 +30213,7 @@ SurveyResponderWithRelations
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -29552,6 +30271,7 @@ SurveyResponderWithRelations
                   "parentQuestionId": "string",
                   "surveyId": "string",
                   "rootQuestion": {},
+                  "foreignKey": null,
                   "parentQuestion": {},
                   "options": [
                     {}
@@ -29586,9 +30306,11 @@ SurveyResponderWithRelations
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -29646,6 +30368,7 @@ SurveyResponderWithRelations
                 "parentQuestionId": "string",
                 "surveyId": "string",
                 "rootQuestion": {},
+                "foreignKey": null,
                 "parentQuestion": {},
                 "options": [
                   {
@@ -29665,6 +30388,7 @@ SurveyResponderWithRelations
                     "extId": "string",
                     "extMetadata": {},
                     "question": {},
+                    "foreignKey": null,
                     "followupQuestion": {}
                   }
                 ],
@@ -29698,6 +30422,7 @@ SurveyResponderWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -29718,10 +30443,12 @@ SurveyResponderWithRelations
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": []
       },
+      "foreignKey": null,
       "question": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -29744,6 +30471,7 @@ SurveyResponderWithRelations
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {
@@ -29763,6 +30491,7 @@ SurveyResponderWithRelations
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         ],
@@ -29808,7 +30537,8 @@ SurveyResponderWithRelations
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -29831,6 +30561,7 @@ SurveyResponderWithRelations
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -29846,7 +30577,8 @@ SurveyResponderWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             }
           ],
@@ -29907,6 +30639,7 @@ SurveyResponderWithRelations
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {}
@@ -29953,7 +30686,8 @@ SurveyResponderWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -29976,6 +30710,7 @@ SurveyResponderWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {
                   "deleted": true,
                   "deletedOn": "2019-08-24T14:15:22Z",
@@ -29991,7 +30726,8 @@ SurveyResponderWithRelations
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               }
             ],
@@ -30014,6 +30750,7 @@ SurveyResponderWithRelations
             ]
           }
         },
+        "foreignKey": null,
         "followupQuestion": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -30036,6 +30773,7 @@ SurveyResponderWithRelations
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {}
@@ -30082,7 +30820,8 @@ SurveyResponderWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -30105,6 +30844,7 @@ SurveyResponderWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {
                   "deleted": true,
                   "deletedOn": "2019-08-24T14:15:22Z",
@@ -30120,7 +30860,8 @@ SurveyResponderWithRelations
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               }
             ],
@@ -30169,6 +30910,7 @@ SurveyResponseWithRelations
 |extId|string|false|none|none|
 |extMetadata|object|false|none|none|
 |surveyResponder|[SurveyResponderWithRelations](#schemasurveyresponderwithrelations)|false|none|(tsType: SurveyResponderWithRelations, schemaOptions: { includeRelations: true })|
+|foreignKey|any|false|none|none|
 |surveyCycle|[SurveyCycleWithRelations](#schemasurveycyclewithrelations)|false|none|(tsType: SurveyCycleWithRelations, schemaOptions: { includeRelations: true })|
 |surveyResponseDetails|[[SurveyResponseDetailWithRelations](#schemasurveyresponsedetailwithrelations)]|false|none|[(tsType: SurveyResponseDetailWithRelations, schemaOptions: { includeRelations: true })]|
 
@@ -30218,6 +30960,7 @@ SurveyResponseWithRelations
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -30237,6 +30980,7 @@ SurveyResponseWithRelations
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -30329,7 +31073,8 @@ SurveyResponseWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -30353,6 +31098,7 @@ SurveyResponseWithRelations
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -30413,9 +31159,11 @@ SurveyResponseWithRelations
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -30476,6 +31224,7 @@ SurveyResponseWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -30496,12 +31245,14 @@ SurveyResponseWithRelations
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -30520,6 +31271,7 @@ SurveyResponseWithRelations
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -30561,7 +31313,8 @@ SurveyResponseWithRelations
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -30584,6 +31337,7 @@ SurveyResponseWithRelations
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -30599,7 +31353,8 @@ SurveyResponseWithRelations
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -30622,6 +31377,7 @@ SurveyResponseWithRelations
       ]
     }
   },
+  "foreignKey": null,
   "followupQuestion": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -30644,6 +31400,7 @@ SurveyResponseWithRelations
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -30663,6 +31420,7 @@ SurveyResponseWithRelations
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -30755,7 +31513,8 @@ SurveyResponseWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -30779,6 +31538,7 @@ SurveyResponseWithRelations
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -30839,9 +31599,11 @@ SurveyResponseWithRelations
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -30902,6 +31664,7 @@ SurveyResponseWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -30922,12 +31685,14 @@ SurveyResponseWithRelations
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -30946,6 +31711,7 @@ SurveyResponseWithRelations
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -30987,7 +31753,8 @@ SurveyResponseWithRelations
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -31010,6 +31777,7 @@ SurveyResponseWithRelations
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -31025,7 +31793,8 @@ SurveyResponseWithRelations
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -31074,6 +31843,7 @@ OptionsWithRelations
 |extId|string|false|none|none|
 |extMetadata|object|false|none|none|
 |question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|foreignKey|any|false|none|none|
 |followupQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 
 <h2 id="tocS_SurveyResponseDetailWithRelations">SurveyResponseDetailWithRelations</h2>
@@ -31174,6 +31944,7 @@ OptionsWithRelations
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -31193,6 +31964,7 @@ OptionsWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -31217,6 +31989,7 @@ OptionsWithRelations
               "extId": "string",
               "extMetadata": {},
               "surveyResponse": {},
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -31235,6 +32008,7 @@ OptionsWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -31257,7 +32031,8 @@ OptionsWithRelations
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -31281,6 +32056,7 @@ OptionsWithRelations
           }
         ]
       },
+      "foreignKey": null,
       "surveyCycle": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -31338,6 +32114,7 @@ OptionsWithRelations
               "parentQuestionId": "string",
               "surveyId": "string",
               "rootQuestion": {},
+              "foreignKey": null,
               "parentQuestion": {},
               "options": [
                 {
@@ -31357,6 +32134,7 @@ OptionsWithRelations
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               ],
@@ -31381,6 +32159,7 @@ OptionsWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "surveyResponse": {},
+                "foreignKey": null,
                 "question": {},
                 "option": {
                   "deleted": true,
@@ -31399,6 +32178,7 @@ OptionsWithRelations
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               },
@@ -31428,9 +32208,11 @@ OptionsWithRelations
               "extMetadata": {}
             }
           ]
-        }
+        },
+        "foreignKey": null
       }
     },
+    "foreignKey": null,
     "surveyCycle": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -31488,6 +32270,7 @@ OptionsWithRelations
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -31507,6 +32290,7 @@ OptionsWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -31531,6 +32315,7 @@ OptionsWithRelations
               "extId": "string",
               "extMetadata": {},
               "surveyResponse": {},
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -31549,6 +32334,7 @@ OptionsWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -31578,6 +32364,7 @@ OptionsWithRelations
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {}
           }
         ],
@@ -31598,7 +32385,8 @@ OptionsWithRelations
             "extMetadata": {}
           }
         ]
-      }
+      },
+      "foreignKey": null
     },
     "surveyResponseDetails": [
       {
@@ -31619,6 +32407,7 @@ OptionsWithRelations
         "extId": "string",
         "extMetadata": {},
         "surveyResponse": {},
+        "foreignKey": null,
         "question": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -31641,6 +32430,7 @@ OptionsWithRelations
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {
@@ -31660,6 +32450,7 @@ OptionsWithRelations
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           ],
@@ -31705,7 +32496,8 @@ OptionsWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -31728,6 +32520,7 @@ OptionsWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {
                   "deleted": true,
                   "deletedOn": "2019-08-24T14:15:22Z",
@@ -31743,7 +32536,8 @@ OptionsWithRelations
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               }
             ],
@@ -31804,6 +32598,7 @@ OptionsWithRelations
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {}
@@ -31850,7 +32645,8 @@ OptionsWithRelations
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -31873,6 +32669,7 @@ OptionsWithRelations
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {
                     "deleted": true,
                     "deletedOn": "2019-08-24T14:15:22Z",
@@ -31888,7 +32685,8 @@ OptionsWithRelations
                     "surveyId": "string",
                     "extId": "string",
                     "extMetadata": {},
-                    "survey": {}
+                    "survey": {},
+                    "foreignKey": null
                   }
                 }
               ],
@@ -31911,6 +32709,7 @@ OptionsWithRelations
               ]
             }
           },
+          "foreignKey": null,
           "followupQuestion": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -31933,6 +32732,7 @@ OptionsWithRelations
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {}
@@ -31979,7 +32779,8 @@ OptionsWithRelations
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -32002,6 +32803,7 @@ OptionsWithRelations
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {
                     "deleted": true,
                     "deletedOn": "2019-08-24T14:15:22Z",
@@ -32017,7 +32819,8 @@ OptionsWithRelations
                     "surveyId": "string",
                     "extId": "string",
                     "extMetadata": {},
-                    "survey": {}
+                    "survey": {},
+                    "foreignKey": null
                   }
                 }
               ],
@@ -32044,6 +32847,7 @@ OptionsWithRelations
       }
     ]
   },
+  "foreignKey": null,
   "question": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -32066,6 +32870,7 @@ OptionsWithRelations
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -32085,6 +32890,7 @@ OptionsWithRelations
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -32177,7 +32983,8 @@ OptionsWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -32201,6 +33008,7 @@ OptionsWithRelations
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -32261,9 +33069,11 @@ OptionsWithRelations
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -32324,6 +33134,7 @@ OptionsWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -32344,12 +33155,14 @@ OptionsWithRelations
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -32368,6 +33181,7 @@ OptionsWithRelations
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -32409,7 +33223,8 @@ OptionsWithRelations
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -32432,6 +33247,7 @@ OptionsWithRelations
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -32447,7 +33263,8 @@ OptionsWithRelations
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -32508,6 +33325,7 @@ OptionsWithRelations
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {}
@@ -32601,7 +33419,8 @@ OptionsWithRelations
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -32625,6 +33444,7 @@ OptionsWithRelations
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -32685,9 +33505,11 @@ OptionsWithRelations
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -32748,6 +33570,7 @@ OptionsWithRelations
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -32768,12 +33591,14 @@ OptionsWithRelations
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {}
       },
@@ -32815,7 +33640,8 @@ OptionsWithRelations
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -32838,6 +33664,7 @@ OptionsWithRelations
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -32853,7 +33680,8 @@ OptionsWithRelations
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -32876,6 +33704,7 @@ OptionsWithRelations
         ]
       }
     },
+    "foreignKey": null,
     "followupQuestion": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -32898,6 +33727,7 @@ OptionsWithRelations
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {}
@@ -32991,7 +33821,8 @@ OptionsWithRelations
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -33015,6 +33846,7 @@ OptionsWithRelations
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -33075,9 +33907,11 @@ OptionsWithRelations
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -33138,6 +33972,7 @@ OptionsWithRelations
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -33158,12 +33993,14 @@ OptionsWithRelations
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {}
       },
@@ -33205,7 +34042,8 @@ OptionsWithRelations
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -33228,6 +34066,7 @@ OptionsWithRelations
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -33243,7 +34082,8 @@ OptionsWithRelations
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -33294,6 +34134,7 @@ SurveyResponseDetailWithRelations
 |extId|string|false|none|none|
 |extMetadata|object|false|none|none|
 |surveyResponse|[SurveyResponseWithRelations](#schemasurveyresponsewithrelations)|false|none|(tsType: SurveyResponseWithRelations, schemaOptions: { includeRelations: true })|
+|foreignKey|any|false|none|none|
 |question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |option|[OptionsWithRelations](#schemaoptionswithrelations)|false|none|(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })|
 
@@ -33359,6 +34200,7 @@ SurveyResponseDetailWithRelations
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -33378,6 +34220,7 @@ SurveyResponseDetailWithRelations
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -33470,7 +34313,8 @@ SurveyResponseDetailWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -33494,6 +34338,7 @@ SurveyResponseDetailWithRelations
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -33554,9 +34399,11 @@ SurveyResponseDetailWithRelations
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -33617,6 +34464,7 @@ SurveyResponseDetailWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -33637,12 +34485,14 @@ SurveyResponseDetailWithRelations
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -33661,6 +34511,7 @@ SurveyResponseDetailWithRelations
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -33702,7 +34553,8 @@ SurveyResponseDetailWithRelations
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -33725,6 +34577,7 @@ SurveyResponseDetailWithRelations
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -33740,7 +34593,8 @@ SurveyResponseDetailWithRelations
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -33763,6 +34617,7 @@ SurveyResponseDetailWithRelations
       ]
     }
   },
+  "foreignKey": null,
   "parentQuestion": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -33785,6 +34640,7 @@ SurveyResponseDetailWithRelations
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -33804,6 +34660,7 @@ SurveyResponseDetailWithRelations
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -33896,7 +34753,8 @@ SurveyResponseDetailWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -33920,6 +34778,7 @@ SurveyResponseDetailWithRelations
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -33980,9 +34839,11 @@ SurveyResponseDetailWithRelations
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -34043,6 +34904,7 @@ SurveyResponseDetailWithRelations
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -34063,12 +34925,14 @@ SurveyResponseDetailWithRelations
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -34087,6 +34951,7 @@ SurveyResponseDetailWithRelations
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -34128,7 +34993,8 @@ SurveyResponseDetailWithRelations
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -34151,6 +35017,7 @@ SurveyResponseDetailWithRelations
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -34166,7 +35033,8 @@ SurveyResponseDetailWithRelations
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -34228,6 +35096,7 @@ SurveyResponseDetailWithRelations
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [],
         "followUpQuestions": [
@@ -34319,7 +35188,8 @@ SurveyResponseDetailWithRelations
                     "surveyId": "string",
                     "extId": "string",
                     "extMetadata": {},
-                    "survey": {}
+                    "survey": {},
+                    "foreignKey": null
                   }
                 ],
                 "surveyResponders": [
@@ -34343,6 +35213,7 @@ SurveyResponseDetailWithRelations
                   }
                 ]
               },
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -34389,9 +35260,11 @@ SurveyResponseDetailWithRelations
                   "sections": [
                     {}
                   ]
-                }
+                },
+                "foreignKey": null
               }
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -34452,6 +35325,7 @@ SurveyResponseDetailWithRelations
                     "extId": "string",
                     "extMetadata": {},
                     "survey": {},
+                    "foreignKey": null,
                     "surveyCycle": {}
                   }
                 ],
@@ -34472,12 +35346,14 @@ SurveyResponseDetailWithRelations
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             },
             "surveyResponseDetails": [
               {}
             ]
           },
+          "foreignKey": null,
           "question": {},
           "option": {}
         },
@@ -34519,7 +35395,8 @@ SurveyResponseDetailWithRelations
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -34542,6 +35419,7 @@ SurveyResponseDetailWithRelations
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -34557,7 +35435,8 @@ SurveyResponseDetailWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             }
           ],
@@ -34580,6 +35459,7 @@ SurveyResponseDetailWithRelations
           ]
         }
       },
+      "foreignKey": null,
       "followupQuestion": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -34602,6 +35482,7 @@ SurveyResponseDetailWithRelations
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [],
         "followUpQuestions": [
@@ -34693,7 +35574,8 @@ SurveyResponseDetailWithRelations
                     "surveyId": "string",
                     "extId": "string",
                     "extMetadata": {},
-                    "survey": {}
+                    "survey": {},
+                    "foreignKey": null
                   }
                 ],
                 "surveyResponders": [
@@ -34717,6 +35599,7 @@ SurveyResponseDetailWithRelations
                   }
                 ]
               },
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -34763,9 +35646,11 @@ SurveyResponseDetailWithRelations
                   "sections": [
                     {}
                   ]
-                }
+                },
+                "foreignKey": null
               }
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -34826,6 +35711,7 @@ SurveyResponseDetailWithRelations
                     "extId": "string",
                     "extMetadata": {},
                     "survey": {},
+                    "foreignKey": null,
                     "surveyCycle": {}
                   }
                 ],
@@ -34846,12 +35732,14 @@ SurveyResponseDetailWithRelations
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             },
             "surveyResponseDetails": [
               {}
             ]
           },
+          "foreignKey": null,
           "question": {},
           "option": {}
         },
@@ -34893,7 +35781,8 @@ SurveyResponseDetailWithRelations
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -34916,6 +35805,7 @@ SurveyResponseDetailWithRelations
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -34931,7 +35821,8 @@ SurveyResponseDetailWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             }
           ],
@@ -34979,6 +35870,7 @@ SurveyResponseDetailWithRelations
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {
@@ -34998,6 +35890,7 @@ SurveyResponseDetailWithRelations
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       ],
@@ -35088,7 +35981,8 @@ SurveyResponseDetailWithRelations
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -35112,6 +36006,7 @@ SurveyResponseDetailWithRelations
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -35172,9 +36067,11 @@ SurveyResponseDetailWithRelations
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -35235,6 +36132,7 @@ SurveyResponseDetailWithRelations
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -35255,12 +36153,14 @@ SurveyResponseDetailWithRelations
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {
           "deleted": true,
@@ -35279,6 +36179,7 @@ SurveyResponseDetailWithRelations
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       },
@@ -35320,7 +36221,8 @@ SurveyResponseDetailWithRelations
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -35343,6 +36245,7 @@ SurveyResponseDetailWithRelations
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -35358,7 +36261,8 @@ SurveyResponseDetailWithRelations
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -35472,6 +36376,7 @@ SurveyResponseDetailWithRelations
               "parentQuestionId": "string",
               "surveyId": "string",
               "rootQuestion": {},
+              "foreignKey": null,
               "parentQuestion": {},
               "options": [
                 {
@@ -35491,6 +36396,7 @@ SurveyResponseDetailWithRelations
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               ],
@@ -35517,7 +36423,8 @@ SurveyResponseDetailWithRelations
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -35541,6 +36448,7 @@ SurveyResponseDetailWithRelations
             }
           ]
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -35598,6 +36506,7 @@ SurveyResponseDetailWithRelations
                 "parentQuestionId": "string",
                 "surveyId": "string",
                 "rootQuestion": {},
+                "foreignKey": null,
                 "parentQuestion": {},
                 "options": [
                   {
@@ -35617,6 +36526,7 @@ SurveyResponseDetailWithRelations
                     "extId": "string",
                     "extMetadata": {},
                     "question": {},
+                    "foreignKey": null,
                     "followupQuestion": {}
                   }
                 ],
@@ -35650,9 +36560,11 @@ SurveyResponseDetailWithRelations
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         }
       },
+      "foreignKey": null,
       "surveyCycle": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -35710,6 +36622,7 @@ SurveyResponseDetailWithRelations
               "parentQuestionId": "string",
               "surveyId": "string",
               "rootQuestion": {},
+              "foreignKey": null,
               "parentQuestion": {},
               "options": [
                 {
@@ -35729,6 +36642,7 @@ SurveyResponseDetailWithRelations
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               ],
@@ -35762,6 +36676,7 @@ SurveyResponseDetailWithRelations
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {}
             }
           ],
@@ -35782,12 +36697,14 @@ SurveyResponseDetailWithRelations
               "extMetadata": {}
             }
           ]
-        }
+        },
+        "foreignKey": null
       },
       "surveyResponseDetails": [
         {}
       ]
     },
+    "foreignKey": null,
     "question": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -35810,6 +36727,7 @@ SurveyResponseDetailWithRelations
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {
@@ -35829,6 +36747,7 @@ SurveyResponseDetailWithRelations
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       ],
@@ -35874,7 +36793,8 @@ SurveyResponseDetailWithRelations
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -35897,6 +36817,7 @@ SurveyResponseDetailWithRelations
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -35912,7 +36833,8 @@ SurveyResponseDetailWithRelations
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -35973,6 +36895,7 @@ SurveyResponseDetailWithRelations
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {}
@@ -36019,7 +36942,8 @@ SurveyResponseDetailWithRelations
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -36042,6 +36966,7 @@ SurveyResponseDetailWithRelations
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -36057,7 +36982,8 @@ SurveyResponseDetailWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             }
           ],
@@ -36080,6 +37006,7 @@ SurveyResponseDetailWithRelations
           ]
         }
       },
+      "foreignKey": null,
       "followupQuestion": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -36102,6 +37029,7 @@ SurveyResponseDetailWithRelations
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {}
@@ -36148,7 +37076,8 @@ SurveyResponseDetailWithRelations
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           ],
           "surveyResponders": [
@@ -36171,6 +37100,7 @@ SurveyResponseDetailWithRelations
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -36186,7 +37116,8 @@ SurveyResponseDetailWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             }
           ],
@@ -36253,6 +37184,7 @@ SurveyResponseDetailWithRelations
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {
@@ -36272,6 +37204,7 @@ SurveyResponseDetailWithRelations
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         ],
@@ -36327,6 +37260,7 @@ SurveyResponseDetailWithRelations
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -36342,9 +37276,11 @@ SurveyResponseDetailWithRelations
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -36360,12 +37296,14 @@ SurveyResponseDetailWithRelations
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             },
             "surveyResponseDetails": [
               {}
             ]
           },
+          "foreignKey": null,
           "question": {},
           "option": {
             "deleted": true,
@@ -36384,6 +37322,7 @@ SurveyResponseDetailWithRelations
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         },
@@ -36406,7 +37345,8 @@ SurveyResponseDetailWithRelations
         "surveyId": "string",
         "extId": "string",
         "extMetadata": {},
-        "survey": {}
+        "survey": {},
+        "foreignKey": null
       }
     ],
     "surveyResponders": [
@@ -36429,6 +37369,7 @@ SurveyResponseDetailWithRelations
         "extId": "string",
         "extMetadata": {},
         "survey": {},
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -36444,7 +37385,8 @@ SurveyResponseDetailWithRelations
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       }
     ],
@@ -36497,6 +37439,7 @@ QuestionWithRelations
 |parentQuestionId|string¦null|false|none|none|
 |surveyId|string|false|none|none|
 |rootQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
+|foreignKey|any|false|none|none|
 |parentQuestion|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |options|[[OptionsWithRelations](#schemaoptionswithrelations)]|false|none|[(tsType: OptionsWithRelations, schemaOptions: { includeRelations: true })]|
 |followUpQuestions|[[QuestionWithRelations](#schemaquestionwithrelations)]|false|none|[(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })]|
@@ -36976,6 +37919,7 @@ NewTemplateQuestion
     "extId": "string",
     "extMetadata": {}
   },
+  "foreignKey": null,
   "question": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -36998,6 +37942,7 @@ NewTemplateQuestion
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -37017,6 +37962,7 @@ NewTemplateQuestion
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -37109,7 +38055,8 @@ NewTemplateQuestion
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -37133,6 +38080,7 @@ NewTemplateQuestion
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -37193,9 +38141,11 @@ NewTemplateQuestion
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -37256,6 +38206,7 @@ NewTemplateQuestion
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -37276,12 +38227,14 @@ NewTemplateQuestion
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -37300,6 +38253,7 @@ NewTemplateQuestion
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -37341,7 +38295,8 @@ NewTemplateQuestion
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -37364,6 +38319,7 @@ NewTemplateQuestion
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -37379,7 +38335,8 @@ NewTemplateQuestion
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -37435,6 +38392,7 @@ NewTemplateQuestion
       "extId": "string",
       "extMetadata": {}
     },
+    "foreignKey": null,
     "question": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -37457,6 +38415,7 @@ NewTemplateQuestion
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {
@@ -37476,6 +38435,7 @@ NewTemplateQuestion
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       ],
@@ -37568,7 +38528,8 @@ NewTemplateQuestion
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -37592,6 +38553,7 @@ NewTemplateQuestion
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -37652,9 +38614,11 @@ NewTemplateQuestion
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -37715,6 +38679,7 @@ NewTemplateQuestion
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -37735,12 +38700,14 @@ NewTemplateQuestion
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {
           "deleted": true,
@@ -37759,6 +38726,7 @@ NewTemplateQuestion
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       },
@@ -37800,7 +38768,8 @@ NewTemplateQuestion
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -37823,6 +38792,7 @@ NewTemplateQuestion
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -37838,7 +38808,8 @@ NewTemplateQuestion
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -37890,6 +38861,7 @@ TemplateQuestionWithRelations
 |extId|string|false|none|none|
 |extMetadata|object|false|none|none|
 |template|[QuestionTemplateWithRelations](#schemaquestiontemplatewithrelations)|false|none|(tsType: QuestionTemplateWithRelations, schemaOptions: { includeRelations: true })|
+|foreignKey|any|false|none|none|
 |question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |dependentOnQuestion|[TemplateQuestionWithRelations](#schematemplatequestionwithrelations)|false|none|(tsType: TemplateQuestionWithRelations, schemaOptions: { includeRelations: true })|
 
@@ -38405,6 +39377,7 @@ NewSurvey
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {
@@ -38424,6 +39397,7 @@ NewSurvey
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       ],
@@ -38516,7 +39490,8 @@ NewSurvey
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -38540,6 +39515,7 @@ NewSurvey
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -38600,9 +39576,11 @@ NewSurvey
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -38663,6 +39641,7 @@ NewSurvey
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -38683,12 +39662,14 @@ NewSurvey
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {
           "deleted": true,
@@ -38707,6 +39688,7 @@ NewSurvey
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       },
@@ -38748,7 +39730,8 @@ NewSurvey
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -38771,6 +39754,7 @@ NewSurvey
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -38786,7 +39770,8 @@ NewSurvey
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -38868,6 +39853,7 @@ NewSurvey
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -38887,6 +39873,7 @@ NewSurvey
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -38942,13 +39929,16 @@ NewSurvey
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 },
+                "foreignKey": null,
                 "surveyCycle": {},
                 "surveyResponseDetails": [
                   {}
                 ]
               },
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -38967,6 +39957,7 @@ NewSurvey
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -38996,6 +39987,7 @@ NewSurvey
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {}
           }
         ],
@@ -39016,7 +40008,8 @@ NewSurvey
             "extMetadata": {}
           }
         ]
-      }
+      },
+      "foreignKey": null
     }
   ],
   "surveyResponders": [
@@ -39080,6 +40073,7 @@ NewSurvey
             "parentQuestionId": "string",
             "surveyId": "string",
             "rootQuestion": {},
+            "foreignKey": null,
             "parentQuestion": {},
             "options": [
               {
@@ -39099,6 +40093,7 @@ NewSurvey
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             ],
@@ -39136,6 +40131,7 @@ NewSurvey
                 "extId": "string",
                 "extMetadata": {},
                 "surveyResponder": {},
+                "foreignKey": null,
                 "surveyCycle": {
                   "deleted": true,
                   "deletedOn": "2019-08-24T14:15:22Z",
@@ -39151,12 +40147,14 @@ NewSurvey
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 },
                 "surveyResponseDetails": [
                   {}
                 ]
               },
+              "foreignKey": null,
               "question": {},
               "option": {
                 "deleted": true,
@@ -39175,6 +40173,7 @@ NewSurvey
                 "extId": "string",
                 "extMetadata": {},
                 "question": {},
+                "foreignKey": null,
                 "followupQuestion": {}
               }
             },
@@ -39197,7 +40196,8 @@ NewSurvey
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -39221,6 +40221,7 @@ NewSurvey
           }
         ]
       },
+      "foreignKey": null,
       "surveyCycle": {
         "deleted": true,
         "deletedOn": "2019-08-24T14:15:22Z",
@@ -39278,6 +40279,7 @@ NewSurvey
               "parentQuestionId": "string",
               "surveyId": "string",
               "rootQuestion": {},
+              "foreignKey": null,
               "parentQuestion": {},
               "options": [
                 {
@@ -39297,6 +40299,7 @@ NewSurvey
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               ],
@@ -39334,11 +40337,13 @@ NewSurvey
                   "extId": "string",
                   "extMetadata": {},
                   "surveyResponder": {},
+                  "foreignKey": null,
                   "surveyCycle": {},
                   "surveyResponseDetails": [
                     {}
                   ]
                 },
+                "foreignKey": null,
                 "question": {},
                 "option": {
                   "deleted": true,
@@ -39357,6 +40362,7 @@ NewSurvey
                   "extId": "string",
                   "extMetadata": {},
                   "question": {},
+                  "foreignKey": null,
                   "followupQuestion": {}
                 }
               },
@@ -39386,7 +40392,8 @@ NewSurvey
               "extMetadata": {}
             }
           ]
-        }
+        },
+        "foreignKey": null
       }
     }
   ],
@@ -39773,6 +40780,7 @@ NewSurveyQuestion
     "extId": "string",
     "extMetadata": {},
     "dependentOnQuestion": {},
+    "foreignKey": null,
     "survey": {
       "deleted": true,
       "deletedOn": "2019-08-24T14:15:22Z",
@@ -39815,6 +40823,7 @@ NewSurveyQuestion
           "parentQuestionId": "string",
           "surveyId": "string",
           "rootQuestion": {},
+          "foreignKey": null,
           "parentQuestion": {},
           "options": [
             {
@@ -39834,6 +40843,7 @@ NewSurveyQuestion
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           ],
@@ -39889,6 +40899,7 @@ NewSurveyQuestion
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {
                   "deleted": true,
                   "deletedOn": "2019-08-24T14:15:22Z",
@@ -39904,9 +40915,11 @@ NewSurveyQuestion
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               },
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -39922,12 +40935,14 @@ NewSurveyQuestion
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               },
               "surveyResponseDetails": [
                 {}
               ]
             },
+            "foreignKey": null,
             "question": {},
             "option": {
               "deleted": true,
@@ -39946,6 +40961,7 @@ NewSurveyQuestion
               "extId": "string",
               "extMetadata": {},
               "question": {},
+              "foreignKey": null,
               "followupQuestion": {}
             }
           },
@@ -39968,7 +40984,8 @@ NewSurveyQuestion
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -39991,6 +41008,7 @@ NewSurveyQuestion
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -40006,7 +41024,8 @@ NewSurveyQuestion
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -40050,6 +41069,7 @@ NewSurveyQuestion
       "parentQuestionId": "string",
       "surveyId": "string",
       "rootQuestion": {},
+      "foreignKey": null,
       "parentQuestion": {},
       "options": [
         {
@@ -40069,6 +41089,7 @@ NewSurveyQuestion
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       ],
@@ -40161,7 +41182,8 @@ NewSurveyQuestion
                   "surveyId": "string",
                   "extId": "string",
                   "extMetadata": {},
-                  "survey": {}
+                  "survey": {},
+                  "foreignKey": null
                 }
               ],
               "surveyResponders": [
@@ -40185,6 +41207,7 @@ NewSurveyQuestion
                 }
               ]
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -40245,9 +41268,11 @@ NewSurveyQuestion
                     "extMetadata": {}
                   }
                 ]
-              }
+              },
+              "foreignKey": null
             }
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -40308,6 +41333,7 @@ NewSurveyQuestion
                   "extId": "string",
                   "extMetadata": {},
                   "survey": {},
+                  "foreignKey": null,
                   "surveyCycle": {}
                 }
               ],
@@ -40328,12 +41354,14 @@ NewSurveyQuestion
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           },
           "surveyResponseDetails": [
             {}
           ]
         },
+        "foreignKey": null,
         "question": {},
         "option": {
           "deleted": true,
@@ -40352,6 +41380,7 @@ NewSurveyQuestion
           "extId": "string",
           "extMetadata": {},
           "question": {},
+          "foreignKey": null,
           "followupQuestion": {}
         }
       },
@@ -40393,7 +41422,8 @@ NewSurveyQuestion
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         ],
         "surveyResponders": [
@@ -40416,6 +41446,7 @@ NewSurveyQuestion
             "extId": "string",
             "extMetadata": {},
             "survey": {},
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -40431,7 +41462,8 @@ NewSurveyQuestion
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             }
           }
         ],
@@ -40470,6 +41502,7 @@ NewSurveyQuestion
       "extMetadata": {}
     }
   },
+  "foreignKey": null,
   "survey": {
     "deleted": true,
     "deletedOn": "2019-08-24T14:15:22Z",
@@ -40512,6 +41545,7 @@ NewSurveyQuestion
         "parentQuestionId": "string",
         "surveyId": "string",
         "rootQuestion": {},
+        "foreignKey": null,
         "parentQuestion": {},
         "options": [
           {
@@ -40531,6 +41565,7 @@ NewSurveyQuestion
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         ],
@@ -40586,6 +41621,7 @@ NewSurveyQuestion
               "extId": "string",
               "extMetadata": {},
               "survey": {},
+              "foreignKey": null,
               "surveyCycle": {
                 "deleted": true,
                 "deletedOn": "2019-08-24T14:15:22Z",
@@ -40601,9 +41637,11 @@ NewSurveyQuestion
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             },
+            "foreignKey": null,
             "surveyCycle": {
               "deleted": true,
               "deletedOn": "2019-08-24T14:15:22Z",
@@ -40619,12 +41657,14 @@ NewSurveyQuestion
               "surveyId": "string",
               "extId": "string",
               "extMetadata": {},
-              "survey": {}
+              "survey": {},
+              "foreignKey": null
             },
             "surveyResponseDetails": [
               {}
             ]
           },
+          "foreignKey": null,
           "question": {},
           "option": {
             "deleted": true,
@@ -40643,6 +41683,7 @@ NewSurveyQuestion
             "extId": "string",
             "extMetadata": {},
             "question": {},
+            "foreignKey": null,
             "followupQuestion": {}
           }
         },
@@ -40665,7 +41706,8 @@ NewSurveyQuestion
         "surveyId": "string",
         "extId": "string",
         "extMetadata": {},
-        "survey": {}
+        "survey": {},
+        "foreignKey": null
       }
     ],
     "surveyResponders": [
@@ -40688,6 +41730,7 @@ NewSurveyQuestion
         "extId": "string",
         "extMetadata": {},
         "survey": {},
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -40703,7 +41746,8 @@ NewSurveyQuestion
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       }
     ],
@@ -40747,6 +41791,7 @@ NewSurveyQuestion
     "parentQuestionId": "string",
     "surveyId": "string",
     "rootQuestion": {},
+    "foreignKey": null,
     "parentQuestion": {},
     "options": [
       {
@@ -40766,6 +41811,7 @@ NewSurveyQuestion
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     ],
@@ -40858,7 +41904,8 @@ NewSurveyQuestion
                 "surveyId": "string",
                 "extId": "string",
                 "extMetadata": {},
-                "survey": {}
+                "survey": {},
+                "foreignKey": null
               }
             ],
             "surveyResponders": [
@@ -40882,6 +41929,7 @@ NewSurveyQuestion
               }
             ]
           },
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -40942,9 +41990,11 @@ NewSurveyQuestion
                   "extMetadata": {}
                 }
               ]
-            }
+            },
+            "foreignKey": null
           }
         },
+        "foreignKey": null,
         "surveyCycle": {
           "deleted": true,
           "deletedOn": "2019-08-24T14:15:22Z",
@@ -41005,6 +42055,7 @@ NewSurveyQuestion
                 "extId": "string",
                 "extMetadata": {},
                 "survey": {},
+                "foreignKey": null,
                 "surveyCycle": {}
               }
             ],
@@ -41025,12 +42076,14 @@ NewSurveyQuestion
                 "extMetadata": {}
               }
             ]
-          }
+          },
+          "foreignKey": null
         },
         "surveyResponseDetails": [
           {}
         ]
       },
+      "foreignKey": null,
       "question": {},
       "option": {
         "deleted": true,
@@ -41049,6 +42102,7 @@ NewSurveyQuestion
         "extId": "string",
         "extMetadata": {},
         "question": {},
+        "foreignKey": null,
         "followupQuestion": {}
       }
     },
@@ -41090,7 +42144,8 @@ NewSurveyQuestion
           "surveyId": "string",
           "extId": "string",
           "extMetadata": {},
-          "survey": {}
+          "survey": {},
+          "foreignKey": null
         }
       ],
       "surveyResponders": [
@@ -41113,6 +42168,7 @@ NewSurveyQuestion
           "extId": "string",
           "extMetadata": {},
           "survey": {},
+          "foreignKey": null,
           "surveyCycle": {
             "deleted": true,
             "deletedOn": "2019-08-24T14:15:22Z",
@@ -41128,7 +42184,8 @@ NewSurveyQuestion
             "surveyId": "string",
             "extId": "string",
             "extMetadata": {},
-            "survey": {}
+            "survey": {},
+            "foreignKey": null
           }
         }
       ],
@@ -41194,6 +42251,7 @@ SurveyQuestionWithRelations
 |extId|string|false|none|none|
 |extMetadata|object|false|none|none|
 |dependentOnQuestion|[SurveyQuestionWithRelations](#schemasurveyquestionwithrelations)|false|none|(tsType: SurveyQuestionWithRelations, schemaOptions: { includeRelations: true })|
+|foreignKey|any|false|none|none|
 |survey|[SurveyWithRelations](#schemasurveywithrelations)|false|none|(tsType: SurveyWithRelations, schemaOptions: { includeRelations: true })|
 |question|[QuestionWithRelations](#schemaquestionwithrelations)|false|none|(tsType: QuestionWithRelations, schemaOptions: { includeRelations: true })|
 |section|[SectionWithRelations](#schemasectionwithrelations)|false|none|(tsType: SectionWithRelations, schemaOptions: { includeRelations: true })|
@@ -44795,3 +45853,4 @@ xor
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |» *anonymous*|[string]|false|none|none|
+

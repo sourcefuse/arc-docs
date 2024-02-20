@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/strategy.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/feature-toggle-service/src/models/strategy.model.ts#L17)
+[services/feature-toggle-service/src/models/strategy.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/models/strategy.model.ts#L17)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/strategy.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/feature-toggle-service/src/models/strategy.model.ts#L29)
+[services/feature-toggle-service/src/models/strategy.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/models/strategy.model.ts#L29)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/strategy.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/feature-toggle-service/src/models/strategy.model.ts#L23)
+[services/feature-toggle-service/src/models/strategy.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/models/strategy.model.ts#L23)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/strategy.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/feature-toggle-service/src/models/strategy.model.ts#L34)
+[services/feature-toggle-service/src/models/strategy.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/models/strategy.model.ts#L34)

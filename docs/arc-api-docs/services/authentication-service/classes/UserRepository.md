@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`User`](User.md), typeof `User.prototype.id`, [`UserRelations`](../interfaces/UserRelations.md)\>
+- `DefaultSoftCrudRepository`<[`User`](User.md), typeof [`id`](User.md#id), [`UserRelations`](../interfaces/UserRelations.md)\>
 
   ↳ **`UserRepository`**
 
@@ -17,12 +17,12 @@
 ### Properties
 
 - [credentials](UserRepository.md#credentials)
-- [getCurrentUser](UserRepository.md#getcurrentuser)
 - [getOtpRepository](UserRepository.md#getotprepository)
 - [logger](UserRepository.md#logger)
 - [passwordDecryptionFn](UserRepository.md#passworddecryptionfn)
 - [tenant](UserRepository.md#tenant)
 - [tenantRepositoryGetter](UserRepository.md#tenantrepositorygetter)
+- [user](UserRepository.md#user)
 - [userTenantRepositoryGetter](UserRepository.md#usertenantrepositorygetter)
 - [userTenants](UserRepository.md#usertenants)
 
@@ -30,15 +30,9 @@
 
 - [changePassword](UserRepository.md#changepassword)
 - [create](UserRepository.md#create)
-- [createAll](UserRepository.md#createall)
 - [createWithoutPassword](UserRepository.md#createwithoutpassword)
 - [decryptPassword](UserRepository.md#decryptpassword)
 - [firstTimeUser](UserRepository.md#firsttimeuser)
-- [replaceById](UserRepository.md#replacebyid)
-- [save](UserRepository.md#save)
-- [update](UserRepository.md#update)
-- [updateAll](UserRepository.md#updateall)
-- [updateById](UserRepository.md#updatebyid)
 - [updateLastLogin](UserRepository.md#updatelastlogin)
 - [updatePassword](UserRepository.md#updatepassword)
 - [verifyPassword](UserRepository.md#verifypassword)
@@ -47,7 +41,7 @@
 
 ### constructor
 
-• **new UserRepository**(`dataSource`, `getUserCredsRepository`, `getOtpRepository`, `getCurrentUser`, `tenantRepositoryGetter`, `userTenantRepositoryGetter`, `logger`, `passwordDecryptionFn`)
+• **new UserRepository**(`dataSource`, `getUserCredsRepository`, `getOtpRepository`, `tenantRepositoryGetter`, `userTenantRepositoryGetter`, `logger`, `passwordDecryptionFn`, `user`)
 
 #### Parameters
 
@@ -56,15 +50,15 @@
 | `dataSource` | `DataSource` |
 | `getUserCredsRepository` | `Getter`<[`UserCredentialsRepository`](UserCredentialsRepository.md)\> |
 | `getOtpRepository` | `Getter`<[`OtpRepository`](OtpRepository.md)\> |
-| `getCurrentUser` | `Getter`<`undefined` \| `IAuthUserWithPermissions`<`string`, `string`, `string`\>\> |
 | `tenantRepositoryGetter` | `Getter`<[`TenantRepository`](TenantRepository.md)\> |
 | `userTenantRepositoryGetter` | `Getter`<[`UserTenantRepository`](UserTenantRepository.md)\> |
 | `logger` | `ILogger` |
 | `passwordDecryptionFn` | [`PasswordDecryptionFn`](../modules.md#passworddecryptionfn) |
+| `user` | typeof `Entity` & { `prototype`: [`User`](User.md)<`DataObject`<`Model`\>\>  } |
 
 #### Overrides
 
-DefaultUserModifyCrudRepository&lt;
+DefaultSoftCrudRepository&lt;
   User,
   typeof User.prototype.id,
   UserRelations
@@ -72,7 +66,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L58)
+[services/authentication-service/src/repositories/user.repository.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L58)
 
 ## Properties
 
@@ -82,21 +76,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L47)
-
-___
-
-### getCurrentUser
-
-• `Protected` `Readonly` **getCurrentUser**: `Getter`<`undefined` \| `IAuthUserWithPermissions`<`string`, `string`, `string`\>\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.getCurrentUser
-
-#### Defined in
-
-[services/authentication-service/src/repositories/user.repository.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L66)
+[services/authentication-service/src/repositories/user.repository.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L47)
 
 ___
 
@@ -106,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L64)
+[services/authentication-service/src/repositories/user.repository.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L64)
 
 ___
 
@@ -116,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L73)
+[services/authentication-service/src/repositories/user.repository.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L69)
 
 ___
 
@@ -126,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L75)
+[services/authentication-service/src/repositories/user.repository.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L71)
 
 ___
 
@@ -136,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L51)
+[services/authentication-service/src/repositories/user.repository.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L51)
 
 ___
 
@@ -146,7 +126,17 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L70)
+[services/authentication-service/src/repositories/user.repository.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L66)
+
+___
+
+### user
+
+• `Private` `Readonly` **user**: typeof `Entity` & { `prototype`: [`User`](User.md)<`DataObject`<`Model`\>\>  }
+
+#### Defined in
+
+[services/authentication-service/src/repositories/user.repository.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L73)
 
 ___
 
@@ -156,7 +146,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L72)
+[services/authentication-service/src/repositories/user.repository.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L68)
 
 ___
 
@@ -166,7 +156,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L53)
+[services/authentication-service/src/repositories/user.repository.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L53)
 
 ## Methods
 
@@ -188,7 +178,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:186](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L186)
+[services/authentication-service/src/repositories/user.repository.ts:184](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L184)
 
 ___
 
@@ -209,36 +199,11 @@ ___
 
 #### Overrides
 
-DefaultUserModifyCrudRepository.create
+DefaultSoftCrudRepository.create
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:105](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L105)
-
-___
-
-### createAll
-
-▸ **createAll**(`entities`, `options?`): `Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>[]\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entities` | `DataObject`<[`User`](User.md)<`DataObject`<`Model`\>\>\>[] |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>[]\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.createAll
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:12
+[services/authentication-service/src/repositories/user.repository.ts:103](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L103)
 
 ___
 
@@ -259,7 +224,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:124](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L124)
+[services/authentication-service/src/repositories/user.repository.ts:122](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L122)
 
 ___
 
@@ -279,7 +244,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:154](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L154)
+[services/authentication-service/src/repositories/user.repository.ts:152](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L152)
 
 ___
 
@@ -299,135 +264,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:235](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L235)
-
-___
-
-### replaceById
-
-▸ **replaceById**(`id`, `data`, `options?`): `Promise`<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `id` | `undefined` \| `string` |
-| `data` | `DataObject`<[`User`](User.md)<`DataObject`<`Model`\>\>\> |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<`void`\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.replaceById
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:17
-
-___
-
-### save
-
-▸ **save**(`entity`, `options?`): `Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entity` | [`User`](User.md)<`DataObject`<`Model`\>\> |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.save
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:13
-
-___
-
-### update
-
-▸ **update**(`entity`, `options?`): `Promise`<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `entity` | [`User`](User.md)<`DataObject`<`Model`\>\> |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<`void`\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.update
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:14
-
-___
-
-### updateAll
-
-▸ **updateAll**(`data`, `where?`, `options?`): `Promise`<`Count`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `DataObject`<[`User`](User.md)<`DataObject`<`Model`\>\>\> |
-| `where?` | `Where`<[`User`](User.md)<`DataObject`<`Model`\>\>\> |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<`Count`\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.updateAll
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:15
-
-___
-
-### updateById
-
-▸ **updateById**(`id`, `data`, `options?`): `Promise`<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `id` | `undefined` \| `string` |
-| `data` | `DataObject`<[`User`](User.md)<`DataObject`<`Model`\>\>\> |
-| `options?` | `Options` |
-
-#### Returns
-
-`Promise`<`void`\>
-
-#### Inherited from
-
-DefaultUserModifyCrudRepository.updateById
-
-#### Defined in
-
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:16
+[services/authentication-service/src/repositories/user.repository.ts:232](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L232)
 
 ___
 
@@ -447,7 +284,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:223](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L223)
+[services/authentication-service/src/repositories/user.repository.ts:220](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L220)
 
 ___
 
@@ -469,7 +306,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:158](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L158)
+[services/authentication-service/src/repositories/user.repository.ts:156](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L156)
 
 ___
 
@@ -490,4 +327,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user.repository.ts#L131)
+[services/authentication-service/src/repositories/user.repository.ts:129](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L129)

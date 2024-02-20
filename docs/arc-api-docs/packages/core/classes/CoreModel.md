@@ -50,4 +50,4 @@ Model.constructor
 
 #### Defined in
 
-[src/models/core-model.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/models/core-model.ts#L9)
+[packages/core/src/models/core-model.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/models/core-model.ts#L9)

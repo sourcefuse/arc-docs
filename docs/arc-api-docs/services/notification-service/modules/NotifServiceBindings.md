@@ -9,6 +9,7 @@
 - [ChannelManager](NotifServiceBindings.md#channelmanager)
 - [Config](NotifServiceBindings.md#config)
 - [NotificationFilter](NotifServiceBindings.md#notificationfilter)
+- [NotificationSettingFilter](NotifServiceBindings.md#notificationsettingfilter)
 - [NotificationUserManager](NotifServiceBindings.md#notificationusermanager)
 
 ## Variables
@@ -19,7 +20,7 @@
 
 #### Defined in
 
-[services/notification-service/src/keys.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/keys.ts#L18)
+[services/notification-service/src/keys.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/keys.ts#L19)
 
 ___
 
@@ -29,7 +30,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/keys.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/keys.ts#L15)
+[services/notification-service/src/keys.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/keys.ts#L16)
 
 ___
 
@@ -39,7 +40,17 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/keys.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/keys.ts#L26)
+[services/notification-service/src/keys.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/keys.ts#L27)
+
+___
+
+### NotificationSettingFilter
+
+• `Const` **NotificationSettingFilter**: `BindingKey`<``null`` \| [`INotificationSettingFilterFunc`](../interfaces/INotificationSettingFilterFunc.md)\>
+
+#### Defined in
+
+[services/notification-service/src/keys.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/keys.ts#L32)
 
 ___
 
@@ -49,4 +60,4 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/keys.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/keys.ts#L21)
+[services/notification-service/src/keys.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/keys.ts#L22)

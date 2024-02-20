@@ -50,4 +50,4 @@ Provider.value
 
 #### Defined in
 
-[services/notification-service/src/providers/notification-filter.service.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/providers/notification-filter.service.ts#L13)
+[services/notification-service/src/providers/notification-filter.service.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/providers/notification-filter.service.ts#L13)

@@ -14,6 +14,7 @@
 
 - [bindControllers](IToggleServiceConfig.md#bindcontrollers)
 - [useCustomSequence](IToggleServiceConfig.md#usecustomsequence)
+- [useSequelize](IToggleServiceConfig.md#usesequelize)
 
 ## Properties
 
@@ -23,7 +24,7 @@
 
 #### Defined in
 
-[services/feature-toggle-service/src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/feature-toggle-service/src/types.ts#L9)
+[services/feature-toggle-service/src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/types.ts#L9)
 
 ___
 
@@ -37,4 +38,18 @@ IServiceConfig.useCustomSequence
 
 #### Defined in
 
-packages/core/dist/types.d.ts:6
+packages/core/dist/types.d.ts:7
+
+___
+
+### useSequelize
+
+• `Optional` **useSequelize**: `boolean`
+
+#### Inherited from
+
+IServiceConfig.useSequelize
+
+#### Defined in
+
+packages/core/dist/types.d.ts:8

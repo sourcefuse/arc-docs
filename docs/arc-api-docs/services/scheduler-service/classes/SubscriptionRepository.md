@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`Subscription`](Subscription.md), `undefined` \| `string`, [`SubscriptionRelations`](../interfaces/SubscriptionRelations.md), `this`\> & `DefaultCrudRepository`<[`Subscription`](Subscription.md), `undefined` \| `string`, `object`, `this`\>
+- `DefaultUserModifyCrudRepository`<[`Subscription`](Subscription.md), `undefined` \| `string`, [`SubscriptionRelations`](../interfaces/SubscriptionRelations.md), `this`\> & {}
 
   ↳ **`SubscriptionRepository`**
 
@@ -20,6 +20,10 @@
 - [calendarRepositoryGetter](SubscriptionRepository.md#calendarrepositorygetter)
 - [getAuditLogRepository](SubscriptionRepository.md#getauditlogrepository)
 - [getCurrentUser](SubscriptionRepository.md#getcurrentuser)
+
+### Methods
+
+- [save](SubscriptionRepository.md#save)
 
 ## Constructors
 
@@ -49,7 +53,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/subscription.repository.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/subscription.repository.ts#L37)
+[services/scheduler-service/src/repositories/subscription.repository.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/subscription.repository.ts#L37)
 
 ## Properties
 
@@ -59,7 +63,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/subscription.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/subscription.repository.ts#L32)
+[services/scheduler-service/src/repositories/subscription.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/subscription.repository.ts#L32)
 
 ___
 
@@ -69,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/subscription.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/subscription.repository.ts#L45)
+[services/scheduler-service/src/repositories/subscription.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/subscription.repository.ts#L45)
 
 ___
 
@@ -79,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/subscription.repository.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/subscription.repository.ts#L47)
+[services/scheduler-service/src/repositories/subscription.repository.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/subscription.repository.ts#L47)
 
 ___
 
@@ -100,4 +104,36 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/subscription.repository.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/subscription.repository.ts#L41)
+[services/scheduler-service/src/repositories/subscription.repository.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/subscription.repository.ts#L41)
+
+## Methods
+
+### save
+
+▸ **save**(`entity`, `options?`): `Promise`<[`Subscription`](Subscription.md)\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `entity` | [`Subscription`](Subscription.md) |
+| `options?` | `Options` |
+
+#### Returns
+
+`Promise`<[`Subscription`](Subscription.md)\>
+
+#### Inherited from
+
+ConditionalAuditRepositoryMixin(
+  DefaultUserModifyCrudRepository<
+    Subscription,
+    typeof Subscription.prototype.id,
+    SubscriptionRelations
+  \>,
+  SubscriptionAuditOpts,
+).save
+
+#### Defined in
+
+packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:13

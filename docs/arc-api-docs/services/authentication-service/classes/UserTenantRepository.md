@@ -24,12 +24,13 @@
 - [userLevelPermissionRepositoryGetter](UserTenantRepository.md#userlevelpermissionrepositorygetter)
 - [userLevelPermissions](UserTenantRepository.md#userlevelpermissions)
 - [userRepositoryGetter](UserTenantRepository.md#userrepositorygetter)
+- [userTenant](UserTenantRepository.md#usertenant)
 
 ## Constructors
 
 ### constructor
 
-• **new UserTenantRepository**(`dataSource`, `tenantRepositoryGetter`, `userRepositoryGetter`, `roleRepositoryGetter`, `userLevelPermissionRepositoryGetter`)
+• **new UserTenantRepository**(`dataSource`, `tenantRepositoryGetter`, `userRepositoryGetter`, `roleRepositoryGetter`, `userLevelPermissionRepositoryGetter`, `userTenant`)
 
 #### Parameters
 
@@ -40,6 +41,7 @@
 | `userRepositoryGetter` | `Getter`<[`UserRepository`](UserRepository.md)\> |
 | `roleRepositoryGetter` | `Getter`<[`RoleRepository`](RoleRepository.md)\> |
 | `userLevelPermissionRepositoryGetter` | `Getter`<[`UserLevelPermissionRepository`](UserLevelPermissionRepository.md)\> |
+| `userTenant` | typeof `Entity` & { `prototype`: [`UserTenant`](UserTenant.md)  } |
 
 #### Overrides
 
@@ -51,7 +53,7 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user-tenant.repository.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user-tenant.repository.ts#L47)
+[services/authentication-service/src/repositories/user-tenant.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user-tenant.repository.ts#L48)
 
 ## Properties
 
@@ -61,7 +63,7 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user-tenant.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user-tenant.repository.ts#L40)
+[services/authentication-service/src/repositories/user-tenant.repository.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user-tenant.repository.ts#L41)
 
 ___
 
@@ -71,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user-tenant.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user-tenant.repository.ts#L55)
+[services/authentication-service/src/repositories/user-tenant.repository.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user-tenant.repository.ts#L56)
 
 ___
 
@@ -81,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user-tenant.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user-tenant.repository.ts#L33)
+[services/authentication-service/src/repositories/user-tenant.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user-tenant.repository.ts#L34)
 
 ___
 
@@ -91,7 +93,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user-tenant.repository.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user-tenant.repository.ts#L51)
+[services/authentication-service/src/repositories/user-tenant.repository.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user-tenant.repository.ts#L52)
 
 ___
 
@@ -101,7 +103,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user-tenant.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user-tenant.repository.ts#L38)
+[services/authentication-service/src/repositories/user-tenant.repository.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user-tenant.repository.ts#L39)
 
 ___
 
@@ -111,7 +113,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user-tenant.repository.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user-tenant.repository.ts#L57)
+[services/authentication-service/src/repositories/user-tenant.repository.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user-tenant.repository.ts#L58)
 
 ___
 
@@ -121,7 +123,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user-tenant.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user-tenant.repository.ts#L42)
+[services/authentication-service/src/repositories/user-tenant.repository.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user-tenant.repository.ts#L43)
 
 ___
 
@@ -131,4 +133,14 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user-tenant.repository.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/repositories/user-tenant.repository.ts#L53)
+[services/authentication-service/src/repositories/user-tenant.repository.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user-tenant.repository.ts#L54)
+
+___
+
+### userTenant
+
+• `Private` `Readonly` **userTenant**: typeof `Entity` & { `prototype`: [`UserTenant`](UserTenant.md)  }
+
+#### Defined in
+
+[services/authentication-service/src/repositories/user-tenant.repository.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user-tenant.repository.ts#L60)

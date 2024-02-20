@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:174](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L174)
+[services/scheduler-service/src/models/event.model.ts:174](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/models/event.model.ts#L174)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:175](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L175)
+[services/scheduler-service/src/models/event.model.ts:175](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/models/event.model.ts#L175)

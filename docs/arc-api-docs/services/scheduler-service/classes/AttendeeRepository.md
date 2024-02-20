@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`Attendee`](Attendee.md), `undefined` \| `string`, [`AttendeeRelations`](../interfaces/AttendeeRelations.md), `this`\> & `DefaultCrudRepository`<[`Attendee`](Attendee.md), `undefined` \| `string`, `object`, `this`\>
+- `DefaultUserModifyCrudRepository`<[`Attendee`](Attendee.md), `undefined` \| `string`, [`AttendeeRelations`](../interfaces/AttendeeRelations.md), `this`\> & {}
 
   ↳ **`AttendeeRepository`**
 
@@ -20,6 +20,10 @@
 - [eventRepositoryGetter](AttendeeRepository.md#eventrepositorygetter)
 - [getAuditLogRepository](AttendeeRepository.md#getauditlogrepository)
 - [getCurrentUser](AttendeeRepository.md#getcurrentuser)
+
+### Methods
+
+- [save](AttendeeRepository.md#save)
 
 ## Constructors
 
@@ -49,7 +53,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attendee.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attendee.repository.ts#L34)
+[services/scheduler-service/src/repositories/attendee.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attendee.repository.ts#L34)
 
 ## Properties
 
@@ -59,7 +63,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attendee.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attendee.repository.ts#L32)
+[services/scheduler-service/src/repositories/attendee.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attendee.repository.ts#L32)
 
 ___
 
@@ -69,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attendee.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attendee.repository.ts#L42)
+[services/scheduler-service/src/repositories/attendee.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attendee.repository.ts#L42)
 
 ___
 
@@ -79,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attendee.repository.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attendee.repository.ts#L44)
+[services/scheduler-service/src/repositories/attendee.repository.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attendee.repository.ts#L44)
 
 ___
 
@@ -100,4 +104,36 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attendee.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/attendee.repository.ts#L38)
+[services/scheduler-service/src/repositories/attendee.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attendee.repository.ts#L38)
+
+## Methods
+
+### save
+
+▸ **save**(`entity`, `options?`): `Promise`<[`Attendee`](Attendee.md)\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `entity` | [`Attendee`](Attendee.md) |
+| `options?` | `Options` |
+
+#### Returns
+
+`Promise`<[`Attendee`](Attendee.md)\>
+
+#### Inherited from
+
+ConditionalAuditRepositoryMixin(
+  DefaultUserModifyCrudRepository<
+    Attendee,
+    typeof Attendee.prototype.id,
+    AttendeeRelations
+  \>,
+  AttendeeAuditOpts,
+).save
+
+#### Defined in
+
+packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:13

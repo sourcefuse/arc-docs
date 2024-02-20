@@ -61,7 +61,7 @@ UserPermission.allowed
 
 #### Defined in
 
-[services/oidc-service/src/models/user-level-permission.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-level-permission.model.ts#L45)
+[services/oidc-service/src/models/user-level-permission.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/user-level-permission.model.ts#L45)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user-level-permission.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-level-permission.model.ts#L22)
+[services/oidc-service/src/models/user-level-permission.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/user-level-permission.model.ts#L22)
 
 ___
 
@@ -141,7 +141,7 @@ UserPermission.permission
 
 #### Defined in
 
-[services/oidc-service/src/models/user-level-permission.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-level-permission.model.ts#L38)
+[services/oidc-service/src/models/user-level-permission.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/user-level-permission.model.ts#L38)
 
 ___
 
@@ -151,4 +151,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/user-level-permission.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/oidc-service/src/models/user-level-permission.model.ts#L32)
+[services/oidc-service/src/models/user-level-permission.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/user-level-permission.model.ts#L32)

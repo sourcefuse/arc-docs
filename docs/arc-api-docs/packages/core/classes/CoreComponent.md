@@ -21,6 +21,10 @@
 - [localeObj](CoreComponent.md#localeobj)
 - [providers](CoreComponent.md#providers)
 
+### Methods
+
+- [\_setupSwaggerStats](CoreComponent.md#_setupswaggerstats)
+
 ## Constructors
 
 ### constructor
@@ -37,7 +41,7 @@
 
 #### Defined in
 
-[src/component.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/component.ts#L28)
+[packages/core/src/component.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/component.ts#L30)
 
 ## Properties
 
@@ -47,7 +51,7 @@
 
 #### Defined in
 
-[src/component.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/component.ts#L30)
+[packages/core/src/component.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/component.ts#L32)
 
 ___
 
@@ -61,7 +65,7 @@ Component.bindings
 
 #### Defined in
 
-[src/component.ts:114](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/component.ts#L114)
+[packages/core/src/component.ts:143](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/component.ts#L143)
 
 ___
 
@@ -71,7 +75,7 @@ ___
 
 #### Defined in
 
-[src/component.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/component.ts#L32)
+[packages/core/src/component.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/component.ts#L34)
 
 ___
 
@@ -81,7 +85,7 @@ ___
 
 #### Defined in
 
-[src/component.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/component.ts#L34)
+[packages/core/src/component.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/component.ts#L36)
 
 ___
 
@@ -91,7 +95,7 @@ ___
 
 #### Defined in
 
-[src/component.ts:110](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/component.ts#L110)
+[packages/core/src/component.ts:139](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/component.ts#L139)
 
 ___
 
@@ -105,4 +109,18 @@ Component.providers
 
 #### Defined in
 
-[src/component.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/packages/core/src/component.ts#L112)
+[packages/core/src/component.ts:141](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/component.ts#L141)
+
+## Methods
+
+### \_setupSwaggerStats
+
+▸ `Private` **_setupSwaggerStats**(): `undefined` \| `ExpressRequestHandler`
+
+#### Returns
+
+`undefined` \| `ExpressRequestHandler`
+
+#### Defined in
+
+[packages/core/src/component.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/component.ts#L93)

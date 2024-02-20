@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/services/otp.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/services/otp.service.ts#L18)
+[services/authentication-service/src/services/otp.service.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/services/otp.service.ts#L19)
 
 ## Properties
 
@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/services/otp.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/services/otp.service.ts#L23)
+[services/authentication-service/src/services/otp.service.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/services/otp.service.ts#L24)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/services/otp.service.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/services/otp.service.ts#L20)
+[services/authentication-service/src/services/otp.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/services/otp.service.ts#L21)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/services/otp.service.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/services/otp.service.ts#L25)
+[services/authentication-service/src/services/otp.service.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/services/otp.service.ts#L26)
 
 ___
 
@@ -76,13 +76,13 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/services/otp.service.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/services/otp.service.ts#L22)
+[services/authentication-service/src/services/otp.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/services/otp.service.ts#L23)
 
 ## Methods
 
 ### sendOtp
 
-▸ **sendOtp**(`user`, `client?`): `Promise`<`void` \| `OtpResponse`\>
+▸ **sendOtp**(`user`, `client?`): `Promise`<`void` \| [`OtpResponse`](../interfaces/OtpResponse.md)\>
 
 #### Parameters
 
@@ -93,8 +93,8 @@ ___
 
 #### Returns
 
-`Promise`<`void` \| `OtpResponse`\>
+`Promise`<`void` \| [`OtpResponse`](../interfaces/OtpResponse.md)\>
 
 #### Defined in
 
-[services/authentication-service/src/services/otp.service.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/authentication-service/src/services/otp.service.ts#L28)
+[services/authentication-service/src/services/otp.service.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/services/otp.service.ts#L29)

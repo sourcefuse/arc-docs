@@ -13,7 +13,7 @@ Base URLs:
 
 # Authentication
 
-- HTTP Authentication, scheme: bearer
+- HTTP Authentication, scheme: bearer 
 
 <h1 id="authentication-service-loginactivitycontroller">LoginActivityController</h1>
 
@@ -2670,7 +2670,7 @@ fetch('/auth/google',
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Google Token Response,
-         (Deprecated: Possible security issue if secret is passed via query params,
+         (Deprecated: Possible security issue if secret is passed via query params, 
           please use the post endpoint)|[TokenResponse](#schematokenresponse)|
 
 <aside class="success">
@@ -3285,22 +3285,23 @@ client_secret: string
 This operation does not require authentication
 </aside>
 
-## SamlLoginController.samlCallback
+## SamlLoginController.oktaSamlCallback
 
-<a id="opIdSamlLoginController.samlCallback"></a>
+<a id="opIdSamlLoginController.oktaSamlCallback"></a>
 
 > Code samples
 
 ```javascript
-
+const inputBody = '{}';
 const headers = {
+  'Content-Type':'application/x-www-form-urlencoded',
   'Accept':'application/json'
 };
 
-fetch('/auth/saml-auth-redirect',
+fetch('/auth/saml-redirect',
 {
-  method: 'GET',
-
+  method: 'POST',
+  body: inputBody,
   headers: headers
 })
 .then(function(res) {
@@ -3313,15 +3314,16 @@ fetch('/auth/saml-auth-redirect',
 
 ```javascript--nodejs
 const fetch = require('node-fetch');
-
+const inputBody = {};
 const headers = {
+  'Content-Type':'application/x-www-form-urlencoded',
   'Accept':'application/json'
 };
 
-fetch('/auth/saml-auth-redirect',
+fetch('/auth/saml-redirect',
 {
-  method: 'GET',
-
+  method: 'POST',
+  body: JSON.stringify(inputBody),
   headers: headers
 })
 .then(function(res) {
@@ -3332,15 +3334,21 @@ fetch('/auth/saml-auth-redirect',
 
 ```
 
-`GET /auth/saml-auth-redirect`
+`POST /auth/saml-redirect`
 
-<h3 id="samllogincontroller.samlcallback-parameters">Parameters</h3>
+> Body parameter
+
+```yaml
+{}
+
+```
+
+<h3 id="samllogincontroller.oktasamlcallback-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|code|query|string|false|none|
-|state|query|string|false|none|
-|session_state|query|string|false|none|
+|client|query|string|false|none|
+|body|body|object|false|none|
 
 > Example responses
 
@@ -3355,11 +3363,11 @@ fetch('/auth/saml-auth-redirect',
 }
 ```
 
-<h3 id="samllogincontroller.samlcallback-responses">Responses</h3>
+<h3 id="samllogincontroller.oktasamlcallback-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Saml Redirect Token Response|[TokenResponse](#schematokenresponse)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|okta auth callback|[TokenResponse](#schematokenresponse)|
 
 <aside class="success">
 This operation does not require authentication
@@ -3616,6 +3624,105 @@ HTTPBearer
 </aside>
 
 <h1 id="authentication-service-logoutcontroller">LogoutController</h1>
+
+## LogoutController.googleLogout
+
+<a id="opIdLogoutController.googleLogout"></a>
+
+> Code samples
+
+```javascript
+const inputBody = '{
+  "refreshToken": "string"
+}';
+const headers = {
+  'Content-Type':'application/json',
+  'Accept':'application/json',
+  'Authorization':'string'
+};
+
+fetch('/google/logout',
+{
+  method: 'POST',
+  body: inputBody,
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+```javascript--nodejs
+const fetch = require('node-fetch');
+const inputBody = {
+  "refreshToken": "string"
+};
+const headers = {
+  'Content-Type':'application/json',
+  'Accept':'application/json',
+  'Authorization':'string'
+};
+
+fetch('/google/logout',
+{
+  method: 'POST',
+  body: JSON.stringify(inputBody),
+  headers: headers
+})
+.then(function(res) {
+    return res.json();
+}).then(function(body) {
+    console.log(body);
+});
+
+```
+
+`POST /google/logout`
+
+This API will log out the user from application as well as google
+
+> Body parameter
+
+```json
+{
+  "refreshToken": "string"
+}
+```
+
+<h3 id="logoutcontroller.googlelogout-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|Authorization|header|string|false|This is the access token which is required to authenticate user.|
+|body|body|[RefreshTokenRequestPartial](#schemarefreshtokenrequestpartial)|false|none|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "success": true
+}
+```
+
+<h3 id="logoutcontroller.googlelogout-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success Response|[SuccessResponse](#schemasuccessresponse)|
+|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|The syntax of the request entity is incorrect.|None|
+|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Invalid Credentials.|None|
+|404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|The entity requested does not exist.|None|
+|422|[Unprocessable Entity](https://tools.ietf.org/html/rfc2518#section-10.3)|The syntax of the request entity is incorrect|None|
+
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+HTTPBearer
+</aside>
 
 ## LogoutController.keycloakLogout
 
@@ -4460,3 +4567,4 @@ xor
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |» *anonymous*|[string]|false|none|none|
+

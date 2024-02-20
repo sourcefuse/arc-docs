@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/twilio.provider.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/providers/twilio/twilio.provider.ts#L17)
+[services/video-conferencing-service/src/providers/twilio/twilio.provider.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/twilio.provider.ts#L17)
 
 ## Properties
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/twilio.provider.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/providers/twilio/twilio.provider.ts#L18)
+[services/video-conferencing-service/src/providers/twilio/twilio.provider.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/twilio.provider.ts#L18)
 
 ## Methods
 
@@ -72,4 +72,4 @@ Provider.value
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/twilio.provider.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/video-conferencing-service/src/providers/twilio/twilio.provider.ts#L21)
+[services/video-conferencing-service/src/providers/twilio/twilio.provider.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/twilio.provider.ts#L21)

@@ -92,7 +92,7 @@ ExternalIdentifierEnabledEntity.extId
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread.model.ts#L47)
+[services/in-mail-service/src/models/thread.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/models/thread.model.ts#L47)
 
 ___
 
@@ -106,7 +106,7 @@ ExternalIdentifierEnabledEntity.extMetadata
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread.model.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread.model.ts#L54)
+[services/in-mail-service/src/models/thread.model.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/models/thread.model.ts#L54)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread.model.ts#L68)
+[services/in-mail-service/src/models/thread.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/models/thread.model.ts#L68)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread.model.ts#L27)
+[services/in-mail-service/src/models/thread.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/models/thread.model.ts#L27)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread.model.ts#L40)
+[services/in-mail-service/src/models/thread.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/models/thread.model.ts#L40)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread.model.ts#L61)
+[services/in-mail-service/src/models/thread.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/models/thread.model.ts#L61)
 
 ___
 
@@ -184,4 +184,4 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/thread.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/in-mail-service/src/models/thread.model.ts#L33)
+[services/in-mail-service/src/models/thread.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/models/thread.model.ts#L33)

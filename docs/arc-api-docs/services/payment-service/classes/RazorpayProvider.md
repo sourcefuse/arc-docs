@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[services/payment-service/src/providers/razorpay/razorpay.provider.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L27)
+[services/payment-service/src/providers/razorpay/razorpay.provider.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L28)
 
 ## Properties
 
@@ -57,7 +57,7 @@
 
 #### Defined in
 
-[services/payment-service/src/providers/razorpay/razorpay.provider.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L36)
+[services/payment-service/src/providers/razorpay/razorpay.provider.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L37)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/providers/razorpay/razorpay.provider.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L39)
+[services/payment-service/src/providers/razorpay/razorpay.provider.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L40)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/providers/razorpay/razorpay.provider.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L34)
+[services/payment-service/src/providers/razorpay/razorpay.provider.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L35)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/providers/razorpay/razorpay.provider.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L31)
+[services/payment-service/src/providers/razorpay/razorpay.provider.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L32)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/providers/razorpay/razorpay.provider.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L45)
+[services/payment-service/src/providers/razorpay/razorpay.provider.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L46)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/providers/razorpay/razorpay.provider.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L33)
+[services/payment-service/src/providers/razorpay/razorpay.provider.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L34)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/providers/razorpay/razorpay.provider.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L29)
+[services/payment-service/src/providers/razorpay/razorpay.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L30)
 
 ## Methods
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/providers/razorpay/razorpay.provider.ts:101](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L101)
+[services/payment-service/src/providers/razorpay/razorpay.provider.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L102)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/providers/razorpay/razorpay.provider.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L47)
+[services/payment-service/src/providers/razorpay/razorpay.provider.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L48)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/providers/razorpay/razorpay.provider.ts:138](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L138)
+[services/payment-service/src/providers/razorpay/razorpay.provider.ts:139](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L139)
 
 ___
 
@@ -205,4 +205,4 @@ Provider.value
 
 #### Defined in
 
-[services/payment-service/src/providers/razorpay/razorpay.provider.ts:159](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L159)
+[services/payment-service/src/providers/razorpay/razorpay.provider.ts:160](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/razorpay/razorpay.provider.ts#L160)

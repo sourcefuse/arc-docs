@@ -29,7 +29,7 @@
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/process-definition.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/process-definition.ts#L8)
+[services/bpmn-service/src/types/camunda/process-definition.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/process-definition.ts#L8)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/process-definition.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/process-definition.ts#L13)
+[services/bpmn-service/src/types/camunda/process-definition.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/process-definition.ts#L13)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/process-definition.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/process-definition.ts#L9)
+[services/bpmn-service/src/types/camunda/process-definition.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/process-definition.ts#L9)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/process-definition.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/process-definition.ts#L14)
+[services/bpmn-service/src/types/camunda/process-definition.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/process-definition.ts#L14)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/process-definition.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/process-definition.ts#L18)
+[services/bpmn-service/src/types/camunda/process-definition.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/process-definition.ts#L18)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/process-definition.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/process-definition.ts#L6)
+[services/bpmn-service/src/types/camunda/process-definition.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/process-definition.ts#L6)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/process-definition.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/process-definition.ts#L7)
+[services/bpmn-service/src/types/camunda/process-definition.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/process-definition.ts#L7)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/process-definition.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/process-definition.ts#L10)
+[services/bpmn-service/src/types/camunda/process-definition.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/process-definition.ts#L10)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/process-definition.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/process-definition.ts#L12)
+[services/bpmn-service/src/types/camunda/process-definition.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/process-definition.ts#L12)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/process-definition.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/process-definition.ts#L19)
+[services/bpmn-service/src/types/camunda/process-definition.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/process-definition.ts#L19)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/process-definition.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/process-definition.ts#L15)
+[services/bpmn-service/src/types/camunda/process-definition.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/process-definition.ts#L15)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/process-definition.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/process-definition.ts#L16)
+[services/bpmn-service/src/types/camunda/process-definition.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/process-definition.ts#L16)
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/process-definition.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/process-definition.ts#L11)
+[services/bpmn-service/src/types/camunda/process-definition.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/process-definition.ts#L11)
 
 ___
 
@@ -159,4 +159,4 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/camunda/process-definition.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/types/camunda/process-definition.ts#L17)
+[services/bpmn-service/src/types/camunda/process-definition.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/camunda/process-definition.ts#L17)

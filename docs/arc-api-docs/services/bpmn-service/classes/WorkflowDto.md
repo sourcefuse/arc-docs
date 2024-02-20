@@ -49,7 +49,7 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow-dto.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow-dto.model.ts#L24)
+[services/bpmn-service/src/models/workflow-dto.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/models/workflow-dto.model.ts#L24)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow-dto.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow-dto.model.ts#L35)
+[services/bpmn-service/src/models/workflow-dto.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/models/workflow-dto.model.ts#L35)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow-dto.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow-dto.model.ts#L30)
+[services/bpmn-service/src/models/workflow-dto.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/models/workflow-dto.model.ts#L30)
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/models/workflow-dto.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/bpmn-service/src/models/workflow-dto.model.ts#L18)
+[services/bpmn-service/src/models/workflow-dto.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/models/workflow-dto.model.ts#L18)

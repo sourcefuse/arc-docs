@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`Theme`](Theme.md), `undefined` \| `string`, {}, `this`\> & `DefaultCrudRepository`<[`Theme`](Theme.md), `undefined` \| `string`, `object`, `this`\>
+- `DefaultUserModifyCrudRepository`<[`Theme`](Theme.md), `undefined` \| `string`, {}, `this`\> & {}
 
   ↳ **`ThemeRepository`**
 
@@ -18,6 +18,10 @@
 
 - [getAuditLogRepository](ThemeRepository.md#getauditlogrepository)
 - [getCurrentUser](ThemeRepository.md#getcurrentuser)
+
+### Methods
+
+- [save](ThemeRepository.md#save)
 
 ## Constructors
 
@@ -42,7 +46,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/theme.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/theme.repository.ts#L27)
+[services/scheduler-service/src/repositories/theme.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/theme.repository.ts#L27)
 
 ## Properties
 
@@ -52,7 +56,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/theme.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/theme.repository.ts#L35)
+[services/scheduler-service/src/repositories/theme.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/theme.repository.ts#L35)
 
 ___
 
@@ -69,4 +73,32 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/theme.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/repositories/theme.repository.ts#L31)
+[services/scheduler-service/src/repositories/theme.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/theme.repository.ts#L31)
+
+## Methods
+
+### save
+
+▸ **save**(`entity`, `options?`): `Promise`<[`Theme`](Theme.md)\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `entity` | [`Theme`](Theme.md) |
+| `options?` | `Options` |
+
+#### Returns
+
+`Promise`<[`Theme`](Theme.md)\>
+
+#### Inherited from
+
+ConditionalAuditRepositoryMixin(
+  DefaultUserModifyCrudRepository<Theme, typeof Theme.prototype.id, {}\>,
+  ThemeAuditOpts,
+).save
+
+#### Defined in
+
+packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:13

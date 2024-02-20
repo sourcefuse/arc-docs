@@ -49,7 +49,7 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/audit-service/src/models/custom-filter.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/custom-filter.model.ts#L41)
+[services/audit-service/src/models/custom-filter.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/custom-filter.model.ts#L41)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/custom-filter.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/custom-filter.model.ts#L23)
+[services/audit-service/src/models/custom-filter.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/custom-filter.model.ts#L23)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/custom-filter.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/custom-filter.model.ts#L31)
+[services/audit-service/src/models/custom-filter.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/custom-filter.model.ts#L31)
 
 ___
 
@@ -86,4 +86,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/custom-filter.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/custom-filter.model.ts#L36)
+[services/audit-service/src/models/custom-filter.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/custom-filter.model.ts#L36)

@@ -30,6 +30,7 @@
 - [before](AuditLog.md#before)
 - [entityId](AuditLog.md#entityid)
 - [id](AuditLog.md#id)
+- [tenantId](AuditLog.md#tenantid)
 
 ## Constructors
 
@@ -59,7 +60,7 @@ packages/core/dist/models/core-entity.d.ts:3
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/audit-log.model.ts#L34)
+[services/audit-service/src/models/audit-log.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/audit-log.model.ts#L34)
 
 ___
 
@@ -69,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/audit-log.model.ts#L40)
+[services/audit-service/src/models/audit-log.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/audit-log.model.ts#L40)
 
 ___
 
@@ -79,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/audit-log.model.ts#L27)
+[services/audit-service/src/models/audit-log.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/audit-log.model.ts#L27)
 
 ___
 
@@ -89,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/audit-log.model.ts#L76)
+[services/audit-service/src/models/audit-log.model.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/audit-log.model.ts#L83)
 
 ___
 
@@ -99,7 +100,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/audit-log.model.ts#L47)
+[services/audit-service/src/models/audit-log.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/audit-log.model.ts#L47)
 
 ___
 
@@ -109,7 +110,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/audit-log.model.ts#L60)
+[services/audit-service/src/models/audit-log.model.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/audit-log.model.ts#L60)
 
 ___
 
@@ -119,7 +120,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/audit-log.model.ts#L70)
+[services/audit-service/src/models/audit-log.model.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/audit-log.model.ts#L77)
 
 ___
 
@@ -129,7 +130,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/audit-log.model.ts#L65)
+[services/audit-service/src/models/audit-log.model.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/audit-log.model.ts#L72)
 
 ___
 
@@ -139,7 +140,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/audit-log.model.ts#L54)
+[services/audit-service/src/models/audit-log.model.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/audit-log.model.ts#L54)
 
 ___
 
@@ -149,4 +150,14 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/audit-log.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/audit-service/src/models/audit-log.model.ts#L21)
+[services/audit-service/src/models/audit-log.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/audit-log.model.ts#L21)
+
+___
+
+### tenantId
+
+• **tenantId**: `string`
+
+#### Defined in
+
+[services/audit-service/src/models/audit-log.model.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/audit-log.model.ts#L67)

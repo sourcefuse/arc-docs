@@ -6,6 +6,7 @@
 
 ### Namespaces
 
+- [CoreSchedulerBindings](modules/CoreSchedulerBindings.md)
 - [SchedulerBindings](modules/SchedulerBindings.md)
 
 ### Enumerations
@@ -85,7 +86,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/models/attachment.model.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/attachment.model.ts#L82)
+[services/scheduler-service/src/models/attachment.model.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/models/attachment.model.ts#L82)
 
 ___
 
@@ -95,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/attendee.model.ts:97](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/attendee.model.ts#L97)
+[services/scheduler-service/src/models/attendee.model.ts:97](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/models/attendee.model.ts#L97)
 
 ___
 
@@ -105,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/calendar.model.ts:101](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/calendar.model.ts#L101)
+[services/scheduler-service/src/models/calendar.model.ts:101](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/models/calendar.model.ts#L101)
 
 ___
 
@@ -129,7 +130,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/types.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/types.ts#L8)
+[services/scheduler-service/src/types.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/types.ts#L8)
 
 ___
 
@@ -139,7 +140,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/event.model.ts:178](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/event.model.ts#L178)
+[services/scheduler-service/src/models/event.model.ts:178](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/models/event.model.ts#L178)
 
 ___
 
@@ -149,7 +150,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/subscription.model.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/subscription.model.ts#L113)
+[services/scheduler-service/src/models/subscription.model.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/models/subscription.model.ts#L113)
 
 ___
 
@@ -159,7 +160,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/models/working-hour.model.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/models/working-hour.model.ts#L80)
+[services/scheduler-service/src/models/working-hour.model.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/models/working-hour.model.ts#L80)
 
 ## Variables
 
@@ -169,4 +170,4 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/keys.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/scheduler-service/src/keys.ts#L14)
+[services/scheduler-service/src/keys.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/keys.ts#L20)

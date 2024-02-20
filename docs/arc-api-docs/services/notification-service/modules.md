@@ -20,16 +20,22 @@
 - [Notification](classes/Notification.md)
 - [NotificationAccess](classes/NotificationAccess.md)
 - [NotificationAccessRepository](classes/NotificationAccessRepository.md)
+- [NotificationDto](classes/NotificationDto.md)
 - [NotificationFilterProvider](classes/NotificationFilterProvider.md)
 - [NotificationRepository](classes/NotificationRepository.md)
 - [NotificationServiceComponent](classes/NotificationServiceComponent.md)
+- [NotificationSettingsDto](classes/NotificationSettingsDto.md)
 - [NotificationUser](classes/NotificationUser.md)
 - [NotificationUserRepository](classes/NotificationUserRepository.md)
+- [NotificationUserSettingsProvider](classes/NotificationUserSettingsProvider.md)
+- [UserNotificationSettings](classes/UserNotificationSettings.md)
+- [UserNotificationSettingsRepository](classes/UserNotificationSettingsRepository.md)
 
 ### Interfaces
 
 - [IChannelManager](interfaces/IChannelManager.md)
 - [INotifServiceConfig](interfaces/INotifServiceConfig.md)
+- [INotificationSettingFilterFunc](interfaces/INotificationSettingFilterFunc.md)
 - [INotificationUserManager](interfaces/INotificationUserManager.md)
 - [NotificationRelations](interfaces/NotificationRelations.md)
 - [NotificationUserRelations](interfaces/NotificationUserRelations.md)
@@ -67,7 +73,7 @@
 
 #### Defined in
 
-[services/notification-service/src/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/types.ts#L22)
+[services/notification-service/src/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/types.ts#L22)
 
 ___
 
@@ -77,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/notification-user.model.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification-user.model.ts#L64)
+[services/notification-service/src/models/notification-user.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification-user.model.ts#L70)
 
 ___
 
@@ -87,7 +93,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/notification.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/models/notification.model.ts#L70)
+[services/notification-service/src/models/notification.model.ts:86](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification.model.ts#L86)
 
 ## Variables
 
@@ -97,7 +103,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/types.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/types.ts#L27)
+[services/notification-service/src/types.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/types.ts#L35)
 
 ___
 
@@ -107,4 +113,4 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/types.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/d35fdb3f0/services/notification-service/src/types.ts#L26)
+[services/notification-service/src/types.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/types.ts#L34)
