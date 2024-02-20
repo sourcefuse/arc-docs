@@ -65,7 +65,7 @@ this.bind(ReportingServiceComponentBindings.DATA_STORE_CONFIGURATION).to({
   port: 5432,
   username: 'postgres',
   password: 'postgres',
-  database: 'telescope',
+  database: 'reporting',
   databaseType: DbName.POSTGRES,
 });
 ```
@@ -170,10 +170,12 @@ This binding is essential for the component to interface with the data store, wh
 
 To enable duplication checks for datasets and specify which keys should be used for hashing, bind the configuration like this:
 
-````typescript
+```typescript
 this.bind(ReportingServiceComponentBindings.DATA_SET_CONFIG).to({
   hashFields: ['name', 'otherKey'], // Add other keys as needed from data set model
 });
+```
+
 ### Step 6: Bind the Component
 
 Finally, bind the Reporting Service Component to your application:
@@ -182,7 +184,7 @@ Finally, bind the Reporting Service Component to your application:
 import {ReportingServiceComponent} from '@sourceloop/reporting-service';
 
 this.component(ReportingServiceComponent);
-````
+```
 
 This completes the setup, and your application is now equipped to utilize the features of the Reporting Service Component for data ingestion, processing, and reporting.
 
