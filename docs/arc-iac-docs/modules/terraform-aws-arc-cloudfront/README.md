@@ -27,8 +27,11 @@ module "tags" {
 }
 
 module "cloudfront" {
-  source  = "sourcefuse/arc-cloudfront/aws"
-  version = "4.0.1"
+  source = "sourcefuse/arc-cloudfront/aws"
+  #version = "4.0.6" --> Pin the right version
+  providers = {
+    aws.acm = aws.acm // Certificate has to be created in us-east-1 region
+  }
 
   origins = [{
     origin_type   = "custom",
@@ -45,7 +48,6 @@ module "cloudfront" {
 
     }
   ]
-  //source = "git::https://github.com/sourcefuse/terraform-aws-refarch-cloudfront?ref=2.0.2"
 
   namespace              = "test"
   description            = "This is a test Cloudfront distribution"
