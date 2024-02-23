@@ -6,16 +6,20 @@
 
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing WAF.
+SourceFuse's AWS Reference Architecture Terraform module for AWS WAF (Web Application Firewall) simplifies the setup and management of web access controls. Leveraging the hashicorp/aws Terraform provider, this module allows users to define and deploy WAF configurations, including web ACLs and IP sets, with ease. The module supports customizable rules, default actions, and visibility configurations, empowering users to tailor WAF policies based on their specific security requirements. By associating web ACLs with designated resources through the aws_wafv2_web_acl_association resource, the module ensures seamless integration and protection for web applications against various threats. With support for tags and dependency management, this WAF module provides a robust foundation for enhancing the security posture of AWS-hosted web applications.
+
+For more information about this repository and its usage, please see [Terraform AWS ARC WAF Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-waf/blob/main/docs/module-usage-guide/README.md).
+
 
 ## Usage
 
 To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-waf/blob/main/example/main.tf) file in the example folder.  
 
 ```hcl
-module "this" {
+module "waf" {
   source  = "sourcefuse/arc-waf/aws"
-  version = "0.0.4"
+  version = "1.0.2"
+
   ## web acl
   create_web_acl         = true
   web_acl_name           = "${var.namespace}-${var.environment}-waf-web-acl"
