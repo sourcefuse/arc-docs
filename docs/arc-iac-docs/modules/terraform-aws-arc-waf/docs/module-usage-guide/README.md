@@ -4,10 +4,10 @@
 
 ### Purpose of the Document
 
-This document provides guidelines and instructions for users looking to implement Terraform module for managing WAF
+This document provides a Terraform module for AWS WAF, streamlining the configuration and deployment of WAF policies on AWS.
 ### Module Overview
 
-The [terraform-aws-arc-waf](https://github.com/sourcefuse/terraform-aws-arc-waf) module provides a secure and modular foundation for  managing WAF
+The [terraform-aws-arc-waf](https://github.com/sourcefuse/terraform-aws-arc-waf) AWS WAF Terraform module facilitates the creation and management of web ACLs, IP sets, and associations, empowering users to enforce tailored security controls for their web applications with ease.
 
 ### Prerequisites
 
@@ -19,14 +19,17 @@ Before using this module, ensure you have the following:
 
 ## Getting Started
 
+**Use the Module in Your Main Configuration**
+In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
+
 ### Module Source
 
 To use the module in your Terraform configuration, include the following source block:
 
 ```hcl
 module "waf" {
-  source            = "../"
-  version           = 1.0.0
+  source  = "sourcefuse/arc-waf/aws"
+  version = "1.0.2"
   # insert the required variables here
 }
 ```
@@ -37,6 +40,13 @@ Integrate the module with your existing Terraform mono repo configuration, follo
 
 1. Create a new folder in `terraform/` named `waf`.
 2. Create the required files, see the [examples](https://github.com/sourcefuse/terraform-aws-arc-waf/tree/main/examples/simple) to base off of.
+
+```plaintext
+waf/
+|-- main.tf
+|-- variables.tf
+|-- outputs.tf
+```
 3. Configure with your backend
   - Create the environment backend configuration file: `config.<environment>.hcl`
     - **region**: Where the backend resides
@@ -44,6 +54,16 @@ Integrate the module with your existing Terraform mono repo configuration, follo
     - **bucket**: Bucket name where the terraform state will reside
     - **dynamodb_table**: Lock table so there are not duplicate tfplans in the mix
     - **encrypt**: Encrypt all traffic to and from the backend
+
+4. Execute Terraform Commands
+  - After defining your main configuration, navigate to the directory containing your Terraform files and run the following commands:
+
+  ```bash
+  terraform init
+  terraform apply
+  ```
+5. Review and Confirm
+  - Terraform will display a plan showing the changes it intends to make. Review the plan and confirm by typing 'yes' when prompted.
 
 ### Required AWS Permissions
 
