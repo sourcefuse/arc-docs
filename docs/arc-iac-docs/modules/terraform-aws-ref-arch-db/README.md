@@ -6,7 +6,9 @@
 
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Aurora and RDS instances.
+The SourceFuse AWS Reference Architecture (ARC) Terraform module offers a comprehensive solution for efficiently managing Aurora and RDS (Relational Database Service) instances within the Amazon Web Services (AWS) environment. This Terraform module is designed to streamline the provisioning, configuration, and management of these database instances, leveraging best practices.
+
+For more information about this repository and its usage, please see [Terraform AWS ARC DB Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-db/blob/main/docs/module-usage-guide/README.md).
 
 ## Module Usage
 
@@ -15,7 +17,7 @@ To see a full example, check out the [main.tf](https://github.com/sourcefuse/ter
 ```hcl
 module "aurora" {
   source  = "sourcefuse/arc-db/aws"
-  version = "2.0.3"
+  version = "3.0.0"
 
   environment              = "dev"
   namespace                = "arc"
