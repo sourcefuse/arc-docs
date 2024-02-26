@@ -27,7 +27,7 @@ To use the module in your Terraform configuration, include the following source 
 ```hcl
 module "aurora" {
   source = "sourcefuse/arc-db/aws"
-  version = "2.0.6"
+  version = "3.0.0"
   # insert the required variables here
 }
 ```
