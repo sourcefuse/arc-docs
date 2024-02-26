@@ -24,7 +24,7 @@ Before using this module, ensure you have the following:
 
 To use the module in your Terraform configuration, include the following source block:
 
-```hcl
+```tcl
 module "example_doc_db_cluster" {
   source = "sourcefuse/arc-document-db/aws"
   // we recommend to pin the version we aren't simply for an example reference against our latest changes.
