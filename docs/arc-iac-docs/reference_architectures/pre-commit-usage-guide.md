@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository utilizes pre-commit hooks to automate various checks and ensure consistent code quality. Pre-commit hooks are scripts that run before each commit, helping to catch potential issues and maintain code standards. This `pre-commit-config.yaml` file defines the hooks and configurations for this repository.
+Pre-commit hooks are scripts or actions that run before a commit is made in a version control system like Git. They allow you to enforce certain standards, checks, or tests on your code before it gets committed. Here's how you can set up pre-commit hooks specifically for Terraform using the popular tool pre-commit.
 
 ## Available Pre-commit Hooks
 
