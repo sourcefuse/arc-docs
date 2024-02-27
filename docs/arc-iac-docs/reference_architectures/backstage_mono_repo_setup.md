@@ -46,7 +46,7 @@ A new monorepo will be created with various Terraform modules.
 
 ## Bootstrap Module Setup (Recommended)
 
-After setting up Backstage and the monorepo, it is recommended to set up the [Bootstrap Module](https://github.com/sourcefuse/terraform-aws-arc-bootstrap/tree/main).  
+After setting up Backstage and the monorepo, it is recommended to set up the [Bootstrap Module](https://github.com/sourcefuse/terraform-aws-arc-bootstrap/tree/main).
 
 This module helps in creating the Terraform S3 backend state bucket and DynamoDB State Lock table.
 
@@ -54,4 +54,3 @@ This module helps in creating the Terraform S3 backend state bucket and DynamoDB
 
 1. Navigate to the Bootstrap module.
 2. Follow the instructions in the Bootstrap module's [readme.md](https://github.com/sourcefuse/terraform-aws-arc-bootstrap/blob/main/README.md). to set up the backend state bucket and DynamoDB State Lock table.
-

@@ -381,8 +381,8 @@ Implementation for this can be seen [here](src/services/export-handler.service.t
       <td></td>
       <td>Specifies the path to store the archived files on S3 bucket.</td>
     </tr>
-    
-    
+
+
   </tbody>
 </table>
 
