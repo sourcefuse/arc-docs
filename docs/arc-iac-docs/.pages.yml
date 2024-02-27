@@ -73,6 +73,7 @@ nav:
       - Control Tower and LZA: "arc-iac-docs/reference_architectures/control_tower_lza_setup"
       - MAP Migrations: "arc-iac-docs/reference_architectures/map_migrations"
       - Backstage Mono Repo Setup: "arc-iac-docs/reference_architectures/backstage_mono_repo_setup"
+      - Pre-Commit Usage: "arc-iac-docs/reference_architectures/pre-commit-usage-guide"
       - ARC IaC and LZA: "arc-iac-docs/reference_architectures/arc_iac_lza"
       - Network Baseline: "arc-iac-docs/reference_architectures/network_baseline"
       - ECS Platform Baseline: "arc-iac-docs/reference_architectures/ecs_platform_baseline"

@@ -11,7 +11,7 @@ Base URLs:
 
 * <a href="/">/</a>
 
-Email: <a href="mailto:sourav.bhargava@sourcefuse.com">Sourav Bhargava</a> 
+Email: <a href="mailto:sourav.bhargava@sourcefuse.com">Sourav Bhargava</a>
 
 <h1 id="-sourceloop-reporting-service-dashboardcontroller">DashboardController</h1>
 
@@ -4194,4 +4194,3 @@ xor
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |» *anonymous*|[string]|false|none|none|
-

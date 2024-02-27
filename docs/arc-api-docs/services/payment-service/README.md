@@ -73,7 +73,7 @@ npm i @sourceloop/payment-service
 
 - **Using RazorPay payment Gateway**
   Bind the RazorPayHelper and RazorPayConfig as shown below
-  
+
   ```typescript
   //import Providers
   import {
