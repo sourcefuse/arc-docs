@@ -1,6 +1,6 @@
 # Setting up Backstage Monorepo with Terraform
 
-This guide will walk you through the process of setting up a Backstage monorepo using Terraform. The monorepo will include various Terraform modules such as Bootstrap, VPC, DynamoDB, ECS, etc.
+This guide will walk you through the process of setting up a monorepo using Backstage. The monorepo will include various Terraform modules such as Bootstrap, VPC, DynamoDB, ECS, etc.
 
 The Backstage Mono-repo streamlines the creation of a Mono-repository by incorporating pre-defined ARC IAC modules within it. These modules, such as Bootstrap, VPC, DynamoDB, ECS, and more, serve as foundational components for infrastructure as code (IAC). This solution is designed to facilitate the rapid setup of a repository tailored for any new project. By leveraging these standardized modules, teams can quickly establish a project-specific repository with essential infrastructure components, accelerating the initiation phase of new projects and ensuring consistency and best practices across the infrastructure landscape. The Backstage Mono-repo simplifies the onboarding process, providing a robust foundation for project development and infrastructure management.
 
