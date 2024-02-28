@@ -5,7 +5,7 @@
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-ref-arch-network/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-ref-arch-network/actions/workflows/snyk.yaml)
 ## Introduction
 
-SourceFuse's AWS Reference Architecture (ARC) Terraform module for managing AWS VPC and related AWS networking resources.
+SourceFuse's AWS Reference Architecture (ARC) Terraform module facilitates the management of AWS VPC and associated networking resources. It includes features like VPC creation, Client VPN, and VPC endpoints for services like S3 and DynamoDB, enhancing network connectivity and security.
 
 For more information about this repository and its usage, please see [Terraform AWS ARC Network Module Usage Guide](docs/module-usage-guide/README.md).
 
@@ -33,8 +33,8 @@ See the `examples` folder for a complete example.
 ```shell
 
 module "network" {
-  source  = "sourcefuse/arc-network/aws"
-  version = "2.4.2"
+  source                      = "sourcefuse/arc-network/aws"
+  version                     = "2.6.10"
   namespace                   = var.namespace
   environment                 = var.environment
   availability_zones          = var.availability_zones
@@ -58,6 +58,8 @@ module "network" {
     ec2        = false
     sns        = true
     sqs        = true
+    ecs        = true
+    rds        = true
   }
   gateway_endpoint_route_table_filter = ["*private*"]
 }
@@ -68,9 +70,9 @@ module "network" {
 ```shell
 
 module "network" {
-  source  = "sourcefuse/arc-network/aws"
-  version = "2.4.2"
-
+  source                      = "sourcefuse/arc-network/aws"
+  version                     = "2.6.10"
+  
   namespace                   = var.namespace
   environment                 = var.environment
   availability_zones          = var.availability_zones
@@ -104,6 +106,17 @@ module "network" {
     }
   ]
 
+  // If have disabled the default nat gateways for your custom subnetes
+  // then you need to pass a nat gateway id for each private subnet that
+  // you are creating. If custom_az_ngw_ids is left empty in this case
+  // then no default route is created by the module.
+
+  custom_nat_gateway_enabled = false
+  custom_az_ngw_ids = {
+    "us-east-1a" = "ngw-13df3f3" // Dummy NAT gateway IDs. Use data sources or resource attributes instead.
+    "us-east-1b" = "ngw-12cesc3"
+  }
+
   client_vpn_authorization_rules = [
     {
       target_network_cidr  = var.vpc_ipv4_primary_cidr_block
@@ -111,7 +124,7 @@ module "network" {
       description          = "default authorization group to allow all authenticated clients to access the vpc"
     }
   ]
-  ## if no vpc endpoint is required then you can remove this block with gateway_endpoint_route_table_filter
+  // if no vpc endpoint is required then you can remove this block with gateway_endpoint_route_table_filter
   vpc_endpoint_config = {
     s3         = true
     kms        = false
@@ -121,12 +134,15 @@ module "network" {
     ec2        = false
     sns        = true
     sqs        = true
+    ecs        = true
+    rds        = true
   }
 
   gateway_endpoint_route_table_filter = ["*private*"]
 
   tags = module.tags.tags
 }
+
 
 ```
 
