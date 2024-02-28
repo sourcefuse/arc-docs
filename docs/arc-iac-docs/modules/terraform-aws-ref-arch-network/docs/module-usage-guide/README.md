@@ -24,13 +24,13 @@ Before using this module, ensure you have the following:
 
 ### Module Source
 
-To use the module in your Terraform configuration, include the following source block:
+To incorporate the module into your main Terraform configuration file (e.g., main.tf), declare the module and define its source along with the desired version. For instance, you can specify the module source and version as follows:
 
 ```hcl
 module "network" {
   source  = "sourcefuse/arc-network/aws"
-  version = "2.6.3"
-  # insert the 6 required variables here
+  version = "2.6.10"
+  # insert the required variables here
 }
 ```
 
@@ -42,6 +42,12 @@ Integrate the module with your existing Terraform mono repo configuration, follo
 
 1. Create a new folder in `terraform/` named `network`.
 2. Create the required files, see the [examples](https://github.com/sourcefuse/terraform-aws-arc-network/tree/main/examples/simple) to base off of.
+  ```plaintext
+  network/
+  |-- main.tf
+  |-- variables.tf
+  |-- outputs.tf
+  ```
 3. Configure with your backend
   - Create the environment backend configuration file: `config.<environment>.hcl`
     - **region**: Where the backend resides
@@ -49,6 +55,15 @@ Integrate the module with your existing Terraform mono repo configuration, follo
     - **bucket**: Bucket name where the terraform state will reside
     - **dynamodb_table**: Lock table so there are not duplicate tfplans in the mix
     - **encrypt**: Encrypt all traffic to and from the backend
+4. Execute Terraform Commands
+  - After defining your main configuration, navigate to the directory containing your Terraform files and run the following commands:
+
+  ```bash
+  terraform init
+  terraform apply
+  ```
+5. Review and Confirm
+  - Terraform will display a plan showing the changes it intends to make. Review the plan and confirm by typing 'yes' when prompted.
 
 ### Required AWS Permissions
 
