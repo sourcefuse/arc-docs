@@ -72,7 +72,7 @@ module "aurora" {
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_aurora_cluster"></a> [aurora\_cluster](#module\_aurora\_cluster) | git::https://github.com/cloudposse/terraform-aws-rds-cluster.git | 1.3.2 |
+| <a name="module_aurora_cluster"></a> [aurora\_cluster](#module\_aurora\_cluster) | git::https://github.com/cloudposse/terraform-aws-rds-cluster.git | 1.7.0 |
 | <a name="module_db_management"></a> [db\_management](#module\_db\_management) | git::https://github.com/cloudposse/terraform-aws-s3-bucket | 3.0.0 |
 | <a name="module_rds_instance"></a> [rds\_instance](#module\_rds\_instance) | git::https://github.com/cloudposse/terraform-aws-rds | 0.40.0 |
 | <a name="module_this"></a> [this](#module\_this) | cloudposse/label/null | 0.25.0 |
@@ -92,6 +92,7 @@ module "aurora" {
 | [aws_kms_alias.rds_db_kms_key](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/kms_alias) | resource |
 | [aws_kms_key.aurora_cluster_kms_key](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/kms_key) | resource |
 | [aws_kms_key.rds_db_kms_key](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/kms_key) | resource |
+| [aws_security_group_rule.additional_rules](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
 | [aws_ssm_parameter.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ssm_parameter) | resource |
 | [random_password.aurora_db_admin_password](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password) | resource |
 | [random_password.rds_db_admin_password](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password) | resource |
@@ -103,6 +104,7 @@ module "aurora" {
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_account_id"></a> [account\_id](#input\_account\_id) | Account ID where the resources will be deployed to. This is required if `enable_custom_option_group` is set to `true`. | `string` | `""` | no |
+| <a name="input_additional_rules"></a> [additional\_rules](#input\_additional\_rules) | Additional security group rules | <pre>list(object({<br>    name        = string<br>    type        = string<br>    from_port   = number<br>    to_port     = number<br>    protocol    = string<br>    cidr_blocks = list(string)<br>  }))</pre> | n/a | yes |
 | <a name="input_additional_tag_map"></a> [additional\_tag\_map](#input\_additional\_tag\_map) | Additional key-value pairs to add to each map in `tags_as_list_of_maps`. Not added to `tags` or `id`.<br>This is for some rare cases where resources want additional configuration of tags<br>and therefore take a list of maps with tag key, value, and additional configuration. | `map(string)` | `{}` | no |
 | <a name="input_attributes"></a> [attributes](#input\_attributes) | ID element. Additional attributes (e.g. `workers` or `cluster`) to add to `id`,<br>in the order they appear in the list. New attributes are appended to the<br>end of the list. The elements of the list are joined by the `delimiter`<br>and treated as a single ID element. | `list(string)` | `[]` | no |
 | <a name="input_aurora_allow_major_version_upgrade"></a> [aurora\_allow\_major\_version\_upgrade](#input\_aurora\_allow\_major\_version\_upgrade) | Enable to allow major engine version upgrades when changing engine versions. Defaults to false. | `bool` | `false` | no |
