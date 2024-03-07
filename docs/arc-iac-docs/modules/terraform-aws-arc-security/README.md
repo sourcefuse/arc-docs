@@ -56,7 +56,7 @@ module "cloud_security" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.36.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.31.0 |
 
 ## Modules
 
@@ -66,7 +66,7 @@ module "cloud_security" {
 | <a name="module_config"></a> [config](#module\_config) | cloudposse/config/aws | 1.1.0 |
 | <a name="module_guard_duty"></a> [guard\_duty](#module\_guard\_duty) | cloudposse/guardduty/aws | 0.5.0 |
 | <a name="module_inspector"></a> [inspector](#module\_inspector) | cloudposse/inspector/aws | 0.4.0 |
-| <a name="module_security_hub"></a> [security\_hub](#module\_security\_hub) | git::https://github.com/sourcefuse/terraform-aws-security-hub.git | chore/partitions-and-condition-overrides |
+| <a name="module_security_hub"></a> [security\_hub](#module\_security\_hub) | cloudposse/security-hub/aws | 0.12.0 |
 | <a name="module_sns_guard_duty"></a> [sns\_guard\_duty](#module\_sns\_guard\_duty) | cloudposse/sns-topic/aws | 0.21.0 |
 
 ## Resources
