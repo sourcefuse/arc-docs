@@ -84,7 +84,6 @@ Hence the state of that configuration has to be independently managed.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_core_apps"></a> [core\_apps](#module\_core\_apps) | ./core-apps | n/a |
 | <a name="module_eks_cluster"></a> [eks\_cluster](#module\_eks\_cluster) | cloudposse/eks-cluster/aws | 3.0.0 |
 | <a name="module_eks_fargate_profile"></a> [eks\_fargate\_profile](#module\_eks\_fargate\_profile) | cloudposse/eks-fargate-profile/aws | 1.3.0 |
 | <a name="module_eks_node_group"></a> [eks\_node\_group](#module\_eks\_node\_group) | cloudposse/eks-node-group/aws | 2.12.0 |
