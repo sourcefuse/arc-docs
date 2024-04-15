@@ -232,7 +232,7 @@ terraform destroy -var-file dev.tfvars
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_budgets"></a> [budgets](#module\_budgets) | cloudposse/budgets/aws | 1.0.4 |
+| <a name="module_budgets"></a> [budgets](#module\_budgets) | cloudposse/budgets/aws | 0.4.0 |
 | <a name="module_this"></a> [this](#module\_this) | cloudposse/label/null | 0.25.0 |
 
 ## Resources
