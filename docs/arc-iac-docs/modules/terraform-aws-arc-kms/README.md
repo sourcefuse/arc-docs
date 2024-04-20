@@ -16,7 +16,7 @@ To see a full example, check out the [main.tf](https://github.com/sourcefuse/ter
 
 module "kms" {
   source                  = "sourcefuse/arc-kms/aws"
-  version                 = "1.0.0" 
+  version                 = "1.0.0"
   enabled                 = var.enabled
   deletion_window_in_days = var.deletion_window_in_days
   enable_key_rotation     = var.enable_key_rotation
