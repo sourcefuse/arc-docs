@@ -250,7 +250,7 @@ You can append to this array by adding values to `var.additional_ssm_params`.
 
 ## Development
 
-### Versioning 
+### Versioning
 
 while Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
 
