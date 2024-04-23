@@ -72,7 +72,7 @@ module "network" {
 module "network" {
   source                      = "sourcefuse/arc-network/aws"
   version                     = "2.6.10"
-  
+
   namespace                   = var.namespace
   environment                 = var.environment
   availability_zones          = var.availability_zones
