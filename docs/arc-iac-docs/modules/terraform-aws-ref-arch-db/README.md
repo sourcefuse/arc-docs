@@ -14,43 +14,6 @@ For more information about this repository and its usage, please see [Terraform 
 
 To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-db/blob/main/example/main.tf) file in the example folder.
 
-```hcl
-module "aurora" {
-  source  = "sourcefuse/arc-db/aws"
-  version = "3.0.0"
-
-  environment              = "dev"
-  namespace                = "arc"
-  vpc_id                   = "vpc-000111222333444"
-
-  aurora_cluster_enabled             = true
-  aurora_cluster_name                = "aurora-example"
-  enhanced_monitoring_name           = "aurora-example-enhanced-monitoring"
-  aurora_db_admin_username           = "example_db_admin"
-  aurora_db_name                     = "example"
-  aurora_allow_major_version_upgrade = true
-  aurora_auto_minor_version_upgrade  = true
-  aurora_cluster_size                = 0
-  aurora_instance_type               = "db.serverless"
-  aurora_subnets = [
-    "subnet-0001112223334441",
-    "subnet-0001112223334442",
-  ]
-  aurora_security_groups = [
-    "sg-0001112223334441",
-    "sg-0001112223334442"
-  ]
-  aurora_allowed_cidr_blocks = [
-    "10.0.0.0/16"
-  ]
-
-  aurora_serverlessv2_scaling_configuration = {
-    max_capacity = 16
-    min_capacity = 2
-  }
-}
-```
-
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
