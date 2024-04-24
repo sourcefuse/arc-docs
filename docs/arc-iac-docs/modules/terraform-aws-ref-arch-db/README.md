@@ -56,10 +56,10 @@ module "aurora" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.3 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 4.0 |
-| <a name="requirement_null"></a> [null](#requirement\_null) | ~> 3.1.1 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.4.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3, < 2.0.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.0 |
+| <a name="requirement_null"></a> [null](#requirement\_null) | >= 3.1.1 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.4.0 |
 
 ## Providers
 
@@ -72,9 +72,9 @@ module "aurora" {
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_aurora_cluster"></a> [aurora\_cluster](#module\_aurora\_cluster) | git::https://github.com/cloudposse/terraform-aws-rds-cluster.git | 1.7.0 |
-| <a name="module_db_management"></a> [db\_management](#module\_db\_management) | git::https://github.com/cloudposse/terraform-aws-s3-bucket | 3.0.0 |
-| <a name="module_rds_instance"></a> [rds\_instance](#module\_rds\_instance) | git::https://github.com/cloudposse/terraform-aws-rds | 0.40.0 |
+| <a name="module_aurora_cluster"></a> [aurora\_cluster](#module\_aurora\_cluster) | git::https://github.com/cloudposse/terraform-aws-rds-cluster.git | 1.9.0 |
+| <a name="module_db_management"></a> [db\_management](#module\_db\_management) | git::https://github.com/cloudposse/terraform-aws-s3-bucket | 4.2.0 |
+| <a name="module_rds_instance"></a> [rds\_instance](#module\_rds\_instance) | git::https://github.com/cloudposse/terraform-aws-rds | 1.1.1 |
 | <a name="module_this"></a> [this](#module\_this) | cloudposse/label/null | 0.25.0 |
 
 ## Resources
@@ -122,6 +122,7 @@ module "aurora" {
 | <a name="input_aurora_db_admin_username"></a> [aurora\_db\_admin\_username](#input\_aurora\_db\_admin\_username) | Name of the default DB admin user role | `string` | `""` | no |
 | <a name="input_aurora_db_name"></a> [aurora\_db\_name](#input\_aurora\_db\_name) | Database name. | `string` | `"auroradb"` | no |
 | <a name="input_aurora_db_port"></a> [aurora\_db\_port](#input\_aurora\_db\_port) | Port for the Aurora DB instance to use. | `number` | `5432` | no |
+| <a name="input_aurora_enabled_cloudwatch_logs_exports"></a> [aurora\_enabled\_cloudwatch\_logs\_exports](#input\_aurora\_enabled\_cloudwatch\_logs\_exports) | List of log types to enable for exporting to CloudWatch logs. If omitted, no logs will be exported. Valid values (depending on engine): alert, audit, error, general, listener, slowquery, trace, postgresql (PostgreSQL), upgrade (PostgreSQL). | `list(string)` | `[]` | no |
 | <a name="input_aurora_engine"></a> [aurora\_engine](#input\_aurora\_engine) | The name of the database engine to be used for this DB cluster. Valid values: `aurora`, `aurora-mysql`, `aurora-postgresql` | `string` | `"aurora-postgresql"` | no |
 | <a name="input_aurora_engine_mode"></a> [aurora\_engine\_mode](#input\_aurora\_engine\_mode) | The database engine mode. Valid values: `parallelquery`, `provisioned`, `serverless` | `string` | `"provisioned"` | no |
 | <a name="input_aurora_engine_version"></a> [aurora\_engine\_version](#input\_aurora\_engine\_version) | The version of the database engine tocl use. See `aws rds describe-db-engine-versions` | `string` | `"14.5"` | no |
@@ -130,7 +131,7 @@ module "aurora" {
 | <a name="input_aurora_scaling_configuration"></a> [aurora\_scaling\_configuration](#input\_aurora\_scaling\_configuration) | List of nested attributes with scaling properties. Only valid when engine\_mode is set to serverless | <pre>list(object({<br>    auto_pause               = bool<br>    max_capacity             = number<br>    min_capacity             = number<br>    seconds_until_auto_pause = number<br>    timeout_action           = string<br>  }))</pre> | `[]` | no |
 | <a name="input_aurora_security_groups"></a> [aurora\_security\_groups](#input\_aurora\_security\_groups) | List of security group IDs to be allowed to connect to the DB instance | `list(string)` | `[]` | no |
 | <a name="input_aurora_serverlessv2_scaling_configuration"></a> [aurora\_serverlessv2\_scaling\_configuration](#input\_aurora\_serverlessv2\_scaling\_configuration) | serverlessv2 scaling properties | <pre>object({<br>    min_capacity = number<br>    max_capacity = number<br>  })</pre> | `null` | no |
-| <a name="input_aurora_storage_type"></a> [aurora\_storage\_type](#input\_aurora\_storage\_type) | One of 'standard' (magnetic), 'gp2' (general purpose SSD), or 'io1' (provisioned IOPS SSD) or aurora-iopt1 | `string` | `null` | no |
+| <a name="input_aurora_storage_type"></a> [aurora\_storage\_type](#input\_aurora\_storage\_type) | One of 'standard' (magnetic), 'gp2' / 'gp3' (general purpose SSD), or 'io1' (provisioned IOPS SSD) or aurora-iopt1 | `string` | `null` | no |
 | <a name="input_aurora_subnets"></a> [aurora\_subnets](#input\_aurora\_subnets) | Subnets for the cluster to run in. | `list(string)` | `[]` | no |
 | <a name="input_context"></a> [context](#input\_context) | Single object for setting entire context at once.<br>See description of individual variables for details.<br>Leave string and numeric variables as `null` to use default value.<br>Individual variable settings (non-null) override settings in context object,<br>except for attributes, tags, and additional\_tag\_map, which are merged. | `any` | <pre>{<br>  "additional_tag_map": {},<br>  "attributes": [],<br>  "delimiter": null,<br>  "descriptor_formats": {},<br>  "enabled": true,<br>  "environment": null,<br>  "id_length_limit": null,<br>  "label_key_case": null,<br>  "label_order": [],<br>  "label_value_case": null,<br>  "labels_as_tags": [<br>    "unset"<br>  ],<br>  "name": null,<br>  "namespace": null,<br>  "regex_replace_chars": null,<br>  "stage": null,<br>  "tags": {},<br>  "tenant": null<br>}</pre> | no |
 | <a name="input_deletion_protection"></a> [deletion\_protection](#input\_deletion\_protection) | Protect the instance from being deleted | `bool` | `false` | no |
@@ -155,6 +156,7 @@ module "aurora" {
 | <a name="input_performance_insights_kms_key_id"></a> [performance\_insights\_kms\_key\_id](#input\_performance\_insights\_kms\_key\_id) | The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true | `string` | `""` | no |
 | <a name="input_performance_insights_retention_period"></a> [performance\_insights\_retention\_period](#input\_performance\_insights\_retention\_period) | Amount of time in days to retain Performance Insights data. Either 7 (7 days) or 731 (2 years) | `number` | `null` | no |
 | <a name="input_rds_enable_custom_option_group"></a> [rds\_enable\_custom\_option\_group](#input\_rds\_enable\_custom\_option\_group) | Enable the custom Option Group for restoring backups via S3 | `bool` | `false` | no |
+| <a name="input_rds_enabled_cloudwatch_logs_exports"></a> [rds\_enabled\_cloudwatch\_logs\_exports](#input\_rds\_enabled\_cloudwatch\_logs\_exports) | List of log types to enable for exporting to CloudWatch logs. If omitted, no logs will be exported. Valid values (depending on engine): alert, audit, error, general, listener, slowquery, trace, postgresql (PostgreSQL), upgrade (PostgreSQL). | `list(string)` | `[]` | no |
 | <a name="input_rds_instance_allocated_storage"></a> [rds\_instance\_allocated\_storage](#input\_rds\_instance\_allocated\_storage) | The allocated storage in GBs. Required unless a snapshot\_identifier or replicate\_source\_db is provided. | `number` | `20` | no |
 | <a name="input_rds_instance_allow_major_version_upgrade"></a> [rds\_instance\_allow\_major\_version\_upgrade](#input\_rds\_instance\_allow\_major\_version\_upgrade) | Allow major version upgrade | `bool` | `false` | no |
 | <a name="input_rds_instance_allowed_cidr_blocks"></a> [rds\_instance\_allowed\_cidr\_blocks](#input\_rds\_instance\_allowed\_cidr\_blocks) | The whitelisted CIDRs which to allow ingress traffic to the DB instance | `list(string)` | `[]` | no |
@@ -170,17 +172,18 @@ module "aurora" {
 | <a name="input_rds_instance_database_user"></a> [rds\_instance\_database\_user](#input\_rds\_instance\_database\_user) | The name of the database to create when the DB instance is created | `string` | `"admin"` | no |
 | <a name="input_rds_instance_db_options"></a> [rds\_instance\_db\_options](#input\_rds\_instance\_db\_options) | A list of DB options to apply with an option group. Depends on DB engine | <pre>list(object({<br>    db_security_group_memberships  = list(string)<br>    option_name                    = string<br>    port                           = number<br>    version                        = string<br>    vpc_security_group_memberships = list(string)<br><br>    option_settings = list(object({<br>      name  = string<br>      value = string<br>    }))<br>  }))</pre> | `[]` | no |
 | <a name="input_rds_instance_db_parameter"></a> [rds\_instance\_db\_parameter](#input\_rds\_instance\_db\_parameter) | A list of DB parameters to apply. Note that parameters may differ from a DB family to another | <pre>list(object({<br>    apply_method = string<br>    name         = string<br>    value        = string<br>  }))</pre> | `[]` | no |
-| <a name="input_rds_instance_db_parameter_group"></a> [rds\_instance\_db\_parameter\_group](#input\_rds\_instance\_db\_parameter\_group) | The DB parameter group family name. The value depends on DB engine used. See DBParameterGroupFamily for instructions on how to retrieve applicable value. | `string` | `"postgres14"` | no |
+| <a name="input_rds_instance_db_parameter_group"></a> [rds\_instance\_db\_parameter\_group](#input\_rds\_instance\_db\_parameter\_group) | The DB parameter group family name. The value depends on DB engine used. See [DBParameterGroupFamily](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html#API_CreateDBParameterGroup_RequestParameters) for instructions on how to retrieve applicable value | `string` | `"postgres16"` | no |
+| <a name="input_rds_instance_db_parameter_group_name"></a> [rds\_instance\_db\_parameter\_group\_name](#input\_rds\_instance\_db\_parameter\_group\_name) | Name of the DB parameter group to associate. | `string` | `""` | no |
 | <a name="input_rds_instance_dns_zone_id"></a> [rds\_instance\_dns\_zone\_id](#input\_rds\_instance\_dns\_zone\_id) | The ID of the DNS Zone in Route53 where a new DNS record will be created for the DB host name | `string` | `""` | no |
 | <a name="input_rds_instance_enabled"></a> [rds\_instance\_enabled](#input\_rds\_instance\_enabled) | Enable creation of an RDS instance | `bool` | `false` | no |
 | <a name="input_rds_instance_engine"></a> [rds\_instance\_engine](#input\_rds\_instance\_engine) | Database engine type. Required unless a snapshot\_identifier or replicate\_source\_db is provided. For supported values, see the Engine parameter in API action CreateDBInstance. | `string` | `"postgres"` | no |
-| <a name="input_rds_instance_engine_version"></a> [rds\_instance\_engine\_version](#input\_rds\_instance\_engine\_version) | Database engine version, depends on engine type. Required unless a snapshot\_identifier or replicate\_source\_db is provided. | `string` | `"14.3"` | no |
+| <a name="input_rds_instance_engine_version"></a> [rds\_instance\_engine\_version](#input\_rds\_instance\_engine\_version) | Database engine version, depends on engine type. Required unless a snapshot\_identifier or replicate\_source\_db is provided. | `string` | `"16.2"` | no |
 | <a name="input_rds_instance_host_name"></a> [rds\_instance\_host\_name](#input\_rds\_instance\_host\_name) | The DB host name created in Route53 | `string` | `"db"` | no |
-| <a name="input_rds_instance_instance_class"></a> [rds\_instance\_instance\_class](#input\_rds\_instance\_instance\_class) | Class of RDS instance | `string` | `"db.t2.medium"` | no |
+| <a name="input_rds_instance_instance_class"></a> [rds\_instance\_instance\_class](#input\_rds\_instance\_instance\_class) | Class of RDS instance | `string` | `"db.t3.medium"` | no |
 | <a name="input_rds_instance_iops"></a> [rds\_instance\_iops](#input\_rds\_instance\_iops) | RDS instance IOPS | `number` | `0` | no |
 | <a name="input_rds_instance_license_model"></a> [rds\_instance\_license\_model](#input\_rds\_instance\_license\_model) | License model for this DB. Optional, but required for some DB Engines. Valid values: license-included \| bring-your-own-license \| general-public-license | `string` | `""` | no |
 | <a name="input_rds_instance_maintenance_window"></a> [rds\_instance\_maintenance\_window](#input\_rds\_instance\_maintenance\_window) | The window to perform maintenance in. Syntax: 'ddd:hh24:mi-ddd:hh24:mi' UTC | `string` | `"Mon:03:00-Mon:04:00"` | no |
-| <a name="input_rds_instance_major_engine_version"></a> [rds\_instance\_major\_engine\_version](#input\_rds\_instance\_major\_engine\_version) | major\_engine\_version	Database MAJOR engine version, depends on engine type | `string` | `"14"` | no |
+| <a name="input_rds_instance_major_engine_version"></a> [rds\_instance\_major\_engine\_version](#input\_rds\_instance\_major\_engine\_version) | major\_engine\_version	Database MAJOR engine version, depends on engine type | `string` | `"16"` | no |
 | <a name="input_rds_instance_multi_az"></a> [rds\_instance\_multi\_az](#input\_rds\_instance\_multi\_az) | Set to true if multi AZ deployment must be supported | `bool` | `false` | no |
 | <a name="input_rds_instance_name"></a> [rds\_instance\_name](#input\_rds\_instance\_name) | RDS Instance name | `string` | `""` | no |
 | <a name="input_rds_instance_name_override"></a> [rds\_instance\_name\_override](#input\_rds\_instance\_name\_override) | If `true`, this will set a the RDS Instance name to what is defined in var.rds\_instance\_name.<br>If `false`, this will prepend ${var.namespace}-${var.environment} to ${var.rds\_instance\_name}" | `bool` | `false` | no |
@@ -190,10 +193,11 @@ module "aurora" {
 | <a name="input_rds_instance_skip_final_snapshot"></a> [rds\_instance\_skip\_final\_snapshot](#input\_rds\_instance\_skip\_final\_snapshot) | If true (default), no snapshot will be made before deleting DB | `bool` | `true` | no |
 | <a name="input_rds_instance_snapshot_identifier"></a> [rds\_instance\_snapshot\_identifier](#input\_rds\_instance\_snapshot\_identifier) | Snapshot identifier e.g: rds:production-2019-06-26-06-05. If specified, the module create cluster from the snapshot | `string` | `null` | no |
 | <a name="input_rds_instance_storage_encrypted"></a> [rds\_instance\_storage\_encrypted](#input\_rds\_instance\_storage\_encrypted) | Specifies whether the DB instance is encrypted. The default is false if not specified | `bool` | `true` | no |
-| <a name="input_rds_instance_storage_type"></a> [rds\_instance\_storage\_type](#input\_rds\_instance\_storage\_type) | One of 'standard' (magnetic), 'gp2' (general purpose SSD), or 'io1' (provisioned IOPS SSD) | `string` | `"gp2"` | no |
+| <a name="input_rds_instance_storage_type"></a> [rds\_instance\_storage\_type](#input\_rds\_instance\_storage\_type) | One of 'standard' (magnetic), 'gp2' / 'gp3' (general purpose SSD), or 'io1' (provisioned IOPS SSD) | `string` | `"gp3"` | no |
 | <a name="input_rds_instance_subnet_ids"></a> [rds\_instance\_subnet\_ids](#input\_rds\_instance\_subnet\_ids) | List of subnet IDs for the DB. DB instance will be created in the VPC associated with the DB subnet group provisioned using the subnet IDs. Specify one of subnet\_ids, db\_subnet\_group\_name or availability\_zone | `list(string)` | `[]` | no |
 | <a name="input_rds_kms_key_arn_override"></a> [rds\_kms\_key\_arn\_override](#input\_rds\_kms\_key\_arn\_override) | Override the default created KMS key to encrypt storage | `string` | `""` | no |
 | <a name="input_rds_kms_key_id_override"></a> [rds\_kms\_key\_id\_override](#input\_rds\_kms\_key\_id\_override) | Override the default created KMS key ID to encrypt storage | `string` | `""` | no |
+| <a name="input_rds_monitoring_interval"></a> [rds\_monitoring\_interval](#input\_rds\_monitoring\_interval) | The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. Valid Values are 0, 1, 5, 10, 15, 30, 60 | `number` | `0` | no |
 | <a name="input_rds_random_admin_password_length"></a> [rds\_random\_admin\_password\_length](#input\_rds\_random\_admin\_password\_length) | Length of the generated random password. | `number` | `64` | no |
 | <a name="input_regex_replace_chars"></a> [regex\_replace\_chars](#input\_regex\_replace\_chars) | Terraform regular expression (regex) string.<br>Characters matching the regex will be removed from the ID elements.<br>If not set, `"/[^a-zA-Z0-9-]/"` is used to remove all characters other than hyphens, letters and digits. | `string` | `null` | no |
 | <a name="input_region"></a> [region](#input\_region) | Region which the resource is deployed to | `string` | `"us-east-1"` | no |
