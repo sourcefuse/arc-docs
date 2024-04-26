@@ -125,10 +125,14 @@ module "this" {
 
 ## Versioning
 
-This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.
+while Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
 
-When you intend to commit to `main`, you will need to increment this version. Once the project is merged,
-the pipeline will kick off and tag the latest git commit.
+For Example
+
+```sh
+git commit -m "your commit message #major"
+```
+By specifying this , it will bump the version and if you don't specify this in your commit message then by default it will consider patch and will bump that accordingly
 
 ## Development
 
