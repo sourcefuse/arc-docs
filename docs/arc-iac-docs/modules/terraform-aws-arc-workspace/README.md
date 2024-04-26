@@ -1,5 +1,9 @@
 # [terraform-aws-arc-workspace](https://github.com/sourcefuse/terraform-aws-arc-workspace)
 
+<a href="https://github.com/sourcefuse/terraform-aws-arc-workspace/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-workspace.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-workspace/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-workspace.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-workspace)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-workspace)
+
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-workspace/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-workspace/actions/workflows/snyk.yaml)
 
 ## Overview
@@ -8,7 +12,7 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Worksp
 
 ## Usage
 
-To see a Microsoft AD example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-workspace/blob/main/examples/Microsoft-AD/main.tf) file in the example folder.
+To see a Microsoft AD example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-workspace/blob/main/examples/Microsoft-AD/main.tf) file in the example folder.  
 
 ```hcl
 module "microsoft-ad-workspace" {
@@ -187,7 +191,7 @@ For Example
 ```sh
 git commit -m "your commit message #major"
 ```
-By specifying this , it will bump the version and if you don't specify this in your commit message then by default it will consider patch and will bump that accordingly
+By specifying this , it will bump the version and if you don't specify this in your commit message then by default it will consider patch and will bump that accordingly  
 
 ## Development
 
@@ -214,7 +218,7 @@ By specifying this , it will bump the version and if you don't specify this in y
   go mod init github.com/sourcefuse/arc-terraform-workspace
   go get github.com/gruntwork-io/terratest/modules/terraform
   ```
-- Now execute the test
+- Now execute the test  
   ```sh
   cd test
   go test
