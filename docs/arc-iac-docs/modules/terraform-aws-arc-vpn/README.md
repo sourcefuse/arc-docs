@@ -1,5 +1,7 @@
 # [terraform-aws-arc-vpn](https://github.com/sourcefuse/terraform-aws-arc-vpn)
 
+<a href="https://github.com/sourcefuse/terraform-aws-arc-vpn/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-vpn.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-vpn/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-vpn.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-vpn)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-vpn)
 
 [![Snyk](https://github.com/sourcefuse/terraform-aws-refarch-vpn/actions/workflows/test.yml/badge.svg)](https://github.com/sourcefuse/c/actions/workflows/test.yml)
