@@ -130,8 +130,8 @@ Terraform will display a plan showing the changes it intends to make. Review the
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.3 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 4.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.4, < 2.0.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.0, < 6.0 |
 
 ## Providers
 
@@ -146,7 +146,7 @@ Terraform will display a plan showing the changes it intends to make. Review the
 | <a name="module_acm"></a> [acm](#module\_acm) | git::https://github.com/cloudposse/terraform-aws-acm-request-certificate | 0.17.0 |
 | <a name="module_alb"></a> [alb](#module\_alb) | ./modules/alb | n/a |
 | <a name="module_alb_sg"></a> [alb\_sg](#module\_alb\_sg) | git::https://github.com/cloudposse/terraform-aws-security-group | 2.0.0 |
-| <a name="module_ecs"></a> [ecs](#module\_ecs) | git::https://github.com/terraform-aws-modules/terraform-aws-ecs | v5.7.4 |
+| <a name="module_ecs"></a> [ecs](#module\_ecs) | git::https://github.com/terraform-aws-modules/terraform-aws-ecs | v5.11.1 |
 | <a name="module_health_check"></a> [health\_check](#module\_health\_check) | ./modules/health-check | n/a |
 
 ## Resources
