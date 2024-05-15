@@ -6,6 +6,12 @@
 <a href="https://www.npmjs.com/package/loopback4-soft-delete">
 <img src="https://img.shields.io/npm/v/loopback4-soft-delete.svg" alt="npm version" />
 </a>
+<a href="https://sonarcloud.io/summary/new_code?id=sourcefuse_loopback4-soft-delete" target="_blank">
+<img alt="Sonar Quality Gate" src="https://img.shields.io/sonar/quality_gate/sourcefuse_loopback4-soft-delete?server=https%3A%2F%2Fsonarcloud.io">
+</a>
+<a href="https://app.snyk.io/org/ashishkaushik/reporting?context[page]=issues-detail&project_target=%255B%2522sourcefuse%252Floopback4-soft-delete%2522%255D&project_origin=%255B%2522github%2522%255D&issue_status=%255B%2522Open%2522%255D&issue_by=Severity&table_issues_detail_cols=SCORE%257CCVE%257CCWE%257CPROJECT%257CEXPLOIT%2520MATURITY%257CAUTO%2520FIXABLE%257CINTRODUCED%257CSNYK%2520PRODUCT&v=1">
+<img alt="Synk Status" src="https://img.shields.io/badge/SYNK_SECURITY-MONITORED-GREEN">
+</a>
 <a href="https://github.com/sourcefuse/loopback4-soft-delete/graphs/contributors" target="_blank">
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/sourcefuse/loopback4-soft-delete">
 </a>
@@ -19,7 +25,6 @@
 <img alt="Powered By LoopBack 4" src="https://img.shields.io/badge/Powered%20by-LoopBack 4-brightgreen" />
 </a>
 </p>
-
 
 ## Install
 
