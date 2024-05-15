@@ -6,6 +6,9 @@
 <a href="https://www.npmjs.com/package/loopback4-kafka-client">
 <img src="https://img.shields.io/npm/v/loopback4-kafka-client.svg" alt="npm version" />
 </a>
+<a href="https://sonarcloud.io/summary/new_code?id=sourcefuse_loopback4-kafka-client" target="_blank">
+<img alt="Sonar Quality Gate" src="https://img.shields.io/sonar/quality_gate/sourcefuse_loopback4-kafka-client?server=https%3A%2F%2Fsonarcloud.io">
+</a>
 <a href="https://github.com/sourcefuse/loopback4-kafka-client/graphs/contributors" target="_blank">
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/sourcefuse/loopback4-kafka-client">
 </a>
