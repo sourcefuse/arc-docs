@@ -42,7 +42,7 @@ module "synthetic-monitoring" {
 
 Integrate the module with your existing Terraform mono repo configuration, follow the steps below:
 
-1. Create a new folder in `terraform/` named `backup`.
+1. Create a new folder in `terraform/` named `synthetics`.
 2. Create the required files, see the [examples](https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring/tree/main/example) to base off of.
 3. Configure with your backend
   - Create the environment backend configuration file: `config.<environment>.hcl`
