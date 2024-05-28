@@ -16,13 +16,43 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing synthe
 - Supports custom IAM roles and policies.
 - Flexible configuration options for canaries.
 
-## Usage
+## Introduction
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.  
+SourceFuse's AWS Reference Architecture (ARC) Terraform module for Synthetics Canaries centralizes and automates the monitoring of your applications and APIs. By leveraging AWS CloudWatch Synthetics, this module allows you to create and manage canary scripts that continuously check the availability and performance of your endpoints. It provides a comprehensive solution to detect anomalies, pinpoint performance issues, and ensure that your applications are functioning as expected. The module also supports scheduling canary runs, capturing and analyzing logs and metrics, and integrating with other AWS services for alerting and reporting. With cross-region and cross-account capabilities, it enhances monitoring coverage and resilience for your applications.
+
+### Prerequisites
+Before using this module, ensure you have the following:
+
+- AWS credentials configured.
+- Terraform installed.
+- A working knowledge of Terraform.
+
+## Getting Started
+
+1. **Define the Module**
+
+Initially, it's essential to define a Terraform module, which is organized as a distinct directory encompassing Terraform configuration files. Within this module directory, input variables and output values must be defined in the variables.tf and outputs.tf files, respectively. The following illustrates an example directory structure:
+
+
+```plaintext
+synthetics/
+|-- main.tf
+|-- variables.tf
+|-- outputs.tf
+```
+
+
+2. **Define Input Variables**
+
+Inside the `variables.tf` or in `*.tfvars` file, you should define values for the variables that the module requires.
+
+3. **Use the Module in Your Main Configuration**
+In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
 
 ```hcl
 module "synthetic-monitoring" {
-  source            = "../"
+  source            = "sourcefuse/arc-synthetic-monitoring/aws"
+  version           = "0.0.1"
   sns_topic_name    = var.sns_topic_name
   endpoint          = var.endpoint
   kms_key_alias     = var.kms_key_alias
@@ -31,6 +61,20 @@ module "synthetic-monitoring" {
   tags              = module.tags.tags
 }
 ```
+
+4. **Output Values**
+
+Inside the `outputs.tf` file of the module, you can define output values that can be referenced in the main configuration. For example:
+
+```hcl
+output "canary_arns" {
+  value = module.synthetic-monitoring.canary_arns
+}
+
+```
+## Usage
+
+To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring/blob/main/example/main.tf) file in the example folder.  
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -69,9 +113,9 @@ module "synthetic-monitoring" {
 | [aws_s3_bucket_public_access_block.public_access_block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_public_access_block) | resource |
 | [aws_s3_bucket_server_side_encryption_configuration.ssm](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_server_side_encryption_configuration) | resource |
 | [aws_s3_bucket_versioning.versioning](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_versioning) | resource |
-| [aws_sns_topic.alarm](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic) | resource |
-| [aws_sns_topic_policy.my_sns_topic_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic_policy) | resource |
-| [aws_sns_topic_subscription.my_subscription](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic_subscription) | resource |
+| [aws_sns_topic.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic) | resource |
+| [aws_sns_topic_policy.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic_policy) | resource |
+| [aws_sns_topic_subscription.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic_subscription) | resource |
 | [aws_synthetics_canary.dynamic_canaries_with_vpc](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/synthetics_canary) | resource |
 | [random_pet.iam_role_name](https://registry.terraform.io/providers/hashicorp/random/3.6.2/docs/resources/pet) | resource |
 | [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
