@@ -54,6 +54,12 @@ nav:
           - Security:
               - Security: "arc-iac-docs/modules/terraform-aws-arc-security"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-security/docs/module-usage-guide"
+          - Synthetic-Monitoring:
+              - Synthetic-Monitoring: "arc-iac-docs/modules/terraform-aws-arc-synthetic-monitoring"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-synthetic-monitoring/docs/module-usage-guide"
+          - ARC Backup:
+              - Backup: "arc-iac-docs/modules/terraform-aws-arc-backup"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-backup/docs/module-usage-guide"
           - Billing:
               - Billing: "arc-iac-docs/modules/terraform-aws-arc-billing"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-billing/docs/module-usage-guide"
