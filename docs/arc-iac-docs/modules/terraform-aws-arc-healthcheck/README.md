@@ -171,7 +171,8 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_cloudwatch_metric_alarm.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) | resource |
+| [aws_cloudwatch_metric_alarm.alarm_breaching](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) | resource |
+| [aws_cloudwatch_metric_alarm.ok](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) | resource |
 | [aws_route53_health_check.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_health_check) | resource |
 | [aws_sns_topic.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic) | resource |
 | [aws_sns_topic_subscription.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic_subscription) | resource |
@@ -184,13 +185,16 @@ No modules.
 | <a name="input_alarm_endpoint"></a> [alarm\_endpoint](#input\_alarm\_endpoint) | Alarm endpoint, this get added as a subcription to SNS | `string` | `""` | no |
 | <a name="input_alarm_endpoint_protocol"></a> [alarm\_endpoint\_protocol](#input\_alarm\_endpoint\_protocol) | Protocol to use. Valid values are: sqs, sms, lambda, firehose, and application. Protocols email, email-json, http and https are also valid but partially supported. See details below. | `string` | `"https"` | no |
 | <a name="input_alarm_prefix"></a> [alarm\_prefix](#input\_alarm\_prefix) | Prefix for Alarm | `string` | n/a | yes |
+| <a name="input_comparison_operator"></a> [comparison\_operator](#input\_comparison\_operator) | Specifies the arithmetic operation to use when comparing the specified statistic and threshold. The value should indicate the condition under which the alarm is triggered, such as 'GreaterThanThreshold', 'LessThanThreshold', 'GreaterThanOrEqualToThreshold', or 'LessThanOrEqualToThreshold'. | `string` | `"LessThanOrEqualToThreshold"` | no |
 | <a name="input_domain_name"></a> [domain\_name](#input\_domain\_name) | Domain name or ip address of checking service. | `string` | n/a | yes |
+| <a name="input_enable_alarm"></a> [enable\_alarm](#input\_enable\_alarm) | Flag to enable or disable the CloudWatch metric alarm. | `bool` | `false` | no |
 | <a name="input_evaluation_periods"></a> [evaluation\_periods](#input\_evaluation\_periods) | The number of periods over which data is compared to the specified threshold. | `number` | `2` | no |
 | <a name="input_failure_threshold"></a> [failure\_threshold](#input\_failure\_threshold) | The number of consecutive health checks that an endpoint must pass or fail. | `number` | n/a | yes |
 | <a name="input_invert_healthcheck"></a> [invert\_healthcheck](#input\_invert\_healthcheck) | A boolean value that indicates whether the status of health check should be inverted. For example, if a health check is healthy but Inverted is True , then Route 53 considers the health check to be unhealthy. | `bool` | `false` | no |
 | <a name="input_kms_id"></a> [kms\_id](#input\_kms\_id) | KMS id to encrpyt SNS, note : AWS managed keys doesn't work | `string` | `null` | no |
 | <a name="input_measure_latency"></a> [measure\_latency](#input\_measure\_latency) | Indicates whether you want Route 53 to measure the latency between health checkers in multiple AWS regions and your endpoint and to display CloudWatch latency graphs in the Route 53 console. | `string` | `false` | no |
 | <a name="input_name"></a> [name](#input\_name) | Health check name | `string` | n/a | yes |
+| <a name="input_ok_alarm_description"></a> [ok\_alarm\_description](#input\_ok\_alarm\_description) | OK Alarm description | `string` | `null` | no |
 | <a name="input_period"></a> [period](#input\_period) | The period in seconds over which the specified statistic is applied. Valid values are 10, 30, or any multiple of 60 | `number` | `10` | no |
 | <a name="input_port"></a> [port](#input\_port) | Port number of checking service. | `number` | `443` | no |
 | <a name="input_regions"></a> [regions](#input\_regions) | A list of AWS regions that you want Amazon Route 53 health checkers to check the specified endpoint from. | `list(string)` | <pre>[<br>  "us-east-1",<br>  "us-west-2",<br>  "us-west-1"<br>]</pre> | no |
@@ -198,6 +202,7 @@ No modules.
 | <a name="input_resource_path"></a> [resource\_path](#input\_resource\_path) | Resource path eg. /health | `string` | `""` | no |
 | <a name="input_routing_control_arn"></a> [routing\_control\_arn](#input\_routing\_control\_arn) | The Amazon Resource Name (ARN) for the Route 53 Application Recovery Controller routing control. This is used when health check type is RECOVERY\_CONTROL | `string` | `""` | no |
 | <a name="input_search_string"></a> [search\_string](#input\_search\_string) | String searched in the first 5120 bytes of the response body for check to be considered healthy. Only valid with HTTP\_STR\_MATCH and HTTPS\_STR\_MATCH | `string` | `null` | no |
+| <a name="input_statistic"></a> [statistic](#input\_statistic) | Specifies the metric statistic to use for the alarm. Common options include 'Average', 'Sum', 'SampleCount', 'Minimum', and 'Maximum'. This determines how the metric data points are aggregated over the specified period. | `string` | `"Average"` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags object. | `map(string)` | `{}` | no |
 | <a name="input_threshold"></a> [threshold](#input\_threshold) | The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models. | `number` | `1` | no |
 | <a name="input_type"></a> [type](#input\_type) | Type of health check. eg. HTTPS\_STR\_MATCH, HTTPS, HTTP | `string` | `"HTTPS"` | no |
