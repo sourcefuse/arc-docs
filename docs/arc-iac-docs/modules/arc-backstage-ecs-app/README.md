@@ -102,6 +102,7 @@ module "backstage" {
 | <a name="input_desired_count"></a> [desired\_count](#input\_desired\_count) | Number of ECS tasks to run for the service. | `number` | `3` | no |
 | <a name="input_egress_cidr_block"></a> [egress\_cidr\_block](#input\_egress\_cidr\_block) | ECS Tasks egress CIDR block | `string` | `"0.0.0.0/0"` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | ID element. Usually used for region e.g. 'uw2', 'us-west-2', OR role 'prod', 'staging', 'dev', 'UAT' | `string` | n/a | yes |
+| <a name="input_environment_variables"></a> [environment\_variables](#input\_environment\_variables) | (optional) List of additional environment variables | <pre>list(object({<br>    name  = string<br>    value = string<br>  }))</pre> | `[]` | no |
 | <a name="input_execution_policy_attachment_arns"></a> [execution\_policy\_attachment\_arns](#input\_execution\_policy\_attachment\_arns) | The ARNs of the policies you want to apply | `list(string)` | <pre>[<br>  "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"<br>]</pre> | no |
 | <a name="input_health_check_path_pattern"></a> [health\_check\_path\_pattern](#input\_health\_check\_path\_pattern) | Path pattern to match against the request URL. | `string` | `"/"` | no |
 | <a name="input_launch_type"></a> [launch\_type](#input\_launch\_type) | Launch type for the health check service. | `string` | `"FARGATE"` | no |
@@ -114,6 +115,7 @@ module "backstage" {
 | <a name="input_route_53_record_type"></a> [route\_53\_record\_type](#input\_route\_53\_record\_type) | Health check Route53 record type | `string` | `"A"` | no |
 | <a name="input_route_53_records"></a> [route\_53\_records](#input\_route\_53\_records) | List of A record domains to create for the health check service | `list(string)` | n/a | yes |
 | <a name="input_route_53_zone_name"></a> [route\_53\_zone\_name](#input\_route\_53\_zone\_name) | Route53 zone name used for looking up and creating an `A` record for the health check service | `string` | n/a | yes |
+| <a name="input_secret_list"></a> [secret\_list](#input\_secret\_list) | (optional) List of additional Secrets | <pre>list(object({<br>    name      = string<br>    valueFrom = string<br>  }))</pre> | `[]` | no |
 | <a name="input_secret_name"></a> [secret\_name](#input\_secret\_name) | Name of the secret in AWS Secrets Manager that contains Backstage secrets, such as POSTGRES\_USER and POSTGRES\_PASSWORD | `string` | `"arc/poc/backstage"` | no |
 | <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | Subnet IDs to run health check task in | `list(string)` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags to assign the resources. | `map(string)` | `{}` | no |
