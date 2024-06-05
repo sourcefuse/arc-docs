@@ -25,8 +25,8 @@ To see a full example, check out the [main.tf](./example/main.tf) file in the ex
 
 ```hcl
 module "elasticacheredis" {
-  source               = "sourcefuse/arc-cache/aws"
-  version              = "0.0.1"
+  source                        = "sourcefuse/arc-cache/aws"
+  version                       = "0.0.1"
   subnet_ids                    = data.aws_subnets.private.ids
   vpc_id                        = data.aws_vpc.vpc.id
   tags                          = module.tags.tags
