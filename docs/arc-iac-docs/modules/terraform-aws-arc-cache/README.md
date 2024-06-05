@@ -10,6 +10,15 @@
 
 SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Elasticache replication clusters.
 
+## Features
+ - Manages ElastiCache Redis clusters.
+ - Supports VPC configurations.
+ - Flexible configuration options for clusters.
+
+ ## Introduction
+
+ SourceFuse's AWS Reference Architecture (ARC) Terraform module for managing ElastiCache Redis clusters centralizes and automates the deployment and management of Redis clusters. This module helps you create and manage Redis clusters with options for high availability, encryption, and log delivery. It integrates with other AWS services, ensuring secure, scalable, and efficient Redis deployments. The module supports both single-node and multi-node configurations, providing a robust solution for your caching needs across various environments.
+
 ## Usage
 
 To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.  
