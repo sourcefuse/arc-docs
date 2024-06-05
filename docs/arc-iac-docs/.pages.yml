@@ -28,7 +28,9 @@ nav:
           - CloudFront:
               - CloudFront: "arc-iac-docs/modules/terraform-aws-arc-cloudfront"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-cloudfront/docs/module-usage-guide"
-          - Elasticache: "arc-iac-docs/modules/terraform-aws-elasticache"
+          - Elasticache:
+              - cache: "arc-iac-docs/modules/terraform-aws-arc-cache"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-cache/docs/module-usage-guide"
           - Healthcheck:
               - Healthcheck: "arc-iac-docs/modules/terraform-aws-arc-healthcheck"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-healthcheck/docs/module-usage-guide"
