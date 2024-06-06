@@ -14,6 +14,7 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Elasti
  - Manages ElastiCache Redis clusters.
  - Supports VPC configurations.
  - Flexible configuration options for clusters.
+ - Cloudwatch Alarms support for cache cpu and cache freeable-memory
 
 ## Introduction
 
@@ -69,6 +70,8 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [aws_cloudwatch_metric_alarm.cache_cpu](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) | resource |
+| [aws_cloudwatch_metric_alarm.cache_memory](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) | resource |
 | [aws_elasticache_parameter_group.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/elasticache_parameter_group) | resource |
 | [aws_elasticache_replication_group.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/elasticache_replication_group) | resource |
 | [aws_elasticache_subnet_group.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/elasticache_subnet_group) | resource |
@@ -81,23 +84,33 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_alarm_actions"></a> [alarm\_actions](#input\_alarm\_actions) | Alarm action list | `list(string)` | `[]` | no |
+| <a name="input_alarm_cpu_threshold_percent"></a> [alarm\_cpu\_threshold\_percent](#input\_alarm\_cpu\_threshold\_percent) | CPU threshold alarm level | `number` | `75` | no |
+| <a name="input_alarm_memory_threshold_bytes"></a> [alarm\_memory\_threshold\_bytes](#input\_alarm\_memory\_threshold\_bytes) | Ram threshold alarm level | `number` | `10000000` | no |
 | <a name="input_apply_immediately"></a> [apply\_immediately](#input\_apply\_immediately) | Apply changes immediately | `bool` | `true` | no |
 | <a name="input_at_rest_encryption_enabled"></a> [at\_rest\_encryption\_enabled](#input\_at\_rest\_encryption\_enabled) | Specifies whether at-rest encryption is enabled. | `bool` | `true` | no |
 | <a name="input_auto_minor_version_upgrade"></a> [auto\_minor\_version\_upgrade](#input\_auto\_minor\_version\_upgrade) | Specifies whether minor version engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Only supported if the engine version is 6 or higher. | `bool` | `null` | no |
 | <a name="input_automatic_failover_enabled"></a> [automatic\_failover\_enabled](#input\_automatic\_failover\_enabled) | Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails | `bool` | `false` | no |
 | <a name="input_cluster_mode_enabled"></a> [cluster\_mode\_enabled](#input\_cluster\_mode\_enabled) | Flag to enable/disable creation of a native redis cluster. `automatic_failover_enabled` must be set to `true`. Only 1 `cluster_mode` block is allowed | `bool` | `false` | no |
+| <a name="input_cpu_alarm_description"></a> [cpu\_alarm\_description](#input\_cpu\_alarm\_description) | Description for the CPU utilization CloudWatch alarm | `string` | `"Triggers when the CPU utilization of the Redis cluster exceeds the defined threshold, indicating high CPU usage."` | no |
 | <a name="input_create_cache_subnet_group"></a> [create\_cache\_subnet\_group](#input\_create\_cache\_subnet\_group) | A boolean indicates whether to create aws elasticache subnet group or not | `bool` | `true` | no |
 | <a name="input_create_parameter_group"></a> [create\_parameter\_group](#input\_create\_parameter\_group) | Whether new parameter group should be created. Set to false if you want to use existing parameter group | `bool` | `true` | no |
 | <a name="input_create_security_group"></a> [create\_security\_group](#input\_create\_security\_group) | Determines whether to create a new security group. | `bool` | `true` | no |
 | <a name="input_elasticache_subnet_group_name"></a> [elasticache\_subnet\_group\_name](#input\_elasticache\_subnet\_group\_name) | Name for the cache subnet group | `string` | `null` | no |
+| <a name="input_enable_cloudwatch_alarms"></a> [enable\_cloudwatch\_alarms](#input\_enable\_cloudwatch\_alarms) | Boolean flag to enable/disable CloudWatch metrics alarms | `bool` | `false` | no |
 | <a name="input_engine_version"></a> [engine\_version](#input\_engine\_version) | Version number of the cache engine to be used for the cache clusters in this replication group | `string` | `"7.0"` | no |
+| <a name="input_evaluation_periods"></a> [evaluation\_periods](#input\_evaluation\_periods) | Number of periods over which data is compared to the specified threshold | `number` | `1` | no |
 | <a name="input_family"></a> [family](#input\_family) | Redis family | `string` | `"redis7"` | no |
 | <a name="input_log_delivery_configuration"></a> [log\_delivery\_configuration](#input\_log\_delivery\_configuration) | The log\_delivery\_configuration block allows the streaming of Redis SLOWLOG or Redis Engine Log to CloudWatch Logs or Kinesis Data Firehose. Max of 2 blocks. | `list(map(any))` | `[]` | no |
+| <a name="input_memory_alarm_description"></a> [memory\_alarm\_description](#input\_memory\_alarm\_description) | Description for the freeable memory CloudWatch alarm | `string` | `"Triggers when the available freeable memory of the Redis cluster falls below the defined threshold, indicating potential memory pressure or resource issues."` | no |
 | <a name="input_multi_az_enabled"></a> [multi\_az\_enabled](#input\_multi\_az\_enabled) | Specifies whether to enable Multi-AZ Support for the replication group | `bool` | `false` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name of elasticache redis | `string` | n/a | yes |
+| <a name="input_namespace"></a> [namespace](#input\_namespace) | The namespace of the CloudWatch metric | `string` | `"AWS/ElastiCache"` | no |
 | <a name="input_node_type"></a> [node\_type](#input\_node\_type) | Instance class to be used | `string` | `"cache.t2.micro"` | no |
+| <a name="input_notification_topic_arn"></a> [notification\_topic\_arn](#input\_notification\_topic\_arn) | (Optional) ARN of an SNS topic to send ElastiCache notifications to. | `string` | `""` | no |
 | <a name="input_num_cache_clusters"></a> [num\_cache\_clusters](#input\_num\_cache\_clusters) | Number of cache clusters this replication group will have | `number` | `1` | no |
 | <a name="input_num_node_groups"></a> [num\_node\_groups](#input\_num\_node\_groups) | Number of node groups (shards) for this Redis replication group | `number` | `null` | no |
+| <a name="input_ok_actions"></a> [ok\_actions](#input\_ok\_actions) | The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Number (ARN) | `list(string)` | `[]` | no |
 | <a name="input_parameter"></a> [parameter](#input\_parameter) | A list of Redis parameters to apply. Note that parameters may differ from one Redis family to another | <pre>list(object({<br>    name  = string<br>    value = string<br>  }))</pre> | `[]` | no |
 | <a name="input_parameter_group_description"></a> [parameter\_group\_description](#input\_parameter\_group\_description) | elasticache paramter group | `string` | `null` | no |
 | <a name="input_parameter_group_name"></a> [parameter\_group\_name](#input\_parameter\_group\_name) | Override the default parameter group name | `string` | `null` | no |
@@ -110,6 +123,7 @@ No modules.
 | <a name="input_security_group_rules"></a> [security\_group\_rules](#input\_security\_group\_rules) | Ingress and egress rules for the security groups. | <pre>object({<br>    ingress = map(object({<br>      description       = optional(string)<br>      from_port         = number<br>      to_port           = number<br>      protocol          = string<br>      cidr_blocks       = optional(list(string))<br>      security_group_id = optional(list(string))<br>      ipv6_cidr_blocks  = optional(list(string))<br>      self              = optional(bool)<br>    }))<br>    egress = map(object({<br>      description       = optional(string)<br>      from_port         = number<br>      to_port           = number<br>      protocol          = string<br>      cidr_blocks       = optional(list(string))<br>      security_group_id = optional(list(string))<br>      ipv6_cidr_blocks  = optional(list(string))<br>    }))<br>  })</pre> | <pre>{<br>  "egress": {},<br>  "ingress": {}<br>}</pre> | no |
 | <a name="input_snapshot_retention_limit"></a> [snapshot\_retention\_limit](#input\_snapshot\_retention\_limit) | Number of days for which ElastiCache will retain automatic cache cluster snapshots before deleting them | `number` | `1` | no |
 | <a name="input_snapshot_window"></a> [snapshot\_window](#input\_snapshot\_window) | Daily time range during which ElastiCache will begin taking a daily snapshot of your cache cluster | `string` | `"01:30-02:30"` | no |
+| <a name="input_statistic"></a> [statistic](#input\_statistic) | The statistic to apply to the alarm's associated metric | `string` | `"Average"` | no |
 | <a name="input_subnet_group_description"></a> [subnet\_group\_description](#input\_subnet\_group\_description) | Description for the cache subnet group | `string` | `null` | no |
 | <a name="input_subnet_group_name"></a> [subnet\_group\_name](#input\_subnet\_group\_name) | Required when create\_aws\_elasticache\_subnet\_group is false. Name of the cache subnet group to be used for the replication group. | `string` | `null` | no |
 | <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | private subnet ids | `list(string)` | n/a | yes |
