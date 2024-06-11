@@ -31,6 +31,9 @@ nav:
           - Elasticache:
               - cache: "arc-iac-docs/modules/terraform-aws-arc-cache"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-cache/docs/module-usage-guide"
+          - ARC CICD:
+              - cicd: "arc-iac-docs/modules/terraform-aws-arc-cicd"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-cicd/docs/module-usage-guide"
           - Healthcheck:
               - Healthcheck: "arc-iac-docs/modules/terraform-aws-arc-healthcheck"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-healthcheck/docs/module-usage-guide"
