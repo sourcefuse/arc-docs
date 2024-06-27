@@ -161,7 +161,6 @@ See [all contributors](https://github.com/sourcefuse/loopback4-microservice-cata
 ## Reference Links
 
 - https://www.sourcefuse.com/arc-by-sourcefuse/
-
 - https://loopback.io/doc/en/lb4/
 - https://loopback.io/doc/en/lb4/Extending-LoopBack-4.html
 - https://fourtheorem.com/monorepo/
