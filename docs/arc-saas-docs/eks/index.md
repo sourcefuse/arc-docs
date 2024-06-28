@@ -1,8 +1,8 @@
 ---
-title: Introduction
+title: EKS
 ---
 
-# ARC SaaS
+# EKS based Reference Architecture
 
 {%
    include-markdown "./README.md"

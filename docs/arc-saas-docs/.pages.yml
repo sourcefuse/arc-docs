@@ -2,3 +2,4 @@ title: ARC SaaS
 nav:
   - index.md
   - services
+  - EKS: "arc-saas-docs/services/eks/index.md"
