@@ -1,3 +1,5 @@
+# ARC EKS SAAS Reference Architecture
+
 - [Introduction](#introduction)
 - [The High-Level Architecture](#the-high-level-architecture)
   - [Tenant Onboarding](#tenant-onboarding)
