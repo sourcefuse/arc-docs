@@ -1,3 +1,5 @@
+![Module Structure](./static/banner.png)
+
 # [terraform-aws-arc-opensearch](https://github.com/sourcefuse/terraform-aws-arc-opensearch)
 
 <a href="https://github.com/sourcefuse/terraform-aws-arc-opensearch/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-opensearch.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-opensearch/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-opensearch.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
@@ -10,7 +12,7 @@ Terraform module for supporting AWS OpenSearch. Creates an admin role and output
 
 ## Usage
 
-See the `example` folder for a working module example.
+See the `example/vpc` folder for a working module example.
 
 ```hcl
 ################################################################################
@@ -30,14 +32,38 @@ module "opensearch" {
 }
 
 ```
+See the `example/non-vpc` folder if you want your os to be public
+
+```hcl
+################################################################################
+## opensearch
+################################################################################
+module "opensearch" {
+  source                         = "sourcefuse/arc-opensearch/aws"
+  version                        = "1.0.3"
+  environment                    = var.environment
+  namespace                      = var.namespace
+  create_iam_service_linked_role = false # set to false if a cluster already exists
+  instance_count                 = var.instance_count
+  instance_type                  = var.instance_type
+  ebs_volume_size                = var.ebs_volume_size
+  vpc_enabled                    = false
+  allowed_cidr_blocks            = [""]  // non VPC ES to allow anonymous access from whitelisted IP ranges without requests signing
+  anonymous_iam_actions          = ["es:ESHttpGet", "es:ESHttpPut", "es:ESHttpPost"] // Actions for anonymous user
+  iam_actions                    = ["es:ESHttpGet", "es:ESHttpPut", "es:ESHttpPost"] // Actions for user
+
+  tags = module.tags.tags
+}
+
+```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.3 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 4.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5, < 2.0.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.0, < 6.0 |
 | <a name="requirement_null"></a> [null](#requirement\_null) | >= 3.2 |
 | <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.4 |
 
@@ -52,7 +78,7 @@ module "opensearch" {
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_opensearch"></a> [opensearch](#module\_opensearch) | git::https://github.com/cloudposse/terraform-aws-elasticsearch | 0.44.0 |
+| <a name="module_opensearch"></a> [opensearch](#module\_opensearch) | cloudposse/elasticsearch/aws | 0.47.0 |
 
 ## Resources
 
@@ -74,6 +100,8 @@ module "opensearch" {
 | <a name="input_advanced_options"></a> [advanced\_options](#input\_advanced\_options) | Key-value string pairs to specify advanced configuration options | `map(any)` | <pre>{<br>  "override_main_response_version": false,<br>  "rest.action.multi.allow_explicit_index": "true"<br>}</pre> | no |
 | <a name="input_advanced_security_options_enabled"></a> [advanced\_security\_options\_enabled](#input\_advanced\_security\_options\_enabled) | AWS Elasticsearch Kibana enchanced security plugin enabling (forces new resource) | `bool` | `true` | no |
 | <a name="input_advanced_security_options_internal_user_database_enabled"></a> [advanced\_security\_options\_internal\_user\_database\_enabled](#input\_advanced\_security\_options\_internal\_user\_database\_enabled) | Whether to enable or not internal Kibana user database for ELK OpenDistro security plugin | `bool` | `true` | no |
+| <a name="input_allowed_cidr_blocks"></a> [allowed\_cidr\_blocks](#input\_allowed\_cidr\_blocks) | List of CIDR blocks to be allowed to connect to the cluster | `list(string)` | `[]` | no |
+| <a name="input_anonymous_iam_actions"></a> [anonymous\_iam\_actions](#input\_anonymous\_iam\_actions) | List of actions to allow for the anonymous (`*`) IAM roles, _e.g._ `es:ESHttpGet`, `es:ESHttpPut`, `es:ESHttpPost` | `list(string)` | `[]` | no |
 | <a name="input_availability_zones"></a> [availability\_zones](#input\_availability\_zones) | List of availability zones to deploy the cluster in. | `list(string)` | <pre>[<br>  "us-east-1a",<br>  "us-east-1b"<br>]</pre> | no |
 | <a name="input_cognito_authentication_enabled"></a> [cognito\_authentication\_enabled](#input\_cognito\_authentication\_enabled) | Whether to enable Amazon Cognito authentication with Kibana | `bool` | `false` | no |
 | <a name="input_cognito_iam_role_arn"></a> [cognito\_iam\_role\_arn](#input\_cognito\_iam\_role\_arn) | ARN of the IAM role that has the AmazonESCognitoAccess policy attached | `string` | `""` | no |
@@ -86,6 +114,7 @@ module "opensearch" {
 | <a name="input_custom_opensearch_password"></a> [custom\_opensearch\_password](#input\_custom\_opensearch\_password) | Custom Administrator password to be assigned to `var.admin_username`. If undefined, it will be a randomly generated password. Does not work if `var.generate_random_password` is `true`. | `string` | `""` | no |
 | <a name="input_ebs_volume_size"></a> [ebs\_volume\_size](#input\_ebs\_volume\_size) | EBS volumes for data storage in GB | `number` | `10` | no |
 | <a name="input_elasticsearch_version"></a> [elasticsearch\_version](#input\_elasticsearch\_version) | Version of ElasticSearch or OpenSearch to deploy (\_e.g.\_ OpenSearch\_2.3, OpenSearch\_1.3, OpenSearch\_1.2, OpenSearch\_1.1, OpenSearch\_1.0, 7.4, 7.1, etc. | `string` | `"OpenSearch_2.3"` | no |
+| <a name="input_enable_public_access"></a> [enable\_public\_access](#input\_enable\_public\_access) | Set to false if ES should be deployed outside of VPC. | `bool` | `false` | no |
 | <a name="input_encrypt_at_rest_enabled"></a> [encrypt\_at\_rest\_enabled](#input\_encrypt\_at\_rest\_enabled) | Whether to enable encryption at rest | `bool` | `true` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | Name of the environment, i.e. dev, stage, prod | `string` | n/a | yes |
 | <a name="input_generate_random_password"></a> [generate\_random\_password](#input\_generate\_random\_password) | Generate a random password for the OpenSearch Administrator.<br>If this value is `true` and `var.custom_opensearch_password` is defined, `var.custom_opensearch_password` will be ignored. | `bool` | `true` | no |
@@ -97,9 +126,9 @@ module "opensearch" {
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | Namespace of the project, i.e. arc | `string` | n/a | yes |
 | <a name="input_node_to_node_encryption_enabled"></a> [node\_to\_node\_encryption\_enabled](#input\_node\_to\_node\_encryption\_enabled) | Whether to enable node-to-node encryption | `bool` | `true` | no |
 | <a name="input_security_group_ids"></a> [security\_group\_ids](#input\_security\_group\_ids) | List of security groups to assign OpenSearch | `list(string)` | `[]` | no |
-| <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | List of Subnet IDs to assign OpenSearch | `list(string)` | n/a | yes |
+| <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | List of Subnet IDs to assign OpenSearch | `list(string)` | `[]` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Default tags to apply to every resource | `map(string)` | n/a | yes |
-| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | ID of the VPC where resources will be deployed to | `string` | n/a | yes |
+| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | ID of the VPC where resources will be deployed to | `string` | `null` | no |
 | <a name="input_zone_awareness_enabled"></a> [zone\_awareness\_enabled](#input\_zone\_awareness\_enabled) | Enable zone awareness for Elasticsearch cluster | `bool` | `true` | no |
 
 ## Outputs
