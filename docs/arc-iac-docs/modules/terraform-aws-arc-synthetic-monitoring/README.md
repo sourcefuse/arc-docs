@@ -1,3 +1,5 @@
+![Module Structure](./static/banner.png)
+
 # [terraform-aws-arc-synthetic-monitoring](https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
