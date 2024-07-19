@@ -1,10 +1,12 @@
+![Module Structure](./images/banner.png)
+
 # [terraform-aws-arc-bootstrap](https://github.com/sourcefuse/terraform-aws-arc-bootstrap)
 
 <a href="https://github.com/sourcefuse/terraform-aws-arc-bootstrap/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-bootstrap.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-bootstrap/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-bootstrap.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-bootstrap)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-bootstrap)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-module-aws-bootstrap/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-module-aws-bootstrap/actions/workflows/snyk.yaml)
+[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-bootstrap/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-bootstrap/actions/workflows/snyk.yaml)
 
 ## Introduction
 ---
@@ -51,7 +53,8 @@ In your main Terraform configuration file (e.g., main.tf), you can use the modul
 ```hcl
 module "bootstrap" {
   source  = "sourcefuse/arc-bootstrap/aws"
-  version = "1.1.3"
+  # version = "x.x.x"  # we recommend pinning the module to a specific version
+
   bucket_name              = var.bucket_name
   dynamodb_name            = var.dynamodb_name
 }
@@ -91,7 +94,7 @@ Terraform will display a plan showing the changes it intends to make. Review the
 After the initial apply of terraform, you can add backend section to migrate Terraforn state to S3 bucket
 ```hcl
 terraform {
-  required_version = "~> 1.4"
+  required_version = ">= 1.4"
 
   backend "s3" {
     region         = "us-east-1"
@@ -129,14 +132,14 @@ Our local state has now been migrated to the new backend. It is now safe to remo
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.4 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 3.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.4, < 2.0.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.0, < 6.0.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 3.75.2 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.58.0 |
 
 ## Modules
 
@@ -190,7 +193,7 @@ No modules.
 | <a name="input_noncurrent_version_transitions"></a> [noncurrent\_version\_transitions](#input\_noncurrent\_version\_transitions) | Non-current version transition blocks | `list(any)` | <pre>[<br>  {<br>    "days": 30,<br>    "storage_class": "STANDARD_IA"<br>  }<br>]</pre> | no |
 | <a name="input_schedule_frequency"></a> [schedule\_frequency](#input\_schedule\_frequency) | The S3 bucket inventory frequency. Defaults to Weekly. Options are 'Weekly' or 'Daily'. | `string` | `"Weekly"` | no |
 | <a name="input_sse_algorithm"></a> [sse\_algorithm](#input\_sse\_algorithm) | The server-side encryption algorithm to use. Valid values are AES256 and aws:kms | `string` | `"AES256"` | no |
-| <a name="input_tags"></a> [tags](#input\_tags) | A mapping of tags to assign to the bucket. | `map(string)` | <pre>{<br>  "Module": "terraform-module-aws-bootstrap",<br>  "TerraformManaged": "true"<br>}</pre> | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | A mapping of tags to assign to the bucket. | `map(string)` | <pre>{<br>  "Module": "terraform-aws-arc-bootstrap",<br>  "TerraformManaged": "true"<br>}</pre> | no |
 | <a name="input_transitions"></a> [transitions](#input\_transitions) | Current version transition blocks | `list(any)` | `[]` | no |
 
 ## Outputs
@@ -209,33 +212,25 @@ No modules.
 
 ### Versioning  
 
-while Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
+While Contributing or doing git commit please specify the breaking change in your commit message whether its major,minor or patch
 
 For Example
 
 ```sh
 git commit -m "your commit message #major"
 ```
-By specifying this , it will bump the version and if you dont specify this in your commit message then by default it will consider patch and will bump that accordingly
+By specifying this , it will bump the version and if you don't specify this in your commit message then by default it will consider patch and will bump that accordingly
 
 ### Prerequisites
 
 - [terraform-docs](https://github.com/segmentio/terraform-docs)
 - [pre-commit](https://pre-commit.com/#install)
-- [golang](https://golang.org/doc/install#install)
-- [golint](https://github.com/golang/lint#installation)
 
 ### Configurations
 
 - Configure pre-commit hooks
 ```shell
 pre-commit install
-```
-
-- Configure golang deps for tests
-```shell
-go get github.com/gruntwork-io/terratest/modules/terraform
-go get github.com/stretchr/testify/assert
 ```
 
 - Execute pre-commit
@@ -246,7 +241,4 @@ pre-commit run -a
 ## Authors
 This project is authored by below people
 
-- james.crowley@sourcefuse.com
-- travis.saucier@sourcefuse.com
-
-> This project was generated by [generator-tf-module](https://github.com/sudokar/generator-tf-module)
+- SourceFuse ARC Team
