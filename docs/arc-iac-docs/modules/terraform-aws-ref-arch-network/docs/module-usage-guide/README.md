@@ -94,11 +94,24 @@ This example will create:
 
 ### Tips and Recommendations
 
-- If you want to create custom subnet ranges, check [example](https://github.com/sourcefuse/terraform-aws-arc-network/tree/main/examples/cistom-subnets)
-- When creating custom subnet ranges with this module, if you `set custom_nat_gateway_enabled` to `false` then make sure that you either
-  a) set the variable `custom_az_ngw_ids` with an appropriate map of availability zone to nat gateway id
-  OR
-  b) set your own default route using aws_route resource
+- If you want to create custom subnet ranges, check [example](https://github.com/sourcefuse/terraform-aws-arc-network/tree/main/examples/custom-subnets)
+- If you want to create your own nat gateway(s) check [example](https://github.com/sourcefuse/terraform-aws-arc-network/tree/main/examples/custom-nat-gateways)
+- If you have disabled the default nat gateways for your custom subnets
+  then you need to pass a nat gateway id for each private subnet that
+  you are creating. If custom_az_ngw_ids is left empty in this case
+  then no default route is created by the module.
+- Creating nat gateway as demonstrated in this example is a 3 step process:
+  - STEP 1 : Apply the configuration without any nat gateway and eip resources and without custom_az_ngw_ids value
+  - STEP 2 : Add nat gateway and eip resources and run apply
+  - STEP 3 : finally add custom_az_ngw_ids input map and run apply
+  This does introduce a cyclical dependency between the network module and the nat and eip resources, but it is expected
+  since its a deviation from the [recommended aws nat gateway configuration](https://aws.amazon.com/blogs/networking-and-content-delivery/using-nat-gateways-with-multiple-amazon-vpcs-at-scale/).
+
+  <details><summary>tldr</summary>
+
+  NAT Gateways within an AZ are automatically implemented with redundancy. However, while Amazon VPCs can span multiple AZs, each NAT Gateway operates within a single AZ. If the NAT Gateway fails, then connections with resources using that NAT Gateway also fail. Therefore, we recommend deploying one NAT Gateway in each AZ and routing traffic locally within the same AZ.</details>
+
+  Handling multiple scenarios for nat gateway routes in the module does not seems feasible. Hence the mapping of nat gateways to availability zones is off-loaded to the end user of the module.
 
 ## Troubleshooting
 
