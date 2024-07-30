@@ -1,9 +1,10 @@
 title: ARC UI
 nav:
   - ARC React: "arc-ui-docs/arc-react"
-  - ARC Angular: "arc-ui-docs/arc-angular"
-      - Libraries: "arc-ui-docs/arc-angular/libraries"
+  - ARC Angular:
+      - "arc-ui-docs/arc-angular"
+      - Libraries:
+          - Introduction: "arc-ui-docs/arc-angular/libraries/"
           - Search: "arc-ui-docs/arc-angular/libraries/search"
           - User-Onboarding: "arc-ui-docs/arc-angular/libraries/user-onboarding"
-          - Workflow-Creator: "arc-ui-docs/arc-angular/libraries/workflow"  
-  
+          - Workflow-Creator: "arc-ui-docs/arc-angular/libraries/workflow"
