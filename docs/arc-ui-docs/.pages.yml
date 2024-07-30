@@ -1,8 +1,7 @@
 title: ARC UI
 nav:
   - ARC React: "arc-ui-docs/arc-react"
-  - ARC Angular:
-      - "arc-ui-docs/arc-angular"
+  - ARC Angular: "arc-ui-docs/arc-angular"
       - Libraries:
           - Introduction: "arc-ui-docs/arc-angular/libraries/"
           - Search: "arc-ui-docs/arc-angular/libraries/search"
