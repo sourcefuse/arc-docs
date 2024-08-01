@@ -103,6 +103,7 @@ module "backstage" {
 | <a name="input_egress_cidr_block"></a> [egress\_cidr\_block](#input\_egress\_cidr\_block) | ECS Tasks egress CIDR block | `string` | `"0.0.0.0/0"` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | ID element. Usually used for region e.g. 'uw2', 'us-west-2', OR role 'prod', 'staging', 'dev', 'UAT' | `string` | n/a | yes |
 | <a name="input_environment_variables"></a> [environment\_variables](#input\_environment\_variables) | (optional) List of additional environment variables | <pre>list(object({<br>    name  = string<br>    value = string<br>  }))</pre> | `[]` | no |
+| <a name="input_ephemeral_storage"></a> [ephemeral\_storage](#input\_ephemeral\_storage) | (optional) The total amount, in GiB, of ephemeral storage to set for the task. The minimum supported value is 21 GiB and the maximum supported value is 200 GiB. | `string` | `null` | no |
 | <a name="input_execution_policy_attachment_arns"></a> [execution\_policy\_attachment\_arns](#input\_execution\_policy\_attachment\_arns) | The ARNs of the policies you want to apply | `list(string)` | <pre>[<br>  "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"<br>]</pre> | no |
 | <a name="input_health_check_path_pattern"></a> [health\_check\_path\_pattern](#input\_health\_check\_path\_pattern) | Path pattern to match against the request URL. | `string` | `"/"` | no |
 | <a name="input_launch_type"></a> [launch\_type](#input\_launch\_type) | Launch type for the health check service. | `string` | `"FARGATE"` | no |
