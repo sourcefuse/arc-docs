@@ -1,3 +1,5 @@
+![Module Structure](./static/banner.png)
+
 # [terraform-aws-arc-backup](https://github.com/sourcefuse/terraform-aws-arc-backup)
 
 <a href="https://github.com/sourcefuse/terraform-aws-arc-backup/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-backup.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-backup/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-backup.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
@@ -192,8 +194,8 @@ terraform destroy -var-file dev.tfvars
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.4, < 2.0.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.0, < 6.0 |
 
 ## Providers
 
