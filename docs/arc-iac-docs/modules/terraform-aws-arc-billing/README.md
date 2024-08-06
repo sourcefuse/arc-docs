@@ -1,3 +1,5 @@
+![Module Structure](./static/banner.png)
+
 # [terraform-aws-arc-billing](https://github.com/sourcefuse/terraform-aws-arc-billing)
 
 <a href="https://github.com/sourcefuse/terraform-aws-arc-billing/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-billing.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-billing/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-billing.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
@@ -221,20 +223,20 @@ terraform destroy -var-file dev.tfvars
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.4, < 2.0.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.0, < 6.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.46.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.61.0 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_budgets"></a> [budgets](#module\_budgets) | cloudposse/budgets/aws | 0.4.0 |
+| <a name="module_budgets"></a> [budgets](#module\_budgets) | cloudposse/budgets/aws | 0.4.1 |
 | <a name="module_this"></a> [this](#module\_this) | cloudposse/label/null | 0.25.0 |
 
 ## Resources
