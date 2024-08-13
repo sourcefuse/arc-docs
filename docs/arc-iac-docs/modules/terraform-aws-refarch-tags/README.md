@@ -1,3 +1,5 @@
+![Module Structure](./static/banner.png)
+
 # [terraform-aws-arc-tags](https://github.com/sourcefuse/terraform-aws-arc-tags)
 
 <a href="https://github.com/sourcefuse/terraform-aws-arc-tags/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-tags.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-tags/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-tags.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
@@ -15,12 +17,12 @@ This module is responsible for managing the tags we use at SourceFuse when creat
 ```hcl
 module "terraform-aws-arc-tags" {
   source      = "sourcefuse/arc-tags/aws"
-  version     = "1.2.4"
-  environment = var.environment
+  # version     = "x.x.x"  # we recommend pinning to a specific version
+  environment = "dev"
   project     = "Example"
 
   extra_tags = {
-    RepoName = "terraform-aws-refarch-ecs"
+    RepoName = "terraform-aws-arc-ecs"
     Example  = "true"
   }
 }
@@ -31,7 +33,7 @@ module "terraform-aws-arc-tags" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.4 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.4, < 2.0.0 |
 
 ## Providers
 
