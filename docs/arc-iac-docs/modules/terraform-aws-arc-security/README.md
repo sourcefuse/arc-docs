@@ -1,3 +1,5 @@
+![Module Structure](./static/banner.png)
+
 # [terraform-aws-arc-security](https://github.com/sourcefuse/terraform-aws-arc-security)
 
 <a href="https://github.com/sourcefuse/terraform-aws-arc-security/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-security.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-security/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-security.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
@@ -51,25 +53,25 @@ module "cloud_security" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3, < 2.0.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.0, < 6.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.46.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.62.0 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_aws_config_storage"></a> [aws\_config\_storage](#module\_aws\_config\_storage) | cloudposse/config-storage/aws | 1.0.0 |
-| <a name="module_config"></a> [config](#module\_config) | cloudposse/config/aws | 1.1.0 |
-| <a name="module_guard_duty"></a> [guard\_duty](#module\_guard\_duty) | cloudposse/guardduty/aws | 0.5.0 |
+| <a name="module_aws_config_storage"></a> [aws\_config\_storage](#module\_aws\_config\_storage) | cloudposse/config-storage/aws | 1.0.2 |
+| <a name="module_config"></a> [config](#module\_config) | cloudposse/config/aws | 1.5.2 |
+| <a name="module_guard_duty"></a> [guard\_duty](#module\_guard\_duty) | cloudposse/guardduty/aws | 0.6.0 |
 | <a name="module_guard_duty_sns_topic"></a> [guard\_duty\_sns\_topic](#module\_guard\_duty\_sns\_topic) | cloudposse/sns-topic/aws | 0.20.1 |
 | <a name="module_inspector"></a> [inspector](#module\_inspector) | ./modules/inspector | n/a |
-| <a name="module_security_hub"></a> [security\_hub](#module\_security\_hub) | cloudposse/security-hub/aws | 0.12.0 |
+| <a name="module_security_hub"></a> [security\_hub](#module\_security\_hub) | cloudposse/security-hub/aws | 0.12.2 |
 | <a name="module_securityhub_sns_kms_key"></a> [securityhub\_sns\_kms\_key](#module\_securityhub\_sns\_kms\_key) | cloudposse/kms-key/aws | 0.12.2 |
 | <a name="module_securityhub_sns_topic"></a> [securityhub\_sns\_topic](#module\_securityhub\_sns\_topic) | cloudposse/sns-topic/aws | 0.21.0 |
 | <a name="module_sns_guard_duty"></a> [sns\_guard\_duty](#module\_sns\_guard\_duty) | cloudposse/sns-topic/aws | 0.21.0 |
