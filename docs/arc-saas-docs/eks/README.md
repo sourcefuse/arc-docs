@@ -26,7 +26,7 @@ SourceFuse Reference Architecture to implement a EKS multi-tenant software-as-a-
 
 In the upcoming sections, we'll delve into the mechanics of this multi-tenant SaaS EKS solution setup. We'll dissect the fundamental architectural tactics employed to tackle issues for tenants such as isolation, identity management, data segmentation, routing efficiency, deployment workflows, tenant management and operational complexities inherent in crafting and delivering an EKS-based SaaS solution on AWS. Additionally, we've integrated a tailored observability stack for each tenant, encompassing monitoring and logging functionalities. Furthermore, we'll delve into the billing component of this SaaS solution, leveraging Kubecost and Grafana dashboards for comprehensive insights. This comprehensive exploration aims to furnish you with a hands-on comprehension of the entire system.
 
-This document is intended for developers and architects who have experience on AWS, Terraform. A working knowledge of both Kubernetes and Docker is also helpful. 
+This document is intended for developers and architects who have experience on AWS, Terraform. A working knowledge of both Kubernetes and Docker is also helpful.
 
 
 ## The High-Level Architecture
@@ -36,13 +36,13 @@ Before we delve into the specifics of the SaaS EKS solution, let's first examine
 ![Figure 1 - High-level EKS SaaS Architecture](static/saas-high-level-arch.png)
 Figure1 - High-level EKS SaaS Architecture
 
-ARC SaaS architecture consists of two major layers at a high level - 
+ARC SaaS architecture consists of two major layers at a high level -
 
 1. **Control Plane** - The control plane is foundational to any multi-tenant SaaS model. ARC SaaS control plane will include those services that give consumers the ability to manage and operate their tenants through a single, unified experience. Within the control plane, we have 3-tier architecture supporting UI (or some CLI), API and data separately. The core services here represent the collection of services that are used to orchestrate multi-tenant experience. We’ve included some of the common examples of services that are typically part of the core. However, these core services could vary for each SaaS solution depending on the requirements. In the architecture diagram above, we have also shown a separate administration application UI. This represents the application (a web application, a command line interface, or an API) that might be used by a SaaS provider to manage their multi-tenant environment. Please note that the control plane and its services are not actually multi-tenant. These services are global to all tenants and are basically used to operate and manage tenants.
 
 2. **Application Plane** - At the bottom of the diagram, we have represented the application plane of a SaaS environment. This is where the multi-tenant functionality of the actual application will reside. Each tenant will have it's own application plane which will be deployed using helm package manager on EKS cluster.
 
-Control plane services will be used for tenant onboarding and management. 
+Control plane services will be used for tenant onboarding and management.
 
 ### Tenant Onboarding
 
@@ -53,11 +53,11 @@ Within this solution, several components are involved in the onboarding procedur
 ![Figure 2 - Tenant Onboarding](static/tenant-onboarding.png)
 Figure2- Tenant Onboarding
 
-Figure2 outlines the onboarding flow. It demonstrates how a new tenant will be onboarded to the multi-tenancy setup. Firstly, tenant will use signup/landing page or SaaS admin/control-plane can register the tenant based on the subscription plan. We have the tenant management service in control plane which will be responsible to update the tenant details in control plane tenant DB. Control access for the tenants will be managed through Amazon cognito. During the Onboarding process, an admin user will be created for each tenant in respective congito user pool. 
+Figure2 outlines the onboarding flow. It demonstrates how a new tenant will be onboarded to the multi-tenancy setup. Firstly, tenant will use signup/landing page or SaaS admin/control-plane can register the tenant based on the subscription plan. We have the tenant management service in control plane which will be responsible to update the tenant details in control plane tenant DB. Control access for the tenants will be managed through Amazon cognito. During the Onboarding process, an admin user will be created for each tenant in respective congito user pool.
 
-Based on the tenant type either it's pool or silo, we have separate codebuild project for provisioning a new tenant. Control plane will trigger the respective codebuild project which will deploy tenant related infrastructure and tenant application plane. As part of the tenant infrastructure, Each tenant will have it's own isolation policies, identity management, monitoring & logging etc. which we will explore in upcoming sections. 
+Based on the tenant type either it's pool or silo, we have separate codebuild project for provisioning a new tenant. Control plane will trigger the respective codebuild project which will deploy tenant related infrastructure and tenant application plane. As part of the tenant infrastructure, Each tenant will have it's own isolation policies, identity management, monitoring & logging etc. which we will explore in upcoming sections.
 
-**User Management Service** 
+**User Management Service**
 
 The user management service is used in two separate contexts: one for the SaaS application users and one for the administration application. The sample SaaS actually includes a tenant administration experience that illustrates the natural mechanism that you’d include in your SaaS product to manage your application’s users.
 
@@ -65,7 +65,7 @@ User management plays a more specific role during the onboarding of a new tenant
 
 The administration application uses a separate user pool for administration users. A SaaS provider can use this application to add, update, and delete administration users.
 
-**Landing Page** 
+**Landing Page**
 
 The landing page is a simple, anonymous sign-up page. It’s representative of our public-facing marketing page through which prospective tenants can sign-up. When you select the sign-up option, you will provide data about your new tenant and submit that information to the system’s registration service. This service will then create and configure all of the resources needed to introduce a new tenant into the system.
 
@@ -130,7 +130,7 @@ We have configured istio service mesh for inter-service routing, failure recover
 
 ### Kubernetes Objects
 
-During Control Plane IAC deployment, we also need to configure the Kubernetes objects that needed to support the needs of our SaaS environment. The baseline configuration call uses kubectl to configure and deploy these constructs. This kubernetes objects like istio authorization policy, karpenter nodepool & ec2nodeclass, kuberhealthy health check, virtual service, gateways etc will be deployed using helm package manager. 
+During Control Plane IAC deployment, we also need to configure the Kubernetes objects that needed to support the needs of our SaaS environment. The baseline configuration call uses kubectl to configure and deploy these constructs. This kubernetes objects like istio authorization policy, karpenter nodepool & ec2nodeclass, kuberhealthy health check, virtual service, gateways etc will be deployed using helm package manager.
 
 We will also register each tenant application with argocd and tenant infrastructure workflow using argo-workflow using kubectl.
 
@@ -142,7 +142,7 @@ Within our architecture, AWS OpenSearch serves as our chosen solution for storin
 
 In our monitoring setup, our primary tools are Prometheus and Grafana. We've set up Prometheus node-exporter and ADOT collector on the EKS cluster to gather metrics from various namespaces. These metrics are then visualized using Grafana dashboards. Our configuration enables us to visualize API metrics on a per-tenant basis as well. Below are examples of Grafana dashboards illustrating this functionality.
 
-We have added some important dashboards in grafana mentioned below - 
+We have added some important dashboards in grafana mentioned below -
 
 * [AWS Cost Visualization](https://aws.amazon.com/blogs/mt/visualize-and-gain-insights-into-your-aws-cost-and-usage-with-amazon-managed-grafana/)
 * [Tenant OnBoarding Deployment measurement](https://grafana.com/grafana/dashboards/11155-aws-codebuild/)
@@ -158,11 +158,11 @@ Figure5 - Grafana Dashboards
 
 In a multi-tenant solution, efficient billing mechanisms are essential for accurately tracking resource usage and allocating costs among tenants. By implementing robust billing systems, providers can ensure fair and transparent billing practices while enabling tenants to monitor and manage their usage effectively. Effective billing solutions streamline the invoicing process, provide detailed usage reports, and support flexible pricing models tailored to the diverse needs of tenants
 
-With SaaS, tenants often share some or all of a system’s infrastructure resources. SaaS organizations often rely on some understanding of the cost per tenant as a key element of their broader economic and business model. This cost data can directly influence the pricing dimensions and tiering strategies that are adopted by a SaaS provider. 
+With SaaS, tenants often share some or all of a system’s infrastructure resources. SaaS organizations often rely on some understanding of the cost per tenant as a key element of their broader economic and business model. This cost data can directly influence the pricing dimensions and tiering strategies that are adopted by a SaaS provider.
 
-In our multi-tenant solution, achieving accurate billing is facilitated through the integration of Kubecost for resource cost monitoring and Cost and Usage Report visualization via Athena. We've configured Grafana dashboards to provide comprehensive insights into AWS costs, including tenant-specific breakdowns. While in a siloed model, calculating per-tenant costs is straightforward due to individual resource allocations, we've leveraged resource tagging to enable filtering for tenant-specific costs within the Cost and Usage Report. This technical approach ensures precise billing granularity and transparency in our multi-tenant environment. 
+In our multi-tenant solution, achieving accurate billing is facilitated through the integration of Kubecost for resource cost monitoring and Cost and Usage Report visualization via Athena. We've configured Grafana dashboards to provide comprehensive insights into AWS costs, including tenant-specific breakdowns. While in a siloed model, calculating per-tenant costs is straightforward due to individual resource allocations, we've leveraged resource tagging to enable filtering for tenant-specific costs within the Cost and Usage Report. This technical approach ensures precise billing granularity and transparency in our multi-tenant environment.
 
-Here is the flow of billing in our multi-tenant solution- 
+Here is the flow of billing in our multi-tenant solution-
 ![Figure 6 - Billing](static/arc-saas-billing.png)
 Figure6 - Billing
 
@@ -185,15 +185,15 @@ We've established distinct CodeBuild projects, categorized as premium (featuring
 The tenant provisioning CodeBuild processes extend their functionality to include the transmission of tenant-specific data to a DynamoDB table and the registration of tenant applications on ArgoCD. Additionally, they facilitate the transmission of tenant-specific Helm values.yaml files and Terraform tfvars files to a GitOps management repository. This separate repository serves as a centralized hub for managing the lifecycle of tenant infrastructure and application services, enhancing efficiency and control in maintaining the overall environment.
 
 
-## Per-tenant Infrastructure 
+## Per-tenant Infrastructure
 
 Once the control plane infrastructure is established, the focus shifts towards configuring the necessary infrastructure to accommodate tenants during the onboarding process to the SaaS application. In our chosen architecture, we adopt a namespace-per-tenant model to enforce isolation, necessitating the deployment of distinct resources for each tenant. Below, we delve deeper into this isolation model to explain its technical details.
 
 Upon onboarding a new tenant into the multi-tenant system, its associated infrastructure will be provisioned utilizing Terraform Infrastructure as Code (IAC), while application-level microservices will be deployed via Helm charts in dedicated namespaces within the same cluster. Notably, these microservices and namespaces remain dormant until a tenant is successfully onboarded, ensuring resource allocation is demand-driven. Each tenant is allocated distinct IAM roles and security policies to mitigate potential disruptions from neighboring tenants. Our system accommodates two tenant models with differing characteristics.
 
-1. **Silo Tenant** : Every siloed tenant is allocated exclusive resources encompassing dedicated compute and storage layers, alongside additional components such as a Cognito user pool, Redis ElastiCache etc. Karpenter will provision compute node for silo tenants on the fly. Furthermore, each tenant is provisioned with its distinct application services. Tenant records are systematically registered on Route 53 for streamlined access as subdomain. An administrative user will be instantiated within the Cognito user pool, and its credentials will be disseminated to the designated email address associated with the tenant during the registration process. 
+1. **Silo Tenant** : Every siloed tenant is allocated exclusive resources encompassing dedicated compute and storage layers, alongside additional components such as a Cognito user pool, Redis ElastiCache etc. Karpenter will provision compute node for silo tenants on the fly. Furthermore, each tenant is provisioned with its distinct application services. Tenant records are systematically registered on Route 53 for streamlined access as subdomain. An administrative user will be instantiated within the Cognito user pool, and its credentials will be disseminated to the designated email address associated with the tenant during the registration process.
 
-2. **Pooled Tenant** : In the pooled tenant scenario, certain resources are pooled and shared among tenants, including compute nodes, storage databases, Cognito user pools, and Redis ElastiCache instances. However, each pooled tenant is assigned a unique application ID and user within the Cognito user pool. Application services for pooled tenants are deployed on a per-namespace basis, utilizing shared underlying compute resources. 
+2. **Pooled Tenant** : In the pooled tenant scenario, certain resources are pooled and shared among tenants, including compute nodes, storage databases, Cognito user pools, and Redis ElastiCache instances. However, each pooled tenant is assigned a unique application ID and user within the Cognito user pool. Application services for pooled tenants are deployed on a per-namespace basis, utilizing shared underlying compute resources.
 
 The SaaS application is equipped with authentication guards, which automatically direct users to the hosted UI if authentication is not detected. Additionally, we've integrated monitoring, logging, and billing functionalities tailored to each tenant. Furthermore, the system dynamically generates tenant-specific OpenSearch users and indexes.
 
@@ -202,7 +202,7 @@ The SaaS application is equipped with authentication guards, which automatically
 
 As requests flow from the tenant into each of our microservice, the system must be able to identify the tenant that is associated with each request and route that request to the appropriate tenant namespace. There are multiple ways to address this routing requirement. For the EKS SaaS solution, We have implemented istio service mesh and also configured kiali to Configure, visualize, validate and troubleshoot this service mesh. Kiali is a console for Istio service mesh.
 
-Istio allows you to transparently add capabilities like observability, traffic management, and security. It is configured through terraform only. Istio provides secure service-to-service communication in a cluster with TLS encryption, strong identity-based authentication and authorization, Fine-grained control of traffic behavior with rich routing rules, retries, failovers, and fault injection. 
+Istio allows you to transparently add capabilities like observability, traffic management, and security. It is configured through terraform only. Istio provides secure service-to-service communication in a cluster with TLS encryption, strong identity-based authentication and authorization, Fine-grained control of traffic behavior with rich routing rules, retries, failovers, and fault injection.
 
 ![Figure 8 - Tenant Routing](static/arc-saas-tenant-routing.png)
 Figure8 - Tenant Routing
@@ -236,4 +236,3 @@ We encourage thorough examination of the codebase and welcome feedback to inform
 This project is authored by below people
 
 - SourceFuse ARC Team
-
