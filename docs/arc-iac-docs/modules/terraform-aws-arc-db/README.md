@@ -22,10 +22,10 @@ To see a full example, check out the [main.tf](https://github.com/sourcefuse/ter
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.3, < 2.0.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3, < 2.0.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.0, < 6.0 |
-| <a name="requirement_null"></a> [null](#requirement\_null) | >= 3.1.1 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.4.0 |
+| <a name="requirement_null"></a> [null](#requirement\_null) | >= 3.1 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.4 |
 
 ## Providers
 
@@ -38,9 +38,9 @@ To see a full example, check out the [main.tf](https://github.com/sourcefuse/ter
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_aurora_cluster"></a> [aurora\_cluster](#module\_aurora\_cluster) | git::https://github.com/cloudposse/terraform-aws-rds-cluster.git | 1.9.0 |
-| <a name="module_db_management"></a> [db\_management](#module\_db\_management) | git::https://github.com/cloudposse/terraform-aws-s3-bucket | 4.2.0 |
-| <a name="module_rds_instance"></a> [rds\_instance](#module\_rds\_instance) | git::https://github.com/cloudposse/terraform-aws-rds | 1.1.1 |
+| <a name="module_aurora_cluster"></a> [aurora\_cluster](#module\_aurora\_cluster) | git::https://github.com/cloudposse/terraform-aws-rds-cluster.git | 1.11.0 |
+| <a name="module_db_management"></a> [db\_management](#module\_db\_management) | git::https://github.com/cloudposse/terraform-aws-s3-bucket | 4.5.0 |
+| <a name="module_rds_instance"></a> [rds\_instance](#module\_rds\_instance) | git::https://github.com/cloudposse/terraform-aws-rds | 1.1.2 |
 | <a name="module_this"></a> [this](#module\_this) | cloudposse/label/null | 0.25.0 |
 
 ## Resources
