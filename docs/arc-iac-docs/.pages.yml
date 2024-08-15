@@ -74,6 +74,15 @@ nav:
           - GitHub:
               - IAM: "arc-iac-docs/modules/terraform-aws-arc-github-iam"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-github-iam/docs/module-usage-guide"
+          - EC2:
+              - EC2: "arc-iac-docs/modules/terraform-aws-arc-ec2"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-ec2/docs/module-usage-guide"
+          - S3:
+              - S3: "arc-iac-docs/modules/terraform-aws-arc-s3"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-s3/docs/module-usage-guide"
+          - Kinesis-Stream:
+              - Kinesis-Stream: "arc-iac-docs/modules/terraform-aws-arc-kinesis-stream"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-kinesis-stream/docs/module-usage-guide"
           - Backstage:
               - ECS: "arc-iac-docs/modules/arc-backstage-ecs-app"
       - Cloud Native:
