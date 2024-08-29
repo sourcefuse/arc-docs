@@ -29,7 +29,7 @@ SourceFuse's AWS Reference Architecture (ARC) Terraform module for managing Amaz
 
 ## Usage
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.  
+To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-s3/blob/feature/fix-docs/examples/simple/main.tf) file in the example folder.  
 
 ```hcl
 module "s3" {
