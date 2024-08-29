@@ -83,6 +83,9 @@ nav:
           - Kinesis-Stream:
               - Kinesis-Stream: "arc-iac-docs/modules/terraform-aws-arc-kinesis-stream"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-kinesis-stream/docs/module-usage-guide"
+          - Transit-Gateway:
+              - Transit-Gateway: "arc-iac-docs/modules/terraform-aws-arc-transit-gateway"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-transit-gateway/docs/module-usage-guide"
           - Backstage:
               - ECS: "arc-iac-docs/modules/arc-backstage-ecs-app"
       - Cloud Native:
