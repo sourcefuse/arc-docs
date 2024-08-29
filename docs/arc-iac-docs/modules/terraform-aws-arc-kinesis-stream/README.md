@@ -12,7 +12,7 @@
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/actions/workflows/snyk.yaml)
 ## Overview
 
-For more information about this repository and its usage, please see [Terraform AWS ARC GitHub EC2 Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/blob/main/docs/module-usage-guide/README.md).
+For more information about this repository and its usage, please see [Terraform AWS ARC GitHub Kinesis Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/blob/main/docs/module-usage-guide/README.md).
 
 ## Introduction
 
