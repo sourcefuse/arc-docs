@@ -41,7 +41,7 @@ module "arc-s3" {
 Integrate the module with your existing Terraform mono repo configuration, follow the steps below:
 
 1. Create a new folder in terraform/ named s3.
-2. Create the required files, see the [examples](https://github.com/sourcefuse/terraform-aws-arc-s3/tree/main/example) to base off of.
+2. Create the required files, see the [examples](https://github.com/sourcefuse/terraform-aws-arc-s3/tree/main/examples) to base off of.
 3. Configure with your backend
   - Create the environment backend configuration file: `config.<environment>.hcl`
     - **region**: Where the backend resides
