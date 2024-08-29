@@ -37,7 +37,7 @@ Refer to the [Terraform Registry](https://registry.terraform.io/modules/sourcefu
 Integrate the module with your existing Terraform mono repo configuration, follow the steps below:
 
 1. Create a new folder in `terraform/` named `ec2`.
-2. Create the required files, see the [examples](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/tree/main/examples/terraform) to base off of.
+2. Create the required files, see the [examples](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/tree/main/example) to base off of.
 3. Configure with your backend
   - Create the environment backend configuration file: `config.<environment>.hcl`
     - **region**: Where the backend resides
@@ -65,7 +65,7 @@ For a list of outputs, see the README [Outputs](https://github.com/sourcefuse/te
 
 ### Basic Usage
 
-For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/tree/main/example/terraform) folder.
+For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/tree/main/example) folder.
 
 This example will create:
 
