@@ -1,5 +1,3 @@
-# terraform-aws-transit-gateway-module
-
 ![Module Structure](./static/banner.png)
 # [terraform-aws-arc-transit-gateway](https://github.com/sourcefuse/terraform-aws-arc-transit-gateway)
 
