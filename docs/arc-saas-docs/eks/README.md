@@ -18,8 +18,6 @@
 - [Conclusion](#conclusion)
 - [Authors](#authors)
 
-
-
 ## Introduction
 
 SourceFuse Reference Architecture to implement a EKS multi-tenant software-as-a-service (SaaS) solution. The purpose of this document is to give the architecture design specifics that will bring insight to how a Saas solution using **ARC** is structured, organized and works internally. SourceFuse has developed a demonstration EKS SaaS solution aimed at illustrating the key architectural and design principles essential for constructing a multi-tenant SaaS platform on AWS. This example serves as a practical reference for developers and architects seeking to implement best practices in their own projects. The programming model, cost efficiency, security, deployment, and operational attributes of EKS represent a compelling model for SaaS providers.
@@ -27,7 +25,6 @@ SourceFuse Reference Architecture to implement a EKS multi-tenant software-as-a-
 In the upcoming sections, we'll delve into the mechanics of this multi-tenant SaaS EKS solution setup. We'll dissect the fundamental architectural tactics employed to tackle issues for tenants such as isolation, identity management, data segmentation, routing efficiency, deployment workflows, tenant management and operational complexities inherent in crafting and delivering an EKS-based SaaS solution on AWS. Additionally, we've integrated a tailored observability stack for each tenant, encompassing monitoring and logging functionalities. Furthermore, we'll delve into the billing component of this SaaS solution, leveraging Kubecost and Grafana dashboards for comprehensive insights. This comprehensive exploration aims to furnish you with a hands-on comprehension of the entire system.
 
 This document is intended for developers and architects who have experience on AWS, Terraform. A working knowledge of both Kubernetes and Docker is also helpful.
-
 
 ## The High-Level Architecture
 
@@ -71,7 +68,6 @@ The landing page is a simple, anonymous sign-up page. It’s representative of o
 
 As part of this onboarding flow, the system will also send a verification email to the address that was provided during sign-up. The information in this email will allow you to access the system with a temporary password.
 
-
 ### Tenant Isolation Models
 
 In general, SaaS applications can have tenant isolations at two major layers. First, the compute layer (EKS nodes, Lambda functions, etc.).
@@ -87,8 +83,9 @@ Queues, etc.).
 2. **Siloed Storage** - Each tenant will have its own independent storage unit. It can be a separate schema per tenant (within one database), separate databases per tenant (within one RDS/Aurora), or even separate RDS/Aurora.
 
 As part of ARC SaaS, we will be supporting different multi-tenancy isolation models and its provisioning via control plane.
-* Pooled Compute & Pooled Storage
-* Siloed Compute & Siloed Storage
+
+- Pooled Compute & Pooled Storage
+- Siloed Compute & Siloed Storage
 
 In this reference architecture solution, namespaces are used here to create a logical isolation boundary for the different tenants and their resources in an Amazon EKS cluster. We are using a namespace-per-tenant model and use it as a way to divide an EKS cluster’s resources across different tenants as part of the overall tenant isolation model. Once a namespace is created for a tenant, an IAM Role for Service Account is created and associated with the namespace, to further implement isolation strategies to secure the tenant’s application and workloads.
 
@@ -100,7 +97,6 @@ As part of our overall tenant isolation story, we must also look at isolation is
 Figure3- Tenant Isolation
 
 Figure3 descibes two level of different isolation. At the top of the diagram, you’ll see how we’ve attached istio authorization policies which will prevent access to resources in other tenant namespace. Secondly, We have attached service account role to each tenant namespace in the EKS cluster which do not have access to the secrets of other tenant stored in parameter store of system manager. In this way, each tenant can access to specific resources for it's own tenant.
-
 
 ## AWS Architecture
 
@@ -127,7 +123,6 @@ All new tenant which will be onboarded to the system, will have separate namespa
 
 We have configured istio service mesh for inter-service routing, failure recovery, load balancing and security. Tenant routing will be managed through istio. We have also implemented Kiali to configure, visualize, validate and troubleshoot the istio service mesh.
 
-
 ### Kubernetes Objects
 
 During Control Plane IAC deployment, we also need to configure the Kubernetes objects that needed to support the needs of our SaaS environment. The baseline configuration call uses kubectl to configure and deploy these constructs. This kubernetes objects like istio authorization policy, karpenter nodepool & ec2nodeclass, kuberhealthy health check, virtual service, gateways etc will be deployed using helm package manager.
@@ -144,15 +139,14 @@ In our monitoring setup, our primary tools are Prometheus and Grafana. We've set
 
 We have added some important dashboards in grafana mentioned below -
 
-* [AWS Cost Visualization](https://aws.amazon.com/blogs/mt/visualize-and-gain-insights-into-your-aws-cost-and-usage-with-amazon-managed-grafana/)
-* [Tenant OnBoarding Deployment measurement](https://grafana.com/grafana/dashboards/11155-aws-codebuild/)
-* [Tenat Uptime Visibility using canary](https://grafana.com/grafana/dashboards/13892-aws-cloudwatch-synthetics/)
+- [AWS Cost Visualization](https://aws.amazon.com/blogs/mt/visualize-and-gain-insights-into-your-aws-cost-and-usage-with-amazon-managed-grafana/)
+- [Tenant OnBoarding Deployment measurement](https://grafana.com/grafana/dashboards/11155-aws-codebuild/)
+- [Tenat Uptime Visibility using canary](https://grafana.com/grafana/dashboards/13892-aws-cloudwatch-synthetics/)
 
 ![Figure 5.1 - Grafana Dashboard1](static/monitoring/grafana-dashbaord1.png)
 ![Figure 5.2 - Grafana Dashboard2](static/monitoring/grafana-dashbaord2.png)
 ![Figure 5.3 - Grafana Dashboard3](static/monitoring/grafana-dashbaord3.png)
 Figure5 - Grafana Dashboards
-
 
 ### Billing
 
@@ -173,7 +167,6 @@ Utilizing Kubecost, we've implemented a methodology to extract cost data per nam
 ![Figure 7.3 - Billing Dashboard3](static/monitoring/billing-dashbaord3.png)
 Figure7 - Billing Dashboards
 
-
 ### Control Plane Services
 
 Within our control plane infrastructure, we incorporate essential microservices tailored to the functionalities of our EKS SaaS solution. These encompass Audit, Authentication, Tenant Management, Subscription, and User Management microservices, meticulously deployed using Helm package manager alongside Terraform for Infrastructure as Code (IAC). Leveraging DockerHub for image storage, we ensure continuous security scanning to identify and address any potential vulnerabilities. This technical framework underscores the foundation of our control plane, enabling robust and secure service delivery.
@@ -183,7 +176,6 @@ Within our control plane infrastructure, we incorporate essential microservices 
 We've established distinct CodeBuild projects, categorized as premium (featuring siloed compute and storage) and standard (incorporating pooled compute and storage), tailored to different tenant types for provisioning purposes. Each CodeBuild project is associated with its dedicated source, housed within a CodeCommit repository containing tenant-specific Terraform Infrastructure as Code (IAC) and application plane Helm charts. When onboarding a new tenant, the control plane service initiates the respective CodeBuild, orchestrating the provisioning process. Subsequently, upon completion of tenant onboarding, a webhook triggered via CodeBuild relays the provisioning status back to the control plane, ensuring seamless integration and visibility throughout the provisioning lifecycle.
 
 The tenant provisioning CodeBuild processes extend their functionality to include the transmission of tenant-specific data to a DynamoDB table and the registration of tenant applications on ArgoCD. Additionally, they facilitate the transmission of tenant-specific Helm values.yaml files and Terraform tfvars files to a GitOps management repository. This separate repository serves as a centralized hub for managing the lifecycle of tenant infrastructure and application services, enhancing efficiency and control in maintaining the overall environment.
-
 
 ## Per-tenant Infrastructure
 
@@ -197,7 +189,6 @@ Upon onboarding a new tenant into the multi-tenant system, its associated infras
 
 The SaaS application is equipped with authentication guards, which automatically direct users to the hosted UI if authentication is not detected. Additionally, we've integrated monitoring, logging, and billing functionalities tailored to each tenant. Furthermore, the system dynamically generates tenant-specific OpenSearch users and indexes.
 
-
 ### Tenant Routing
 
 As requests flow from the tenant into each of our microservice, the system must be able to identify the tenant that is associated with each request and route that request to the appropriate tenant namespace. There are multiple ways to address this routing requirement. For the EKS SaaS solution, We have implemented istio service mesh and also configured kiali to Configure, visualize, validate and troubleshoot this service mesh. Kiali is a console for Istio service mesh.
@@ -209,7 +200,6 @@ Figure8 - Tenant Routing
 
 Service mesh uses a proxy to intercept all your network traffic. An Envoy proxy is deployed along with each service that we deploy in cluster. On tenant provisoning, a gateway and a virtual service is deployed as part of kubernetes objects in the EKS cluster.
 
-
 ### Tenant Deployment And Management
 
 ![Figure 9 - Tenant Deployment And Management](static/arc-saas-tenant-deployment.png)
@@ -217,13 +207,11 @@ Figure9 - Tenant Deployment And management
 
 Figure 9 illustrates the process flow for tenant deployment and management within the multi-tenant SaaS solution. The control plane initiates the CodeBuild process, which orchestrates the provisioning of the tenant. Upon successful onboarding, the infrastructure and application lifecycle of the tenant are managed using tools such as ArgoCD and Argo Workflow. This setup facilitates seamless management of updates to tenant infrastructure and application services. A distinct CodeCommit repository is utilized for housing tenant-specific Helm values and Terraform tfvars files, ensuring organized storage and management of these configuration artifacts.
 
-
 ### Tenant Offboarding
 
 Tenant offboarding in a multi-tenant SaaS solution on Amazon EKS involves a structured approach to remove tenant-specific resources, data, and configurations while ensuring data integrity. The process starts with creating a backup of the tenant's data, followed by disabling the tenant’s access. Subsequent steps include deleting tenant-specific Kubernetes namespaces, persistent volumes, and AWS resources such as IAM roles, S3 buckets, and databases. Automation using scripts and Terraform configurations can efficiently handle resource cleanup and environment restoration. Comprehensive logging and monitoring during offboarding ensure that all operations are tracked, maintaining compliance with data retention and privacy policies, and preventing impacts on other tenants or overall system integrity.
 
 As of now, we are focusing on the offboarding process for silo tenants in our multi-tenant SaaS solution on EKS. Silo tenants have isolated resources and configurations, making their offboarding less complex and minimizing the risk of affecting shared components or other tenants. This targeted approach ensures thorough cleanup and secure removal of all tenant-specific data, paving the way for refining and scaling the offboarding procedures for more integrated or shared tenancy models in the future.
-
 
 ## Conclusion
 
