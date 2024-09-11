@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`BillingCycle`](BillingCycle.md), typeof [`id`](BillingCycle.md#id), [`BillingCycleRelations`](../interfaces/BillingCycleRelations.md)\>
+- `DefaultUserModifyCrudRepository`<[`BillingCycle`](BillingCycle.md), typeof [`id`](BillingCycle.md#id), {}\>
 
   ↳ **`BillingCycleRepository`**
 
@@ -36,12 +36,12 @@
 DefaultUserModifyCrudRepository&lt;
   BillingCycle,
   typeof BillingCycle.prototype.id,
-  BillingCycleRelations
+  {}
 \&gt;.constructor
 
 #### Defined in
 
-[services/subscription-service/src/repositories/billing-cycle.repository.ts:16](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/repositories/billing-cycle.repository.ts#L16)
+[services/subscription-service/src/repositories/billing-cycle.repository.ts:16](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/billing-cycle.repository.ts#L16)
 
 ## Properties
 
@@ -55,4 +55,4 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/subscription-service/src/repositories/billing-cycle.repository.ts:19](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/repositories/billing-cycle.repository.ts#L19)
+[services/subscription-service/src/repositories/billing-cycle.repository.ts:20](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/billing-cycle.repository.ts#L20)

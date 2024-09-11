@@ -10,9 +10,9 @@
 
 ### Enumerations
 
+- [EventTypes](enums/EventTypes.md)
 - [InvoiceStatus](enums/InvoiceStatus.md)
 - [NotificationType](enums/NotificationType.md)
-- [PlanTier](enums/PlanTier.md)
 - [ResourceTypes](enums/ResourceTypes.md)
 - [SubscriptionStatus](enums/SubscriptionStatus.md)
 - [TenantStatus](enums/TenantStatus.md)
@@ -23,12 +23,11 @@
 
 - [Address](classes/Address.md)
 - [AddressRepository](classes/AddressRepository.md)
-- [CodeBuildService](classes/CodeBuildService.md)
-- [CodebuildClientProvider](classes/CodebuildClientProvider.md)
 - [Contact](classes/Contact.md)
 - [ContactRepository](classes/ContactRepository.md)
 - [CreateLeadDTO](classes/CreateLeadDTO.md)
 - [CryptoHelperService](classes/CryptoHelperService.md)
+- [EventConnector](classes/EventConnector.md)
 - [Invoice](classes/Invoice.md)
 - [InvoicePDFGenerator](classes/InvoicePDFGenerator.md)
 - [InvoiceRepository](classes/InvoiceRepository.md)
@@ -60,16 +59,14 @@
 
 ### Interfaces
 
-- [ContactRelations](interfaces/ContactRelations.md)
 - [IBillingCycle](interfaces/IBillingCycle.md)
 - [ICurrency](interfaces/ICurrency.md)
+- [IEventConnector](interfaces/IEventConnector.md)
 - [IMetaData](interfaces/IMetaData.md)
 - [IPlan](interfaces/IPlan.md)
-- [IPlanItem](interfaces/IPlanItem.md)
 - [IProvisioningService](interfaces/IProvisioningService.md)
 - [ISubscription](interfaces/ISubscription.md)
 - [ITenantManagementServiceConfig](interfaces/ITenantManagementServiceConfig.md)
-- [IValue](interfaces/IValue.md)
 - [IWebhookHandler](interfaces/IWebhookHandler.md)
 - [InvoiceRelations](interfaces/InvoiceRelations.md)
 - [LeadRelations](interfaces/LeadRelations.md)
@@ -80,8 +77,6 @@
 ### Type Aliases
 
 - [BaseUser](modules.md#baseuser)
-- [BucketResourceType](modules.md#bucketresourcetype)
-- [ContactWithRelations](modules.md#contactwithrelations)
 - [InvoiceWithRelations](modules.md#invoicewithrelations)
 - [LeadUser](modules.md#leaduser)
 - [LeadUserWithToken](modules.md#leaduserwithtoken)
@@ -98,9 +93,8 @@
 
 ### Variables
 
-- [AWS\_CODEBUILD\_CLIENT](modules.md#aws_codebuild_client)
+- [EventConnectorBinding](modules.md#eventconnectorbinding)
 - [LEAD\_TOKEN\_VERIFIER](modules.md#lead_token_verifier)
-- [PIPELINES](modules.md#pipelines)
 - [SYSTEM\_USER](modules.md#system_user)
 - [TenantManagementCacheSourceName](modules.md#tenantmanagementcachesourcename)
 - [TenantManagementDbSourceName](modules.md#tenantmanagementdbsourcename)
@@ -128,13 +122,55 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/types/index.ts:9](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/index.ts#L9)
+[services/tenant-management-service/src/types/index.ts:9](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/index.ts#L9)
 
 ___
 
-### BucketResourceType
+### InvoiceWithRelations
 
-Ƭ **BucketResourceType**: `Object`
+Ƭ **InvoiceWithRelations**: [`Invoice`](classes/Invoice.md) & [`InvoiceRelations`](interfaces/InvoiceRelations.md)
+
+#### Defined in
+
+[services/tenant-management-service/src/models/invoice.model.ts:96](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/invoice.model.ts#L96)
+
+___
+
+### LeadUser
+
+Ƭ **LeadUser**: { `email`: `string` ; `userTenantId`: `string`  } & [`BaseUser`](modules.md#baseuser)
+
+#### Defined in
+
+[services/tenant-management-service/src/types/index.ts:13](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/index.ts#L13)
+
+___
+
+### LeadUserWithToken
+
+Ƭ **LeadUserWithToken**: { `token`: `string`  } & [`LeadUser`](modules.md#leaduser)
+
+#### Defined in
+
+[services/tenant-management-service/src/types/index.ts:18](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/index.ts#L18)
+
+___
+
+### LeadWithRelations
+
+Ƭ **LeadWithRelations**: [`Lead`](classes/Lead.md) & [`LeadRelations`](interfaces/LeadRelations.md)
+
+#### Defined in
+
+[services/tenant-management-service/src/models/lead.model.ts:78](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/lead.model.ts#L78)
+
+___
+
+### ResourceData
+
+Ƭ **ResourceData**: `Object`
+
+Represents the data of a resource.
 
 #### Type declaration
 
@@ -148,69 +184,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/types/resource.type.ts:13](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/resource.type.ts#L13)
-
-___
-
-### ContactWithRelations
-
-Ƭ **ContactWithRelations**: [`Contact`](classes/Contact.md) & [`ContactRelations`](interfaces/ContactRelations.md)
-
-#### Defined in
-
-[services/tenant-management-service/src/models/contact.model.ts:75](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/contact.model.ts#L75)
-
-___
-
-### InvoiceWithRelations
-
-Ƭ **InvoiceWithRelations**: [`Invoice`](classes/Invoice.md) & [`InvoiceRelations`](interfaces/InvoiceRelations.md)
-
-#### Defined in
-
-[services/tenant-management-service/src/models/invoice.model.ts:96](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/invoice.model.ts#L96)
-
-___
-
-### LeadUser
-
-Ƭ **LeadUser**: { `email`: `string` ; `userTenantId`: `string`  } & [`BaseUser`](modules.md#baseuser)
-
-#### Defined in
-
-[services/tenant-management-service/src/types/index.ts:13](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/index.ts#L13)
-
-___
-
-### LeadUserWithToken
-
-Ƭ **LeadUserWithToken**: { `token`: `string`  } & [`LeadUser`](modules.md#leaduser)
-
-#### Defined in
-
-[services/tenant-management-service/src/types/index.ts:18](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/index.ts#L18)
-
-___
-
-### LeadWithRelations
-
-Ƭ **LeadWithRelations**: [`Lead`](classes/Lead.md) & [`LeadRelations`](interfaces/LeadRelations.md)
-
-#### Defined in
-
-[services/tenant-management-service/src/models/lead.model.ts:78](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/lead.model.ts#L78)
-
-___
-
-### ResourceData
-
-Ƭ **ResourceData**: [`BucketResourceType`](modules.md#bucketresourcetype)
-
-Represents the data of a resource.
-
-#### Defined in
-
-[services/tenant-management-service/src/types/resource.type.ts:4](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/resource.type.ts#L4)
+[services/tenant-management-service/src/types/resource.type.ts:4](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/resource.type.ts#L4)
 
 ___
 
@@ -233,7 +207,7 @@ Represents the payload for a resource provisioned webhook.
 
 #### Defined in
 
-[services/tenant-management-service/src/types/webhook-payload.type.ts:17](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/webhook-payload.type.ts#L17)
+[services/tenant-management-service/src/types/webhook-payload.type.ts:18](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/webhook-payload.type.ts#L18)
 
 ___
 
@@ -249,7 +223,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/resource.model.ts:68](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/resource.model.ts#L68)
+[services/tenant-management-service/src/models/resource.model.ts:68](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/resource.model.ts#L68)
 
 ___
 
@@ -259,7 +233,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/types/i-subscription.interface.ts:26](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/i-subscription.interface.ts#L26)
+[services/tenant-management-service/src/types/i-subscription.interface.ts:26](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/i-subscription.interface.ts#L26)
 
 ___
 
@@ -269,7 +243,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/types/i-subscription.interface.ts:39](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/i-subscription.interface.ts#L39)
+[services/tenant-management-service/src/types/i-subscription.interface.ts:39](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/i-subscription.interface.ts#L39)
 
 ___
 
@@ -279,7 +253,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/tenant.model.ts:108](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/tenant.model.ts#L108)
+[services/tenant-management-service/src/models/tenant.model.ts:108](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/tenant.model.ts#L108)
 
 ___
 
@@ -297,7 +271,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/types/index.ts:26](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/index.ts#L26)
+[services/tenant-management-service/src/types/index.ts:26](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/index.ts#L26)
 
 ___
 
@@ -309,7 +283,7 @@ Represents the payload for a webhook.
 
 #### Defined in
 
-[services/tenant-management-service/src/types/webhook-payload.type.ts:12](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/webhook-payload.type.ts#L12)
+[services/tenant-management-service/src/types/webhook-payload.type.ts:13](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/webhook-payload.type.ts#L13)
 
 ___
 
@@ -325,17 +299,17 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/types/index.ts:22](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/index.ts#L22)
+[services/tenant-management-service/src/types/index.ts:22](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/index.ts#L22)
 
 ## Variables
 
-### AWS\_CODEBUILD\_CLIENT
+### EventConnectorBinding
 
-• `Const` **AWS\_CODEBUILD\_CLIENT**: `BindingKey`<`CodeBuildClient`\>
+• `Const` **EventConnectorBinding**: `BindingKey`<[`IEventConnector`](interfaces/IEventConnector.md)<`unknown`\>\>
 
 #### Defined in
 
-[services/tenant-management-service/src/services/aws/keys.ts:3](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/aws/keys.ts#L3)
+[services/tenant-management-service/src/keys.ts:74](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/keys.ts#L74)
 
 ___
 
@@ -347,17 +321,7 @@ Binding key for the lead token verifier.
 
 #### Defined in
 
-[services/tenant-management-service/src/keys.ts:29](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/keys.ts#L29)
-
-___
-
-### PIPELINES
-
-• `Const` **PIPELINES**: `BindingKey`<`Record`<`string`, `string`\>\>
-
-#### Defined in
-
-[services/tenant-management-service/src/keys.ts:33](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/keys.ts#L33)
+[services/tenant-management-service/src/keys.ts:30](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/keys.ts#L30)
 
 ___
 
@@ -369,7 +333,7 @@ Binding key for the system user.
 
 #### Defined in
 
-[services/tenant-management-service/src/keys.ts:40](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/keys.ts#L40)
+[services/tenant-management-service/src/keys.ts:37](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/keys.ts#L37)
 
 ___
 
@@ -379,7 +343,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/types/index.ts:34](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/index.ts#L34)
+[services/tenant-management-service/src/types/index.ts:34](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/index.ts#L34)
 
 ___
 
@@ -389,7 +353,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/types/index.ts:32](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/index.ts#L32)
+[services/tenant-management-service/src/types/index.ts:32](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/index.ts#L32)
 
 ___
 
@@ -401,7 +365,7 @@ Binding key for the webhook configuration.
 
 #### Defined in
 
-[services/tenant-management-service/src/keys.ts:47](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/keys.ts#L47)
+[services/tenant-management-service/src/keys.ts:44](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/keys.ts#L44)
 
 ___
 
@@ -413,7 +377,7 @@ Binding key for the webhook verifier.
 
 #### Defined in
 
-[services/tenant-management-service/src/keys.ts:53](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/keys.ts#L53)
+[services/tenant-management-service/src/keys.ts:50](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/keys.ts#L50)
 
 ___
 
@@ -425,7 +389,7 @@ Binding key for the webhook handler extension point.
 
 #### Defined in
 
-[services/tenant-management-service/src/keys.ts:60](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/keys.ts#L60)
+[services/tenant-management-service/src/keys.ts:57](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/keys.ts#L57)
 
 ___
 
@@ -435,7 +399,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/keys.ts:72](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/keys.ts#L72)
+[services/tenant-management-service/src/keys.ts:69](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/keys.ts#L69)
 
 ## Functions
 
@@ -471,4 +435,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/decorators/webhook-handler.decorator.ts:4](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/decorators/webhook-handler.decorator.ts#L4)
+[services/tenant-management-service/src/decorators/webhook-handler.decorator.ts:4](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/decorators/webhook-handler.decorator.ts#L4)

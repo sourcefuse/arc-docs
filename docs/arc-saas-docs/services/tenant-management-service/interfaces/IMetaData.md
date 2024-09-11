@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/types/i-subscription.interface.ts:99](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/i-subscription.interface.ts#L99)
+[services/tenant-management-service/src/types/i-subscription.interface.ts:100](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/i-subscription.interface.ts#L100)

@@ -40,7 +40,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/subscription-service/src/models/currency.model.ts:40](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/currency.model.ts#L40)
+[services/subscription-service/src/models/currency.model.ts:40](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/currency.model.ts#L40)
 
 ## Properties
 
@@ -50,7 +50,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/subscription-service/src/models/currency.model.ts:38](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/currency.model.ts#L38)
+[services/subscription-service/src/models/currency.model.ts:38](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/currency.model.ts#L38)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/currency.model.ts:19](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/currency.model.ts#L19)
+[services/subscription-service/src/models/currency.model.ts:19](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/currency.model.ts#L19)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/currency.model.ts:26](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/currency.model.ts#L26)
+[services/subscription-service/src/models/currency.model.ts:26](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/currency.model.ts#L26)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/currency.model.ts:12](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/currency.model.ts#L12)
+[services/subscription-service/src/models/currency.model.ts:12](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/currency.model.ts#L12)
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/currency.model.ts:32](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/currency.model.ts#L32)
+[services/subscription-service/src/models/currency.model.ts:32](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/currency.model.ts#L32)

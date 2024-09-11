@@ -32,4 +32,4 @@ DefaultKeyValueRepository&lt;WebhookSecret\&gt;.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/webhook-secret.repository.ts:7](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/webhook-secret.repository.ts#L7)
+[services/tenant-management-service/src/repositories/webhook-secret.repository.ts:7](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/webhook-secret.repository.ts#L7)

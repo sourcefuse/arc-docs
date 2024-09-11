@@ -42,7 +42,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/contact.model.ts:66](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/contact.model.ts#L66)
+[services/tenant-management-service/src/models/contact.model.ts:66](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/contact.model.ts#L66)
 
 ## Properties
 
@@ -52,7 +52,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/contact.model.ts:38](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/contact.model.ts#L38)
+[services/tenant-management-service/src/models/contact.model.ts:38](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/contact.model.ts#L38)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/contact.model.ts:23](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/contact.model.ts#L23)
+[services/tenant-management-service/src/models/contact.model.ts:23](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/contact.model.ts#L23)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/contact.model.ts:15](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/contact.model.ts#L15)
+[services/tenant-management-service/src/models/contact.model.ts:15](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/contact.model.ts#L15)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/contact.model.ts:47](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/contact.model.ts#L47)
+[services/tenant-management-service/src/models/contact.model.ts:47](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/contact.model.ts#L47)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/contact.model.ts:31](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/contact.model.ts#L31)
+[services/tenant-management-service/src/models/contact.model.ts:31](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/contact.model.ts#L31)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/contact.model.ts:64](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/contact.model.ts#L64)
+[services/tenant-management-service/src/models/contact.model.ts:64](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/contact.model.ts#L64)
 
 ___
 
@@ -112,4 +112,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/contact.model.ts:54](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/contact.model.ts#L54)
+[services/tenant-management-service/src/models/contact.model.ts:54](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/contact.model.ts#L54)

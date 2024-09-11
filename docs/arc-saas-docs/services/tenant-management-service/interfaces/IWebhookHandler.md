@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/types/index.ts:5](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/index.ts#L5)
+[services/tenant-management-service/src/types/index.ts:5](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/index.ts#L5)
 
 ## Methods
 
@@ -40,4 +40,4 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/types/index.ts:6](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/index.ts#L6)
+[services/tenant-management-service/src/types/index.ts:6](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/index.ts#L6)

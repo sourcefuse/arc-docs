@@ -42,7 +42,7 @@ DefaultTransactionalUserModifyRepository&lt;
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/address.repository.ts:22](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/address.repository.ts#L22)
+[services/tenant-management-service/src/repositories/address.repository.ts:22](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/address.repository.ts#L22)
 
 ## Properties
 
@@ -56,7 +56,7 @@ DefaultTransactionalUserModifyRepository.getCurrentUser
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/address.repository.ts:24](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/address.repository.ts#L24)
+[services/tenant-management-service/src/repositories/address.repository.ts:24](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/address.repository.ts#L24)
 
 ___
 
@@ -66,4 +66,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/address.repository.ts:17](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/address.repository.ts#L17)
+[services/tenant-management-service/src/repositories/address.repository.ts:17](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/address.repository.ts#L17)

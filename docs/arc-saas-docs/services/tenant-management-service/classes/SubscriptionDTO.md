@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:22](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L22)
+[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:22](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L22)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:16](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L16)
+[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:16](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L16)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:7](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L7)
+[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:7](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L7)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:13](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L13)
+[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:13](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L13)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:10](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L10)
+[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:10](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L10)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:37](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L37)
+[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:37](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L37)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:28](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L28)
+[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:28](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L28)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:25](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L25)
+[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:25](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L25)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:19](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L19)
+[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:19](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L19)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:47](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L47)
+[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:47](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L47)
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:43](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L43)
+[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:43](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L43)
 
 ___
 
@@ -201,7 +201,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:34](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L34)
+[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:34](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L34)
 
 ___
 
@@ -215,7 +215,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:40](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L40)
+[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:40](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L40)
 
 ___
 
@@ -229,4 +229,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:31](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L31)
+[services/tenant-management-service/src/models/dtos/subscription-dto.model.ts:31](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/subscription-dto.model.ts#L31)

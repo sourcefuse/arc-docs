@@ -47,7 +47,7 @@ and secret.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/crypto-helper.service.ts:76](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/crypto-helper.service.ts#L76)
+[services/tenant-management-service/src/services/crypto-helper.service.ts:78](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/crypto-helper.service.ts#L78)
 
 ___
 
@@ -71,7 +71,7 @@ a randomly generated string of hexadecimal characters.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/crypto-helper.service.ts:92](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/crypto-helper.service.ts#L92)
+[services/tenant-management-service/src/services/crypto-helper.service.ts:94](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/crypto-helper.service.ts#L94)
 
 ___
 
@@ -102,7 +102,7 @@ a signed JWT token.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/crypto-helper.service.ts:18](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/crypto-helper.service.ts#L18)
+[services/tenant-management-service/src/services/crypto-helper.service.ts:18](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/crypto-helper.service.ts#L18)
 
 ___
 
@@ -129,7 +129,7 @@ number.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/crypto-helper.service.ts:37](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/crypto-helper.service.ts#L37)
+[services/tenant-management-service/src/services/crypto-helper.service.ts:39](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/crypto-helper.service.ts#L39)
 
 ___
 
@@ -154,4 +154,4 @@ the result of calling the `generateTempToken` function with an object as its arg
 
 #### Defined in
 
-[services/tenant-management-service/src/services/crypto-helper.service.ts:56](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/crypto-helper.service.ts#L56)
+[services/tenant-management-service/src/services/crypto-helper.service.ts:58](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/crypto-helper.service.ts#L58)

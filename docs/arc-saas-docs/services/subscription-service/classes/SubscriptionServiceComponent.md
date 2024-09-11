@@ -18,10 +18,10 @@
 - [bindings](SubscriptionServiceComponent.md#bindings)
 - [controllers](SubscriptionServiceComponent.md#controllers)
 - [models](SubscriptionServiceComponent.md#models)
-- [notifConfig](SubscriptionServiceComponent.md#notifconfig)
 - [providers](SubscriptionServiceComponent.md#providers)
 - [repositories](SubscriptionServiceComponent.md#repositories)
 - [services](SubscriptionServiceComponent.md#services)
+- [subscriptionConfig](SubscriptionServiceComponent.md#subscriptionconfig)
 
 ### Methods
 
@@ -31,18 +31,18 @@
 
 ### constructor
 
-• **new SubscriptionServiceComponent**(`application`, `notifConfig?`)
+• **new SubscriptionServiceComponent**(`application`, `subscriptionConfig?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `application` | `RestApplication` |
-| `notifConfig?` | [`ISubscriptionServiceConfig`](../interfaces/ISubscriptionServiceConfig.md) |
+| `subscriptionConfig?` | [`ISubscriptionServiceConfig`](../interfaces/ISubscriptionServiceConfig.md) |
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:39](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/component.ts#L39)
+[services/subscription-service/src/component.ts:69](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L69)
 
 ## Properties
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:41](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/component.ts#L41)
+[services/subscription-service/src/component.ts:71](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L71)
 
 ___
 
@@ -66,7 +66,7 @@ Component.bindings
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:106](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/component.ts#L106)
+[services/subscription-service/src/component.ts:141](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L141)
 
 ___
 
@@ -82,7 +82,7 @@ Component.controllers
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:125](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/component.ts#L125)
+[services/subscription-service/src/component.ts:160](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L160)
 
 ___
 
@@ -95,17 +95,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:120](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/component.ts#L120)
-
-___
-
-### notifConfig
-
-• `Private` `Optional` `Readonly` **notifConfig**: [`ISubscriptionServiceConfig`](../interfaces/ISubscriptionServiceConfig.md)
-
-#### Defined in
-
-[services/subscription-service/src/component.ts:43](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/component.ts#L43)
+[services/subscription-service/src/component.ts:155](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L155)
 
 ___
 
@@ -119,7 +109,7 @@ Component.providers
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:104](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/component.ts#L104)
+[services/subscription-service/src/component.ts:139](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L139)
 
 ___
 
@@ -132,7 +122,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:114](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/component.ts#L114)
+[services/subscription-service/src/component.ts:149](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L149)
 
 ___
 
@@ -146,7 +136,17 @@ Component.services
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:108](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/component.ts#L108)
+[services/subscription-service/src/component.ts:143](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L143)
+
+___
+
+### subscriptionConfig
+
+• `Private` `Optional` `Readonly` **subscriptionConfig**: [`ISubscriptionServiceConfig`](../interfaces/ISubscriptionServiceConfig.md)
+
+#### Defined in
+
+[services/subscription-service/src/component.ts:73](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L73)
 
 ## Methods
 
@@ -162,4 +162,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:131](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/component.ts#L131)
+[services/subscription-service/src/component.ts:166](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L166)

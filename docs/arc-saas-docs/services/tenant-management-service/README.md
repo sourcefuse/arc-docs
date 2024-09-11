@@ -1,6 +1,7 @@
 @sourceloop/ctrl-plane-tenant-management-service / [Exports](modules.md)
 
 # tenant-management-service
+
 [![LoopBack](<https://github.com/strongloop/loopback-next/raw/master/docs/site/imgs/branding/Powered-by-LoopBack-Badge-(blue)-@2x.png>)](http://loopback.io/)
 
 This is the primary service of the control plane responsible for onboarding a tenant and triggering it's provisioning.
@@ -8,12 +9,14 @@ This is the primary service of the control plane responsible for onboarding a te
 ## Overview
 
 A Microservice for handling tenant management operations. It provides -
+
 - lead creation and verification
 - Tenant Onboarding of both pooled and silo tenants
 - Billing and Invoicing
 - Provisioning of resources for silo and pooled tenants
 
 ### work flow
+
 ![image](https://github.com/sourcefuse/arc-saas/assets/107617248/25cb5c15-30d6-4e3a-8a43-05cca121eeaf)
 
 ## Installation
@@ -52,7 +55,8 @@ $ [npm install | yarn add] @sourceloop/tenant-management-service
 - The mail has a link which should direct to a front end application, which in turn would call the upcoming api's using a temporary authorization code included in the mail.
 - The front end application first calls the `/leads/{id}/verify` which updates the validated status of the lead in the DB and returns a new JWT Token that can be used for subsequent calls
 - If the token is validated in the previous step, the UI should call the `/leads/{id}/tenants` endpoint with the necessary payload(as per swagger documentation).
-- This endpoint would onboard the tenant in the DB, and the facade is then supposed to trigger the relevant pipeline using the `/tenants/{id}/provision` endpoint
+- This endpoint would onboard the tenant in the DB, and the facade is then supposed to trigger the relevant events using the `/tenants/{id}/provision` endpoint.
+- The provisioning endpoint will invoke the publish method on the `EventConnector`. This connector's purpose is to provide a place for consumer to write the event publishing logic. And your custom service can be bound to the key `EventConnectorBinding` exported by the service. Refer the example with Amazon EventBridge implementation in the [sandbox](./sandbox).
 
 ## Webhook Integration
 
@@ -274,7 +278,7 @@ Here is a sample Implementation `DataSource` implementation using environment va
 ```typescript
 import {inject, lifeCycleObserver, LifeCycleObserver} from '@loopback/core';
 import {juggler} from '@loopback/repository';
-import {TenantManagementDbSourceName} from "@sourceloop/tenant-management-service";
+import {TenantManagementDbSourceName} from '@sourceloop/tenant-management-service';
 
 const config = {
   name: TenantManagementDbSourceName,
@@ -298,7 +302,9 @@ export class AuthenticationDbDataSource
 
   constructor(
     // You need to set datasource configuration name as 'datasources.config.Authentication' otherwise you might get Errors
-    @inject(`datasources.config.${TenantManagementDbSourceName}`, {optional: true})
+    @inject(`datasources.config.${TenantManagementDbSourceName}`, {
+      optional: true,
+    })
     dsConfig: object = config,
   ) {
     super(dsConfig);
@@ -311,7 +317,7 @@ create one more datasource with redis as connector and db name 'TenantManagement
 ```typescript
 import {inject, lifeCycleObserver, LifeCycleObserver} from '@loopback/core';
 import {AnyObject, juggler} from '@loopback/repository';
-import { readFileSync } from 'fs';
+import {readFileSync} from 'fs';
 
 const config = {
   name: 'TenantManagementCacheDB',
@@ -373,8 +379,8 @@ export class RedisDataSource
     super(dsConfig);
   }
 }
-
 ```
+
 ### Migrations
 
 The migrations required for this service can be copied from the service. You can customize or cherry-pick the migrations in the copied files according to your specific requirements and then apply them to the DB.

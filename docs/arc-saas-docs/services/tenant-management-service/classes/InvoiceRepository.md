@@ -44,7 +44,7 @@ DefaultTransactionalUserModifyRepository&lt;
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/invoice.repository.ts:23](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/invoice.repository.ts#L23)
+[services/tenant-management-service/src/repositories/invoice.repository.ts:23](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/invoice.repository.ts#L23)
 
 ## Properties
 
@@ -58,7 +58,7 @@ DefaultTransactionalUserModifyRepository.getCurrentUser
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/invoice.repository.ts:27](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/invoice.repository.ts#L27)
+[services/tenant-management-service/src/repositories/invoice.repository.ts:27](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/invoice.repository.ts#L27)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/invoice.repository.ts:18](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/invoice.repository.ts#L18)
+[services/tenant-management-service/src/repositories/invoice.repository.ts:18](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/invoice.repository.ts#L18)
 
 ___
 
@@ -78,4 +78,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/invoice.repository.ts:29](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/invoice.repository.ts#L29)
+[services/tenant-management-service/src/repositories/invoice.repository.ts:29](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/invoice.repository.ts#L29)

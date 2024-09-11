@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultTransactionalUserModifyRepository`<[`Contact`](Contact.md), typeof [`id`](Contact.md#id), [`ContactRelations`](../interfaces/ContactRelations.md)\>
+- `DefaultTransactionalUserModifyRepository`<[`Contact`](Contact.md), typeof [`id`](Contact.md#id), {}\>
 
   ↳ **`ContactRepository`**
 
@@ -39,12 +39,12 @@
 DefaultTransactionalUserModifyRepository&lt;
   Contact,
   typeof Contact.prototype.id,
-  ContactRelations
+  {}
 \&gt;.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/contact.repository.ts:23](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/contact.repository.ts#L23)
+[services/tenant-management-service/src/repositories/contact.repository.ts:23](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/contact.repository.ts#L23)
 
 ## Properties
 
@@ -58,7 +58,7 @@ DefaultTransactionalUserModifyRepository.getCurrentUser
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/contact.repository.ts:27](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/contact.repository.ts#L27)
+[services/tenant-management-service/src/repositories/contact.repository.ts:27](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/contact.repository.ts#L27)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/contact.repository.ts:18](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/contact.repository.ts#L18)
+[services/tenant-management-service/src/repositories/contact.repository.ts:18](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/contact.repository.ts#L18)
 
 ___
 
@@ -78,4 +78,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/contact.repository.ts:29](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/contact.repository.ts#L29)
+[services/tenant-management-service/src/repositories/contact.repository.ts:29](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/contact.repository.ts#L29)

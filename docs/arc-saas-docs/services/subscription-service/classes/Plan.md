@@ -22,8 +22,8 @@
 - [id](Plan.md#id)
 - [metaData](Plan.md#metadata)
 - [name](Plan.md#name)
-- [planItems](Plan.md#planitems)
 - [price](Plan.md#price)
+- [size](Plan.md#size)
 - [tier](Plan.md#tier)
 
 ## Constructors
@@ -44,7 +44,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:75](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/plan.model.ts#L75)
+[services/subscription-service/src/models/plan.model.ts:72](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L72)
 
 ## Properties
 
@@ -54,7 +54,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:68](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/plan.model.ts#L68)
+[services/subscription-service/src/models/plan.model.ts:65](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L65)
 
 ___
 
@@ -64,17 +64,17 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:73](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/plan.model.ts#L73)
+[services/subscription-service/src/models/plan.model.ts:70](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L70)
 
 ___
 
 ### description
 
-• **description**: `string`
+• `Optional` **description**: `string`
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:32](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/plan.model.ts#L32)
+[services/subscription-service/src/models/plan.model.ts:28](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L28)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:18](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/plan.model.ts#L18)
+[services/subscription-service/src/models/plan.model.ts:15](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L15)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:55](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/plan.model.ts#L55)
+[services/subscription-service/src/models/plan.model.ts:54](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L54)
 
 ___
 
@@ -104,17 +104,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:25](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/plan.model.ts#L25)
-
-___
-
-### planItems
-
-• **planItems**: [`PlanItem`](PlanItem.md)
-
-#### Defined in
-
-[services/subscription-service/src/models/plan.model.ts:57](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/plan.model.ts#L57)
+[services/subscription-service/src/models/plan.model.ts:22](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L22)
 
 ___
 
@@ -124,14 +114,24 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:49](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/plan.model.ts#L49)
+[services/subscription-service/src/models/plan.model.ts:47](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L47)
+
+___
+
+### size
+
+• `Optional` **size**: `string`
+
+#### Defined in
+
+[services/subscription-service/src/models/plan.model.ts:41](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L41)
 
 ___
 
 ### tier
 
-• **tier**: [`PlanTier`](../enums/PlanTier.md)
+• **tier**: `string`
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:43](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/plan.model.ts#L43)
+[services/subscription-service/src/models/plan.model.ts:35](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L35)

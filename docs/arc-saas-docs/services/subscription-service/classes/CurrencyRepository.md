@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`Currency`](Currency.md), typeof [`id`](Currency.md#id), [`CurrencyRelations`](../interfaces/CurrencyRelations.md)\>
+- `DefaultUserModifyCrudRepository`<[`Currency`](Currency.md), typeof [`id`](Currency.md#id), {}\>
 
   ↳ **`CurrencyRepository`**
 
@@ -36,12 +36,12 @@
 DefaultUserModifyCrudRepository&lt;
   Currency,
   typeof Currency.prototype.id,
-  CurrencyRelations
+  {}
 \&gt;.constructor
 
 #### Defined in
 
-[services/subscription-service/src/repositories/currency.repository.ts:14](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/repositories/currency.repository.ts#L14)
+[services/subscription-service/src/repositories/currency.repository.ts:14](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/currency.repository.ts#L14)
 
 ## Properties
 
@@ -55,4 +55,4 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/subscription-service/src/repositories/currency.repository.ts:17](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/repositories/currency.repository.ts#L17)
+[services/subscription-service/src/repositories/currency.repository.ts:18](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/currency.repository.ts#L18)

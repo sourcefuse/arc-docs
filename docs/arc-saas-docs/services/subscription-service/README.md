@@ -139,13 +139,13 @@ $ [npm install | yarn add] @sourceloop/subscription-service
         <td>Issuer of the JWT token.</td>
         <td></td>
       </tr>
-
+      
   </tbody>
 </table>
 
 ### Setting up a `DataSource`
 
-Here is a sample Implementation `DataSource` implementation using environment variables and PostgreSQL as the data source.
+Here is a sample Implementation `DataSource` implementation using environment variables and PostgreSQL as the data source. 
 
 ```typescript
 import {inject, lifeCycleObserver, LifeCycleObserver} from '@loopback/core';

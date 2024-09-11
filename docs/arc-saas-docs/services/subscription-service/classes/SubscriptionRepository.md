@@ -44,7 +44,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/subscription-service/src/repositories/subscription.repository.ts:22](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/repositories/subscription.repository.ts#L22)
+[services/subscription-service/src/repositories/subscription.repository.ts:22](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/subscription.repository.ts#L22)
 
 ## Properties
 
@@ -58,7 +58,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/subscription-service/src/repositories/subscription.repository.ts:25](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/repositories/subscription.repository.ts#L25)
+[services/subscription-service/src/repositories/subscription.repository.ts:26](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/subscription.repository.ts#L26)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/repositories/subscription.repository.ts:17](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/repositories/subscription.repository.ts#L17)
+[services/subscription-service/src/repositories/subscription.repository.ts:17](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/subscription.repository.ts#L17)
 
 ___
 
@@ -78,4 +78,4 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/repositories/subscription.repository.ts:27](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/repositories/subscription.repository.ts#L27)
+[services/subscription-service/src/repositories/subscription.repository.ts:28](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/subscription.repository.ts#L28)
