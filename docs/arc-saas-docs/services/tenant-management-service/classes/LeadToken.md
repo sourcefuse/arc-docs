@@ -36,7 +36,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/lead-token.model.ts:11](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/lead-token.model.ts#L11)
+[services/tenant-management-service/src/models/lead-token.model.ts:11](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/lead-token.model.ts#L11)
 
 ## Properties
 
@@ -46,4 +46,4 @@ Entity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/lead-token.model.ts:9](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/lead-token.model.ts#L9)
+[services/tenant-management-service/src/models/lead-token.model.ts:9](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/lead-token.model.ts#L9)

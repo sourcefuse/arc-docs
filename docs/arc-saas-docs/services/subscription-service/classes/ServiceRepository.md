@@ -41,7 +41,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/subscription-service/src/repositories/service.repository.ts:16](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/repositories/service.repository.ts#L16)
+[services/subscription-service/src/repositories/service.repository.ts:16](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/service.repository.ts#L16)
 
 ## Properties
 
@@ -55,4 +55,4 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/subscription-service/src/repositories/service.repository.ts:19](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/repositories/service.repository.ts#L19)
+[services/subscription-service/src/repositories/service.repository.ts:20](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/service.repository.ts#L20)

@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/subscription-service/src/keys.ts:8](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/keys.ts#L8)
+[services/subscription-service/src/keys.ts:8](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/keys.ts#L8)

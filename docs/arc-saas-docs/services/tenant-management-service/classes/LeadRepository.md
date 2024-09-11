@@ -47,7 +47,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/lead.repository.ts:35](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/lead.repository.ts#L35)
+[services/tenant-management-service/src/repositories/lead.repository.ts:35](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/lead.repository.ts#L35)
 
 ## Properties
 
@@ -57,7 +57,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/lead.repository.ts:30](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/lead.repository.ts#L30)
+[services/tenant-management-service/src/repositories/lead.repository.ts:30](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/lead.repository.ts#L30)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/lead.repository.ts:43](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/lead.repository.ts#L43)
+[services/tenant-management-service/src/repositories/lead.repository.ts:43](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/lead.repository.ts#L43)
 
 ___
 
@@ -81,7 +81,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/lead.repository.ts:39](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/lead.repository.ts#L39)
+[services/tenant-management-service/src/repositories/lead.repository.ts:39](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/lead.repository.ts#L39)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/lead.repository.ts:25](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/lead.repository.ts#L25)
+[services/tenant-management-service/src/repositories/lead.repository.ts:25](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/lead.repository.ts#L25)
 
 ___
 
@@ -101,4 +101,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/lead.repository.ts:41](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/lead.repository.ts#L41)
+[services/tenant-management-service/src/repositories/lead.repository.ts:41](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/lead.repository.ts#L41)

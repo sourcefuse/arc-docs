@@ -44,7 +44,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/invoice.model.ts:87](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/invoice.model.ts#L87)
+[services/tenant-management-service/src/models/invoice.model.ts:87](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/invoice.model.ts#L87)
 
 ## Properties
 
@@ -54,7 +54,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/invoice.model.ts:40](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/invoice.model.ts#L40)
+[services/tenant-management-service/src/models/invoice.model.ts:40](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/invoice.model.ts#L40)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/invoice.model.ts:48](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/invoice.model.ts#L48)
+[services/tenant-management-service/src/models/invoice.model.ts:48](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/invoice.model.ts#L48)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/invoice.model.ts:62](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/invoice.model.ts#L62)
+[services/tenant-management-service/src/models/invoice.model.ts:62](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/invoice.model.ts#L62)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/invoice.model.ts:33](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/invoice.model.ts#L33)
+[services/tenant-management-service/src/models/invoice.model.ts:33](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/invoice.model.ts#L33)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/invoice.model.ts:17](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/invoice.model.ts#L17)
+[services/tenant-management-service/src/models/invoice.model.ts:17](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/invoice.model.ts#L17)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/invoice.model.ts:54](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/invoice.model.ts#L54)
+[services/tenant-management-service/src/models/invoice.model.ts:54](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/invoice.model.ts#L54)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/invoice.model.ts:25](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/invoice.model.ts#L25)
+[services/tenant-management-service/src/models/invoice.model.ts:25](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/invoice.model.ts#L25)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/invoice.model.ts:73](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/invoice.model.ts#L73)
+[services/tenant-management-service/src/models/invoice.model.ts:73](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/invoice.model.ts#L73)
 
 ___
 
@@ -134,4 +134,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/invoice.model.ts:85](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/invoice.model.ts#L85)
+[services/tenant-management-service/src/models/invoice.model.ts:85](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/invoice.model.ts#L85)

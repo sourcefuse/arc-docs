@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/services/invoice-pdf-generator.service.ts:6](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/invoice-pdf-generator.service.ts#L6)
+[services/tenant-management-service/src/services/invoice-pdf-generator.service.ts:8](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/invoice-pdf-generator.service.ts#L8)
 
 ## Methods
 
@@ -40,4 +40,4 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/services/invoice-pdf-generator.service.ts:8](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/invoice-pdf-generator.service.ts#L8)
+[services/tenant-management-service/src/services/invoice-pdf-generator.service.ts:10](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/invoice-pdf-generator.service.ts#L10)

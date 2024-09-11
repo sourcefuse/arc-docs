@@ -18,31 +18,32 @@
 - [bindings](TenantManagementServiceComponent.md#bindings)
 - [controllers](TenantManagementServiceComponent.md#controllers)
 - [models](TenantManagementServiceComponent.md#models)
-- [notifConfig](TenantManagementServiceComponent.md#notifconfig)
 - [providers](TenantManagementServiceComponent.md#providers)
 - [repositories](TenantManagementServiceComponent.md#repositories)
 - [services](TenantManagementServiceComponent.md#services)
+- [tenantMgmtConfig](TenantManagementServiceComponent.md#tenantmgmtconfig)
 
 ### Methods
 
+- [addClassBindingIfNotPresent](TenantManagementServiceComponent.md#addclassbindingifnotpresent)
 - [setupSequence](TenantManagementServiceComponent.md#setupsequence)
 
 ## Constructors
 
 ### constructor
 
-• **new TenantManagementServiceComponent**(`application`, `notifConfig?`)
+• **new TenantManagementServiceComponent**(`application`, `tenantMgmtConfig?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `application` | `RestApplication` |
-| `notifConfig?` | [`ITenantManagementServiceConfig`](../interfaces/ITenantManagementServiceConfig.md) |
+| `tenantMgmtConfig?` | [`ITenantManagementServiceConfig`](../interfaces/ITenantManagementServiceConfig.md) |
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:84](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/component.ts#L84)
+[services/tenant-management-service/src/component.ts:85](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L85)
 
 ## Properties
 
@@ -52,13 +53,13 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:86](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/component.ts#L86)
+[services/tenant-management-service/src/component.ts:87](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L87)
 
 ___
 
 ### bindings
 
-• `Optional` **bindings**: `Binding`<`any`\>[] = `[]`
+• **bindings**: `Binding`<`any`\>[] = `[]`
 
 #### Implementation of
 
@@ -66,7 +67,7 @@ Component.bindings
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:166](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/component.ts#L166)
+[services/tenant-management-service/src/component.ts:167](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L167)
 
 ___
 
@@ -82,7 +83,7 @@ Component.controllers
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:185](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/component.ts#L185)
+[services/tenant-management-service/src/component.ts:186](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L186)
 
 ___
 
@@ -95,17 +96,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:180](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/component.ts#L180)
-
-___
-
-### notifConfig
-
-• `Private` `Optional` `Readonly` **notifConfig**: [`ITenantManagementServiceConfig`](../interfaces/ITenantManagementServiceConfig.md)
-
-#### Defined in
-
-[services/tenant-management-service/src/component.ts:88](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/component.ts#L88)
+[services/tenant-management-service/src/component.ts:181](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L181)
 
 ___
 
@@ -119,7 +110,7 @@ Component.providers
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:164](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/component.ts#L164)
+[services/tenant-management-service/src/component.ts:165](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L165)
 
 ___
 
@@ -132,7 +123,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:174](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/component.ts#L174)
+[services/tenant-management-service/src/component.ts:175](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L175)
 
 ___
 
@@ -146,9 +137,46 @@ Component.services
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:168](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/component.ts#L168)
+[services/tenant-management-service/src/component.ts:169](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L169)
+
+___
+
+### tenantMgmtConfig
+
+• `Private` `Optional` `Readonly` **tenantMgmtConfig**: [`ITenantManagementServiceConfig`](../interfaces/ITenantManagementServiceConfig.md)
+
+#### Defined in
+
+[services/tenant-management-service/src/component.ts:89](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L89)
 
 ## Methods
+
+### addClassBindingIfNotPresent
+
+▸ `Private` **addClassBindingIfNotPresent**<`T`\>(`key`, `cls`): `void`
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `key` | `string` |
+| `cls` | `Constructor`<`T`\> |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[services/tenant-management-service/src/component.ts:211](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L211)
+
+___
 
 ### setupSequence
 
@@ -162,4 +190,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:191](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/component.ts#L191)
+[services/tenant-management-service/src/component.ts:192](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L192)

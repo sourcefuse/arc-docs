@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/providers/lead-token-verify.provider.ts:11](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/providers/lead-token-verify.provider.ts#L11)
+[services/tenant-management-service/src/providers/lead-token-verify.provider.ts:11](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/providers/lead-token-verify.provider.ts#L11)
 
 ## Properties
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/providers/lead-token-verify.provider.ts:13](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/providers/lead-token-verify.provider.ts#L13)
+[services/tenant-management-service/src/providers/lead-token-verify.provider.ts:13](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/providers/lead-token-verify.provider.ts#L13)
 
 ## Methods
 
@@ -62,4 +62,4 @@ Provider.value
 
 #### Defined in
 
-[services/tenant-management-service/src/providers/lead-token-verify.provider.ts:15](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/providers/lead-token-verify.provider.ts#L15)
+[services/tenant-management-service/src/providers/lead-token-verify.provider.ts:15](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/providers/lead-token-verify.provider.ts#L15)

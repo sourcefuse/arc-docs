@@ -45,7 +45,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/tenant.model.ts:95](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/tenant.model.ts#L95)
+[services/tenant-management-service/src/models/tenant.model.ts:95](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/tenant.model.ts#L95)
 
 ## Properties
 
@@ -55,7 +55,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/tenant.model.ts:93](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/tenant.model.ts#L93)
+[services/tenant-management-service/src/models/tenant.model.ts:93](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/tenant.model.ts#L93)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/tenant.model.ts:75](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/tenant.model.ts#L75)
+[services/tenant-management-service/src/models/tenant.model.ts:75](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/tenant.model.ts#L75)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/tenant.model.ts:70](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/tenant.model.ts#L70)
+[services/tenant-management-service/src/models/tenant.model.ts:70](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/tenant.model.ts#L70)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/tenant.model.ts:21](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/tenant.model.ts#L21)
+[services/tenant-management-service/src/models/tenant.model.ts:21](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/tenant.model.ts#L21)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/tenant.model.ts:51](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/tenant.model.ts#L51)
+[services/tenant-management-service/src/models/tenant.model.ts:51](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/tenant.model.ts#L51)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/tenant.model.ts:87](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/tenant.model.ts#L87)
+[services/tenant-management-service/src/models/tenant.model.ts:87](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/tenant.model.ts#L87)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/tenant.model.ts:28](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/tenant.model.ts#L28)
+[services/tenant-management-service/src/models/tenant.model.ts:28](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/tenant.model.ts#L28)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/tenant.model.ts:80](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/tenant.model.ts#L80)
+[services/tenant-management-service/src/models/tenant.model.ts:80](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/tenant.model.ts#L80)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/tenant.model.ts:59](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/tenant.model.ts#L59)
+[services/tenant-management-service/src/models/tenant.model.ts:59](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/tenant.model.ts#L59)
 
 ___
 
@@ -145,4 +145,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/tenant.model.ts:39](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/tenant.model.ts#L39)
+[services/tenant-management-service/src/models/tenant.model.ts:39](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/tenant.model.ts#L39)

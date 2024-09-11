@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[services/subscription-service/src/enums/subscription-status.enum.ts:3](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/enums/subscription-status.enum.ts#L3)
+[services/subscription-service/src/enums/subscription-status.enum.ts:3](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/enums/subscription-status.enum.ts#L3)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/enums/subscription-status.enum.ts:5](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/enums/subscription-status.enum.ts#L5)
+[services/subscription-service/src/enums/subscription-status.enum.ts:5](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/enums/subscription-status.enum.ts#L5)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/enums/subscription-status.enum.ts:6](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/enums/subscription-status.enum.ts#L6)
+[services/subscription-service/src/enums/subscription-status.enum.ts:6](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/enums/subscription-status.enum.ts#L6)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/enums/subscription-status.enum.ts:4](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/enums/subscription-status.enum.ts#L4)
+[services/subscription-service/src/enums/subscription-status.enum.ts:4](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/enums/subscription-status.enum.ts#L4)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/enums/subscription-status.enum.ts:2](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/enums/subscription-status.enum.ts#L2)
+[services/subscription-service/src/enums/subscription-status.enum.ts:2](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/enums/subscription-status.enum.ts#L2)

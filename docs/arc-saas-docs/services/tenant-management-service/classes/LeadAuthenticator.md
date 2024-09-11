@@ -41,7 +41,7 @@ Constructs a new instance of the LeadAuthenticatorService.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/lead-authenticator.service.ts:21](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/lead-authenticator.service.ts#L21)
+[services/tenant-management-service/src/services/lead-authenticator.service.ts:21](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/lead-authenticator.service.ts#L21)
 
 ## Properties
 
@@ -53,7 +53,7 @@ Service for cryptographic operations.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/lead-authenticator.service.ts:25](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/lead-authenticator.service.ts#L25)
+[services/tenant-management-service/src/services/lead-authenticator.service.ts:25](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/lead-authenticator.service.ts#L25)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/services/lead-authenticator.service.ts:27](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/lead-authenticator.service.ts#L27)
+[services/tenant-management-service/src/services/lead-authenticator.service.ts:27](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/lead-authenticator.service.ts#L27)
 
 ___
 
@@ -75,7 +75,7 @@ Logger service for logging messages.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/lead-authenticator.service.ts:29](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/lead-authenticator.service.ts#L29)
+[services/tenant-management-service/src/services/lead-authenticator.service.ts:29](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/lead-authenticator.service.ts#L29)
 
 ___
 
@@ -87,7 +87,7 @@ Service for sending notifications.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/lead-authenticator.service.ts:23](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/lead-authenticator.service.ts#L23)
+[services/tenant-management-service/src/services/lead-authenticator.service.ts:23](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/lead-authenticator.service.ts#L23)
 
 ## Methods
 
@@ -113,7 +113,7 @@ a signed token.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/lead-authenticator.service.ts:84](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/lead-authenticator.service.ts#L84)
+[services/tenant-management-service/src/services/lead-authenticator.service.ts:70](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/lead-authenticator.service.ts#L70)
 
 ___
 
@@ -136,4 +136,4 @@ generated temporary token to validate his email id.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/lead-authenticator.service.ts:38](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/lead-authenticator.service.ts#L38)
+[services/tenant-management-service/src/services/lead-authenticator.service.ts:38](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/lead-authenticator.service.ts#L38)

@@ -22,24 +22,21 @@ Service for provisioning tenants.
 
 ### Properties
 
-- [codeBuildService](ProvisioningService.md#codebuildservice)
 - [cryptoHelperService](ProvisioningService.md#cryptohelperservice)
+- [eventConnector](ProvisioningService.md#eventconnector)
 - [logger](ProvisioningService.md#logger)
-- [pipelines](ProvisioningService.md#pipelines)
 - [tenantRepository](ProvisioningService.md#tenantrepository)
 - [webhookSecretRepo](ProvisioningService.md#webhooksecretrepo)
 
 ### Methods
 
-- [\_buildEnvVars](ProvisioningService.md#_buildenvvars)
-- [\_sanitizeTenantName](ProvisioningService.md#_sanitizetenantname)
 - [provisionTenant](ProvisioningService.md#provisiontenant)
 
 ## Constructors
 
 ### constructor
 
-• **new ProvisioningService**<`T`\>(`cryptoHelperService`, `codeBuildService`, `webhookSecretRepo`, `tenantRepository`, `logger`, `pipelines`)
+• **new ProvisioningService**<`T`\>(`cryptoHelperService`, `eventConnector`, `webhookSecretRepo`, `tenantRepository`, `logger`)
 
 Constructs a new instance of the ProvisioningService.
 
@@ -54,29 +51,16 @@ Constructs a new instance of the ProvisioningService.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `cryptoHelperService` | [`CryptoHelperService`](CryptoHelperService.md) | Service for cryptographic operations. |
-| `codeBuildService` | [`CodeBuildService`](CodeBuildService.md) | Service for AWS CodeBuild related operations. |
+| `eventConnector` | [`EventConnector`](EventConnector.md) | Event Connector provided by consumer to invoke publish on. |
 | `webhookSecretRepo` | [`WebhookSecretRepository`](WebhookSecretRepository.md) | Repository for webhook secrets. |
 | `tenantRepository` | [`TenantRepository`](TenantRepository.md) | - |
 | `logger` | `ILogger` | Logger service for logging messages. |
-| `pipelines` | `Record`<[`PlanTier`](../enums/PlanTier.md), `string`\> | - |
 
 #### Defined in
 
-[services/tenant-management-service/src/services/provisioning.service.ts:25](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/provisioning.service.ts#L25)
+[services/tenant-management-service/src/services/provisioning.service.ts:26](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/provisioning.service.ts#L26)
 
 ## Properties
-
-### codeBuildService
-
-• `Private` **codeBuildService**: [`CodeBuildService`](CodeBuildService.md)
-
-Service for AWS CodeBuild related operations.
-
-#### Defined in
-
-[services/tenant-management-service/src/services/provisioning.service.ts:29](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/provisioning.service.ts#L29)
-
-___
 
 ### cryptoHelperService
 
@@ -86,7 +70,19 @@ Service for cryptographic operations.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/provisioning.service.ts:27](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/provisioning.service.ts#L27)
+[services/tenant-management-service/src/services/provisioning.service.ts:28](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/provisioning.service.ts#L28)
+
+___
+
+### eventConnector
+
+• `Private` **eventConnector**: [`EventConnector`](EventConnector.md)
+
+Event Connector provided by consumer to invoke publish on.
+
+#### Defined in
+
+[services/tenant-management-service/src/services/provisioning.service.ts:30](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/provisioning.service.ts#L30)
 
 ___
 
@@ -98,17 +94,7 @@ Logger service for logging messages.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/provisioning.service.ts:35](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/provisioning.service.ts#L35)
-
-___
-
-### pipelines
-
-• `Private` **pipelines**: `Record`<[`PlanTier`](../enums/PlanTier.md), `string`\>
-
-#### Defined in
-
-[services/tenant-management-service/src/services/provisioning.service.ts:37](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/provisioning.service.ts#L37)
+[services/tenant-management-service/src/services/provisioning.service.ts:36](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/provisioning.service.ts#L36)
 
 ___
 
@@ -118,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/services/provisioning.service.ts:33](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/provisioning.service.ts#L33)
+[services/tenant-management-service/src/services/provisioning.service.ts:34](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/provisioning.service.ts#L34)
 
 ___
 
@@ -130,53 +116,13 @@ Repository for webhook secrets.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/provisioning.service.ts:31](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/provisioning.service.ts#L31)
+[services/tenant-management-service/src/services/provisioning.service.ts:32](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/provisioning.service.ts#L32)
 
 ## Methods
 
-### \_buildEnvVars
-
-▸ `Private` **_buildEnvVars**(`planItems`): `Object`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `planItems` | [`IPlanItem`](../interfaces/IPlanItem.md)[] |
-
-#### Returns
-
-`Object`
-
-#### Defined in
-
-[services/tenant-management-service/src/services/provisioning.service.ts:113](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/provisioning.service.ts#L113)
-
-___
-
-### \_sanitizeTenantName
-
-▸ `Private` **_sanitizeTenantName**(`name`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[services/tenant-management-service/src/services/provisioning.service.ts:123](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/provisioning.service.ts#L123)
-
-___
-
 ### provisionTenant
 
-▸ **provisionTenant**(`tenant`, `dto`): `Promise`<`void`\>
+▸ **provisionTenant**(`tenant`, `subscription`): `Promise`<`void`\>
 
 The `provisionTenant` function provisions a new tenant by generating a temporary token, retrieving
 the subscription details, generating a random HMAC secret, starting a build process, and storing the
@@ -187,7 +133,7 @@ webhook secret and build context to later verify the webhook callback.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `tenant` | [`TenantWithRelations`](../modules.md#tenantwithrelations) | The `tenant` parameter is an object that represents a tenant. It likely contains information such as the tenant's ID, name, and other relevant details. |
-| `dto` | `T` | - |
+| `subscription` | `T` | The `subscription` parameter is an object that contains the details of the subscription opted by the tenant. |
 
 #### Returns
 
@@ -199,4 +145,4 @@ webhook secret and build context to later verify the webhook callback.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/provisioning.service.ts:49](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/services/provisioning.service.ts#L49)
+[services/tenant-management-service/src/services/provisioning.service.ts:48](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/provisioning.service.ts#L48)

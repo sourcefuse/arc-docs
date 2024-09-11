@@ -34,4 +34,4 @@ BootMixin(
 
 #### Defined in
 
-[services/tenant-management-service/src/application.ts:18](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/application.ts#L18)
+[services/tenant-management-service/src/application.ts:18](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/application.ts#L18)

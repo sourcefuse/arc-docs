@@ -11,7 +11,6 @@
 ### Enumerations
 
 - [BillingCycleDuration](enums/BillingCycleDuration.md)
-- [PlanTier](enums/PlanTier.md)
 - [SubscriptionStatus](enums/SubscriptionStatus.md)
 
 ### Classes
@@ -21,9 +20,9 @@
 - [Currency](classes/Currency.md)
 - [CurrencyRepository](classes/CurrencyRepository.md)
 - [Plan](classes/Plan.md)
-- [PlanItem](classes/PlanItem.md)
-- [PlanItemRepository](classes/PlanItemRepository.md)
 - [PlanRepository](classes/PlanRepository.md)
+- [PlanSizes](classes/PlanSizes.md)
+- [PlanSizesRepository](classes/PlanSizesRepository.md)
 - [Resource](classes/Resource.md)
 - [ResourceRepository](classes/ResourceRepository.md)
 - [Service](classes/Service.md)
@@ -35,11 +34,9 @@
 
 ### Interfaces
 
-- [BillingCycleRelations](interfaces/BillingCycleRelations.md)
-- [CurrencyRelations](interfaces/CurrencyRelations.md)
 - [ISubscriptionServiceConfig](interfaces/ISubscriptionServiceConfig.md)
-- [PlanItemRelations](interfaces/PlanItemRelations.md)
 - [PlanRelations](interfaces/PlanRelations.md)
+- [PlanSizesRelations](interfaces/PlanSizesRelations.md)
 - [ResourceRelations](interfaces/ResourceRelations.md)
 - [ServiceRelations](interfaces/ServiceRelations.md)
 - [SubscriptionRelations](interfaces/SubscriptionRelations.md)
@@ -47,11 +44,9 @@
 ### Type Aliases
 
 - [BaseUser](modules.md#baseuser)
-- [BillingCycleWithRelations](modules.md#billingcyclewithrelations)
-- [CurrencyWithRelations](modules.md#currencywithrelations)
 - [LeadUser](modules.md#leaduser)
 - [LeadUserWithToken](modules.md#leaduserwithtoken)
-- [PlanItemWithRelations](modules.md#planitemwithrelations)
+- [PlanSizesWithRelations](modules.md#plansizeswithrelations)
 - [PlanWithRelations](modules.md#planwithrelations)
 - [ResourceWithRelations](modules.md#resourcewithrelations)
 - [ServiceWithRelations](modules.md#servicewithrelations)
@@ -76,27 +71,7 @@
 
 #### Defined in
 
-[services/subscription-service/src/types.ts:12](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/types.ts#L12)
-
-___
-
-### BillingCycleWithRelations
-
-Ƭ **BillingCycleWithRelations**: [`BillingCycle`](classes/BillingCycle.md) & [`BillingCycleRelations`](interfaces/BillingCycleRelations.md)
-
-#### Defined in
-
-[services/subscription-service/src/models/billing-cycle.model.ts:49](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/billing-cycle.model.ts#L49)
-
-___
-
-### CurrencyWithRelations
-
-Ƭ **CurrencyWithRelations**: [`Currency`](classes/Currency.md) & [`CurrencyRelations`](interfaces/CurrencyRelations.md)
-
-#### Defined in
-
-[services/subscription-service/src/models/currency.model.ts:49](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/currency.model.ts#L49)
+[services/subscription-service/src/types.ts:12](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/types.ts#L12)
 
 ___
 
@@ -106,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/types.ts:16](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/types.ts#L16)
+[services/subscription-service/src/types.ts:16](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/types.ts#L16)
 
 ___
 
@@ -116,27 +91,27 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/types.ts:21](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/types.ts#L21)
+[services/subscription-service/src/types.ts:21](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/types.ts#L21)
 
 ___
 
-### PlanItemWithRelations
+### PlanSizesWithRelations
 
-Ƭ **PlanItemWithRelations**: [`PlanItem`](classes/PlanItem.md) & [`PlanItemRelations`](interfaces/PlanItemRelations.md)
+Ƭ **PlanSizesWithRelations**: [`PlanSizes`](classes/PlanSizes.md)
 
 #### Defined in
 
-[services/subscription-service/src/models/plan-item.model.ts:53](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/plan-item.model.ts#L53)
+[services/subscription-service/src/models/plan-sizes.model.ts:33](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan-sizes.model.ts#L33)
 
 ___
 
 ### PlanWithRelations
 
-Ƭ **PlanWithRelations**: [`Plan`](classes/Plan.md) & [`PlanRelations`](interfaces/PlanRelations.md)
+Ƭ **PlanWithRelations**: [`Plan`](classes/Plan.md)
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:84](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/plan.model.ts#L84)
+[services/subscription-service/src/models/plan.model.ts:79](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L79)
 
 ___
 
@@ -146,7 +121,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/resource.model.ts:38](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/resource.model.ts#L38)
+[services/subscription-service/src/models/resource.model.ts:38](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/resource.model.ts#L38)
 
 ___
 
@@ -156,7 +131,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/service.model.ts:31](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/service.model.ts#L31)
+[services/subscription-service/src/models/service.model.ts:31](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/service.model.ts#L31)
 
 ___
 
@@ -166,7 +141,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/subscription.model.ts:65](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/subscription.model.ts#L65)
+[services/subscription-service/src/models/subscription.model.ts:65](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/subscription.model.ts#L65)
 
 ## Variables
 
@@ -176,7 +151,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/keys.ts:14](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/keys.ts#L14)
+[services/subscription-service/src/keys.ts:13](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/keys.ts#L13)
 
 ___
 
@@ -186,4 +161,4 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/types.ts:25](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/types.ts#L25)
+[services/subscription-service/src/types.ts:25](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/types.ts#L25)

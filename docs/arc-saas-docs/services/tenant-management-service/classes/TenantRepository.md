@@ -53,7 +53,7 @@ DefaultTransactionalUserModifyRepository&lt;
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/tenant.repository.ts:50](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/tenant.repository.ts#L50)
+[services/tenant-management-service/src/repositories/tenant.repository.ts:50](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/tenant.repository.ts#L50)
 
 ## Properties
 
@@ -63,7 +63,7 @@ DefaultTransactionalUserModifyRepository&lt;
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/tenant.repository.ts:45](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/tenant.repository.ts#L45)
+[services/tenant-management-service/src/repositories/tenant.repository.ts:45](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/tenant.repository.ts#L45)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/tenant.repository.ts:62](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/tenant.repository.ts#L62)
+[services/tenant-management-service/src/repositories/tenant.repository.ts:62](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/tenant.repository.ts#L62)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/tenant.repository.ts:56](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/tenant.repository.ts#L56)
+[services/tenant-management-service/src/repositories/tenant.repository.ts:56](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/tenant.repository.ts#L56)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/tenant.repository.ts:33](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/tenant.repository.ts#L33)
+[services/tenant-management-service/src/repositories/tenant.repository.ts:33](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/tenant.repository.ts#L33)
 
 ___
 
@@ -107,7 +107,7 @@ DefaultTransactionalUserModifyRepository.getCurrentUser
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/tenant.repository.ts:54](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/tenant.repository.ts#L54)
+[services/tenant-management-service/src/repositories/tenant.repository.ts:54](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/tenant.repository.ts#L54)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/tenant.repository.ts:43](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/tenant.repository.ts#L43)
+[services/tenant-management-service/src/repositories/tenant.repository.ts:43](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/tenant.repository.ts#L43)
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/tenant.repository.ts:58](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/tenant.repository.ts#L58)
+[services/tenant-management-service/src/repositories/tenant.repository.ts:58](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/tenant.repository.ts#L58)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/tenant.repository.ts:60](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/tenant.repository.ts#L60)
+[services/tenant-management-service/src/repositories/tenant.repository.ts:60](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/tenant.repository.ts#L60)
 
 ___
 
@@ -147,4 +147,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/tenant.repository.ts:38](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/repositories/tenant.repository.ts#L38)
+[services/tenant-management-service/src/repositories/tenant.repository.ts:38](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/tenant.repository.ts#L38)

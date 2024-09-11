@@ -38,7 +38,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/subscription-service/src/models/resource.model.ts:29](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/resource.model.ts#L29)
+[services/subscription-service/src/models/resource.model.ts:29](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/resource.model.ts#L29)
 
 ## Properties
 
@@ -48,7 +48,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/subscription-service/src/models/resource.model.ts:27](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/resource.model.ts#L27)
+[services/subscription-service/src/models/resource.model.ts:27](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/resource.model.ts#L27)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/resource.model.ts:13](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/resource.model.ts#L13)
+[services/subscription-service/src/models/resource.model.ts:13](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/resource.model.ts#L13)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/resource.model.ts:20](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/subscription-service/src/models/resource.model.ts#L20)
+[services/subscription-service/src/models/resource.model.ts:20](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/resource.model.ts#L20)

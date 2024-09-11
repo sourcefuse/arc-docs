@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/models/lead.model.ts:75](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/models/lead.model.ts#L75)
+[services/tenant-management-service/src/models/lead.model.ts:75](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/lead.model.ts#L75)

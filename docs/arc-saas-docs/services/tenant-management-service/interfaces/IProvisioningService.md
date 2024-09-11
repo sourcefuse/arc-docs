@@ -37,4 +37,4 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/types/i-provisioning-service.interface.ts:13](https://github.com/sourcefuse/arc-saas/blob/c6084d0/services/tenant-management-service/src/types/i-provisioning-service.interface.ts#L13)
+[services/tenant-management-service/src/types/i-provisioning-service.interface.ts:4](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/i-provisioning-service.interface.ts#L4)
