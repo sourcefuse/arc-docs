@@ -69,7 +69,8 @@ For a list of outputs, see the README [Outputs](https://github.com/sourcefuse/te
 
 ### Basic Usage
 
-For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-arc-vpn/tree/main/example) folder.
+#### Client VPN
+For basic Client VPN usage, see the [example](https://github.com/sourcefuse/terraform-aws-arc-vpn/tree/main/examples/client-vpn) folder.
 
 This example will create:
 
@@ -93,7 +94,7 @@ This example will create:
 
 The VPN setup allows users to securely connect to the AWS VPC from anywhere, using the created client VPN. The self-signed certificates are used to authenticate the users.
 
-### How to create AWS Client VPN file
+##### How to create AWS Client VPN file
 - Download and install AWS Client VPN Application [download](https://aws.amazon.com/vpn/client-vpn-download/)
 - Download the AWS Client VPN Configuration File
 	- Navigate to `VPC` > `Client VPN endpoints`
@@ -110,12 +111,29 @@ The VPN setup allows users to securely connect to the AWS VPC from anywhere, usi
 		Copy from SSM PARAM self-signed-cert-ca.key
 	</key>
 	```
+#### Site to Site VPN
+For basic Site to Site VPN usage, see the [example](https://github.com/sourcefuse/terraform-aws-arc-vpn/tree/main/examples/site-to-site-vpn) folder.
 
+This example will create:
 
+- Customer Gateway (AWS Customer Gateway Resource)
+	- Represents the on-premises customer gateway device.
+	- Configured with BGP ASN, IP address, and optional certificate.
+- VPN Gateway (AWS Virtual Private Gateway Resource)
+	- An AWS-side gateway for the VPN connection, attached to a specified VPC.
+	- Optionally configured with Amazon-side ASN and availability zone.
+VPN Connection (AWS VPN Connection Resource)
+	- Establishes the encrypted IPsec VPN tunnel between the customer gateway and VPN gateway (or Transit Gateway).
+	- Supports configurations for static or BGP routing, encryption algorithms, and logging.
+	- Tunnel configurations (e.g., inside CIDR, pre-shared keys, encryption and integrity algorithms) are managed for two tunnels (primary and secondary).
+    - The module can create a connection to an existing Transit Gateway instead of a VPN Gateway.
+Logs and Monitoring
+	- Enables detailed logging for the tunnels (e.g., CloudWatch logs) with configurable retention periods and output formats.
 
 ### Tips and Recommendations
 
-To authenticate the AWS Client VPN, integration with Active Directory (AD) is possible.
+
+To authenticate AWS Client VPN, integration with Active Directory (AD) is supported. This allows user authentication via AD credentials, enhancing security and centralizing access control within your organization's existing infrastructure.
 
 ## Troubleshooting
 
