@@ -44,6 +44,7 @@ It provides support for seven passport based strategies.
 10. [passport-cognito-oauth2](https://github.com/ebuychance/passport-cognito-oauth2) - Passport strategy for authenticating with Cognito using the Cognito OAuth 2.0 API. This module lets you authenticate using Cognito in your Node.js applications.
 11. [passport-SAML](https://github.com/node-saml/passport-saml) - Passport strategy for authenticating with SAML using the SAML 2.0 API. This module lets you authenticate using SAML in your Node.js applications
 12. custom-passport-otp - Created a Custom Passport strategy for 2-Factor-Authentication using OTP (One Time Password).
+13. [passport-auth0](https://github.com/auth0/passport-auth0) - Passport strategy for authenticating with auth0. This module lets you authenticate using [Auth0](https://auth0.com/) in your Node.js applications.
 
 You can use one or more strategies of the above in your application. For each of the strategy (only which you use), you just need to provide your own verifier function, making it easily configurable. Rest of the strategy implementation intricacies is handled by extension.
 
@@ -2976,6 +2977,346 @@ this.component(AuthenticationComponent);
 
 This binding needs to be done before adding the Authentication component to your application.
 Apart from this all other steps for authentication for all strategies remain the same.
+
+### Passport Auth0
+
+In order to use it, run `npm install passport-auth0` and `npm install @types/passport-auth0`.
+First, create a AuthUser model implementing the IAuthUser interface. You can implement the interface in the user model itself. See sample below.
+
+```ts
+@model({
+  name: 'users',
+})
+export class User extends Entity implements IAuthUser {
+  @property({
+    type: 'number',
+    id: true,
+  })
+  id?: number;
+
+  @property({
+    type: 'string',
+    required: true,
+    name: 'first_name',
+  })
+  firstName: string;
+
+  @property({
+    type: 'string',
+    name: 'last_name',
+  })
+  lastName: string;
+
+  @property({
+    type: 'string',
+    name: 'middle_name',
+  })
+  middleName?: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  username: string;
+
+  @property({
+    type: 'string',
+  })
+  email?: string;
+
+  // Auth provider - 'auth0'
+  @property({
+    type: 'string',
+    required: true,
+    name: 'auth_provider',
+  })
+  authProvider: string;
+
+  // Id from external provider
+  @property({
+    type: 'string',
+    name: 'auth_id',
+  })
+  authId?: string;
+
+  @property({
+    type: 'string',
+    name: 'auth_token',
+  })
+  authToken?: string;
+
+  @property({
+    type: 'string',
+  })
+  password?: string;
+
+  constructor(data?: Partial<User>) {
+    super(data);
+  }
+}
+```
+
+Now bind this model to USER_MODEL key in application.ts
+
+```ts
+this.bind(AuthenticationBindings.USER_MODEL).to(User);
+```
+
+Create CRUD repository for the above model. Use loopback CLI.
+
+```sh
+lb4 repository
+```
+
+Add the verifier function for the strategy. You need to create a provider for the same. You can add your application specific business logic for client auth here. Here is a simple example.
+
+```ts
+import {Provider, inject} from '@loopback/context';
+import {repository} from '@loopback/repository';
+import {HttpErrors} from '@loopback/rest';
+import {
+  AuthErrorKeys,
+  IAuthUser,
+  VerifyFunction,
+} from 'loopback4-authentication';
+import * as Auth0Strategy from 'passport-auth0';
+import {
+  Auth0PostVerifyFn,
+  Auth0PreVerifyFn,
+  Auth0SignUpFn,
+} from '../../../providers';
+import {SignUpBindings, VerifyBindings} from '../../../providers/keys';
+import {UserCredentialsRepository, UserRepository} from '../../../repositories';
+import {AuthUser} from '../models';
+
+export class Auth0VerifyProvider implements Provider<VerifyFunction.Auth0Fn> {
+  constructor(
+    @repository(UserRepository)
+    public userRepository: UserRepository,
+    @repository(UserCredentialsRepository)
+    public userCredsRepository: UserCredentialsRepository,
+  ) {}
+
+  value(): VerifyFunction.Auth0Fn {
+    return async (
+      accessToken: string,
+      refreshToken: string,
+      profile: Auth0Strategy.Profile,
+    ) => {
+      let user: IAuthUser | null = await this.userRepository.findOne({
+        where: {
+          email: profile._json.email,
+        },
+      });
+
+      if (!user) {
+          throw new HttpErrors.Unauthorized(AuthErrorKeys.InvalidCredentials);
+        }
+      }
+      const creds = await this.userCredsRepository.findOne({
+        where: {
+          userId: user.id as string,
+        },
+      });
+      if (
+        !user ||
+        user.authProvider !== 'auth0' ||
+        user.authId !== profile.id
+      ) {
+        throw new HttpErrors.Unauthorized(AuthErrorKeys.InvalidCredentials);
+      }
+
+      const authUser: AuthUser = new AuthUser(user);
+      authUser.permissions = [];
+      authUser.externalAuthToken = accessToken;
+      authUser.externalRefreshToken = refreshToken;
+      return this.postVerifyProvider(profile, authUser);
+    };
+  }
+}
+```
+
+Please note the Verify function type _VerifyFunction.LocalPasswordFn_
+
+Now bind this provider to the application in application.ts.
+
+```ts
+import {AuthenticationComponent, Strategies} from 'loopback4-authentication';
+```
+
+```ts
+// Add authentication component
+this.component(AuthenticationComponent);
+// Customize authentication verify handlers
+this.bind(Strategies.Passport.AUTH0_VERIFIER).toProvider(Auth0VerifyProvider);
+```
+
+Now, bind this provider to the application in application.ts.
+
+```ts
+import {Auth0StrategyFactoryProvider} from 'loopback4-authentication/passport-auth0';
+```
+
+```ts
+this.bind(Strategies.Passport.AUTH0_STRATEGY_FACTORY).toProvider(
+  Auth0StrategyFactoryProvider,
+);
+```
+
+Finally, add the authenticate function as a sequence action to sequence.ts.
+
+```ts
+export class MySequence implements SequenceHandler {
+  constructor(
+    @inject(SequenceActions.FIND_ROUTE) protected findRoute: FindRoute,
+    @inject(SequenceActions.PARSE_PARAMS) protected parseParams: ParseParams,
+    @inject(SequenceActions.INVOKE_METHOD) protected invoke: InvokeMethod,
+    @inject(SequenceActions.SEND) public send: Send,
+    @inject(SequenceActions.REJECT) public reject: Reject,
+    @inject(AuthenticationBindings.USER_AUTH_ACTION)
+    protected authenticateRequest: AuthenticateFn<AuthUser>,
+  ) {}
+
+  async handle(context: RequestContext) {
+    try {
+      const {request, response} = context;
+
+      const route = this.findRoute(request);
+      const args = await this.parseParams(request, route);
+      request.body = args[args.length - 1];
+      const authUser: AuthUser = await this.authenticateRequest(
+        request,
+        response,
+      );
+      const result = await this.invoke(route, args);
+      this.send(response, result);
+    } catch (err) {
+      this.reject(context, err);
+    }
+  }
+}
+```
+
+After this, you can use decorator to apply auth to controller functions wherever needed. See below.
+
+```ts
+@authenticateClient(STRATEGY.CLIENT_PASSWORD)
+  @authenticate(
+   STRATEGY.AUTH0,
+    {
+      domain: process.env.AUTH0_DOMAIN,
+      clientID: process.env.AUTH0_CLIENT_ID,
+      clientSecret: process.env.AUTH0_CLIENT_SECRET,
+      callbackURL: process.env.AUTH0_CALLBACK_URL,
+      state: false,
+      profileFields: ['email', 'name'],
+      scope: 'openid email profile',
+    },
+    (req: Request) => {
+      return {
+        accessType: 'offline',
+        state: Object.keys(req.query)
+          .map(key => key + '=' + req.query[key])
+          .join('&'),
+      };
+    },
+  )
+  @authorize(['*'])
+  @get('/auth/auth0', {
+    responses: {
+      [STATUS_CODE.OK]: {
+        description: 'Token Response',
+        content: {
+          [CONTENT_TYPE.JSON]: {
+            schema: {'x-ts-type': TokenResponse},
+          },
+        },
+      },
+    },
+  })
+  async loginViaAuth0(
+    @param.query.string('client_id')
+    clientId?: string,
+    @param.query.string('client_secret')
+    clientSecret?: string,
+  ): Promise<void> {}
+
+  @authenticate(
+    STRATEGY.AUTH0,
+    {
+      domain: process.env.AUTH0_DOMAIN,
+      clientID: process.env.AUTH0_CLIENT_ID,
+      clientSecret: process.env.AUTH0_CLIENT_SECRET,
+      callbackURL: process.env.AUTH0_CALLBACK_URL,
+      state: false,
+      profileFields: ['email', 'name'],
+      scope: 'openid email profile',
+    }
+    (req: Request) => {
+      return {
+        accessType: 'offline',
+        state: Object.keys(req.query)
+          .map(key => `${key}=${req.query[key]}`)
+          .join('&'),
+      };
+    },
+  )
+  @authorize(['*'])
+  @get('/auth/auth0-auth-redirect', {
+    responses: {
+      [STATUS_CODE.OK]: {
+        description: 'Token Response',
+        content: {
+          [CONTENT_TYPE.JSON]: {
+            schema: {'x-ts-type': TokenResponse},
+          },
+        },
+      },
+    },
+  })
+  async callback(
+    @param.query.string('code') code: string,
+    @param.query.string('state') state: string,
+    @inject(RestBindings.Http.RESPONSE) response: Response,
+  ): Promise<void> {
+    const clientId = new URLSearchParams(state).get('client_id');
+    if (!clientId || !this.user) {
+      throw new HttpErrors.Unauthorized(AuthErrorKeys.ClientInvalid);
+    }
+    const client = await this.authClientRepository.findOne({
+      where: {
+        clientId: clientId,
+      },
+    });
+    if (!client || !client.redirectUrl) {
+      throw new HttpErrors.Unauthorized(AuthErrorKeys.ClientInvalid);
+    }
+    try {
+      const codePayload: ClientAuthCode<User> = {
+        clientId,
+        user: this.user,
+      };
+      const token = jwt.sign(codePayload, client.secret, {
+        expiresIn: client.authCodeExpiration,
+        audience: clientId,
+        subject: this.user.username,
+        issuer: process.env.JWT_ISSUER,
+      });
+      response.redirect(`${client.redirectUrl}?code=${token}`);
+    } catch (error) {
+      throw new HttpErrors.InternalServerError(AuthErrorKeys.UnknownError);
+    }
+  }
+```
+
+Please note above that we are creating two new APIs for auth0 authentication. The first one is for UI clients to hit. We are authenticating client as well, then passing the details to the auth0. Then, the actual authentication is done by auth0 authorization url, which redirects to the second API we created after success. The first API method body is empty as we do not need to handle its response. The provider in this package will do the redirection for you automatically.
+
+For accessing the authenticated AuthUser model reference, you can inject the CURRENT_USER provider, provided by the extension, which is populated by the auth action sequence above.
+
+```ts
+  @inject.getter(AuthenticationBindings.CURRENT_USER)
+  private readonly getCurrentUser: Getter<User>,
+```
 
 ## Feedback
 
