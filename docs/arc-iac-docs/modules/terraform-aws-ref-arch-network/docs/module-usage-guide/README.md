@@ -29,7 +29,7 @@ To incorporate the module into your main Terraform configuration file (e.g., mai
 ```hcl
 module "network" {
   source  = "sourcefuse/arc-network/aws"
-  version = "2.6.10"
+  version = "3.0.0"
   # insert the required variables here
 }
 ```
@@ -87,25 +87,14 @@ For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-a
 
 This example will create:
 
-- A VPC with CIDR block `10.9.0.0/16`
-- Two subnets in availability zones : `"us-east-1a"`, `"us-east-1b"`
+- A VPC with CIDR block `10.0.0.0/16`
+- Two subnets in availability zones : `"us-east-1a"`, `"us-east-1b"` and `"us-east-1c"`
 - Route tables, internet gateway, NAT Gateways
-- vpc endpoints for the services: s3, kms, cloudwatch, elb, dynamodb, ec2, sns, sqs, ecs, rds
+- vpc endpoints for the services: s3, dynamodb
 
 ### Tips and Recommendations
 
-- If you want to create custom subnet ranges, check [example](https://github.com/sourcefuse/terraform-aws-arc-network/tree/main/examples/custom-subnets)
-- If you want to create your own nat gateway(s) check [example](https://github.com/sourcefuse/terraform-aws-arc-network/tree/main/examples/custom-nat-gateways)
-- If you have disabled the default nat gateways for your custom subnets
-  then you need to pass a nat gateway id for each private subnet that
-  you are creating. If custom_az_ngw_ids is left empty in this case
-  then no default route is created by the module.
-- Creating nat gateway as demonstrated in this example is a 3 step process:
-  - STEP 1 : Apply the configuration without any nat gateway and eip resources and without custom_az_ngw_ids value
-  - STEP 2 : Add nat gateway and eip resources and run apply
-  - STEP 3 : finally add custom_az_ngw_ids input map and run apply
-  This does introduce a cyclical dependency between the network module and the nat and eip resources, but it is expected
-  since its a deviation from the [recommended aws nat gateway configuration](https://aws.amazon.com/blogs/networking-and-content-delivery/using-nat-gateways-with-multiple-amazon-vpcs-at-scale/).
+- The module allows you to define and create subnets with granular control over placement in specific availability zones (AZs). You can configure subnet attributes like CIDR blocks, public or private subnet type, NAT Gateway attachment etc, please refer [custom subnets](https://github.com/sourcefuse/terraform-aws-arc-network/tree/main/examples/custom-subnets) folder.
 
   <details><summary>tldr</summary>
 
