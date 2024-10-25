@@ -86,6 +86,9 @@ nav:
           - Transit-Gateway:
               - Transit-Gateway: "arc-iac-docs/modules/terraform-aws-arc-transit-gateway"
               - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-arc-transit-gateway/docs/module-usage-guide"
+          - DMS:
+              - DMS: "arc-iac-docs/modules/terraform-aws-arc-dms"
+              - Module Usage Guide: "arc-iac-docs/modules/terraform-aws-dms/docs/module-usage-guide"
           - Backstage:
               - ECS: "arc-iac-docs/modules/arc-backstage-ecs-app"
       - Cloud Native:
