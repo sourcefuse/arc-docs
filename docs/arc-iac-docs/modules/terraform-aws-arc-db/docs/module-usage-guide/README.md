@@ -27,7 +27,7 @@ To use the module in your Terraform configuration, include the following source 
 ```hcl
 module "aurora" {
   source = "sourcefuse/arc-db/aws"
-  version = "3.0.0"
+  version = "4.0.0"
   # insert the required variables here
 }
 ```
@@ -37,7 +37,7 @@ module "aurora" {
 Integrate the module with your existing Terraform mono repo configuration, follow the steps below:
 
 1. Create a new folder in `terraform/` named `db`.
-2. Create the required files, see the [examples](https://github.com/sourcefuse/terraform-aws-arc-db/tree/main/examples/simple) to base off of.
+2. Create the required files, see the [examples](https://github.com/sourcefuse/terraform-aws-arc-db/tree/main/examples/rds) to base off of.
 3. Configure with your backend
   - Create the environment backend configuration file: `config.<environment>.hcl`
     - **region**: Where the backend resides
@@ -64,15 +64,33 @@ For a list of outputs, see the README [Outputs](https://github.com/sourcefuse/te
 
 ### Basic Usage
 
-For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-arc-db/tree/main/example) folder.
+For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-arc-db/tree/main/examples/rds) folder.
 
 This example will create:
 
-module "aurora": This module is creating an Aurora database cluster.The module is configuring the Aurora cluster with various settings, such as the instance type, the number of instances in the cluster, the subnets and security groups it's associated with, and more.
+- RDS Instance Example
+This example demonstrates deploying a single RDS instance using the module, configuring an Amazon RDS database with basic settings like instance class, storage, and connectivity. It showcases options for database engine, encryption, and CloudWatch monitoring for a standalone RDS database. Ideal for simple, production-ready RDS setups.
 
-module "rds_sql_server": This module is creating an Amazon RDS instance for SQL Server.This module is configuring the RDS instance with various settings, such as the database engine and version, the instance class, the allocated storage, the security groups it's associated with, and more.
+### RDS Proxy
 
-Both of these modules are using data sources (data.aws_vpc.vpc, data.aws_subnets.private, data.aws_security_groups.db_sg, etc.) to fetch information about the existing AWS infrastructure, such as the VPC, subnets, and security groups, and use that information to configure the databases.
+For RDS Proxy, see the [example](https://github.com/sourcefuse/terraform-aws-arc-db/tree/main/examples/rds-proxy) folder.
+
+- RDS Proxy Example
+This example configures an RDS Proxy for an RDS database, helping manage connection pooling for improved database performance and security. By integrating with RDS Proxy, it reduces connection management overhead and scales automatically with demand, useful for applications with variable database traffic and sensitive to scaling requirements.
+
+### Aurora Cluster
+
+For Aurora Cluster, see the [example](https://github.com/sourcefuse/terraform-aws-arc-db/tree/main/examples/aurora) folder.
+
+- Aurora Cluster Example
+This example provisions an Amazon Aurora cluster, utilizing the module to set up a high-availability, high-performance database solution. The configuration includes multiple instances within a cluster, providing a resilient and cost-effective solution suitable for demanding applications.
+
+### Aurora Cluster Serverless
+
+For Aurora Cluster Serverless, see the [example](https://github.com/sourcefuse/terraform-aws-arc-db/tree/main/examples/aurora-serverless) folder.
+
+- Aurora Serverless Cluster Example
+This example deploys an Aurora Serverless cluster autoscaling, making it ideal for applications with unpredictable or intermittent database usage. The module configures serverless capacity, connectivity, and database settings, automatically adjusting to workload needs without manual intervention.
 
 ### Tips and Recommendations
 
