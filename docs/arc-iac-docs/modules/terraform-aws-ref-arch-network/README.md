@@ -162,17 +162,24 @@ locals {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.57.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.75.0 |
 
 ## Modules
 
-No modules.
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_kms"></a> [kms](#module\_kms) | sourcefuse/arc-kms/aws | 1.0.9 |
 
 ## Resources
 
 | Name | Type |
 |------|------|
+| [aws_cloudwatch_log_group.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group) | resource |
 | [aws_eip.nat_gw](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eip) | resource |
+| [aws_flow_log.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/flow_log) | resource |
+| [aws_iam_policy.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy) | resource |
+| [aws_iam_role.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
+| [aws_iam_role_policy_attachment.attach_flow_logs_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
 | [aws_internet_gateway.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/internet_gateway) | resource |
 | [aws_nat_gateway.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/nat_gateway) | resource |
 | [aws_route.additional](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route) | resource |
@@ -184,6 +191,10 @@ No modules.
 | [aws_subnet.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/subnet) | resource |
 | [aws_vpc.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc) | resource |
 | [aws_vpc_endpoint.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc_endpoint) | resource |
+| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
+| [aws_iam_policy_document.assume](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
+| [aws_iam_policy_document.flow_logs_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
+| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
 | [aws_region.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
 | [aws_route_tables.private](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/route_tables) | data source |
 | [aws_route_tables.public](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/route_tables) | data source |
@@ -208,11 +219,13 @@ No modules.
 | <a name="input_ipv6_cidr_block_network_border_group"></a> [ipv6\_cidr\_block\_network\_border\_group](#input\_ipv6\_cidr\_block\_network\_border\_group) | The network border group of the IPv6 CIDR block. | `string` | `null` | no |
 | <a name="input_ipv6_ipam_pool_id"></a> [ipv6\_ipam\_pool\_id](#input\_ipv6\_ipam\_pool\_id) | The IPv6 IPAM pool ID from which to allocate the CIDR. | `string` | `null` | no |
 | <a name="input_ipv6_netmask_length"></a> [ipv6\_netmask\_length](#input\_ipv6\_netmask\_length) | The netmask length of the IPv6 CIDR block to allocate to the VPC. | `number` | `null` | no |
+| <a name="input_kms_config"></a> [kms\_config](#input\_kms\_config) | n/a | <pre>object({<br>    deletion_window_in_days = number<br>    enable_key_rotation     = bool<br>  })</pre> | <pre>{<br>  "deletion_window_in_days": 30,<br>  "enable_key_rotation": true<br>}</pre> | no |
 | <a name="input_name"></a> [name](#input\_name) | VPC name | `string` | n/a | yes |
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | Namespace name | `string` | n/a | yes |
 | <a name="input_subnet_map"></a> [subnet\_map](#input\_subnet\_map) | A map defining the configuration of subnets, their attributes, and associated resources.<br>Each subnet configuration can include the following details:<br><br>- **name**: Name of the subnet.<br>- **cidr\_block**: CIDR block for the subnet.<br>- **availability\_zone**: The availability zone where the subnet is located.<br>- **enable\_resource\_name\_dns\_a\_record\_on\_launch**: Enable or disable DNS A records for EC2 instances launched in this subnet (default: false).<br>- **enable\_resource\_name\_dns\_aaaa\_record\_on\_launch**: Enable or disable DNS AAAA records for EC2 instances launched in this subnet (default: false).<br>- **map\_public\_ip\_on\_launch**: Specify whether to auto-assign a public IP for instances in this subnet (default: false).<br>- **ipv6\_native**: Enable or disable native IPv6 support for the subnet (default: false).<br>- **assign\_ipv6\_address\_on\_creation**: Whether to automatically assign an IPv6 address to instances launched in the subnet (default: false).<br>- **ipv6\_cidr\_block**: The IPv6 CIDR block associated with the subnet (optional).<br>- **enable\_dns64**: Enable or disable DNS64 in the subnet (default: false).<br>- **nat\_gateway\_name**: Name of the NAT Gateway attached to the subnet (optional).<br>- **create\_nat\_gateway**: Specify whether to create a NAT Gateway for the subnet (default: true).<br>- **attach\_nat\_gateway**: Specify whether to attach an existing NAT Gateway to the subnet (default: false).<br>- **attach\_internet\_gateway**: Specify whether to attach an Internet Gateway to the subnet (default: false).<br>- **additional\_routes**: List of additional routes to be added to the subnet route table, typically to route traffic to other services like Transit Gateway. Each route includes:<br>  - **type**: Type of resource (default: "transit-gateway").<br>  - **id**: The ID of the route target (e.g., a Transit Gateway ID).<br>  - **cidr\_block**: The destination CIDR block for the route.<br>  - **destination\_ipv6\_cidr\_block**: The destination IPV6 CIDR block for the route. | <pre>map(object({<br>    name                                           = string<br>    cidr_block                                     = string<br>    availability_zone                              = string<br>    enable_resource_name_dns_a_record_on_launch    = optional(bool, false)<br>    enable_resource_name_dns_aaaa_record_on_launch = optional(bool, false)<br>    map_public_ip_on_launch                        = optional(bool, false)<br>    ipv6_native                                    = optional(bool, false)<br>    assign_ipv6_address_on_creation                = optional(bool, false)<br>    ipv6_cidr_block                                = optional(string, null)<br>    enable_dns64                                   = optional(bool, false)<br>    nat_gateway_name                               = optional(string, null)<br>    create_nat_gateway                             = optional(bool, true)<br>    attach_nat_gateway                             = optional(bool, false)<br>    attach_internet_gateway                        = optional(bool, false)<br>    additional_routes = optional(list(object({<br>      type                        = optional(string, "transit-gateway") // possible values : network-interface ,transit-gateway, vpc-endpoint, vpc-peering-connection<br>      id                          = string<br>      destination_cidr_block      = optional(string, null)<br>      destination_ipv6_cidr_block = optional(string, null)<br>      }<br>    )), [])<br>  }))</pre> | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | (optional) Tags for VPC resources | `map(string)` | `{}` | no |
 | <a name="input_vpc_endpoint_data"></a> [vpc\_endpoint\_data](#input\_vpc\_endpoint\_data) | (optional) List of VPC endpoints to be created | <pre>list(object({<br>    service             = string<br>    route_table_filter  = optional(string, "private") // possible values 'private' and 'public'<br>    policy_doc          = optional(string, null)<br>    private_dns_enabled = optional(bool, false)<br>    security_group_ids  = optional(list(string), [])<br>  }))</pre> | `[]` | no |
+| <a name="input_vpc_flow_log_config"></a> [vpc\_flow\_log\_config](#input\_vpc\_flow\_log\_config) | If `s3_bucket_arn` is null, only CloudWatch logging is enabled by default. If `s3_bucket_arn` is provided, S3 logging is enabled. | <pre>object({<br>    enable            = bool<br>    retention_in_days = number<br>    s3_bucket_arn     = string<br>  })</pre> | <pre>{<br>  "enable": true,<br>  "retention_in_days": 7,<br>  "s3_bucket_arn": null<br>}</pre> | no |
 
 ## Outputs
 
