@@ -8,7 +8,7 @@
 
 [![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-opensearch/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-opensearch/actions/workflows/snyk.yaml)
 ## Overview
-Terraform module for supporting AWS OpenSearch. Creates an admin role and outputs parameters to SSM for downstream utilization or additional automation.
+Terraform module for Amazon OpenSearch provides a flexible and scalable way to deploy and manage OpenSearch clusters, with support for both serverless and managed (provisioned) deployment options.
 
 ## Usage
 
@@ -19,20 +19,45 @@ See the `example/vpc` folder for a working module example.
 ## opensearch
 ################################################################################
 module "opensearch" {
-  source                         = "sourcefuse/arc-opensearch/aws"
-  version                        = "0.1.2"
-  environment                    = var.environment
-  namespace                      = var.namespace
-  vpc_id                         = data.aws_vpc.default.id
-  create_iam_service_linked_role = false # set to false if a cluster already exists
-  subnet_ids                     = local.private_subnet_ids
-  availability_zones             = local.private_subnet_azs
+  source                       = "sourcefuse/arc-opensearch/aws"
+  version                      = "0.1.2"
+  namespace                    = var.namespace
+  environment                  = var.environment
+  name                         = var.name
+  engine_version               = var.engine_version
+  instance_type                = var.instance_type
+  instance_count               = var.instance_count
+  enable_vpc_options           = true
+  vpc_id                       = data.aws_vpc.default.id
+  subnet_ids                   = local.private_subnet_ids
+  ingress_rules                = local.ingress_rules
+  egress_rules                 = local.egress_rules
 
   tags = module.tags.tags
 }
 
+################################################################################
+## opensearch serverless
+################################################################################
+ module "opensearch_serverless" {
+  source                       = "sourcefuse/arc-opensearch/aws"
+  version                      = "0.1.2"
+  enable_serverless            = true
+  namespace                    = var.namespace
+  environment                  = var.environment
+  name                         = var.name
+  ingress_rules                = local.ingress_rules
+  egress_rules                 = local.egress_rules
+  subnet_ids                   = local.private_subnet_ids
+  vpc_id                       = data.aws_vpc.default.id
+  data_lifecycle_policy_rules  = local.data_lifecycle_policy_rules
+  access_policy_rules          = local.access_policy_rules
+  tags                         = module.tags.tags
+
+}
+
 ```
-See the `example/non-vpc` folder if you want your os to be public
+See the `example/public` folder if you want your os to be public
 
 ```hcl
 ################################################################################
@@ -41,16 +66,32 @@ See the `example/non-vpc` folder if you want your os to be public
 module "opensearch" {
   source                         = "sourcefuse/arc-opensearch/aws"
   version                        = "1.0.3"
-  environment                    = var.environment
   namespace                      = var.namespace
-  create_iam_service_linked_role = false # set to false if a cluster already exists
-  instance_count                 = var.instance_count
+  environment                    = var.environment
+  name                           = var.name
+  engine_version                 = var.engine_version
   instance_type                  = var.instance_type
-  ebs_volume_size                = var.ebs_volume_size
-  vpc_enabled                    = false
-  allowed_cidr_blocks            = [""]  // non VPC ES to allow anonymous access from whitelisted IP ranges without requests signing
-  anonymous_iam_actions          = ["es:ESHttpGet", "es:ESHttpPut", "es:ESHttpPost"] // Actions for anonymous user
-  iam_actions                    = ["es:ESHttpGet", "es:ESHttpPut", "es:ESHttpPost"] // Actions for user
+  instance_count                 = var.instance_count
+  enable_encrypt_at_rest         = true
+  enable_domain_endpoint_options = true
+  advanced_security_enabled      = true
+
+  tags = module.tags.tags
+}
+
+################################################################################
+## opensearch serverless
+################################################################################
+module "opensearch_serverless" {
+  source                       = "sourcefuse/arc-opensearch/aws"
+  version                      = "1.0.3"
+  enable_serverless            = true
+  namespace                    = var.namespace
+  environment                  = var.environment
+  name                         = var.name
+  enable_public_access         = true
+  data_lifecycle_policy_rules  = local.data_lifecycle_policy_rules
+  access_policy_rules          = local.access_policy_rules
 
   tags = module.tags.tags
 }
@@ -62,88 +103,115 @@ module "opensearch" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5, < 2.0.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.0, < 6.0 |
-| <a name="requirement_null"></a> [null](#requirement\_null) | >= 3.2 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.4 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.54.0 |
-| <a name="provider_random"></a> [random](#provider\_random) | 3.4.3 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.74.0 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_opensearch"></a> [opensearch](#module\_opensearch) | cloudposse/elasticsearch/aws | 0.47.0 |
+| <a name="module_opensearch"></a> [opensearch](#module\_opensearch) | ./modules/opensearch-domain | n/a |
+| <a name="module_opensearch_serverless"></a> [opensearch\_serverless](#module\_opensearch\_serverless) | ./modules/opensearch-serverless | n/a |
 
 ## Resources
 
 | Name | Type |
 |------|------|
-| [aws_iam_role.admin](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
-| [aws_iam_role.read_only](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
-| [aws_iam_role_policy_attachment.admin](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
-| [aws_iam_role_policy_attachment.read_only](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
-| [aws_ssm_parameter.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ssm_parameter) | resource |
-| [random_password.admin_password](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password) | resource |
+| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_additional_iam_role_arns"></a> [additional\_iam\_role\_arns](#input\_additional\_iam\_role\_arns) | List of additional IAM role ARNs to permit access to the Elasticsearch domain | `list(string)` | `[]` | no |
-| <a name="input_admin_username"></a> [admin\_username](#input\_admin\_username) | Admin username when fine grained access control | `string` | `"os_admin"` | no |
-| <a name="input_advanced_options"></a> [advanced\_options](#input\_advanced\_options) | Key-value string pairs to specify advanced configuration options | `map(any)` | <pre>{<br>  "override_main_response_version": false,<br>  "rest.action.multi.allow_explicit_index": "true"<br>}</pre> | no |
-| <a name="input_advanced_security_options_enabled"></a> [advanced\_security\_options\_enabled](#input\_advanced\_security\_options\_enabled) | AWS Elasticsearch Kibana enchanced security plugin enabling (forces new resource) | `bool` | `true` | no |
-| <a name="input_advanced_security_options_internal_user_database_enabled"></a> [advanced\_security\_options\_internal\_user\_database\_enabled](#input\_advanced\_security\_options\_internal\_user\_database\_enabled) | Whether to enable or not internal Kibana user database for ELK OpenDistro security plugin | `bool` | `true` | no |
-| <a name="input_allowed_cidr_blocks"></a> [allowed\_cidr\_blocks](#input\_allowed\_cidr\_blocks) | List of CIDR blocks to be allowed to connect to the cluster | `list(string)` | `[]` | no |
-| <a name="input_anonymous_iam_actions"></a> [anonymous\_iam\_actions](#input\_anonymous\_iam\_actions) | List of actions to allow for the anonymous (`*`) IAM roles, _e.g._ `es:ESHttpGet`, `es:ESHttpPut`, `es:ESHttpPost` | `list(string)` | `[]` | no |
-| <a name="input_availability_zones"></a> [availability\_zones](#input\_availability\_zones) | List of availability zones to deploy the cluster in. | `list(string)` | <pre>[<br>  "us-east-1a",<br>  "us-east-1b"<br>]</pre> | no |
-| <a name="input_cognito_authentication_enabled"></a> [cognito\_authentication\_enabled](#input\_cognito\_authentication\_enabled) | Whether to enable Amazon Cognito authentication with Kibana | `bool` | `false` | no |
-| <a name="input_cognito_iam_role_arn"></a> [cognito\_iam\_role\_arn](#input\_cognito\_iam\_role\_arn) | ARN of the IAM role that has the AmazonESCognitoAccess policy attached | `string` | `""` | no |
-| <a name="input_cognito_identity_pool_id"></a> [cognito\_identity\_pool\_id](#input\_cognito\_identity\_pool\_id) | The ID of the Cognito Identity Pool to use | `string` | `""` | no |
-| <a name="input_cognito_user_pool_id"></a> [cognito\_user\_pool\_id](#input\_cognito\_user\_pool\_id) | The ID of the Cognito User Pool to use | `string` | `""` | no |
-| <a name="input_create_iam_service_linked_role"></a> [create\_iam\_service\_linked\_role](#input\_create\_iam\_service\_linked\_role) | Whether to create `AWSServiceRoleForAmazonElasticsearchService` service-linked role. Set it to `false` if you already have an ElasticSearch cluster created in the AWS account and AWSServiceRoleForAmazonElasticsearchService already exists. See https://github.com/terraform-providers/terraform-provider-aws/issues/5218 for more info | `bool` | `true` | no |
-| <a name="input_custom_endpoint"></a> [custom\_endpoint](#input\_custom\_endpoint) | Fully qualified domain for custom endpoint. | `string` | `""` | no |
-| <a name="input_custom_endpoint_certificate_arn"></a> [custom\_endpoint\_certificate\_arn](#input\_custom\_endpoint\_certificate\_arn) | ACM certificate ARN for custom endpoint. | `string` | `""` | no |
-| <a name="input_custom_endpoint_enabled"></a> [custom\_endpoint\_enabled](#input\_custom\_endpoint\_enabled) | Whether to enable custom endpoint for the Elasticsearch domain. | `bool` | `false` | no |
-| <a name="input_custom_opensearch_password"></a> [custom\_opensearch\_password](#input\_custom\_opensearch\_password) | Custom Administrator password to be assigned to `var.admin_username`. If undefined, it will be a randomly generated password. Does not work if `var.generate_random_password` is `true`. | `string` | `""` | no |
-| <a name="input_ebs_volume_size"></a> [ebs\_volume\_size](#input\_ebs\_volume\_size) | EBS volumes for data storage in GB | `number` | `10` | no |
-| <a name="input_elasticsearch_version"></a> [elasticsearch\_version](#input\_elasticsearch\_version) | Version of ElasticSearch or OpenSearch to deploy (\_e.g.\_ OpenSearch\_2.3, OpenSearch\_1.3, OpenSearch\_1.2, OpenSearch\_1.1, OpenSearch\_1.0, 7.4, 7.1, etc. | `string` | `"OpenSearch_2.3"` | no |
-| <a name="input_enable_public_access"></a> [enable\_public\_access](#input\_enable\_public\_access) | Set to false if ES should be deployed outside of VPC. | `bool` | `false` | no |
-| <a name="input_encrypt_at_rest_enabled"></a> [encrypt\_at\_rest\_enabled](#input\_encrypt\_at\_rest\_enabled) | Whether to enable encryption at rest | `bool` | `true` | no |
+| <a name="input_access_policies"></a> [access\_policies](#input\_access\_policies) | Custom access policy for OpenSearch domain. If empty, default policy will be used | `string` | `""` | no |
+| <a name="input_access_policy_rules"></a> [access\_policy\_rules](#input\_access\_policy\_rules) | List of rules for the access policy. | <pre>list(object({<br>    resource_type = string<br>    resource      = list(string)<br>    permissions   = list(string)<br>  }))</pre> | `[]` | no |
+| <a name="input_advanced_security_enabled"></a> [advanced\_security\_enabled](#input\_advanced\_security\_enabled) | Enable advanced security options (fine-grained access control) | `bool` | `false` | no |
+| <a name="input_anonymous_auth_enabled"></a> [anonymous\_auth\_enabled](#input\_anonymous\_auth\_enabled) | Enable anonymous authentication | `bool` | `false` | no |
+| <a name="input_auto_software_update_enabled"></a> [auto\_software\_update\_enabled](#input\_auto\_software\_update\_enabled) | Enable automatic software updates for OpenSearch | `bool` | `false` | no |
+| <a name="input_auto_tune_cron_expression"></a> [auto\_tune\_cron\_expression](#input\_auto\_tune\_cron\_expression) | Cron expression for Auto-Tune maintenance schedule | `string` | `"0 1 * * ?"` | no |
+| <a name="input_auto_tune_desired_state"></a> [auto\_tune\_desired\_state](#input\_auto\_tune\_desired\_state) | Desired state of Auto-Tune | `string` | `"ENABLED"` | no |
+| <a name="input_auto_tune_duration_unit"></a> [auto\_tune\_duration\_unit](#input\_auto\_tune\_duration\_unit) | Duration unit for Auto-Tune maintenance | `string` | `"HOURS"` | no |
+| <a name="input_auto_tune_duration_value"></a> [auto\_tune\_duration\_value](#input\_auto\_tune\_duration\_value) | Duration value for Auto-Tune maintenance | `number` | `1` | no |
+| <a name="input_auto_tune_start_at"></a> [auto\_tune\_start\_at](#input\_auto\_tune\_start\_at) | Start time for Auto-Tune maintenance | `string` | `"2024-10-23T01:00:00Z"` | no |
+| <a name="input_availability_zone_count"></a> [availability\_zone\_count](#input\_availability\_zone\_count) | The number of availability zones to use for zone awareness. | `number` | `2` | no |
+| <a name="input_cognito_identity_pool_id"></a> [cognito\_identity\_pool\_id](#input\_cognito\_identity\_pool\_id) | Cognito Identity Pool ID | `string` | `""` | no |
+| <a name="input_cognito_user_pool_id"></a> [cognito\_user\_pool\_id](#input\_cognito\_user\_pool\_id) | Cognito User Pool ID | `string` | `""` | no |
+| <a name="input_create_access_policy"></a> [create\_access\_policy](#input\_create\_access\_policy) | Flag to determine if access policy should be created. | `bool` | `true` | no |
+| <a name="input_create_data_lifecycle_policy"></a> [create\_data\_lifecycle\_policy](#input\_create\_data\_lifecycle\_policy) | Flag to determine if data lifecycle policy should be created. | `bool` | `true` | no |
+| <a name="input_create_encryption_policy"></a> [create\_encryption\_policy](#input\_create\_encryption\_policy) | Flag to determine if encryption policy should be created. | `bool` | `true` | no |
+| <a name="input_custom_certificate_arn"></a> [custom\_certificate\_arn](#input\_custom\_certificate\_arn) | ARN of the ACM certificate for the custom endpoint | `string` | `""` | no |
+| <a name="input_custom_hostname"></a> [custom\_hostname](#input\_custom\_hostname) | Custom domain name for the OpenSearch endpoint | `string` | `""` | no |
+| <a name="input_data_lifecycle_policy_rules"></a> [data\_lifecycle\_policy\_rules](#input\_data\_lifecycle\_policy\_rules) | Data lifecycle policy rules for the indices. | <pre>list(object({<br>    indexes   = list(string)<br>    retention = string<br>  }))</pre> | <pre>[<br>  {<br>    "indexes": [<br>      "*"<br>    ],<br>    "retention": "Unlimited"<br>  }<br>]</pre> | no |
+| <a name="input_dedicated_master_count"></a> [dedicated\_master\_count](#input\_dedicated\_master\_count) | Number of dedicated master instances | `number` | `3` | no |
+| <a name="input_dedicated_master_enabled"></a> [dedicated\_master\_enabled](#input\_dedicated\_master\_enabled) | Whether dedicated master is enabled | `bool` | `false` | no |
+| <a name="input_dedicated_master_type"></a> [dedicated\_master\_type](#input\_dedicated\_master\_type) | Instance type for the dedicated master node | `string` | `"m5.large.search"` | no |
+| <a name="input_description"></a> [description](#input\_description) | A description for the OpenSearch collection. | `string` | `"OpenSearch collection domain for logs and search"` | no |
+| <a name="input_ebs_enabled"></a> [ebs\_enabled](#input\_ebs\_enabled) | Whether EBS is enabled for the domain | `bool` | `true` | no |
+| <a name="input_egress_rules"></a> [egress\_rules](#input\_egress\_rules) | A list of egress rules for the security group. | <pre>list(object({<br>    from_port   = number<br>    to_port     = number<br>    protocol    = string<br>    cidr_blocks = list(string)<br>  }))</pre> | `[]` | no |
+| <a name="input_enable_auto_tune"></a> [enable\_auto\_tune](#input\_enable\_auto\_tune) | Enable Auto-Tune for the domain | `bool` | `false` | no |
+| <a name="input_enable_cognito_options"></a> [enable\_cognito\_options](#input\_enable\_cognito\_options) | Enable Cognito authentication for the OpenSearch domain | `bool` | `false` | no |
+| <a name="input_enable_custom_endpoint"></a> [enable\_custom\_endpoint](#input\_enable\_custom\_endpoint) | Enable custom domain endpoint | `bool` | `false` | no |
+| <a name="input_enable_domain_endpoint_options"></a> [enable\_domain\_endpoint\_options](#input\_enable\_domain\_endpoint\_options) | Enable custom domain endpoint options for the OpenSearch domain. | `bool` | `false` | no |
+| <a name="input_enable_encrypt_at_rest"></a> [enable\_encrypt\_at\_rest](#input\_enable\_encrypt\_at\_rest) | Enable encryption at rest for the OpenSearch domain. | `bool` | `false` | no |
+| <a name="input_enable_off_peak_window_options"></a> [enable\_off\_peak\_window\_options](#input\_enable\_off\_peak\_window\_options) | Enable off-peak window options for the domain | `bool` | `false` | no |
+| <a name="input_enable_public_access"></a> [enable\_public\_access](#input\_enable\_public\_access) | Enable public access for the OpenSearch collection. If false, private access will be used. | `bool` | `false` | no |
+| <a name="input_enable_serverless"></a> [enable\_serverless](#input\_enable\_serverless) | Enable OpenSearch Serverless. If true, creates the serverless module; if false, creates the standard module. | `bool` | `false` | no |
+| <a name="input_enable_snapshot_options"></a> [enable\_snapshot\_options](#input\_enable\_snapshot\_options) | Enable snapshot options for the domain | `bool` | `false` | no |
+| <a name="input_enable_vpc_options"></a> [enable\_vpc\_options](#input\_enable\_vpc\_options) | Enable VPC options for the OpenSearch domain. | `bool` | `false` | no |
+| <a name="input_enable_zone_awareness"></a> [enable\_zone\_awareness](#input\_enable\_zone\_awareness) | Enable zone awareness for the OpenSearch domain. | `bool` | `false` | no |
+| <a name="input_encrypt_at_rest_enabled"></a> [encrypt\_at\_rest\_enabled](#input\_encrypt\_at\_rest\_enabled) | Enable encryption at rest | `bool` | `true` | no |
+| <a name="input_enforce_https"></a> [enforce\_https](#input\_enforce\_https) | Force HTTPS on the OpenSearch endpoint | `bool` | `true` | no |
+| <a name="input_engine_version"></a> [engine\_version](#input\_engine\_version) | OpenSearch or Elasticsearch engine version | `string` | `"OpenSearch_1.0"` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | Name of the environment, i.e. dev, stage, prod | `string` | n/a | yes |
-| <a name="input_generate_random_password"></a> [generate\_random\_password](#input\_generate\_random\_password) | Generate a random password for the OpenSearch Administrator.<br>If this value is `true` and `var.custom_opensearch_password` is defined, `var.custom_opensearch_password` will be ignored. | `bool` | `true` | no |
-| <a name="input_iam_actions"></a> [iam\_actions](#input\_iam\_actions) | List of actions to allow for the IAM roles, e.g. es:ESHttpGet, es:ESHttpPut, es:ESHttpPost | `list(string)` | `[]` | no |
-| <a name="input_instance_count"></a> [instance\_count](#input\_instance\_count) | Number of data nodes in the cluster. | `number` | `2` | no |
-| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | ElasticSearch or OpenSearch instance type for data nodes in the cluster | `string` | `"t3.medium.elasticsearch"` | no |
-| <a name="input_kibana_subdomain_name"></a> [kibana\_subdomain\_name](#input\_kibana\_subdomain\_name) | The name of the subdomain for Kibana in the DNS zone (\_e.g.\_ kibana, ui, ui-es, search-ui, kibana.elasticsearch) | `string` | `""` | no |
-| <a name="input_name"></a> [name](#input\_name) | Name of the OpenSearch resource | `string` | n/a | yes |
+| <a name="input_ingress_rules"></a> [ingress\_rules](#input\_ingress\_rules) | A list of ingress rules for the security group. | <pre>list(object({<br>    from_port   = number<br>    to_port     = number<br>    protocol    = string<br>    cidr_blocks = list(string)<br>  }))</pre> | `[]` | no |
+| <a name="input_instance_count"></a> [instance\_count](#input\_instance\_count) | Number of instances in the cluster | `number` | `2` | no |
+| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | Instance type for the OpenSearch domain | `string` | `"m5.large.search"` | no |
+| <a name="input_internal_user_database_enabled"></a> [internal\_user\_database\_enabled](#input\_internal\_user\_database\_enabled) | Enable internal user database for fine-grained access control | `bool` | `true` | no |
+| <a name="input_iops"></a> [iops](#input\_iops) | Provisioned IOPS for the volume | `number` | `null` | no |
+| <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | KMS key ID for encryption at rest | `string` | `""` | no |
+| <a name="input_log_publishing_enabled"></a> [log\_publishing\_enabled](#input\_log\_publishing\_enabled) | Whether to enable the log publishing option. | `bool` | `true` | no |
+| <a name="input_log_types"></a> [log\_types](#input\_log\_types) | List of log types to publish to CloudWatch (Valid values: INDEX\_SLOW\_LOGS, SEARCH\_SLOW\_LOGS, ES\_APPLICATION\_LOGS, AUDIT\_LOGS) | `list(string)` | <pre>[<br>  "INDEX_SLOW_LOGS",<br>  "SEARCH_SLOW_LOGS"<br>]</pre> | no |
+| <a name="input_master_user_arn"></a> [master\_user\_arn](#input\_master\_user\_arn) | The ARN of the IAM role for fine-grained access control. Required if use\_iam\_arn\_as\_master\_user is true. | `string` | `""` | no |
+| <a name="input_master_user_name"></a> [master\_user\_name](#input\_master\_user\_name) | Master user name for OpenSearch | `string` | `"admin"` | no |
+| <a name="input_name"></a> [name](#input\_name) | Name of the OpenSearch domain | `string` | n/a | yes |
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | Namespace of the project, i.e. arc | `string` | n/a | yes |
-| <a name="input_node_to_node_encryption_enabled"></a> [node\_to\_node\_encryption\_enabled](#input\_node\_to\_node\_encryption\_enabled) | Whether to enable node-to-node encryption | `bool` | `true` | no |
-| <a name="input_security_group_ids"></a> [security\_group\_ids](#input\_security\_group\_ids) | List of security groups to assign OpenSearch | `list(string)` | `[]` | no |
-| <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | List of Subnet IDs to assign OpenSearch | `list(string)` | `[]` | no |
-| <a name="input_tags"></a> [tags](#input\_tags) | Default tags to apply to every resource | `map(string)` | n/a | yes |
-| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | ID of the VPC where resources will be deployed to | `string` | `null` | no |
-| <a name="input_zone_awareness_enabled"></a> [zone\_awareness\_enabled](#input\_zone\_awareness\_enabled) | Enable zone awareness for Elasticsearch cluster | `bool` | `true` | no |
+| <a name="input_node_to_node_encryption_enabled"></a> [node\_to\_node\_encryption\_enabled](#input\_node\_to\_node\_encryption\_enabled) | Enable node-to-node encryption | `bool` | `true` | no |
+| <a name="input_off_peak_hours"></a> [off\_peak\_hours](#input\_off\_peak\_hours) | Off-peak window start time (hours) | `number` | `0` | no |
+| <a name="input_off_peak_minutes"></a> [off\_peak\_minutes](#input\_off\_peak\_minutes) | Off-peak window start time (minutes) | `number` | `0` | no |
+| <a name="input_retention_in_days"></a> [retention\_in\_days](#input\_retention\_in\_days) | The number of days to retain log events in the log group | `number` | `7` | no |
+| <a name="input_saml_options"></a> [saml\_options](#input\_saml\_options) | Configuration block for SAML options in the OpenSearch domain. | <pre>object({<br>    enabled                 = bool<br>    idp_entity_id           = optional(string)<br>    idp_metadata_content    = optional(string)<br>    roles_key               = optional(string)<br>    session_timeout_minutes = optional(number)<br>    subject_key             = optional(string)<br>  })</pre> | <pre>{<br>  "enabled": false,<br>  "idp_entity_id": null,<br>  "idp_metadata_content": null,<br>  "roles_key": null,<br>  "session_timeout_minutes": null,<br>  "subject_key": null<br>}</pre> | no |
+| <a name="input_security_group_name"></a> [security\_group\_name](#input\_security\_group\_name) | Name for the security group | `string` | `""` | no |
+| <a name="input_snapshot_start_hour"></a> [snapshot\_start\_hour](#input\_snapshot\_start\_hour) | Start hour for the automated snapshot | `number` | `0` | no |
+| <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | List of subnet IDs for the OpenSearch domain | `list(string)` | `[]` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | Tags to apply to resources | `map(string)` | n/a | yes |
+| <a name="input_throughput"></a> [throughput](#input\_throughput) | Provisioned throughput for the volume | `number` | `null` | no |
+| <a name="input_tls_security_policy"></a> [tls\_security\_policy](#input\_tls\_security\_policy) | TLS security policy for HTTPS endpoints | `string` | `"Policy-Min-TLS-1-2-PFS-2023-10"` | no |
+| <a name="input_type"></a> [type](#input\_type) | The type of OpenSearch collection. | `string` | `"TIMESERIES"` | no |
+| <a name="input_use_iam_arn_as_master_user"></a> [use\_iam\_arn\_as\_master\_user](#input\_use\_iam\_arn\_as\_master\_user) | Set to true to use IAM ARN as the master user, false to create a master user. | `bool` | `false` | no |
+| <a name="input_use_standby_replicas"></a> [use\_standby\_replicas](#input\_use\_standby\_replicas) | Flag to enable or disable standby replicas. | `bool` | `true` | no |
+| <a name="input_use_ultrawarm"></a> [use\_ultrawarm](#input\_use\_ultrawarm) | Whether to enable UltraWarm nodes | `bool` | `false` | no |
+| <a name="input_volume_size"></a> [volume\_size](#input\_volume\_size) | EBS volume size in GB | `number` | `20` | no |
+| <a name="input_volume_type"></a> [volume\_type](#input\_volume\_type) | EBS volume type | `string` | `"gp2"` | no |
+| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | ID of the VPC for OpenSearch domain | `string` | `null` | no |
+| <a name="input_warm_count"></a> [warm\_count](#input\_warm\_count) | Number of UltraWarm instances | `number` | `2` | no |
+| <a name="input_warm_type"></a> [warm\_type](#input\_warm\_type) | UltraWarm node instance type | `string` | `"ultrawarm1.medium.search"` | no |
+| <a name="input_zone_awareness_enabled"></a> [zone\_awareness\_enabled](#input\_zone\_awareness\_enabled) | Whether zone awareness is enabled | `bool` | `true` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_domain_arn"></a> [domain\_arn](#output\_domain\_arn) | ARN of the OpenSearch domain |
-| <a name="output_domain_endpoint"></a> [domain\_endpoint](#output\_domain\_endpoint) | Domain-specific endpoint used to submit index, search, and data upload requests |
-| <a name="output_domain_hostname"></a> [domain\_hostname](#output\_domain\_hostname) | OpenSearch domain hostname to submit index, search, and data upload requests |
-| <a name="output_domain_id"></a> [domain\_id](#output\_domain\_id) | Unique identifier for the OpenSearch domain |
-| <a name="output_kibana_endpoint"></a> [kibana\_endpoint](#output\_kibana\_endpoint) | Domain-specific endpoint for Kibana without https scheme |
-| <a name="output_kibana_hostname"></a> [kibana\_hostname](#output\_kibana\_hostname) | Kibana hostname |
-| <a name="output_opensearch_user_iam_role_arn"></a> [opensearch\_user\_iam\_role\_arn](#output\_opensearch\_user\_iam\_role\_arn) | The ARN of the IAM role to allow access to OpenSearch cluster |
-| <a name="output_opensearch_user_iam_role_name"></a> [opensearch\_user\_iam\_role\_name](#output\_opensearch\_user\_iam\_role\_name) | The name of the IAM role to allow access to OpenSearch cluster |
-| <a name="output_security_group_id"></a> [security\_group\_id](#output\_security\_group\_id) | Security Group ID to control access to the OpenSearch domain |
+| <a name="output_opensearch_domain_arn"></a> [opensearch\_domain\_arn](#output\_opensearch\_domain\_arn) | The ARN of the OpenSearch domain. |
+| <a name="output_opensearch_domain_endpoint"></a> [opensearch\_domain\_endpoint](#output\_opensearch\_domain\_endpoint) | The endpoint of the OpenSearch domain. |
+| <a name="output_opensearch_domain_id"></a> [opensearch\_domain\_id](#output\_opensearch\_domain\_id) | The unique identifier for the OpenSearch domain. |
+| <a name="output_opensearch_serverless_collection_arn"></a> [opensearch\_serverless\_collection\_arn](#output\_opensearch\_serverless\_collection\_arn) | The ARN of the OpenSearch Serverless collection |
+| <a name="output_opensearch_serverless_collection_id"></a> [opensearch\_serverless\_collection\_id](#output\_opensearch\_serverless\_collection\_id) | The ID of the OpenSearch Serverless collection |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->  
 
 ## Versioning  
