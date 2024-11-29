@@ -74,9 +74,9 @@ For basic Client VPN usage, see the [example](https://github.com/sourcefuse/terr
 
 This example will create:
 
-- Self-Signed Certificate Authority (CA) Creation: It creates a self-signed CA certificate using the cloudposse/terraform-aws-ssm-tls-self-signed-cert module. The certificate is stored in AWS SSM (Systems Manager).
+- CA Certificate
 
-- Self-Signed Root Certificate Creation: It creates a self-signed root certificate using the cloudposse/terraform-aws-ssm-tls-self-signed-cert module. This certificate is signed by the previously created CA certificate.
+- Root Certificate
 
 - VPN Setup: It uses the sourcefuse/arc-vpn/aws module to create a VPN setup. This includes:
 
