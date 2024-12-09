@@ -10,6 +10,8 @@ This document provides guidelines and instructions for users looking to implemen
 
 The [Terraform AWS ARC ECS](https://github.com/sourcefuse/terraform-aws-arc-ecs) module provides a secure and modular foundation for deploying ECS clusters on AWS.
 
+The Module assumes there is a docker image present on ECR which will serve as ECS service if the optional ECS module is called.
+
 ### Prerequisites
 
 Before using this module, ensure you have the following:
@@ -54,7 +56,6 @@ Ensure that the AWS credentials used to execute Terraform have the necessary per
 
 - ECS cluster
 - Application load balancer
-- ACM
 - SSM Parameters
 - Cloudwatch Log groups
 - IAM roles and policies
@@ -78,11 +79,10 @@ For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-a
 This example will create:
 
 - An ECS Cluster with Fargate launch type.
-- Application Load Balancer with default port 80 to 443 redirect.
-- Health Check Service: A vanilla HTTP echo service serving as the default target group for the load balancer to      ensure core infrastructure, networking, security groups, etc. are configured correctly.
+- Application Load Balancer with default port 80.
+- Health Check Service: A vanilla docker healthcheck service serving as the default target group for the load balancer to      ensure core infrastructure, networking, security groups, etc. are configured correctly.
 - Task Execution IAM Role: Used by downstream services for task execution.
-- ACM Certificate: Generates a certificate specific to the ALB.
-- Tags/SSM Params: The module tags resources and outputs SSM params for ECS services to reference when deploying into the cluster
+- Tags: The module tags resources for easy reference in the AWS console.
 
 ### Tips and Recommendations
 
