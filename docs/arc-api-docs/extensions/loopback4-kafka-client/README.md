@@ -23,7 +23,6 @@
 </a>
 </p>
 
-
 ## Overview
 
 A Kafka Client for Loopback4 built on top of [KafkaJS](https://kafka.js.org/).
@@ -97,7 +96,13 @@ export class TestStream implements IStreamDefinition {
 
 ### Consumer
 
-A Consumer is a [`loopback extension`](https://loopback.io/doc/en/lb4/Extension-point-and-extensions.html) that is used by the [`KafkaConsumerService`](./src/services/kafka-consumer.service.ts) to initialize consumers. It must implement the `IConsumer` interface and should be using the `@consumer()` decorator. If you want the consumers to start at the start of your application, you should pass the `initObservers` config to the Component configuration.
+A Consumer is a [`loopback extension`](https://loopback.io/doc/en/lb4/Extension-point-and-extensions.html) that is used by the [`KafkaConsumerService`](./src/services/kafka-consumer.service.ts) to initialize consumers. It must implement one of the `IConsumer`, `ISharedConsumer` or `IGenericConsumer` interfaces and should be using the `asConsumer` binding template. If you want the consumers to start at the start of your application, you should pass the `initObservers` config to the Component configuration.
+
+- `IConsumer` - simple consumer for 1 event in a stream
+- `ISharedConsumer` - consumer that consumes data for multiple events in a stream (defined with an array of events)
+- `IGenericConsumer` - consumer that consumes data for all events in a stream/topic (defined without any event). By default it is not triggered for an event if a more specific consumer is bound for that event. This behaviour can be changed using the `alwaysRunGenericConsumer` option in consumer configuration.
+
+You can bind any consumer related configuration using the `KafkaClientBindings.ConsumerConfiguration` key. It accepts all the options of KafkaJS, along with an additional option - `alwaysRunGenericConsumer` - this option runs any generic consumer if available always, even if more specific consumers are bound by the client(only the specific consumer would run if this option is false or not provided).
 
 ##### Example
 
@@ -112,13 +117,14 @@ this.configure(KafkaConnectorComponentBindings.COMPONENT).to({
 
 ```ts
 // start.consumer.ts
+// use @genericConsumer for a generic consumer
 @consumer<TestStream, Events.start>()
 export class StartConsumer implements IConsumer<TestStream, Events.start> {
   constructor(
     @inject('test.handler.start')
     public handler: StreamHandler<TestStream, Events.start>,
   ) {}
-  topic: Topics.First = Topics.First;
+  topic = Topics.First;
   event: Events.start = Events.start;
   // you can write the handler as a method
   handler(payload: StartEvent) {
@@ -149,7 +155,7 @@ export class StartConsumer implements IConsumer<TestStream, Events.start> {
     @eventHandler<TestStream>(Events.Start)
     public handler: StreamHandler<TestStream, Events.start>,
   ) {}
-  topic: Topics.First = Topics.First;
+  topic = Topics.First;
   event: Events.start = Events.start;
 }
 ```
@@ -158,6 +164,7 @@ export class StartConsumer implements IConsumer<TestStream, Events.start> {
 
 A Producer is a loopback service for producing message for a particular topic, you can inject a producer using the `@producer(TOPIC_NAME)` decorator.
 Note: The topic name passed to decorator must be first configured in the Component configuration's topic property -
+If you want to produce a raw message without any event type, you can use the `@genericProducer(TOPIC_NAME)` decorator, note that in this case, the topic name must be passed in the genericTopics property of the component configuration.
 
 #### Example
 
