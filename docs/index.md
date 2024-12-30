@@ -36,6 +36,11 @@ The SaaS branch of ARC offers a cutting-edge control plane, meticulously designe
 
 [Get Started with ARC SaaS](./arc-saas-docs/){ .md-button .md-button--secondary }
 
+### 5. Releases
+
+Explore the cutting-edge innovations in ARC with our latest releases. From enhanced features to powerful integrations, discover how ARC continues to evolve to meet your business needs with smarter, more efficient solutions.
+[Releases](./arc-releases/){ .md-button .md-button--secondary }
+
 ---
 
 By leveraging the ARC Stack, developers can focus on building innovative features and business logic without the overhead of repetitive and time-consuming tasks. With a standardized reference architecture and a rich ecosystem of reusable components, ARC empowers developers to build cloud-native enterprise applications with speed, efficiency, and scalability.
