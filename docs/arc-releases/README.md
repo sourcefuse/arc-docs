@@ -127,3 +127,5 @@ No more waiting, let's get to the good stuff!
 1. **Default Asymmetric Token**: To bolster security and scalability, we're implementing asymmetric JWT signing by default, leveraging unique pairs of public and private keys. While we recognize the transition may not be immediate for all, we're making it configurable to provide flexibility, empowering users to adopt this enhanced security measure at their own pace and convenience.
 
 2. **Audit-logs Configurable Export** : The export feature of [@sourceloop/audit-log](https://www.npmjs.com/package/@sourceloop/audit-service) now offers full configurability, enabling users to choose their desired provider and dependency for seamless integration. This flexibility empowers users to tailor their export functionalities precisely to their preferences and infrastructure requirements.
+
+Stay tuned for further updates and announcements. Remember, your feedback means the world to us. Whether you have questions, ideas, or just want to chat, don't hesitate to write to us on 'arc.support@sourcefuse.com'.
