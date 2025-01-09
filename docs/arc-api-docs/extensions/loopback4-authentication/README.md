@@ -56,7 +56,7 @@ npm install loopback4-authentication
 
 ## Quick Starter
 
-For a quick starter guide, you can refer to our [loopback 4 starter](https://github.com/sourcefuse/loopback4-starter) application which utilizes all of the above auth strategies from the extension in a simple multi-tenant application. Refer to the auth module [there](https://github.com/sourcefuse/loopback4-starter/tree/master/src/modules/auth) for specific details on authentication.
+For a quick starter guide, you can refer to our [loopback 4 starter](https://github.com/sourcefuse/loopback4-starter) application which utilizes all of the above auth strategies from the extension in a simple multi-tenant application. Refer to the auth module [there](https://github.com/sourcefuse/loopback4-starter/tree/master/src/modules/auth) for specific details on authentication mechanism.
 
 ## Detailed Usage
 
@@ -2977,6 +2977,46 @@ this.component(AuthenticationComponent);
 
 This binding needs to be done before adding the Authentication component to your application.
 Apart from this all other steps for authentication for all strategies remain the same.
+
+### Custom Sequence Support
+
+You can also configure `ClientAuthenticationMiddlewareProvider` and `UserAuthenticationMiddlewareProvider` options, which can be invoked using a custom sequence. See the sample below.
+
+`custom-sequence.ts`
+
+```ts title="custom-sequence.ts"
+export class CustomSequence implements SequenceHandler {
+  @inject(SequenceActions.INVOKE_MIDDLEWARE, {optional: true})
+  protected invokeMiddleware: InvokeMiddleware = () => false;
+  ...
+
+  async handle(context: RequestContext) {
+    ...
+    ...
+    // call custom registered middlewares in the pre-invoke chain
+    let finished = await this.invokeMiddleware(context, {
+      chain: CustomMiddlewareChain.PRE_INVOKE,
+    });
+      if (finished) return;
+      const result = await this.invoke(route, args);
+      this.send(response, result);
+   ...
+  }
+}
+```
+
+`application.ts`
+
+```ts title="application.ts"
+import {ClientAuthenticationMiddlewareProvider} from 'loopback4-authentication';
+...
+...
+// bind middleware with custom options
+this.middleware(ClientAuthenticationMiddlewareProvider, {
+  chain: CustomMiddlwareChain.PRE_INVOKE
+});
+
+```
 
 ### Passport Auth0
 
