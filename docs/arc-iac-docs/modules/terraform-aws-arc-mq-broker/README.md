@@ -80,7 +80,7 @@ module "mq_broker" {
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_arc_security_group"></a> [arc\_security\_group](#module\_arc\_security\_group) | git::git@github.com:sourcefuse/terraform-aws-arc-security-group.git | 0.0.1 |
+| <a name="module_arc_security_group"></a> [arc\_security\_group](#module\_arc\_security\_group) | sourcefuse/arc-security-group/aws | 0.0.1 |
 
 ## Resources
 
