@@ -204,15 +204,15 @@ locals {
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_assign_generated_ipv6_cidr_block"></a> [assign\_generated\_ipv6\_cidr\_block](#input\_assign\_generated\_ipv6\_cidr\_block) | Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. | `bool` | `false` | no |
-| <a name="input_availability_zones"></a> [availability\_zones](#input\_availability\_zones) | (optional) List of availability zones , if subnet map is null , subnet map autimatically derived | `list(string)` | `[]` | no |
+| <a name="input_availability_zones"></a> [availability\_zones](#input\_availability\_zones) | (optional) List of availability zones , if subnet map is null , subnet map automatically derived | `list(string)` | `[]` | no |
 | <a name="input_cidr_block"></a> [cidr\_block](#input\_cidr\_block) | The CIDR block for the VPC. | `string` | n/a | yes |
-| <a name="input_create_internet_geteway"></a> [create\_internet\_geteway](#input\_create\_internet\_geteway) | (optional) Whether to create internet gateway | `bool` | `true` | no |
+| <a name="input_create_internet_gateway"></a> [create\_internet\_gateway](#input\_create\_internet\_gateway) | (optional) Whether to create internet gateway | `bool` | `true` | no |
 | <a name="input_enable_dns_hostnames"></a> [enable\_dns\_hostnames](#input\_enable\_dns\_hostnames) | A boolean flag to enable/disable DNS hostnames in the VPC. | `bool` | `true` | no |
 | <a name="input_enable_dns_support"></a> [enable\_dns\_support](#input\_enable\_dns\_support) | A boolean flag to enable/disable DNS support in the VPC. | `bool` | `true` | no |
 | <a name="input_enable_network_address_usage_metrics"></a> [enable\_network\_address\_usage\_metrics](#input\_enable\_network\_address\_usage\_metrics) | Enable or disable network address usage metrics. | `bool` | `false` | no |
-| <a name="input_environment"></a> [environment](#input\_environment) | Environmenr name | `string` | n/a | yes |
+| <a name="input_environment"></a> [environment](#input\_environment) | Specifies the name of the deployment environment (e.g., dev, stage, prod). | `string` | n/a | yes |
 | <a name="input_instance_tenancy"></a> [instance\_tenancy](#input\_instance\_tenancy) | A tenancy option for instances launched into the VPC. Can be 'default' or 'dedicated'. | `string` | `"default"` | no |
-| <a name="input_internet_geteway_name"></a> [internet\_geteway\_name](#input\_internet\_geteway\_name) | (optional) If the Internet Gateway name is not provided, it will be automatically derived. | `string` | `null` | no |
+| <a name="input_internet_gateway_name"></a> [internet\_gateway\_name](#input\_internet\_gateway\_name) | (optional) If the Internet Gateway name is not provided, it will be automatically derived. | `string` | `null` | no |
 | <a name="input_ipv4_ipam_pool_id"></a> [ipv4\_ipam\_pool\_id](#input\_ipv4\_ipam\_pool\_id) | The IPv4 IPAM pool ID from which to allocate the CIDR. | `string` | `null` | no |
 | <a name="input_ipv4_netmask_length"></a> [ipv4\_netmask\_length](#input\_ipv4\_netmask\_length) | The netmask length of the IPv4 CIDR block to allocate to the VPC. | `number` | `null` | no |
 | <a name="input_ipv6_cidr_block"></a> [ipv6\_cidr\_block](#input\_ipv6\_cidr\_block) | The IPv6 CIDR block to associate with your VPC. | `string` | `null` | no |
@@ -239,7 +239,7 @@ locals {
 | <a name="output_public_subnet_ids"></a> [public\_subnet\_ids](#output\_public\_subnet\_ids) | Public subnet IDs |
 | <a name="output_vpc_cidr"></a> [vpc\_cidr](#output\_vpc\_cidr) | The VPC CIDR block |
 | <a name="output_vpc_default_network_acl_id"></a> [vpc\_default\_network\_acl\_id](#output\_vpc\_default\_network\_acl\_id) | The ID of the network ACL created by default on VPC creation |
-| <a name="output_vpn_endpoint_arn"></a> [vpn\_endpoint\_arn](#output\_vpn\_endpoint\_arn) | The ARN of the Client VPN Endpoint Connection. |
+| <a name="output_vpc_endpoint_arn"></a> [vpc\_endpoint\_arn](#output\_vpc\_endpoint\_arn) | The ARN of the VPC Endpoint Connection. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Development
