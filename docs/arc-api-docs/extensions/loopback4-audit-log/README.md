@@ -220,7 +220,20 @@ export class GroupRepository extends AuditRepositoryMixin<
 }
 ```
 
-You can pass any extra attributes to save into audit table using the `IAuditMixinOptions` parameter of mixin function.
+You can pass any extra attributes to save into audit table using the `IAuditMixinOptions` parameter of mixin function. You can also pass some dynamic values to the extra columns of the audit-log table via the method options.
+
+```ts
+const groupAuditOpts: IAuditMixinOptions = {
+  actionKey: 'Group_Logs',
+  extra: 'static value',
+};
+```
+
+```ts
+repo.create(data, {extra: 'random calculated value'});
+```
+
+So the method options will have a priority over repository mixin options.
 
 Make sure you provide `getCurrentUser` and `getAuditLogRepository` Getter functions in constructor.
 
