@@ -37,7 +37,7 @@ module "opensearch" {
 Integrate the module with your existing Terraform mono repo configuration, follow the steps below:
 
 1. Create a new folder in `terraform/` named `opensearch`.
-2. Create the required files, see the [examples](https://github.com/sourcefuse/terraform-aws-arc-opensearch/tree/main/examples/simple) to base off of.
+2. Create the required files, see the [examples](https://github.com/sourcefuse/terraform-aws-arc-opensearch/tree/main/examples/vpc) to base off of.
 3. Configure with your backend
   - Create the environment backend configuration file: `config.<environment>.hcl`
     - **region**: Where the backend resides
@@ -64,7 +64,7 @@ For a list of outputs, see the README [Outputs](https://github.com/sourcefuse/te
 
 ### Basic Usage
 
-For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-arc-opensearch/tree/main/example) folder.
+For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-arc-opensearch/tree/main/examples) folder.
 
 This example will create:
 
