@@ -130,7 +130,7 @@ module "opensearch_serverless" {
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_access_policies"></a> [access\_policies](#input\_access\_policies) | Custom access policy for OpenSearch domain. If empty, default policy will be used | `string` | `""` | no |
-| <a name="input_access_policy_rules"></a> [access\_policy\_rules](#input\_access\_policy\_rules) | List of rules for the access policy. | <pre>list(object({<br>    resource_type = string<br>    resource      = list(string)<br>    permissions   = list(string)<br>  }))</pre> | `[]` | no |
+| <a name="input_access_policy_rules"></a> [access\_policy\_rules](#input\_access\_policy\_rules) | List of rules for the access policy. | <pre>list(object({<br>    resource_type = string<br>    resource      = list(string)<br>    permissions   = list(string)<br>    principal     = optional(list(string), [])<br>  }))</pre> | `[]` | no |
 | <a name="input_advanced_security_enabled"></a> [advanced\_security\_enabled](#input\_advanced\_security\_enabled) | Enable advanced security options (fine-grained access control) | `bool` | `false` | no |
 | <a name="input_anonymous_auth_enabled"></a> [anonymous\_auth\_enabled](#input\_anonymous\_auth\_enabled) | Enable anonymous authentication | `bool` | `false` | no |
 | <a name="input_auto_software_update_enabled"></a> [auto\_software\_update\_enabled](#input\_auto\_software\_update\_enabled) | Enable automatic software updates for OpenSearch | `bool` | `false` | no |
@@ -207,6 +207,7 @@ module "opensearch_serverless" {
 
 | Name | Description |
 |------|-------------|
+| <a name="output_opensearch_collection_endpoint"></a> [opensearch\_collection\_endpoint](#output\_opensearch\_collection\_endpoint) | The Endpoint of the OpenSearch collection |
 | <a name="output_opensearch_domain_arn"></a> [opensearch\_domain\_arn](#output\_opensearch\_domain\_arn) | The ARN of the OpenSearch domain. |
 | <a name="output_opensearch_domain_endpoint"></a> [opensearch\_domain\_endpoint](#output\_opensearch\_domain\_endpoint) | The endpoint of the OpenSearch domain. |
 | <a name="output_opensearch_domain_id"></a> [opensearch\_domain\_id](#output\_opensearch\_domain\_id) | The unique identifier for the OpenSearch domain. |
