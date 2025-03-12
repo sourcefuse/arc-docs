@@ -27,11 +27,33 @@ Before using this module, ensure you have the following:
 To use the module in your Terraform configuration, include the following source block:
 
 ```hcl
+
+##########################################
+## ecs cluster with ec2
+##########################################
 module "arc-ecs" {
   source  = "sourcefuse/arc-ecs/aws"
   version = "1.5.0"
-  # insert the 6 required variables here
+  ecs_cluster       = local.ecs_cluster
+  capacity_provider = local.capacity_provider
+  ecs_service       = local.ecs_service
+  launch_template   = local.launch_template
+  asg               = local.asg
+  tags              = module.tags.tags
 }
+
+##########################################
+## ecs cluster with fargate
+##########################################
+module "ecs_cluster" {
+  source  = "sourcefuse/arc-ecs/aws"
+  version = "1.5.0"
+  ecs_cluster       = local.ecs_cluster
+  capacity_provider = local.capacity_provider
+  ecs_service       = local.ecs_service
+  tags              = module.tags.tags
+}
+
 ```
 
 Refer to the [Terraform Registry](https://registry.terraform.io/modules/sourcefuse/arc-ecs/aws/latest) for the latest version.
@@ -41,7 +63,7 @@ Refer to the [Terraform Registry](https://registry.terraform.io/modules/sourcefu
 Integrate the module with your existing Terraform mono repo configuration, follow the steps below:
 
 1. Create a new folder in `terraform/` named `ecs`.
-2. Create the required files, see the [examples](https://github.com/sourcefuse/terraform-aws-arc-ecs/tree/main/example) to base off of.
+2. Create the required files, see the [examples](https://github.com/sourcefuse/terraform-aws-arc-ecs/tree/main/examples) to base off of.
 3. Configure with your backend
   - Create the environment backend configuration file: `config.<environment>.hcl`
     - **region**: Where the backend resides
@@ -74,7 +96,7 @@ For a list of outputs, see the README [Outputs](https://github.com/sourcefuse/te
 
 ### Basic Usage
 
-For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-arc-ecs/tree/main/example) folder.
+For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-arc-ecs/tree/main/examples) folder.
 
 This example will create:
 
