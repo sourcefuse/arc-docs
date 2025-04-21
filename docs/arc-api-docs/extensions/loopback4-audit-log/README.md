@@ -44,7 +44,7 @@ npm install @sourceloop/audit-log
 
 In order to use this component into your LoopBack application, please follow below steps.
 
-- Add audit model class as Entity.
+- If you wish to modify the one provided by this extension create your own model class just the one shown below. You can use `lb4 model` command to create new model
 
 ```ts
 import {Entity, model, property} from '@loopback/repository';
@@ -160,7 +160,8 @@ export class AuditDataSource
 }
 ```
 
-- Using `lb4 repository` command, create a repository file. After that, change the inject paramater as below so as to refer to correct data source name.
+- If you have a custom model and you wish to use that in your repository class you can
+  Using `lb4 repository` command, create a repository file. After that, change the inject paramater as below so as to refer to correct data source name.
   `@inject(`datasources.\${AuditDbSourceName}`) dataSource: AuditDataSource,`
 
 One example below.
@@ -212,8 +213,58 @@ export class GroupRepository extends AuditRepositoryMixin<
     @inject('datasources.pgdb') dataSource: PgdbDataSource,
     @inject.getter(AuthenticationBindings.CURRENT_USER)
     public getCurrentUser: Getter<IAuthUser>,
-    @repository.getter('AuditLogRepository')
+    @repository.getter(AuditLogRepository)
     public getAuditLogRepository: Getter<AuditLogRepository>,
+  ) {
+    super(Group, dataSource, getCurrentUser);
+  }
+}
+```
+
+and also bind the component of this extension in your application.ts
+
+```ts
+import {AuditLogComponent} from '@sourceloop/audit-log';
+
+this.component(AuditLogComponent);
+```
+
+- The above code uses the default repository provided by this extension
+- If you wish to use your custom repository and model class do the following
+
+```ts
+import {repository} from '@loopback/repository';
+import {Group, GroupRelations} from '../models';
+import {PgdbDataSource} from '../datasources';
+import {inject, Getter, Constructor} from '@loopback/core';
+import {AuthenticationBindings, IAuthUser} from 'loopback4-authentication';
+import {AuditRepositoryMixin} from '@sourceloop/audit-log';
+import {CustomAuditLogRepository} from './audit-log.repository';
+import {CustomAuditLogModel} from '../models';
+
+const groupAuditOpts: IAuditMixinOptions = {
+  actionKey: 'Group_Logs',
+};
+
+export class GroupRepository extends AuditRepositoryMixin<
+  Group,
+  typeof Group.prototype.id,
+  GroupRelations,
+  string,
+  Constructor<
+    DefaultCrudRepository<Group, typeof Group.prototype.id, GroupRelations>
+  >,
+  // pass the below two parameters when you want your custom model to be used
+  // otheriwise the default model and repository will be used
+  CustomAuditLogModel,
+  CustomAuditLogRepository
+>(DefaultCrudRepository, groupAuditOpts) {
+  constructor(
+    @inject('datasources.pgdb') dataSource: PgdbDataSource,
+    @inject.getter(AuthenticationBindings.CURRENT_USER)
+    public getCurrentUser: Getter<IAuthUser>,
+    @repository.getter(CustomAuditLogRepository)
+    public getAuditLogRepository: Getter<CustomAuditLogRepository>,
   ) {
     super(Group, dataSource, getCurrentUser);
   }
@@ -245,7 +296,7 @@ This will create all insert, update, delete audits for this model.
 create(data, {noAudit: true});
 ```
 
-- The Actor field is now configurable and can save any string type value in the field.
+- The Actor field is configurable and can save any string type value in the field.
   Though the default value will be userId a developer can save any string field from the current User that is being passed.
 
 ```ts
@@ -283,6 +334,15 @@ this.bind(AuthServiceBindings.ActorIdKey).to('username');
 public actorIdKey?: ActorId,
 ```
 
+#### Making current user not mandatory
+
+Incase you dont have current user binded in your application context and wish to log the activities within your application then in that case you can pass the actor id along with the
+options just like
+
+```ts
+await productRepo.create(product, {noAudit: false, actorId: 'userId'});
+```
+
 - The package exposes a conditional mixin for your repository classes. Just extend your repository class with `ConditionalAuditRepositoryMixin`, for all those repositories where you need audit data based on condition whether `ADD_AUDIT_LOG_MIXIN` is set true. See an example below. For a model `Group`, here we are extending the `GroupRepository` with `AuditRepositoryMixin`.
 
 ```ts
@@ -291,8 +351,10 @@ import {Group, GroupRelations} from '../models';
 import {PgdbDataSource} from '../datasources';
 import {inject, Getter, Constructor} from '@loopback/core';
 import {AuthenticationBindings, IAuthUser} from 'loopback4-authentication';
-import {ConditionalAuditRepositoryMixin} from '@sourceloop/audit-log';
-import {AuditLogRepository} from './audit-log.repository';
+import {
+  ConditionalAuditRepositoryMixin,
+  AuditLogRepository,
+} from '@sourceloop/audit-log';
 
 const groupAuditOpts: IAuditMixinOptions = {
   actionKey: 'Group_Logs',
@@ -318,15 +380,6 @@ export class GroupRepository extends ConditionalAuditRepositoryMixin(
 }
 ```
 
-### Making current user not mandatory
-
-Incase you dont have current user binded in your application context and wish to log the activities within your application then in that case you can pass the actor id along with the
-options just like
-
-```ts
-await productRepo.create(product, {noAudit: false, actorId: 'userId'});
-```
-
 ## Using with Sequelize ORM
 
 This extension provides support to both juggler (the default loopback ORM) and sequelize.
@@ -336,31 +389,48 @@ If your loopback project is already using `SequelizeCrudRepository` from [@loopb
 1. The import statements should have the suffix `/sequelize`, like below:
 
 ```ts
-import {
-  AuditRepositoryMixin,
-  AuditLogRepository,
-} from '@sourceloop/audit-log/sequelize';
-```
+import {repository} from '@loopback/repository';
+import {Group, GroupRelations} from '../models';
+import {PgdbDataSource} from '../datasources';
+import {inject, Getter, Constructor} from '@loopback/core';
+import {AuthenticationBindings, IAuthUser} from 'loopback4-authentication';
+import {AuditRepositoryMixin} from '@sourceloop/audit-log';
+import {AuditLogRepository as SequelizeAuditLogRepository} from '@sourceloop/auidt-log/sequelize';
 
-2. The Audit datasource's parent class should be `SequelizeDataSource`.
+const groupAuditOpts: IAuditMixinOptions = {
+  actionKey: 'Group_Logs',
+};
 
-```ts
-import {SequelizeDataSource} from '@loopback/sequelize';
-
-export class AuditDataSource
-  extends SequelizeDataSource
-  implements LifeCycleObserver
-{
-  static dataSourceName = AuditDbSourceName;
-  static readonly defaultConfig = config;
-
+export class GroupRepository extends AuditRepositoryMixin<
+  Group,
+  typeof Group.prototype.id,
+  GroupRelations,
+  string,
+  Constructor<
+    DefaultCrudRepository<Group, typeof Group.prototype.id, GroupRelations>
+  >,
+  AuditLog,
+  SequelizeAuditLogRepository
+>(DefaultCrudRepository, groupAuditOpts) {
   constructor(
-    @inject('datasources.config.audit', {optional: true})
-    dsConfig: object = config,
+    @inject('datasources.pgdb') dataSource: PgdbDataSource,
+    @inject.getter(AuthenticationBindings.CURRENT_USER)
+    public getCurrentUser: Getter<IAuthUser>,
+    @repository.getter(AuditLogRepository)
+    public getAuditLogRepository: Getter<SequelizeAuditLogRepository>,
   ) {
-    super(dsConfig);
+    super(Group, dataSource, getCurrentUser);
   }
 }
+```
+
+Also add the following to your application.ts file to bind the Sequelize repository
+
+```ts
+import {AuditLog} from '@sourceloop/auidt-log/';
+import {AuditLogRepository} from '@sourceloop/audit-log/sequelize';
+
+this.repositories = [AuditLogRepository<AuditLog>];
 ```
 
 ## Feedback
@@ -381,3 +451,7 @@ Code of conduct guidelines [here](https://github.com/sourcefuse/loopback4-audit-
 ## License
 
 [MIT](https://github.com/sourcefuse/loopback4-audit-log/blob/master/LICENSE)
+
+```
+
+```
