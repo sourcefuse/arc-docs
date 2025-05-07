@@ -86,6 +86,7 @@ For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-a
 
 - Users can choose their preferred search engine between AWS OpenSearch and Elasticsearch.
 - For log aggregation, users have the flexibility to select either Fluentd or FluentBit based on their requirements.
+- While destroying Signoz , ClickHouse is not automatically removed and must be deleted manually.
 
 ## Troubleshooting
 
