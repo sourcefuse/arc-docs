@@ -80,7 +80,9 @@ module "eks_cluster" {
 
 | Name | Type |
 |------|------|
+| [aws_eks_access_entry.auto_role](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_access_entry) | resource |
 | [aws_eks_access_entry.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_access_entry) | resource |
+| [aws_eks_access_policy_association.auto_role](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_access_policy_association) | resource |
 | [aws_eks_access_policy_association.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_access_policy_association) | resource |
 | [aws_eks_addon.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_addon) | resource |
 | [aws_eks_cluster.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_cluster) | resource |
@@ -96,6 +98,7 @@ module "eks_cluster" {
 | [aws_iam_role.karpenter_controller_role](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
 | [aws_iam_role.karpenter_node_role](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
 | [aws_iam_role.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
+| [aws_iam_role_policy.ec2_fleet](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy) | resource |
 | [aws_iam_role_policy.karpenter_controller](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy) | resource |
 | [aws_iam_role_policy_attachment.eks_cluster_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
 | [aws_iam_role_policy_attachment.fargate](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
@@ -110,7 +113,9 @@ module "eks_cluster" {
 | [kubernetes_config_map.aws_auth](https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/config_map) | resource |
 | [kubernetes_config_map_v1_data.aws_auth](https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/config_map_v1_data) | resource |
 | [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
+| [aws_iam_policy_document.ec2_fleet](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 | [aws_iam_policy_document.iam](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
+| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
 | [tls_certificate.this](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/data-sources/certificate) | data source |
 
 ## Inputs
@@ -124,7 +129,7 @@ module "eks_cluster" {
 | <a name="input_bootstrap_self_managed_addons_enabled"></a> [bootstrap\_self\_managed\_addons\_enabled](#input\_bootstrap\_self\_managed\_addons\_enabled) | (optional) Install default unmanaged add-ons, such as aws-cni, kube-proxy, and CoreDNS during cluster creation. If false, you must manually install desired add-ons. Changing this value will force a new cluster to be created. | `bool` | `true` | no |
 | <a name="input_eks_additional_policy_arns"></a> [eks\_additional\_policy\_arns](#input\_eks\_additional\_policy\_arns) | Optional additional policy ARNs that user wants to attach | `list(string)` | `[]` | no |
 | <a name="input_eks_addons"></a> [eks\_addons](#input\_eks\_addons) | Map of EKS Add-ons to create | <pre>map(object({<br>    addon_version               = optional(string)<br>    service_account_role_arn    = optional(string)<br>    resolve_conflicts_on_update = optional(string)<br>    resolve_conflicts_on_create = optional(string)<br>  }))</pre> | `{}` | no |
-| <a name="input_eks_policy_arns"></a> [eks\_policy\_arns](#input\_eks\_policy\_arns) | List of IAM policy ARNs to attach to the EKS role | `list(string)` | <pre>[<br>  "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy",<br>  "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy",<br>  "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy",<br>  "arn:aws:iam::aws:policy/AmazonEKSNetworkingPolicy",<br>  "arn:aws:iam::aws:policy/AmazonEKSComputePolicy"<br>]</pre> | no |
+| <a name="input_eks_policy_arns"></a> [eks\_policy\_arns](#input\_eks\_policy\_arns) | List of IAM policy ARNs to attach to the EKS role | `list(string)` | <pre>[<br>  "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy",<br>  "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy",<br>  "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy",<br>  "arn:aws:iam::aws:policy/AmazonEKSNetworkingPolicy",<br>  "arn:aws:iam::aws:policy/AmazonEKSComputePolicy",<br>  "arn:aws:iam::aws:policy/AmazonEKSBlockStoragePolicy",<br>  "arn:aws:iam::aws:policy/AmazonEKSLoadBalancingPolicy"<br>]</pre> | no |
 | <a name="input_enable_arc_zonal_shift"></a> [enable\_arc\_zonal\_shift](#input\_enable\_arc\_zonal\_shift) | (optional) Whether to enable ARC Zonal shift , it shift application traffic away from an impaired Availability Zone (AZ) in your EKS cluster. | `bool` | `false` | no |
 | <a name="input_enable_oidc_provider"></a> [enable\_oidc\_provider](#input\_enable\_oidc\_provider) | Whether to enable OIDC provider | `bool` | `true` | no |
 | <a name="input_enabled_cluster_log_types"></a> [enabled\_cluster\_log\_types](#input\_enabled\_cluster\_log\_types) | A list of the desired control plane logging to enable. Valid values [`api`, `audit`, `authenticator`, `controllerManager`, `scheduler`] | `list(string)` | `[]` | no |
@@ -147,6 +152,7 @@ module "eks_cluster" {
 | Name | Description |
 |------|-------------|
 | <a name="output_arn"></a> [arn](#output\_arn) | The Amazon Resource Name (ARN) of the EKS cluster |
+| <a name="output_auto_mode_node_role_arn"></a> [auto\_mode\_node\_role\_arn](#output\_auto\_mode\_node\_role\_arn) | ARN of Auto mode node role |
 | <a name="output_certificate_authority_data"></a> [certificate\_authority\_data](#output\_certificate\_authority\_data) | The base64-encoded certificate data required to communicate with the EKS cluster |
 | <a name="output_eks_cluster_id"></a> [eks\_cluster\_id](#output\_eks\_cluster\_id) | The unique identifier of the EKS cluster |
 | <a name="output_eks_cluster_security_group_id"></a> [eks\_cluster\_security\_group\_id](#output\_eks\_cluster\_security\_group\_id) | The ID of the security group associated with the EKS cluster's control plane |
