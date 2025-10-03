@@ -216,6 +216,10 @@ No resources.
 | <a name="input_create_worker_configuration"></a> [create\_worker\_configuration](#input\_create\_worker\_configuration) | Whether to create the worker configuration | `bool` | `false` | no |
 | <a name="input_encryption_type"></a> [encryption\_type](#input\_encryption\_type) | Encryption type (e.g., TLS, PLAINTEXT) | `string` | `""` | no |
 | <a name="input_enhanced_monitoring"></a> [enhanced\_monitoring](#input\_enhanced\_monitoring) | Specify the desired enhanced MSK CloudWatch monitoring level. Valid values: DEFAULT, PER\_BROKER, PER\_TOPIC\_PER\_BROKER, or PER\_TOPIC\_PER\_PARTITION | `string` | `"DEFAULT"` | no |
+| <a name="input_existing_plugin_arn"></a> [existing\_plugin\_arn](#input\_existing\_plugin\_arn) | ARN of an existing custom plugin (used when create\_custom\_plugin = false) | `string` | `null` | no |
+| <a name="input_existing_plugin_revision"></a> [existing\_plugin\_revision](#input\_existing\_plugin\_revision) | Revision of the existing custom plugin | `number` | `null` | no |
+| <a name="input_existing_worker_configuration_arn"></a> [existing\_worker\_configuration\_arn](#input\_existing\_worker\_configuration\_arn) | ARN of an existing MSK Connect worker configuration to use. Required if create\_worker\_configuration is false. | `string` | `null` | no |
+| <a name="input_existing_worker_configuration_revision"></a> [existing\_worker\_configuration\_revision](#input\_existing\_worker\_configuration\_revision) | Revision number of the existing MSK Connect worker configuration to use. Required if using an existing configuration. | `number` | `null` | no |
 | <a name="input_in_cluster_encryption"></a> [in\_cluster\_encryption](#input\_in\_cluster\_encryption) | Whether data communication among broker nodes is encrypted. Default is true | `bool` | `true` | no |
 | <a name="input_kafka_version"></a> [kafka\_version](#input\_kafka\_version) | Specify the desired Kafka software version | `string` | `"3.6.0"` | no |
 | <a name="input_kafkaconnect_version"></a> [kafkaconnect\_version](#input\_kafkaconnect\_version) | Version of Kafka Connect | `string` | `""` | no |
