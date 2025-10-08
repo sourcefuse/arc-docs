@@ -1,10 +1,12 @@
-title: ARC Monthly Newsletter
+title: ARC Monthly Updates
 nav:
+  - september2025.md
+  - july2025.md
   - february2025.md
   - january2025.md
   - december2024.md
   - november2024.md
   - october2024.md
   - september2024.md
-  - august2024.md
-  - july2024.md
+  # - august2024.md
+  # - july2024.md
