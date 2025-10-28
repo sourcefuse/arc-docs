@@ -19,13 +19,20 @@
 - [ModelPropertyDescriptionString](enums/ModelPropertyDescriptionString.md)
 - [OtpMethodType](enums/OtpMethodType.md)
 - [PermissionKey](enums/PermissionKey.md)
+- [UserIdentity](enums/UserIdentity.md)
 
 ### Classes
 
+- [ActiveUserFilterBuilderService](classes/ActiveUserFilterBuilderService.md)
+- [ActiveUsersFilter](classes/ActiveUsersFilter.md)
 - [AppleOauth2SignupProvider](classes/AppleOauth2SignupProvider.md)
 - [AppleOauth2VerifyProvider](classes/AppleOauth2VerifyProvider.md)
 - [ApplePostVerifyProvider](classes/ApplePostVerifyProvider.md)
 - [ApplePreVerifyProvider](classes/ApplePreVerifyProvider.md)
+- [Auth0PostVerifyProvider](classes/Auth0PostVerifyProvider.md)
+- [Auth0PreVerifyProvider](classes/Auth0PreVerifyProvider.md)
+- [Auth0SignupProvider](classes/Auth0SignupProvider.md)
+- [Auth0VerifyProvider](classes/Auth0VerifyProvider.md)
 - [AuthClient](classes/AuthClient.md)
 - [AuthClientRepository](classes/AuthClientRepository.md)
 - [AuthRefreshTokenRequest](classes/AuthRefreshTokenRequest.md)
@@ -36,12 +43,14 @@
 - [AuthenticationServiceComponent](classes/AuthenticationServiceComponent.md)
 - [AzureAdSignupProvider](classes/AzureAdSignupProvider.md)
 - [AzureAdVerifyProvider](classes/AzureAdVerifyProvider.md)
+- [AzureAuthenticationProvider](classes/AzureAuthenticationProvider.md)
 - [AzurePostVerifyProvider](classes/AzurePostVerifyProvider.md)
 - [AzurePreVerifyProvider](classes/AzurePreVerifyProvider.md)
 - [BearerTokenVerifyProvider](classes/BearerTokenVerifyProvider.md)
 - [ClientAuthRequest](classes/ClientAuthRequest.md)
 - [ClientPasswordVerifyProvider](classes/ClientPasswordVerifyProvider.md)
 - [CodeWriterProvider](classes/CodeWriterProvider.md)
+- [CognitoAuthenticationProvider](classes/CognitoAuthenticationProvider.md)
 - [CognitoOauth2SignupProvider](classes/CognitoOauth2SignupProvider.md)
 - [CognitoOauth2VerifyProvider](classes/CognitoOauth2VerifyProvider.md)
 - [CognitoPostVerifyProvider](classes/CognitoPostVerifyProvider.md)
@@ -60,6 +69,8 @@
 - [GoogleOauth2VerifyProvider](classes/GoogleOauth2VerifyProvider.md)
 - [GooglePostVerifyProvider](classes/GooglePostVerifyProvider.md)
 - [GooglePreVerifyProvider](classes/GooglePreVerifyProvider.md)
+- [IdpConfiguration](classes/IdpConfiguration.md)
+- [IdpLoginService](classes/IdpLoginService.md)
 - [InstagramOauth2SignupProvider](classes/InstagramOauth2SignupProvider.md)
 - [InstagramOauth2VerifyProvider](classes/InstagramOauth2VerifyProvider.md)
 - [InstagramPostVerifyProvider](classes/InstagramPostVerifyProvider.md)
@@ -68,6 +79,7 @@
 - [JWTAsymmetricVerifierProvider](classes/JWTAsymmetricVerifierProvider.md)
 - [JWTSymmetricSignerProvider](classes/JWTSymmetricSignerProvider.md)
 - [JWTSymmetricVerifierProvider](classes/JWTSymmetricVerifierProvider.md)
+- [JwtKeys](classes/JwtKeys.md)
 - [JwtPayloadProvider](classes/JwtPayloadProvider.md)
 - [KeyCloakPostVerifyProvider](classes/KeyCloakPostVerifyProvider.md)
 - [KeyCloakPreVerifyProvider](classes/KeyCloakPreVerifyProvider.md)
@@ -79,6 +91,7 @@
 - [LocalSignupProvider](classes/LocalSignupProvider.md)
 - [LocalUserProfileDto](classes/LocalUserProfileDto.md)
 - [LoginActivity](classes/LoginActivity.md)
+- [LoginActivityHelperService](classes/LoginActivityHelperService.md)
 - [LoginActivityRepository](classes/LoginActivityRepository.md)
 - [LoginHelperService](classes/LoginHelperService.md)
 - [LoginRequest](classes/LoginRequest.md)
@@ -157,6 +170,9 @@
 - [ApplePostVerifyFn](modules.md#applepostverifyfn)
 - [ApplePreVerifyFn](modules.md#applepreverifyfn)
 - [AppleSignUpFn](modules.md#applesignupfn)
+- [Auth0PostVerifyFn](modules.md#auth0postverifyfn)
+- [Auth0PreVerifyFn](modules.md#auth0preverifyfn)
+- [Auth0SignUpFn](modules.md#auth0signupfn)
 - [AuthCodeGeneratorFn](modules.md#authcodegeneratorfn)
 - [AuthenticationProviderFn](modules.md#authenticationproviderfn)
 - [AzureAdPostVerifyFn](modules.md#azureadpostverifyfn)
@@ -188,6 +204,8 @@
 - [OtpGenerateFn](modules.md#otpgeneratefn)
 - [OtpSenderFn](modules.md#otpsenderfn)
 - [PasswordDecryptionFn](modules.md#passworddecryptionfn)
+- [PasswordHashingFn](modules.md#passwordhashingfn)
+- [PasswordVerifyFn](modules.md#passwordverifyfn)
 - [PreSignupFn](modules.md#presignupfn)
 - [RoleWithRelations](modules.md#rolewithrelations)
 - [SamlPostVerifyFn](modules.md#samlpostverifyfn)
@@ -217,7 +235,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/types.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/types.ts#L58)
+[services/authentication-service/src/types.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/types.ts#L58)
 
 ___
 
@@ -242,7 +260,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L76)
+[services/authentication-service/src/providers/types.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L88)
 
 ___
 
@@ -269,7 +287,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L69)
+[services/authentication-service/src/providers/types.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L81)
 
 ___
 
@@ -293,7 +311,83 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L65)
+[services/authentication-service/src/providers/types.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L77)
+
+___
+
+### Auth0PostVerifyFn
+
+Ƭ **Auth0PostVerifyFn**: (`profile`: `Auth0Strategy.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `Auth0Strategy.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:225](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L225)
+
+___
+
+### Auth0PreVerifyFn
+
+Ƭ **Auth0PreVerifyFn**: (`accessToken`: `string`, `refreshToken`: `string`, `profile`: `Auth0Strategy.Profile`, `user`: `IAuthUser` \| ``null``) => `Promise`<`IAuthUser` \| ``null``\>
+
+#### Type declaration
+
+▸ (`accessToken`, `refreshToken`, `profile`, `user`): `Promise`<`IAuthUser` \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `accessToken` | `string` |
+| `refreshToken` | `string` |
+| `profile` | `Auth0Strategy.Profile` |
+| `user` | `IAuthUser` \| ``null`` |
+
+##### Returns
+
+`Promise`<`IAuthUser` \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:218](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L218)
+
+___
+
+### Auth0SignUpFn
+
+Ƭ **Auth0SignUpFn**: (`profile`: `Auth0Strategy.Profile`) => `Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+#### Type declaration
+
+▸ (`profile`): `Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `profile` | `Auth0Strategy.Profile` |
+
+##### Returns
+
+`Promise`<[`User`](classes/User.md) & [`UserRelations`](interfaces/UserRelations.md) \| ``null``\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:214](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L214)
 
 ___
 
@@ -318,23 +412,25 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L131)
+[services/authentication-service/src/providers/types.ts:143](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L143)
 
 ___
 
 ### AuthenticationProviderFn
 
-Ƭ **AuthenticationProviderFn**: (`accessToken`: `string`) => `Promise`<`boolean`\>
+Ƭ **AuthenticationProviderFn**: (`accessToken`: `string`, `req?`: [`AuthRefreshTokenRequest`](classes/AuthRefreshTokenRequest.md), `payload?`: `AnyObject`) => `Promise`<`boolean`\>
 
 #### Type declaration
 
-▸ (`accessToken`): `Promise`<`boolean`\>
+▸ (`accessToken`, `req?`, `payload?`): `Promise`<`boolean`\>
 
 ##### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `accessToken` | `string` |
+| `req?` | [`AuthRefreshTokenRequest`](classes/AuthRefreshTokenRequest.md) |
+| `payload?` | `AnyObject` |
 
 ##### Returns
 
@@ -342,7 +438,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L44)
+[services/authentication-service/src/providers/types.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L45)
 
 ___
 
@@ -367,7 +463,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:159](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L159)
+[services/authentication-service/src/providers/types.ts:171](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L171)
 
 ___
 
@@ -394,7 +490,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:152](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L152)
+[services/authentication-service/src/providers/types.ts:164](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L164)
 
 ___
 
@@ -418,7 +514,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:148](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L148)
+[services/authentication-service/src/providers/types.ts:160](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L160)
 
 ___
 
@@ -442,7 +538,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:114](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L114)
+[services/authentication-service/src/providers/types.ts:126](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L126)
 
 ___
 
@@ -466,7 +562,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L113)
+[services/authentication-service/src/providers/types.ts:125](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L125)
 
 ___
 
@@ -491,7 +587,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:171](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L171)
+[services/authentication-service/src/providers/types.ts:183](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L183)
 
 ___
 
@@ -518,7 +614,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:164](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L164)
+[services/authentication-service/src/providers/types.ts:176](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L176)
 
 ___
 
@@ -542,7 +638,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:176](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L176)
+[services/authentication-service/src/providers/types.ts:188](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L188)
 
 ___
 
@@ -567,7 +663,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:92](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L92)
+[services/authentication-service/src/providers/types.ts:104](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L104)
 
 ___
 
@@ -594,7 +690,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:85](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L85)
+[services/authentication-service/src/providers/types.ts:97](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L97)
 
 ___
 
@@ -618,7 +714,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L81)
+[services/authentication-service/src/providers/types.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L93)
 
 ___
 
@@ -642,7 +738,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:127](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L127)
+[services/authentication-service/src/providers/types.ts:139](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L139)
 
 ___
 
@@ -667,7 +763,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L40)
+[services/authentication-service/src/providers/types.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L41)
 
 ___
 
@@ -694,7 +790,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L33)
+[services/authentication-service/src/providers/types.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L34)
 
 ___
 
@@ -718,7 +814,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L29)
+[services/authentication-service/src/providers/types.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L30)
 
 ___
 
@@ -743,7 +839,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L60)
+[services/authentication-service/src/providers/types.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L72)
 
 ___
 
@@ -770,7 +866,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L53)
+[services/authentication-service/src/providers/types.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L65)
 
 ___
 
@@ -794,7 +890,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L49)
+[services/authentication-service/src/providers/types.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L61)
 
 ___
 
@@ -825,7 +921,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:180](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L180)
+[services/authentication-service/src/providers/types.ts:192](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L192)
 
 ___
 
@@ -856,7 +952,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:184](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L184)
+[services/authentication-service/src/providers/types.ts:196](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L196)
 
 ___
 
@@ -882,7 +978,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:121](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L121)
+[services/authentication-service/src/providers/types.ts:133](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L133)
 
 ___
 
@@ -907,7 +1003,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L108)
+[services/authentication-service/src/providers/types.ts:120](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L120)
 
 ___
 
@@ -934,7 +1030,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:101](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L101)
+[services/authentication-service/src/providers/types.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L113)
 
 ___
 
@@ -958,7 +1054,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:97](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L97)
+[services/authentication-service/src/providers/types.ts:109](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L109)
 
 ___
 
@@ -982,7 +1078,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:136](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L136)
+[services/authentication-service/src/providers/types.ts:148](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L148)
 
 ___
 
@@ -1006,7 +1102,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:140](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L140)
+[services/authentication-service/src/providers/types.ts:152](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L152)
 
 ___
 
@@ -1030,7 +1126,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:138](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L138)
+[services/authentication-service/src/providers/types.ts:150](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L150)
 
 ___
 
@@ -1055,7 +1151,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:142](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L142)
+[services/authentication-service/src/providers/types.ts:154](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L154)
 
 ___
 
@@ -1079,7 +1175,58 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L48)
+[services/authentication-service/src/providers/types.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L51)
+
+___
+
+### PasswordHashingFn
+
+Ƭ **PasswordHashingFn**: (`password?`: `string`, `key?`: `string`) => `Promise`<`string`\>
+
+#### Type declaration
+
+▸ (`password?`, `key?`): `Promise`<`string`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `password?` | `string` |
+| `key?` | `string` |
+
+##### Returns
+
+`Promise`<`string`\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L52)
+
+___
+
+### PasswordVerifyFn
+
+Ƭ **PasswordVerifyFn**: (`plainPassword`: `string`, `hashedPassword`: `string`, `key?`: `string`) => `Promise`<`boolean`\>
+
+#### Type declaration
+
+▸ (`plainPassword`, `hashedPassword`, `key?`): `Promise`<`boolean`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `plainPassword` | `string` |
+| `hashedPassword` | `string` |
+| `key?` | `string` |
+
+##### Returns
+
+`Promise`<`boolean`\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/types.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L56)
 
 ___
 
@@ -1110,7 +1257,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/types.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/types.ts#L34)
+[services/authentication-service/src/types.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/types.ts#L34)
 
 ___
 
@@ -1120,7 +1267,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L63)
+[services/authentication-service/src/models/role.model.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/role.model.ts#L63)
 
 ___
 
@@ -1145,7 +1292,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:197](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L197)
+[services/authentication-service/src/providers/types.ts:209](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L209)
 
 ___
 
@@ -1170,7 +1317,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:192](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L192)
+[services/authentication-service/src/providers/types.ts:204](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L204)
 
 ___
 
@@ -1194,7 +1341,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:188](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L188)
+[services/authentication-service/src/providers/types.ts:200](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L200)
 
 ___
 
@@ -1218,7 +1365,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/types.ts:144](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/types.ts#L144)
+[services/authentication-service/src/providers/types.ts:156](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/types.ts#L156)
 
 ___
 
@@ -1228,7 +1375,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/tenant.model.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/tenant.model.ts#L76)
+[services/authentication-service/src/models/tenant.model.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/tenant.model.ts#L76)
 
 ___
 
@@ -1238,7 +1385,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-credentials.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user-credentials.model.ts#L66)
+[services/authentication-service/src/models/user-credentials.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user-credentials.model.ts#L66)
 
 ___
 
@@ -1270,7 +1417,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/types.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/types.ts#L41)
+[services/authentication-service/src/types.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/types.ts#L41)
 
 ___
 
@@ -1280,7 +1427,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user-tenant.model.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user-tenant.model.ts#L81)
+[services/authentication-service/src/models/user-tenant.model.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user-tenant.model.ts#L81)
 
 ___
 
@@ -1307,7 +1454,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/types.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/types.ts#L35)
+[services/authentication-service/src/types.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/types.ts#L35)
 
 ___
 
@@ -1317,7 +1464,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:140](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L140)
+[services/authentication-service/src/models/user.model.ts:140](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L140)
 
 ## Variables
 
@@ -1327,7 +1474,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/types.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/types.ts#L21)
+[services/authentication-service/src/types.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/types.ts#L21)
 
 ___
 
@@ -1337,34 +1484,34 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/types.ts#L20)
+[services/authentication-service/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/types.ts#L20)
 
 ___
 
 ### models
 
-• `Const` **models**: (typeof [`AuthClient`](classes/AuthClient.md) \| typeof [`AuthSecureClient`](classes/AuthSecureClient.md) \| typeof [`User`](classes/User.md) \| typeof [`RefreshTokenRequest`](classes/RefreshTokenRequest.md) \| typeof [`SignupRequestDto`](classes/SignupRequestDto.md) \| typeof [`LoginActivity`](classes/LoginActivity.md) \| typeof [`OtpCache`](classes/OtpCache.md) \| typeof [`Otp`](classes/Otp.md) \| typeof [`RefreshToken`](classes/RefreshToken.md) \| typeof [`RevokedToken`](classes/RevokedToken.md) \| typeof [`Role`](classes/Role.md) \| typeof [`Tenant`](classes/Tenant.md) \| typeof [`TenantConfig`](classes/TenantConfig.md) \| typeof [`UserLevelPermission`](classes/UserLevelPermission.md) \| typeof [`UserTenant`](classes/UserTenant.md) \| typeof [`UserCredentials`](classes/UserCredentials.md) \| typeof [`UserLevelResource`](classes/UserLevelResource.md) \| typeof [`ForgetPasswordDto`](classes/ForgetPasswordDto.md) \| typeof [`LocalUserProfileDto`](classes/LocalUserProfileDto.md) \| typeof [`ResetPasswordWithClient`](classes/ResetPasswordWithClient.md) \| typeof [`SignupRequestResponseDto`](classes/SignupRequestResponseDto.md) \| typeof [`SignupRequest`](classes/SignupRequest.md) \| typeof [`SignupWithTokenReponseDto`](classes/SignupWithTokenReponseDto.md))[]
+• `Const` **models**: (typeof [`ActiveUsersFilter`](classes/ActiveUsersFilter.md) \| typeof [`AuthClient`](classes/AuthClient.md) \| typeof [`AuthSecureClient`](classes/AuthSecureClient.md) \| typeof [`SignupRequestDto`](classes/SignupRequestDto.md) \| typeof [`User`](classes/User.md) \| typeof [`RefreshTokenRequest`](classes/RefreshTokenRequest.md) \| typeof [`LoginActivity`](classes/LoginActivity.md) \| typeof [`OtpCache`](classes/OtpCache.md) \| typeof [`Otp`](classes/Otp.md) \| typeof [`RefreshToken`](classes/RefreshToken.md) \| typeof [`RevokedToken`](classes/RevokedToken.md) \| typeof [`Role`](classes/Role.md) \| typeof [`Tenant`](classes/Tenant.md) \| typeof [`TenantConfig`](classes/TenantConfig.md) \| typeof [`UserLevelPermission`](classes/UserLevelPermission.md) \| typeof [`UserTenant`](classes/UserTenant.md) \| typeof [`UserCredentials`](classes/UserCredentials.md) \| typeof [`UserLevelResource`](classes/UserLevelResource.md) \| typeof [`ForgetPasswordDto`](classes/ForgetPasswordDto.md) \| typeof [`JwtKeys`](classes/JwtKeys.md) \| typeof [`LocalUserProfileDto`](classes/LocalUserProfileDto.md) \| typeof [`ResetPasswordWithClient`](classes/ResetPasswordWithClient.md) \| typeof [`SignupRequestResponseDto`](classes/SignupRequestResponseDto.md) \| typeof [`SignupRequest`](classes/SignupRequest.md) \| typeof [`SignupWithTokenReponseDto`](classes/SignupWithTokenReponseDto.md))[]
 
 #### Defined in
 
-[services/authentication-service/src/models/index.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/index.ts#L56)
+[services/authentication-service/src/models/index.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/index.ts#L60)
 
 ___
 
 ### repositories
 
-• `Const` **repositories**: (typeof [`LoginActivityRepository`](classes/LoginActivityRepository.md) \| typeof [`AuthClientRepository`](classes/AuthClientRepository.md) \| typeof [`AuthSecureClientRepository`](classes/AuthSecureClientRepository.md) \| typeof [`OtpCacheRepository`](classes/OtpCacheRepository.md) \| typeof [`OtpRepository`](classes/OtpRepository.md) \| typeof [`RefreshTokenRepository`](classes/RefreshTokenRepository.md) \| typeof [`RevokedTokenRepository`](classes/RevokedTokenRepository.md) \| typeof [`RoleRepository`](classes/RoleRepository.md) \| typeof [`TenantRepository`](classes/TenantRepository.md) \| typeof [`TenantConfigRepository`](classes/TenantConfigRepository.md) \| typeof [`UserLevelPermissionRepository`](classes/UserLevelPermissionRepository.md) \| typeof [`UserTenantRepository`](classes/UserTenantRepository.md) \| typeof [`UserRepository`](classes/UserRepository.md) \| typeof [`UserCredentialsRepository`](classes/UserCredentialsRepository.md) \| typeof [`UserLevelResourceRepository`](classes/UserLevelResourceRepository.md))[]
+• `Const` **repositories**: (typeof [`AuthClientRepository`](classes/AuthClientRepository.md) \| typeof [`AuthSecureClientRepository`](classes/AuthSecureClientRepository.md) \| typeof [`LoginActivityRepository`](classes/LoginActivityRepository.md) \| typeof [`OtpCacheRepository`](classes/OtpCacheRepository.md) \| typeof [`OtpRepository`](classes/OtpRepository.md) \| typeof [`RefreshTokenRepository`](classes/RefreshTokenRepository.md) \| typeof [`RevokedTokenRepository`](classes/RevokedTokenRepository.md) \| typeof [`RoleRepository`](classes/RoleRepository.md) \| typeof [`TenantRepository`](classes/TenantRepository.md) \| typeof [`TenantConfigRepository`](classes/TenantConfigRepository.md) \| typeof [`UserLevelPermissionRepository`](classes/UserLevelPermissionRepository.md) \| typeof [`UserTenantRepository`](classes/UserTenantRepository.md) \| typeof [`UserRepository`](classes/UserRepository.md) \| typeof [`UserCredentialsRepository`](classes/UserCredentialsRepository.md) \| typeof [`UserLevelResourceRepository`](classes/UserLevelResourceRepository.md) \| typeof `PublicKeysRepository` \| typeof `JwtKeysRepository`)[]
 
 #### Defined in
 
-[services/authentication-service/src/repositories/index.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/index.ts#L37)
+[services/authentication-service/src/repositories/index.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/index.ts#L38)
 
 ___
 
 ### services
 
-• `Const` **services**: (typeof [`LoginHelperService`](classes/LoginHelperService.md) \| typeof [`OtpService`](classes/OtpService.md))[]
+• `Const` **services**: (typeof [`ActiveUserFilterBuilderService`](classes/ActiveUserFilterBuilderService.md) \| typeof [`IdpLoginService`](classes/IdpLoginService.md) \| typeof [`LoginActivityHelperService`](classes/LoginActivityHelperService.md) \| typeof [`LoginHelperService`](classes/LoginHelperService.md) \| typeof [`OtpService`](classes/OtpService.md))[]
 
 #### Defined in
 
-[services/authentication-service/src/services/index.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/services/index.ts#L10)
+[services/authentication-service/src/services/index.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/services/index.ts#L16)

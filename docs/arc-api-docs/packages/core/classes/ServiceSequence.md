@@ -16,6 +16,7 @@
 
 - [authenticateRequest](ServiceSequence.md#authenticaterequest)
 - [checkAuthorisation](ServiceSequence.md#checkauthorisation)
+- [coreConfig](ServiceSequence.md#coreconfig)
 - [expressMiddlewares](ServiceSequence.md#expressmiddlewares)
 - [findRoute](ServiceSequence.md#findroute)
 - [i18n](ServiceSequence.md#i18n)
@@ -28,6 +29,7 @@
 
 ### Methods
 
+- [\_handleErrorMessage](ServiceSequence.md#_handleerrormessage)
 - [\_rejectErrors](ServiceSequence.md#_rejecterrors)
 - [handle](ServiceSequence.md#handle)
 
@@ -35,7 +37,7 @@
 
 ### constructor
 
-• **new ServiceSequence**(`findRoute`, `parseParams`, `invoke`, `send`, `reject`, `logger`, `authenticateRequest`, `checkAuthorisation`, `i18n`)
+• **new ServiceSequence**(`findRoute`, `parseParams`, `invoke`, `send`, `reject`, `logger`, `authenticateRequest`, `checkAuthorisation`, `coreConfig`, `i18n`)
 
 #### Parameters
 
@@ -49,11 +51,12 @@
 | `logger` | [`ILogger`](../interfaces/ILogger.md) |
 | `authenticateRequest` | `AuthenticateFn`<[`IAuthUserWithPermissions`](../interfaces/IAuthUserWithPermissions.md)<`string`, `string`, `string`\>\> |
 | `checkAuthorisation` | `AuthorizeFn` |
+| `coreConfig` | [`CoreConfig`](../interfaces/CoreConfig.md) |
 | `i18n` | `i18nAPI` |
 
 #### Defined in
 
-[packages/core/src/service-sequence.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/service-sequence.ts#L54)
+[packages/core/src/service-sequence.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L57)
 
 ## Properties
 
@@ -63,7 +66,7 @@
 
 #### Defined in
 
-[packages/core/src/service-sequence.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/service-sequence.ts#L65)
+[packages/core/src/service-sequence.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L68)
 
 ___
 
@@ -73,7 +76,17 @@ ___
 
 #### Defined in
 
-[packages/core/src/service-sequence.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/service-sequence.ts#L67)
+[packages/core/src/service-sequence.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L70)
+
+___
+
+### coreConfig
+
+• `Private` `Readonly` **coreConfig**: [`CoreConfig`](../interfaces/CoreConfig.md)
+
+#### Defined in
+
+[packages/core/src/service-sequence.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L72)
 
 ___
 
@@ -83,7 +96,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/service-sequence.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/service-sequence.ts#L52)
+[packages/core/src/service-sequence.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L56)
 
 ___
 
@@ -93,7 +106,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/service-sequence.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/service-sequence.ts#L56)
+[packages/core/src/service-sequence.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L59)
 
 ___
 
@@ -103,7 +116,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/service-sequence.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/service-sequence.ts#L69)
+[packages/core/src/service-sequence.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L74)
 
 ___
 
@@ -113,7 +126,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/service-sequence.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/service-sequence.ts#L60)
+[packages/core/src/service-sequence.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L63)
 
 ___
 
@@ -126,7 +139,7 @@ To be injected via SequenceActions.INVOKE_MIDDLEWARE.
 
 #### Defined in
 
-[packages/core/src/service-sequence.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/service-sequence.ts#L50)
+[packages/core/src/service-sequence.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L54)
 
 ___
 
@@ -136,7 +149,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/service-sequence.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/service-sequence.ts#L63)
+[packages/core/src/service-sequence.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L66)
 
 ___
 
@@ -146,7 +159,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/service-sequence.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/service-sequence.ts#L58)
+[packages/core/src/service-sequence.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L61)
 
 ___
 
@@ -156,7 +169,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/service-sequence.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/service-sequence.ts#L62)
+[packages/core/src/service-sequence.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L65)
 
 ___
 
@@ -166,9 +179,29 @@ ___
 
 #### Defined in
 
-[packages/core/src/service-sequence.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/service-sequence.ts#L61)
+[packages/core/src/service-sequence.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L64)
 
 ## Methods
+
+### \_handleErrorMessage
+
+▸ `Private` **_handleErrorMessage**(`error`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `error` | `Error` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[packages/core/src/service-sequence.ts:186](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L186)
+
+___
 
 ### \_rejectErrors
 
@@ -186,7 +219,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/service-sequence.ts:160](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/service-sequence.ts#L160)
+[packages/core/src/service-sequence.ts:144](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L144)
 
 ___
 
@@ -210,4 +243,4 @@ SequenceHandler.handle
 
 #### Defined in
 
-[packages/core/src/service-sequence.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/service-sequence.ts#L72)
+[packages/core/src/service-sequence.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/service-sequence.ts#L77)

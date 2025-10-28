@@ -20,6 +20,8 @@
 - [getOtpRepository](UserRepository.md#getotprepository)
 - [logger](UserRepository.md#logger)
 - [passwordDecryptionFn](UserRepository.md#passworddecryptionfn)
+- [passwordHashingFn](UserRepository.md#passwordhashingfn)
+- [passwordVerifyFn](UserRepository.md#passwordverifyfn)
 - [tenant](UserRepository.md#tenant)
 - [tenantRepositoryGetter](UserRepository.md#tenantrepositorygetter)
 - [user](UserRepository.md#user)
@@ -41,7 +43,7 @@
 
 ### constructor
 
-• **new UserRepository**(`dataSource`, `getUserCredsRepository`, `getOtpRepository`, `tenantRepositoryGetter`, `userTenantRepositoryGetter`, `logger`, `passwordDecryptionFn`, `user`)
+• **new UserRepository**(`dataSource`, `getUserCredsRepository`, `getOtpRepository`, `tenantRepositoryGetter`, `userTenantRepositoryGetter`, `logger`, `passwordDecryptionFn`, `passwordHashingFn`, `passwordVerifyFn`, `user`)
 
 #### Parameters
 
@@ -54,6 +56,8 @@
 | `userTenantRepositoryGetter` | `Getter`<[`UserTenantRepository`](UserTenantRepository.md)\> |
 | `logger` | `ILogger` |
 | `passwordDecryptionFn` | [`PasswordDecryptionFn`](../modules.md#passworddecryptionfn) |
+| `passwordHashingFn` | [`PasswordHashingFn`](../modules.md#passwordhashingfn) |
+| `passwordVerifyFn` | [`PasswordVerifyFn`](../modules.md#passwordverifyfn) |
 | `user` | typeof `Entity` & { `prototype`: [`User`](User.md)<`DataObject`<`Model`\>\>  } |
 
 #### Overrides
@@ -66,7 +70,7 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L58)
+[services/authentication-service/src/repositories/user.repository.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L60)
 
 ## Properties
 
@@ -76,7 +80,7 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L47)
+[services/authentication-service/src/repositories/user.repository.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L49)
 
 ___
 
@@ -86,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L64)
+[services/authentication-service/src/repositories/user.repository.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L66)
 
 ___
 
@@ -96,7 +100,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L69)
+[services/authentication-service/src/repositories/user.repository.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L71)
 
 ___
 
@@ -106,7 +110,27 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L71)
+[services/authentication-service/src/repositories/user.repository.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L73)
+
+___
+
+### passwordHashingFn
+
+• `Private` `Readonly` **passwordHashingFn**: [`PasswordHashingFn`](../modules.md#passwordhashingfn)
+
+#### Defined in
+
+[services/authentication-service/src/repositories/user.repository.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L75)
+
+___
+
+### passwordVerifyFn
+
+• `Private` `Readonly` **passwordVerifyFn**: [`PasswordVerifyFn`](../modules.md#passwordverifyfn)
+
+#### Defined in
+
+[services/authentication-service/src/repositories/user.repository.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L77)
 
 ___
 
@@ -116,7 +140,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L51)
+[services/authentication-service/src/repositories/user.repository.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L53)
 
 ___
 
@@ -126,7 +150,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L66)
+[services/authentication-service/src/repositories/user.repository.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L68)
 
 ___
 
@@ -136,7 +160,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L73)
+[services/authentication-service/src/repositories/user.repository.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L79)
 
 ___
 
@@ -146,7 +170,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L68)
+[services/authentication-service/src/repositories/user.repository.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L70)
 
 ___
 
@@ -156,7 +180,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L53)
+[services/authentication-service/src/repositories/user.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L55)
 
 ## Methods
 
@@ -178,7 +202,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:184](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L184)
+[services/authentication-service/src/repositories/user.repository.ts:189](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L189)
 
 ___
 
@@ -203,7 +227,7 @@ DefaultSoftCrudRepository.create
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:103](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L103)
+[services/authentication-service/src/repositories/user.repository.ts:109](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L109)
 
 ___
 
@@ -224,7 +248,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:122](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L122)
+[services/authentication-service/src/repositories/user.repository.ts:127](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L127)
 
 ___
 
@@ -244,7 +268,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:152](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L152)
+[services/authentication-service/src/repositories/user.repository.ts:157](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L157)
 
 ___
 
@@ -264,7 +288,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:232](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L232)
+[services/authentication-service/src/repositories/user.repository.ts:237](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L237)
 
 ___
 
@@ -284,7 +308,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:220](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L220)
+[services/authentication-service/src/repositories/user.repository.ts:225](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L225)
 
 ___
 
@@ -306,7 +330,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:156](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L156)
+[services/authentication-service/src/repositories/user.repository.ts:161](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L161)
 
 ___
 
@@ -327,4 +351,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/user.repository.ts:129](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/user.repository.ts#L129)
+[services/authentication-service/src/repositories/user.repository.ts:134](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/user.repository.ts#L134)

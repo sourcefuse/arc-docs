@@ -7,6 +7,7 @@
 ### Variables
 
 - [Component](TenantUtilitiesBindings.md#component)
+- [Config](TenantUtilitiesBindings.md#config)
 - [GuardService](TenantUtilitiesBindings.md#guardservice)
 
 ## Variables
@@ -17,7 +18,17 @@
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/keys.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/keys.ts#L7)
+[packages/core/src/components/tenant-utilities/keys.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/keys.ts#L11)
+
+___
+
+### Config
+
+• `Const` **Config**: `BindingKey`<``null`` \| [`ITenantUtilitiesConfig`](../interfaces/ITenantUtilitiesConfig.md)\>
+
+#### Defined in
+
+[packages/core/src/components/tenant-utilities/keys.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/keys.ts#L18)
 
 ___
 
@@ -27,4 +38,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/keys.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/keys.ts#L10)
+[packages/core/src/components/tenant-utilities/keys.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/keys.ts#L14)

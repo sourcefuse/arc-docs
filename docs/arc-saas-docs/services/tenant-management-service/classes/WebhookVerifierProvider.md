@@ -38,14 +38,14 @@
 | :------ | :------ |
 | `webhookConfig` | [`WebhookConfig`](../modules.md#webhookconfig) |
 | `cryptoHelperService` | [`CryptoHelperService`](CryptoHelperService.md) |
-| `webhookSecretRepo` | [`WebhookSecretRepository`](WebhookSecretRepository.md) |
+| `webhookSecretRepo` | [`WebhookSecretRepository`](WebhookSecretRepository.md)<[`WebhookSecret`](WebhookSecret.md)\> |
 | `logger` | `ILogger` |
 | `setCurrentUser` | `Setter`<`IAuthUser`\> |
 | `systemUser` | `IAuthUser` |
 
 #### Defined in
 
-[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:21](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L21)
+[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:21](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L21)
 
 ## Properties
 
@@ -55,7 +55,7 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:25](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L25)
+[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:25](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L25)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:29](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L29)
+[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:29](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L29)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:31](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L31)
+[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:31](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L31)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:33](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L33)
+[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:33](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L33)
 
 ___
 
@@ -95,17 +95,17 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:23](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L23)
+[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:23](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L23)
 
 ___
 
 ### webhookSecretRepo
 
-• `Private` `Readonly` **webhookSecretRepo**: [`WebhookSecretRepository`](WebhookSecretRepository.md)
+• `Private` `Readonly` **webhookSecretRepo**: [`WebhookSecretRepository`](WebhookSecretRepository.md)<[`WebhookSecret`](WebhookSecret.md)\>
 
 #### Defined in
 
-[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:27](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L27)
+[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:27](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L27)
 
 ## Methods
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:40](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L40)
+[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:40](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L40)
 
 ___
 
@@ -169,4 +169,4 @@ Provider.value
 
 #### Defined in
 
-[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:36](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L36)
+[services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts:36](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/interceptors/webhook-verifier.interceptor.ts#L36)

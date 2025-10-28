@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/twilio.provider.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/twilio.provider.ts#L17)
+[services/video-conferencing-service/src/providers/twilio/twilio.provider.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/twilio.provider.ts#L17)
 
 ## Properties
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/twilio.provider.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/twilio.provider.ts#L18)
+[services/video-conferencing-service/src/providers/twilio/twilio.provider.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/twilio.provider.ts#L18)
 
 ## Methods
 
@@ -52,9 +52,19 @@
 
 ▸ **value**(): `Object`
 
+The function returns an object with methods for interacting with Twilio services such as getting
+tokens, meeting links, archives, setting upload targets, getting features, and checking webhook
+payloads.
+
 #### Returns
 
 `Object`
+
+The `value()` function returns an object with several methods related to interacting with
+Twilio services. These methods include `getToken`, `getMeetingLink`, `getArchives`,
+`deleteArchive`, `setUploadTarget`, `getFeatures`, and `checkWebhookPayload`. Each method performs
+a specific action such as retrieving a token, getting a meeting link, fetching archives, deleting
+an archive, setting
 
 | Name | Type |
 | :------ | :------ |
@@ -72,4 +82,4 @@ Provider.value
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/twilio.provider.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/twilio.provider.ts#L21)
+[services/video-conferencing-service/src/providers/twilio/twilio.provider.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/twilio.provider.ts#L31)

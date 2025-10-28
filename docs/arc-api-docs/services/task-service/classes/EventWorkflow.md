@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/event-workflow.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/event-workflow.model.ts#L22)
+[services/task-service/src/models/event-workflow.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/event-workflow.model.ts#L22)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/event-workflow.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/event-workflow.model.ts#L13)
+[services/task-service/src/models/event-workflow.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/event-workflow.model.ts#L13)
 
 ___
 
@@ -128,4 +128,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/event-workflow.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/event-workflow.model.ts#L30)
+[services/task-service/src/models/event-workflow.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/event-workflow.model.ts#L30)

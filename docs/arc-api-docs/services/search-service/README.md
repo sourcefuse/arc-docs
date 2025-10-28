@@ -67,6 +67,133 @@ npm i @sourceloop/search-service
 - Start the application
   `npm start`
 
+### Asymmetric Token Signing and Verification
+
+If you are using asymmetric token signing and verification, you should have auth datasource present in the service and auth redis datasource on the facade level. Example datasource file for auth database is:-
+
+Auth DB datasource :-
+
+```ts
+import {inject, lifeCycleObserver, LifeCycleObserver} from '@loopback/core';
+import {juggler} from '@loopback/repository';
+import {AuthDbSourceName} from '@sourceloop/core';
+const DEFAULT_MAX_CONNECTIONS = 25;
+const DEFAULT_DB_IDLE_TIMEOUT_MILLIS = 60000;
+const DEFAULT_DB_CONNECTION_TIMEOUT_MILLIS = 2000;
+
+const config = {
+  name: 'auth',
+  connector: 'postgresql',
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  user: process.env.DB_USER,
+  schema: process.env.DB_SCHEMA,
+  password: process.env.DB_PASSWORD,
+  database: process.env.AUTH_DB,
+};
+
+// Observe application's life cycle to disconnect the datasource when
+// application is stopped. This allows the application to be shut down
+// gracefully. The `stop()` method is inherited from `juggler.DataSource`.
+// Learn more at https://loopback.io/doc/en/lb4/Life-cycle.html
+@lifeCycleObserver('datasource')
+export class AuthDataSource
+  extends juggler.DataSource
+  implements LifeCycleObserver
+{
+  static dataSourceName = AuthDbSourceName;
+
+  static readonly defaultConfig = config;
+
+  constructor(
+    @inject('datasources.config.auth', {optional: true})
+    dsConfig: object = config,
+  ) {
+    if (!!+(process.env.ENABLE_DB_CONNECTION_POOLING ?? 0)) {
+      const dbPool = {
+        max: +(process.env.DB_MAX_CONNECTIONS ?? DEFAULT_MAX_CONNECTIONS),
+        idleTimeoutMillis: +(
+          process.env.DB_IDLE_TIMEOUT_MILLIS ?? DEFAULT_DB_IDLE_TIMEOUT_MILLIS
+        ),
+        connectionTimeoutMillis: +(
+          process.env.DB_CONNECTION_TIMEOUT_MILLIS ??
+          DEFAULT_DB_CONNECTION_TIMEOUT_MILLIS
+        ),
+      };
+
+      dsConfig = {...dsConfig, ...dbPool};
+    }
+
+    super(dsConfig);
+  }
+}
+```
+
+Auth Cache Redis Datasource:-
+
+```ts
+import {inject, lifeCycleObserver, LifeCycleObserver} from '@loopback/core';
+import {AnyObject, juggler} from '@loopback/repository';
+import {readFileSync} from 'fs';
+import {AuthCacheSourceName} from '@sourceloop/core';
+
+const config = {
+  name: process.env.REDIS_NAME,
+  connector: 'kv-redis',
+  host: process.env.REDIS_HOST,
+  port: process.env.REDIS_PORT,
+  password: process.env.REDIS_PASSWORD,
+  db: process.env.REDIS_DATABASE,
+  url: process.env.REDIS_URL,
+  tls:
+    +process.env.REDIS_TLS_ENABLED! && process.env.REDIS_TLS_CERT
+      ? {
+          ca: readFileSync(process.env.REDIS_TLS_CERT),
+        }
+      : undefined,
+  sentinels:
+    +process.env.REDIS_HAS_SENTINELS! && process.env.REDIS_SENTINELS
+      ? JSON.parse(process.env.REDIS_SENTINELS)
+      : undefined,
+  sentinelPassword:
+    +process.env.REDIS_HAS_SENTINELS! && process.env.REDIS_SENTINEL_PASSWORD
+      ? process.env.REDIS_SENTINEL_PASSWORD
+      : undefined,
+  role:
+    +process.env.REDIS_HAS_SENTINELS! && process.env.REDIS_SENTINEL_ROLE
+      ? process.env.REDIS_SENTINEL_ROLE
+      : undefined,
+};
+
+@lifeCycleObserver('datasource')
+export class RedisDataSource
+  extends juggler.DataSource
+  implements LifeCycleObserver
+{
+  static readonly dataSourceName = AuthCacheSourceName;
+  static readonly defaultConfig = config;
+
+  constructor(
+    @inject(`datasources.config.${process.env.REDIS_NAME}`, {optional: true})
+    dsConfig: AnyObject = config,
+  ) {
+    if (
+      +process.env.REDIS_HAS_SENTINELS! &&
+      !!process.env.REDIS_SENTINEL_HOST &&
+      !!process.env.REDIS_SENTINEL_PORT
+    ) {
+      dsConfig.sentinels = [
+        {
+          host: process.env.REDIS_SENTINEL_HOST,
+          port: +process.env.REDIS_SENTINEL_PORT,
+        },
+      ];
+    }
+    super(dsConfig);
+  }
+}
+```
+
 ## Configurations
 
 **useCustomSequence**
@@ -148,9 +275,26 @@ CREATE INDEX tbl_fts_idx ON main.<TABLENAME> USING GIN (
        to_tsvector('english', f_concat_ws(' ', <COLUMN1>, <COLUMN2>)));
 ```
 
+### Using with Sequelize
+
+This service supports Sequelize as the underlying ORM using [@loopback/sequelize](https://www.npmjs.com/package/@loopback/sequelize) extension. And in order to use it, you'll need to do following changes.
+
+1.To use Sequelize in your application, add following to application.ts:
+
+```ts
+this.bind(SearchServiceBindings.Config).to({
+  useCustomSequence: false,
+  useSequelize: true,
+});
+```
+
+2. Use the `SequelizeDataSource` in your datasource as the parent class. Refer [this](https://www.npmjs.com/package/@loopback/sequelize#step-1-configure-datasource) for more.
+
 ## Migrations
 
 The migrations required for this service are processed during the installation automatically if you set the `CHAT_MIGRATION` or `SOURCELOOP_MIGRATION` env variable. The migrations use [`db-migrate`](https://www.npmjs.com/package/db-migrate) with [`db-migrate-pg`](https://www.npmjs.com/package/db-migrate-pg) driver for migrations, so you will have to install these packages to use auto-migration. Please note that if you are using some pre-existing migrations or databasea, they may be affected. In such a scenario, it is advised that you copy the migration files in your project root, using the `CHAT_MIGRATION_COPY` or `SOURCELOOP_MIGRATION_COPY` env variables. You can customize or cherry-pick the migrations in the copied files according to your specific requirements and then apply them to the DB.
+
+This migration script supports both MySQL and PostgreSQL databases, controlled by environment variables. By setting MYSQL_MIGRATION to 'true', the script runs migrations using MySQL configuration files; otherwise, it defaults to PostgreSQL. .
 
 Additionally, there is now an option to choose between SQL migration or PostgreSQL migration.
 NOTE: For [`@sourceloop/cli`](https://www.npmjs.com/package/@sourceloop/cli?activeTab=readme) users, this choice can be specified during the scaffolding process by selecting the "type of datasource" option.

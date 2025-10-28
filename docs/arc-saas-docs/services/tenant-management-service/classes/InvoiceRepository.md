@@ -1,10 +1,16 @@
 [@sourceloop/ctrl-plane-tenant-management-service](../README.md) / [Exports](../modules.md) / InvoiceRepository
 
-# Class: InvoiceRepository
+# Class: InvoiceRepository<T\>
+
+## Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`Invoice`](Invoice.md) = [`Invoice`](Invoice.md) |
 
 ## Hierarchy
 
-- `DefaultTransactionalUserModifyRepository`<[`Invoice`](Invoice.md), typeof [`id`](Invoice.md#id), [`InvoiceRelations`](../interfaces/InvoiceRelations.md)\>
+- `DefaultTransactionalUserModifyRepository`<`T`, typeof [`id`](Invoice.md#id), [`InvoiceRelations`](../interfaces/InvoiceRelations.md)\>
 
   ↳ **`InvoiceRepository`**
 
@@ -17,6 +23,7 @@
 ### Properties
 
 - [getCurrentUser](InvoiceRepository.md#getcurrentuser)
+- [invoice](InvoiceRepository.md#invoice)
 - [tenant](InvoiceRepository.md#tenant)
 - [tenantRepositoryGetter](InvoiceRepository.md#tenantrepositorygetter)
 
@@ -24,7 +31,13 @@
 
 ### constructor
 
-• **new InvoiceRepository**(`dataSource`, `getCurrentUser`, `tenantRepositoryGetter`)
+• **new InvoiceRepository**<`T`\>(`dataSource`, `getCurrentUser`, `tenantRepositoryGetter`, `invoice`)
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`Invoice`](Invoice.md)<`T`\> = [`Invoice`](Invoice.md) |
 
 #### Parameters
 
@@ -32,19 +45,20 @@
 | :------ | :------ |
 | `dataSource` | `DataSource` |
 | `getCurrentUser` | `Getter`<`IAuthUserWithPermissions`<`string`, `string`, `string`\>\> |
-| `tenantRepositoryGetter` | `Getter`<[`TenantRepository`](TenantRepository.md)\> |
+| `tenantRepositoryGetter` | `Getter`<[`TenantRepository`](TenantRepository.md)<[`Tenant`](Tenant.md)\>\> |
+| `invoice` | typeof `Entity` & { `prototype`: `T`  } |
 
 #### Overrides
 
 DefaultTransactionalUserModifyRepository&lt;
-  Invoice,
+  T,
   typeof Invoice.prototype.id,
   InvoiceRelations
 \&gt;.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/invoice.repository.ts:23](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/invoice.repository.ts#L23)
+[services/tenant-management-service/src/repositories/invoice.repository.ts:30](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/invoice.repository.ts#L30)
 
 ## Properties
 
@@ -58,7 +72,17 @@ DefaultTransactionalUserModifyRepository.getCurrentUser
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/invoice.repository.ts:27](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/invoice.repository.ts#L27)
+[services/tenant-management-service/src/repositories/invoice.repository.ts:34](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/invoice.repository.ts#L34)
+
+___
+
+### invoice
+
+• `Private` `Readonly` **invoice**: typeof `Entity` & { `prototype`: `T`  }
+
+#### Defined in
+
+[services/tenant-management-service/src/repositories/invoice.repository.ts:38](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/invoice.repository.ts#L38)
 
 ___
 
@@ -68,14 +92,14 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/invoice.repository.ts:18](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/invoice.repository.ts#L18)
+[services/tenant-management-service/src/repositories/invoice.repository.ts:25](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/invoice.repository.ts#L25)
 
 ___
 
 ### tenantRepositoryGetter
 
-• `Protected` **tenantRepositoryGetter**: `Getter`<[`TenantRepository`](TenantRepository.md)\>
+• `Protected` **tenantRepositoryGetter**: `Getter`<[`TenantRepository`](TenantRepository.md)<[`Tenant`](Tenant.md)\>\>
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/invoice.repository.ts:29](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/invoice.repository.ts#L29)
+[services/tenant-management-service/src/repositories/invoice.repository.ts:36](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/invoice.repository.ts#L36)

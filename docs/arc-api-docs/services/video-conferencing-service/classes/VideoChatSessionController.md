@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L30)
+[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L35)
 
 ## Properties
 
@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L32)
+[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L37)
 
 ## Methods
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:137](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L137)
+[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:142](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L142)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L93)
+[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:98](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L98)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:118](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L118)
+[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:123](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L123)
 
 ___
 
@@ -128,13 +128,13 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:165](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L165)
+[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:170](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L170)
 
 ___
 
 ### getMeetingLink
 
-▸ **getMeetingLink**(`meetingOptions`): `Promise`<`string`\>
+▸ **getMeetingLink**(`meetingOptions`): `Promise`<[`MeetingLink`](../interfaces/MeetingLink.md)\>
 
 #### Parameters
 
@@ -144,11 +144,11 @@ ___
 
 #### Returns
 
-`Promise`<`string`\>
+`Promise`<[`MeetingLink`](../interfaces/MeetingLink.md)\>
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L35)
+[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L40)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L60)
+[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L65)
 
 ___
 
@@ -191,4 +191,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:153](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L153)
+[services/video-conferencing-service/src/controllers/video-chat-session.controller.ts:158](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/controllers/video-chat-session.controller.ts#L158)

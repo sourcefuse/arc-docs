@@ -5,7 +5,7 @@
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
-Scheduler Microservice
+Scheduler Microservice.
 
 Base URLs:
 
@@ -13,7 +13,7 @@ Base URLs:
 
 # Authentication
 
-- HTTP Authentication, scheme: bearer
+- HTTP Authentication, scheme: bearer 
 
 <h1 id="scheduler-service-attachmentcontroller">AttachmentController</h1>
 
@@ -3075,8 +3075,8 @@ fetch('/calendars/{id}',
 
 This api is to update the calendar by passing an id.
      This action will be allowed only to the owner of the calendar or the admin.
-      To identify the ‘owner’ we will check for the email passed in the token
-      and the corresponding access level, whereas to identify the admin we will
+      To identify the ‘owner’ we will check for the email passed in the token 
+      and the corresponding access level, whereas to identify the admin we will 
       check for the permission.
 
 | Permissions |
@@ -3839,9 +3839,9 @@ fetch('/calendars/{id}',
 `DELETE /calendars/{id}`
 
 This api is to update the calendar by passing an id.
-     This action will be allowed only to the owner of the calendar or the admin.
-     To identify the ‘owner’ we will check for the email passed in the token
-     and the corresponding access level, whereas to identify the admin we will
+     This action will be allowed only to the owner of the calendar or the admin. 
+     To identify the ‘owner’ we will check for the email passed in the token 
+     and the corresponding access level, whereas to identify the admin we will 
     check for the permission.
 
 | Permissions |
@@ -3975,8 +3975,8 @@ fetch('/calendars',
 
 `POST /calendars`
 
-This is an api to create a calendar for any user.
-      Recommendation: Use this while adding a user to the main application, in order to create
+This is an api to create a calendar for any user. 
+      Recommendation: Use this while adding a user to the main application, in order to create 
       a primary calendar for that particular user.
 
 | Permissions |
@@ -7236,10 +7236,10 @@ fetch('/calendars/{id}/subscriptions',
 
 `PATCH /calendars/{id}/subscriptions`
 
-This api is to update the calendar subscription by passing an `id`.
+This api is to update the calendar subscription by passing an `id`. 
       This action will be allowed only to the owner of the calendar or the admin.
-      To identify the `owner` we will check for the email passed in the token and
-      the corresponding access level, whereas to identify the admin we will check
+      To identify the `owner` we will check for the email passed in the token and 
+      the corresponding access level, whereas to identify the admin we will check 
       for the permission.
 
 | Permissions |
@@ -7496,9 +7496,9 @@ fetch('/calendars/{id}/subscriptions',
 
 `DELETE /calendars/{id}/subscriptions`
 
-This api is to update the calendar subscription by passing an id.
-      This action will be allowed only to the owner of the calendar or the admin.
-      To identify the ‘owner’ we will check for the email passed in the token and the
+This api is to update the calendar subscription by passing an id. 
+      This action will be allowed only to the owner of the calendar or the admin. 
+      To identify the ‘owner’ we will check for the email passed in the token and the 
       corresponding access level, whereas to identify the admin we will check for the permission.
 
 | Permissions |
@@ -8683,7 +8683,7 @@ fetch('/events/{id}',
 
 `PATCH /events/{id}`
 
-This api will be responsible for making any updates on an event.
+This api will be responsible for making any updates on an event. 
       This action is only allowed to the organizer or the admin(based on permission).
 
 | Permissions |
@@ -8794,7 +8794,7 @@ fetch('/events/{id}',
 
 `GET /events/{id}`
 
-This api will return events data based on the id.
+This api will return events data based on the id. 
       Sending the data of participants will be optional and will depend on the query.
 
 | Permissions |
@@ -9662,11 +9662,11 @@ fetch('/events',
 
 `POST /events`
 
-While an organizer creates an event, we get participants details along with it.
-      This api will check for slot availability of all the participants in that particular
-      time slot. If the slot is free the event will be created. Events can be scheduled on
-      behalf of someone else, In this case we will be saving the creator details
-      (generally the organiser is the creator themselves, so we will be keeping the organiser
+While an organizer creates an event, we get participants details along with it. 
+      This api will check for slot availability of all the participants in that particular 
+      time slot. If the slot is free the event will be created. Events can be scheduled on 
+      behalf of someone else, In this case we will be saving the creator details 
+      (generally the organiser is the creator themselves, so we will be keeping the organiser 
         and created_by the same).
 
 | Permissions |
@@ -13613,7 +13613,7 @@ fetch('/working-hours/{id}',
 
 `GET /working-hours/{id}`
 
-These requests will be available to everyone to look at.
+These requests will be available to everyone to look at. 
       This will be represent the work timings for the owner of the calendar.
 
 | Permissions |
@@ -13852,9 +13852,9 @@ fetch('/working-hours/{id}',
 
 `DELETE /working-hours/{id}`
 
-This api is to update the calendar by passing an `id`. This action will
-      be allowed only to the owner of the calendar or the admin. To identify the ‘owner’
-      we will check for the email passed in the token and the corresponding access level,
+This api is to update the calendar by passing an `id`. This action will 
+      be allowed only to the owner of the calendar or the admin. To identify the ‘owner’ 
+      we will check for the email passed in the token and the corresponding access level, 
       whereas to identify the admin we will check for the permission.
 
 | Permissions |
@@ -21344,3 +21344,4 @@ or
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |» *anonymous*|string|false|none|none|
+

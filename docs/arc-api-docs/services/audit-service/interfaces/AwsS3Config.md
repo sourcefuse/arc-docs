@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[services/audit-service/src/keys.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/keys.ts#L25)
+[services/audit-service/src/keys.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/keys.ts#L25)
 
 ___
 
@@ -38,7 +38,7 @@ S3ClientConfig.region
 
 #### Defined in
 
-[services/audit-service/src/keys.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/keys.ts#L27)
+[services/audit-service/src/keys.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/keys.ts#L27)
 
 ___
 
@@ -48,4 +48,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/keys.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/keys.ts#L26)
+[services/audit-service/src/keys.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/keys.ts#L26)

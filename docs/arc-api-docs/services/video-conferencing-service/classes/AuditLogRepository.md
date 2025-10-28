@@ -41,4 +41,4 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/audit.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/repositories/audit.repository.ts#L16)
+[services/video-conferencing-service/src/repositories/audit.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/repositories/audit.repository.ts#L16)

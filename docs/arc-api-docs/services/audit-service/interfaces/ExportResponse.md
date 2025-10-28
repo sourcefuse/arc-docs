@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/audit-service/src/types.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/types.ts#L31)
+[services/audit-service/src/types.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/types.ts#L31)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/types.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/types.ts#L32)
+[services/audit-service/src/types.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/types.ts#L32)

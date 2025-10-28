@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/s3-data-store.config.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/s3-data-store.config.interface.ts#L7)
+[services/reporting-service/src/interfaces/s3-data-store.config.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/s3-data-store.config.interface.ts#L7)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/s3-data-store.config.interface.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/s3-data-store.config.interface.ts#L9)
+[services/reporting-service/src/interfaces/s3-data-store.config.interface.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/s3-data-store.config.interface.ts#L9)
 
 ___
 
@@ -40,24 +40,24 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/s3-data-store.config.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/s3-data-store.config.interface.ts#L8)
+[services/reporting-service/src/interfaces/s3-data-store.config.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/s3-data-store.config.interface.ts#L8)
 
 ___
 
 ### strategy
 
-• **strategy**: `Strategies`
+• **strategy**: [`Strategies`](../enums/Strategies.md)
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/s3-data-store.config.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/s3-data-store.config.interface.ts#L10)
+[services/reporting-service/src/interfaces/s3-data-store.config.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/s3-data-store.config.interface.ts#L10)
 
 ___
 
 ### type
 
-• **type**: `S3`
+• **type**: [`S3`](../enums/OtherDataStore.md#s3)
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/s3-data-store.config.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/s3-data-store.config.interface.ts#L6)
+[services/reporting-service/src/interfaces/s3-data-store.config.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/s3-data-store.config.interface.ts#L6)

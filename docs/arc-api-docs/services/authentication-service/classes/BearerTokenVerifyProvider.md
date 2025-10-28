@@ -38,7 +38,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts#L19)
+[services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts#L19)
 
 ## Properties
 
@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts#L24)
+[services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts#L24)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts#L22)
+[services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts#L22)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts#L21)
+[services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts#L21)
 
 ## Methods
 
@@ -86,4 +86,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts#L27)
+[services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/bearer-token-verify.provider.ts#L27)

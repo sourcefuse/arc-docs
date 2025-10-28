@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[services/survey-service/src/component.ts:99](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/component.ts#L99)
+[services/survey-service/src/component.ts:101](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/component.ts#L101)
 
 ## Properties
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[services/survey-service/src/component.ts:101](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/component.ts#L101)
+[services/survey-service/src/component.ts:103](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/component.ts#L103)
 
 ___
 
@@ -66,7 +66,7 @@ Component.bindings
 
 #### Defined in
 
-[services/survey-service/src/component.ts:206](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/component.ts#L206)
+[services/survey-service/src/component.ts:210](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/component.ts#L210)
 
 ___
 
@@ -82,7 +82,7 @@ Component.controllers
 
 #### Defined in
 
-[services/survey-service/src/component.ts:224](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/component.ts#L224)
+[services/survey-service/src/component.ts:228](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/component.ts#L228)
 
 ___
 
@@ -95,7 +95,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/survey-service/src/component.ts:219](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/component.ts#L219)
+[services/survey-service/src/component.ts:223](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/component.ts#L223)
 
 ___
 
@@ -109,7 +109,7 @@ Component.providers
 
 #### Defined in
 
-[services/survey-service/src/component.ts:205](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/component.ts#L205)
+[services/survey-service/src/component.ts:209](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/component.ts#L209)
 
 ___
 
@@ -122,7 +122,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/survey-service/src/component.ts:212](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/component.ts#L212)
+[services/survey-service/src/component.ts:216](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/component.ts#L216)
 
 ___
 
@@ -136,7 +136,7 @@ Component.services
 
 #### Defined in
 
-[services/survey-service/src/component.ts:213](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/component.ts#L213)
+[services/survey-service/src/component.ts:217](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/component.ts#L217)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/component.ts:103](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/component.ts#L103)
+[services/survey-service/src/component.ts:105](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/component.ts#L105)
 
 ## Methods
 
@@ -162,4 +162,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/survey-service/src/component.ts:231](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/component.ts#L231)
+[services/survey-service/src/component.ts:235](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/component.ts#L235)

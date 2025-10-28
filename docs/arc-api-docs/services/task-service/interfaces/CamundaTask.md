@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[services/task-service/src/types.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L79)
+[services/task-service/src/types.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L79)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/types.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L80)
+[services/task-service/src/types.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L80)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/types.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L77)
+[services/task-service/src/types.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L77)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/types.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L78)
+[services/task-service/src/types.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L78)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/types.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L81)
+[services/task-service/src/types.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L81)
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/types.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L82)
+[services/task-service/src/types.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L82)

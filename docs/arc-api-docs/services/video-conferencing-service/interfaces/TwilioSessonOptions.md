@@ -42,7 +42,7 @@ set the ttl (time to live) for a session created For twilio,
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:169](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/types.ts#L169)
+[services/video-conferencing-service/src/types.ts:172](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/types.ts#L172)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:168](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/types.ts#L168)
+[services/video-conferencing-service/src/types.ts:171](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/types.ts#L171)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:167](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/types.ts#L167)
+[services/video-conferencing-service/src/types.ts:170](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/types.ts#L170)
 
 ___
 
@@ -84,4 +84,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:170](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/types.ts#L170)
+[services/video-conferencing-service/src/types.ts:173](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/types.ts#L173)

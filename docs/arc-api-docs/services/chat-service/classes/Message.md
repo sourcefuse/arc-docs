@@ -60,7 +60,7 @@ packages/core/dist/models/base-entity.model.d.ts:6
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/chat-service/src/models/message.model.ts#L64)
+[services/chat-service/src/models/message.model.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/chat-service/src/models/message.model.ts#L64)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/chat-service/src/models/message.model.ts#L28)
+[services/chat-service/src/models/message.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/chat-service/src/models/message.model.ts#L28)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/chat-service/src/models/message.model.ts#L35)
+[services/chat-service/src/models/message.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/chat-service/src/models/message.model.ts#L35)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/chat-service/src/models/message.model.ts#L42)
+[services/chat-service/src/models/message.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/chat-service/src/models/message.model.ts#L42)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/chat-service/src/models/message.model.ts#L22)
+[services/chat-service/src/models/message.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/chat-service/src/models/message.model.ts#L22)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/chat-service/src/models/message.model.ts#L62)
+[services/chat-service/src/models/message.model.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/chat-service/src/models/message.model.ts#L62)
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/chat-service/src/models/message.model.ts#L73)
+[services/chat-service/src/models/message.model.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/chat-service/src/models/message.model.ts#L73)
 
 ___
 
@@ -186,7 +186,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/chat-service/src/models/message.model.ts#L70)
+[services/chat-service/src/models/message.model.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/chat-service/src/models/message.model.ts#L70)
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/chat-service/src/models/message.model.ts#L48)
+[services/chat-service/src/models/message.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/chat-service/src/models/message.model.ts#L48)
 
 ___
 
@@ -206,7 +206,7 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/chat-service/src/models/message.model.ts#L53)
+[services/chat-service/src/models/message.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/chat-service/src/models/message.model.ts#L53)
 
 ___
 
@@ -216,4 +216,4 @@ ___
 
 #### Defined in
 
-[services/chat-service/src/models/message.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/chat-service/src/models/message.model.ts#L59)
+[services/chat-service/src/models/message.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/chat-service/src/models/message.model.ts#L59)

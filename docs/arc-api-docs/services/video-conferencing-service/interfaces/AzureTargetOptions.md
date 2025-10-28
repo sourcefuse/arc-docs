@@ -46,7 +46,7 @@ The Windows Azure container name
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:130](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/types.ts#L130)
+[services/video-conferencing-service/src/types.ts:130](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/types.ts#L130)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/types.ts#L131)
+[services/video-conferencing-service/src/types.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/types.ts#L131)
 
 ___
 
@@ -70,4 +70,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/types.ts#L108)
+[services/video-conferencing-service/src/types.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/types.ts#L108)

@@ -29,19 +29,24 @@
 
 ▸ **columnBuilder**(`auditLogs`): `Promise`<`AnyObject`[]\>
 
+The columnBuilder function in TypeScript returns an array of AuditLog objects asynchronously.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `auditLogs` | `AuditLog`[] |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `auditLogs` | [`AuditLog`](AuditLog.md)[] | An array of AuditLog objects. |
 
 #### Returns
 
 `Promise`<`AnyObject`[]\>
 
+The `columnBuilder` function is returning a Promise that resolves to an array of
+`AuditLog` objects.
+
 #### Defined in
 
-[services/audit-service/src/services/column-builder.service.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/column-builder.service.ts#L11)
+[services/audit-service/src/services/column-builder.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/column-builder.service.ts#L18)
 
 ___
 
@@ -59,4 +64,4 @@ Provider.value
 
 #### Defined in
 
-[services/audit-service/src/services/column-builder.service.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/column-builder.service.ts#L8)
+[services/audit-service/src/services/column-builder.service.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/column-builder.service.ts#L8)

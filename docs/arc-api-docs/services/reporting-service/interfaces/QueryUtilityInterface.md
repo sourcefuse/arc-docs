@@ -8,32 +8,28 @@
 
 - [jsonToQueryConverter](QueryUtilityInterface.md#jsontoqueryconverter)
 - [listAllDataSourcesFromJson](QueryUtilityInterface.md#listalldatasourcesfromjson)
+- [prepareFinalSqlQuery](QueryUtilityInterface.md#preparefinalsqlquery)
 - [validateQueryObject](QueryUtilityInterface.md#validatequeryobject)
 
 ## Methods
 
 ### jsonToQueryConverter
 
-▸ **jsonToQueryConverter**(`sqlQuery`): `Object`
+▸ **jsonToQueryConverter**(`query`): `Promise`<{ `bind`: `AnyObject` ; `query`: `string`  }\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `sqlQuery` | [`StructuredQueryInterface`](StructuredQueryInterface.md) |
+| `query` | [`StructuredQueryInterface`](StructuredQueryInterface.md) |
 
 #### Returns
 
-`Object`
-
-| Name | Type |
-| :------ | :------ |
-| `bind` | `AnyObject` |
-| `query` | `string` |
+`Promise`<{ `bind`: `AnyObject` ; `query`: `string`  }\>
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/query-utility.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/query-utility.interface.ts#L10)
+[services/reporting-service/src/interfaces/query-utility.interface.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/query-utility.interface.ts#L11)
 
 ___
 
@@ -54,7 +50,28 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/query-utility.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/query-utility.interface.ts#L6)
+[services/reporting-service/src/interfaces/query-utility.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/query-utility.interface.ts#L7)
+
+___
+
+### prepareFinalSqlQuery
+
+▸ **prepareFinalSqlQuery**(`sqlQuery`, `filter`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `sqlQuery` | `string` |
+| `filter` | [`CustomFilter`](CustomFilter.md)<`AnyObject`\> |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[services/reporting-service/src/interfaces/query-utility.interface.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/query-utility.interface.ts#L15)
 
 ___
 
@@ -74,4 +91,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/query-utility.interface.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/query-utility.interface.ts#L5)
+[services/reporting-service/src/interfaces/query-utility.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/query-utility.interface.ts#L6)

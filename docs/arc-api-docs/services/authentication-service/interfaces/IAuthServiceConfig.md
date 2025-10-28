@@ -14,12 +14,13 @@
 
 - [useCustomSequence](IAuthServiceConfig.md#usecustomsequence)
 - [useSequelize](IAuthServiceConfig.md#usesequelize)
+- [useSymmetricEncryption](IAuthServiceConfig.md#usesymmetricencryption)
 
 ## Properties
 
 ### useCustomSequence
 
-• **useCustomSequence**: `boolean`
+• `Optional` **useCustomSequence**: `boolean`
 
 #### Inherited from
 
@@ -27,7 +28,7 @@ IServiceConfig.useCustomSequence
 
 #### Defined in
 
-packages/core/dist/types.d.ts:7
+packages/core/dist/types.d.ts:5
 
 ___
 
@@ -41,4 +42,14 @@ IServiceConfig.useSequelize
 
 #### Defined in
 
-packages/core/dist/types.d.ts:8
+packages/core/dist/types.d.ts:6
+
+___
+
+### useSymmetricEncryption
+
+• `Optional` **useSymmetricEncryption**: `boolean`
+
+#### Defined in
+
+[services/authentication-service/src/types.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/types.ts#L16)

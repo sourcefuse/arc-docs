@@ -29,7 +29,7 @@ token generated for authorization
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/types.ts#L77)
+[services/video-conferencing-service/src/types.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/types.ts#L77)
 
 ___
 
@@ -39,4 +39,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/types.ts#L78)
+[services/video-conferencing-service/src/types.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/types.ts#L78)

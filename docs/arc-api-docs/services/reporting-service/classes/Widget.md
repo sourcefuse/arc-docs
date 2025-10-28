@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/widget.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/widget.model.ts#L36)
+[services/reporting-service/src/models/widget.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/widget.model.ts#L36)
 
 ___
 
@@ -101,7 +101,7 @@ ExternalIdentifierEnabledEntity.extId
 
 #### Defined in
 
-[services/reporting-service/src/models/widget.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/widget.model.ts#L50)
+[services/reporting-service/src/models/widget.model.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/widget.model.ts#L50)
 
 ___
 
@@ -115,7 +115,7 @@ ExternalIdentifierEnabledEntity.extMetadata
 
 #### Defined in
 
-[services/reporting-service/src/models/widget.model.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/widget.model.ts#L57)
+[services/reporting-service/src/models/widget.model.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/widget.model.ts#L57)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/widget.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/widget.model.ts#L21)
+[services/reporting-service/src/models/widget.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/widget.model.ts#L21)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/widget.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/widget.model.ts#L28)
+[services/reporting-service/src/models/widget.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/widget.model.ts#L28)
 
 ___
 
@@ -173,4 +173,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/widget.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/widget.model.ts#L43)
+[services/reporting-service/src/models/widget.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/widget.model.ts#L43)

@@ -54,7 +54,7 @@ packages/core/dist/models/core-entity.d.ts:3
 
 #### Defined in
 
-[services/payment-service/src/models/templates.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/templates.model.ts#L16)
+[services/payment-service/src/models/templates.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/templates.model.ts#L19)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/templates.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/templates.model.ts#L29)
+[services/payment-service/src/models/templates.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/templates.model.ts#L32)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/templates.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/templates.model.ts#L23)
+[services/payment-service/src/models/templates.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/templates.model.ts#L26)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/templates.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/templates.model.ts#L35)
+[services/payment-service/src/models/templates.model.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/templates.model.ts#L38)
 
 ___
 
@@ -94,4 +94,4 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/templates.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/templates.model.ts#L41)
+[services/payment-service/src/models/templates.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/templates.model.ts#L44)

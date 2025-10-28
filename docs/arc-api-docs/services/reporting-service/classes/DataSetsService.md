@@ -13,11 +13,14 @@
 - [config](DataSetsService.md#config)
 - [dataSetsRepo](DataSetsService.md#datasetsrepo)
 - [dataStoreAdapter](DataSetsService.md#datastoreadapter)
+- [logger](DataSetsService.md#logger)
 - [queryUtility](DataSetsService.md#queryutility)
+- [sqlValidator](DataSetsService.md#sqlvalidator)
 
 ### Methods
 
 - [convertOrderToOrderBy](DataSetsService.md#convertordertoorderby)
+- [convertToCountQuery](DataSetsService.md#converttocountquery)
 - [createDataSet](DataSetsService.md#createdataset)
 - [deleteDataSetById](DataSetsService.md#deletedatasetbyid)
 - [ensureValidHashFields](DataSetsService.md#ensurevalidhashfields)
@@ -25,9 +28,9 @@
 - [fetchDataByIdCount](DataSetsService.md#fetchdatabyidcount)
 - [generateHash](DataSetsService.md#generatehash)
 - [getAllDataSets](DataSetsService.md#getalldatasets)
+- [getColumnEntityPairs](DataSetsService.md#getcolumnentitypairs)
 - [getCount](DataSetsService.md#getcount)
 - [getDataSetById](DataSetsService.md#getdatasetbyid)
-- [getcolumnEntityPairs](DataSetsService.md#getcolumnentitypairs)
 - [isDuplicate](DataSetsService.md#isduplicate)
 - [mergeAndValidateDataSetQuery](DataSetsService.md#mergeandvalidatedatasetquery)
 - [updateDataSetById](DataSetsService.md#updatedatasetbyid)
@@ -39,20 +42,22 @@
 
 ### constructor
 
-• **new DataSetsService**(`dataSetsRepo`, `dataStoreAdapter`, `queryUtility`, `config?`)
+• **new DataSetsService**(`logger`, `dataSetsRepo`, `dataStoreAdapter`, `queryUtility`, `sqlValidator`, `config?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `logger` | `ILogger` |
 | `dataSetsRepo` | `DataSetsRepository` |
 | `dataStoreAdapter` | [`DataStoreAdapter`](../interfaces/DataStoreAdapter.md) |
 | `queryUtility` | [`QueryUtilityInterface`](../interfaces/QueryUtilityInterface.md) |
+| `sqlValidator` | [`SqlValidatorInterface`](../interfaces/SqlValidatorInterface.md) |
 | `config` | [`DataSetServiceConfig`](../interfaces/DataSetServiceConfig.md) |
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L26)
+[services/reporting-service/src/services/data-sets.service.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L28)
 
 ## Properties
 
@@ -62,7 +67,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L25)
+[services/reporting-service/src/services/data-sets.service.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L26)
 
 ___
 
@@ -72,53 +77,100 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L28)
+[services/reporting-service/src/services/data-sets.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L31)
 
 ___
 
 ### dataStoreAdapter
 
-• `Private` **dataStoreAdapter**: [`DataStoreAdapter`](../interfaces/DataStoreAdapter.md)
+• `Private` `Readonly` **dataStoreAdapter**: [`DataStoreAdapter`](../interfaces/DataStoreAdapter.md)
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L30)
+[services/reporting-service/src/services/data-sets.service.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L33)
+
+___
+
+### logger
+
+• `Private` `Readonly` **logger**: `ILogger`
+
+#### Defined in
+
+[services/reporting-service/src/services/data-sets.service.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L29)
 
 ___
 
 ### queryUtility
 
-• `Private` **queryUtility**: [`QueryUtilityInterface`](../interfaces/QueryUtilityInterface.md)
+• `Private` `Readonly` **queryUtility**: [`QueryUtilityInterface`](../interfaces/QueryUtilityInterface.md)
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L32)
+[services/reporting-service/src/services/data-sets.service.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L35)
+
+___
+
+### sqlValidator
+
+• `Private` `Readonly` **sqlValidator**: [`SqlValidatorInterface`](../interfaces/SqlValidatorInterface.md)
+
+#### Defined in
+
+[services/reporting-service/src/services/data-sets.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L37)
 
 ## Methods
 
 ### convertOrderToOrderBy
 
-▸ **convertOrderToOrderBy**(`orderArray`): `undefined` \| { `field`: `string` ; `order`: ``"asc"`` \| ``"desc"``  }[]
+▸ `Private` **convertOrderToOrderBy**(`orderArray?`): `undefined` \| { `field`: [`FieldExpression`](../modules.md#fieldexpression) ; `order`: [`OrderDirection`](../modules.md#orderdirection)  }[]
 
-The function converts an array of order strings into an array of structured query order objects.
+The function `convertOrderToOrderBy` converts an array of strings representing order criteria into
+an array of objects with field and order properties.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `orderArray` | `string`[] | An array of strings representing the order of fields in a query. Each string in the array follows the format "field order", where "field" is the name of the field and "order" is either "asc" for ascending order or "desc" for descending order. |
+| `orderArray?` | `string`[] | The `orderArray` parameter is an optional array of strings that represents the order in which to sort query results. Each string in the array consists of a field name followed by a space and then the sorting order ('ASC' for ascending or 'DESC' for descending). |
 
 #### Returns
 
-`undefined` \| { `field`: `string` ; `order`: ``"asc"`` \| ``"desc"``  }[]
+`undefined` \| { `field`: [`FieldExpression`](../modules.md#fieldexpression) ; `order`: [`OrderDirection`](../modules.md#orderdirection)  }[]
 
-an array of objects that represent the order by clauses for a structured query. Each
-object has two properties: "field" which represents the field to order by, and "order" which
-represents the order direction ('asc' for ascending or 'desc' for descending).
+An array of objects with each object containing a "field" key and an "order" key with
+values of either 'ASC' or 'DESC'.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:393](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L393)
+[services/reporting-service/src/services/data-sets.service.ts:496](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L496)
+
+___
+
+### convertToCountQuery
+
+▸ `Private` **convertToCountQuery**(`sqlQuery`): `string`
+
+The function `convertToCountQuery` converts a SQL query to a count query by adding `SELECT
+COUNT(*) AS count` before the FROM clause.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `sqlQuery` | `string` | The `sqlQuery` parameter is a string representing a SQL query that you want to convert into a count query. The function `convertToCountQuery` takes this SQL query as input and converts it into a count query by prepending `SELECT COUNT(*) AS count` to the original query after the |
+
+#### Returns
+
+`string`
+
+The function `convertToCountQuery` takes a SQL query as input, extracts everything after
+the `FROM` clause, and prepends it with `SELECT COUNT(*) AS count`. The modified query with the
+count is then returned.
+
+#### Defined in
+
+[services/reporting-service/src/services/data-sets.service.ts:428](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L428)
 
 ___
 
@@ -143,7 +195,7 @@ a Promise that resolves to a DataSet object.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L46)
+[services/reporting-service/src/services/data-sets.service.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L51)
 
 ___
 
@@ -165,7 +217,7 @@ The function deletes a data set by its ID.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:175](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L175)
+[services/reporting-service/src/services/data-sets.service.ts:205](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L205)
 
 ___
 
@@ -189,7 +241,7 @@ BadRequest error.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:140](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L140)
+[services/reporting-service/src/services/data-sets.service.ts:170](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L170)
 
 ___
 
@@ -197,24 +249,26 @@ ___
 
 ▸ **fetchDataById**(`id`, `filter`): `Promise`<`AnyObject`\>
 
-The function fetchDataById fetches data from a data source based on an ID and a where clause.
+This TypeScript function fetches data by a specific ID using a custom filter and returns the
+result as a Promise.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `string` | The `id` parameter is a string that represents the identifier of the data you want to fetch. It is used to specify which data you want to retrieve from the data source. |
-| `filter` | [`CustomFilter`](../interfaces/CustomFilter.md)<`AnyObject`\> | - |
+| `id` | `string` | The `id` parameter is a string that represents the unique identifier of the data you want to fetch. |
+| `filter` | [`CustomFilter`](../interfaces/CustomFilter.md)<`AnyObject`\> | The `filter` parameter in the `fetchDataById` function is of type `CustomFilter<AnyObject>`. This means that it is a custom filter object that can be applied to filter the data based on certain criteria. The `AnyObject` type indicates that the filter can be applied to any |
 
 #### Returns
 
 `Promise`<`AnyObject`\>
 
-The function `fetchDataById` is returning a Promise that resolves to an `AnyObject`.
+The `fetchDataById` function returns a Promise that resolves to an object of type
+`AnyObject`.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:297](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L297)
+[services/reporting-service/src/services/data-sets.service.ts:352](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L352)
 
 ___
 
@@ -222,24 +276,28 @@ ___
 
 ▸ **fetchDataByIdCount**(`id`, `filter`): `Promise`<`Count`\>
 
-The function fetches the count of records based on the provided id and where clause.
+The function `fetchDataByIdCount` fetches the count of records based on a given ID and custom
+filter.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `string` | The `id` parameter is a string that represents the identifier of the data you want to fetch. It is used to specify which data set you want to query. |
-| `filter` | [`CustomFilter`](../interfaces/CustomFilter.md)<`AnyObject`\> | - |
+| `id` | `string` | The `id` parameter in the `fetchDataByIdCount` function is a string that represents the identifier used to fetch data from a data set. It is used to uniquely identify the data set for which the count of records needs to be retrieved. |
+| `filter` | [`CustomFilter`](../interfaces/CustomFilter.md)<`AnyObject`\> | The `filter` parameter in the `fetchDataByIdCount` function is of type `CustomFilter<AnyObject>`. This means that it is a custom filter object that can be applied to filter the data based on certain criteria. The `AnyObject` type indicates that the filter can be applied to |
 
 #### Returns
 
 `Promise`<`Count`\>
 
-a Promise that resolves to a Count object.
+The function `fetchDataByIdCount` returns a Promise that resolves to an object containing
+the count of records based on the provided id and filter. If the query is successful and there are
+results, it returns an object with the count value. If there are no results, it returns an object
+with a count of 0.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:316](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L316)
+[services/reporting-service/src/services/data-sets.service.ts:377](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L377)
 
 ___
 
@@ -265,7 +323,7 @@ a string value or undefined.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L87)
+[services/reporting-service/src/services/data-sets.service.ts:117](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L117)
 
 ___
 
@@ -290,7 +348,30 @@ a Promise that resolves to an array of DataSet objects.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:166](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L166)
+[services/reporting-service/src/services/data-sets.service.ts:196](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L196)
+
+___
+
+### getColumnEntityPairs
+
+▸ `Private` **getColumnEntityPairs**(`select`): [`ColumnEntityPair`](../interfaces/ColumnEntityPair.md)[]
+
+The function `getColumnEntityPairs` processes fields and functions from a select query to extract
+column and entity pairs.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `select` | [`SelectClause`](../interfaces/SelectClause.md) | The `select` parameter in the `getColumnEntityPairs` function is of type `StructuredQueryInterface['select']`. This means it is expected to be a part of a structured query interface and specifically the `select` property of that interface. The function processes the fields and functions within the `select @returns The function `getColumnEntityPairs` returns an array of objects, where each object represents a pair of a data source name and a column name extracted from the provided `select` object. |
+
+#### Returns
+
+[`ColumnEntityPair`](../interfaces/ColumnEntityPair.md)[]
+
+#### Defined in
+
+[services/reporting-service/src/services/data-sets.service.ts:302](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L302)
 
 ___
 
@@ -314,7 +395,7 @@ The `getCount` function returns a Promise that resolves to a `Count` object.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:216](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L216)
+[services/reporting-service/src/services/data-sets.service.ts:246](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L246)
 
 ___
 
@@ -338,36 +419,7 @@ a Promise that resolves to a DataSet object.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:153](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L153)
-
-___
-
-### getcolumnEntityPairs
-
-▸ `Private` **getcolumnEntityPairs**(`select`): [`ColumnEntityPair`](../interfaces/ColumnEntityPair.md)[]
-
-The function `getcolumnEntityPairs` takes a `select` object and returns an array of
-`ColumnEntityPair` objects by extracting the data source name and column from each field or
-function in the `select` object.
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `select` | `Object` | The `select` parameter is an object that represents the select clause of a structured query. It contains two properties: |
-| `select.distinct?` | `boolean` | - |
-| `select.fields` | (`string` \| { `alias`: `string` ; `field`: `string`  })[] | - |
-| `select.functions?` | { `alias?`: `string` ; `field`: `string` ; `functionType`: ``"COUNT"`` \| ``"SUM"`` \| ``"AVG"`` \| ``"MIN"`` \| ``"MAX"``  }[] | - |
-
-#### Returns
-
-[`ColumnEntityPair`](../interfaces/ColumnEntityPair.md)[]
-
-an array of objects, where each object represents a column-entity pair.
-
-#### Defined in
-
-[services/reporting-service/src/services/data-sets.service.ts:271](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L271)
+[services/reporting-service/src/services/data-sets.service.ts:183](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L183)
 
 ___
 
@@ -393,33 +445,34 @@ a Promise that resolves to a boolean value.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:115](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L115)
+[services/reporting-service/src/services/data-sets.service.ts:145](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L145)
 
 ___
 
 ### mergeAndValidateDataSetQuery
 
-▸ `Private` **mergeAndValidateDataSetQuery**(`id`, `filter`): `Promise`<[`StructuredQueryInterface`](../interfaces/StructuredQueryInterface.md)\>
+▸ `Private` **mergeAndValidateDataSetQuery**(`id`, `filter`): `Promise`<`string` \| [`StructuredQueryInterface`](../interfaces/StructuredQueryInterface.md)\>
 
-The function merges and validates a data set query, throwing errors if the data set is not found
-or the query is invalid.
+This function merges and validates a data set query based on the provided filter and dataset
+information.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `string` | The `id` parameter is a string that represents the identifier of a data set. It is used to retrieve the data set object from the dataSetsRepo. |
-| `filter` | [`CustomFilter`](../interfaces/CustomFilter.md)<`AnyObject`\> | - |
+| `id` | `string` | The `id` parameter in the `mergeAndValidateDataSetQuery` function is a string that represents the identifier of a dataset. |
+| `filter` | [`CustomFilter`](../interfaces/CustomFilter.md)<`AnyObject`\> | The `filter` parameter in the `mergeAndValidateDataSetQuery` function is of type `CustomFilter<AnyObject>`. This means it is a custom filter object that can filter data based on certain criteria. The `AnyObject` type indicates that the filter can be applied to any type of object |
 
 #### Returns
 
-`Promise`<[`StructuredQueryInterface`](../interfaces/StructuredQueryInterface.md)\>
+`Promise`<`string` \| [`StructuredQueryInterface`](../interfaces/StructuredQueryInterface.md)\>
 
-a Promise that resolves to a StructuredQueryInterface object.
+The `mergeAndValidateDataSetQuery` function returns either a `StructuredQueryInterface`
+object or a string.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:345](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L345)
+[services/reporting-service/src/services/data-sets.service.ts:452](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L452)
 
 ___
 
@@ -443,7 +496,7 @@ checking for duplicates, and then updating the dataset in the repository.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:186](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L186)
+[services/reporting-service/src/services/data-sets.service.ts:216](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L216)
 
 ___
 
@@ -451,22 +504,26 @@ ___
 
 ▸ `Private` **validateDataSet**(`dataSet`): `Promise`<`void`\>
 
-The function "validateDataSet" asynchronously validates a given data set by validating its query
-and its data sources and columns.
+The function `validateDataSet` in TypeScript validates a DataSet object by checking for query or
+SQL, validating query syntax and data sources, and validating SQL using a SQL validator if
+available.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `dataSet` | [`DataSet`](DataSet.md) | The `dataSet` parameter is an object that represents a data set. It likely contains properties such as `dataSetQuery`, which represents the query used to retrieve the data, and `dataSourcesAndColumns`, which represents the data sources and columns used in the query. |
+| `dataSet` | [`DataSet`](DataSet.md) | The `dataSet` parameter is an object that contains information about a data set, including `dataSetQuery` and `dataSetQuerySQL` properties. The `validateDataSet` function is responsible for validating these properties. If `dataSetQuery` is present, it will be validated using the |
 
 #### Returns
 
 `Promise`<`void`\>
 
+If neither `dataSetQuery` nor `dataSetQuerySQL` is found in the `dataSet`, the function
+returns without performing any validation.
+
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L72)
+[services/reporting-service/src/services/data-sets.service.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L80)
 
 ___
 
@@ -488,7 +545,7 @@ The function validates a data set query object and throws an error if it is inva
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:225](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L225)
+[services/reporting-service/src/services/data-sets.service.ts:255](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L255)
 
 ___
 
@@ -510,4 +567,4 @@ The function validates the data sources and columns in a given data set query.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sets.service.ts:239](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sets.service.ts#L239)
+[services/reporting-service/src/services/data-sets.service.ts:268](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sets.service.ts#L268)

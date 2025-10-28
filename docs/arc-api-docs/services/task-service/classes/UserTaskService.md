@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[services/task-service/src/services/user-task.service.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/user-task.service.ts#L10)
+[services/task-service/src/services/user-task.service.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/user-task.service.ts#L10)
 
 ## Properties
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[services/task-service/src/services/user-task.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/user-task.service.ts#L18)
+[services/task-service/src/services/user-task.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/user-task.service.ts#L18)
 
 ___
 
@@ -61,27 +61,27 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/user-task.service.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/user-task.service.ts#L16)
+[services/task-service/src/services/user-task.service.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/user-task.service.ts#L16)
 
 ___
 
 ### taskRepo
 
-• `Private` **taskRepo**: [`TaskRepository`](TaskRepository.md)
+• `Private` `Readonly` **taskRepo**: [`TaskRepository`](TaskRepository.md)
 
 #### Defined in
 
-[services/task-service/src/services/user-task.service.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/user-task.service.ts#L12)
+[services/task-service/src/services/user-task.service.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/user-task.service.ts#L12)
 
 ___
 
 ### userTaskRepo
 
-• `Private` **userTaskRepo**: [`UserTaskRepository`](UserTaskRepository.md)
+• `Private` `Readonly` **userTaskRepo**: [`UserTaskRepository`](UserTaskRepository.md)
 
 #### Defined in
 
-[services/task-service/src/services/user-task.service.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/user-task.service.ts#L14)
+[services/task-service/src/services/user-task.service.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/user-task.service.ts#L14)
 
 ## Methods
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/user-task.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/user-task.service.ts#L21)
+[services/task-service/src/services/user-task.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/user-task.service.ts#L21)
 
 ___
 
@@ -131,4 +131,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/user-task.service.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/user-task.service.ts#L43)
+[services/task-service/src/services/user-task.service.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/user-task.service.ts#L43)

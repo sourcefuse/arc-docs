@@ -39,17 +39,17 @@
 
 #### Defined in
 
-[services/task-service/src/commands/create-task.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/commands/create-task.ts#L24)
+[services/task-service/src/commands/create-task.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/commands/create-task.ts#L24)
 
 ## Properties
 
 ### context
 
-• `Private` **context**: `Context`
+• `Private` `Readonly` **context**: `Context`
 
 #### Defined in
 
-[services/task-service/src/commands/create-task.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/commands/create-task.ts#L24)
+[services/task-service/src/commands/create-task.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/commands/create-task.ts#L24)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/commands/create-task.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/commands/create-task.ts#L23)
+[services/task-service/src/commands/create-task.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/commands/create-task.ts#L23)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/commands/create-task.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/commands/create-task.ts#L22)
+[services/task-service/src/commands/create-task.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/commands/create-task.ts#L22)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/commands/create-task.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/commands/create-task.ts#L21)
+[services/task-service/src/commands/create-task.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/commands/create-task.ts#L21)
 
 ## Methods
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/commands/create-task.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/commands/create-task.ts#L62)
+[services/task-service/src/commands/create-task.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/commands/create-task.ts#L62)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/commands/create-task.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/commands/create-task.ts#L102)
+[services/task-service/src/commands/create-task.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/commands/create-task.ts#L102)
 
 ___
 
@@ -144,4 +144,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/commands/create-task.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/commands/create-task.ts#L27)
+[services/task-service/src/commands/create-task.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/commands/create-task.ts#L27)

@@ -46,4 +46,4 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/task-service/src/connectors/http/models/client-app-dto.model.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/connectors/http/models/client-app-dto.model.ts#L11)
+[services/task-service/src/connectors/http/models/client-app-dto.model.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/connectors/http/models/client-app-dto.model.ts#L11)

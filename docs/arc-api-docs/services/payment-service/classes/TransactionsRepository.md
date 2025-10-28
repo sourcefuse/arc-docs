@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultCrudRepository`<[`Transactions`](Transactions.md), typeof [`id`](Transactions.md#id)\>
+- `DefaultCrudRepository`<`Transactions`, typeof [`id`](Transactions.md#id)\>
 
   ↳ **`TransactionsRepository`**
 
@@ -14,17 +14,22 @@
 
 - [constructor](TransactionsRepository.md#constructor)
 
+### Properties
+
+- [transactions](TransactionsRepository.md#transactions)
+
 ## Constructors
 
 ### constructor
 
-• **new TransactionsRepository**(`dataSource`)
+• **new TransactionsRepository**(`dataSource`, `transactions`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `dataSource` | `DataSource` |
+| `transactions` | typeof `Entity` & { `prototype`: `Transactions`  } |
 
 #### Overrides
 
@@ -35,4 +40,14 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[services/payment-service/src/repositories/transactions.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/repositories/transactions.repository.ts#L14)
+[services/payment-service/src/repositories/transactions.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/repositories/transactions.repository.ts#L14)
+
+## Properties
+
+### transactions
+
+• `Private` `Readonly` **transactions**: typeof `Entity` & { `prototype`: `Transactions`  }
+
+#### Defined in
+
+[services/payment-service/src/repositories/transactions.repository.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/repositories/transactions.repository.ts#L18)

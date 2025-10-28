@@ -54,7 +54,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-cycle.repository.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-cycle.repository.ts#L23)
+[services/survey-service/src/repositories/survey-cycle.repository.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-cycle.repository.ts#L23)
 
 ## Properties
 
@@ -68,7 +68,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-cycle.repository.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-cycle.repository.ts#L28)
+[services/survey-service/src/repositories/survey-cycle.repository.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-cycle.repository.ts#L28)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-cycle.repository.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-cycle.repository.ts#L18)
+[services/survey-service/src/repositories/survey-cycle.repository.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-cycle.repository.ts#L18)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-cycle.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-cycle.repository.ts#L26)
+[services/survey-service/src/repositories/survey-cycle.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-cycle.repository.ts#L26)
 
 ## Methods
 

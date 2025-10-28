@@ -5,7 +5,7 @@
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
-In mail microservice
+In mail microservice.
 
 Base URLs:
 
@@ -13,7 +13,7 @@ Base URLs:
 
 # Authentication
 
-- HTTP Authentication, scheme: bearer
+- HTTP Authentication, scheme: bearer 
 
 <h1 id="in-mail-service-originatorcontroller">OriginatorController</h1>
 
@@ -4545,3 +4545,4 @@ Thread
 |messageCounts|number|false|none|none|
 |extId|string|false|none|none|
 |extMetadata|object|false|none|none|
+

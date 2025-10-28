@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[services/task-service/src/services/event-processor.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/event-processor.service.ts#L17)
+[services/task-service/src/services/event-processor.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/event-processor.service.ts#L17)
 
 ## Properties
 
@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[services/task-service/src/services/event-processor.service.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/event-processor.service.ts#L19)
+[services/task-service/src/services/event-processor.service.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/event-processor.service.ts#L19)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/event-processor.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/event-processor.service.ts#L21)
+[services/task-service/src/services/event-processor.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/event-processor.service.ts#L21)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/event-processor.service.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/event-processor.service.ts#L16)
+[services/task-service/src/services/event-processor.service.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/event-processor.service.ts#L16)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/event-processor.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/event-processor.service.ts#L23)
+[services/task-service/src/services/event-processor.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/event-processor.service.ts#L23)
 
 ## Methods
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/event-processor.service.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/event-processor.service.ts#L68)
+[services/task-service/src/services/event-processor.service.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/event-processor.service.ts#L68)
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/event-processor.service.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/event-processor.service.ts#L26)
+[services/task-service/src/services/event-processor.service.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/event-processor.service.ts#L26)

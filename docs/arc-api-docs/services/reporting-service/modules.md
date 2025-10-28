@@ -8,6 +8,14 @@
 
 - [ReportingServiceComponentBindings](modules/ReportingServiceComponentBindings.md)
 
+### Enumerations
+
+- [DbName](enums/DbName.md)
+- [OtherDataStore](enums/OtherDataStore.md)
+- [PermissionKeys](enums/PermissionKeys.md)
+- [ResponseDataType](enums/ResponseDataType.md)
+- [Strategies](enums/Strategies.md)
+
 ### Classes
 
 - [BaseSequelize](classes/BaseSequelize.md)
@@ -30,6 +38,7 @@
 
 ### Interfaces
 
+- [AliasExpression](interfaces/AliasExpression.md)
 - [CDC](interfaces/CDC.md)
 - [ColumnEntityPair](interfaces/ColumnEntityPair.md)
 - [CustomFilter](interfaces/CustomFilter.md)
@@ -37,24 +46,39 @@
 - [DashboardInterface](interfaces/DashboardInterface.md)
 - [DataSetServiceConfig](interfaces/DataSetServiceConfig.md)
 - [DataSourceList](interfaces/DataSourceList.md)
+- [DataSourceWithAlias](interfaces/DataSourceWithAlias.md)
 - [DataStoreAdapter](interfaces/DataStoreAdapter.md)
 - [DataStoreDataTypeConversionFunctions](interfaces/DataStoreDataTypeConversionFunctions.md)
+- [FunctionExpression](interfaces/FunctionExpression.md)
 - [IngestReportRecord](interfaces/IngestReportRecord.md)
 - [IngestionHandler](interfaces/IngestionHandler.md)
+- [JoinClause](interfaces/JoinClause.md)
 - [PermissionModel](interfaces/PermissionModel.md)
+- [QueryBinding](interfaces/QueryBinding.md)
 - [QueryUtilityInterface](interfaces/QueryUtilityInterface.md)
 - [S3DataStoreConfiguration](interfaces/S3DataStoreConfiguration.md)
+- [SelectClause](interfaces/SelectClause.md)
 - [SequelizeDataStoreConfiguration](interfaces/SequelizeDataStoreConfiguration.md)
+- [SqlValidatorInterface](interfaces/SqlValidatorInterface.md)
 - [StructuredQueryInterface](interfaces/StructuredQueryInterface.md)
+- [SubQueryWithAlias](interfaces/SubQueryWithAlias.md)
+- [WhereCondition](interfaces/WhereCondition.md)
 - [WidgetInterface](interfaces/WidgetInterface.md)
 
 ### Type Aliases
 
+- [ChartType](modules.md#charttype)
+- [DataSource](modules.md#datasource)
 - [DataStoreConfiguration](modules.md#datastoreconfiguration)
+- [DataTypeConversionOptions](modules.md#datatypeconversionoptions)
+- [FieldExpression](modules.md#fieldexpression)
 - [JSONSupportedTypes](modules.md#jsonsupportedtypes)
 - [JSONValueType](modules.md#jsonvaluetype)
+- [JoinType](modules.md#jointype)
+- [NonChartType](modules.md#noncharttype)
+- [Operator](modules.md#operator)
+- [OrderDirection](modules.md#orderdirection)
 - [WhereClause](modules.md#whereclause)
-- [WhereCondition](modules.md#wherecondition)
 
 ### Functions
 
@@ -63,13 +87,65 @@
 
 ## Type Aliases
 
+### ChartType
+
+Ƭ **ChartType**: ``"bar"`` \| ``"line"``
+
+#### Defined in
+
+[services/reporting-service/src/interfaces/widget-interface.interface.ts:1](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/widget-interface.interface.ts#L1)
+
+___
+
+### DataSource
+
+Ƭ **DataSource**: `string` \| [`DataSourceWithAlias`](interfaces/DataSourceWithAlias.md) \| [`SubQueryWithAlias`](interfaces/SubQueryWithAlias.md)
+
+#### Defined in
+
+[services/reporting-service/src/interfaces/structured-query.interface.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L37)
+
+___
+
 ### DataStoreConfiguration
 
 Ƭ **DataStoreConfiguration**: [`SequelizeDataStoreConfiguration`](interfaces/SequelizeDataStoreConfiguration.md) \| [`S3DataStoreConfiguration`](interfaces/S3DataStoreConfiguration.md)
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/data-store-config.interface.ts:4](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/data-store-config.interface.ts#L4)
+[services/reporting-service/src/interfaces/data-store-config.interface.ts:4](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/data-store-config.interface.ts#L4)
+
+___
+
+### DataTypeConversionOptions
+
+Ƭ **DataTypeConversionOptions**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `arrayWrapSingle?` | `boolean` |
+| `booleanTrueValues?` | `string`[] |
+| `dateFormat?` | `string` |
+| `isMandatory?` | `boolean` |
+| `isNullable?` | `boolean` |
+| `numberPrecision?` | `number` |
+| `strictParsing?` | `boolean` |
+
+#### Defined in
+
+[services/reporting-service/src/enums/data-type-conversion-options.types.ts:1](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/enums/data-type-conversion-options.types.ts#L1)
+
+___
+
+### FieldExpression
+
+Ƭ **FieldExpression**: `string` \| [`AliasExpression`](interfaces/AliasExpression.md) \| [`FunctionExpression`](interfaces/FunctionExpression.md) \| [`SubQueryWithAlias`](interfaces/SubQueryWithAlias.md)
+
+#### Defined in
+
+[services/reporting-service/src/interfaces/structured-query.interface.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L19)
 
 ___
 
@@ -79,7 +155,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/json-types.interface.ts:3](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/json-types.interface.ts#L3)
+[services/reporting-service/src/interfaces/json-types.interface.ts:3](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/json-types.interface.ts#L3)
 
 ___
 
@@ -89,7 +165,47 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/json-types.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/json-types.interface.ts#L10)
+[services/reporting-service/src/interfaces/json-types.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/json-types.interface.ts#L10)
+
+___
+
+### JoinType
+
+Ƭ **JoinType**: ``"INNER"`` \| ``"LEFT"`` \| ``"RIGHT"`` \| ``"FULL"``
+
+#### Defined in
+
+[services/reporting-service/src/interfaces/structured-query.interface.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L16)
+
+___
+
+### NonChartType
+
+Ƭ **NonChartType**: ``"pie"`` \| ``"table"``
+
+#### Defined in
+
+[services/reporting-service/src/interfaces/widget-interface.interface.ts:2](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/widget-interface.interface.ts#L2)
+
+___
+
+### Operator
+
+Ƭ **Operator**: ``"LIKE"`` \| ``"NOT LIKE"`` \| ``"<>"`` \| ``"<"`` \| ``">"`` \| ``"<="`` \| ``">="`` \| ``"="`` \| ``"IN"`` \| ``"NOT IN"`` \| ``"EXISTS"`` \| ``"IS"`` \| ``"IS NOT"``
+
+#### Defined in
+
+[services/reporting-service/src/interfaces/structured-query.interface.ts:1](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L1)
+
+___
+
+### OrderDirection
+
+Ƭ **OrderDirection**: ``"ASC"`` \| ``"DESC"``
+
+#### Defined in
+
+[services/reporting-service/src/interfaces/structured-query.interface.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L15)
 
 ___
 
@@ -97,38 +213,16 @@ ___
 
 Ƭ **WhereClause**: `Object`
 
-#### Index signature
-
-▪ [field: `string`]: [`WhereCondition`](modules.md#wherecondition) \| ([`WhereCondition`](modules.md#wherecondition) \| [`WhereClause`](modules.md#whereclause))[] \| `undefined`
-
 #### Type declaration
 
 | Name | Type |
 | :------ | :------ |
-| `and?` | ([`WhereCondition`](modules.md#wherecondition) \| [`WhereClause`](modules.md#whereclause))[] |
-| `or?` | ([`WhereCondition`](modules.md#wherecondition) \| [`WhereClause`](modules.md#whereclause))[] |
+| `and?` | ([`WhereCondition`](interfaces/WhereCondition.md) \| [`WhereClause`](modules.md#whereclause))[] |
+| `or?` | ([`WhereCondition`](interfaces/WhereCondition.md) \| [`WhereClause`](modules.md#whereclause))[] |
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/structured-query.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/structured-query.interface.ts#L10)
-
-___
-
-### WhereCondition
-
-Ƭ **WhereCondition**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `field` | `string` |
-| `operator` | `Operator` |
-| `value` | `string` \| `number` |
-
-#### Defined in
-
-[services/reporting-service/src/interfaces/structured-query.interface.ts:3](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/structured-query.interface.ts#L3)
+[services/reporting-service/src/interfaces/structured-query.interface.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L78)
 
 ## Functions
 
@@ -156,7 +250,7 @@ second argument.
 
 #### Defined in
 
-[services/reporting-service/src/decorators/custom-type-converter.decorator.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/decorators/custom-type-converter.decorator.ts#L14)
+[services/reporting-service/src/decorators/custom-type-converter.decorator.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/decorators/custom-type-converter.decorator.ts#L14)
 
 ___
 
@@ -181,4 +275,4 @@ a decorator created by the `ClassDecoratorFactory.createDecorator` method.
 
 #### Defined in
 
-[services/reporting-service/src/decorators/report-event-listener.decorator.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/decorators/report-event-listener.decorator.ts#L11)
+[services/reporting-service/src/decorators/report-event-listener.decorator.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/decorators/report-event-listener.decorator.ts#L11)

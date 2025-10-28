@@ -5,7 +5,7 @@
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
-BPMN microservice
+BPMN microservice.
 
 Base URLs:
 
@@ -13,7 +13,7 @@ Base URLs:
 
 # Authentication
 
-- HTTP Authentication, scheme: bearer
+- HTTP Authentication, scheme: bearer 
 
 <h1 id="bpmn-service-workflowcontroller">WorkflowController</h1>
 
@@ -76,8 +76,8 @@ fetch('/workflows/{id}/execute',
 
 | Permissions |
 | ------- |
-| CreateWorkflow   |
-| 2   |
+| ExecuteWorkflow   |
+| 5   |
 
 > Body parameter
 
@@ -1046,3 +1046,4 @@ or
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |» *anonymous*|string|false|none|none|
+

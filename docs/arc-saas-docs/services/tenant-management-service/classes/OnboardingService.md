@@ -37,40 +37,40 @@ Constructs a new instance of the OnboardingService.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `leadRepository` | [`LeadRepository`](LeadRepository.md) | Repository for managing leads. |
-| `tenantRepository` | [`TenantRepository`](TenantRepository.md) | Repository for managing tenants. |
-| `contactRepository` | [`ContactRepository`](ContactRepository.md) | Repository for managing contacts. |
-| `addressRepository` | [`AddressRepository`](AddressRepository.md) | Repository for managing addresses. |
+| `leadRepository` | [`LeadRepository`](LeadRepository.md)<[`Lead`](Lead.md)\> | Repository for managing leads. |
+| `tenantRepository` | [`TenantRepository`](TenantRepository.md)<[`Tenant`](Tenant.md)\> | Repository for managing tenants. |
+| `contactRepository` | [`ContactRepository`](ContactRepository.md)<[`Contact`](Contact.md)\> | Repository for managing contacts. |
+| `addressRepository` | [`AddressRepository`](AddressRepository.md)<[`Address`](Address.md)\> | Repository for managing addresses. |
 | `leadAuthenticator` | [`LeadAuthenticator`](LeadAuthenticator.md) | Service for authenticating leads. |
 | `logger` | `ILogger` | Logger service for logging messages. |
 
 #### Defined in
 
-[services/tenant-management-service/src/services/onboarding.service.ts:32](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/onboarding.service.ts#L32)
+[services/tenant-management-service/src/services/onboarding.service.ts:33](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/onboarding.service.ts#L33)
 
 ## Properties
 
 ### addressRepository
 
-• `Private` **addressRepository**: [`AddressRepository`](AddressRepository.md)
+• `Private` **addressRepository**: [`AddressRepository`](AddressRepository.md)<[`Address`](Address.md)\>
 
 Repository for managing addresses.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/onboarding.service.ts:40](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/onboarding.service.ts#L40)
+[services/tenant-management-service/src/services/onboarding.service.ts:41](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/onboarding.service.ts#L41)
 
 ___
 
 ### contactRepository
 
-• `Private` **contactRepository**: [`ContactRepository`](ContactRepository.md)
+• `Private` **contactRepository**: [`ContactRepository`](ContactRepository.md)<[`Contact`](Contact.md)\>
 
 Repository for managing contacts.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/onboarding.service.ts:38](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/onboarding.service.ts#L38)
+[services/tenant-management-service/src/services/onboarding.service.ts:39](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/onboarding.service.ts#L39)
 
 ___
 
@@ -82,19 +82,19 @@ Service for authenticating leads.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/onboarding.service.ts:42](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/onboarding.service.ts#L42)
+[services/tenant-management-service/src/services/onboarding.service.ts:43](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/onboarding.service.ts#L43)
 
 ___
 
 ### leadRepository
 
-• `Private` **leadRepository**: [`LeadRepository`](LeadRepository.md)
+• `Private` **leadRepository**: [`LeadRepository`](LeadRepository.md)<[`Lead`](Lead.md)\>
 
 Repository for managing leads.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/onboarding.service.ts:34](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/onboarding.service.ts#L34)
+[services/tenant-management-service/src/services/onboarding.service.ts:35](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/onboarding.service.ts#L35)
 
 ___
 
@@ -106,19 +106,19 @@ Logger service for logging messages.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/onboarding.service.ts:44](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/onboarding.service.ts#L44)
+[services/tenant-management-service/src/services/onboarding.service.ts:45](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/onboarding.service.ts#L45)
 
 ___
 
 ### tenantRepository
 
-• `Private` **tenantRepository**: [`TenantRepository`](TenantRepository.md)
+• `Private` **tenantRepository**: [`TenantRepository`](TenantRepository.md)<[`Tenant`](Tenant.md)\>
 
 Repository for managing tenants.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/onboarding.service.ts:36](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/onboarding.service.ts#L36)
+[services/tenant-management-service/src/services/onboarding.service.ts:37](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/onboarding.service.ts#L37)
 
 ## Methods
 
@@ -143,7 +143,7 @@ The `addLead` function is returning the newly created lead object.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/onboarding.service.ts:53](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/onboarding.service.ts#L53)
+[services/tenant-management-service/src/services/onboarding.service.ts:54](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/onboarding.service.ts#L54)
 
 ___
 
@@ -169,13 +169,13 @@ a Promise that resolves to a Tenant object.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/onboarding.service.ts:143](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/onboarding.service.ts#L143)
+[services/tenant-management-service/src/services/onboarding.service.ts:150](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/onboarding.service.ts#L150)
 
 ___
 
 ### onboardForLead
 
-▸ **onboardForLead**(`dto`, `lead`): `Promise`<[`Tenant`](Tenant.md)\>
+▸ **onboardForLead**(`dto`, `lead`, `id`): `Promise`<[`Tenant`](Tenant.md)\>
 
 The startOnboarding function checks if a lead user exists and is validated, and
 if not, updates the lead user's validation status and triggers tenant creation.
@@ -186,6 +186,7 @@ if not, updates the lead user's validation status and triggers tenant creation.
 | :------ | :------ | :------ |
 | `dto` | `Omit`<[`TenantOnboardDTO`](TenantOnboardDTO.md), ``"contact"``\> | - |
 | `lead` | [`LeadUser`](../modules.md#leaduser) | The `lead` parameter is an object of type `LeadUser`. It represents a lead user who is going through the onboarding process. |
+| `id` | `string` | - |
 
 #### Returns
 
@@ -193,4 +194,4 @@ if not, updates the lead user's validation status and triggers tenant creation.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/onboarding.service.ts:97](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/onboarding.service.ts#L97)
+[services/tenant-management-service/src/services/onboarding.service.ts:96](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/onboarding.service.ts#L96)

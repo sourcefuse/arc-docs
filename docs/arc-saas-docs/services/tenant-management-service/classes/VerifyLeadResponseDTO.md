@@ -37,7 +37,7 @@ Model.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/verify-lead-response-dto.model.ts:17](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/verify-lead-response-dto.model.ts#L17)
+[services/tenant-management-service/src/models/dtos/verify-lead-response-dto.model.ts:17](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/verify-lead-response-dto.model.ts#L17)
 
 ## Properties
 
@@ -47,7 +47,7 @@ Model.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/verify-lead-response-dto.model.ts:9](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/verify-lead-response-dto.model.ts#L9)
+[services/tenant-management-service/src/models/dtos/verify-lead-response-dto.model.ts:9](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/verify-lead-response-dto.model.ts#L9)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/verify-lead-response-dto.model.ts:15](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/verify-lead-response-dto.model.ts#L15)
+[services/tenant-management-service/src/models/dtos/verify-lead-response-dto.model.ts:15](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/verify-lead-response-dto.model.ts#L15)

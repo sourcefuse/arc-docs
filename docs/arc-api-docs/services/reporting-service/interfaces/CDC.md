@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/cdc.interface.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/cdc.interface.ts#L9)
+[services/reporting-service/src/interfaces/cdc.interface.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/cdc.interface.ts#L9)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/cdc.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/cdc.interface.ts#L8)
+[services/reporting-service/src/interfaces/cdc.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/cdc.interface.ts#L8)

@@ -1,10 +1,16 @@
 [@sourceloop/ctrl-plane-subscription-service](../README.md) / [Exports](../modules.md) / PlanRepository
 
-# Class: PlanRepository
+# Class: PlanRepository<T\>
+
+## Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`Plan`](Plan.md) = [`Plan`](Plan.md) |
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`Plan`](Plan.md), typeof [`id`](Plan.md#id), [`PlanRelations`](../interfaces/PlanRelations.md)\>
+- `DefaultUserModifyCrudRepository`<`T`, typeof [`id`](Plan.md#id), [`PlanRelations`](../interfaces/PlanRelations.md)\>
 
   ↳ **`PlanRepository`**
 
@@ -21,12 +27,19 @@
 - [currency](PlanRepository.md#currency)
 - [currencyRepositoryGetter](PlanRepository.md#currencyrepositorygetter)
 - [getCurrentUser](PlanRepository.md#getcurrentuser)
+- [plan](PlanRepository.md#plan)
 
 ## Constructors
 
 ### constructor
 
-• **new PlanRepository**(`dataSource`, `getCurrentUser`, `billingCycleRepositoryGetter`, `currencyRepositoryGetter`)
+• **new PlanRepository**<`T`\>(`dataSource`, `getCurrentUser`, `billingCycleRepositoryGetter`, `currencyRepositoryGetter`, `plan`)
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`Plan`](Plan.md)<`T`\> = [`Plan`](Plan.md) |
 
 #### Parameters
 
@@ -34,20 +47,21 @@
 | :------ | :------ |
 | `dataSource` | `DataSource` |
 | `getCurrentUser` | `Getter`<`IAuthUserWithPermissions`<`string`, `string`, `string`\>\> |
-| `billingCycleRepositoryGetter` | `Getter`<[`BillingCycleRepository`](BillingCycleRepository.md)\> |
-| `currencyRepositoryGetter` | `Getter`<[`CurrencyRepository`](CurrencyRepository.md)\> |
+| `billingCycleRepositoryGetter` | `Getter`<[`BillingCycleRepository`](BillingCycleRepository.md)<[`BillingCycle`](BillingCycle.md)\>\> |
+| `currencyRepositoryGetter` | `Getter`<[`CurrencyRepository`](CurrencyRepository.md)<[`Currency`](Currency.md)\>\> |
+| `plan` | typeof `Entity` & { `prototype`: `T`  } |
 
 #### Overrides
 
 DefaultUserModifyCrudRepository&lt;
-  Plan,
+  T,
   typeof Plan.prototype.id,
   PlanRelations
 \&gt;.constructor
 
 #### Defined in
 
-[services/subscription-service/src/repositories/plan.repository.ts:28](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/plan.repository.ts#L28)
+[services/subscription-service/src/repositories/plan.repository.ts:35](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/repositories/plan.repository.ts#L35)
 
 ## Properties
 
@@ -57,17 +71,17 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/subscription-service/src/repositories/plan.repository.ts:18](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/plan.repository.ts#L18)
+[services/subscription-service/src/repositories/plan.repository.ts:25](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/repositories/plan.repository.ts#L25)
 
 ___
 
 ### billingCycleRepositoryGetter
 
-• `Protected` **billingCycleRepositoryGetter**: `Getter`<[`BillingCycleRepository`](BillingCycleRepository.md)\>
+• `Protected` **billingCycleRepositoryGetter**: `Getter`<[`BillingCycleRepository`](BillingCycleRepository.md)<[`BillingCycle`](BillingCycle.md)\>\>
 
 #### Defined in
 
-[services/subscription-service/src/repositories/plan.repository.ts:34](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/plan.repository.ts#L34)
+[services/subscription-service/src/repositories/plan.repository.ts:41](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/repositories/plan.repository.ts#L41)
 
 ___
 
@@ -77,17 +91,17 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/repositories/plan.repository.ts:23](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/plan.repository.ts#L23)
+[services/subscription-service/src/repositories/plan.repository.ts:30](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/repositories/plan.repository.ts#L30)
 
 ___
 
 ### currencyRepositoryGetter
 
-• `Protected` **currencyRepositoryGetter**: `Getter`<[`CurrencyRepository`](CurrencyRepository.md)\>
+• `Protected` **currencyRepositoryGetter**: `Getter`<[`CurrencyRepository`](CurrencyRepository.md)<[`Currency`](Currency.md)\>\>
 
 #### Defined in
 
-[services/subscription-service/src/repositories/plan.repository.ts:36](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/plan.repository.ts#L36)
+[services/subscription-service/src/repositories/plan.repository.ts:43](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/repositories/plan.repository.ts#L43)
 
 ___
 
@@ -101,4 +115,14 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/subscription-service/src/repositories/plan.repository.ts:32](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/plan.repository.ts#L32)
+[services/subscription-service/src/repositories/plan.repository.ts:39](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/repositories/plan.repository.ts#L39)
+
+___
+
+### plan
+
+• `Private` `Readonly` **plan**: typeof `Entity` & { `prototype`: `T`  }
+
+#### Defined in
+
+[services/subscription-service/src/repositories/plan.repository.ts:45](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/repositories/plan.repository.ts#L45)

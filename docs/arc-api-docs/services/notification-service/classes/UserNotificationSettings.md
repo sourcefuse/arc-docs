@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/user-notification-settings.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/user-notification-settings.model.ts#L16)
+[services/notification-service/src/models/user-notification-settings.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/user-notification-settings.model.ts#L16)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/user-notification-settings.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/user-notification-settings.model.ts#L37)
+[services/notification-service/src/models/user-notification-settings.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/user-notification-settings.model.ts#L37)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/user-notification-settings.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/user-notification-settings.model.ts#L30)
+[services/notification-service/src/models/user-notification-settings.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/user-notification-settings.model.ts#L30)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/user-notification-settings.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/user-notification-settings.model.ts#L44)
+[services/notification-service/src/models/user-notification-settings.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/user-notification-settings.model.ts#L44)
 
 ___
 
@@ -120,4 +120,4 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/user-notification-settings.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/user-notification-settings.model.ts#L23)
+[services/notification-service/src/models/user-notification-settings.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/user-notification-settings.model.ts#L23)

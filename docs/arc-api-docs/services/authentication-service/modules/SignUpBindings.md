@@ -7,6 +7,7 @@
 ### Variables
 
 - [APPLE\_SIGN\_UP\_PROVIDER](SignUpBindings.md#apple_sign_up_provider)
+- [AUTH0\_SIGN\_UP\_PROVIDER](SignUpBindings.md#auth0_sign_up_provider)
 - [AZURE\_AD\_SIGN\_UP\_PROVIDER](SignUpBindings.md#azure_ad_sign_up_provider)
 - [COGNITO\_SIGN\_UP\_PROVIDER](SignUpBindings.md#cognito_sign_up_provider)
 - [FACEBOOK\_SIGN\_UP\_PROVIDER](SignUpBindings.md#facebook_sign_up_provider)
@@ -26,7 +27,17 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L54)
+[services/authentication-service/src/providers/keys.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L57)
+
+___
+
+### AUTH0\_SIGN\_UP\_PROVIDER
+
+• `Const` **AUTH0\_SIGN\_UP\_PROVIDER**: `BindingKey`<[`Auth0SignUpFn`](../modules.md#auth0signupfn)\>
+
+#### Defined in
+
+[services/authentication-service/src/providers/keys.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L87)
 
 ___
 
@@ -36,7 +47,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L63)
+[services/authentication-service/src/providers/keys.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L66)
 
 ___
 
@@ -46,7 +57,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L66)
+[services/authentication-service/src/providers/keys.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L69)
 
 ___
 
@@ -56,7 +67,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L57)
+[services/authentication-service/src/providers/keys.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L60)
 
 ___
 
@@ -66,7 +77,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L49)
+[services/authentication-service/src/providers/keys.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L52)
 
 ___
 
@@ -76,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L52)
+[services/authentication-service/src/providers/keys.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L55)
 
 ___
 
@@ -86,7 +97,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L60)
+[services/authentication-service/src/providers/keys.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L63)
 
 ___
 
@@ -96,7 +107,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L76)
+[services/authentication-service/src/providers/keys.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L79)
 
 ___
 
@@ -106,7 +117,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L72)
+[services/authentication-service/src/providers/keys.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L75)
 
 ___
 
@@ -116,7 +127,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L69)
+[services/authentication-service/src/providers/keys.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L72)
 
 ___
 
@@ -126,4 +137,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L81)
+[services/authentication-service/src/providers/keys.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L84)

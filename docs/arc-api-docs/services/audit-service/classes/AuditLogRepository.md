@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultCrudRepository`<[`AuditLog`](AuditLog.md), typeof [`id`](AuditLog.md#id)\>
+- `DefaultCrudRepository`<`AuditLog`, typeof [`id`](AuditLog.md#id)\>
 
   ↳ **`AuditLogRepository`**
 
@@ -14,17 +14,22 @@
 
 - [constructor](AuditLogRepository.md#constructor)
 
+### Properties
+
+- [auditLog](AuditLogRepository.md#auditlog)
+
 ## Constructors
 
 ### constructor
 
-• **new AuditLogRepository**(`dataSource`)
+• **new AuditLogRepository**(`dataSource`, `auditLog`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `dataSource` | `DataSource` |
+| `auditLog` | typeof `Entity` & { `prototype`: `AuditLog`  } |
 
 #### Overrides
 
@@ -35,4 +40,14 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[services/audit-service/src/repositories/audit-log.repository.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/repositories/audit-log.repository.ts#L18)
+[services/audit-service/src/repositories/audit-log.repository.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/repositories/audit-log.repository.ts#L18)
+
+## Properties
+
+### auditLog
+
+• `Private` `Readonly` **auditLog**: typeof `Entity` & { `prototype`: `AuditLog`  }
+
+#### Defined in
+
+[services/audit-service/src/repositories/audit-log.repository.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/repositories/audit-log.repository.ts#L21)

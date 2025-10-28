@@ -43,7 +43,7 @@
 
 #### Defined in
 
-[services/task-service/src/services/http.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/http.service.ts#L23)
+[services/task-service/src/services/http.service.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/http.service.ts#L22)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/http.service.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/http.service.ts#L16)
+[services/task-service/src/services/http.service.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/http.service.ts#L15)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/http.service.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/http.service.ts#L76)
+[services/task-service/src/services/http.service.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/http.service.ts#L75)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/http.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/http.service.ts#L31)
+[services/task-service/src/services/http.service.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/http.service.ts#L30)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/http.service.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/http.service.ts#L44)
+[services/task-service/src/services/http.service.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/http.service.ts#L43)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/http.service.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/http.service.ts#L56)
+[services/task-service/src/services/http.service.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/http.service.ts#L55)
 
 ___
 
@@ -198,4 +198,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/http.service.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/http.service.ts#L88)
+[services/task-service/src/services/http.service.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/http.service.ts#L87)

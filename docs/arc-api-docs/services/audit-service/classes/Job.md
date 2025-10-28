@@ -21,7 +21,6 @@
 - [operation](Job.md#operation)
 - [result](Job.md#result)
 - [status](Job.md#status)
-- [tenantId](Job.md#tenantid)
 
 ## Constructors
 
@@ -51,7 +50,7 @@ packages/core/dist/models/core-entity.d.ts:3
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/job.model.ts#L41)
+[services/audit-service/src/models/job.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/models/job.model.ts#L34)
 
 ___
 
@@ -61,7 +60,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/job.model.ts#L17)
+[services/audit-service/src/models/job.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/models/job.model.ts#L17)
 
 ___
 
@@ -71,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/job.model.ts#L28)
+[services/audit-service/src/models/job.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/models/job.model.ts#L28)
 
 ___
 
@@ -81,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/job.model.ts#L46)
+[services/audit-service/src/models/job.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/models/job.model.ts#L39)
 
 ___
 
@@ -91,14 +90,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/job.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/job.model.ts#L23)
-
-___
-
-### tenantId
-
-• **tenantId**: `string`
-
-#### Defined in
-
-[services/audit-service/src/models/job.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/job.model.ts#L35)
+[services/audit-service/src/models/job.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/models/job.model.ts#L23)

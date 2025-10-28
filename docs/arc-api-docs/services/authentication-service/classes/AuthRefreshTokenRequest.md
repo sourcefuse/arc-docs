@@ -47,7 +47,7 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-refresh-token-request.dto.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-refresh-token-request.dto.ts#L14)
+[services/authentication-service/src/modules/auth/models/auth-refresh-token-request.dto.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-refresh-token-request.dto.ts#L14)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-refresh-token-request.dto.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-refresh-token-request.dto.ts#L19)
+[services/authentication-service/src/modules/auth/models/auth-refresh-token-request.dto.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-refresh-token-request.dto.ts#L19)

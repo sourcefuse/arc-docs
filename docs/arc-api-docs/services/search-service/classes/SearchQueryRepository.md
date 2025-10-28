@@ -53,7 +53,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/search-service/src/repositories/search-query.repository.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/repositories/search-query.repository.ts#L20)
+[services/search-service/src/repositories/search-query.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/repositories/search-query.repository.ts#L27)
 
 ## Properties
 
@@ -63,7 +63,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/search-service/src/repositories/search-query.repository.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/repositories/search-query.repository.ts#L24)
+[services/search-service/src/repositories/search-query.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/repositories/search-query.repository.ts#L31)
 
 ___
 
@@ -77,7 +77,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/search-service/src/repositories/search-query.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/repositories/search-query.repository.ts#L26)
+[services/search-service/src/repositories/search-query.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/repositories/search-query.repository.ts#L33)
 
 ## Methods
 
@@ -90,19 +90,19 @@ DefaultUserModifyCrudRepository.getCurrentUser
 | Name | Type |
 | :------ | :------ |
 | `entity` | `DataObject`<[`SearchQuery`](SearchQuery.md)\> |
-| `options?` | `Options` |
+| `options?` | `AnyObject` |
 
 #### Returns
 
 `Promise`<[`SearchQuery`](SearchQuery.md)\>
 
-#### Inherited from
+#### Overrides
 
 DefaultUserModifyCrudRepository.create
 
 #### Defined in
 
-packages/core/dist/repositories/default-user-modify-crud.repository.base.d.ts:11
+[services/search-service/src/repositories/search-query.repository.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/repositories/search-query.repository.ts#L43)
 
 ___
 
@@ -152,7 +152,7 @@ DefaultUserModifyCrudRepository.deleteAll
 
 #### Defined in
 
-[services/search-service/src/repositories/search-query.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/repositories/search-query.repository.ts#L33)
+[services/search-service/src/repositories/search-query.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/repositories/search-query.repository.ts#L40)
 
 ___
 

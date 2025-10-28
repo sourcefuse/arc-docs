@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/models/invoice.model.ts:93](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/invoice.model.ts#L93)
+[services/tenant-management-service/src/models/invoice.model.ts:94](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/invoice.model.ts#L94)

@@ -1,10 +1,16 @@
 [@sourceloop/ctrl-plane-tenant-management-service](../README.md) / [Exports](../modules.md) / LeadRepository
 
-# Class: LeadRepository
+# Class: LeadRepository<T\>
+
+## Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`Lead`](Lead.md) = [`Lead`](Lead.md) |
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`Lead`](Lead.md), typeof [`id`](Lead.md#id), [`LeadRelations`](../interfaces/LeadRelations.md)\>
+- `DefaultUserModifyCrudRepository`<`T`, typeof [`id`](Lead.md#id), [`LeadRelations`](../interfaces/LeadRelations.md)\>
 
   ↳ **`LeadRepository`**
 
@@ -19,6 +25,7 @@
 - [address](LeadRepository.md#address)
 - [addressRepositoryGetter](LeadRepository.md#addressrepositorygetter)
 - [getCurrentUser](LeadRepository.md#getcurrentuser)
+- [lead](LeadRepository.md#lead)
 - [tenant](LeadRepository.md#tenant)
 - [tenantRepositoryGetter](LeadRepository.md#tenantrepositorygetter)
 
@@ -26,7 +33,13 @@
 
 ### constructor
 
-• **new LeadRepository**(`dataSource`, `getCurrentUser`, `tenantRepositoryGetter`, `addressRepositoryGetter`)
+• **new LeadRepository**<`T`\>(`dataSource`, `getCurrentUser`, `tenantRepositoryGetter`, `addressRepositoryGetter`, `lead`)
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`Lead`](Lead.md)<`T`\> = [`Lead`](Lead.md) |
 
 #### Parameters
 
@@ -34,20 +47,21 @@
 | :------ | :------ |
 | `dataSource` | `DataSource` |
 | `getCurrentUser` | `Getter`<`IAuthUserWithPermissions`<`string`, `string`, `string`\>\> |
-| `tenantRepositoryGetter` | `Getter`<[`TenantRepository`](TenantRepository.md)\> |
-| `addressRepositoryGetter` | `Getter`<[`AddressRepository`](AddressRepository.md)\> |
+| `tenantRepositoryGetter` | `Getter`<[`TenantRepository`](TenantRepository.md)<[`Tenant`](Tenant.md)\>\> |
+| `addressRepositoryGetter` | `Getter`<[`AddressRepository`](AddressRepository.md)<[`Address`](Address.md)\>\> |
+| `lead` | typeof `Entity` & { `prototype`: `T`  } |
 
 #### Overrides
 
 DefaultUserModifyCrudRepository&lt;
-  Lead,
+  T,
   typeof Lead.prototype.id,
   LeadRelations
 \&gt;.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/lead.repository.ts:35](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/lead.repository.ts#L35)
+[services/tenant-management-service/src/repositories/lead.repository.ts:38](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/lead.repository.ts#L38)
 
 ## Properties
 
@@ -57,17 +71,17 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/lead.repository.ts:30](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/lead.repository.ts#L30)
+[services/tenant-management-service/src/repositories/lead.repository.ts:33](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/lead.repository.ts#L33)
 
 ___
 
 ### addressRepositoryGetter
 
-• `Protected` **addressRepositoryGetter**: `Getter`<[`AddressRepository`](AddressRepository.md)\>
+• `Protected` **addressRepositoryGetter**: `Getter`<[`AddressRepository`](AddressRepository.md)<[`Address`](Address.md)\>\>
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/lead.repository.ts:43](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/lead.repository.ts#L43)
+[services/tenant-management-service/src/repositories/lead.repository.ts:46](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/lead.repository.ts#L46)
 
 ___
 
@@ -81,7 +95,17 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/lead.repository.ts:39](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/lead.repository.ts#L39)
+[services/tenant-management-service/src/repositories/lead.repository.ts:42](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/lead.repository.ts#L42)
+
+___
+
+### lead
+
+• `Private` `Readonly` **lead**: typeof `Entity` & { `prototype`: `T`  }
+
+#### Defined in
+
+[services/tenant-management-service/src/repositories/lead.repository.ts:48](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/lead.repository.ts#L48)
 
 ___
 
@@ -91,14 +115,14 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/lead.repository.ts:25](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/lead.repository.ts#L25)
+[services/tenant-management-service/src/repositories/lead.repository.ts:28](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/lead.repository.ts#L28)
 
 ___
 
 ### tenantRepositoryGetter
 
-• `Protected` **tenantRepositoryGetter**: `Getter`<[`TenantRepository`](TenantRepository.md)\>
+• `Protected` **tenantRepositoryGetter**: `Getter`<[`TenantRepository`](TenantRepository.md)<[`Tenant`](Tenant.md)\>\>
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/lead.repository.ts:41](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/lead.repository.ts#L41)
+[services/tenant-management-service/src/repositories/lead.repository.ts:44](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/lead.repository.ts#L44)

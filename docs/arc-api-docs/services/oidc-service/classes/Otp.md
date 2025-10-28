@@ -47,7 +47,7 @@ packages/core/dist/models/core-entity.d.ts:3
 
 #### Defined in
 
-[services/oidc-service/src/models/otp.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/otp.model.ts#L14)
+[services/oidc-service/src/models/otp.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/models/otp.model.ts#L14)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/otp.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/otp.model.ts#L20)
+[services/oidc-service/src/models/otp.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/models/otp.model.ts#L20)

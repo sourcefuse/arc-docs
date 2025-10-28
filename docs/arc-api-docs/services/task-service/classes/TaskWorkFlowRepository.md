@@ -53,7 +53,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/task-service/src/repositories/task-workflow.repository.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/repositories/task-workflow.repository.ts#L15)
+[services/task-service/src/repositories/task-workflow.repository.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/repositories/task-workflow.repository.ts#L15)
 
 ## Properties
 
@@ -77,17 +77,17 @@ ___
 
 #### Defined in
 
-[services/task-service/src/repositories/task-workflow.repository.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/repositories/task-workflow.repository.ts#L21)
+[services/task-service/src/repositories/task-workflow.repository.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/repositories/task-workflow.repository.ts#L21)
 
 ___
 
 ### userGetter
 
-• `Private` **userGetter**: `Getter`<`IAuthUserWithPermissions`<`string`, `string`, `string`\>\>
+• `Private` `Readonly` **userGetter**: `Getter`<`IAuthUserWithPermissions`<`string`, `string`, `string`\>\>
 
 #### Defined in
 
-[services/task-service/src/repositories/task-workflow.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/repositories/task-workflow.repository.ts#L19)
+[services/task-service/src/repositories/task-workflow.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/repositories/task-workflow.repository.ts#L19)
 
 ## Methods
 

@@ -24,13 +24,13 @@
 
 #### Defined in
 
-[services/feature-toggle-service/src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/types.ts#L9)
+[services/feature-toggle-service/src/types.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/types.ts#L9)
 
 ___
 
 ### useCustomSequence
 
-• **useCustomSequence**: `boolean`
+• `Optional` **useCustomSequence**: `boolean`
 
 #### Inherited from
 
@@ -38,7 +38,7 @@ IServiceConfig.useCustomSequence
 
 #### Defined in
 
-packages/core/dist/types.d.ts:7
+packages/core/dist/types.d.ts:5
 
 ___
 
@@ -52,4 +52,4 @@ IServiceConfig.useSequelize
 
 #### Defined in
 
-packages/core/dist/types.d.ts:8
+packages/core/dist/types.d.ts:6

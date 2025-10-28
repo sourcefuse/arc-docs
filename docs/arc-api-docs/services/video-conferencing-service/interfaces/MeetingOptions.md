@@ -53,7 +53,7 @@ is false,
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:151](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/types.ts#L151)
+[services/video-conferencing-service/src/types.ts:151](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/types.ts#L151)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:149](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/types.ts#L149)
+[services/video-conferencing-service/src/types.ts:149](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/types.ts#L149)
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:150](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/types.ts#L150)
+[services/video-conferencing-service/src/types.ts:150](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/types.ts#L150)

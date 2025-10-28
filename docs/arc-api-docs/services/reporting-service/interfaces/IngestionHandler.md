@@ -32,4 +32,4 @@
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/ingestion-handler.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/ingestion-handler.interface.ts#L6)
+[services/reporting-service/src/interfaces/ingestion-handler.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/ingestion-handler.interface.ts#L6)

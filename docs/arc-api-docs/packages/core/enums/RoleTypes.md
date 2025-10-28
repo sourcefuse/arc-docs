@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[packages/core/src/enums/roles.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/roles.enum.ts#L6)
+[packages/core/src/enums/roles.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/enums/roles.enum.ts#L6)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/enums/roles.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/roles.enum.ts#L7)
+[packages/core/src/enums/roles.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/enums/roles.enum.ts#L7)

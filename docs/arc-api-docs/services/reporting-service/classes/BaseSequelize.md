@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L18)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L18)
 
 ## Properties
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L16)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L16)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L17)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L17)
 
 ## Methods
 
@@ -96,7 +96,7 @@ SequelizeStrategy.applyRowLevelFilter
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L49)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L51)
 
 ___
 
@@ -120,7 +120,7 @@ SequelizeStrategy.checkIfColumnsExists
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L45)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L47)
 
 ___
 
@@ -144,7 +144,7 @@ SequelizeStrategy.checkIfDataSourceExists
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L43)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L45)
 
 ___
 
@@ -168,7 +168,7 @@ SequelizeStrategy.listDataSourceColumns
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L39)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L41)
 
 ___
 
@@ -186,7 +186,7 @@ SequelizeStrategy.listdataSources
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L35)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L35)
 
 ___
 
@@ -212,7 +212,7 @@ SequelizeStrategy.manageRecord
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L29)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L29)
 
 ___
 
@@ -224,7 +224,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `queryObject` | [`StructuredQueryInterface`](../interfaces/StructuredQueryInterface.md) |
+| `queryObject` | `string` \| [`StructuredQueryInterface`](../interfaces/StructuredQueryInterface.md) |
 
 #### Returns
 
@@ -236,7 +236,7 @@ SequelizeStrategy.query
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L37)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L37)
 
 ___
 
@@ -256,7 +256,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L23)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L23)
 
 ___
 
@@ -280,4 +280,4 @@ SequelizeStrategy.translateQuery
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L53)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L55)

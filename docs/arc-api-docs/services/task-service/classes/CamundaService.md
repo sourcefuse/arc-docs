@@ -19,6 +19,7 @@
 - [completeUserTask](CamundaService.md#completeusertask)
 - [create](CamundaService.md#create)
 - [delete](CamundaService.md#delete)
+- [deleteProcessInstances](CamundaService.md#deleteprocessinstances)
 - [deleteVersion](CamundaService.md#deleteversion)
 - [execute](CamundaService.md#execute)
 - [formatInput](CamundaService.md#formatinput)
@@ -40,7 +41,7 @@
 
 #### Defined in
 
-[services/task-service/src/services/camunda.service.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/camunda.service.ts#L19)
+[services/task-service/src/services/camunda.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/camunda.service.ts#L18)
 
 ## Properties
 
@@ -50,7 +51,7 @@
 
 #### Defined in
 
-[services/task-service/src/services/camunda.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/camunda.service.ts#L18)
+[services/task-service/src/services/camunda.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/camunda.service.ts#L17)
 
 ___
 
@@ -60,7 +61,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/camunda.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/camunda.service.ts#L23)
+[services/task-service/src/services/camunda.service.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/camunda.service.ts#L22)
 
 ___
 
@@ -70,7 +71,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/camunda.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/camunda.service.ts#L21)
+[services/task-service/src/services/camunda.service.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/camunda.service.ts#L20)
 
 ## Methods
 
@@ -91,7 +92,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/camunda.service.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/camunda.service.ts#L28)
+[services/task-service/src/services/camunda.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/camunda.service.ts#L27)
 
 ___
 
@@ -118,7 +119,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/camunda.service.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/camunda.service.ts#L40)
+[services/task-service/src/services/camunda.service.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/camunda.service.ts#L54)
 
 ___
 
@@ -138,7 +139,27 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/camunda.service.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/camunda.service.ts#L50)
+[services/task-service/src/services/camunda.service.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/camunda.service.ts#L64)
+
+___
+
+### deleteProcessInstances
+
+▸ **deleteProcessInstances**(`ids`): `Promise`<`undefined` \| `unknown`[]\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `ids` | (`undefined` \| `string`)[] |
+
+#### Returns
+
+`Promise`<`undefined` \| `unknown`[]\>
+
+#### Defined in
+
+[services/task-service/src/services/camunda.service.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/camunda.service.ts#L39)
 
 ___
 
@@ -158,7 +179,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/camunda.service.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/camunda.service.ts#L62)
+[services/task-service/src/services/camunda.service.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/camunda.service.ts#L76)
 
 ___
 
@@ -185,7 +206,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/camunda.service.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/camunda.service.ts#L70)
+[services/task-service/src/services/camunda.service.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/camunda.service.ts#L84)
 
 ___
 
@@ -205,7 +226,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/camunda.service.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/camunda.service.ts#L76)
+[services/task-service/src/services/camunda.service.ts:90](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/camunda.service.ts#L90)
 
 ___
 
@@ -231,7 +252,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/camunda.service.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/camunda.service.ts#L66)
+[services/task-service/src/services/camunda.service.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/camunda.service.ts#L80)
 
 ___
 
@@ -251,4 +272,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/services/camunda.service.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/services/camunda.service.ts#L34)
+[services/task-service/src/services/camunda.service.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/services/camunda.service.ts#L33)

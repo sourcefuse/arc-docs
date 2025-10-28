@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L16)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L16)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L15)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L15)

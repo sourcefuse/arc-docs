@@ -60,7 +60,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-response.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-response.repository.ts#L45)
+[services/survey-service/src/repositories/survey-response.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-response.repository.ts#L45)
 
 ## Properties
 
@@ -74,7 +74,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-response.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-response.repository.ts#L55)
+[services/survey-service/src/repositories/survey-response.repository.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-response.repository.ts#L55)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-response.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-response.repository.ts#L30)
+[services/survey-service/src/repositories/survey-response.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-response.repository.ts#L30)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-response.repository.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-response.repository.ts#L49)
+[services/survey-service/src/repositories/survey-response.repository.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-response.repository.ts#L49)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-response.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-response.repository.ts#L40)
+[services/survey-service/src/repositories/survey-response.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-response.repository.ts#L40)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-response.repository.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-response.repository.ts#L53)
+[services/survey-service/src/repositories/survey-response.repository.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-response.repository.ts#L53)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-response.repository.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-response.repository.ts#L51)
+[services/survey-service/src/repositories/survey-response.repository.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-response.repository.ts#L51)
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-response.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-response.repository.ts#L35)
+[services/survey-service/src/repositories/survey-response.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-response.repository.ts#L35)
 
 ## Methods
 

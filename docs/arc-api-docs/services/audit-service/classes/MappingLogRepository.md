@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultCrudRepository`<[`MappingLog`](MappingLog.md), typeof [`id`](MappingLog.md#id)\>
+- `DefaultCrudRepository`<`MappingLog`, typeof [`id`](MappingLog.md#id)\>
 
   ↳ **`MappingLogRepository`**
 
@@ -14,17 +14,22 @@
 
 - [constructor](MappingLogRepository.md#constructor)
 
+### Properties
+
+- [mappingLog](MappingLogRepository.md#mappinglog)
+
 ## Constructors
 
 ### constructor
 
-• **new MappingLogRepository**(`dataSource`)
+• **new MappingLogRepository**(`dataSource`, `mappingLog`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `dataSource` | `DataSource` |
+| `mappingLog` | typeof `Entity` & { `prototype`: `MappingLog`  } |
 
 #### Overrides
 
@@ -35,4 +40,14 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[services/audit-service/src/repositories/mapping-log.repository.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/repositories/mapping-log.repository.ts#L13)
+[services/audit-service/src/repositories/mapping-log.repository.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/repositories/mapping-log.repository.ts#L13)
+
+## Properties
+
+### mappingLog
+
+• `Private` `Readonly` **mappingLog**: typeof `Entity` & { `prototype`: `MappingLog`  }
+
+#### Defined in
+
+[services/audit-service/src/repositories/mapping-log.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/repositories/mapping-log.repository.ts#L16)

@@ -49,7 +49,7 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/token-response.dto.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/token-response.dto.ts#L16)
+[services/authentication-service/src/modules/auth/models/token-response.dto.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/token-response.dto.ts#L16)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/token-response.dto.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/token-response.dto.ts#L29)
+[services/authentication-service/src/modules/auth/models/token-response.dto.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/token-response.dto.ts#L29)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/token-response.dto.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/token-response.dto.ts#L34)
+[services/authentication-service/src/modules/auth/models/token-response.dto.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/token-response.dto.ts#L34)
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/token-response.dto.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/token-response.dto.ts#L23)
+[services/authentication-service/src/modules/auth/models/token-response.dto.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/token-response.dto.ts#L23)

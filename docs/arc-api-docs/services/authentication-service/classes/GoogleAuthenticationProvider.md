@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/google-authentication.provider.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/google-authentication.provider.ts#L9)
+[services/authentication-service/src/providers/google-authentication.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/google-authentication.provider.ts#L11)
 
 ## Properties
 
@@ -45,19 +45,21 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/google-authentication.provider.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/google-authentication.provider.ts#L9)
+[services/authentication-service/src/providers/google-authentication.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/google-authentication.provider.ts#L11)
 
 ## Methods
 
 ### isAuthenticated
 
-▸ **isAuthenticated**(`accessToken`): `boolean`
+▸ **isAuthenticated**(`accessToken`, `req?`, `payload?`): `boolean`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `accessToken` | `string` |
+| `req?` | [`AuthRefreshTokenRequest`](AuthRefreshTokenRequest.md) |
+| `payload?` | `AnyObject` |
 
 #### Returns
 
@@ -65,7 +67,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/google-authentication.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/google-authentication.provider.ts#L13)
+[services/authentication-service/src/providers/google-authentication.provider.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/google-authentication.provider.ts#L19)
 
 ___
 
@@ -83,4 +85,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/google-authentication.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/google-authentication.provider.ts#L10)
+[services/authentication-service/src/providers/google-authentication.provider.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/google-authentication.provider.ts#L12)

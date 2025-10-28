@@ -62,4 +62,4 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/authentication-service/src/models/refresh-token-request.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/refresh-token-request.model.ts#L16)
+[services/authentication-service/src/models/refresh-token-request.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/refresh-token-request.model.ts#L16)

@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[services/task-service/src/interfaces/i-incoming-connector.ts:4](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/interfaces/i-incoming-connector.ts#L4)
+[services/task-service/src/interfaces/i-incoming-connector.ts:4](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/interfaces/i-incoming-connector.ts#L4)
 
 ___
 
@@ -47,4 +47,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/interfaces/i-incoming-connector.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/interfaces/i-incoming-connector.ts#L5)
+[services/task-service/src/interfaces/i-incoming-connector.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/interfaces/i-incoming-connector.ts#L5)

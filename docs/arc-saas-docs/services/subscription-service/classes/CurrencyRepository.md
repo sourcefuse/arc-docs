@@ -1,10 +1,16 @@
 [@sourceloop/ctrl-plane-subscription-service](../README.md) / [Exports](../modules.md) / CurrencyRepository
 
-# Class: CurrencyRepository
+# Class: CurrencyRepository<T\>
+
+## Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`Currency`](Currency.md) = [`Currency`](Currency.md) |
 
 ## Hierarchy
 
-- `DefaultUserModifyCrudRepository`<[`Currency`](Currency.md), typeof [`id`](Currency.md#id), {}\>
+- `DefaultUserModifyCrudRepository`<`T`, typeof [`id`](Currency.md#id), {}\>
 
   ↳ **`CurrencyRepository`**
 
@@ -16,13 +22,20 @@
 
 ### Properties
 
+- [currency](CurrencyRepository.md#currency)
 - [getCurrentUser](CurrencyRepository.md#getcurrentuser)
 
 ## Constructors
 
 ### constructor
 
-• **new CurrencyRepository**(`dataSource`, `getCurrentUser`)
+• **new CurrencyRepository**<`T`\>(`dataSource`, `getCurrentUser`, `currency`)
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`Currency`](Currency.md)<`T`\> = [`Currency`](Currency.md) |
 
 #### Parameters
 
@@ -30,20 +43,27 @@
 | :------ | :------ |
 | `dataSource` | `DataSource` |
 | `getCurrentUser` | `Getter`<`IAuthUserWithPermissions`<`string`\>\> |
+| `currency` | typeof `Entity` & { `prototype`: `T`  } |
 
 #### Overrides
 
-DefaultUserModifyCrudRepository&lt;
-  Currency,
-  typeof Currency.prototype.id,
-  {}
-\&gt;.constructor
+DefaultUserModifyCrudRepository&lt;T, typeof Currency.prototype.id, {}\&gt;.constructor
 
 #### Defined in
 
-[services/subscription-service/src/repositories/currency.repository.ts:14](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/currency.repository.ts#L14)
+[services/subscription-service/src/repositories/currency.repository.ts:12](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/repositories/currency.repository.ts#L12)
 
 ## Properties
+
+### currency
+
+• `Private` `Readonly` **currency**: typeof `Entity` & { `prototype`: `T`  }
+
+#### Defined in
+
+[services/subscription-service/src/repositories/currency.repository.ts:18](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/repositories/currency.repository.ts#L18)
+
+___
 
 ### getCurrentUser
 
@@ -55,4 +75,4 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/subscription-service/src/repositories/currency.repository.ts:18](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/repositories/currency.repository.ts#L18)
+[services/subscription-service/src/repositories/currency.repository.ts:16](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/repositories/currency.repository.ts#L16)

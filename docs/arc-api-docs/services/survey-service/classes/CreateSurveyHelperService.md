@@ -43,7 +43,7 @@
 
 #### Defined in
 
-[services/survey-service/src/services/create-survey-helper.service.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/create-survey-helper.service.ts#L13)
+[services/survey-service/src/services/create-survey-helper.service.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/create-survey-helper.service.ts#L13)
 
 ## Properties
 
@@ -53,7 +53,7 @@
 
 #### Defined in
 
-[services/survey-service/src/services/create-survey-helper.service.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/create-survey-helper.service.ts#L19)
+[services/survey-service/src/services/create-survey-helper.service.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/create-survey-helper.service.ts#L19)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/create-survey-helper.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/create-survey-helper.service.ts#L21)
+[services/survey-service/src/services/create-survey-helper.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/create-survey-helper.service.ts#L21)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/create-survey-helper.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/create-survey-helper.service.ts#L17)
+[services/survey-service/src/services/create-survey-helper.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/create-survey-helper.service.ts#L17)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/create-survey-helper.service.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/create-survey-helper.service.ts#L15)
+[services/survey-service/src/services/create-survey-helper.service.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/create-survey-helper.service.ts#L15)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/create-survey-helper.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/create-survey-helper.service.ts#L23)
+[services/survey-service/src/services/create-survey-helper.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/create-survey-helper.service.ts#L23)
 
 ## Methods
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/create-survey-helper.service.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/create-survey-helper.service.ts#L42)
+[services/survey-service/src/services/create-survey-helper.service.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/create-survey-helper.service.ts#L53)
 
 ___
 
@@ -123,19 +123,27 @@ ___
 
 ▸ **copyFromBaseSurvey**(`survey`): `Promise`<`Omit`<[`SurveyDto`](SurveyDto.md), ``"id"``\>\>
 
+The function `copyFromBaseSurvey` copies properties from a base survey to a new survey object in
+TypeScript.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `survey` | `Omit`<[`SurveyDto`](SurveyDto.md), ``"id"``\> |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `survey` | `Omit`<[`SurveyDto`](SurveyDto.md), ``"id"``\> | The `copyFromBaseSurvey` function takes a parameter `survey` of type `Omit<SurveyDto, 'id'>`. This means that the `survey` parameter should be an object that has all the properties of `SurveyDto` except for the `id` property. |
 
 #### Returns
 
 `Promise`<`Omit`<[`SurveyDto`](SurveyDto.md), ``"id"``\>\>
 
+The `copyFromBaseSurvey` function returns the `survey` object with the `isEnableWeights`
+property set based on the corresponding property value from the base survey identified by
+`baseSurveyId`. If `baseSurveyId` is not provided or the base survey is not found, an error will
+be thrown.
+
 #### Defined in
 
-[services/survey-service/src/services/create-survey-helper.service.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/create-survey-helper.service.ts#L26)
+[services/survey-service/src/services/create-survey-helper.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/create-survey-helper.service.ts#L37)
 
 ___
 
@@ -155,7 +163,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/create-survey-helper.service.ts:130](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/create-survey-helper.service.ts#L130)
+[services/survey-service/src/services/create-survey-helper.service.ts:141](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/create-survey-helper.service.ts#L141)
 
 ___
 
@@ -176,7 +184,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/create-survey-helper.service.ts:141](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/create-survey-helper.service.ts#L141)
+[services/survey-service/src/services/create-survey-helper.service.ts:152](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/create-survey-helper.service.ts#L152)
 
 ___
 
@@ -198,7 +206,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/create-survey-helper.service.ts:107](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/create-survey-helper.service.ts#L107)
+[services/survey-service/src/services/create-survey-helper.service.ts:118](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/create-survey-helper.service.ts#L118)
 
 ___
 
@@ -221,4 +229,4 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/create-survey-helper.service.ts:180](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/create-survey-helper.service.ts#L180)
+[services/survey-service/src/services/create-survey-helper.service.ts:191](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/create-survey-helper.service.ts#L191)

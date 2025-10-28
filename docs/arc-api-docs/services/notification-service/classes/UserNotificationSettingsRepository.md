@@ -35,4 +35,4 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/notification-service/src/repositories/notification-user-settings.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/repositories/notification-user-settings.repository.ts#L16)
+[services/notification-service/src/repositories/notification-user-settings.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/repositories/notification-user-settings.repository.ts#L16)

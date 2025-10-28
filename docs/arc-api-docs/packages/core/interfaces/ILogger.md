@@ -16,13 +16,15 @@
 
 ### debug
 
-▸ **debug**(`msg`, `key?`): `void`
+▸ **debug**(`msg`, `context?`, `statusCode?`, `key?`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `msg` | `string` |
+| `context?` | `string` |
+| `statusCode?` | [`STATUS_CODE`](../enums/STATUS_CODE.md) |
 | `key?` | `string` |
 
 #### Returns
@@ -31,19 +33,21 @@
 
 #### Defined in
 
-[packages/core/src/components/logger-extension/logger.interface.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/logger-extension/logger.interface.ts#L12)
+[packages/core/src/components/logger-extension/logger.interface.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/logger-extension/logger.interface.ts#L28)
 
 ___
 
 ### error
 
-▸ **error**(`msg`, `key?`): `void`
+▸ **error**(`msg`, `context?`, `statusCode?`, `key?`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `msg` | `string` |
+| `context?` | `string` |
+| `statusCode?` | [`STATUS_CODE`](../enums/STATUS_CODE.md) |
 | `key?` | `string` |
 
 #### Returns
@@ -52,19 +56,21 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/logger-extension/logger.interface.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/logger-extension/logger.interface.ts#L11)
+[packages/core/src/components/logger-extension/logger.interface.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/logger-extension/logger.interface.ts#L22)
 
 ___
 
 ### info
 
-▸ **info**(`msg`, `key?`): `void`
+▸ **info**(`msg`, `context?`, `statusCode?`, `key?`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `msg` | `string` |
+| `context?` | `string` |
+| `statusCode?` | [`STATUS_CODE`](../enums/STATUS_CODE.md) |
 | `key?` | `string` |
 
 #### Returns
@@ -73,7 +79,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/logger-extension/logger.interface.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/logger-extension/logger.interface.ts#L9)
+[packages/core/src/components/logger-extension/logger.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/logger-extension/logger.interface.ts#L10)
 
 ___
 
@@ -93,19 +99,21 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/logger-extension/logger.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/logger-extension/logger.interface.ts#L8)
+[packages/core/src/components/logger-extension/logger.interface.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/logger-extension/logger.interface.ts#L9)
 
 ___
 
 ### warn
 
-▸ **warn**(`msg`, `key?`): `void`
+▸ **warn**(`msg`, `context?`, `statusCode?`, `key?`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `msg` | `string` |
+| `context?` | `string` |
+| `statusCode?` | [`STATUS_CODE`](../enums/STATUS_CODE.md) |
 | `key?` | `string` |
 
 #### Returns
@@ -114,4 +122,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/logger-extension/logger.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/logger-extension/logger.interface.ts#L10)
+[packages/core/src/components/logger-extension/logger.interface.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/logger-extension/logger.interface.ts#L16)

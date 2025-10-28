@@ -46,7 +46,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/theme.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/theme.repository.ts#L27)
+[services/scheduler-service/src/repositories/theme.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/theme.repository.ts#L27)
 
 ## Properties
 
@@ -56,7 +56,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/theme.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/theme.repository.ts#L35)
+[services/scheduler-service/src/repositories/theme.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/theme.repository.ts#L35)
 
 ___
 
@@ -73,7 +73,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/theme.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/theme.repository.ts#L31)
+[services/scheduler-service/src/repositories/theme.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/theme.repository.ts#L31)
 
 ## Methods
 

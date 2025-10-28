@@ -37,17 +37,17 @@
 
 #### Defined in
 
-[services/task-service/src/commands/end-task.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/commands/end-task.ts#L19)
+[services/task-service/src/commands/end-task.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/commands/end-task.ts#L19)
 
 ## Properties
 
 ### context
 
-• `Private` **context**: `Context`
+• `Private` `Readonly` **context**: `Context`
 
 #### Defined in
 
-[services/task-service/src/commands/end-task.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/commands/end-task.ts#L19)
+[services/task-service/src/commands/end-task.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/commands/end-task.ts#L19)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/commands/end-task.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/commands/end-task.ts#L18)
+[services/task-service/src/commands/end-task.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/commands/end-task.ts#L18)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/commands/end-task.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/commands/end-task.ts#L17)
+[services/task-service/src/commands/end-task.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/commands/end-task.ts#L17)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/commands/end-task.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/commands/end-task.ts#L16)
+[services/task-service/src/commands/end-task.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/commands/end-task.ts#L16)
 
 ## Methods
 
@@ -99,4 +99,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/commands/end-task.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/commands/end-task.ts#L22)
+[services/task-service/src/commands/end-task.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/commands/end-task.ts#L22)

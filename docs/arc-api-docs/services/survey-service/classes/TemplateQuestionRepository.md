@@ -56,7 +56,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/survey-service/src/repositories/template-questions.repository.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/template-questions.repository.ts#L37)
+[services/survey-service/src/repositories/template-questions.repository.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/template-questions.repository.ts#L37)
 
 ## Properties
 
@@ -66,7 +66,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/survey-service/src/repositories/template-questions.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/template-questions.repository.ts#L32)
+[services/survey-service/src/repositories/template-questions.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/template-questions.repository.ts#L32)
 
 ___
 
@@ -80,7 +80,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/survey-service/src/repositories/template-questions.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/template-questions.repository.ts#L42)
+[services/survey-service/src/repositories/template-questions.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/template-questions.repository.ts#L42)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/template-questions.repository.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/template-questions.repository.ts#L22)
+[services/survey-service/src/repositories/template-questions.repository.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/template-questions.repository.ts#L22)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/template-questions.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/template-questions.repository.ts#L40)
+[services/survey-service/src/repositories/template-questions.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/template-questions.repository.ts#L40)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/template-questions.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/template-questions.repository.ts#L27)
+[services/survey-service/src/repositories/template-questions.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/template-questions.repository.ts#L27)
 
 ## Methods
 

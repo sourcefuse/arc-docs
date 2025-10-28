@@ -68,13 +68,13 @@
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L42)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L42)
 
 ## Properties
 
 ### \_validateToken
 
-• `Private` **\_validateToken**: (`context`: [`RestServiceModifier`](RestServiceModifier.md)<`T`, `S`\>, `token?`: `string`) => `string`
+• `Private` `Readonly` **\_validateToken**: (`context`: [`RestServiceModifier`](RestServiceModifier.md)<`T`, `S`\>, `token?`: `string`) => `string`
 
 #### Type declaration
 
@@ -93,27 +93,27 @@
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L46)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L46)
 
 ___
 
 ### req
 
-• `Private` `Optional` **req**: `Request`<`ParamsDictionary`, `any`, `any`, `ParsedQs`, `Record`<`string`, `any`\>\>
+• `Private` `Optional` `Readonly` **req**: `Request`<`ParamsDictionary`, `any`, `any`, `ParsedQs`, `Record`<`string`, `any`\>\>
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L50)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L51)
 
 ___
 
 ### resolverGetter
 
-• `Private` **resolverGetter**: `Getter`<[`IRestResolver`](../interfaces/IRestResolver.md)<`T`, `S`\>[]\>
+• `Private` `Readonly` **resolverGetter**: `Getter`<[`IRestResolver`](../interfaces/IRestResolver.md)<`T`, `S`\>[]\>
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L44)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L44)
 
 ___
 
@@ -123,17 +123,17 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L41)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L41)
 
 ___
 
 ### token
 
-• `Private` **token**: `string`
+• `Private` `Readonly` **token**: `string`
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L40)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L40)
 
 ## Methods
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:303](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L303)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:304](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L304)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:223](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L223)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:224](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L224)
 
 ___
 
@@ -200,7 +200,7 @@ An object with two properties: restRelations and scopeMap.
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:177](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L177)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:178](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L178)
 
 ___
 
@@ -227,7 +227,7 @@ relations resolved
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:244](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L244)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:245](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L245)
 
 ___
 
@@ -249,7 +249,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:209](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L209)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:210](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L210)
 
 ___
 
@@ -271,7 +271,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:130](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L130)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L131)
 
 ___
 
@@ -293,7 +293,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L78)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L79)
 
 ___
 
@@ -315,7 +315,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:147](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L147)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:148](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L148)
 
 ___
 
@@ -337,7 +337,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:144](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L144)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:145](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L145)
 
 ___
 
@@ -362,7 +362,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:105](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L105)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:106](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L106)
 
 ___
 
@@ -387,7 +387,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L81)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L82)
 
 ___
 
@@ -410,7 +410,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:162](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L162)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:163](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L163)
 
 ___
 
@@ -433,7 +433,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:150](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L150)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:151](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L151)
 
 ___
 
@@ -456,7 +456,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:136](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L136)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:137](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L137)
 
 ___
 
@@ -474,4 +474,4 @@ Provider.value
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L56)
+[packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-service-modifier.provider.ts#L57)

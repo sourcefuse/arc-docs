@@ -1,17 +1,17 @@
 
 <!-- Generator: Widdershins v4.0.1 -->
 
-<h1 id="-sourceloop-reporting-service">@sourceloop/reporting-service v0.7.6</h1>
+<h1 id="-sourceloop-reporting-service">@sourceloop/reporting-service v7.0.2</h1>
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
-reporting-service
+reporting-service.
 
 Base URLs:
 
 * <a href="/">/</a>
 
-Email: <a href="mailto:sourav.bhargava@sourcefuse.com">Sourav Bhargava</a>
+Email: <a href="mailto:sourav.bhargava@sourcefuse.com">Sourav Bhargava</a> 
 
 <h1 id="-sourceloop-reporting-service-dashboardcontroller">DashboardController</h1>
 
@@ -695,7 +695,7 @@ fetch('/data-sets/{id}/fetch-data/count',
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|string|true|none|
-|filter|query|string|false|none|
+|filter|query|object|false|none|
 
 > Example responses
 
@@ -809,6 +809,7 @@ const inputBody = '{
   "id": "string",
   "name": "string",
   "dataSetQuery": {},
+  "dataSetQuerySQL": "string",
   "dataSetQueryHash": "string",
   "extId": "string",
   "extMetadata": {}
@@ -845,6 +846,7 @@ const inputBody = {
   "id": "string",
   "name": "string",
   "dataSetQuery": {},
+  "dataSetQuerySQL": "string",
   "dataSetQueryHash": "string",
   "extId": "string",
   "extMetadata": {}
@@ -888,6 +890,7 @@ fetch('/data-sets/{id}',
   "id": "string",
   "name": "string",
   "dataSetQuery": {},
+  "dataSetQuerySQL": "string",
   "dataSetQueryHash": "string",
   "extId": "string",
   "extMetadata": {}
@@ -1078,6 +1081,7 @@ const inputBody = '{
   "modifiedBy": "string",
   "name": "string",
   "dataSetQuery": {},
+  "dataSetQuerySQL": "string",
   "dataSetQueryHash": "string",
   "extId": "string",
   "extMetadata": {}
@@ -1113,6 +1117,7 @@ const inputBody = {
   "modifiedBy": "string",
   "name": "string",
   "dataSetQuery": {},
+  "dataSetQuerySQL": "string",
   "dataSetQueryHash": "string",
   "extId": "string",
   "extMetadata": {}
@@ -1155,6 +1160,7 @@ fetch('/data-sets',
   "modifiedBy": "string",
   "name": "string",
   "dataSetQuery": {},
+  "dataSetQuerySQL": "string",
   "dataSetQueryHash": "string",
   "extId": "string",
   "extMetadata": {}
@@ -3146,6 +3152,7 @@ This operation does not require authentication
   "modifiedBy": "string",
   "name": "string",
   "dataSetQuery": {},
+  "dataSetQuerySQL": "string",
   "dataSetQueryHash": "string",
   "extId": "string",
   "extMetadata": {}
@@ -3167,7 +3174,8 @@ NewDataSet
 |createdBy|string|false|none|none|
 |modifiedBy|string|false|none|none|
 |name|string|true|none|The name of the data set|
-|dataSetQuery|object|true|none|The query for the data set refer to StructuredQueryInterface|
+|dataSetQuery|object|false|none|The query for the data set refer to StructuredQueryInterface|
+|dataSetQuerySQL|string|false|none|The query for the data set refer to standard SQL|
 |dataSetQueryHash|string|false|none|The hash of the query for the data set|
 |extId|string|false|none|The external id of the data set|
 |extMetadata|object|false|none|The external metadata of the data set|
@@ -3191,6 +3199,7 @@ NewDataSet
   "id": "string",
   "name": "string",
   "dataSetQuery": {},
+  "dataSetQuerySQL": "string",
   "dataSetQueryHash": "string",
   "extId": "string",
   "extMetadata": {}
@@ -3214,6 +3223,7 @@ updateDataSet
 |id|string|false|none|The unique identifier for a data set|
 |name|string|false|none|The name of the data set|
 |dataSetQuery|object|false|none|The query for the data set refer to StructuredQueryInterface|
+|dataSetQuerySQL|string|false|none|The query for the data set refer to standard SQL|
 |dataSetQueryHash|string|false|none|The hash of the query for the data set|
 |extId|string|false|none|The external id of the data set|
 |extMetadata|object|false|none|The external metadata of the data set|
@@ -3237,6 +3247,7 @@ updateDataSet
   "id": "string",
   "name": "string",
   "dataSetQuery": {},
+  "dataSetQuerySQL": "string",
   "dataSetQueryHash": "string",
   "extId": "string",
   "extMetadata": {}
@@ -3259,7 +3270,8 @@ DataSet
 |modifiedBy|string|false|none|none|
 |id|string|false|none|The unique identifier for a data set|
 |name|string|true|none|The name of the data set|
-|dataSetQuery|object|true|none|The query for the data set refer to StructuredQueryInterface|
+|dataSetQuery|object|false|none|The query for the data set refer to StructuredQueryInterface|
+|dataSetQuerySQL|string|false|none|The query for the data set refer to standard SQL|
 |dataSetQueryHash|string|false|none|The hash of the query for the data set|
 |extId|string|false|none|The external id of the data set|
 |extMetadata|object|false|none|The external metadata of the data set|
@@ -4044,6 +4056,7 @@ loopback.Count
     "id": true,
     "name": true,
     "dataSetQuery": true,
+    "dataSetQuerySQL": true,
     "dataSetQueryHash": true,
     "extId": true,
     "extMetadata": true
@@ -4097,6 +4110,7 @@ oneOf
 |»» id|boolean|false|none|none|
 |»» name|boolean|false|none|none|
 |»» dataSetQuery|boolean|false|none|none|
+|»» dataSetQuerySQL|boolean|false|none|none|
 |»» dataSetQueryHash|boolean|false|none|none|
 |»» extId|boolean|false|none|none|
 |»» extMetadata|boolean|false|none|none|
@@ -4194,3 +4208,4 @@ xor
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |» *anonymous*|[string]|false|none|none|
+

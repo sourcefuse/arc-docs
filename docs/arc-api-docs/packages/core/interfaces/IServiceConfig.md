@@ -13,11 +13,11 @@
 
 ### useCustomSequence
 
-• **useCustomSequence**: `boolean`
+• `Optional` **useCustomSequence**: `boolean`
 
 #### Defined in
 
-[packages/core/src/types.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L10)
+[packages/core/src/types.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L12)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/types.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L11)
+[packages/core/src/types.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L13)

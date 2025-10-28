@@ -24,7 +24,7 @@
 | Name | Type |
 | :------ | :------ |
 | `value` | [`JSONValueType`](../modules.md#jsonvaluetype) |
-| `options?` | `DataTypeConversionOptions` |
+| `options?` | [`DataTypeConversionOptions`](../modules.md#datatypeconversionoptions) |
 
 #### Returns
 
@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts#L22)
+[services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts#L22)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `value` | [`JSONValueType`](../modules.md#jsonvaluetype) |
-| `options?` | `DataTypeConversionOptions` |
+| `options?` | [`DataTypeConversionOptions`](../modules.md#datatypeconversionoptions) |
 
 #### Returns
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts#L14)
+[services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts#L14)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `value` | [`JSONValueType`](../modules.md#jsonvaluetype) |
-| `options?` | `DataTypeConversionOptions` |
+| `options?` | [`DataTypeConversionOptions`](../modules.md#datatypeconversionoptions) |
 
 #### Returns
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts#L18)
+[services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts#L18)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `value` | [`JSONValueType`](../modules.md#jsonvaluetype) |
-| `options?` | `DataTypeConversionOptions` |
+| `options?` | [`DataTypeConversionOptions`](../modules.md#datatypeconversionoptions) |
 
 #### Returns
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts#L10)
+[services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts#L10)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `value` | [`JSONValueType`](../modules.md#jsonvaluetype) |
-| `options?` | `DataTypeConversionOptions` |
+| `options?` | [`DataTypeConversionOptions`](../modules.md#datatypeconversionoptions) |
 
 #### Returns
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts#L26)
+[services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts#L26)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `value` | [`JSONValueType`](../modules.md#jsonvaluetype) |
-| `options?` | `DataTypeConversionOptions` |
+| `options?` | [`DataTypeConversionOptions`](../modules.md#datatypeconversionoptions) |
 
 #### Returns
 
@@ -137,4 +137,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts#L6)
+[services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/data-store-data-type-conversion-functions.interface.ts#L6)

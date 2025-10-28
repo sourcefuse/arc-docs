@@ -17,6 +17,8 @@
 ### Properties
 
 - [actedOn](CustomFilter.md#actedon)
+- [actedOnList](CustomFilter.md#actedonlist)
+- [actionGroupList](CustomFilter.md#actiongrouplist)
 - [date](CustomFilter.md#date)
 - [deleted](CustomFilter.md#deleted)
 - [entityId](CustomFilter.md#entityid)
@@ -49,7 +51,30 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/audit-service/src/models/custom-filter.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/custom-filter.model.ts#L41)
+[services/audit-service/src/models/custom-filter.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/models/custom-filter.model.ts#L41)
+
+___
+
+### actedOnList
+
+• `Optional` **actedOnList**: `string`[]
+
+Both actedOnList and actionGroupList parameters accepts a
+list of values that you want to archive
+
+#### Defined in
+
+[services/audit-service/src/models/custom-filter.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/models/custom-filter.model.ts#L55)
+
+___
+
+### actionGroupList
+
+• `Optional` **actionGroupList**: `string`[]
+
+#### Defined in
+
+[services/audit-service/src/models/custom-filter.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/models/custom-filter.model.ts#L66)
 
 ___
 
@@ -66,7 +91,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/custom-filter.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/custom-filter.model.ts#L23)
+[services/audit-service/src/models/custom-filter.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/models/custom-filter.model.ts#L23)
 
 ___
 
@@ -76,7 +101,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/custom-filter.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/custom-filter.model.ts#L31)
+[services/audit-service/src/models/custom-filter.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/models/custom-filter.model.ts#L31)
 
 ___
 
@@ -86,4 +111,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/models/custom-filter.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/models/custom-filter.model.ts#L36)
+[services/audit-service/src/models/custom-filter.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/models/custom-filter.model.ts#L36)

@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[services/notification-service/src/providers/notification-user-settings.service.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/providers/notification-user-settings.service.ts#L22)
+[services/notification-service/src/providers/notification-user-settings.service.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/providers/notification-user-settings.service.ts#L22)
 
 ## Properties
 
@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[services/notification-service/src/providers/notification-user-settings.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/providers/notification-user-settings.service.ts#L27)
+[services/notification-service/src/providers/notification-user-settings.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/providers/notification-user-settings.service.ts#L27)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/providers/notification-user-settings.service.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/providers/notification-user-settings.service.ts#L25)
+[services/notification-service/src/providers/notification-user-settings.service.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/providers/notification-user-settings.service.ts#L25)
 
 ## Methods
 
@@ -80,4 +80,4 @@ Provider.value
 
 #### Defined in
 
-[services/notification-service/src/providers/notification-user-settings.service.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/providers/notification-user-settings.service.ts#L30)
+[services/notification-service/src/providers/notification-user-settings.service.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/providers/notification-user-settings.service.ts#L30)

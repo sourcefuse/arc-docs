@@ -38,7 +38,7 @@
 
 #### Defined in
 
-[services/survey-service/src/services/section.service.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/section.service.ts#L14)
+[services/survey-service/src/services/section.service.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/section.service.ts#L14)
 
 ## Properties
 
@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[services/survey-service/src/services/section.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/section.service.ts#L21)
+[services/survey-service/src/services/section.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/section.service.ts#L21)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/section.service.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/section.service.ts#L16)
+[services/survey-service/src/services/section.service.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/section.service.ts#L16)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/section.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/section.service.ts#L18)
+[services/survey-service/src/services/section.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/section.service.ts#L18)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/section.service.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/section.service.ts#L20)
+[services/survey-service/src/services/section.service.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/section.service.ts#L20)
 
 ## Methods
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/section.service.ts:119](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/section.service.ts#L119)
+[services/survey-service/src/services/section.service.ts:119](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/section.service.ts#L119)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/section.service.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/section.service.ts#L24)
+[services/survey-service/src/services/section.service.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/section.service.ts#L24)
 
 ___
 
@@ -140,4 +140,4 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/section.service.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/section.service.ts#L58)
+[services/survey-service/src/services/section.service.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/section.service.ts#L58)

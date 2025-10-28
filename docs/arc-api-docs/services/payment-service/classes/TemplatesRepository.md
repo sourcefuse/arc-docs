@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultCrudRepository`<[`Templates`](Templates.md), typeof [`id`](Templates.md#id)\>
+- `DefaultCrudRepository`<`Templates`, typeof [`id`](Templates.md#id)\>
 
   ↳ **`TemplatesRepository`**
 
@@ -14,17 +14,22 @@
 
 - [constructor](TemplatesRepository.md#constructor)
 
+### Properties
+
+- [templates](TemplatesRepository.md#templates)
+
 ## Constructors
 
 ### constructor
 
-• **new TemplatesRepository**(`dataSource`)
+• **new TemplatesRepository**(`dataSource`, `templates`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `dataSource` | `DataSource` |
+| `templates` | typeof `Entity` & { `prototype`: `Templates`  } |
 
 #### Overrides
 
@@ -35,4 +40,14 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[services/payment-service/src/repositories/templates.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/repositories/templates.repository.ts#L14)
+[services/payment-service/src/repositories/templates.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/repositories/templates.repository.ts#L14)
+
+## Properties
+
+### templates
+
+• `Private` `Readonly` **templates**: typeof `Entity` & { `prototype`: `Templates`  }
+
+#### Defined in
+
+[services/payment-service/src/repositories/templates.repository.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/repositories/templates.repository.ts#L18)

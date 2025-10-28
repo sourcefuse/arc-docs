@@ -22,12 +22,13 @@
 - [paymentConfig](PaymentServiceComponent.md#paymentconfig)
 - [providers](PaymentServiceComponent.md#providers)
 - [repositories](PaymentServiceComponent.md#repositories)
+- [tenantConfig](PaymentServiceComponent.md#tenantconfig)
 
 ## Constructors
 
 ### constructor
 
-• **new PaymentServiceComponent**(`application`, `paymentConfig?`, `options?`)
+• **new PaymentServiceComponent**(`application`, `paymentConfig?`, `options?`, `tenantConfig?`)
 
 #### Parameters
 
@@ -36,10 +37,11 @@
 | `application` | `Application` | `undefined` |
 | `paymentConfig?` | [`PaymentServiceConfig`](../interfaces/PaymentServiceConfig.md) | `undefined` |
 | `options` | [`PaymentServiceComponentOptions`](../interfaces/PaymentServiceComponentOptions.md) | `DEFAULT_PAYMENT_SERVICE_OPTIONS` |
+| `tenantConfig?` | `ITenantUtilitiesConfig` | `undefined` |
 
 #### Defined in
 
-[services/payment-service/src/component.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/component.ts#L84)
+[services/payment-service/src/component.ts:99](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/component.ts#L99)
 
 ## Properties
 
@@ -49,7 +51,7 @@
 
 #### Defined in
 
-[services/payment-service/src/component.ts:86](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/component.ts#L86)
+[services/payment-service/src/component.ts:101](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/component.ts#L101)
 
 ___
 
@@ -63,7 +65,7 @@ Component.bindings
 
 #### Defined in
 
-[services/payment-service/src/component.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/component.ts#L82)
+[services/payment-service/src/component.ts:97](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/component.ts#L97)
 
 ___
 
@@ -79,7 +81,7 @@ Component.controllers
 
 #### Defined in
 
-[services/payment-service/src/component.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/component.ts#L81)
+[services/payment-service/src/component.ts:96](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/component.ts#L96)
 
 ___
 
@@ -92,7 +94,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/payment-service/src/component.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/component.ts#L76)
+[services/payment-service/src/component.ts:91](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/component.ts#L91)
 
 ___
 
@@ -102,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/component.ts:90](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/component.ts#L90)
+[services/payment-service/src/component.ts:105](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/component.ts#L105)
 
 ___
 
@@ -112,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/component.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/component.ts#L88)
+[services/payment-service/src/component.ts:103](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/component.ts#L103)
 
 ___
 
@@ -126,7 +128,7 @@ Component.providers
 
 #### Defined in
 
-[services/payment-service/src/component.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/component.ts#L83)
+[services/payment-service/src/component.ts:98](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/component.ts#L98)
 
 ___
 
@@ -136,4 +138,14 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/component.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/component.ts#L70)
+[services/payment-service/src/component.ts:85](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/component.ts#L85)
+
+___
+
+### tenantConfig
+
+• `Private` `Optional` `Readonly` **tenantConfig**: `ITenantUtilitiesConfig`
+
+#### Defined in
+
+[services/payment-service/src/component.ts:107](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/component.ts#L107)

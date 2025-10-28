@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[packages/core/src/enums/locale-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/locale-key.enum.ts#L6)
+[packages/core/src/enums/locale-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/enums/locale-key.enum.ts#L6)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/enums/locale-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/locale-key.enum.ts#L7)
+[packages/core/src/enums/locale-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/enums/locale-key.enum.ts#L7)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/enums/locale-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/locale-key.enum.ts#L8)
+[packages/core/src/enums/locale-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/enums/locale-key.enum.ts#L8)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/enums/locale-key.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/locale-key.enum.ts#L9)
+[packages/core/src/enums/locale-key.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/enums/locale-key.enum.ts#L9)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/enums/locale-key.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/locale-key.enum.ts#L10)
+[packages/core/src/enums/locale-key.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/enums/locale-key.enum.ts#L10)
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/enums/locale-key.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/locale-key.enum.ts#L11)
+[packages/core/src/enums/locale-key.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/enums/locale-key.enum.ts#L11)

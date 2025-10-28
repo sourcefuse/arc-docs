@@ -48,7 +48,7 @@ node_modules/@loopback/repository/dist/model.d.ts:180
 
 #### Defined in
 
-[services/reporting-service/src/models/dashboard-widget.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/dashboard-widget.model.ts#L18)
+[services/reporting-service/src/models/dashboard-widget.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/dashboard-widget.model.ts#L18)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/dashboard-widget.model.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/dashboard-widget.model.ts#L11)
+[services/reporting-service/src/models/dashboard-widget.model.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/dashboard-widget.model.ts#L11)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/dashboard-widget.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/dashboard-widget.model.ts#L25)
+[services/reporting-service/src/models/dashboard-widget.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/dashboard-widget.model.ts#L25)

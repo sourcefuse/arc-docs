@@ -7,6 +7,9 @@
 ### Properties
 
 - [from](StructuredQueryInterface.md#from)
+- [groupBy](StructuredQueryInterface.md#groupby)
+- [having](StructuredQueryInterface.md#having)
+- [join](StructuredQueryInterface.md#join)
 - [limit](StructuredQueryInterface.md#limit)
 - [offset](StructuredQueryInterface.md#offset)
 - [orderBy](StructuredQueryInterface.md#orderby)
@@ -17,18 +20,41 @@
 
 ### from
 
-• **from**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `dataSources` | `string`[] |
-| `joins?` | { `dataSource`: `string` ; `on`: `string` ; `type`: `string`  }[] |
+• **from**: [`DataSource`](../modules.md#datasource)
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/structured-query.interface.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/structured-query.interface.ts#L30)
+[services/reporting-service/src/interfaces/structured-query.interface.ts:85](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L85)
+
+___
+
+### groupBy
+
+• `Optional` **groupBy**: [`FieldExpression`](../modules.md#fieldexpression)[]
+
+#### Defined in
+
+[services/reporting-service/src/interfaces/structured-query.interface.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L89)
+
+___
+
+### having
+
+• `Optional` **having**: [`WhereClause`](../modules.md#whereclause)
+
+#### Defined in
+
+[services/reporting-service/src/interfaces/structured-query.interface.ts:90](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L90)
+
+___
+
+### join
+
+• `Optional` **join**: [`JoinClause`](JoinClause.md)[]
+
+#### Defined in
+
+[services/reporting-service/src/interfaces/structured-query.interface.ts:86](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L86)
 
 ___
 
@@ -38,7 +64,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/structured-query.interface.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/structured-query.interface.ts#L43)
+[services/reporting-service/src/interfaces/structured-query.interface.ts:91](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L91)
 
 ___
 
@@ -48,35 +74,27 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/structured-query.interface.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/structured-query.interface.ts#L44)
+[services/reporting-service/src/interfaces/structured-query.interface.ts:92](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L92)
 
 ___
 
 ### orderBy
 
-• `Optional` **orderBy**: { `field`: `string` ; `order`: ``"asc"`` \| ``"desc"``  }[]
+• `Optional` **orderBy**: { `field`: [`FieldExpression`](../modules.md#fieldexpression) ; `order`: [`OrderDirection`](../modules.md#orderdirection)  }[]
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/structured-query.interface.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/structured-query.interface.ts#L39)
+[services/reporting-service/src/interfaces/structured-query.interface.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L88)
 
 ___
 
 ### select
 
-• **select**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `distinct?` | `boolean` |
-| `fields` | (`string` \| { `alias`: `string` ; `field`: `string`  })[] |
-| `functions?` | { `alias?`: `string` ; `field`: `string` ; `functionType`: ``"COUNT"`` \| ``"SUM"`` \| ``"AVG"`` \| ``"MIN"`` \| ``"MAX"``  }[] |
+• **select**: [`SelectClause`](SelectClause.md)
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/structured-query.interface.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/structured-query.interface.ts#L21)
+[services/reporting-service/src/interfaces/structured-query.interface.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L84)
 
 ___
 
@@ -86,4 +104,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/structured-query.interface.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/structured-query.interface.ts#L38)
+[services/reporting-service/src/interfaces/structured-query.interface.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/structured-query.interface.ts#L87)

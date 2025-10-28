@@ -50,7 +50,7 @@ Model.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/webhook-dto.model.ts:24](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/webhook-dto.model.ts#L24)
+[services/tenant-management-service/src/models/dtos/webhook-dto.model.ts:24](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/webhook-dto.model.ts#L24)
 
 ## Properties
 
@@ -60,7 +60,7 @@ Model.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/webhook-dto.model.ts:16](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/webhook-dto.model.ts#L16)
+[services/tenant-management-service/src/models/dtos/webhook-dto.model.ts:16](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/webhook-dto.model.ts#L16)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/webhook-dto.model.ts:10](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/webhook-dto.model.ts#L10)
+[services/tenant-management-service/src/models/dtos/webhook-dto.model.ts:10](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/webhook-dto.model.ts#L10)
 
 ___
 
@@ -80,4 +80,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/webhook-dto.model.ts:22](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/webhook-dto.model.ts#L22)
+[services/tenant-management-service/src/models/dtos/webhook-dto.model.ts:22](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/webhook-dto.model.ts#L22)

@@ -43,7 +43,7 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/tenant.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/tenant.repository.ts#L27)
+[services/authentication-service/src/repositories/tenant.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/tenant.repository.ts#L27)
 
 ## Properties
 
@@ -53,7 +53,7 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/tenant.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/tenant.repository.ts#L32)
+[services/authentication-service/src/repositories/tenant.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/tenant.repository.ts#L32)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/tenant.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/tenant.repository.ts#L30)
+[services/authentication-service/src/repositories/tenant.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/tenant.repository.ts#L30)
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/tenant.repository.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/tenant.repository.ts#L22)
+[services/authentication-service/src/repositories/tenant.repository.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/tenant.repository.ts#L22)

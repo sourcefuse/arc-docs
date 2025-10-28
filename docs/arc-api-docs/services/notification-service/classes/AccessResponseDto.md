@@ -47,7 +47,7 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/notification-service/src/models/access-response-dto.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/access-response-dto.model.ts#L18)
+[services/notification-service/src/models/access-response-dto.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/access-response-dto.model.ts#L18)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/access-response-dto.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/access-response-dto.model.ts#L13)
+[services/notification-service/src/models/access-response-dto.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/access-response-dto.model.ts#L13)

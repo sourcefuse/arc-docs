@@ -51,7 +51,7 @@ SoftDeleteEntity.constructor
 
 #### Defined in
 
-[packages/core/src/models/base-entity.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/models/base-entity.model.ts#L25)
+[packages/core/src/models/base-entity.model.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/models/base-entity.model.ts#L25)
 
 ## Properties
 
@@ -61,7 +61,7 @@ SoftDeleteEntity.constructor
 
 #### Defined in
 
-[packages/core/src/models/base-entity.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/models/base-entity.model.ts#L16)
+[packages/core/src/models/base-entity.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/models/base-entity.model.ts#L16)
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/models/base-entity.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/models/base-entity.model.ts#L23)
+[packages/core/src/models/base-entity.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/models/base-entity.model.ts#L23)

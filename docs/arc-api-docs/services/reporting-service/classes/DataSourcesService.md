@@ -37,27 +37,27 @@ provided in the environment variables.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sources.service.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sources.service.ts#L20)
+[services/reporting-service/src/services/data-sources.service.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sources.service.ts#L20)
 
 ## Properties
 
 ### dataStoreAdapter
 
-• `Private` **dataStoreAdapter**: [`DataStoreAdapter`](../interfaces/DataStoreAdapter.md)
+• `Private` `Readonly` **dataStoreAdapter**: [`DataStoreAdapter`](../interfaces/DataStoreAdapter.md)
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sources.service.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sources.service.ts#L22)
+[services/reporting-service/src/services/data-sources.service.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sources.service.ts#L22)
 
 ___
 
 ### dataTypeMap
 
-• `Private` **dataTypeMap**: `undefined` \| `Record`<`string`, `DataTypeMapping`\>
+• `Private` `Readonly` **dataTypeMap**: `undefined` \| `Record`<`string`, `DataTypeMapping`\>
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sources.service.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sources.service.ts#L24)
+[services/reporting-service/src/services/data-sources.service.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sources.service.ts#L24)
 
 ## Methods
 
@@ -76,7 +76,7 @@ the total count of data sources as a number.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sources.service.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sources.service.ts#L73)
+[services/reporting-service/src/services/data-sources.service.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sources.service.ts#L73)
 
 ___
 
@@ -101,7 +101,7 @@ a Promise that resolves to an array of ColumnForDataSourceModel objects.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sources.service.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sources.service.ts#L42)
+[services/reporting-service/src/services/data-sources.service.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sources.service.ts#L42)
 
 ___
 
@@ -120,4 +120,4 @@ a Promise that resolves to an array of DataSourceList objects.
 
 #### Defined in
 
-[services/reporting-service/src/services/data-sources.service.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/data-sources.service.ts#L32)
+[services/reporting-service/src/services/data-sources.service.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/data-sources.service.ts#L32)

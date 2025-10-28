@@ -23,17 +23,17 @@
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L11)
+[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L11)
 
 ___
 
 ### databaseType
 
-• **databaseType**: `DbName`
+• **databaseType**: [`DbName`](../enums/DbName.md)
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L12)
+[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L12)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L7)
+[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L7)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L10)
+[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L10)
 
 ___
 
@@ -63,27 +63,27 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L8)
+[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L8)
 
 ___
 
 ### strategy
 
-• **strategy**: `Strategies`
+• **strategy**: [`Strategies`](../enums/Strategies.md)
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L13)
+[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L13)
 
 ___
 
 ### type
 
-• **type**: `MYSQL` \| `POSTGRES`
+• **type**: [`MYSQL`](../enums/DbName.md#mysql) \| [`POSTGRES`](../enums/DbName.md#postgres)
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L6)
+[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L6)
 
 ___
 
@@ -93,4 +93,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L9)
+[services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/sequelize-data-store.config.interface.ts#L9)

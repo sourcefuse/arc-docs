@@ -23,6 +23,8 @@
 - [Gender](enums/Gender.md)
 - [HttpMethod](enums/HttpMethod.md)
 - [LocaleKey](enums/LocaleKey.md)
+- [MIddlewareGroup](enums/MIddlewareGroup.md)
+- [MiddlewareChain](enums/MiddlewareChain.md)
 - [RoleTypes](enums/RoleTypes.md)
 - [STATUS\_CODE](enums/STATUS_CODE.md)
 - [TenantStatus](enums/TenantStatus.md)
@@ -38,8 +40,10 @@
 - [BelongsToRestResolver](classes/BelongsToRestResolver.md)
 - [CasbinSecureSequence](classes/CasbinSecureSequence.md)
 - [CoreComponent](classes/CoreComponent.md)
+- [CoreControllerBooter](classes/CoreControllerBooter.md)
 - [CoreEntity](classes/CoreEntity.md)
 - [CoreModel](classes/CoreModel.md)
+- [CoreModelBooter](classes/CoreModelBooter.md)
 - [DefaultSoftCrudRepository](classes/DefaultSoftCrudRepository.md)
 - [DefaultTransactionalUserModifyRepository](classes/DefaultTransactionalUserModifyRepository.md)
 - [DefaultUserModifyCrudRepository](classes/DefaultUserModifyCrudRepository.md)
@@ -47,8 +51,11 @@
 - [HasManyRestResolver](classes/HasManyRestResolver.md)
 - [HasOneRestResolver](classes/HasOneRestResolver.md)
 - [HttpAuthenticationVerifierProvider](classes/HttpAuthenticationVerifierProvider.md)
+- [JwtKeys](classes/JwtKeys.md)
+- [JwtKeysRepository](classes/JwtKeysRepository.md)
 - [LoggerExtensionComponent](classes/LoggerExtensionComponent.md)
 - [ProxyBuilderComponent](classes/ProxyBuilderComponent.md)
+- [PublicKeysRepository](classes/PublicKeysRepository.md)
 - [RestServiceModifier](classes/RestServiceModifier.md)
 - [RevokedToken](classes/RevokedToken.md)
 - [RevokedTokenRepository](classes/RevokedTokenRepository.md)
@@ -66,6 +73,7 @@
 
 - [Adapter](interfaces/Adapter.md)
 - [BearerVerifierConfig](interfaces/BearerVerifierConfig.md)
+- [BooterOptionsWithKey](interfaces/BooterOptionsWithKey.md)
 - [CoreConfig](interfaces/CoreConfig.md)
 - [ExternalIdentifierEnabledEntity](interfaces/ExternalIdentifierEnabledEntity.md)
 - [IAuthUserWithPermissions](interfaces/IAuthUserWithPermissions.md)
@@ -77,6 +85,7 @@
 - [IRestResolver](interfaces/IRestResolver.md)
 - [IServiceConfig](interfaces/IServiceConfig.md)
 - [ITenantGuard](interfaces/ITenantGuard.md)
+- [ITenantUtilitiesConfig](interfaces/ITenantUtilitiesConfig.md)
 - [ITenantUtilitiesOptions](interfaces/ITenantUtilitiesOptions.md)
 - [IUserModifiableEntity](interfaces/IUserModifiableEntity.md)
 - [IUserModifiableEntityConfig](interfaces/IUserModifiableEntityConfig.md)
@@ -93,6 +102,7 @@
 - [EntityRestConfig](modules.md#entityrestconfig)
 - [EntityWithTenantId](modules.md#entitywithtenantid)
 - [HttpAuthenticationVerifier](modules.md#httpauthenticationverifier)
+- [HttpMethods](modules.md#httpmethods)
 - [ISwaggerAuthenticationConfig](modules.md#iswaggerauthenticationconfig)
 - [ModelConstructor](modules.md#modelconstructor)
 - [ModifiedRestService](modules.md#modifiedrestservice)
@@ -109,15 +119,19 @@
 - [RestRelationConfigWithModelClass](modules.md#restrelationconfigwithmodelclass)
 - [RestResolverParams](modules.md#restresolverparams)
 - [SecuritySchemeObjects](modules.md#securityschemeobjects)
+- [TenantIdEncryptionFn](modules.md#tenantidencryptionfn)
 
 ### Variables
 
 - [AuthCacheSourceName](modules.md#authcachesourcename)
+- [AuthDbSourceName](modules.md#authdbsourcename)
 - [BINDING\_PREFIX](modules.md#binding_prefix)
 - [CONTENT\_TYPE](modules.md#content_type)
+- [ControllerDefaults](modules.md#controllerdefaults)
 - [DisallowedRoles](modules.md#disallowedroles)
 - [ErrorCodes](modules.md#errorcodes)
 - [OPERATION\_SECURITY\_SPEC](modules.md#operation_security_spec)
+- [OVERRIDE\_MODEL\_SCHEMA\_KEY](modules.md#override_model_schema_key)
 - [OasKeyMap](modules.md#oaskeymap)
 - [SECURITY\_SCHEME\_SPEC](modules.md#security_scheme_spec)
 - [ServiceBuilderExtensionPoint](modules.md#servicebuilderextensionpoint)
@@ -127,12 +141,15 @@
 ### Functions
 
 - [BaseEntityMixin](modules.md#baseentitymixin)
+- [BooterBasePathMixin](modules.md#booterbasepathmixin)
 - [TenantGuardMixin](modules.md#tenantguardmixin)
 - [UserModifiableEntityMixin](modules.md#usermodifiableentitymixin)
+- [addTenantId](modules.md#addtenantid)
 - [asRestResolver](modules.md#asrestresolver)
 - [getAge](modules.md#getage)
 - [getDOBFromAge](modules.md#getdobfromage)
 - [getErrorString](modules.md#geterrorstring)
+- [getModelSchemaRefSF](modules.md#getmodelschemarefsf)
 - [isConfigWithKey](modules.md#isconfigwithkey)
 - [isConfigWithModelClass](modules.md#isconfigwithmodelclass)
 - [isEntityRestConfig](modules.md#isentityrestconfig)
@@ -166,7 +183,7 @@
 
 #### Defined in
 
-[packages/core/src/mixins/types.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/mixins/types.ts#L25)
+[packages/core/src/mixins/types.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/mixins/types.ts#L25)
 
 ___
 
@@ -183,7 +200,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/types.ts:101](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L101)
+[packages/core/src/components/tenant-utilities/types.ts:101](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/types.ts#L101)
 
 ___
 
@@ -214,7 +231,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L18)
+[packages/core/src/components/proxy-builder/services/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L18)
 
 ___
 
@@ -246,7 +263,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L81)
+[packages/core/src/components/proxy-builder/services/types.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L81)
 
 ___
 
@@ -271,7 +288,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L42)
+[packages/core/src/components/proxy-builder/services/types.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L42)
 
 ___
 
@@ -315,7 +332,7 @@ performed on the entity.
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/types.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/types.ts#L42)
+[packages/core/src/components/proxy-builder/types.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/types.ts#L42)
 
 ___
 
@@ -325,7 +342,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/types.ts#L18)
+[packages/core/src/components/tenant-utilities/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/types.ts#L18)
 
 ___
 
@@ -350,7 +367,17 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/swagger-authentication/types.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/swagger-authentication/types.ts#L5)
+[packages/core/src/components/swagger-authentication/types.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/swagger-authentication/types.ts#L5)
+
+___
+
+### HttpMethods
+
+Ƭ **HttpMethods**: ``"GET"`` \| ``"POST"`` \| ``"PUT"`` \| ``"PATCH"`` \| ``"DELETE"``
+
+#### Defined in
+
+[packages/core/src/components/proxy-builder/types.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/types.ts#L7)
 
 ___
 
@@ -360,7 +387,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/swagger-authentication/types.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/swagger-authentication/types.ts#L10)
+[packages/core/src/components/swagger-authentication/types.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/swagger-authentication/types.ts#L10)
 
 ___
 
@@ -376,7 +403,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:119](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L119)
+[packages/core/src/components/proxy-builder/services/types.ts:119](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L119)
 
 ___
 
@@ -406,7 +433,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L49)
+[packages/core/src/components/proxy-builder/services/types.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L49)
 
 ___
 
@@ -416,7 +443,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L14)
+[packages/core/src/types.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L16)
 
 ___
 
@@ -433,7 +460,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/keys.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/keys.ts#L25)
+[packages/core/src/keys.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/keys.ts#L34)
 
 ___
 
@@ -443,7 +470,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/types.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/types.ts#L8)
+[packages/core/src/components/proxy-builder/types.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/types.ts#L8)
 
 ___
 
@@ -460,7 +487,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:147](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L147)
+[packages/core/src/components/proxy-builder/services/types.ts:147](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L147)
 
 ___
 
@@ -484,7 +511,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:152](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L152)
+[packages/core/src/components/proxy-builder/services/types.ts:152](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L152)
 
 ___
 
@@ -510,7 +537,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:140](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L140)
+[packages/core/src/components/proxy-builder/services/types.ts:140](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L140)
 
 ___
 
@@ -537,13 +564,13 @@ written between `{}` .
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `functions` | { `[key: string]`: `string`[];  } | The `functions` property is an object that maps function names to an array of arguments for the request. Each of these arguments replaces a value in the `template` property that is written between `{}` |
-| `template` | { `body?`: `string` \| `AnyObject` ; `fullResponse?`: `boolean` ; `headers?`: { `[key: string]`: `string` \| `undefined`; `Authorization?`: ``"{token}"`` \| `string` ; `content-type?`: ``"application/json"`` \| `string`  } ; `method`: ``"GET"`` \| ``"POST"`` \| ``"PUT"`` \| ``"PATCH"`` \| ``"DELETE"`` ; `options?`: `AnyObject` & { `maxRedirects?`: `number`  } ; `path?`: `AnyObject` ; `query?`: `AnyObject` ; `responsePath?`: `string` ; `url`: `string`  } | The `template` property is an object that defines the details of a REST operation like method, url, headers, etc |
+| `template` | { `body?`: `string` \| `AnyObject` ; `fullResponse?`: `boolean` ; `headers?`: { `[key: string]`: `string` \| `undefined`; `Authorization?`: ``"{token}"`` \| `string` ; `content-type?`: ``"application/json"`` \| `string`  } ; `method`: [`HttpMethods`](modules.md#httpmethods) ; `options?`: `AnyObject` & { `maxRedirects?`: `number`  } ; `path?`: `AnyObject` ; `query?`: `AnyObject` ; `responsePath?`: `string` ; `url`: `string`  } | The `template` property is an object that defines the details of a REST operation like method, url, headers, etc |
 | `template.body?` | `string` \| `AnyObject` | - |
 | `template.fullResponse?` | `boolean` | - |
 | `template.headers?` | { `[key: string]`: `string` \| `undefined`; `Authorization?`: ``"{token}"`` \| `string` ; `content-type?`: ``"application/json"`` \| `string`  } | - |
 | `template.headers.Authorization?` | ``"{token}"`` \| `string` | - |
 | `template.headers.content-type?` | ``"application/json"`` \| `string` | - |
-| `template.method` | ``"GET"`` \| ``"POST"`` \| ``"PUT"`` \| ``"PATCH"`` \| ``"DELETE"`` | - |
+| `template.method` | [`HttpMethods`](modules.md#httpmethods) | - |
 | `template.options?` | `AnyObject` & { `maxRedirects?`: `number`  } | - |
 | `template.path?` | `AnyObject` | - |
 | `template.query?` | `AnyObject` | - |
@@ -552,7 +579,7 @@ written between `{}` .
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/types.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/types.ts#L82)
+[packages/core/src/components/proxy-builder/types.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/types.ts#L82)
 
 ___
 
@@ -562,7 +589,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L87)
+[packages/core/src/components/proxy-builder/services/types.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L87)
 
 ___
 
@@ -578,7 +605,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L100)
+[packages/core/src/components/proxy-builder/services/types.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L100)
 
 ___
 
@@ -594,7 +621,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:97](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L97)
+[packages/core/src/components/proxy-builder/services/types.ts:97](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L97)
 
 ___
 
@@ -610,7 +637,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:103](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L103)
+[packages/core/src/components/proxy-builder/services/types.ts:103](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L103)
 
 ___
 
@@ -637,7 +664,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:132](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L132)
+[packages/core/src/components/proxy-builder/services/types.ts:132](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L132)
 
 ___
 
@@ -651,7 +678,32 @@ ___
 
 #### Defined in
 
-[packages/core/src/security-specs.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/security-specs.ts#L7)
+[packages/core/src/security-specs.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/security-specs.ts#L7)
+
+___
+
+### TenantIdEncryptionFn
+
+Ƭ **TenantIdEncryptionFn**: (`secretKey`: `string`, `tenantId`: `string`) => `Promise`<`string`\>
+
+#### Type declaration
+
+▸ (`secretKey`, `tenantId`): `Promise`<`string`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `secretKey` | `string` |
+| `tenantId` | `string` |
+
+##### Returns
+
+`Promise`<`string`\>
+
+#### Defined in
+
+[packages/core/src/types.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L89)
 
 ## Variables
 
@@ -661,7 +713,17 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/types.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/types.ts#L5)
+[packages/core/src/types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L17)
+
+___
+
+### AuthDbSourceName
+
+• `Const` **AuthDbSourceName**: ``"AuthDB"``
+
+#### Defined in
+
+[packages/core/src/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L18)
 
 ___
 
@@ -671,7 +733,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/constants/globals.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/constants/globals.ts#L5)
+[packages/core/src/constants/globals.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/constants/globals.ts#L5)
 
 ___
 
@@ -690,7 +752,19 @@ ___
 
 #### Defined in
 
-[packages/core/src/constants/content-type.constant.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/constants/content-type.constant.ts#L5)
+[packages/core/src/constants/content-type.constant.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/constants/content-type.constant.ts#L5)
+
+___
+
+### ControllerDefaults
+
+• `Const` **ControllerDefaults**: `ArtifactOptions`
+
+Default ArtifactOptions for ControllerBooter.
+
+#### Defined in
+
+[packages/core/src/booters/core-controller.booter.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/booters/core-controller.booter.ts#L41)
 
 ___
 
@@ -700,7 +774,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/enums/roles.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/roles.enum.ts#L10)
+[packages/core/src/enums/roles.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/enums/roles.enum.ts#L10)
 
 ___
 
@@ -723,7 +797,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/enums/status-codes.enum.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/status-codes.enum.ts#L63)
+[packages/core/src/enums/status-codes.enum.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/enums/status-codes.enum.ts#L63)
 
 ___
 
@@ -733,7 +807,19 @@ ___
 
 #### Defined in
 
-[packages/core/src/security-specs.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/security-specs.ts#L6)
+[packages/core/src/security-specs.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/security-specs.ts#L6)
+
+___
+
+### OVERRIDE\_MODEL\_SCHEMA\_KEY
+
+• `Const` **OVERRIDE\_MODEL\_SCHEMA\_KEY**: `MetadataAccessor`<`Function`, `ClassDecorator`\>
+
+Metadata key used to set or retrieve repository JSON Schema
+
+#### Defined in
+
+[packages/core/src/build-schema.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/build-schema.ts#L13)
 
 ___
 
@@ -743,7 +829,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/enums/http-oas.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/enums/http-oas.enum.ts#L13)
+[packages/core/src/enums/http-oas.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/enums/http-oas.enum.ts#L13)
 
 ___
 
@@ -753,7 +839,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/security-specs.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/security-specs.ts#L10)
+[packages/core/src/security-specs.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/security-specs.ts#L10)
 
 ___
 
@@ -763,7 +849,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/keys.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/keys.ts#L23)
+[packages/core/src/components/proxy-builder/keys.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/keys.ts#L23)
 
 ___
 
@@ -773,7 +859,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/keys.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/keys.ts#L5)
+[packages/core/src/components/tenant-utilities/keys.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/keys.ts#L9)
 
 ___
 
@@ -783,7 +869,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/constants/globals.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/constants/globals.ts#L6)
+[packages/core/src/constants/globals.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/constants/globals.ts#L6)
 
 ## Functions
 
@@ -811,7 +897,37 @@ typeof `base` & [`AbstractConstructor`](modules.md#abstractconstructor)<[`IBaseE
 
 #### Defined in
 
-[packages/core/src/mixins/base-entity.mixin.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/mixins/base-entity.mixin.ts#L5)
+[packages/core/src/mixins/base-entity.mixin.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/mixins/base-entity.mixin.ts#L5)
+
+___
+
+### BooterBasePathMixin
+
+▸ **BooterBasePathMixin**<`T`\>(`booterClass`, `basePath`, `defaultOptions`): `T`
+
+Mixin to override `projectRoot` and `options` based on a given base path.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Constructor`<`Booter`\> |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `booterClass` | `T` | - |
+| `basePath` | `string` | The base path to be used as `projectRoot` |
+| `defaultOptions` | [`BooterOptionsWithKey`](interfaces/BooterOptionsWithKey.md) | Default options to merge with user config |
+
+#### Returns
+
+`T`
+
+#### Defined in
+
+[packages/core/src/mixins/booter.mixin.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/mixins/booter.mixin.ts#L27)
 
 ___
 
@@ -840,7 +956,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/mixins/tenant-guard.mixin.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/mixins/tenant-guard.mixin.ts#L20)
+[packages/core/src/components/tenant-utilities/mixins/tenant-guard.mixin.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/mixins/tenant-guard.mixin.ts#L20)
 
 ___
 
@@ -868,7 +984,33 @@ typeof `base` & [`AbstractConstructor`](modules.md#abstractconstructor)<[`IUserM
 
 #### Defined in
 
-[packages/core/src/mixins/user-modifiable-entity.mixin.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/mixins/user-modifiable-entity.mixin.ts#L10)
+[packages/core/src/mixins/user-modifiable-entity.mixin.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/mixins/user-modifiable-entity.mixin.ts#L10)
+
+___
+
+### addTenantId
+
+▸ **addTenantId**(`req`, `res`, `reqResponse`, `secretKey?`): `void`
+
+The function `addTenantId` extracts and decrypts a tenant ID from the request headers and adds it to
+the response object.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `req` | `IncomingMessage` | The `req` parameter is of type `IncomingMessage`, which represents an incoming HTTP request. |
+| `res` | `ServerResponse`<`IncomingMessage`\> | The `res` parameter is used to send the response back to the client after processing the request. |
+| `reqResponse` | `AnyObject`<`any`\> | In the provided function, the 'tenant-id' property of reqResponse is being set based on the 'tenant-id' header value from the incoming request. |
+| `secretKey?` | `string` | The `secretKey` parameter in the `addTenantId` function is an optional parameter of type `string`. It is used for decrypting the `tenant-id` value if provided. If the `secretKey` is not provided, the `tenant-id` value is directly assigned to `req |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[packages/core/src/types.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L72)
 
 ___
 
@@ -882,7 +1024,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/constants.ts:150](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/constants.ts#L150)
+[packages/core/src/components/proxy-builder/constants.ts:150](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/constants.ts#L150)
 
 ___
 
@@ -902,7 +1044,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/utils.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/utils.ts#L23)
+[packages/core/src/utils.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/utils.ts#L23)
 
 ___
 
@@ -922,7 +1064,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/utils.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/utils.ts#L29)
+[packages/core/src/utils.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/utils.ts#L29)
 
 ___
 
@@ -942,7 +1084,34 @@ ___
 
 #### Defined in
 
-[packages/core/src/utils.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/utils.ts#L12)
+[packages/core/src/utils.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/utils.ts#L12)
+
+___
+
+### getModelSchemaRefSF
+
+▸ **getModelSchemaRefSF**<`T`\>(`modelCtor`, `options?`): `SchemaRef`
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `object` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `modelCtor` | `Function` & { `prototype`: `T`  } |
+| `options?` | `JsonSchemaOptions`<`T`\> |
+
+#### Returns
+
+`SchemaRef`
+
+#### Defined in
+
+[packages/core/src/build-schema.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/build-schema.ts#L18)
 
 ___
 
@@ -962,7 +1131,7 @@ config is Object
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:107](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L107)
+[packages/core/src/components/proxy-builder/services/types.ts:107](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L107)
 
 ___
 
@@ -982,7 +1151,7 @@ config is Object
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L113)
+[packages/core/src/components/proxy-builder/services/types.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L113)
 
 ___
 
@@ -1002,7 +1171,7 @@ config is EntityRestConfig
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/types.ts#L22)
+[packages/core/src/components/proxy-builder/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/types.ts#L22)
 
 ___
 
@@ -1022,7 +1191,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/utils.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/utils.ts#L34)
+[packages/core/src/utils.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/utils.ts#L34)
 
 ___
 
@@ -1042,7 +1211,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/utils.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/utils.ts#L40)
+[packages/core/src/utils.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/utils.ts#L40)
 
 ___
 
@@ -1062,7 +1231,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/constants.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/constants.ts#L10)
+[packages/core/src/components/proxy-builder/constants.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/constants.ts#L10)
 
 ___
 
@@ -1117,7 +1286,7 @@ Usage - JavaScript:
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/decorators/rest-proxy.decorator.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/decorators/rest-proxy.decorator.ts#L9)
+[packages/core/src/components/proxy-builder/decorators/rest-proxy.decorator.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/decorators/rest-proxy.decorator.ts#L9)
 
 ___
 
@@ -1155,4 +1324,4 @@ to the given repository class.
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/decorators/tenant-guard.decorator.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/decorators/tenant-guard.decorator.ts#L11)
+[packages/core/src/components/tenant-utilities/decorators/tenant-guard.decorator.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/decorators/tenant-guard.decorator.ts#L11)

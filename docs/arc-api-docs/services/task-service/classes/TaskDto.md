@@ -48,7 +48,7 @@ node_modules/@loopback/repository/dist/model.d.ts:180
 
 #### Defined in
 
-[services/task-service/src/models/task-dto.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task-dto.model.ts#L24)
+[services/task-service/src/models/task-dto.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task-dto.model.ts#L24)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task-dto.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task-dto.model.ts#L17)
+[services/task-service/src/models/task-dto.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task-dto.model.ts#L17)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task-dto.model.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task-dto.model.ts#L10)
+[services/task-service/src/models/task-dto.model.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task-dto.model.ts#L10)

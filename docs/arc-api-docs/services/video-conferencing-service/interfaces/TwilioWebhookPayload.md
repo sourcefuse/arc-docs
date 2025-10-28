@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/types.ts#L63)
+[services/video-conferencing-service/src/providers/twilio/types.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/types.ts#L63)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/types.ts:135](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/types.ts#L135)
+[services/video-conferencing-service/src/types.ts:135](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/types.ts#L135)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/types.ts#L72)
+[services/video-conferencing-service/src/providers/twilio/types.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/types.ts#L72)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/types.ts#L70)
+[services/video-conferencing-service/src/providers/twilio/types.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/types.ts#L70)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/types.ts#L71)
+[services/video-conferencing-service/src/providers/twilio/types.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/types.ts#L71)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/types.ts#L75)
+[services/video-conferencing-service/src/providers/twilio/types.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/types.ts#L75)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/types.ts#L73)
+[services/video-conferencing-service/src/providers/twilio/types.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/types.ts#L73)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/types.ts#L64)
+[services/video-conferencing-service/src/providers/twilio/types.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/types.ts#L64)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/types.ts#L65)
+[services/video-conferencing-service/src/providers/twilio/types.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/types.ts#L65)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/types.ts#L66)
+[services/video-conferencing-service/src/providers/twilio/types.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/types.ts#L66)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/types.ts#L67)
+[services/video-conferencing-service/src/providers/twilio/types.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/types.ts#L67)
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/types.ts#L74)
+[services/video-conferencing-service/src/providers/twilio/types.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/types.ts#L74)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/types.ts#L68)
+[services/video-conferencing-service/src/providers/twilio/types.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/types.ts#L68)
 
 ___
 
@@ -169,4 +169,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/providers/twilio/types.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/providers/twilio/types.ts#L69)
+[services/video-conferencing-service/src/providers/twilio/types.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/providers/twilio/types.ts#L69)

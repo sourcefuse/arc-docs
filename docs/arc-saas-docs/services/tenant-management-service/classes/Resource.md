@@ -56,7 +56,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/resource.model.ts:58](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/resource.model.ts#L58)
+[services/tenant-management-service/src/models/resource.model.ts:58](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/resource.model.ts#L58)
 
 ## Properties
 
@@ -70,7 +70,7 @@ ResourceData.externalIdentifier
 
 #### Defined in
 
-[services/tenant-management-service/src/models/resource.model.ts:30](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/resource.model.ts#L30)
+[services/tenant-management-service/src/models/resource.model.ts:30](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/resource.model.ts#L30)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/resource.model.ts:21](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/resource.model.ts#L21)
+[services/tenant-management-service/src/models/resource.model.ts:21](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/resource.model.ts#L21)
 
 ___
 
@@ -94,7 +94,7 @@ ResourceData.metadata
 
 #### Defined in
 
-[services/tenant-management-service/src/models/resource.model.ts:46](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/resource.model.ts#L46)
+[services/tenant-management-service/src/models/resource.model.ts:46](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/resource.model.ts#L46)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/resource.model.ts:56](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/resource.model.ts#L56)
+[services/tenant-management-service/src/models/resource.model.ts:56](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/resource.model.ts#L56)
 
 ___
 
@@ -118,4 +118,4 @@ ResourceData.type
 
 #### Defined in
 
-[services/tenant-management-service/src/models/resource.model.ts:38](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/resource.model.ts#L38)
+[services/tenant-management-service/src/models/resource.model.ts:38](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/resource.model.ts#L38)

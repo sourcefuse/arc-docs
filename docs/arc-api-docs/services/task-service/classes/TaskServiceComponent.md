@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[services/task-service/src/component.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/component.ts#L82)
+[services/task-service/src/component.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/component.ts#L83)
 
 ## Properties
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[services/task-service/src/component.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/component.ts#L84)
+[services/task-service/src/component.ts:85](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/component.ts#L85)
 
 ___
 
@@ -66,7 +66,7 @@ Component.bindings
 
 #### Defined in
 
-[services/task-service/src/component.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/component.ts#L81)
+[services/task-service/src/component.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/component.ts#L82)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/component.ts:86](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/component.ts#L86)
+[services/task-service/src/component.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/component.ts#L87)
 
 ___
 
@@ -92,7 +92,7 @@ Component.controllers
 
 #### Defined in
 
-[services/task-service/src/component.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/component.ts#L80)
+[services/task-service/src/component.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/component.ts#L81)
 
 ___
 
@@ -105,7 +105,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/task-service/src/component.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/component.ts#L71)
+[services/task-service/src/component.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/component.ts#L72)
 
 ___
 
@@ -119,7 +119,7 @@ Component.providers
 
 #### Defined in
 
-[services/task-service/src/component.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/component.ts#L73)
+[services/task-service/src/component.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/component.ts#L74)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/component.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/component.ts#L65)
+[services/task-service/src/component.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/component.ts#L66)
 
 ___
 
@@ -143,7 +143,7 @@ Component.services
 
 #### Defined in
 
-[services/task-service/src/component.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/component.ts#L75)
+[services/task-service/src/component.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/component.ts#L76)
 
 ## Methods
 
@@ -159,4 +159,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/task-service/src/component.ts:155](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/component.ts#L155)
+[services/task-service/src/component.ts:158](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/component.ts#L158)

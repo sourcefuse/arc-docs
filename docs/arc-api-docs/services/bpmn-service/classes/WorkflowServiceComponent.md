@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[services/bpmn-service/src/component.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/component.ts#L44)
+[services/bpmn-service/src/component.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/component.ts#L46)
 
 ## Properties
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[services/bpmn-service/src/component.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/component.ts#L46)
+[services/bpmn-service/src/component.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/component.ts#L48)
 
 ___
 
@@ -65,7 +65,7 @@ Component.bindings
 
 #### Defined in
 
-[services/bpmn-service/src/component.ts:104](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/component.ts#L104)
+[services/bpmn-service/src/component.ts:111](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/component.ts#L111)
 
 ___
 
@@ -81,7 +81,7 @@ Component.controllers
 
 #### Defined in
 
-[services/bpmn-service/src/component.ts:121](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/component.ts#L121)
+[services/bpmn-service/src/component.ts:128](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/component.ts#L128)
 
 ___
 
@@ -94,7 +94,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/bpmn-service/src/component.ts:116](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/component.ts#L116)
+[services/bpmn-service/src/component.ts:123](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/component.ts#L123)
 
 ___
 
@@ -108,7 +108,7 @@ Component.providers
 
 #### Defined in
 
-[services/bpmn-service/src/component.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/component.ts#L102)
+[services/bpmn-service/src/component.ts:109](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/component.ts#L109)
 
 ___
 
@@ -121,7 +121,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/bpmn-service/src/component.ts:110](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/component.ts#L110)
+[services/bpmn-service/src/component.ts:117](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/component.ts#L117)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/component.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/component.ts#L48)
+[services/bpmn-service/src/component.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/component.ts#L50)
 
 ## Methods
 
@@ -147,4 +147,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/bpmn-service/src/component.ts:127](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/component.ts#L127)
+[services/bpmn-service/src/component.ts:134](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/component.ts#L134)

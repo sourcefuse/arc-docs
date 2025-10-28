@@ -35,6 +35,7 @@
 - [modifiedBy](Task.md#modifiedby)
 - [modifiedOn](Task.md#modifiedon)
 - [name](Task.md#name)
+- [notes](Task.md#notes)
 - [priority](Task.md#priority)
 - [severity](Task.md#severity)
 - [startDate](Task.md#startdate)
@@ -76,7 +77,7 @@ packages/core/dist/models/base-entity.model.d.ts:6
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L88)
+[services/task-service/src/models/task.model.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L88)
 
 ___
 
@@ -114,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L36)
+[services/task-service/src/models/task.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L36)
 
 ___
 
@@ -124,7 +125,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L75)
+[services/task-service/src/models/task.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L75)
 
 ___
 
@@ -134,7 +135,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L82)
+[services/task-service/src/models/task.model.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L82)
 
 ___
 
@@ -144,7 +145,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:105](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L105)
+[services/task-service/src/models/task.model.ts:105](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L105)
 
 ___
 
@@ -154,7 +155,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L15)
+[services/task-service/src/models/task.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L15)
 
 ___
 
@@ -164,7 +165,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L22)
+[services/task-service/src/models/task.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L22)
 
 ___
 
@@ -174,7 +175,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:94](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L94)
+[services/task-service/src/models/task.model.ts:94](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L94)
 
 ___
 
@@ -212,7 +213,17 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L29)
+[services/task-service/src/models/task.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L29)
+
+___
+
+### notes
+
+• `Optional` **notes**: `string`
+
+#### Defined in
+
+[services/task-service/src/models/task.model.ts:111](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L111)
 
 ___
 
@@ -222,7 +233,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L49)
+[services/task-service/src/models/task.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L49)
 
 ___
 
@@ -232,7 +243,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L55)
+[services/task-service/src/models/task.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L55)
 
 ___
 
@@ -242,7 +253,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L68)
+[services/task-service/src/models/task.model.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L68)
 
 ___
 
@@ -252,7 +263,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L43)
+[services/task-service/src/models/task.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L43)
 
 ___
 
@@ -262,7 +273,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L61)
+[services/task-service/src/models/task.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L61)
 
 ___
 
@@ -272,4 +283,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/task.model.ts:99](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/task.model.ts#L99)
+[services/task-service/src/models/task.model.ts:99](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/task.model.ts#L99)

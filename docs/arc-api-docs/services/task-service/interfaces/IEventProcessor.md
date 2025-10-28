@@ -30,4 +30,4 @@
 
 #### Defined in
 
-[services/task-service/src/interfaces/i-event-processor.ts:4](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/interfaces/i-event-processor.ts#L4)
+[services/task-service/src/interfaces/i-event-processor.ts:4](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/interfaces/i-event-processor.ts#L4)

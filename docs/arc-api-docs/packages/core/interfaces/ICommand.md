@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[packages/core/src/command/command.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/command/command.interface.ts#L7)
+[packages/core/src/command/command.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/command/command.interface.ts#L7)
 
 ## Methods
 
@@ -34,4 +34,4 @@
 
 #### Defined in
 
-[packages/core/src/command/command.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/command/command.interface.ts#L8)
+[packages/core/src/command/command.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/command/command.interface.ts#L8)

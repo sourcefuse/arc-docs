@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/ingest-report-record.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/ingest-report-record.interface.ts#L8)
+[services/reporting-service/src/interfaces/ingest-report-record.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/ingest-report-record.interface.ts#L8)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/ingest-report-record.interface.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/ingest-report-record.interface.ts#L9)
+[services/reporting-service/src/interfaces/ingest-report-record.interface.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/ingest-report-record.interface.ts#L9)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/ingest-report-record.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/ingest-report-record.interface.ts#L6)
+[services/reporting-service/src/interfaces/ingest-report-record.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/ingest-report-record.interface.ts#L6)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/ingest-report-record.interface.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/ingest-report-record.interface.ts#L5)
+[services/reporting-service/src/interfaces/ingest-report-record.interface.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/ingest-report-record.interface.ts#L5)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/ingest-report-record.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/ingest-report-record.interface.ts#L7)
+[services/reporting-service/src/interfaces/ingest-report-record.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/ingest-report-record.interface.ts#L7)

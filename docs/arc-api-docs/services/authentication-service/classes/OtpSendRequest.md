@@ -48,7 +48,7 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/otp-send-request.dto.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/otp-send-request.dto.ts#L19)
+[services/authentication-service/src/modules/auth/models/otp-send-request.dto.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/otp-send-request.dto.ts#L19)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/otp-send-request.dto.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/otp-send-request.dto.ts#L27)
+[services/authentication-service/src/modules/auth/models/otp-send-request.dto.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/otp-send-request.dto.ts#L27)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/otp-send-request.dto.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/otp-send-request.dto.ts#L34)
+[services/authentication-service/src/modules/auth/models/otp-send-request.dto.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/otp-send-request.dto.ts#L34)

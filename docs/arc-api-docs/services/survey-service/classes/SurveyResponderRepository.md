@@ -57,7 +57,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-responder.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-responder.repository.ts#L40)
+[services/survey-service/src/repositories/survey-responder.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-responder.repository.ts#L40)
 
 ## Properties
 
@@ -71,7 +71,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-responder.repository.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-responder.repository.ts#L47)
+[services/survey-service/src/repositories/survey-responder.repository.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-responder.repository.ts#L47)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-responder.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-responder.repository.ts#L30)
+[services/survey-service/src/repositories/survey-responder.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-responder.repository.ts#L30)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-responder.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-responder.repository.ts#L35)
+[services/survey-service/src/repositories/survey-responder.repository.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-responder.repository.ts#L35)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-responder.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-responder.repository.ts#L45)
+[services/survey-service/src/repositories/survey-responder.repository.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-responder.repository.ts#L45)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-responder.repository.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-responder.repository.ts#L43)
+[services/survey-service/src/repositories/survey-responder.repository.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-responder.repository.ts#L43)
 
 ## Methods
 
@@ -136,7 +136,7 @@ DefaultUserModifyCrudRepository.create
 
 #### Defined in
 
-[services/survey-service/src/repositories/survey-responder.repository.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/survey-responder.repository.ts#L65)
+[services/survey-service/src/repositories/survey-responder.repository.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/survey-responder.repository.ts#L65)
 
 ___
 

@@ -16,6 +16,7 @@
 
 ### Properties
 
+- [clientId](OtpLoginRequest.md#clientid)
 - [key](OtpLoginRequest.md#key)
 - [otp](OtpLoginRequest.md#otp)
 
@@ -41,13 +42,23 @@ packages/core/dist/models/core-model.d.ts:3
 
 ## Properties
 
+### clientId
+
+• `Optional` **clientId**: `string`
+
+#### Defined in
+
+[services/authentication-service/src/modules/auth/models/otp-login-request.dto.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/otp-login-request.dto.ts#L28)
+
+___
+
 ### key
 
 • **key**: `string`
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/otp-login-request.dto.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/otp-login-request.dto.ts#L18)
+[services/authentication-service/src/modules/auth/models/otp-login-request.dto.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/otp-login-request.dto.ts#L18)
 
 ___
 
@@ -57,4 +68,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/otp-login-request.dto.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/otp-login-request.dto.ts#L25)
+[services/authentication-service/src/modules/auth/models/otp-login-request.dto.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/otp-login-request.dto.ts#L24)
