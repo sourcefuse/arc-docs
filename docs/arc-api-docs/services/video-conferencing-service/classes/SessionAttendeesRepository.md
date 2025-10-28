@@ -35,7 +35,7 @@
 | :------ | :------ |
 | `dataSource` | `DataSource` |
 | `getCurrentUser` | `Getter`<`IAuthUserWithPermissions`<`string`\>\> |
-| `getAuditLogRepository` | `Getter`<`AuditLogRepository`\> |
+| `getAuditLogRepository` | `Getter`<`AuditLogRepository`<`AuditLog`\>\> |
 
 #### Overrides
 
@@ -50,17 +50,17 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L30)
+[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L30)
 
 ## Properties
 
 ### getAuditLogRepository
 
-• **getAuditLogRepository**: `Getter`<`AuditLogRepository`\>
+• **getAuditLogRepository**: `Getter`<`AuditLogRepository`<`AuditLog`\>\>
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L36)
+[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L36)
 
 ___
 
@@ -81,7 +81,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L34)
+[services/video-conferencing-service/src/repositories/session-attendees.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/repositories/session-attendees.repository.ts#L34)
 
 ## Methods
 

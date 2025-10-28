@@ -53,7 +53,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/task-service/src/repositories/user-task.repository.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/repositories/user-task.repository.ts#L13)
+[services/task-service/src/repositories/user-task.repository.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/repositories/user-task.repository.ts#L13)
 
 ## Properties
 
@@ -73,11 +73,11 @@ ___
 
 ### userGetter
 
-• `Private` **userGetter**: `Getter`<`IAuthUserWithPermissions`<`string`\>\>
+• `Private` `Readonly` **userGetter**: `Getter`<`IAuthUserWithPermissions`<`string`\>\>
 
 #### Defined in
 
-[services/task-service/src/repositories/user-task.repository.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/repositories/user-task.repository.ts#L17)
+[services/task-service/src/repositories/user-task.repository.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/repositories/user-task.repository.ts#L17)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/repositories/user-task.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/repositories/user-task.repository.ts#L19)
+[services/task-service/src/repositories/user-task.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/repositories/user-task.repository.ts#L19)
 
 ## Methods
 

@@ -57,7 +57,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L21)
+[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L21)
 
 ## Properties
 
@@ -71,7 +71,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L16)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L16)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L20)
+[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L20)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L19)
+[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L19)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L17)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L17)
 
 ## Methods
 
@@ -133,7 +133,7 @@ The initialQuery is being returned.
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:196](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L196)
+[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:210](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L210)
 
 ___
 
@@ -162,7 +162,7 @@ The function `checkIfColumnsExists` returns a Promise that resolves to a boolean
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:158](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L158)
+[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:172](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L172)
 
 ___
 
@@ -192,7 +192,7 @@ value.
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:124](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L124)
+[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:138](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L138)
 
 ___
 
@@ -220,7 +220,7 @@ operation.
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:301](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L301)
+[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:315](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L315)
 
 ___
 
@@ -246,7 +246,7 @@ The function `generateColumnForTable` returns a promise that resolves to an arra
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:353](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L353)
+[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:366](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L366)
 
 ___
 
@@ -271,7 +271,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:340](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L340)
+[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:353](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L353)
 
 ___
 
@@ -300,7 +300,7 @@ a Promise that resolves to an array of objects of type `ColumnForDataSourceModel
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:92](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L92)
+[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:106](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L106)
 
 ___
 
@@ -308,15 +308,18 @@ ___
 
 ▸ **listdataSources**(): `Promise`<[`DataSourceList`](../interfaces/DataSourceList.md)[]\>
 
-The function "listdataSources" retrieves a list of table names and schemas from the database and
-returns them as an array of DataSourceList objects.
+This function retrieves a list of data sources from a database and formats them into an array of
+DataSourceList objects.
 
 #### Returns
 
 `Promise`<[`DataSourceList`](../interfaces/DataSourceList.md)[]\>
 
-The function `listdataSources` returns a Promise that resolves to an array of objects of
-type `DataSourceList`.
+The `listdataSources` function returns an array of objects with properties
+`dataSourceName` and `displayName`. Each object in the array represents a data source retrieved
+from the database query. The `dataSourceName` property is a combination of the `table_schema` and
+`table_name` values from the database query result, while the `displayName` property is also a
+combination of the `table_schema`
 
 #### Overrides
 
@@ -324,7 +327,7 @@ type `DataSourceList`.
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L40)
+[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L43)
 
 ___
 
@@ -355,7 +358,7 @@ The `manageRecord` function returns a Promise that resolves to an `AnyObject` ob
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:213](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L213)
+[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:227](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L227)
 
 ___
 
@@ -363,20 +366,21 @@ ___
 
 ▸ **query**(`queryObject`): `Promise`<`AnyObject`[]\>
 
-The function `query` executes a SQL query using Sequelize and returns the result as an array of
-objects.
+This TypeScript function asynchronously executes a query based on a provided query object or SQL
+string using Sequelize and returns the result as an array of objects.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `queryObject` | [`StructuredQueryInterface`](../interfaces/StructuredQueryInterface.md) | The queryObject parameter is an object that represents a structured query. It contains information such as the table to query, the columns to select, the conditions to filter the data, and any other relevant query parameters. |
+| `queryObject` | `string` \| [`StructuredQueryInterface`](../interfaces/StructuredQueryInterface.md) | The `queryObject` parameter in the `query` function can be either a `StructuredQueryInterface` object or a string representing a query. If the `queryObject` is not a string, it is first translated into a SQL query using the `translateQuery` method before executing the query using |
 
 #### Returns
 
 `Promise`<`AnyObject`[]\>
 
-The function `query` returns a promise that resolves to an array of `AnyObject` objects.
+The `query` function returns a Promise that resolves to an array of objects
+(`AnyObject[]`) representing the result of the executed query.
 
 #### Overrides
 
@@ -384,7 +388,7 @@ The function `query` returns a promise that resolves to an array of `AnyObject` 
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L70)
+[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L75)
 
 ___
 
@@ -408,7 +412,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L23)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L23)
 
 ___
 
@@ -432,7 +436,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L53)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L55)
 
 ___
 
@@ -460,4 +464,4 @@ operation.
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:245](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L245)
+[services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts:259](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/psql-sequelize-strategy.ts#L259)

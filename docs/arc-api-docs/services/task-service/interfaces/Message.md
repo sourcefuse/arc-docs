@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[services/task-service/src/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L23)
+[services/task-service/src/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L23)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/types.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L21)
+[services/task-service/src/types.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L21)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L20)
+[services/task-service/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L20)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L22)
+[services/task-service/src/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L22)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/types.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L24)
+[services/task-service/src/types.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L24)

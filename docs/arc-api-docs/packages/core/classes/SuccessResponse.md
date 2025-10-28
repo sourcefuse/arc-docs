@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[packages/core/src/models/core-model.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/models/core-model.ts#L9)
+[packages/core/src/models/core-model.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/models/core-model.ts#L9)
 
 ## Properties
 
@@ -50,4 +50,4 @@
 
 #### Defined in
 
-[packages/core/src/models/success-response.dto.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/models/success-response.dto.ts#L13)
+[packages/core/src/models/success-response.dto.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/models/success-response.dto.ts#L13)

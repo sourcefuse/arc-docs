@@ -50,7 +50,7 @@ node_modules/@loopback/repository/dist/model.d.ts:180
 
 #### Defined in
 
-[services/reporting-service/src/models/column-from-data-source.model.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/column-from-data-source.model.ts#L10)
+[services/reporting-service/src/models/column-from-data-source.model.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/column-from-data-source.model.ts#L10)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/column-from-data-source.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/column-from-data-source.model.ts#L16)
+[services/reporting-service/src/models/column-from-data-source.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/column-from-data-source.model.ts#L16)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/column-from-data-source.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/column-from-data-source.model.ts#L35)
+[services/reporting-service/src/models/column-from-data-source.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/column-from-data-source.model.ts#L35)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/column-from-data-source.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/column-from-data-source.model.ts#L22)
+[services/reporting-service/src/models/column-from-data-source.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/column-from-data-source.model.ts#L22)
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/column-from-data-source.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/column-from-data-source.model.ts#L28)
+[services/reporting-service/src/models/column-from-data-source.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/column-from-data-source.model.ts#L28)

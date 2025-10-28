@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/keycloak-authentication.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keycloak-authentication.provider.ts#L10)
+[services/authentication-service/src/providers/keycloak-authentication.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keycloak-authentication.provider.ts#L10)
 
 ## Properties
 
@@ -45,7 +45,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/keycloak-authentication.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keycloak-authentication.provider.ts#L10)
+[services/authentication-service/src/providers/keycloak-authentication.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keycloak-authentication.provider.ts#L10)
 
 ## Methods
 
@@ -65,7 +65,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/keycloak-authentication.provider.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keycloak-authentication.provider.ts#L14)
+[services/authentication-service/src/providers/keycloak-authentication.provider.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keycloak-authentication.provider.ts#L14)
 
 ___
 
@@ -83,4 +83,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/keycloak-authentication.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keycloak-authentication.provider.ts#L11)
+[services/authentication-service/src/providers/keycloak-authentication.provider.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keycloak-authentication.provider.ts#L11)

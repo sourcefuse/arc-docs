@@ -15,6 +15,7 @@
 - [limit](CustomFilter.md#limit)
 - [offset](CustomFilter.md#offset)
 - [order](CustomFilter.md#order)
+- [where](CustomFilter.md#where)
 
 ## Properties
 
@@ -24,7 +25,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/custom-filter.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/custom-filter.interface.ts#L6)
+[services/reporting-service/src/interfaces/custom-filter.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/custom-filter.interface.ts#L8)
 
 ___
 
@@ -34,7 +35,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/custom-filter.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/custom-filter.interface.ts#L7)
+[services/reporting-service/src/interfaces/custom-filter.interface.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/custom-filter.interface.ts#L9)
 
 ___
 
@@ -44,4 +45,14 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/custom-filter.interface.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/custom-filter.interface.ts#L5)
+[services/reporting-service/src/interfaces/custom-filter.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/custom-filter.interface.ts#L7)
+
+___
+
+### where
+
+• `Optional` **where**: [`WhereClause`](../modules.md#whereclause)
+
+#### Defined in
+
+[services/reporting-service/src/interfaces/custom-filter.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/custom-filter.interface.ts#L6)

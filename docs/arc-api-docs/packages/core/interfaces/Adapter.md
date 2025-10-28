@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[packages/core/src/adapters/i-adapter.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/adapters/i-adapter.ts#L9)
+[packages/core/src/adapters/i-adapter.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/adapters/i-adapter.ts#L9)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/adapters/i-adapter.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/adapters/i-adapter.ts#L8)
+[packages/core/src/adapters/i-adapter.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/adapters/i-adapter.ts#L8)

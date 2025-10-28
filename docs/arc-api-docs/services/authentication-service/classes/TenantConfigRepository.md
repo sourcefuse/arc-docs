@@ -42,7 +42,7 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/tenant-config.repository.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/tenant-config.repository.ts#L23)
+[services/authentication-service/src/repositories/tenant-config.repository.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/tenant-config.repository.ts#L23)
 
 ## Properties
 
@@ -52,7 +52,7 @@ DefaultSoftCrudRepository&lt;
 
 #### Defined in
 
-[services/authentication-service/src/repositories/tenant-config.repository.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/tenant-config.repository.ts#L18)
+[services/authentication-service/src/repositories/tenant-config.repository.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/tenant-config.repository.ts#L18)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/repositories/tenant-config.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/repositories/tenant-config.repository.ts#L26)
+[services/authentication-service/src/repositories/tenant-config.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/repositories/tenant-config.repository.ts#L26)

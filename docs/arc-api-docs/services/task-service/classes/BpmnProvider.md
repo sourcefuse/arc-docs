@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[services/task-service/src/providers/bpmn.provider.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/providers/bpmn.provider.ts#L18)
+[services/task-service/src/providers/bpmn.provider.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/providers/bpmn.provider.ts#L18)
 
 ## Properties
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[services/task-service/src/providers/bpmn.provider.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/providers/bpmn.provider.ts#L20)
+[services/task-service/src/providers/bpmn.provider.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/providers/bpmn.provider.ts#L20)
 
 ## Methods
 
@@ -52,9 +52,17 @@
 
 ▸ **value**(): `WorflowManager`<`AnyObject`, `AnyObject`\>
 
+The function returns an object with methods for interacting with workflows, including getting,
+starting, creating, updating, and deleting workflows and workflow versions using Camunda.
+
 #### Returns
 
 `WorflowManager`<`AnyObject`, `AnyObject`\>
+
+A `WorkflowManager` object is being returned, which contains methods for interacting with
+workflows such as `getWorkflowById`, `startWorkflow`, `createWorkflow`, `updateWorkflow`,
+`deleteWorkflowById`, and `deleteWorkflowVersionById`. Each method is asynchronous and performs
+operations related to workflows using the provided `camunda` service.
 
 #### Implementation of
 
@@ -62,4 +70,4 @@ Provider.value
 
 #### Defined in
 
-[services/task-service/src/providers/bpmn.provider.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/providers/bpmn.provider.ts#L22)
+[services/task-service/src/providers/bpmn.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/providers/bpmn.provider.ts#L30)

@@ -37,7 +37,7 @@ Model.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/provisioning-dto.model.ts:18](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/provisioning-dto.model.ts#L18)
+[services/tenant-management-service/src/models/dtos/provisioning-dto.model.ts:18](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/provisioning-dto.model.ts#L18)
 
 ## Properties
 
@@ -47,7 +47,7 @@ Model.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/provisioning-dto.model.ts:16](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/provisioning-dto.model.ts#L16)
+[services/tenant-management-service/src/models/dtos/provisioning-dto.model.ts:16](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/provisioning-dto.model.ts#L16)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/provisioning-dto.model.ts:11](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/provisioning-dto.model.ts#L11)
+[services/tenant-management-service/src/models/dtos/provisioning-dto.model.ts:11](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/provisioning-dto.model.ts#L11)

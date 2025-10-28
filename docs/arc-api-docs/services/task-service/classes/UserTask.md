@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/user-task.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/user-task.model.ts#L41)
+[services/task-service/src/models/user-task.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/user-task.model.ts#L41)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/user-task.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/user-task.model.ts#L15)
+[services/task-service/src/models/user-task.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/user-task.model.ts#L15)
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/user-task.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/user-task.model.ts#L21)
+[services/task-service/src/models/user-task.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/user-task.model.ts#L21)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/user-task.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/user-task.model.ts#L34)
+[services/task-service/src/models/user-task.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/user-task.model.ts#L34)
 
 ___
 
@@ -150,4 +150,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/user-task.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/user-task.model.ts#L28)
+[services/task-service/src/models/user-task.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/user-task.model.ts#L28)

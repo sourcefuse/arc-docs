@@ -50,7 +50,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/oidc-service/src/repositories/role.repository.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/repositories/role.repository.ts#L20)
+[services/oidc-service/src/repositories/role.repository.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/repositories/role.repository.ts#L20)
 
 ## Properties
 
@@ -64,7 +64,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/oidc-service/src/repositories/role.repository.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/repositories/role.repository.ts#L24)
+[services/oidc-service/src/repositories/role.repository.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/repositories/role.repository.ts#L24)
 
 ## Methods
 

@@ -44,7 +44,7 @@ Model.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:78](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L78)
+[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:78](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L78)
 
 ## Properties
 
@@ -54,7 +54,7 @@ Model.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:29](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L29)
+[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:29](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L29)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:35](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L35)
+[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:35](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L35)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:17](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L17)
+[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:17](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L17)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:53](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L53)
+[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:53](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L53)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:76](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L76)
+[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:76](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L76)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:63](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L63)
+[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:63](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L63)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:23](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L23)
+[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:23](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L23)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:41](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L41)
+[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:41](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L41)
 
 ___
 
@@ -134,4 +134,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:47](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L47)
+[services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts:47](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/dtos/tenant-onboard-dto.model.ts#L47)

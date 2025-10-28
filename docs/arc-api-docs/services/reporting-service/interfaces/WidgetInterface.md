@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/widget-interface.interface.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/widget-interface.interface.ts#L5)
+[services/reporting-service/src/interfaces/widget-interface.interface.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/widget-interface.interface.ts#L8)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/widget-interface.interface.ts:2](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/widget-interface.interface.ts#L2)
+[services/reporting-service/src/interfaces/widget-interface.interface.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/widget-interface.interface.ts#L5)
 
 ___
 
@@ -39,14 +39,14 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/widget-interface.interface.ts:4](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/widget-interface.interface.ts#L4)
+[services/reporting-service/src/interfaces/widget-interface.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/widget-interface.interface.ts#L7)
 
 ___
 
 ### type
 
-• **type**: ``"bar"`` \| ``"line"`` \| ``"pie"`` \| ``"table"``
+• **type**: [`ChartType`](../modules.md#charttype) \| [`NonChartType`](../modules.md#noncharttype)
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/widget-interface.interface.ts:3](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/widget-interface.interface.ts#L3)
+[services/reporting-service/src/interfaces/widget-interface.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/widget-interface.interface.ts#L6)

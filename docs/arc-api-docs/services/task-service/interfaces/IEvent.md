@@ -29,7 +29,7 @@
 
 #### Defined in
 
-[services/task-service/src/interfaces/i-event.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/interfaces/i-event.ts#L5)
+[services/task-service/src/interfaces/i-event.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/interfaces/i-event.ts#L5)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/interfaces/i-event.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/interfaces/i-event.ts#L6)
+[services/task-service/src/interfaces/i-event.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/interfaces/i-event.ts#L6)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/interfaces/i-event.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/interfaces/i-event.ts#L8)
+[services/task-service/src/interfaces/i-event.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/interfaces/i-event.ts#L8)
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/interfaces/i-event.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/interfaces/i-event.ts#L7)
+[services/task-service/src/interfaces/i-event.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/interfaces/i-event.ts#L7)

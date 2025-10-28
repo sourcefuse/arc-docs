@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts#L27)
+[services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts#L27)
 
 ## Properties
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts#L37)
+[services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts#L37)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts#L35)
+[services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts#L35)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts#L33)
+[services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts#L33)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts#L31)
+[services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts#L31)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts#L29)
+[services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts#L29)
 
 ## Methods
 
@@ -110,4 +110,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts#L40)
+[services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/apple-oauth2-verify.provider.ts#L40)

@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/data-store-adapter.interface.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/data-store-adapter.interface.ts#L22)
+[services/reporting-service/src/interfaces/data-store-adapter.interface.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/data-store-adapter.interface.ts#L22)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/data-store-adapter.interface.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/data-store-adapter.interface.ts#L21)
+[services/reporting-service/src/interfaces/data-store-adapter.interface.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/data-store-adapter.interface.ts#L21)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/data-store-adapter.interface.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/data-store-adapter.interface.ts#L20)
+[services/reporting-service/src/interfaces/data-store-adapter.interface.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/data-store-adapter.interface.ts#L20)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/data-store-adapter.interface.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/data-store-adapter.interface.ts#L17)
+[services/reporting-service/src/interfaces/data-store-adapter.interface.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/data-store-adapter.interface.ts#L17)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/data-store-adapter.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/data-store-adapter.interface.ts#L10)
+[services/reporting-service/src/interfaces/data-store-adapter.interface.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/data-store-adapter.interface.ts#L10)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/data-store-adapter.interface.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/data-store-adapter.interface.ts#L12)
+[services/reporting-service/src/interfaces/data-store-adapter.interface.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/data-store-adapter.interface.ts#L12)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `queryObject` | [`StructuredQueryInterface`](StructuredQueryInterface.md) |
+| `queryObject` | `string` \| [`StructuredQueryInterface`](StructuredQueryInterface.md) |
 
 #### Returns
 
@@ -148,4 +148,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/data-store-adapter.interface.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/data-store-adapter.interface.ts#L11)
+[services/reporting-service/src/interfaces/data-store-adapter.interface.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/data-store-adapter.interface.ts#L11)

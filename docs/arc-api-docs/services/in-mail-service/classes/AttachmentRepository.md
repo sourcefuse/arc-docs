@@ -51,7 +51,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/attachment.repository.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/repositories/attachment.repository.ts#L24)
+[services/in-mail-service/src/repositories/attachment.repository.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/in-mail-service/src/repositories/attachment.repository.ts#L24)
 
 ## Properties
 
@@ -65,7 +65,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/attachment.repository.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/repositories/attachment.repository.ts#L28)
+[services/in-mail-service/src/repositories/attachment.repository.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/in-mail-service/src/repositories/attachment.repository.ts#L28)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/repositories/attachment.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/repositories/attachment.repository.ts#L19)
+[services/in-mail-service/src/repositories/attachment.repository.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/in-mail-service/src/repositories/attachment.repository.ts#L19)
 
 ## Methods
 

@@ -38,27 +38,27 @@
 
 #### Defined in
 
-[services/oidc-service/src/providers/oidc.provider.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/providers/oidc.provider.ts#L52)
+[services/oidc-service/src/providers/oidc.provider.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/providers/oidc.provider.ts#L52)
 
 ## Properties
 
 ### authClientRepository
 
-• `Private` **authClientRepository**: [`AuthClientRepository`](AuthClientRepository.md)
+• `Private` `Readonly` **authClientRepository**: [`AuthClientRepository`](AuthClientRepository.md)
 
 #### Defined in
 
-[services/oidc-service/src/providers/oidc.provider.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/providers/oidc.provider.ts#L54)
+[services/oidc-service/src/providers/oidc.provider.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/providers/oidc.provider.ts#L54)
 
 ___
 
 ### findAccountProvider
 
-• `Private` **findAccountProvider**: [`FindAccountProvider`](FindAccountProvider.md)
+• `Private` `Readonly` **findAccountProvider**: [`FindAccountProvider`](FindAccountProvider.md)
 
 #### Defined in
 
-[services/oidc-service/src/providers/oidc.provider.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/providers/oidc.provider.ts#L56)
+[services/oidc-service/src/providers/oidc.provider.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/providers/oidc.provider.ts#L56)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/providers/oidc.provider.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/providers/oidc.provider.ts#L58)
+[services/oidc-service/src/providers/oidc.provider.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/providers/oidc.provider.ts#L58)
 
 ## Methods
 
@@ -86,4 +86,4 @@ Provider.value
 
 #### Defined in
 
-[services/oidc-service/src/providers/oidc.provider.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/providers/oidc.provider.ts#L61)
+[services/oidc-service/src/providers/oidc.provider.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/providers/oidc.provider.ts#L61)

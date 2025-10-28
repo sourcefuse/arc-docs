@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/payment-service/src/enums/template.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/enums/template.enum.ts#L10)
+[services/payment-service/src/enums/template.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/enums/template.enum.ts#L10)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/enums/template.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/enums/template.enum.ts#L9)
+[services/payment-service/src/enums/template.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/enums/template.enum.ts#L9)

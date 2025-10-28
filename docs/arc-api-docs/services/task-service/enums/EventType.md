@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[services/task-service/src/types.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L50)
+[services/task-service/src/types.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L50)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/types.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L49)
+[services/task-service/src/types.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L49)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/types.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L48)
+[services/task-service/src/types.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L48)

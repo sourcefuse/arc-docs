@@ -41,7 +41,7 @@ DefaultTransactionalRepository&lt;
 
 #### Defined in
 
-[services/notification-service/src/repositories/notification.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/repositories/notification.repository.ts#L26)
+[services/notification-service/src/repositories/notification.repository.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/repositories/notification.repository.ts#L26)
 
 ## Properties
 
@@ -51,7 +51,7 @@ DefaultTransactionalRepository&lt;
 
 #### Defined in
 
-[services/notification-service/src/repositories/notification.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/repositories/notification.repository.ts#L30)
+[services/notification-service/src/repositories/notification.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/repositories/notification.repository.ts#L30)
 
 ___
 
@@ -61,4 +61,4 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/repositories/notification.repository.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/repositories/notification.repository.ts#L21)
+[services/notification-service/src/repositories/notification.repository.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/repositories/notification.repository.ts#L21)

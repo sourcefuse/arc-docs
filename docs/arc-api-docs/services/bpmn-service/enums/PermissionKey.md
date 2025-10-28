@@ -10,6 +10,8 @@
 - [CreateWorkflowNum](PermissionKey.md#createworkflownum)
 - [DeleteWorkflow](PermissionKey.md#deleteworkflow)
 - [DeleteWorkflowNum](PermissionKey.md#deleteworkflownum)
+- [ExecuteWorkflow](PermissionKey.md#executeworkflow)
+- [ExecuteWorkflowNum](PermissionKey.md#executeworkflownum)
 - [UpdateWorkflow](PermissionKey.md#updateworkflow)
 - [UpdateWorkflowNum](PermissionKey.md#updateworkflownum)
 - [ViewWorkflow](PermissionKey.md#viewworkflow)
@@ -23,7 +25,7 @@
 
 #### Defined in
 
-[services/bpmn-service/src/enums/permission-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/enums/permission-key.enum.ts#L7)
+[services/bpmn-service/src/enums/permission-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/enums/permission-key.enum.ts#L7)
 
 ___
 
@@ -33,7 +35,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/enums/permission-key.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/enums/permission-key.enum.ts#L11)
+[services/bpmn-service/src/enums/permission-key.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/enums/permission-key.enum.ts#L12)
 
 ___
 
@@ -43,7 +45,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/enums/permission-key.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/enums/permission-key.enum.ts#L9)
+[services/bpmn-service/src/enums/permission-key.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/enums/permission-key.enum.ts#L9)
 
 ___
 
@@ -53,7 +55,27 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/enums/permission-key.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/enums/permission-key.enum.ts#L13)
+[services/bpmn-service/src/enums/permission-key.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/enums/permission-key.enum.ts#L14)
+
+___
+
+### ExecuteWorkflow
+
+• **ExecuteWorkflow** = ``"ExecuteWorkflow"``
+
+#### Defined in
+
+[services/bpmn-service/src/enums/permission-key.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/enums/permission-key.enum.ts#L10)
+
+___
+
+### ExecuteWorkflowNum
+
+• **ExecuteWorkflowNum** = ``"5"``
+
+#### Defined in
+
+[services/bpmn-service/src/enums/permission-key.enum.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/enums/permission-key.enum.ts#L15)
 
 ___
 
@@ -63,7 +85,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/enums/permission-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/enums/permission-key.enum.ts#L8)
+[services/bpmn-service/src/enums/permission-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/enums/permission-key.enum.ts#L8)
 
 ___
 
@@ -73,7 +95,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/enums/permission-key.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/enums/permission-key.enum.ts#L12)
+[services/bpmn-service/src/enums/permission-key.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/enums/permission-key.enum.ts#L13)
 
 ___
 
@@ -83,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/enums/permission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/enums/permission-key.enum.ts#L6)
+[services/bpmn-service/src/enums/permission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/enums/permission-key.enum.ts#L6)
 
 ___
 
@@ -93,4 +115,4 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/enums/permission-key.enum.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/enums/permission-key.enum.ts#L10)
+[services/bpmn-service/src/enums/permission-key.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/enums/permission-key.enum.ts#L11)

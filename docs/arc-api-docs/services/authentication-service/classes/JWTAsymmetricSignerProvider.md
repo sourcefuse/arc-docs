@@ -18,6 +18,10 @@
 
 - [constructor](JWTAsymmetricSignerProvider.md#constructor)
 
+### Properties
+
+- [jwtKeysRepo](JWTAsymmetricSignerProvider.md#jwtkeysrepo)
+
 ### Methods
 
 - [value](JWTAsymmetricSignerProvider.md#value)
@@ -26,13 +30,33 @@
 
 ### constructor
 
-• **new JWTAsymmetricSignerProvider**<`T`\>()
+• **new JWTAsymmetricSignerProvider**<`T`\>(`jwtKeysRepo`)
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
 | `T` | extends `string` \| `object` \| `Buffer` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jwtKeysRepo` | `JwtKeysRepository` |
+
+#### Defined in
+
+[services/authentication-service/src/providers/jwt-asymmetric-signer.provider.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/jwt-asymmetric-signer.provider.ts#L15)
+
+## Properties
+
+### jwtKeysRepo
+
+• **jwtKeysRepo**: `JwtKeysRepository`
+
+#### Defined in
+
+[services/authentication-service/src/providers/jwt-asymmetric-signer.provider.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/jwt-asymmetric-signer.provider.ts#L17)
 
 ## Methods
 
@@ -50,4 +74,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/jwt-asymmetric-signer.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/jwt-asymmetric-signer.provider.ts#L13)
+[services/authentication-service/src/providers/jwt-asymmetric-signer.provider.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/jwt-asymmetric-signer.provider.ts#L20)

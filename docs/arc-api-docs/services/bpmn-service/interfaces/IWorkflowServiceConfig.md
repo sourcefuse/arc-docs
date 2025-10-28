@@ -28,7 +28,7 @@ IServiceConfig.useCustomSequence
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/types.ts#L22)
+[services/bpmn-service/src/types/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/types/types.ts#L22)
 
 ___
 
@@ -42,7 +42,7 @@ IServiceConfig.useSequelize
 
 #### Defined in
 
-packages/core/dist/types.d.ts:8
+packages/core/dist/types.d.ts:6
 
 ___
 
@@ -52,4 +52,4 @@ ___
 
 #### Defined in
 
-[services/bpmn-service/src/types/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/types.ts#L23)
+[services/bpmn-service/src/types/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/types/types.ts#L23)

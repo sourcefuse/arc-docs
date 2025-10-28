@@ -60,7 +60,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L59)
+[services/scheduler-service/src/repositories/event.repository.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/event.repository.ts#L59)
 
 ## Properties
 
@@ -70,7 +70,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L71)
+[services/scheduler-service/src/repositories/event.repository.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/event.repository.ts#L71)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L54)
+[services/scheduler-service/src/repositories/event.repository.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/event.repository.ts#L54)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L69)
+[services/scheduler-service/src/repositories/event.repository.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/event.repository.ts#L69)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L49)
+[services/scheduler-service/src/repositories/event.repository.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/event.repository.ts#L49)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L39)
+[services/scheduler-service/src/repositories/event.repository.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/event.repository.ts#L39)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L67)
+[services/scheduler-service/src/repositories/event.repository.ts:67](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/event.repository.ts#L67)
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L73)
+[services/scheduler-service/src/repositories/event.repository.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/event.repository.ts#L73)
 
 ___
 
@@ -151,7 +151,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L63)
+[services/scheduler-service/src/repositories/event.repository.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/event.repository.ts#L63)
 
 ___
 
@@ -161,7 +161,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/event.repository.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/event.repository.ts#L44)
+[services/scheduler-service/src/repositories/event.repository.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/event.repository.ts#L44)
 
 ## Methods
 

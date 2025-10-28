@@ -30,7 +30,7 @@ Constructs a new instance of the NotificationService.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/notifications/notification.service.ts:17](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/notifications/notification.service.ts#L17)
+[services/tenant-management-service/src/services/notifications/notification.service.ts:17](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/notifications/notification.service.ts#L17)
 
 ## Methods
 
@@ -68,4 +68,4 @@ the result of the createNotification api call.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/notifications/notification.service.ts:32](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/notifications/notification.service.ts#L32)
+[services/tenant-management-service/src/services/notifications/notification.service.ts:32](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/notifications/notification.service.ts#L32)

@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[packages/core/src/models/core-model.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/models/core-model.ts#L9)
+[packages/core/src/models/core-model.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/models/core-model.ts#L9)
 
 ## Properties
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[packages/core/src/models/upsert-response.dto.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/models/upsert-response.dto.ts#L13)
+[packages/core/src/models/upsert-response.dto.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/models/upsert-response.dto.ts#L13)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/models/upsert-response.dto.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/models/upsert-response.dto.ts#L23)
+[packages/core/src/models/upsert-response.dto.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/models/upsert-response.dto.ts#L23)
 
 ___
 
@@ -72,4 +72,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/models/upsert-response.dto.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/models/upsert-response.dto.ts#L18)
+[packages/core/src/models/upsert-response.dto.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/models/upsert-response.dto.ts#L18)

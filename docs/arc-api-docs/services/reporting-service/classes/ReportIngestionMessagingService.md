@@ -53,47 +53,47 @@
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L25)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L25)
 
 ## Properties
 
 ### customTypeConverters
 
-• `Private` **customTypeConverters**: `Record`<`string`, [`CustomTypeConvertor`](../interfaces/CustomTypeConvertor.md)\>
+• `Private` `Readonly` **customTypeConverters**: `Record`<`string`, [`CustomTypeConvertor`](../interfaces/CustomTypeConvertor.md)\>
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L40)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L40)
 
 ___
 
 ### dataStoreAdapter
 
-• `Private` **dataStoreAdapter**: [`DataStoreAdapter`](../interfaces/DataStoreAdapter.md)
+• `Private` `Readonly` **dataStoreAdapter**: [`DataStoreAdapter`](../interfaces/DataStoreAdapter.md)
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L32)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L32)
 
 ___
 
 ### dataTypeMap
 
-• `Private` `Optional` **dataTypeMap**: `Record`<`string`, `DataTypeMapping`\>
+• `Private` `Optional` `Readonly` **dataTypeMap**: `Record`<`string`, `DataTypeMapping`\>
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L42)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L42)
 
 ___
 
 ### defaultListenerService
 
-• `Private` **defaultListenerService**: `DefaultListenerService`
+• `Private` `Readonly` **defaultListenerService**: `DefaultListenerService`
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L29)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L29)
 
 ___
 
@@ -103,47 +103,47 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L30)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L30)
 
 ___
 
 ### mappingsWithoutCustomListeners
 
-• `Private` **mappingsWithoutCustomListeners**: `Set`<`string`\>
+• `Private` `Readonly` **mappingsWithoutCustomListeners**: `Set`<`string`\>
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L36)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L36)
 
 ___
 
 ### serviceMapping
 
-• `Private` **serviceMapping**: `Record`<`string`, [`IngestionHandler`](../interfaces/IngestionHandler.md)\>
+• `Private` `Readonly` **serviceMapping**: `Record`<`string`, [`IngestionHandler`](../interfaces/IngestionHandler.md)\>
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L38)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L38)
 
 ___
 
 ### stateTrackingRepo
 
-• `Private` **stateTrackingRepo**: `StateTrackingRepository`
+• `Private` `Readonly` **stateTrackingRepo**: `StateTrackingRepository`
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L27)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L27)
 
 ___
 
 ### validIngestionMappings
 
-• `Private` **validIngestionMappings**: `Record`<`string`, [`IngestionMapping`](IngestionMapping.md)\>
+• `Private` `Readonly` **validIngestionMappings**: `Record`<`string`, [`IngestionMapping`](IngestionMapping.md)\>
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L34)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L34)
 
 ## Methods
 
@@ -171,7 +171,7 @@ a Promise that resolves to an object of type AnyObject.
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:217](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L217)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:219](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L219)
 
 ___
 
@@ -196,7 +196,7 @@ a Promise that resolves to an IngestReportRecord.
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:137](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L137)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:137](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L137)
 
 ___
 
@@ -213,7 +213,7 @@ in `dataTypeMap`.
 | :------ | :------ | :------ |
 | `value` | [`JSONValueType`](../modules.md#jsonvaluetype) | The `value` parameter is the value that needs to be converted to a different data type. |
 | `dataType` | `string` | The `dataType` parameter is a string that represents the desired data type to convert the `value` to. It is used to look up the appropriate conversion function in the `dataTypeMap` object. |
-| `options?` | `DataTypeConversionOptions` | The `options` parameter is an optional object that contains additional configuration options for the data type conversion. It is of type `DataTypeConversionOptions`. |
+| `options?` | [`DataTypeConversionOptions`](../modules.md#datatypeconversionoptions) | The `options` parameter is an optional object that contains additional configuration options for the data type conversion. It is of type `DataTypeConversionOptions`. |
 
 #### Returns
 
@@ -226,7 +226,7 @@ the value directly.
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:271](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L271)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:273](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L273)
 
 ___
 
@@ -252,7 +252,7 @@ the variable "serviceToInvoke" if it is truthy, otherwise it returns the
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:300](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L300)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:302](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L302)
 
 ___
 
@@ -278,7 +278,7 @@ The function `processMessage` returns nothing (i.e., `undefined`).
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L100)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L100)
 
 ___
 
@@ -304,7 +304,7 @@ error.
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L60)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L60)
 
 ___
 
@@ -331,7 +331,7 @@ a Promise that resolves to a value of type JSONValueType.
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:193](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L193)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:195](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L195)
 
 ___
 
@@ -357,4 +357,4 @@ payload fails the validation.
 
 #### Defined in
 
-[services/reporting-service/src/services/report-ingestion-messaging.service.ts:325](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L325)
+[services/reporting-service/src/services/report-ingestion-messaging.service.ts:327](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/report-ingestion-messaging.service.ts#L327)

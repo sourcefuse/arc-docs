@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[services/in-mail-service/src/keys.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/keys.ts#L10)
+[services/in-mail-service/src/keys.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/in-mail-service/src/keys.ts#L10)

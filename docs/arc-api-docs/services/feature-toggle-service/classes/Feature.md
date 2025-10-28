@@ -22,9 +22,11 @@
 - [description](Feature.md#description)
 - [id](Feature.md#id)
 - [key](Feature.md#key)
+- [metadata](Feature.md#metadata)
 - [modifiedBy](Feature.md#modifiedby)
 - [modifiedOn](Feature.md#modifiedon)
 - [name](Feature.md#name)
+- [type](Feature.md#type)
 
 ## Constructors
 
@@ -78,11 +80,11 @@ ___
 
 ### defaultValue
 
-• **defaultValue**: `boolean`
+• **defaultValue**: `string`
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/models/feature.model.ts#L42)
+[services/feature-toggle-service/src/models/feature.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/models/feature.model.ts#L41)
 
 ___
 
@@ -92,7 +94,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/models/feature.model.ts#L35)
+[services/feature-toggle-service/src/models/feature.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/models/feature.model.ts#L35)
 
 ___
 
@@ -102,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/models/feature.model.ts#L17)
+[services/feature-toggle-service/src/models/feature.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/models/feature.model.ts#L17)
 
 ___
 
@@ -112,7 +114,17 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/models/feature.model.ts#L29)
+[services/feature-toggle-service/src/models/feature.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/models/feature.model.ts#L29)
+
+___
+
+### metadata
+
+• `Optional` **metadata**: `object`
+
+#### Defined in
+
+[services/feature-toggle-service/src/models/feature.model.ts:53](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/models/feature.model.ts#L53)
 
 ___
 
@@ -150,4 +162,14 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/models/feature.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/models/feature.model.ts#L23)
+[services/feature-toggle-service/src/models/feature.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/models/feature.model.ts#L23)
+
+___
+
+### type
+
+• **type**: `string`
+
+#### Defined in
+
+[services/feature-toggle-service/src/models/feature.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/models/feature.model.ts#L47)

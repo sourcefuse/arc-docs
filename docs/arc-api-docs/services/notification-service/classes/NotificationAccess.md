@@ -56,7 +56,7 @@ Config.options
 
 #### Defined in
 
-[services/notification-service/src/models/notification-access.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification-access.model.ts#L34)
+[services/notification-service/src/models/notification-access.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/notification-access.model.ts#L34)
 
 ___
 
@@ -70,7 +70,7 @@ Config.receiver
 
 #### Defined in
 
-[services/notification-service/src/models/notification-access.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification-access.model.ts#L22)
+[services/notification-service/src/models/notification-access.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/notification-access.model.ts#L22)
 
 ___
 
@@ -84,4 +84,4 @@ Config.type
 
 #### Defined in
 
-[services/notification-service/src/models/notification-access.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification-access.model.ts#L28)
+[services/notification-service/src/models/notification-access.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/notification-access.model.ts#L28)

@@ -55,7 +55,7 @@ packages/core/dist/models/core-entity.d.ts:3
 
 #### Defined in
 
-[services/task-service/src/models/event.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/event.model.ts#L29)
+[services/task-service/src/models/event.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/event.model.ts#L29)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/event.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/event.model.ts#L14)
+[services/task-service/src/models/event.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/event.model.ts#L14)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/event.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/event.model.ts#L22)
+[services/task-service/src/models/event.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/event.model.ts#L22)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/event.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/event.model.ts#L44)
+[services/task-service/src/models/event.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/event.model.ts#L44)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/event.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/event.model.ts#L36)
+[services/task-service/src/models/event.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/event.model.ts#L36)
 
 ___
 
@@ -121,4 +121,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/models/event.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/models/event.model.ts#L51)
+[services/task-service/src/models/event.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/models/event.model.ts#L51)

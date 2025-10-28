@@ -55,7 +55,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/task-service/src/repositories/task.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/repositories/task.repository.ts#L25)
+[services/task-service/src/repositories/task.repository.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/repositories/task.repository.ts#L25)
 
 ## Properties
 
@@ -79,17 +79,17 @@ ___
 
 #### Defined in
 
-[services/task-service/src/repositories/task.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/repositories/task.repository.ts#L33)
+[services/task-service/src/repositories/task.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/repositories/task.repository.ts#L33)
 
 ___
 
 ### userGetter
 
-• `Private` **userGetter**: `Getter`<`IAuthUserWithPermissions`<`string`, `string`, `string`\>\>
+• `Private` `Readonly` **userGetter**: `Getter`<`IAuthUserWithPermissions`<`string`, `string`, `string`\>\>
 
 #### Defined in
 
-[services/task-service/src/repositories/task.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/repositories/task.repository.ts#L31)
+[services/task-service/src/repositories/task.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/repositories/task.repository.ts#L31)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/repositories/task.repository.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/repositories/task.repository.ts#L21)
+[services/task-service/src/repositories/task.repository.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/repositories/task.repository.ts#L21)
 
 ## Methods
 

@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/services/ingestion-mappings.service.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/ingestion-mappings.service.ts#L7)
+[services/reporting-service/src/services/ingestion-mappings.service.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/ingestion-mappings.service.ts#L7)
 
 ## Properties
 
@@ -45,7 +45,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/services/ingestion-mappings.service.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/ingestion-mappings.service.ts#L9)
+[services/reporting-service/src/services/ingestion-mappings.service.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/ingestion-mappings.service.ts#L9)
 
 ## Methods
 
@@ -70,7 +70,7 @@ object.
 
 #### Defined in
 
-[services/reporting-service/src/services/ingestion-mappings.service.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/ingestion-mappings.service.ts#L65)
+[services/reporting-service/src/services/ingestion-mappings.service.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/ingestion-mappings.service.ts#L65)
 
 ___
 
@@ -95,7 +95,7 @@ either void or a Promise that resolves to void.
 
 #### Defined in
 
-[services/reporting-service/src/services/ingestion-mappings.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/ingestion-mappings.service.ts#L18)
+[services/reporting-service/src/services/ingestion-mappings.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/ingestion-mappings.service.ts#L18)
 
 ___
 
@@ -114,7 +114,7 @@ IngestionMappings objects.
 
 #### Defined in
 
-[services/reporting-service/src/services/ingestion-mappings.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/ingestion-mappings.service.ts#L37)
+[services/reporting-service/src/services/ingestion-mappings.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/ingestion-mappings.service.ts#L37)
 
 ___
 
@@ -139,7 +139,7 @@ object.
 
 #### Defined in
 
-[services/reporting-service/src/services/ingestion-mappings.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/ingestion-mappings.service.ts#L27)
+[services/reporting-service/src/services/ingestion-mappings.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/ingestion-mappings.service.ts#L27)
 
 ___
 
@@ -157,7 +157,7 @@ The `getCount()` function is returning a Promise that resolves to a `Count` obje
 
 #### Defined in
 
-[services/reporting-service/src/services/ingestion-mappings.service.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/ingestion-mappings.service.ts#L74)
+[services/reporting-service/src/services/ingestion-mappings.service.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/ingestion-mappings.service.ts#L74)
 
 ___
 
@@ -182,4 +182,4 @@ a Promise that resolves to void.
 
 #### Defined in
 
-[services/reporting-service/src/services/ingestion-mappings.service.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/ingestion-mappings.service.ts#L48)
+[services/reporting-service/src/services/ingestion-mappings.service.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/ingestion-mappings.service.ts#L48)

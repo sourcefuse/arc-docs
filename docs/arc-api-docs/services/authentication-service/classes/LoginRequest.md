@@ -49,7 +49,7 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/login-request.dto.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/login-request.dto.ts#L20)
+[services/authentication-service/src/modules/auth/models/login-request.dto.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/login-request.dto.ts#L20)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/login-request.dto.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/login-request.dto.ts#L26)
+[services/authentication-service/src/modules/auth/models/login-request.dto.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/login-request.dto.ts#L26)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/login-request.dto.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/login-request.dto.ts#L40)
+[services/authentication-service/src/modules/auth/models/login-request.dto.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/login-request.dto.ts#L40)
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/login-request.dto.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/login-request.dto.ts#L33)
+[services/authentication-service/src/modules/auth/models/login-request.dto.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/login-request.dto.ts#L33)

@@ -50,7 +50,7 @@ node_modules/@loopback/repository/dist/model.d.ts:180
 
 #### Defined in
 
-[services/reporting-service/src/models/ingestion-mapping.model.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/ingestion-mapping.model.ts#L62)
+[services/reporting-service/src/models/ingestion-mapping.model.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/ingestion-mapping.model.ts#L62)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/ingestion-mapping.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/ingestion-mapping.model.ts#L18)
+[services/reporting-service/src/models/ingestion-mapping.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/ingestion-mapping.model.ts#L18)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/ingestion-mapping.model.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/ingestion-mapping.model.ts#L72)
+[services/reporting-service/src/models/ingestion-mapping.model.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/ingestion-mapping.model.ts#L72)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/ingestion-mapping.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/ingestion-mapping.model.ts#L34)
+[services/reporting-service/src/models/ingestion-mapping.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/ingestion-mapping.model.ts#L34)
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/ingestion-mapping.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/ingestion-mapping.model.ts#L26)
+[services/reporting-service/src/models/ingestion-mapping.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/ingestion-mapping.model.ts#L26)

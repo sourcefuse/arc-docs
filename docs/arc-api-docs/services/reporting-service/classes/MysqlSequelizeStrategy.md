@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L16)
+[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L16)
 
 ## Properties
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L16)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L16)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L15)
+[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L15)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L17)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L17)
 
 ## Methods
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L44)
+[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L44)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L39)
+[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L39)
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L36)
+[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L36)
 
 ___
 
@@ -186,7 +186,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L30)
+[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L30)
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L24)
+[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L24)
 
 ___
 
@@ -230,7 +230,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L49)
+[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L49)
 
 ___
 
@@ -242,7 +242,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `queryObject` | [`StructuredQueryInterface`](../interfaces/StructuredQueryInterface.md) |
+| `queryObject` | `string` \| [`StructuredQueryInterface`](../interfaces/StructuredQueryInterface.md) |
 
 #### Returns
 
@@ -254,7 +254,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L27)
+[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L27)
 
 ___
 
@@ -278,7 +278,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L23)
+[services/reporting-service/src/strategies/sequelize/base-sequelize.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/base-sequelize.ts#L23)
 
 ___
 
@@ -302,4 +302,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L57)
+[services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/strategies/sequelize/mysql-sequelize-strategy.ts#L57)

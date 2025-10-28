@@ -21,6 +21,7 @@
 
 ### Properties
 
+- [config](TenantGuardService.md#config)
 - [getCurrentUser](TenantGuardService.md#getcurrentuser)
 
 ### Methods
@@ -52,7 +53,7 @@
 
 ### constructor
 
-• **new TenantGuardService**<`T`, `ID`\>(`getCurrentUser`)
+• **new TenantGuardService**<`T`, `ID`\>(`getCurrentUser`, `config?`)
 
 #### Type parameters
 
@@ -66,12 +67,23 @@
 | Name | Type |
 | :------ | :------ |
 | `getCurrentUser` | `Getter`<[`UserInToken`](../interfaces/UserInToken.md)\> |
+| `config?` | [`ITenantUtilitiesConfig`](../interfaces/ITenantUtilitiesConfig.md) |
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L21)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L27)
 
 ## Properties
+
+### config
+
+• `Private` `Optional` `Readonly` **config**: [`ITenantUtilitiesConfig`](../interfaces/ITenantUtilitiesConfig.md)
+
+#### Defined in
+
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L31)
+
+___
 
 ### getCurrentUser
 
@@ -79,7 +91,7 @@
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L23)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L29)
 
 ## Methods
 
@@ -105,7 +117,7 @@
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:139](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L139)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:150](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L150)
 
 ___
 
@@ -131,7 +143,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:130](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L130)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:141](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L141)
 
 ___
 
@@ -152,7 +164,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:168](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L168)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:179](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L179)
 
 ___
 
@@ -173,13 +185,13 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:161](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L161)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:172](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L172)
 
 ___
 
 ### buildWhere
 
-▸ `Private` **buildWhere**(`user`, `where?`, `id?`): `Where`<`T`\>
+▸ **buildWhere**(`user`, `where?`, `id?`): `Where`<`T`\>
 
 #### Parameters
 
@@ -195,7 +207,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:182](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L182)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:193](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L193)
 
 ___
 
@@ -215,7 +227,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:116](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L116)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:127](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L127)
 
 ___
 
@@ -239,7 +251,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L43)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L54)
 
 ___
 
@@ -263,7 +275,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L51)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L62)
 
 ___
 
@@ -293,7 +305,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L55)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L66)
 
 ___
 
@@ -317,7 +329,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:104](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L104)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:115](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L115)
 
 ___
 
@@ -341,7 +353,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:112](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L112)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:123](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L123)
 
 ___
 
@@ -365,7 +377,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L100)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:111](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L111)
 
 ___
 
@@ -389,7 +401,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L47)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L58)
 
 ___
 
@@ -413,7 +425,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L31)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L42)
 
 ___
 
@@ -438,7 +450,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L39)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L50)
 
 ___
 
@@ -462,7 +474,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L35)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L46)
 
 ___
 
@@ -487,7 +499,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L63)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L74)
 
 ___
 
@@ -511,7 +523,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L59)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L70)
 
 ___
 
@@ -529,7 +541,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L26)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L34)
 
 ___
 
@@ -553,7 +565,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L81)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:92](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L92)
 
 ___
 
@@ -578,7 +590,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L89)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L100)
 
 ___
 
@@ -609,4 +621,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:70](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L70)
+[packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/tenant-utilities/services/tenant-guard.service.ts#L81)

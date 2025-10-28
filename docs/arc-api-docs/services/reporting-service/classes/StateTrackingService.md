@@ -32,17 +32,17 @@
 
 #### Defined in
 
-[services/reporting-service/src/services/state-tracking.service.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/state-tracking.service.ts#L8)
+[services/reporting-service/src/services/state-tracking.service.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/state-tracking.service.ts#L8)
 
 ## Properties
 
 ### stateTrackingRepo
 
-• `Private` **stateTrackingRepo**: `StateTrackingRepository`
+• `Private` `Readonly` **stateTrackingRepo**: `StateTrackingRepository`
 
 #### Defined in
 
-[services/reporting-service/src/services/state-tracking.service.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/state-tracking.service.ts#L10)
+[services/reporting-service/src/services/state-tracking.service.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/state-tracking.service.ts#L10)
 
 ## Methods
 
@@ -69,7 +69,7 @@ match the specified criteria.
 
 #### Defined in
 
-[services/reporting-service/src/services/state-tracking.service.ts:98](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/state-tracking.service.ts#L98)
+[services/reporting-service/src/services/state-tracking.service.ts:98](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/state-tracking.service.ts#L98)
 
 ___
 
@@ -97,7 +97,7 @@ a Promise that resolves to an array of StateTracking objects.
 
 #### Defined in
 
-[services/reporting-service/src/services/state-tracking.service.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/state-tracking.service.ts#L66)
+[services/reporting-service/src/services/state-tracking.service.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/state-tracking.service.ts#L66)
 
 ___
 
@@ -125,4 +125,4 @@ matching record is found.
 
 #### Defined in
 
-[services/reporting-service/src/services/state-tracking.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/services/state-tracking.service.ts#L27)
+[services/reporting-service/src/services/state-tracking.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/services/state-tracking.service.ts#L27)

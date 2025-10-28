@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/tenant-management-service/src/providers/system-user.provider.ts:5](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/providers/system-user.provider.ts#L5)
+[services/tenant-management-service/src/providers/system-user.provider.ts:5](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/providers/system-user.provider.ts#L5)

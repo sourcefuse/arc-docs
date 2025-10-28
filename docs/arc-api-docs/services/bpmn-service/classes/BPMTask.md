@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[services/bpmn-service/src/types/bpm-task.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/bpm-task.ts#L8)
+[services/bpmn-service/src/types/bpm-task.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/types/bpm-task.ts#L8)
 
 ## Properties
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[services/bpmn-service/src/types/bpm-task.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/bpm-task.ts#L14)
+[services/bpmn-service/src/types/bpm-task.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/types/bpm-task.ts#L14)
 
 ## Methods
 
@@ -87,4 +87,4 @@
 
 #### Defined in
 
-[services/bpmn-service/src/types/bpm-task.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/bpmn-service/src/types/bpm-task.ts#L16)
+[services/bpmn-service/src/types/bpm-task.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/bpmn-service/src/types/bpm-task.ts#L16)

@@ -53,6 +53,9 @@
 - [handleAndOr](PsqlQueryBuilder.md#handleandor)
 - [handleKeys](PsqlQueryBuilder.md#handlekeys)
 - [handleObjectValue](PsqlQueryBuilder.md#handleobjectvalue)
+- [isDateType](PsqlQueryBuilder.md#isdatetype)
+- [isNumberType](PsqlQueryBuilder.md#isnumbertype)
+- [isStringType](PsqlQueryBuilder.md#isstringtype)
 - [limit](PsqlQueryBuilder.md#limit)
 - [order](PsqlQueryBuilder.md#order)
 - [paramString](PsqlQueryBuilder.md#paramstring)
@@ -90,7 +93,7 @@
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L46)
+[services/search-service/src/classes/base/query.builder.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L46)
 
 ## Properties
 
@@ -104,7 +107,7 @@
 
 #### Defined in
 
-[services/search-service/src/classes/psql/query.builder.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/psql/query.builder.ts#L14)
+[services/search-service/src/classes/psql/query.builder.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/psql/query.builder.ts#L14)
 
 ___
 
@@ -118,7 +121,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L29)
+[services/search-service/src/classes/base/query.builder.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L29)
 
 ___
 
@@ -132,7 +135,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L34)
+[services/search-service/src/classes/base/query.builder.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L34)
 
 ___
 
@@ -146,7 +149,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L30)
+[services/search-service/src/classes/base/query.builder.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L30)
 
 ___
 
@@ -160,7 +163,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L36)
+[services/search-service/src/classes/base/query.builder.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L36)
 
 ___
 
@@ -174,7 +177,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L31)
+[services/search-service/src/classes/base/query.builder.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L31)
 
 ___
 
@@ -188,7 +191,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L32)
+[services/search-service/src/classes/base/query.builder.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L32)
 
 ___
 
@@ -202,7 +205,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/psql/query.builder.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/psql/query.builder.ts#L13)
+[services/search-service/src/classes/psql/query.builder.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/psql/query.builder.ts#L13)
 
 ___
 
@@ -216,7 +219,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/psql/query.builder.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/psql/query.builder.ts#L12)
+[services/search-service/src/classes/psql/query.builder.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/psql/query.builder.ts#L12)
 
 ## Accessors
 
@@ -234,7 +237,7 @@ SearchQueryBuilder.placeholder
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L37)
+[services/search-service/src/classes/base/query.builder.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L37)
 
 • `Protected` `set` **placeholder**(`val`): `void`
 
@@ -254,7 +257,7 @@ SearchQueryBuilder.placeholder
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L41)
+[services/search-service/src/classes/base/query.builder.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L41)
 
 ## Methods
 
@@ -274,7 +277,7 @@ SearchQueryBuilder.placeholder
 
 #### Defined in
 
-[services/search-service/src/classes/psql/query.builder.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/psql/query.builder.ts#L80)
+[services/search-service/src/classes/psql/query.builder.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/psql/query.builder.ts#L80)
 
 ___
 
@@ -306,7 +309,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L58)
+[services/search-service/src/classes/base/query.builder.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L58)
 
 ___
 
@@ -314,18 +317,26 @@ ___
 
 ▸ **buildClauseFromExpress**(`values`, `separator`, `grouping`, `getPlaceholder`): [`Query`](../modules.md#query)
 
+The function `buildClauseFromExpress` constructs a SQL clause from an array of values, a separator,
+and other parameters.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `values` | [`ShortHandEqualType`](../modules.md#shorthandequaltype) \| [`Query`](../modules.md#query) \| ([`ShortHandEqualType`](../modules.md#shorthandequaltype) \| [`Query`](../modules.md#query))[] |
-| `separator` | `string` |
-| `grouping` | `boolean` |
-| `getPlaceholder` | () => `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `values` | [`ShortHandEqualType`](../modules.md#shorthandequaltype) \| [`Query`](../modules.md#query) \| ([`ShortHandEqualType`](../modules.md#shorthandequaltype) \| [`Query`](../modules.md#query))[] | The `values` parameter in the `buildClauseFromExpress` function can be one of the following types: |
+| `separator` | `string` | The `separator` parameter is a string that will be used to separate the values in the resulting clause. |
+| `grouping` | `boolean` | The `grouping` parameter in the `buildClauseFromExpress` function is a boolean flag that determines whether the generated SQL clause should be wrapped in parentheses for grouping purposes. If `grouping` is set to `true`, the SQL clause will be enclosed in parentheses. If `grouping` |
+| `getPlaceholder` | () => `string` | The `buildClauseFromExpress` function takes in four parameters: |
 
 #### Returns
 
 [`Query`](../modules.md#query)
+
+The `buildClauseFromExpress` function returns an object with `sql` and `params`
+properties. The `sql` property contains the generated SQL clause based on the input values,
+separator, and grouping settings. The `params` property contains an array of parameters used in the
+SQL clause.
 
 #### Inherited from
 
@@ -333,7 +344,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:527](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L527)
+[services/search-service/src/classes/base/query.builder.ts:568](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L568)
 
 ___
 
@@ -358,7 +369,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:368](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L368)
+[services/search-service/src/classes/base/query.builder.ts:376](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L376)
 
 ___
 
@@ -391,7 +402,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:463](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L463)
+[services/search-service/src/classes/base/query.builder.ts:487](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L487)
 
 ___
 
@@ -422,7 +433,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:179](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L179)
+[services/search-service/src/classes/base/query.builder.ts:181](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L181)
 
 ___
 
@@ -453,7 +464,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:132](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L132)
+[services/search-service/src/classes/base/query.builder.ts:134](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L134)
 
 ___
 
@@ -484,7 +495,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:144](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L144)
+[services/search-service/src/classes/base/query.builder.ts:146](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L146)
 
 ___
 
@@ -509,7 +520,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:391](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L391)
+[services/search-service/src/classes/base/query.builder.ts:399](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L399)
 
 ___
 
@@ -533,7 +544,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/psql/query.builder.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/psql/query.builder.ts#L64)
+[services/search-service/src/classes/psql/query.builder.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/psql/query.builder.ts#L64)
 
 ___
 
@@ -557,7 +568,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/psql/query.builder.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/psql/query.builder.ts#L74)
+[services/search-service/src/classes/psql/query.builder.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/psql/query.builder.ts#L74)
 
 ___
 
@@ -581,7 +592,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:563](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L563)
+[services/search-service/src/classes/base/query.builder.ts:603](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L603)
 
 ___
 
@@ -613,7 +624,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:312](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L312)
+[services/search-service/src/classes/base/query.builder.ts:320](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L320)
 
 ___
 
@@ -639,7 +650,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:269](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L269)
+[services/search-service/src/classes/base/query.builder.ts:269](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L269)
 
 ___
 
@@ -672,7 +683,81 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:343](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L343)
+[services/search-service/src/classes/base/query.builder.ts:351](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L351)
+
+___
+
+### isDateType
+
+▸ **isDateType**(`type`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `type` | `PropertyType` |
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+[SearchQueryBuilder](SearchQueryBuilder.md).[isDateType](SearchQueryBuilder.md#isdatetype)
+
+#### Defined in
+
+[services/search-service/src/classes/base/query.builder.ts:445](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L445)
+
+___
+
+### isNumberType
+
+▸ **isNumberType**(`type`, `val`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `type` | `PropertyType` |
+| `val` | [`PredicateValueType`](../modules.md#predicatevaluetype)<[`ShortHandEqualType`](../modules.md#shorthandequaltype)\> |
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+[SearchQueryBuilder](SearchQueryBuilder.md).[isNumberType](SearchQueryBuilder.md#isnumbertype)
+
+#### Defined in
+
+[services/search-service/src/classes/base/query.builder.ts:451](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L451)
+
+___
+
+### isStringType
+
+▸ **isStringType**(`type`, `val`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `type` | `PropertyType` |
+| `val` | [`PredicateValueType`](../modules.md#predicatevaluetype)<[`ShortHandEqualType`](../modules.md#shorthandequaltype)\> |
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+[SearchQueryBuilder](SearchQueryBuilder.md).[isStringType](SearchQueryBuilder.md#isstringtype)
+
+#### Defined in
+
+[services/search-service/src/classes/base/query.builder.ts:438](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L438)
 
 ___
 
@@ -690,7 +775,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L77)
+[services/search-service/src/classes/base/query.builder.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L77)
 
 ___
 
@@ -714,7 +799,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:102](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L102)
+[services/search-service/src/classes/base/query.builder.ts:104](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L104)
 
 ___
 
@@ -738,7 +823,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/psql/query.builder.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/psql/query.builder.ts#L52)
+[services/search-service/src/classes/psql/query.builder.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/psql/query.builder.ts#L52)
 
 ___
 
@@ -762,7 +847,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/psql/query.builder.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/psql/query.builder.ts#L56)
+[services/search-service/src/classes/psql/query.builder.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/psql/query.builder.ts#L56)
 
 ___
 
@@ -786,7 +871,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:383](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L383)
+[services/search-service/src/classes/base/query.builder.ts:391](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L391)
 
 ___
 
@@ -812,7 +897,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:212](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L212)
+[services/search-service/src/classes/base/query.builder.ts:214](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L214)
 
 ___
 
@@ -838,7 +923,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/psql/query.builder.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/psql/query.builder.ts#L16)
+[services/search-service/src/classes/psql/query.builder.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/psql/query.builder.ts#L16)
 
 ___
 
@@ -869,7 +954,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:447](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L447)
+[services/search-service/src/classes/base/query.builder.ts:471](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L471)
 
 ___
 
@@ -894,7 +979,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:398](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L398)
+[services/search-service/src/classes/base/query.builder.ts:406](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L406)
 
 ___
 
@@ -923,7 +1008,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:434](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L434)
+[services/search-service/src/classes/base/query.builder.ts:458](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L458)
 
 ___
 
@@ -959,4 +1044,4 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/base/query.builder.ts:255](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/base/query.builder.ts#L255)
+[services/search-service/src/classes/base/query.builder.ts:255](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/base/query.builder.ts#L255)

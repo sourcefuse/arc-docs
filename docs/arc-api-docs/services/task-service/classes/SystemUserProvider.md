@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/task-service/src/providers/system-user.provider.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/providers/system-user.provider.ts#L5)
+[services/task-service/src/providers/system-user.provider.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/providers/system-user.provider.ts#L5)

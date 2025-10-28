@@ -40,7 +40,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/subscription-service/src/models/billing-cycle.model.ts:40](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/billing-cycle.model.ts#L40)
+[services/subscription-service/src/models/billing-cycle.model.ts:40](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/billing-cycle.model.ts#L40)
 
 ## Properties
 
@@ -50,7 +50,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/subscription-service/src/models/billing-cycle.model.ts:20](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/billing-cycle.model.ts#L20)
+[services/subscription-service/src/models/billing-cycle.model.ts:20](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/billing-cycle.model.ts#L20)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/billing-cycle.model.ts:38](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/billing-cycle.model.ts#L38)
+[services/subscription-service/src/models/billing-cycle.model.ts:38](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/billing-cycle.model.ts#L38)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/billing-cycle.model.ts:26](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/billing-cycle.model.ts#L26)
+[services/subscription-service/src/models/billing-cycle.model.ts:26](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/billing-cycle.model.ts#L26)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/billing-cycle.model.ts:33](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/billing-cycle.model.ts#L33)
+[services/subscription-service/src/models/billing-cycle.model.ts:33](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/billing-cycle.model.ts#L33)
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/billing-cycle.model.ts:13](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/billing-cycle.model.ts#L13)
+[services/subscription-service/src/models/billing-cycle.model.ts:13](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/billing-cycle.model.ts#L13)

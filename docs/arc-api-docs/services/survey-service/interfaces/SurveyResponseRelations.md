@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/survey-service/src/models/survey-response.model.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/models/survey-response.model.ts#L74)
+[services/survey-service/src/models/survey-response.model.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/models/survey-response.model.ts#L74)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/models/survey-response.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/models/survey-response.model.ts#L75)
+[services/survey-service/src/models/survey-response.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/models/survey-response.model.ts#L75)

@@ -22,6 +22,7 @@
 
 - [config](SearchProvider.md#config)
 - [datasource](SearchProvider.md#datasource)
+- [modelProvider](SearchProvider.md#modelprovider)
 - [mySQLBuilder](SearchProvider.md#mysqlbuilder)
 - [psqlBuilder](SearchProvider.md#psqlbuilder)
 
@@ -33,7 +34,7 @@
 
 ### constructor
 
-• **new SearchProvider**<`T`\>(`config`, `datasource`, `mySQLBuilder`, `psqlBuilder`)
+• **new SearchProvider**<`T`\>(`config`, `datasource`, `mySQLBuilder`, `psqlBuilder`, `modelProvider`)
 
 #### Type parameters
 
@@ -49,10 +50,11 @@
 | `datasource` | `DataSource` |
 | `mySQLBuilder` | typeof [`MySqlQueryBuilder`](MySqlQueryBuilder.md) |
 | `psqlBuilder` | typeof [`PsqlQueryBuilder`](PsqlQueryBuilder.md) |
+| `modelProvider` | `ModelProviderFn` |
 
 #### Defined in
 
-[services/search-service/src/services/search.provider.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/services/search.provider.ts#L22)
+[services/search-service/src/services/search.provider.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/services/search.provider.ts#L18)
 
 ## Properties
 
@@ -62,7 +64,7 @@
 
 #### Defined in
 
-[services/search-service/src/services/search.provider.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/services/search.provider.ts#L24)
+[services/search-service/src/services/search.provider.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/services/search.provider.ts#L20)
 
 ___
 
@@ -72,7 +74,17 @@ ___
 
 #### Defined in
 
-[services/search-service/src/services/search.provider.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/services/search.provider.ts#L26)
+[services/search-service/src/services/search.provider.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/services/search.provider.ts#L22)
+
+___
+
+### modelProvider
+
+• `Private` `Readonly` **modelProvider**: `ModelProviderFn`
+
+#### Defined in
+
+[services/search-service/src/services/search.provider.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/services/search.provider.ts#L28)
 
 ___
 
@@ -82,7 +94,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/services/search.provider.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/services/search.provider.ts#L28)
+[services/search-service/src/services/search.provider.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/services/search.provider.ts#L24)
 
 ___
 
@@ -92,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/services/search.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/services/search.provider.ts#L30)
+[services/search-service/src/services/search.provider.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/services/search.provider.ts#L26)
 
 ## Methods
 
@@ -110,4 +122,4 @@ Provider.value
 
 #### Defined in
 
-[services/search-service/src/services/search.provider.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/services/search.provider.ts#L33)
+[services/search-service/src/services/search.provider.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/services/search.provider.ts#L31)

@@ -37,7 +37,7 @@
 
 #### Defined in
 
-[packages/core/src/models/core-model.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/models/core-model.ts#L9)
+[packages/core/src/models/core-model.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/models/core-model.ts#L9)
 
 ## Properties
 
@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[packages/core/src/models/value-response.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/models/value-response.model.ts#L16)
+[packages/core/src/models/value-response.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/models/value-response.model.ts#L16)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/models/value-response.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/models/value-response.model.ts#L24)
+[packages/core/src/models/value-response.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/models/value-response.model.ts#L24)

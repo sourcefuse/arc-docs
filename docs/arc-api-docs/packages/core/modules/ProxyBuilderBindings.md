@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/keys.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/keys.ts#L12)
+[packages/core/src/components/proxy-builder/keys.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/keys.ts#L12)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/keys.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/keys.ts#L15)
+[packages/core/src/components/proxy-builder/keys.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/keys.ts#L15)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/keys.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/keys.ts#L18)
+[packages/core/src/components/proxy-builder/keys.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/keys.ts#L18)

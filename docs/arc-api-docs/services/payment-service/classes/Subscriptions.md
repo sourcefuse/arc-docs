@@ -60,7 +60,7 @@ packages/core/dist/models/core-entity.d.ts:3
 
 #### Defined in
 
-[services/payment-service/src/models/subscriptions.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/subscriptions.model.ts#L28)
+[services/payment-service/src/models/subscriptions.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/subscriptions.model.ts#L31)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/subscriptions.model.ts:63](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/subscriptions.model.ts#L63)
+[services/payment-service/src/models/subscriptions.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/subscriptions.model.ts#L66)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/subscriptions.model.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/subscriptions.model.ts#L69)
+[services/payment-service/src/models/subscriptions.model.ts:72](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/subscriptions.model.ts#L72)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/subscriptions.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/subscriptions.model.ts#L16)
+[services/payment-service/src/models/subscriptions.model.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/subscriptions.model.ts#L19)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/subscriptions.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/subscriptions.model.ts#L51)
+[services/payment-service/src/models/subscriptions.model.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/subscriptions.model.ts#L54)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/subscriptions.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/subscriptions.model.ts#L40)
+[services/payment-service/src/models/subscriptions.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/subscriptions.model.ts#L43)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/subscriptions.model.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/subscriptions.model.ts#L46)
+[services/payment-service/src/models/subscriptions.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/subscriptions.model.ts#L49)
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/subscriptions.model.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/subscriptions.model.ts#L75)
+[services/payment-service/src/models/subscriptions.model.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/subscriptions.model.ts#L78)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/subscriptions.model.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/subscriptions.model.ts#L57)
+[services/payment-service/src/models/subscriptions.model.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/subscriptions.model.ts#L60)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/subscriptions.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/subscriptions.model.ts#L34)
+[services/payment-service/src/models/subscriptions.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/subscriptions.model.ts#L37)
 
 ___
 
@@ -160,4 +160,4 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/models/subscriptions.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/models/subscriptions.model.ts#L23)
+[services/payment-service/src/models/subscriptions.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/models/subscriptions.model.ts#L26)

@@ -49,7 +49,7 @@
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L45)
+[packages/core/src/components/bearer-verifier/keys.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L46)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L35)
+[packages/core/src/components/bearer-verifier/keys.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L36)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L37)
+[packages/core/src/components/bearer-verifier/keys.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L38)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L39)
+[packages/core/src/components/bearer-verifier/keys.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L40)
 
 ___
 
@@ -93,7 +93,7 @@ IAuthUser.id
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L32)
+[packages/core/src/components/bearer-verifier/keys.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L33)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L33)
+[packages/core/src/components/bearer-verifier/keys.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L34)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L40)
+[packages/core/src/components/bearer-verifier/keys.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L41)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L41)
+[packages/core/src/components/bearer-verifier/keys.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L42)
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L44)
+[packages/core/src/components/bearer-verifier/keys.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L45)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L34)
+[packages/core/src/components/bearer-verifier/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L35)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L38)
+[packages/core/src/components/bearer-verifier/keys.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L39)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L42)
+[packages/core/src/components/bearer-verifier/keys.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L43)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L36)
+[packages/core/src/components/bearer-verifier/keys.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L37)
 
 ___
 
@@ -183,7 +183,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L43)
+[packages/core/src/components/bearer-verifier/keys.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L44)
 
 ## Methods
 
@@ -197,4 +197,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/bearer-verifier/keys.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/bearer-verifier/keys.ts#L46)
+[packages/core/src/components/bearer-verifier/keys.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/bearer-verifier/keys.ts#L47)

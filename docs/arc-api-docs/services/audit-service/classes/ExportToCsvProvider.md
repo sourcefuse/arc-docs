@@ -33,21 +33,21 @@
 | Name | Type |
 | :------ | :------ |
 | `config` | [`AwsS3Config`](../interfaces/AwsS3Config.md) |
-| `auditLogRepository` | `EntityCrudRepository`<`AuditLog`, `string`, {}\> |
+| `auditLogRepository` | `EntityCrudRepository`<[`AuditLog`](AuditLog.md), `string`, {}\> |
 
 #### Defined in
 
-[services/audit-service/src/services/export-to-csv.service.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/export-to-csv.service.ts#L11)
+[services/audit-service/src/services/export-to-csv.service.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/export-to-csv.service.ts#L12)
 
 ## Properties
 
 ### auditLogRepository
 
-• **auditLogRepository**: `EntityCrudRepository`<`AuditLog`, `string`, {}\>
+• **auditLogRepository**: `EntityCrudRepository`<[`AuditLog`](AuditLog.md), `string`, {}\>
 
 #### Defined in
 
-[services/audit-service/src/services/export-to-csv.service.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/export-to-csv.service.ts#L15)
+[services/audit-service/src/services/export-to-csv.service.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/export-to-csv.service.ts#L16)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/services/export-to-csv.service.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/export-to-csv.service.ts#L13)
+[services/audit-service/src/services/export-to-csv.service.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/export-to-csv.service.ts#L14)
 
 ## Methods
 
@@ -69,7 +69,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `selectedAuditLogs` | `AuditLog`[] |
+| `selectedAuditLogs` | [`AuditLog`](AuditLog.md)[] |
 
 #### Returns
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/services/export-to-csv.service.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/export-to-csv.service.ts#L22)
+[services/audit-service/src/services/export-to-csv.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/export-to-csv.service.ts#L23)
 
 ___
 
@@ -95,4 +95,4 @@ Provider.value
 
 #### Defined in
 
-[services/audit-service/src/services/export-to-csv.service.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/export-to-csv.service.ts#L17)
+[services/audit-service/src/services/export-to-csv.service.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/export-to-csv.service.ts#L18)

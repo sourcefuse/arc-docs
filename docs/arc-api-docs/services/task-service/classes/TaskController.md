@@ -10,6 +10,8 @@
 
 ### Properties
 
+- [camundaService](TaskController.md#camundaservice)
+- [logger](TaskController.md#logger)
 - [taskRepo](TaskController.md#taskrepo)
 - [taskWorkflowMapping](TaskController.md#taskworkflowmapping)
 - [userTaskRepository](TaskController.md#usertaskrepository)
@@ -22,12 +24,14 @@
 - [find](TaskController.md#find)
 - [findById](TaskController.md#findbyid)
 - [mapTaskToWorkflow](TaskController.md#maptasktoworkflow)
+- [updateAll](TaskController.md#updateall)
+- [updateById](TaskController.md#updatebyid)
 
 ## Constructors
 
 ### constructor
 
-• **new TaskController**(`taskRepo`, `userTaskRepository`, `taskWorkflowMapping`)
+• **new TaskController**(`taskRepo`, `userTaskRepository`, `taskWorkflowMapping`, `camundaService`, `logger`)
 
 #### Parameters
 
@@ -36,12 +40,34 @@
 | `taskRepo` | [`TaskRepository`](TaskRepository.md) |
 | `userTaskRepository` | [`UserTaskRepository`](UserTaskRepository.md) |
 | `taskWorkflowMapping` | [`TaskWorkFlowRepository`](TaskWorkFlowRepository.md) |
+| `camundaService` | [`CamundaService`](CamundaService.md) |
+| `logger` | `ILogger` |
 
 #### Defined in
 
-[services/task-service/src/controllers/task.controller.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/task.controller.ts#L35)
+[services/task-service/src/controllers/task.controller.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/task.controller.ts#L42)
 
 ## Properties
+
+### camundaService
+
+• `Private` `Readonly` **camundaService**: [`CamundaService`](CamundaService.md)
+
+#### Defined in
+
+[services/task-service/src/controllers/task.controller.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/task.controller.ts#L50)
+
+___
+
+### logger
+
+• `Private` `Readonly` **logger**: `ILogger`
+
+#### Defined in
+
+[services/task-service/src/controllers/task.controller.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/task.controller.ts#L51)
+
+___
 
 ### taskRepo
 
@@ -49,7 +75,7 @@
 
 #### Defined in
 
-[services/task-service/src/controllers/task.controller.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/task.controller.ts#L37)
+[services/task-service/src/controllers/task.controller.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/task.controller.ts#L44)
 
 ___
 
@@ -59,7 +85,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/controllers/task.controller.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/task.controller.ts#L41)
+[services/task-service/src/controllers/task.controller.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/task.controller.ts#L48)
 
 ___
 
@@ -69,7 +95,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/controllers/task.controller.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/task.controller.ts#L39)
+[services/task-service/src/controllers/task.controller.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/task.controller.ts#L46)
 
 ## Methods
 
@@ -89,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/controllers/task.controller.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/task.controller.ts#L93)
+[services/task-service/src/controllers/task.controller.ts:103](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/task.controller.ts#L103)
 
 ___
 
@@ -110,7 +136,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/controllers/task.controller.ts:157](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/task.controller.ts#L157)
+[services/task-service/src/controllers/task.controller.ts:263](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/task.controller.ts#L263)
 
 ___
 
@@ -131,7 +157,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/controllers/task.controller.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/task.controller.ts#L131)
+[services/task-service/src/controllers/task.controller.ts:227](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/task.controller.ts#L227)
 
 ___
 
@@ -151,7 +177,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/controllers/task.controller.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/task.controller.ts#L44)
+[services/task-service/src/controllers/task.controller.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/task.controller.ts#L54)
 
 ___
 
@@ -172,7 +198,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/controllers/task.controller.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/task.controller.ts#L68)
+[services/task-service/src/controllers/task.controller.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/task.controller.ts#L78)
 
 ___
 
@@ -192,4 +218,46 @@ ___
 
 #### Defined in
 
-[services/task-service/src/controllers/task.controller.ts:110](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/task.controller.ts#L110)
+[services/task-service/src/controllers/task.controller.ts:120](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/task.controller.ts#L120)
+
+___
+
+### updateAll
+
+▸ **updateAll**(`tasks`, `where?`): `Promise`<`Count`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `tasks` | [`Task`](Task.md)<[`TaskStatus`](../enums/TaskStatus.md)\> |
+| `where?` | `Where`<[`Task`](Task.md)<[`TaskStatus`](../enums/TaskStatus.md)\>\> |
+
+#### Returns
+
+`Promise`<`Count`\>
+
+#### Defined in
+
+[services/task-service/src/controllers/task.controller.ts:180](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/task.controller.ts#L180)
+
+___
+
+### updateById
+
+▸ **updateById**(`id`, `task`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `id` | `string` |
+| `task` | [`Task`](Task.md)<[`TaskStatus`](../enums/TaskStatus.md)\> |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[services/task-service/src/controllers/task.controller.ts:141](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/task.controller.ts#L141)

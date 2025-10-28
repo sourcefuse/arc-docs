@@ -10,7 +10,7 @@
 
 ### Properties
 
-- [auditLogExport](JobProcessingService.md#auditlogexport)
+- [auditLogExportService](JobProcessingService.md#auditlogexportservice)
 - [auditLogRepository](JobProcessingService.md#auditlogrepository)
 - [columnBuilder](JobProcessingService.md#columnbuilder)
 - [jobRepository](JobProcessingService.md#jobrepository)
@@ -19,38 +19,41 @@
 
 ### Methods
 
+- [buildCustomFilter](JobProcessingService.md#buildcustomfilter)
+- [getFilter](JobProcessingService.md#getfilter)
+- [haveCommonElements](JobProcessingService.md#havecommonelements)
 - [start](JobProcessingService.md#start)
 
 ## Constructors
 
 ### constructor
 
-• **new JobProcessingService**(`querySelectedFiles`, `auditLogExport`, `columnBuilder`, `mappingLogRepository`, `jobRepository`, `auditLogRepository`)
+• **new JobProcessingService**(`querySelectedFiles`, `auditLogExportService`, `columnBuilder`, `mappingLogRepository`, `jobRepository`, `auditLogRepository`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `querySelectedFiles` | [`QuerySelectedFilesFn`](../modules.md#queryselectedfilesfn) |
-| `auditLogExport` | [`AuditLogExportFn`](../modules.md#auditlogexportfn) |
+| `auditLogExportService` | [`AuditLogExportFn`](../modules.md#auditlogexportfn) |
 | `columnBuilder` | [`ColumnBuilderFn`](../modules.md#columnbuilderfn) |
-| `mappingLogRepository` | `EntityCrudRepository`<[`MappingLog`](MappingLog.md), `string`, {}\> |
-| `jobRepository` | `EntityCrudRepository`<[`Job`](Job.md), `string`, {}\> |
+| `mappingLogRepository` | `EntityCrudRepository`<`MappingLog`, `string`, {}\> |
+| `jobRepository` | `EntityCrudRepository`<`Job`, `string`, {}\> |
 | `auditLogRepository` | `EntityCrudRepository`<`AuditLog`, `string`, {}\> |
 
 #### Defined in
 
-[services/audit-service/src/services/job-processing.service.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/job-processing.service.ts#L22)
+[services/audit-service/src/services/job-processing.service.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/job-processing.service.ts#L40)
 
 ## Properties
 
-### auditLogExport
+### auditLogExportService
 
-• **auditLogExport**: [`AuditLogExportFn`](../modules.md#auditlogexportfn)
+• **auditLogExportService**: [`AuditLogExportFn`](../modules.md#auditlogexportfn)
 
 #### Defined in
 
-[services/audit-service/src/services/job-processing.service.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/job-processing.service.ts#L26)
+[services/audit-service/src/services/job-processing.service.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/job-processing.service.ts#L44)
 
 ___
 
@@ -60,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/services/job-processing.service.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/job-processing.service.ts#L34)
+[services/audit-service/src/services/job-processing.service.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/job-processing.service.ts#L52)
 
 ___
 
@@ -70,27 +73,27 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/services/job-processing.service.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/job-processing.service.ts#L28)
+[services/audit-service/src/services/job-processing.service.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/job-processing.service.ts#L46)
 
 ___
 
 ### jobRepository
 
-• **jobRepository**: `EntityCrudRepository`<[`Job`](Job.md), `string`, {}\>
+• **jobRepository**: `EntityCrudRepository`<`Job`, `string`, {}\>
 
 #### Defined in
 
-[services/audit-service/src/services/job-processing.service.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/job-processing.service.ts#L32)
+[services/audit-service/src/services/job-processing.service.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/job-processing.service.ts#L50)
 
 ___
 
 ### mappingLogRepository
 
-• **mappingLogRepository**: `EntityCrudRepository`<[`MappingLog`](MappingLog.md), `string`, {}\>
+• **mappingLogRepository**: `EntityCrudRepository`<`MappingLog`, `string`, {}\>
 
 #### Defined in
 
-[services/audit-service/src/services/job-processing.service.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/job-processing.service.ts#L30)
+[services/audit-service/src/services/job-processing.service.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/job-processing.service.ts#L48)
 
 ___
 
@@ -100,9 +103,71 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/services/job-processing.service.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/job-processing.service.ts#L24)
+[services/audit-service/src/services/job-processing.service.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/job-processing.service.ts#L42)
 
 ## Methods
+
+### buildCustomFilter
+
+▸ **buildCustomFilter**(`andArray`, `customFilter`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `andArray` | `AnyObject`[] |
+| `customFilter` | [`CustomFilter`](CustomFilter.md) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[services/audit-service/src/services/job-processing.service.ts:110](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/job-processing.service.ts#L110)
+
+___
+
+### getFilter
+
+▸ **getFilter**(`inquiredFilter`): `string`[]
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `inquiredFilter` | `string` \| `AnyObject` |
+
+#### Returns
+
+`string`[]
+
+#### Defined in
+
+[services/audit-service/src/services/job-processing.service.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/job-processing.service.ts#L100)
+
+___
+
+### haveCommonElements
+
+▸ **haveCommonElements**(`arr1`, `arr2`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `arr1` | `string`[] |
+| `arr2` | `string`[] |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[services/audit-service/src/services/job-processing.service.ts:106](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/job-processing.service.ts#L106)
+
+___
 
 ### start
 
@@ -120,4 +185,4 @@ ___
 
 #### Defined in
 
-[services/audit-service/src/services/job-processing.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/services/job-processing.service.ts#L37)
+[services/audit-service/src/services/job-processing.service.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/services/job-processing.service.ts#L55)

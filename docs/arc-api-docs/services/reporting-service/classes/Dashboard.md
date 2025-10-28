@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/dashboard.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/dashboard.model.ts#L36)
+[services/reporting-service/src/models/dashboard.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/dashboard.model.ts#L36)
 
 ___
 
@@ -102,7 +102,7 @@ ExternalIdentifierEnabledEntity.extId
 
 #### Defined in
 
-[services/reporting-service/src/models/dashboard.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/dashboard.model.ts#L58)
+[services/reporting-service/src/models/dashboard.model.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/dashboard.model.ts#L58)
 
 ___
 
@@ -116,7 +116,7 @@ ExternalIdentifierEnabledEntity.extMetadata
 
 #### Defined in
 
-[services/reporting-service/src/models/dashboard.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/dashboard.model.ts#L65)
+[services/reporting-service/src/models/dashboard.model.ts:65](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/dashboard.model.ts#L65)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/dashboard.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/dashboard.model.ts#L23)
+[services/reporting-service/src/models/dashboard.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/dashboard.model.ts#L23)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/dashboard.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/dashboard.model.ts#L51)
+[services/reporting-service/src/models/dashboard.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/dashboard.model.ts#L51)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/dashboard.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/dashboard.model.ts#L30)
+[services/reporting-service/src/models/dashboard.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/dashboard.model.ts#L30)
 
 ___
 
@@ -184,4 +184,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/dashboard.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/dashboard.model.ts#L45)
+[services/reporting-service/src/models/dashboard.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/dashboard.model.ts#L45)

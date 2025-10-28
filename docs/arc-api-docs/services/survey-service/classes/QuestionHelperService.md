@@ -56,7 +56,7 @@
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L21)
+[services/survey-service/src/services/question-helper.service.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L21)
 
 ## Properties
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L32)
+[services/survey-service/src/services/question-helper.service.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L32)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L25)
+[services/survey-service/src/services/question-helper.service.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L25)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L23)
+[services/survey-service/src/services/question-helper.service.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L23)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L29)
+[services/survey-service/src/services/question-helper.service.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L29)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L31)
+[services/survey-service/src/services/question-helper.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L31)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L27)
+[services/survey-service/src/services/question-helper.service.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L27)
 
 ## Methods
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:160](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L160)
+[services/survey-service/src/services/question-helper.service.ts:169](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L169)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:170](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L170)
+[services/survey-service/src/services/question-helper.service.ts:179](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L179)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:92](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L92)
+[services/survey-service/src/services/question-helper.service.ts:101](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L101)
 
 ___
 
@@ -199,7 +199,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:229](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L229)
+[services/survey-service/src/services/question-helper.service.ts:238](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L238)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:296](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L296)
+[services/survey-service/src/services/question-helper.service.ts:305](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L305)
 
 ___
 
@@ -242,7 +242,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:384](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L384)
+[services/survey-service/src/services/question-helper.service.ts:393](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L393)
 
 ___
 
@@ -263,7 +263,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:326](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L326)
+[services/survey-service/src/services/question-helper.service.ts:335](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L335)
 
 ___
 
@@ -283,7 +283,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:336](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L336)
+[services/survey-service/src/services/question-helper.service.ts:345](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L345)
 
 ___
 
@@ -291,20 +291,25 @@ ___
 
 ▸ **createQuestion**(`question`, `status?`): `Promise`<[`Question`](Question.md)\>
 
+This function creates a new question with specified status and additional logic for handling
+follow-up questions and default options.
+
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `question` | [`QuestionDto`](QuestionDto.md) | `undefined` |
-| `status` | `string` | `QuestionStatus.DRAFT` |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `question` | [`QuestionDto`](QuestionDto.md) | `undefined` | The `createQuestion` function you provided is an asynchronous function that creates a new question based on the provided `QuestionDto` object and a default status of `QuestionStatus.DRAFT`. Here's a breakdown of the function: |
+| `status` | `string` | `QuestionStatus.DRAFT` | The `status` parameter in the `createQuestion` function is used to specify the status of the question being created. By default, if no status is provided, the question will be set to `QuestionStatus.DRAFT`. However, you can override this default value by providing a different status when calling |
 
 #### Returns
 
 `Promise`<[`Question`](Question.md)\>
 
+The `createQuestion` function returns a `Promise` that resolves to a `Question` object.
+
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L35)
+[services/survey-service/src/services/question-helper.service.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L47)
 
 ___
 
@@ -324,7 +329,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:199](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L199)
+[services/survey-service/src/services/question-helper.service.ts:208](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L208)
 
 ___
 
@@ -344,7 +349,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:237](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L237)
+[services/survey-service/src/services/question-helper.service.ts:246](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L246)
 
 ___
 
@@ -364,7 +369,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:137](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L137)
+[services/survey-service/src/services/question-helper.service.ts:146](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L146)
 
 ___
 
@@ -384,7 +389,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:313](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L313)
+[services/survey-service/src/services/question-helper.service.ts:322](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L322)
 
 ___
 
@@ -405,7 +410,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:355](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L355)
+[services/survey-service/src/services/question-helper.service.ts:364](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L364)
 
 ___
 
@@ -426,7 +431,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:317](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L317)
+[services/survey-service/src/services/question-helper.service.ts:326](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L326)
 
 ___
 
@@ -447,7 +452,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:256](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L256)
+[services/survey-service/src/services/question-helper.service.ts:265](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L265)
 
 ___
 
@@ -467,4 +472,4 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/question-helper.service.ts:363](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/question-helper.service.ts#L363)
+[services/survey-service/src/services/question-helper.service.ts:372](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/question-helper.service.ts#L372)

@@ -28,7 +28,7 @@
 
 #### Defined in
 
-[services/notification-service/src/types.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/types.ts#L27)
+[services/notification-service/src/types.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/types.ts#L27)
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/types.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/types.ts#L31)
+[services/notification-service/src/types.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/types.ts#L31)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/types.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/types.ts#L30)
+[services/notification-service/src/types.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/types.ts#L30)

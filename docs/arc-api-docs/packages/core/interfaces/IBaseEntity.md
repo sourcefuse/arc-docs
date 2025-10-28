@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[packages/core/src/mixins/types.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/mixins/types.ts#L14)
+[packages/core/src/mixins/types.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/mixins/types.ts#L14)
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/mixins/types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/mixins/types.ts#L15)
+[packages/core/src/mixins/types.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/mixins/types.ts#L15)

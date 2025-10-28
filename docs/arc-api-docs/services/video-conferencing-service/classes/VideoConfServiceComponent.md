@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L60)
+[services/video-conferencing-service/src/component.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/component.ts#L62)
 
 ## Properties
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L62)
+[services/video-conferencing-service/src/component.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/component.ts#L64)
 
 ___
 
@@ -65,7 +65,7 @@ Component.bindings
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:127](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L127)
+[services/video-conferencing-service/src/component.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/component.ts#L131)
 
 ___
 
@@ -81,7 +81,7 @@ Component.controllers
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:144](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L144)
+[services/video-conferencing-service/src/component.ts:148](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/component.ts#L148)
 
 ___
 
@@ -94,7 +94,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:139](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L139)
+[services/video-conferencing-service/src/component.ts:143](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/component.ts#L143)
 
 ___
 
@@ -108,7 +108,7 @@ Component.providers
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:125](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L125)
+[services/video-conferencing-service/src/component.ts:129](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/component.ts#L129)
 
 ___
 
@@ -121,7 +121,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:133](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L133)
+[services/video-conferencing-service/src/component.ts:137](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/component.ts#L137)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L64)
+[services/video-conferencing-service/src/component.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/component.ts#L66)
 
 ## Methods
 
@@ -153,4 +153,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/video-conferencing-service/src/component.ts:151](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/component.ts#L151)
+[services/video-conferencing-service/src/component.ts:155](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/component.ts#L155)

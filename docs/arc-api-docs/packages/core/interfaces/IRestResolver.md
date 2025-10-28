@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:125](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L125)
+[packages/core/src/components/proxy-builder/services/types.ts:125](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L125)
 
 ## Methods
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:129](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L129)
+[packages/core/src/components/proxy-builder/services/types.ts:129](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L129)
 
 ___
 
@@ -74,4 +74,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/types.ts:126](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/types.ts#L126)
+[packages/core/src/components/proxy-builder/services/types.ts:126](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/types.ts#L126)

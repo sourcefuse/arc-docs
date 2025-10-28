@@ -38,7 +38,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts#L21)
+[services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts#L21)
 
 ## Properties
 
@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts#L27)
+[services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts#L27)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts#L23)
+[services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts#L23)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts#L25)
+[services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts#L25)
 
 ## Methods
 
@@ -86,4 +86,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts#L30)
+[services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/local-password-verify.provider.ts#L30)

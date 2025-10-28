@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:148](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L148)
+[services/authentication-service/src/providers/keys.ts:160](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L160)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:145](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L145)
+[services/authentication-service/src/providers/keys.ts:157](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L157)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:141](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L141)
+[services/authentication-service/src/providers/keys.ts:153](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L153)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:152](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L152)
+[services/authentication-service/src/providers/keys.ts:164](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L164)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/providers/keys.ts:155](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keys.ts#L155)
+[services/authentication-service/src/providers/keys.ts:167](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keys.ts#L167)

@@ -6,38 +6,45 @@
 
 ### Namespaces
 
-- [CachePluginComponentBindings](modules/CachePluginComponentBindings.md)
+- [CacheComponentBindings](modules/CacheComponentBindings.md)
 
 ### Enumerations
 
-- [CacheStrategyTypes](enums/CacheStrategyTypes.md)
+- [TenantGuardErrorKeys](enums/TenantGuardErrorKeys.md)
 
 ### Classes
 
-- [CacheManager](classes/CacheManager.md)
-- [CachePluginComponent](classes/CachePluginComponent.md)
-- [RedisCacheStrategy](classes/RedisCacheStrategy.md)
+- [CacheService](classes/CacheService.md)
+- [CachingComponent](classes/CachingComponent.md)
+- [InMemoryStoreStrategy](classes/InMemoryStoreStrategy.md)
+- [RedisStoreStrategy](classes/RedisStoreStrategy.md)
 
 ### Interfaces
 
-- [CacheEntity](interfaces/CacheEntity.md)
-- [CachePluginComponentOptions](interfaces/CachePluginComponentOptions.md)
-- [ICacheMixin](interfaces/ICacheMixin.md)
-- [ICacheStrategy](interfaces/ICacheStrategy.md)
+- [ICacheComponentOptions](interfaces/ICacheComponentOptions.md)
+- [ICacheMixinOptions](interfaces/ICacheMixinOptions.md)
+- [ICacheOptions](interfaces/ICacheOptions.md)
+- [ICacheService](interfaces/ICacheService.md)
+- [ICacheStore](interfaces/ICacheStore.md)
+- [ICachedMethodOptions](interfaces/ICachedMethodOptions.md)
+- [ICachedRepository](interfaces/ICachedRepository.md)
+- [ICachedService](interfaces/ICachedService.md)
 
 ### Type Aliases
 
 - [AbstractConstructor](modules.md#abstractconstructor)
-- [CacheMixinBase](modules.md#cachemixinbase)
-- [MixinBaseClass](modules.md#mixinbaseclass)
-- [OptionsWithForceUpdate](modules.md#optionswithforceupdate)
-- [RedisConnectorExecuteReturnType](modules.md#redisconnectorexecutereturntype)
-- [SaveInCacheValue](modules.md#saveincachevalue)
-- [SearchInCacheResponse](modules.md#searchincacheresponse)
+- [CacheMethod](modules.md#cachemethod)
 
 ### Variables
 
-- [DEFAULT\_CACHE\_PLUGIN\_OPTIONS](modules.md#default_cache_plugin_options)
+- [AUTH\_USER\_KEY](modules.md#auth_user_key)
+- [CachingComponentNamespace](modules.md#cachingcomponentnamespace)
+
+### Functions
+
+- [CacheMixin](modules.md#cachemixin)
+- [cacheInvalidator](modules.md#cacheinvalidator)
+- [cachedItem](modules.md#cacheditem)
 
 ## Type Aliases
 
@@ -63,31 +70,13 @@
 
 #### Defined in
 
-[types.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/cache/src/types.ts#L51)
+[types.ts:113](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/cache/src/types.ts#L113)
 
 ___
 
-### CacheMixinBase
+### CacheMethod
 
-Ƭ **CacheMixinBase**<`T`, `ID`, `Relations`\>: [`MixinBaseClass`](modules.md#mixinbaseclass)<{ `entityClass`: typeof `Entity` & { `prototype`: `T`  } ; `find`: (`filter?`: `Filter`<`T`\>, `options?`: `AnyObject`) => `Promise`<`T` & `Relations`[]\> ; `findById`: (`id`: `ID`, `filter?`: `FilterExcludingWhere`<`T`\>, `options?`: `AnyObject`) => `Promise`<`T` & `Relations`\> ; `findOne`: (`filter?`: `Filter`<`T`\>, `options?`: `AnyObject`) => `Promise`<``null`` \| `T` & `Relations`\>  }\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `Entity` |
-| `ID` | `ID` |
-| `Relations` | `Relations` |
-
-#### Defined in
-
-[types.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/cache/src/types.ts#L58)
-
-___
-
-### MixinBaseClass
-
-Ƭ **MixinBaseClass**<`T`\>: [`AbstractConstructor`](modules.md#abstractconstructor)<`T`\>
+Ƭ **CacheMethod**<`T`\>: (...`args`: `any`[]) => `Promise`<`T`\>
 
 #### Type parameters
 
@@ -95,70 +84,176 @@ ___
 | :------ |
 | `T` |
 
-#### Defined in
+#### Type declaration
 
-[types.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/cache/src/types.ts#L56)
+▸ (`...args`): `Promise`<`T`\>
 
-___
+##### Parameters
 
-### OptionsWithForceUpdate
+| Name | Type |
+| :------ | :------ |
+| `...args` | `any`[] |
 
-Ƭ **OptionsWithForceUpdate**: `Options` & { `forceUpdate?`: `boolean`  }
+##### Returns
 
-#### Defined in
-
-[types.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/cache/src/types.ts#L49)
-
-___
-
-### RedisConnectorExecuteReturnType
-
-Ƭ **RedisConnectorExecuteReturnType**: `ArrayBuffer` \| `Buffer` \| `number`
+`Promise`<`T`\>
 
 #### Defined in
 
-[types.ts:46](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/cache/src/types.ts#L46)
-
-___
-
-### SaveInCacheValue
-
-Ƭ **SaveInCacheValue**<`M`\>: `M` \| `M`[] \| ``null``
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `M` |
-
-#### Defined in
-
-[types.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/cache/src/types.ts#L48)
-
-___
-
-### SearchInCacheResponse
-
-Ƭ **SearchInCacheResponse**<`M`\>: `M` \| `M`[] \| `undefined` \| ``null``
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `M` |
-
-#### Defined in
-
-[types.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/cache/src/types.ts#L47)
+[types.ts:108](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/cache/src/types.ts#L108)
 
 ## Variables
 
-### DEFAULT\_CACHE\_PLUGIN\_OPTIONS
+### AUTH\_USER\_KEY
 
-• `Const` **DEFAULT\_CACHE\_PLUGIN\_OPTIONS**: [`CachePluginComponentOptions`](interfaces/CachePluginComponentOptions.md)
-
-Default options for the component
+• `Const` **AUTH\_USER\_KEY**: `BindingKey`<`undefined` \| `IAuthUserWithPermissions`<`string`, `string`, `string`\>\>
 
 #### Defined in
 
-[types.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/cache/src/types.ts#L29)
+[keys.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/cache/src/keys.ts#L24)
+
+___
+
+### CachingComponentNamespace
+
+• `Const` **CachingComponentNamespace**: ``"sourceloop.caching.extension"``
+
+#### Defined in
+
+[keys.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/cache/src/keys.ts#L5)
+
+## Functions
+
+### CacheMixin
+
+▸ **CacheMixin**<`M`, `ID`, `Relations`, `S`\>(`superClass`, `cacheOptions?`): typeof `superClass` & [`AbstractConstructor`](modules.md#abstractconstructor)<[`ICachedRepository`](interfaces/ICachedRepository.md)<`M`, `ID`, `Relations`\>\> & { `prototype`: [`ICachedRepository`](interfaces/ICachedRepository.md)<`M`, `ID`, `Relations`\>  }
+
+This is a mixin function that adds caching functionality to a given repository class.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `M` | extends `Entity`<`M`\> |
+| `ID` | `ID` |
+| `Relations` | extends `object` |
+| `S` | extends [`AbstractConstructor`](modules.md#abstractconstructor)<`DefaultCrudRepository`<`M`, `ID`, `Relations`\>\> |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `superClass` | `S` & [`AbstractConstructor`](modules.md#abstractconstructor)<`DefaultCrudRepository`<`M`, `ID`, `Relations`\>\> | The superclass is a generic type parameter that extends the `DefaultCrudRepository` class. It represents the base repository class that the `CacheMixin` will extend and add caching functionality to. |
+| `cacheOptions?` | [`ICacheMixinOptions`](interfaces/ICacheMixinOptions.md) | `cacheOptions` is an optional parameter of type `ICacheMixinOptions`. It is used to configure the caching behavior of the repository. |
+
+#### Returns
+
+typeof `superClass` & [`AbstractConstructor`](modules.md#abstractconstructor)<[`ICachedRepository`](interfaces/ICachedRepository.md)<`M`, `ID`, `Relations`\>\> & { `prototype`: [`ICachedRepository`](interfaces/ICachedRepository.md)<`M`, `ID`, `Relations`\>  }
+
+#### Defined in
+
+[mixins/cache.mixin.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/cache/src/mixins/cache.mixin.ts#L32)
+
+___
+
+### cacheInvalidator
+
+▸ **cacheInvalidator**<`T`\>(`tags?`): <S\>(`target`: `T`, `methodName`: `string`, `descriptor`: `TypedPropertyDescriptor`<[`CacheMethod`](modules.md#cachemethod)<`S`\>\>) => `TypedPropertyDescriptor`<[`CacheMethod`](modules.md#cachemethod)<`S`\>\>
+
+This is a TypeScript function that invalidates cache items based on specified tags.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`ICachedService`](interfaces/ICachedService.md) |
+
+#### Parameters
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `tags` | `string`[] | `[]` | An optional array of strings that represent tags associated with the cached data. These tags can be used to selectively invalidate cached data. |
+
+#### Returns
+
+`fn`
+
+The function `cacheInvalidator` is being returned.
+
+▸ <`S`\>(`target`, `methodName`, `descriptor`): `TypedPropertyDescriptor`<[`CacheMethod`](modules.md#cachemethod)<`S`\>\>
+
+##### Type parameters
+
+| Name |
+| :------ |
+| `S` |
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | `T` |
+| `methodName` | `string` |
+| `descriptor` | `TypedPropertyDescriptor`<[`CacheMethod`](modules.md#cachemethod)<`S`\>\> |
+
+##### Returns
+
+`TypedPropertyDescriptor`<[`CacheMethod`](modules.md#cachemethod)<`S`\>\>
+
+#### Defined in
+
+[decorators/cache-invalidator.decorator.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/cache/src/decorators/cache-invalidator.decorator.ts#L9)
+
+___
+
+### cachedItem
+
+▸ **cachedItem**<`T`\>(`tags?`, `ignoredParamIndexes?`): <S\>(`target`: `T`, `methodName`: `string`, `descriptor?`: `TypedPropertyDescriptor`<[`CacheMethod`](modules.md#cachemethod)<`S`\>\>) => `TypedPropertyDescriptor`<[`CacheMethod`](modules.md#cachemethod)<`S`\>\>
+
+This is a TypeScript decorator function that caches the result of a method call and retrieves it
+from the cache if available, otherwise it calls the original method and saves the result in the
+cache.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`ICachedService`](interfaces/ICachedService.md) |
+
+#### Parameters
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `tags` | `string`[] | `[]` | The `tags` parameter is an optional array of strings that can be passed to the `cachedItem` decorator function. These tags can be used to group cached items together and make it easier to invalidate or clear a specific group of cached items. |
+| `ignoredParamIndexes` | `number`[] | `[]` | - |
+
+#### Returns
+
+`fn`
+
+The `cachedItem` function returns a decorator function that can be used to decorate a class
+method with caching functionality.
+
+▸ <`S`\>(`target`, `methodName`, `descriptor?`): `TypedPropertyDescriptor`<[`CacheMethod`](modules.md#cachemethod)<`S`\>\>
+
+##### Type parameters
+
+| Name |
+| :------ |
+| `S` |
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | `T` |
+| `methodName` | `string` |
+| `descriptor?` | `TypedPropertyDescriptor`<[`CacheMethod`](modules.md#cachemethod)<`S`\>\> |
+
+##### Returns
+
+`TypedPropertyDescriptor`<[`CacheMethod`](modules.md#cachemethod)<`S`\>\>
+
+#### Defined in
+
+[decorators/cached-item.decorator.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/cache/src/decorators/cached-item.decorator.ts#L13)

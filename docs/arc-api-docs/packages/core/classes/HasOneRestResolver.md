@@ -55,17 +55,17 @@
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L29)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L29)
 
 ## Properties
 
 ### context
 
-• `Private` **context**: `Context`
+• `Private` `Readonly` **context**: `Context`
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L31)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L31)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L28)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L28)
 
 ## Methods
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:98](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L98)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:98](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L98)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:116](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L116)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:116](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L116)
 
 ___
 
@@ -144,7 +144,7 @@ keyof `Source`
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:125](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L125)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:125](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L125)
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:142](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L142)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:142](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L142)
 
 ___
 
@@ -194,7 +194,7 @@ resolvedDataMap.get(parent[keyFrom])
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L83)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L83)
 
 ___
 
@@ -223,7 +223,7 @@ A map of related records.
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L39)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L39)
 
 ___
 
@@ -243,4 +243,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:134](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L134)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts:134](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/has-one-resolver.service.ts#L134)

@@ -16,6 +16,7 @@
 
 - [application](TenantManagementServiceComponent.md#application)
 - [bindings](TenantManagementServiceComponent.md#bindings)
+- [booters](TenantManagementServiceComponent.md#booters)
 - [controllers](TenantManagementServiceComponent.md#controllers)
 - [models](TenantManagementServiceComponent.md#models)
 - [providers](TenantManagementServiceComponent.md#providers)
@@ -43,7 +44,7 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:85](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L85)
+[services/tenant-management-service/src/component.ts:86](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/component.ts#L86)
 
 ## Properties
 
@@ -53,7 +54,7 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:87](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L87)
+[services/tenant-management-service/src/component.ts:88](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/component.ts#L88)
 
 ___
 
@@ -67,7 +68,17 @@ Component.bindings
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:167](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L167)
+[services/tenant-management-service/src/component.ts:174](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/component.ts#L174)
+
+___
+
+### booters
+
+• `Optional` **booters**: `Class`<`Booter`\>[]
+
+#### Defined in
+
+[services/tenant-management-service/src/component.ts:177](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/component.ts#L177)
 
 ___
 
@@ -83,7 +94,7 @@ Component.controllers
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:186](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L186)
+[services/tenant-management-service/src/component.ts:194](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/component.ts#L194)
 
 ___
 
@@ -96,7 +107,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:181](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L181)
+[services/tenant-management-service/src/component.ts:189](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/component.ts#L189)
 
 ___
 
@@ -110,7 +121,7 @@ Component.providers
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:165](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L165)
+[services/tenant-management-service/src/component.ts:172](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/component.ts#L172)
 
 ___
 
@@ -123,7 +134,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:175](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L175)
+[services/tenant-management-service/src/component.ts:183](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/component.ts#L183)
 
 ___
 
@@ -137,7 +148,7 @@ Component.services
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:169](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L169)
+[services/tenant-management-service/src/component.ts:176](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/component.ts#L176)
 
 ___
 
@@ -147,7 +158,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:89](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L89)
+[services/tenant-management-service/src/component.ts:90](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/component.ts#L90)
 
 ## Methods
 
@@ -174,7 +185,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:211](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L211)
+[services/tenant-management-service/src/component.ts:219](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/component.ts#L219)
 
 ___
 
@@ -190,4 +201,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/tenant-management-service/src/component.ts:192](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/component.ts#L192)
+[services/tenant-management-service/src/component.ts:200](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/component.ts#L200)

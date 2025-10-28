@@ -9,6 +9,7 @@
 - [authenticateSwaggerUI](CoreConfig.md#authenticateswaggerui)
 - [authentication](CoreConfig.md#authentication)
 - [configObject](CoreConfig.md#configobject)
+- [disablei18n](CoreConfig.md#disablei18n)
 - [enableObf](CoreConfig.md#enableobf)
 - [modifyPathDefinition](CoreConfig.md#modifypathdefinition)
 - [name](CoreConfig.md#name)
@@ -18,6 +19,8 @@
 - [swaggerPassword](CoreConfig.md#swaggerpassword)
 - [swaggerStatsConfig](CoreConfig.md#swaggerstatsconfig)
 - [swaggerUsername](CoreConfig.md#swaggerusername)
+- [tenantContextEncryptionKey](CoreConfig.md#tenantcontextencryptionkey)
+- [tenantContextMiddleware](CoreConfig.md#tenantcontextmiddleware)
 
 ## Properties
 
@@ -27,7 +30,7 @@
 
 #### Defined in
 
-[packages/core/src/types.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L36)
+[packages/core/src/types.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L45)
 
 ___
 
@@ -37,7 +40,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L33)
+[packages/core/src/types.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L42)
 
 ___
 
@@ -47,7 +50,17 @@ ___
 
 #### Defined in
 
-[packages/core/src/types.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L18)
+[packages/core/src/types.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L22)
+
+___
+
+### disablei18n
+
+• `Optional` **disablei18n**: `boolean`
+
+#### Defined in
+
+[packages/core/src/types.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L28)
 
 ___
 
@@ -57,7 +70,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L19)
+[packages/core/src/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L23)
 
 ___
 
@@ -87,7 +100,7 @@ callback can be used. It'll get called for each of the path specified in the `op
 
 #### Defined in
 
-[packages/core/src/types.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L29)
+[packages/core/src/types.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L37)
 
 ___
 
@@ -97,7 +110,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L17)
+[packages/core/src/types.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L21)
 
 ___
 
@@ -107,7 +120,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L20)
+[packages/core/src/types.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L24)
 
 ___
 
@@ -117,7 +130,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L21)
+[packages/core/src/types.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L26)
 
 ___
 
@@ -143,7 +156,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L43)
+[packages/core/src/types.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L52)
 
 ___
 
@@ -153,7 +166,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L35)
+[packages/core/src/types.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L44)
 
 ___
 
@@ -163,7 +176,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L38)
+[packages/core/src/types.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L47)
 
 ___
 
@@ -173,4 +186,24 @@ ___
 
 #### Defined in
 
-[packages/core/src/types.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/types.ts#L34)
+[packages/core/src/types.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L43)
+
+___
+
+### tenantContextEncryptionKey
+
+• `Optional` **tenantContextEncryptionKey**: `string`
+
+#### Defined in
+
+[packages/core/src/types.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L25)
+
+___
+
+### tenantContextMiddleware
+
+• `Optional` **tenantContextMiddleware**: `boolean`
+
+#### Defined in
+
+[packages/core/src/types.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/types.ts#L27)

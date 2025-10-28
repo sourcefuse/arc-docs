@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/permission-model.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/permission-model.interface.ts#L7)
+[services/reporting-service/src/interfaces/permission-model.interface.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/permission-model.interface.ts#L7)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/permission-model.interface.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/permission-model.interface.ts#L5)
+[services/reporting-service/src/interfaces/permission-model.interface.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/permission-model.interface.ts#L5)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/permission-model.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/permission-model.interface.ts#L6)
+[services/reporting-service/src/interfaces/permission-model.interface.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/permission-model.interface.ts#L6)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/permission-model.interface.ts:4](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/permission-model.interface.ts#L4)
+[services/reporting-service/src/interfaces/permission-model.interface.ts:4](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/permission-model.interface.ts#L4)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/permission-model.interface.ts:3](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/permission-model.interface.ts#L3)
+[services/reporting-service/src/interfaces/permission-model.interface.ts:3](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/permission-model.interface.ts#L3)
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/interfaces/permission-model.interface.ts:2](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/interfaces/permission-model.interface.ts#L2)
+[services/reporting-service/src/interfaces/permission-model.interface.ts:2](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/interfaces/permission-model.interface.ts#L2)

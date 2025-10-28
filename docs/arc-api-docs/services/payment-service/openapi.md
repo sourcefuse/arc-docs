@@ -1,11 +1,11 @@
 
 <!-- Generator: Widdershins v4.0.1 -->
 
-<h1 id="-sourceloop-payment-service">@sourceloop/payment-service v11.1.3</h1>
+<h1 id="-sourceloop-payment-service">@sourceloop/payment-service v19.0.0</h1>
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
-payment microservice.
+payment microservice
 
 Base URLs:
 
@@ -91,8 +91,9 @@ fetch('/create-subscription-and-pay',
 
 <h3 id="subscriptiontransactionscontroller.subscriptionandtransactionscreate-responseschema">Response Schema</h3>
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## SubscriptionTransactionsController.subscriptionTransactionscharge
@@ -224,6 +225,11 @@ fetch('/orders/count',
 
 `GET /orders/count`
 
+| Permissions |
+| ------- |
+| ViewOrder   |
+| 7   |
+
 <h3 id="orderscontroller.count-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
@@ -246,8 +252,9 @@ fetch('/orders/count',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Orders model count|[loopback.Count](#schemaloopback.count)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## OrdersController.replaceById
@@ -315,6 +322,11 @@ fetch('/orders/{id}',
 
 `PUT /orders/{id}`
 
+| Permissions |
+| ------- |
+| UpdateOrder   |
+| 8   |
+
 > Body parameter
 
 ```json
@@ -342,8 +354,9 @@ fetch('/orders/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|Orders PUT success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## OrdersController.updateById
@@ -411,6 +424,11 @@ fetch('/orders/{id}',
 
 `PATCH /orders/{id}`
 
+| Permissions |
+| ------- |
+| UpdateOrder   |
+| 8   |
+
 > Body parameter
 
 ```json
@@ -438,8 +456,9 @@ fetch('/orders/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|Orders PATCH success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## OrdersController.findById
@@ -491,12 +510,17 @@ fetch('/orders/{id}',
 
 `GET /orders/{id}`
 
+| Permissions |
+| ------- |
+| ViewOrder   |
+| 7   |
+
 <h3 id="orderscontroller.findbyid-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|string|true|none|
-|filter|query|[Orders.Filter](#schemaorders.filter)|false|none|
+|filter|query|[orders.Filter](#schemaorders.filter)|false|none|
 
 > Example responses
 
@@ -520,8 +544,9 @@ fetch('/orders/{id}',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Orders model instance|[OrdersWithRelations](#schemaorderswithrelations)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## OrdersController.deleteById
@@ -563,6 +588,11 @@ fetch('/orders/{id}',
 
 `DELETE /orders/{id}`
 
+| Permissions |
+| ------- |
+| DeleteOrder   |
+| 9   |
+
 <h3 id="orderscontroller.deletebyid-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
@@ -575,8 +605,9 @@ fetch('/orders/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|Orders DELETE success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## OrdersController.create
@@ -646,6 +677,11 @@ fetch('/orders',
 
 `POST /orders`
 
+| Permissions |
+| ------- |
+| CreateOrder   |
+| 6   |
+
 > Body parameter
 
 ```json
@@ -688,8 +724,9 @@ fetch('/orders',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Orders model instance|[Orders](#schemaorders)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## OrdersController.updateAll
@@ -759,6 +796,11 @@ fetch('/orders',
 
 `PATCH /orders`
 
+| Permissions |
+| ------- |
+| UpdateOrder   |
+| 8   |
+
 > Body parameter
 
 ```json
@@ -796,8 +838,9 @@ fetch('/orders',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Orders PATCH success count|[loopback.Count](#schemaloopback.count)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## OrdersController.find
@@ -849,11 +892,16 @@ fetch('/orders',
 
 `GET /orders`
 
+| Permissions |
+| ------- |
+| ViewOrder   |
+| 7   |
+
 <h3 id="orderscontroller.find-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|filter|query|[Orders.Filter1](#schemaorders.filter1)|false|none|
+|filter|query|[orders.Filter1](#schemaorders.filter1)|false|none|
 
 > Example responses
 
@@ -895,8 +943,9 @@ Status Code **200**
 |»» paymentmethod|string|false|none|none|
 |»» metaData|object|false|none|none|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 <h1 id="-sourceloop-payment-service-paymentgatewayscontroller">PaymentGatewaysController</h1>
@@ -950,6 +999,11 @@ fetch('/payment-gateways/count',
 
 `GET /payment-gateways/count`
 
+| Permissions |
+| ------- |
+| ViewGateway   |
+| 12   |
+
 <h3 id="paymentgatewayscontroller.count-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
@@ -972,8 +1026,9 @@ fetch('/payment-gateways/count',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|PaymentGateways model count|[loopback.Count](#schemaloopback.count)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## PaymentGatewaysController.replaceById
@@ -1035,6 +1090,11 @@ fetch('/payment-gateways/{id}',
 
 `PUT /payment-gateways/{id}`
 
+| Permissions |
+| ------- |
+| UpdateGateway   |
+| 11   |
+
 > Body parameter
 
 ```json
@@ -1059,8 +1119,9 @@ fetch('/payment-gateways/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|PaymentGateways PUT success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## PaymentGatewaysController.updateById
@@ -1122,6 +1183,11 @@ fetch('/payment-gateways/{id}',
 
 `PATCH /payment-gateways/{id}`
 
+| Permissions |
+| ------- |
+| UpdateGateway   |
+| 11   |
+
 > Body parameter
 
 ```json
@@ -1146,8 +1212,9 @@ fetch('/payment-gateways/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|PaymentGateways PATCH success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## PaymentGatewaysController.findById
@@ -1199,12 +1266,17 @@ fetch('/payment-gateways/{id}',
 
 `GET /payment-gateways/{id}`
 
+| Permissions |
+| ------- |
+| ViewGateway   |
+| 12   |
+
 <h3 id="paymentgatewayscontroller.findbyid-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|string|true|none|
-|filter|query|[PaymentGateways.Filter](#schemapaymentgateways.filter)|false|none|
+|filter|query|[paymentgateways.Filter](#schemapaymentgateways.filter)|false|none|
 
 > Example responses
 
@@ -1225,8 +1297,9 @@ fetch('/payment-gateways/{id}',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|PaymentGateways model instance|[PaymentGatewaysWithRelations](#schemapaymentgatewayswithrelations)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## PaymentGatewaysController.deleteById
@@ -1268,6 +1341,11 @@ fetch('/payment-gateways/{id}',
 
 `DELETE /payment-gateways/{id}`
 
+| Permissions |
+| ------- |
+| DeleteGateway   |
+| 13   |
+
 <h3 id="paymentgatewayscontroller.deletebyid-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
@@ -1280,8 +1358,9 @@ fetch('/payment-gateways/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|PaymentGateways DELETE success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## PaymentGatewaysController.create
@@ -1345,6 +1424,11 @@ fetch('/payment-gateways',
 
 `POST /payment-gateways`
 
+| Permissions |
+| ------- |
+| CreateGateway   |
+| 10   |
+
 > Body parameter
 
 ```json
@@ -1381,8 +1465,9 @@ fetch('/payment-gateways',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|PaymentGateways model instance|[PaymentGateways](#schemapaymentgateways)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## PaymentGatewaysController.updateAll
@@ -1446,6 +1531,11 @@ fetch('/payment-gateways',
 
 `PATCH /payment-gateways`
 
+| Permissions |
+| ------- |
+| UpdateGateway   |
+| 11   |
+
 > Body parameter
 
 ```json
@@ -1480,8 +1570,9 @@ fetch('/payment-gateways',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|PaymentGateways PATCH success count|[loopback.Count](#schemaloopback.count)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## PaymentGatewaysController.find
@@ -1533,11 +1624,16 @@ fetch('/payment-gateways',
 
 `GET /payment-gateways`
 
+| Permissions |
+| ------- |
+| ViewGateway   |
+| 12   |
+
 <h3 id="paymentgatewayscontroller.find-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|filter|query|[PaymentGateways.Filter1](#schemapaymentgateways.filter1)|false|none|
+|filter|query|[paymentgateways.Filter1](#schemapaymentgateways.filter1)|false|none|
 
 > Example responses
 
@@ -1573,8 +1669,9 @@ Status Code **200**
 |»» gatewayType|string|true|none|none|
 |»» enabled|boolean|true|none|none|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 <h1 id="-sourceloop-payment-service-pingcontroller">PingController</h1>
@@ -1859,6 +1956,11 @@ fetch('/transactions/count',
 
 `GET /transactions/count`
 
+| Permissions |
+| ------- |
+| ViewTransaction   |
+| 19   |
+
 <h3 id="transactionscontroller.count-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
@@ -1881,8 +1983,9 @@ fetch('/transactions/count',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Transactions model count|[loopback.Count](#schemaloopback.count)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## TransactionsController.transactionsPay
@@ -2242,6 +2345,11 @@ fetch('/transactions/{id}',
 
 `PUT /transactions/{id}`
 
+| Permissions |
+| ------- |
+| UpdateTransaction   |
+| 20   |
+
 > Body parameter
 
 ```json
@@ -2270,8 +2378,9 @@ fetch('/transactions/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|Transactions PUT success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## TransactionsController.updateById
@@ -2341,6 +2450,11 @@ fetch('/transactions/{id}',
 
 `PATCH /transactions/{id}`
 
+| Permissions |
+| ------- |
+| UpdateTransaction   |
+| 20   |
+
 > Body parameter
 
 ```json
@@ -2369,8 +2483,9 @@ fetch('/transactions/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|Transactions PATCH success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## TransactionsController.findById
@@ -2422,12 +2537,17 @@ fetch('/transactions/{id}',
 
 `GET /transactions/{id}`
 
+| Permissions |
+| ------- |
+| ViewTransaction   |
+| 19   |
+
 <h3 id="transactionscontroller.findbyid-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|string|true|none|
-|filter|query|[Transactions.Filter](#schematransactions.filter)|false|none|
+|filter|query|[transactions.Filter](#schematransactions.filter)|false|none|
 
 > Example responses
 
@@ -2452,8 +2572,9 @@ fetch('/transactions/{id}',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Transactions model instance|[TransactionsWithRelations](#schematransactionswithrelations)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## TransactionsController.deleteById
@@ -2495,6 +2616,11 @@ fetch('/transactions/{id}',
 
 `DELETE /transactions/{id}`
 
+| Permissions |
+| ------- |
+| DeleteTransaction   |
+| 21   |
+
 <h3 id="transactionscontroller.deletebyid-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
@@ -2507,8 +2633,9 @@ fetch('/transactions/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|Transactions DELETE success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## TransactionsController.create
@@ -2580,6 +2707,11 @@ fetch('/transactions',
 
 `POST /transactions`
 
+| Permissions |
+| ------- |
+| CreateTransaction   |
+| 18   |
+
 > Body parameter
 
 ```json
@@ -2624,8 +2756,9 @@ fetch('/transactions',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Transactions model instance|[Transactions](#schematransactions)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## TransactionsController.updateAll
@@ -2697,6 +2830,11 @@ fetch('/transactions',
 
 `PATCH /transactions`
 
+| Permissions |
+| ------- |
+| UpdateTransaction   |
+| 20   |
+
 > Body parameter
 
 ```json
@@ -2735,8 +2873,9 @@ fetch('/transactions',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Transactions PATCH success count|[loopback.Count](#schemaloopback.count)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## TransactionsController.find
@@ -2788,11 +2927,16 @@ fetch('/transactions',
 
 `GET /transactions`
 
+| Permissions |
+| ------- |
+| ViewTransaction   |
+| 19   |
+
 <h3 id="transactionscontroller.find-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|filter|query|[Transactions.Filter1](#schematransactions.filter1)|false|none|
+|filter|query|[transactions.Filter1](#schematransactions.filter1)|false|none|
 
 > Example responses
 
@@ -2836,8 +2980,9 @@ Status Code **200**
 |»» orderId|string|false|none|none|
 |»» res|object|false|none|none|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 <h1 id="-sourceloop-payment-service-subscriptionscontroller">SubscriptionsController</h1>
@@ -2918,8 +3063,9 @@ fetch('/subscriptions/count',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Subscriptions model count|[loopback.Count](#schemaloopback.count)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## SubscriptionsController.replaceById
@@ -3031,8 +3177,9 @@ fetch('/subscriptions/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|Subscriptions PUT success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## SubscriptionsController.updateById
@@ -3144,8 +3291,9 @@ fetch('/subscriptions/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|Subscriptions PATCH success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## SubscriptionsController.findById
@@ -3207,7 +3355,7 @@ fetch('/subscriptions/{id}',
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|string|true|none|
-|filter|query|[Subscriptions.Filter](#schemasubscriptions.filter)|false|none|
+|filter|query|[subscriptions.Filter](#schemasubscriptions.filter)|false|none|
 
 > Example responses
 
@@ -3235,8 +3383,9 @@ fetch('/subscriptions/{id}',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Subscriptions model instance|[SubscriptionsWithRelations](#schemasubscriptionswithrelations)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## SubscriptionsController.deleteById
@@ -3295,8 +3444,9 @@ fetch('/subscriptions/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|Subscriptions DELETE success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## SubscriptionsController.create
@@ -3429,8 +3579,9 @@ fetch('/subscriptions',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Subscriptions model instance|[Subscriptions](#schemasubscriptions)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## SubscriptionsController.updateAll
@@ -3554,8 +3705,9 @@ fetch('/subscriptions',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Subscriptions PATCH success count|[loopback.Count](#schemaloopback.count)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## SubscriptionsController.find
@@ -3616,7 +3768,7 @@ fetch('/subscriptions',
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|filter|query|[Subscriptions.Filter1](#schemasubscriptions.filter1)|false|none|
+|filter|query|[subscriptions.Filter1](#schemasubscriptions.filter1)|false|none|
 
 > Example responses
 
@@ -3666,8 +3818,9 @@ Status Code **200**
 |»» gatewaySubscriptionId|string|false|none|none|
 |»» planId|string|false|none|none|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 <h1 id="-sourceloop-payment-service-templatescontroller">TemplatesController</h1>
@@ -3721,6 +3874,11 @@ fetch('/templates/count',
 
 `GET /templates/count`
 
+| Permissions |
+| ------- |
+| ViewTemplate   |
+| 16   |
+
 <h3 id="templatescontroller.count-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
@@ -3743,8 +3901,9 @@ fetch('/templates/count',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Templates model count|[loopback.Count](#schemaloopback.count)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## TemplatesController.replaceById
@@ -3808,6 +3967,11 @@ fetch('/templates/{id}',
 
 `PUT /templates/{id}`
 
+| Permissions |
+| ------- |
+| UpdateTemplate   |
+| 15   |
+
 > Body parameter
 
 ```json
@@ -3833,8 +3997,9 @@ fetch('/templates/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|Templates PUT success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## TemplatesController.updateById
@@ -3898,6 +4063,11 @@ fetch('/templates/{id}',
 
 `PATCH /templates/{id}`
 
+| Permissions |
+| ------- |
+| UpdateTemplate   |
+| 15   |
+
 > Body parameter
 
 ```json
@@ -3923,8 +4093,9 @@ fetch('/templates/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|Templates PATCH success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## TemplatesController.findById
@@ -3976,12 +4147,17 @@ fetch('/templates/{id}',
 
 `GET /templates/{id}`
 
+| Permissions |
+| ------- |
+| ViewTemplate   |
+| 16   |
+
 <h3 id="templatescontroller.findbyid-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |id|path|string|true|none|
-|filter|query|[Templates.Filter](#schematemplates.filter)|false|none|
+|filter|query|[templates.Filter](#schematemplates.filter)|false|none|
 
 > Example responses
 
@@ -4003,8 +4179,9 @@ fetch('/templates/{id}',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Templates model instance|[TemplatesWithRelations](#schematemplateswithrelations)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## TemplatesController.deleteById
@@ -4046,6 +4223,11 @@ fetch('/templates/{id}',
 
 `DELETE /templates/{id}`
 
+| Permissions |
+| ------- |
+| DeleteTemplate   |
+| 17   |
+
 <h3 id="templatescontroller.deletebyid-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
@@ -4058,8 +4240,9 @@ fetch('/templates/{id}',
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|Templates DELETE success|None|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## TemplatesController.create
@@ -4125,6 +4308,11 @@ fetch('/templates',
 
 `POST /templates`
 
+| Permissions |
+| ------- |
+| CreateTemplate   |
+| 14   |
+
 > Body parameter
 
 ```json
@@ -4163,8 +4351,9 @@ fetch('/templates',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Templates model instance|[Templates](#schematemplates)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## TemplatesController.updateAll
@@ -4230,6 +4419,11 @@ fetch('/templates',
 
 `PATCH /templates`
 
+| Permissions |
+| ------- |
+| UpdateTemplate   |
+| 15   |
+
 > Body parameter
 
 ```json
@@ -4265,8 +4459,9 @@ fetch('/templates',
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Templates PATCH success count|[loopback.Count](#schemaloopback.count)|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 ## TemplatesController.find
@@ -4318,11 +4513,16 @@ fetch('/templates',
 
 `GET /templates`
 
+| Permissions |
+| ------- |
+| ViewTemplate   |
+| 16   |
+
 <h3 id="templatescontroller.find-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
-|filter|query|[Templates.Filter1](#schematemplates.filter1)|false|none|
+|filter|query|[templates.Filter1](#schematemplates.filter1)|false|none|
 
 > Example responses
 
@@ -4360,8 +4560,9 @@ Status Code **200**
 |»» template|string|true|none|none|
 |»» type|string|true|none|none|
 
-<aside class="success">
-This operation does not require authentication
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+None
 </aside>
 
 <h1 id="-sourceloop-payment-service-transactionsubscriptionscontroller">TransactionSubscriptionsController</h1>
@@ -5145,10 +5346,10 @@ loopback.Count
 |---|---|---|---|---|
 |count|number|false|none|none|
 
-<h2 id="tocS_Orders.Filter">Orders.Filter</h2>
+<h2 id="tocS_orders.Filter">orders.Filter</h2>
 <!-- backwards compatibility -->
 <a id="schemaorders.filter"></a>
-<a id="schema_Orders.Filter"></a>
+<a id="schema_orders.Filter"></a>
 <a id="tocSorders.filter"></a>
 <a id="tocsorders.filter"></a>
 
@@ -5171,7 +5372,7 @@ loopback.Count
 
 ```
 
-Orders.Filter
+orders.Filter
 
 ### Properties
 
@@ -5219,10 +5420,10 @@ xor
 |---|---|---|---|---|
 |» *anonymous*|[string]|false|none|none|
 
-<h2 id="tocS_Orders.Filter1">Orders.Filter1</h2>
+<h2 id="tocS_orders.Filter1">orders.Filter1</h2>
 <!-- backwards compatibility -->
 <a id="schemaorders.filter1"></a>
-<a id="schema_Orders.Filter1"></a>
+<a id="schema_orders.Filter1"></a>
 <a id="tocSorders.filter1"></a>
 <a id="tocsorders.filter1"></a>
 
@@ -5246,7 +5447,7 @@ xor
 
 ```
 
-Orders.Filter
+orders.Filter
 
 ### Properties
 
@@ -5295,10 +5496,10 @@ xor
 |---|---|---|---|---|
 |» *anonymous*|[string]|false|none|none|
 
-<h2 id="tocS_PaymentGateways.Filter">PaymentGateways.Filter</h2>
+<h2 id="tocS_paymentgateways.Filter">paymentgateways.Filter</h2>
 <!-- backwards compatibility -->
 <a id="schemapaymentgateways.filter"></a>
-<a id="schema_PaymentGateways.Filter"></a>
+<a id="schema_paymentgateways.Filter"></a>
 <a id="tocSpaymentgateways.filter"></a>
 <a id="tocspaymentgateways.filter"></a>
 
@@ -5318,7 +5519,7 @@ xor
 
 ```
 
-PaymentGateways.Filter
+paymentgateways.Filter
 
 ### Properties
 
@@ -5363,10 +5564,10 @@ xor
 |---|---|---|---|---|
 |» *anonymous*|[string]|false|none|none|
 
-<h2 id="tocS_PaymentGateways.Filter1">PaymentGateways.Filter1</h2>
+<h2 id="tocS_paymentgateways.Filter1">paymentgateways.Filter1</h2>
 <!-- backwards compatibility -->
 <a id="schemapaymentgateways.filter1"></a>
-<a id="schema_PaymentGateways.Filter1"></a>
+<a id="schema_paymentgateways.Filter1"></a>
 <a id="tocSpaymentgateways.filter1"></a>
 <a id="tocspaymentgateways.filter1"></a>
 
@@ -5387,7 +5588,7 @@ xor
 
 ```
 
-PaymentGateways.Filter
+paymentgateways.Filter
 
 ### Properties
 
@@ -5464,10 +5665,10 @@ PingResponse
 |headers|object|false|none|none|
 |» Content-Type|string|false|none|none|
 
-<h2 id="tocS_Subscriptions.Filter">Subscriptions.Filter</h2>
+<h2 id="tocS_subscriptions.Filter">subscriptions.Filter</h2>
 <!-- backwards compatibility -->
 <a id="schemasubscriptions.filter"></a>
-<a id="schema_Subscriptions.Filter"></a>
+<a id="schema_subscriptions.Filter"></a>
 <a id="tocSsubscriptions.filter"></a>
 <a id="tocssubscriptions.filter"></a>
 
@@ -5494,7 +5695,7 @@ PingResponse
 
 ```
 
-Subscriptions.Filter
+subscriptions.Filter
 
 ### Properties
 
@@ -5546,10 +5747,10 @@ xor
 |---|---|---|---|---|
 |» *anonymous*|[string]|false|none|none|
 
-<h2 id="tocS_Subscriptions.Filter1">Subscriptions.Filter1</h2>
+<h2 id="tocS_subscriptions.Filter1">subscriptions.Filter1</h2>
 <!-- backwards compatibility -->
 <a id="schemasubscriptions.filter1"></a>
-<a id="schema_Subscriptions.Filter1"></a>
+<a id="schema_subscriptions.Filter1"></a>
 <a id="tocSsubscriptions.filter1"></a>
 <a id="tocssubscriptions.filter1"></a>
 
@@ -5577,7 +5778,7 @@ xor
 
 ```
 
-Subscriptions.Filter
+subscriptions.Filter
 
 ### Properties
 
@@ -5630,10 +5831,10 @@ xor
 |---|---|---|---|---|
 |» *anonymous*|[string]|false|none|none|
 
-<h2 id="tocS_Templates.Filter">Templates.Filter</h2>
+<h2 id="tocS_templates.Filter">templates.Filter</h2>
 <!-- backwards compatibility -->
 <a id="schematemplates.filter"></a>
-<a id="schema_Templates.Filter"></a>
+<a id="schema_templates.Filter"></a>
 <a id="tocStemplates.filter"></a>
 <a id="tocstemplates.filter"></a>
 
@@ -5654,7 +5855,7 @@ xor
 
 ```
 
-Templates.Filter
+templates.Filter
 
 ### Properties
 
@@ -5700,10 +5901,10 @@ xor
 |---|---|---|---|---|
 |» *anonymous*|[string]|false|none|none|
 
-<h2 id="tocS_Templates.Filter1">Templates.Filter1</h2>
+<h2 id="tocS_templates.Filter1">templates.Filter1</h2>
 <!-- backwards compatibility -->
 <a id="schematemplates.filter1"></a>
-<a id="schema_Templates.Filter1"></a>
+<a id="schema_templates.Filter1"></a>
 <a id="tocStemplates.filter1"></a>
 <a id="tocstemplates.filter1"></a>
 
@@ -5725,7 +5926,7 @@ xor
 
 ```
 
-Templates.Filter
+templates.Filter
 
 ### Properties
 
@@ -5772,10 +5973,10 @@ xor
 |---|---|---|---|---|
 |» *anonymous*|[string]|false|none|none|
 
-<h2 id="tocS_Transactions.Filter">Transactions.Filter</h2>
+<h2 id="tocS_transactions.Filter">transactions.Filter</h2>
 <!-- backwards compatibility -->
 <a id="schematransactions.filter"></a>
-<a id="schema_Transactions.Filter"></a>
+<a id="schema_transactions.Filter"></a>
 <a id="tocStransactions.filter"></a>
 <a id="tocstransactions.filter"></a>
 
@@ -5799,7 +6000,7 @@ xor
 
 ```
 
-Transactions.Filter
+transactions.Filter
 
 ### Properties
 
@@ -5848,10 +6049,10 @@ xor
 |---|---|---|---|---|
 |» *anonymous*|[string]|false|none|none|
 
-<h2 id="tocS_Transactions.Filter1">Transactions.Filter1</h2>
+<h2 id="tocS_transactions.Filter1">transactions.Filter1</h2>
 <!-- backwards compatibility -->
 <a id="schematransactions.filter1"></a>
-<a id="schema_Transactions.Filter1"></a>
+<a id="schema_transactions.Filter1"></a>
 <a id="tocStransactions.filter1"></a>
 <a id="tocstransactions.filter1"></a>
 
@@ -5876,7 +6077,7 @@ xor
 
 ```
 
-Transactions.Filter
+transactions.Filter
 
 ### Properties
 
@@ -5925,3 +6126,4 @@ xor
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
 |» *anonymous*|[string]|false|none|none|
+

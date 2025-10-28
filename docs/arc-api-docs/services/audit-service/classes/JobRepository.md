@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultCrudRepository`<[`Job`](Job.md), typeof [`id`](Job.md#id)\>
+- `DefaultCrudRepository`<`Job`, typeof [`id`](Job.md#id)\>
 
   ↳ **`JobRepository`**
 
@@ -14,17 +14,22 @@
 
 - [constructor](JobRepository.md#constructor)
 
+### Properties
+
+- [job](JobRepository.md#job)
+
 ## Constructors
 
 ### constructor
 
-• **new JobRepository**(`dataSource`)
+• **new JobRepository**(`dataSource`, `job`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `dataSource` | `DataSource` |
+| `job` | typeof `Entity` & { `prototype`: `Job`  } |
 
 #### Overrides
 
@@ -35,4 +40,14 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[services/audit-service/src/repositories/job.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/audit-service/src/repositories/job.repository.ts#L14)
+[services/audit-service/src/repositories/job.repository.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/repositories/job.repository.ts#L13)
+
+## Properties
+
+### job
+
+• `Private` `Readonly` **job**: typeof `Entity` & { `prototype`: `Job`  }
+
+#### Defined in
+
+[services/audit-service/src/repositories/job.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/audit-service/src/repositories/job.repository.ts#L16)

@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:69](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L69)
+[services/subscription-service/src/component.ts:92](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/component.ts#L92)
 
 ## Properties
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:71](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L71)
+[services/subscription-service/src/component.ts:94](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/component.ts#L94)
 
 ___
 
@@ -66,7 +66,7 @@ Component.bindings
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:141](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L141)
+[services/subscription-service/src/component.ts:182](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/component.ts#L182)
 
 ___
 
@@ -82,7 +82,7 @@ Component.controllers
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:160](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L160)
+[services/subscription-service/src/component.ts:201](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/component.ts#L201)
 
 ___
 
@@ -95,7 +95,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:155](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L155)
+[services/subscription-service/src/component.ts:196](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/component.ts#L196)
 
 ___
 
@@ -109,7 +109,7 @@ Component.providers
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:139](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L139)
+[services/subscription-service/src/component.ts:180](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/component.ts#L180)
 
 ___
 
@@ -122,7 +122,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:149](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L149)
+[services/subscription-service/src/component.ts:190](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/component.ts#L190)
 
 ___
 
@@ -136,7 +136,7 @@ Component.services
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:143](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L143)
+[services/subscription-service/src/component.ts:184](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/component.ts#L184)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:73](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L73)
+[services/subscription-service/src/component.ts:96](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/component.ts#L96)
 
 ## Methods
 
@@ -162,4 +162,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/subscription-service/src/component.ts:166](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/component.ts#L166)
+[services/subscription-service/src/component.ts:207](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/component.ts#L207)

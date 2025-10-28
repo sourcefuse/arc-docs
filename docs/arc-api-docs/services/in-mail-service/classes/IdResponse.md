@@ -46,4 +46,4 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/in-mail-service/src/models/id-response.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/models/id-response.model.ts#L13)
+[services/in-mail-service/src/models/id-response.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/in-mail-service/src/models/id-response.model.ts#L13)

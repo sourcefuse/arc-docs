@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-- `DefaultCrudRepository`<[`Orders`](Orders.md), typeof [`id`](Orders.md#id)\>
+- `DefaultCrudRepository`<`Orders`, typeof [`id`](Orders.md#id)\>
 
   ↳ **`OrdersRepository`**
 
@@ -14,17 +14,22 @@
 
 - [constructor](OrdersRepository.md#constructor)
 
+### Properties
+
+- [orders](OrdersRepository.md#orders)
+
 ## Constructors
 
 ### constructor
 
-• **new OrdersRepository**(`dataSource`)
+• **new OrdersRepository**(`dataSource`, `orders`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `dataSource` | `DataSource` |
+| `orders` | typeof `Entity` & { `prototype`: `Orders`  } |
 
 #### Overrides
 
@@ -35,4 +40,14 @@ DefaultCrudRepository&lt;
 
 #### Defined in
 
-[services/payment-service/src/repositories/orders.repository.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/repositories/orders.repository.ts#L14)
+[services/payment-service/src/repositories/orders.repository.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/repositories/orders.repository.ts#L16)
+
+## Properties
+
+### orders
+
+• `Private` `Readonly` **orders**: typeof `Entity` & { `prototype`: `Orders`  }
+
+#### Defined in
+
+[services/payment-service/src/repositories/orders.repository.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/repositories/orders.repository.ts#L20)

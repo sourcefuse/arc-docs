@@ -34,4 +34,4 @@ BootMixin(
 
 #### Defined in
 
-[services/subscription-service/src/application.ts:17](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/application.ts#L17)
+[services/subscription-service/src/application.ts:16](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/application.ts#L16)

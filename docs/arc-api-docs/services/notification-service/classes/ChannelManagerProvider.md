@@ -28,9 +28,15 @@
 
 ▸ **value**(): `Object`
 
+The function `value` returns an object with a method `isChannelAccessAllowed` that always returns
+`true`.
+
 #### Returns
 
 `Object`
+
+The `value()` function is returning an object with a property `isChannelAccessAllowed`
+which is a function that always returns `true`.
 
 | Name | Type |
 | :------ | :------ |
@@ -42,4 +48,4 @@ Provider.value
 
 #### Defined in
 
-[services/notification-service/src/providers/channel-manager.service.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/providers/channel-manager.service.ts#L10)
+[services/notification-service/src/providers/channel-manager.service.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/providers/channel-manager.service.ts#L16)

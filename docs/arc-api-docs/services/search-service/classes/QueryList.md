@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[services/search-service/src/classes/query-list.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/query-list.ts#L9)
+[services/search-service/src/classes/query-list.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/query-list.ts#L9)
 
 ## Properties
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[services/search-service/src/classes/query-list.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/query-list.ts#L8)
+[services/search-service/src/classes/query-list.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/query-list.ts#L8)
 
 ## Methods
 
@@ -67,7 +67,7 @@
 
 #### Defined in
 
-[services/search-service/src/classes/query-list.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/query-list.ts#L24)
+[services/search-service/src/classes/query-list.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/query-list.ts#L24)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/query-list.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/query-list.ts#L19)
+[services/search-service/src/classes/query-list.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/query-list.ts#L19)
 
 ___
 
@@ -106,4 +106,4 @@ ___
 
 #### Defined in
 
-[services/search-service/src/classes/query-list.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/classes/query-list.ts#L16)
+[services/search-service/src/classes/query-list.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/classes/query-list.ts#L16)

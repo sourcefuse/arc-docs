@@ -30,7 +30,10 @@
 
 ### Methods
 
+- [\_configureProvidersAndRepositories](SearchServiceComponent.md#_configureprovidersandrepositories)
+- [\_setupSearchController](SearchServiceComponent.md#_setupsearchcontroller)
 - [createResultModel](SearchServiceComponent.md#createresultmodel)
+- [getSearchableModelIdentifiers](SearchServiceComponent.md#getsearchablemodelidentifiers)
 - [setupSequence](SearchServiceComponent.md#setupsequence)
 
 ## Constructors
@@ -54,7 +57,7 @@
 
 #### Defined in
 
-[services/search-service/src/component.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/component.ts#L48)
+[services/search-service/src/component.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/component.ts#L55)
 
 ## Properties
 
@@ -64,7 +67,7 @@
 
 #### Defined in
 
-[services/search-service/src/component.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/component.ts#L50)
+[services/search-service/src/component.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/component.ts#L57)
 
 ___
 
@@ -78,7 +81,7 @@ Component.bindings
 
 #### Defined in
 
-[services/search-service/src/component.ts:134](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/component.ts#L134)
+[services/search-service/src/component.ts:171](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/component.ts#L171)
 
 ___
 
@@ -88,7 +91,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/component.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/component.ts#L52)
+[services/search-service/src/component.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/component.ts#L59)
 
 ___
 
@@ -104,7 +107,7 @@ Component.controllers
 
 #### Defined in
 
-[services/search-service/src/component.ts:151](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/component.ts#L151)
+[services/search-service/src/component.ts:188](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/component.ts#L188)
 
 ___
 
@@ -117,7 +120,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/search-service/src/component.ts:146](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/component.ts#L146)
+[services/search-service/src/component.ts:183](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/component.ts#L183)
 
 ___
 
@@ -131,7 +134,7 @@ Component.providers
 
 #### Defined in
 
-[services/search-service/src/component.ts:132](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/component.ts#L132)
+[services/search-service/src/component.ts:169](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/component.ts#L169)
 
 ___
 
@@ -144,9 +147,45 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/search-service/src/component.ts:140](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/component.ts#L140)
+[services/search-service/src/component.ts:177](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/component.ts#L177)
 
 ## Methods
+
+### \_configureProvidersAndRepositories
+
+▸ `Private` **_configureProvidersAndRepositories**(): `void`
+
+The function `_configureProvidersAndRepositories` sets up providers and repositories based on the
+configuration for using Sequelize in a TypeScript application.
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[services/search-service/src/component.ts:92](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/component.ts#L92)
+
+___
+
+### \_setupSearchController
+
+▸ `Private` **_setupSearchController**(): `void`
+
+The function `_setupSearchController` sets up a search controller based on configuration settings.
+
+#### Returns
+
+`void`
+
+If the condition `if (!this.config)` is true, then the function will return early and
+nothing will be executed beyond that point.
+
+#### Defined in
+
+[services/search-service/src/component.ts:117](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/component.ts#L117)
+
+___
 
 ### createResultModel
 
@@ -165,7 +204,27 @@ typeof `Model`
 
 #### Defined in
 
-[services/search-service/src/component.ts:184](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/component.ts#L184)
+[services/search-service/src/component.ts:221](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/component.ts#L221)
+
+___
+
+### getSearchableModelIdentifiers
+
+▸ **getSearchableModelIdentifiers**(`config`): `string`[]
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `config` | [`SearchServiceConfig`](../interfaces/SearchServiceConfig.md)<`T`\> |
+
+#### Returns
+
+`string`[]
+
+#### Defined in
+
+[services/search-service/src/component.ts:159](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/component.ts#L159)
 
 ___
 
@@ -181,4 +240,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/search-service/src/component.ts:159](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/component.ts#L159)
+[services/search-service/src/component.ts:196](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/component.ts#L196)

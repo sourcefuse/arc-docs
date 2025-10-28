@@ -1,16 +1,26 @@
 @sourceloop/authentication-service / [Exports](modules.md)
 
-# @sourceloop/authentication-service
+<a style="position: relative; top: 10px;" href="https://sourcefuse.github.io/arc-docs/arc-api-docs" target="_blank"><img src="https://github.com/sourcefuse/loopback4-microservice-catalog/blob/master/docs/assets/logo-dark-bg.png?raw=true" alt="ARC By SourceFuse logo" title="ARC By SourceFuse" align="right" width="150" /></a>
 
-[![LoopBack](<https://github.com/strongloop/loopback-next/raw/master/docs/site/imgs/branding/Powered-by-LoopBack-Badge-(blue)-@2x.png>)](http://loopback.io/)
+# [@sourceloop/authentication-service](https://github.com/sourcefuse/loopback4-microservice-catalog/tree/master/services/authentication-service)
 
-![npm](https://img.shields.io/npm/dm/@sourceloop/authentication-service)
-
-![node-current (scoped)](https://img.shields.io/node/v/@sourceloop/authentication-service)
-
-![npm (prod) dependency version (scoped)](https://img.shields.io/npm/dependency-version/@sourceloop/authentication-service/@loopback/core)
-
-![check-code-coverage](https://img.shields.io/badge/code--coverage-75.01%25-yellow)
+<p align="left">
+<a href="https://www.npmjs.org/package/@sourceloop/authentication-service">
+<img src="https://img.shields.io/npm/v/@sourceloop/authentication-service.svg" alt="npm version" />
+</a>
+<a href="https://github.com/sourcefuse/loopback4-microservice-catalog/graphs/contributors" target="_blank">
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/sourcefuse/loopback4-microservice-catalog">
+</a>
+<a href="https://www.npmjs.com/@sourceloop/authentication-service" target="_blank">
+<img alt="sourceloop authentication-service downloads" src="https://img.shields.io/npm/dm/@sourceloop/authentication-service">
+</a>
+<a href="./LICENSE">
+<img src="https://img.shields.io/github/license/sourcefuse/loopback4-microservice-catalog" alt="License" />
+</a>
+<a href="https://loopback.io/" target="_blank">
+<img alt="Pb Loopback" src="https://img.shields.io/badge/Powered%20by-Loopback 4-brightgreen" />
+</a>
+</p>
 
 ## Overview
 
@@ -122,23 +132,26 @@ npm i @sourceloop/authentication-service
 - **Two-Factor-Authentication** -
 
   - As of now, 2nd Factor will always be either OTP or Google Authenticator.
-  - Implement MfaProvider(refer [this](./src/providers/mfa.provider.ts)) in your application and bind it to its respective key in application.ts
+  - Implement MfaProvider(refer [this](./src/providers/mfa.provider.ts)) in your application setting
+    its value to true and bind it to its respective key in application.ts
 
-  ```typescript
-  import {VerifyBindings} from '@sourceloop/authentication-service';
-  this.bind(VerifyBindings.MFA_PROVIDER).toProvider(MfaProvider);
-  ```
+    ```typescript
+    import {VerifyBindings} from '@sourceloop/authentication-service';
+    this.bind(VerifyBindings.MFA_PROVIDER).toProvider(MfaProvider);
+    ```
 
   - It works for almost all authentication methods provided by this service.
   - Use `/verify-otp` to enter otp or code from authenticator app.
+    for using Google Authenticator user needs to pass client id in the payload which is optional in case for OTP
 
 - **OAuth- using Azure AD** -
+
   - Passport strategy for authenticating via Azure Ad using [passport-azure-ad](https://www.npmjs.com/package/passport-azure-ad).
-  Make sure you have an account on Azure and have your application registered. Follow the steps [here](https://docs.microsoft.com/en-us/azure/active-directory-b2c/configure-a-sample-node-web-app).
+    Make sure you have an account on Azure and have your application registered. Follow the steps [here](https://docs.microsoft.com/en-us/azure/active-directory-b2c/configure-a-sample-node-web-app).
   - Refer the .env.example file to add all the relevant env variables for Azure Auth. Note - For boolean values that need to passed as false keep them blank.
-  We are using cookie based approach instead of session based, so the library requires a cookie-parser middleware. To bind the middleware to you application set AZURE_AUTH_ENABLED=true in env file so the middleware will be added to the sequence.
-  Also the verifier function uses Signup provider whose implementation needs to be added by the user.
-  Bind the provider key to its corresponding value.
+    We are using cookie based approach instead of session based, so the library requires a cookie-parser middleware. To bind the middleware to you application set AZURE_AUTH_ENABLED=true in env file so the middleware will be added to the sequence.
+    Also the verifier function uses Signup provider whose implementation needs to be added by the user.
+    Bind the provider key to its corresponding value.
 
     ```ts
     this.providers[SignUpBindings.AZURE_AD_SIGN_UP_PROVIDER.key] =
@@ -161,7 +174,7 @@ npm i @sourceloop/authentication-service
 
     Also bind `VerifyBindings.AZURE_AD_PRE_VERIFY_PROVIDER` and `VerifyBindings.AZURE_AD_POST_VERIFY_PROVIDER` to override the basic implementation provided by [default](https://github.com/sourcefuse/loopback4-microservice-catalog/tree/master/services/authentication-service/src/providers).
 
-- **Authorizing Public & Private Clients** -
+- **Authorizing Public & Private Clients**
 
   - In order to authorize public and private clients separately in your application, add the following to application.ts before binding AuthenticationComponent
 
@@ -181,26 +194,23 @@ npm i @sourceloop/authentication-service
     ADD client_type varchar(100) DEFAULT 'public';
     ```
 
+    For a more elaborate implementation , see `/sandbox/auth-public-private-client`.
+
 - **Authenticating JWT using RSA Encryption**
 
-  In order to authenticate JWT token using RSA encrytion, we need to provide JWT_PUBLIC_KEY and JWT_PRIVATE_KEY where the JWT_PUBLIC_KEY and JWT_PRIVATE_KEY are the paths to your public and private keys(.pem files).Steps to create Public key and private key are as follows:
+  To generate the keys, we have exposed an endpoint through which both keys can be generated.
 
-  -For creating RSA key pair,use the following command:
-  To generate private key of length 2048:
+  Endpoint:- {AUTH_SERVICE_URL}/connect/generate-keys
 
-  ```bash
-  openssl genrsa -out private.pem 2048
+  It will generate the “N” number of keys in the database, where N = process.env.MAX_JWT_KEYS. You need to set another env variable named "process.env.JWT_PRIVATE_KEY_PASSPHRASE", which will be used to encrypt/decrypt private key.
+
+  By default we are employing asymmetric token signing and verification, but if symmetric signing and verification is required it has to be explicitly provided in the manner below
+
+  ```ts
+  this.bind(AuthServiceBindings.Config).to({
+    useSymmetricEncryption: true,
+  });
   ```
-
-  To generate public key:
-
-  ```bash
-  openssl rsa -in private.pem -pubout -out public.pem
-  ```
-
-  Both the files should be in (.pem) format.
-  for example: private.pem file for private key and public.pem file for public key.
-  (refer [this](https://cryptotools.net/rsagen))
 
 - **Authenticating Password using RSA Encryption**
 
@@ -210,6 +220,17 @@ npm i @sourceloop/authentication-service
   Its implemented through password decryption provider [here](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/master/services/authentication-service/src/providers/password-decryption.provider.ts) which accepts password in encrypted format.It uses node-forge as default for decryption but can be overriden through this password decryption provider for using any other library.
 
   Note: When using `.env` file put your private key in single line with line breaks escaped with `\n`, one of the ways of doing so can be found [here](https://serverfault.com/questions/466683/can-an-ssl-certificate-be-on-a-single-line-in-a-file-no-line-breaks).
+
+- **JWT keys rotation**
+
+  After the generation, the following endpoint will be created to generate a new key, delete the oldest key, and add the new key to the DB.
+  Endpoint:- {AUTH_SERVICE_URL}/connect/rotate-keys
+
+  This api should be called after a configurable time. It can be a cron job or a background task which will call the api to rotate the keys.
+
+  - It will generate a new pair of keys.
+  - It will delete the oldest set of keys from the db.
+  - It will add the newly generated keys to the db.
 
 - **Using with Sequelize**
 
@@ -226,8 +247,67 @@ npm i @sourceloop/authentication-service
 
   - Use the `SequelizeDataSource` in your audit datasource as the parent class. Refer [this](https://www.npmjs.com/package/@loopback/sequelize#step-1-configure-datasource) for more details.
 
+- **Customizable Password Hashing for Enhanced Security**
+
+  For hashing and verifying of password two providers utilized are as follows:
+
+  PasswordHashingProvider: This provider [here](./src/providers/password-hashing.provider.ts) generates a hash of a given password using bcrypt's hashing function.
+
+  PasswordVerifyProvider: This provider [here](./src/providers//password-verify.provider.ts) verifies whether a plain password matches a hashed password using bcrypt's comparison function
+
+  These providers offer a flexible and modular approach to password hashing and verification within a LoopBack application. Users can easily swap out these implementations with their preferred hashing algorithms by overriding the providers, allowing for customization according to specific security requirements.
+
 - Start the application
   `npm start`
+
+### Using sourceloop/authentication-service as Identity Server
+
+Authenttication service can be used as a identity server. Following endpoints have been exposed for use:-
+
+  <table>
+  <thead>
+  <th>Endpoint</th>
+  <th>HTTP Type</th>
+  <th>Description</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>/connect/generate-keys</td>
+      <td>POST</td>
+      <td>It is generating private and public keys in the jwt-keys table. The number of keys generated will be defined by env variable name MAX_JWT_KEYS</td>
+    </tr>
+    <tr>
+      <td>/.well-known/openid-configuration</td>
+      <td>GET</td>
+      <td>The discovery endpoint can be used to retrieve metadata about IdentityServer - it returns information like the issuer name, key material, supported scopes, etc</td>
+    </tr>
+    <tr>
+      <td>/connect/get-keys</td>
+      <td>GET</td>
+      <td>This endpoint will return the public keys available in the database</td>
+    </tr>
+    <tr>
+      <td>/connect/rotate-keys</td>
+      <td>POST</td>
+      <td>this endpoint will help rotate the keys. It will delete the oldest key and generate a new one</td>
+    </tr>
+    <tr>
+      <td>/connect/userinfo</td>
+      <td>GET</td>
+      <td>The UserInfo endpoint can be used to retrieve identity information about a subject. It requires a valid access token with at least the ‘openid’ scope.</td>
+    </tr>
+    <tr>
+      <td>/connect/token</td>
+      <td>POST</td>
+      <td>The token endpoint can be used to programmatically request or refresh tokens (resource owner password credential flow, authorization code flow, client credentials flow, and custom grant types).</td>
+    </tr>
+    <tr>
+      <td>/connect/endsession</td>
+      <td>POST</td>
+      <td>Redirecting to the logout endpoint clears the authentication session and cookie.</td>
+    </tr>
+  </tbody>
+  </table>
 
 ### Environment Variables
 
@@ -318,18 +398,6 @@ npm i @sourceloop/authentication-service
         <td></td>
       </tr>
       <tr>
-        <td>JWT_PRIVATE_KEY</td>
-        <td>Y</td>
-        <td>Asymmetric signing key of the JWT token.</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>JWT_PUBLIC_KEY</td>
-        <td>Y</td>
-        <td>Verifying signed JWT Token.</td>
-        <td></td>
-      </tr>
-      <tr>
         <td>JWT_SECRET</td>
         <td>Y</td>
         <td>Symmetric signing key of the JWT token.</td>
@@ -339,6 +407,18 @@ npm i @sourceloop/authentication-service
         <td>JWT_ISSUER</td>
         <td>Y</td>
         <td>Issuer of the JWT token.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>JWT_PRIVATE_KEY_PASSPHRASE</td>
+        <td>Y</td>
+        <td>Passphrase to encrypt/decrypt private key</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>MAX_JWT_KEYS</td>
+        <td>Y</td>
+        <td>Maximum number of jwt keys generated in the database</td>
         <td></td>
       </tr>
       <tr>
@@ -386,7 +466,7 @@ npm i @sourceloop/authentication-service
       <tr>
         <td>KEYCLOAK_HOST</td>
         <td>N</td>
-        <td>Hostname of the Keycloak instance</td>
+        <td>Hostname of the Keycloak instance. For all keycloak version below 17, user can still use this by only updating the KEYCLOCK_HOST and appending '/auth/realms' to its existing value</td>
         <td></td>
       </tr>
       <tr>
@@ -422,6 +502,29 @@ npm i @sourceloop/authentication-service
 
   </tbody>
 </table>
+
+Here is the flow diagram to understand how IDP Server works:-
+
+```mermaid
+sequenceDiagram
+    participant Client
+    participant IdP as ARC IDP
+    participant Authentication Service
+
+    Client->>IdP: GET /.well-known/openid-configuration
+    IdP-->>Client: Returns IdP config (includes jwks_uri)
+
+    Client->>IdP: GET JWKS (using jwks_uri /connect/get-keys)
+    IdP-->>Client: Returns JWKS (public keys)
+
+    Client->>Client: Decode JWT token\nExtract kid from header
+
+    Client->>Client: Find public key from JWKS by kid
+
+    Client->>Authentication Service: Send JWT token + public key
+
+    Authentication Service->>Authentication Service: Verify JWT signature using public key
+```
 
 ### Setting up a `DataSource`
 
@@ -466,6 +569,8 @@ export class AuthenticationDbDataSource
 
 The migrations required for this service are processed during the installation automatically if you set the `AUTH_MIGRATION` or `SOURCELOOP_MIGRATION` env variable. The migrations use [`db-migrate`](https://www.npmjs.com/package/db-migrate) with [`db-migrate-pg`](https://www.npmjs.com/package/db-migrate-pg) driver for migrations, so you will have to install these packages to use auto-migration. Please note that if you are using some pre-existing migrations or databases, they may be affected. In such a scenario, it is advised that you copy the migration files in your project root, using the `AUTH_MIGRATION_COPY` or `SOURCELOOP_MIGRATION_COPY` env variables. You can customize or cherry-pick the migrations in the copied files according to your specific requirements and then apply them to the DB.
 
+This migration script supports both MySQL and PostgreSQL databases, controlled by environment variables. By setting MYSQL_MIGRATION to 'true', the script runs migrations using MySQL configuration files; otherwise, it defaults to PostgreSQL. .
+
 Additionally, there is now an option to choose between SQL migration or PostgreSQL migration.
 NOTE : For [`@sourceloop/cli`](https://www.npmjs.com/package/@sourceloop/cli?activeTab=readme) users, this choice can be specified during the scaffolding process by selecting the "type of datasource" option.
 
@@ -476,6 +581,10 @@ NOTE : For [`@sourceloop/cli`](https://www.npmjs.com/package/@sourceloop/cli?act
 ### Providers
 
 You can find documentation for some of the providers available in this service [here](./src/providers/README.md)
+
+## ATTENTION
+
+We would like to inform you that we have deprecated `'/auth/login-token'` due to security vulnerabilities. Your immediate action is required to transition away from its usage. We encourage you to transition to OAuth-compliant APIs such as `'/auth/login'` and `'/auth/token'` for secure authentication and data exchange. Refer to our documentation and reach out for support if needed. Your cooperation is appreciated in safeguarding our systems integrity.
 
 #### Common Headers
 
@@ -498,3 +607,11 @@ Authorization: Bearer <token> where <token> is a JWT token signed using JWT issu
 #### API Details
 
 Visit the [OpenAPI spec docs](./openapi.md)
+
+## License
+
+Sourceloop is [MIT licensed](./LICENSE).
+
+```
+
+```

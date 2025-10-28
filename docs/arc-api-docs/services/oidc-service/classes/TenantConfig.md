@@ -53,7 +53,7 @@ packages/core/dist/models/base-entity.model.d.ts:6
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant-config.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/tenant-config.model.ts#L24)
+[services/oidc-service/src/models/tenant-config.model.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/models/tenant-config.model.ts#L24)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant-config.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/tenant-config.model.ts#L30)
+[services/oidc-service/src/models/tenant-config.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/models/tenant-config.model.ts#L30)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant-config.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/tenant-config.model.ts#L17)
+[services/oidc-service/src/models/tenant-config.model.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/models/tenant-config.model.ts#L17)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/tenant-config.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/tenant-config.model.ts#L40)
+[services/oidc-service/src/models/tenant-config.model.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/models/tenant-config.model.ts#L40)

@@ -56,7 +56,7 @@ packages/core/dist/models/base-entity.model.d.ts:6
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L44)
+[services/authentication-service/src/models/role.model.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/role.model.ts#L44)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L27)
+[services/authentication-service/src/models/role.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/role.model.ts#L27)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L16)
+[services/authentication-service/src/models/role.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/role.model.ts#L16)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L22)
+[services/authentication-service/src/models/role.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/role.model.ts#L22)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L61)
+[services/authentication-service/src/models/role.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/role.model.ts#L61)
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L55)
+[services/authentication-service/src/models/role.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/role.model.ts#L55)
 
 ___
 
@@ -172,4 +172,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/role.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/role.model.ts#L34)
+[services/authentication-service/src/models/role.model.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/role.model.ts#L34)

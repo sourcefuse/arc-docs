@@ -29,7 +29,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/models/create-dashboard.dto.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/create-dashboard.dto.ts#L29)
+[services/reporting-service/src/models/create-dashboard.dto.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/create-dashboard.dto.ts#L29)
 
 ## Properties
 
@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/models/create-dashboard.dto.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/create-dashboard.dto.ts#L18)
+[services/reporting-service/src/models/create-dashboard.dto.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/create-dashboard.dto.ts#L18)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/create-dashboard.dto.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/create-dashboard.dto.ts#L24)
+[services/reporting-service/src/models/create-dashboard.dto.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/create-dashboard.dto.ts#L24)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/create-dashboard.dto.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/create-dashboard.dto.ts#L12)
+[services/reporting-service/src/models/create-dashboard.dto.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/create-dashboard.dto.ts#L12)
 
 ___
 
@@ -69,4 +69,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/create-dashboard.dto.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/create-dashboard.dto.ts#L27)
+[services/reporting-service/src/models/create-dashboard.dto.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/create-dashboard.dto.ts#L27)

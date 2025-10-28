@@ -24,6 +24,7 @@
 - [createdOn](DataSet.md#createdon)
 - [dataSetQuery](DataSet.md#datasetquery)
 - [dataSetQueryHash](DataSet.md#datasetqueryhash)
+- [dataSetQuerySQL](DataSet.md#datasetquerysql)
 - [extId](DataSet.md#extid)
 - [extMetadata](DataSet.md#extmetadata)
 - [id](DataSet.md#id)
@@ -83,11 +84,11 @@ ___
 
 ### dataSetQuery
 
-• **dataSetQuery**: [`StructuredQueryInterface`](../interfaces/StructuredQueryInterface.md)
+• `Optional` **dataSetQuery**: [`StructuredQueryInterface`](../interfaces/StructuredQueryInterface.md)
 
 #### Defined in
 
-[services/reporting-service/src/models/data-set.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/data-set.model.ts#L36)
+[services/reporting-service/src/models/data-set.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/data-set.model.ts#L35)
 
 ___
 
@@ -97,7 +98,17 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/data-set.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/data-set.model.ts#L43)
+[services/reporting-service/src/models/data-set.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/data-set.model.ts#L48)
+
+___
+
+### dataSetQuerySQL
+
+• `Optional` **dataSetQuerySQL**: `string`
+
+#### Defined in
+
+[services/reporting-service/src/models/data-set.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/data-set.model.ts#L41)
 
 ___
 
@@ -111,7 +122,7 @@ ExternalIdentifierEnabledEntity.extId
 
 #### Defined in
 
-[services/reporting-service/src/models/data-set.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/data-set.model.ts#L49)
+[services/reporting-service/src/models/data-set.model.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/data-set.model.ts#L54)
 
 ___
 
@@ -125,7 +136,7 @@ ExternalIdentifierEnabledEntity.extMetadata
 
 #### Defined in
 
-[services/reporting-service/src/models/data-set.model.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/data-set.model.ts#L56)
+[services/reporting-service/src/models/data-set.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/data-set.model.ts#L61)
 
 ___
 
@@ -135,7 +146,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/data-set.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/data-set.model.ts#L21)
+[services/reporting-service/src/models/data-set.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/data-set.model.ts#L21)
 
 ___
 
@@ -173,4 +184,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/data-set.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/data-set.model.ts#L28)
+[services/reporting-service/src/models/data-set.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/data-set.model.ts#L28)

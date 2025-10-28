@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/keycloak-pre-verify.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keycloak-pre-verify.provider.ts#L13)
+[services/authentication-service/src/providers/keycloak-pre-verify.provider.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keycloak-pre-verify.provider.ts#L13)

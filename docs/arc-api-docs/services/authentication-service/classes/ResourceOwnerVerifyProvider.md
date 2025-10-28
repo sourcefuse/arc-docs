@@ -21,7 +21,10 @@
 
 ### Methods
 
+- [ensureUserIsActiveInTenant](ResourceOwnerVerifyProvider.md#ensureuserisactiveintenant)
+- [validateClientAccess](ResourceOwnerVerifyProvider.md#validateclientaccess)
 - [value](ResourceOwnerVerifyProvider.md#value)
+- [verifyUserOrOtp](ResourceOwnerVerifyProvider.md#verifyuserorotp)
 
 ## Constructors
 
@@ -40,7 +43,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L21)
+[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L21)
 
 ## Properties
 
@@ -50,7 +53,7 @@
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L27)
+[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L27)
 
 ___
 
@@ -60,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L29)
+[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L29)
 
 ___
 
@@ -70,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L23)
+[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L23)
 
 ___
 
@@ -80,9 +83,51 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L25)
+[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L25)
 
 ## Methods
+
+### ensureUserIsActiveInTenant
+
+▸ `Private` **ensureUserIsActiveInTenant**(`user`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `user` | [`User`](User.md)<`DataObject`<`Model`\>\> |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:68](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L68)
+
+___
+
+### validateClientAccess
+
+▸ `Private` **validateClientAccess**(`clientId`, `clientSecret`, `user`): `Promise`<[`AuthClient`](AuthClient.md)<`DataObject`<`Model`\>\>\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `clientId` | `string` |
+| `clientSecret` | `string` |
+| `user` | [`User`](User.md)<`DataObject`<`Model`\>\> |
+
+#### Returns
+
+`Promise`<[`AuthClient`](AuthClient.md)<`DataObject`<`Model`\>\>\>
+
+#### Defined in
+
+[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L84)
+
+___
 
 ### value
 
@@ -98,4 +143,25 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L32)
+[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L32)
+
+___
+
+### verifyUserOrOtp
+
+▸ `Private` **verifyUserOrOtp**(`username`, `password`): `Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `username` | `string` |
+| `password` | `string` |
+
+#### Returns
+
+`Promise`<[`User`](User.md)<`DataObject`<`Model`\>\>\>
+
+#### Defined in
+
+[services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/providers/resource-owner-verify.provider.ts#L48)

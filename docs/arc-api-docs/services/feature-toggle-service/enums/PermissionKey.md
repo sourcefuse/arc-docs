@@ -8,26 +8,26 @@
 
 - [CreateFeature](PermissionKey.md#createfeature)
 - [CreateFeatureNum](PermissionKey.md#createfeaturenum)
-- [CreateFeatureToggle](PermissionKey.md#createfeaturetoggle)
-- [CreateFeatureToggleNum](PermissionKey.md#createfeaturetogglenum)
+- [CreateFeatureValues](PermissionKey.md#createfeaturevalues)
+- [CreateFeatureValuesNum](PermissionKey.md#createfeaturevaluesnum)
 - [CreateStrategy](PermissionKey.md#createstrategy)
 - [CreateStrategyNum](PermissionKey.md#createstrategynum)
 - [DeleteFeature](PermissionKey.md#deletefeature)
 - [DeleteFeatureNum](PermissionKey.md#deletefeaturenum)
-- [DeleteFeatureToggle](PermissionKey.md#deletefeaturetoggle)
-- [DeleteFeatureToggleNum](PermissionKey.md#deletefeaturetogglenum)
+- [DeleteFeatureValues](PermissionKey.md#deletefeaturevalues)
+- [DeleteFeatureValuesNum](PermissionKey.md#deletefeaturevaluesnum)
 - [DeleteStrategy](PermissionKey.md#deletestrategy)
 - [DeleteStrategyNum](PermissionKey.md#deletestrategynum)
 - [UpdateFeature](PermissionKey.md#updatefeature)
 - [UpdateFeatureNum](PermissionKey.md#updatefeaturenum)
-- [UpdateFeatureToggle](PermissionKey.md#updatefeaturetoggle)
-- [UpdateFeatureToggleNum](PermissionKey.md#updatefeaturetogglenum)
+- [UpdateFeatureValues](PermissionKey.md#updatefeaturevalues)
+- [UpdateFeatureValuesNum](PermissionKey.md#updatefeaturevaluesnum)
 - [UpdateStrategy](PermissionKey.md#updatestrategy)
 - [UpdateStrategyNum](PermissionKey.md#updatestrategynum)
 - [ViewFeature](PermissionKey.md#viewfeature)
 - [ViewFeatureNum](PermissionKey.md#viewfeaturenum)
-- [ViewFeatureToggle](PermissionKey.md#viewfeaturetoggle)
-- [ViewFeatureToggleNum](PermissionKey.md#viewfeaturetogglenum)
+- [ViewFeatureValues](PermissionKey.md#viewfeaturevalues)
+- [ViewFeatureValuesNum](PermissionKey.md#viewfeaturevaluesnum)
 - [ViewStrategy](PermissionKey.md#viewstrategy)
 - [ViewStrategyNum](PermissionKey.md#viewstrategynum)
 
@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L7)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:7](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L7)
 
 ___
 
@@ -49,27 +49,27 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L22)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L22)
 
 ___
 
-### CreateFeatureToggle
+### CreateFeatureValues
 
-• **CreateFeatureToggle** = ``"CreateFeatureToggle"``
+• **CreateFeatureValues** = ``"CreateFeatureValues"``
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L17)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L17)
 
 ___
 
-### CreateFeatureToggleNum
+### CreateFeatureValuesNum
 
-• **CreateFeatureToggleNum** = ``"10"``
+• **CreateFeatureValuesNum** = ``"10"``
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L32)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L32)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L12)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L12)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L27)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L27)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L9)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L9)
 
 ___
 
@@ -109,27 +109,27 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L24)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L24)
 
 ___
 
-### DeleteFeatureToggle
+### DeleteFeatureValues
 
-• **DeleteFeatureToggle** = ``"DeleteFeatureToggle"``
+• **DeleteFeatureValues** = ``"DeleteFeatureValues"``
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L19)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:19](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L19)
 
 ___
 
-### DeleteFeatureToggleNum
+### DeleteFeatureValuesNum
 
-• **DeleteFeatureToggleNum** = ``"12"``
+• **DeleteFeatureValuesNum** = ``"12"``
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L34)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L34)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L14)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L14)
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L29)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L29)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L8)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L8)
 
 ___
 
@@ -169,27 +169,27 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L23)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L23)
 
 ___
 
-### UpdateFeatureToggle
+### UpdateFeatureValues
 
-• **UpdateFeatureToggle** = ``"UpdateFeatureToggle"``
+• **UpdateFeatureValues** = ``"UpdateFeatureValues"``
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L18)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L18)
 
 ___
 
-### UpdateFeatureToggleNum
+### UpdateFeatureValuesNum
 
-• **UpdateFeatureToggleNum** = ``"11"``
+• **UpdateFeatureValuesNum** = ``"11"``
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L33)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L33)
 
 ___
 
@@ -199,7 +199,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L13)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L13)
 
 ___
 
@@ -209,7 +209,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L28)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L28)
 
 ___
 
@@ -219,7 +219,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L6)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:6](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L6)
 
 ___
 
@@ -229,27 +229,27 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L21)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L21)
 
 ___
 
-### ViewFeatureToggle
+### ViewFeatureValues
 
-• **ViewFeatureToggle** = ``"ViewFeatureToggle"``
+• **ViewFeatureValues** = ``"ViewFeatureValues"``
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L16)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L16)
 
 ___
 
-### ViewFeatureToggleNum
+### ViewFeatureValuesNum
 
-• **ViewFeatureToggleNum** = ``"9"``
+• **ViewFeatureValuesNum** = ``"9"``
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L31)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L31)
 
 ___
 
@@ -259,7 +259,7 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L11)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L11)
 
 ___
 
@@ -269,4 +269,4 @@ ___
 
 #### Defined in
 
-[services/feature-toggle-service/src/enums/pemission-key.enum.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L26)
+[services/feature-toggle-service/src/enums/pemission-key.enum.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/feature-toggle-service/src/enums/pemission-key.enum.ts#L26)

@@ -52,7 +52,7 @@ node_modules/@loopback/repository/dist/model.d.ts:180
 
 #### Defined in
 
-[services/reporting-service/src/models/state-tracking.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/state-tracking.model.ts#L48)
+[services/reporting-service/src/models/state-tracking.model.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/state-tracking.model.ts#L48)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/state-tracking.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/state-tracking.model.ts#L14)
+[services/reporting-service/src/models/state-tracking.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/state-tracking.model.ts#L14)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/state-tracking.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/state-tracking.model.ts#L27)
+[services/reporting-service/src/models/state-tracking.model.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/state-tracking.model.ts#L27)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/state-tracking.model.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/state-tracking.model.ts#L56)
+[services/reporting-service/src/models/state-tracking.model.ts:56](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/state-tracking.model.ts#L56)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/state-tracking.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/state-tracking.model.ts#L35)
+[services/reporting-service/src/models/state-tracking.model.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/state-tracking.model.ts#L35)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/state-tracking.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/state-tracking.model.ts#L21)
+[services/reporting-service/src/models/state-tracking.model.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/state-tracking.model.ts#L21)
 
 ___
 
@@ -112,4 +112,4 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/models/state-tracking.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/models/state-tracking.model.ts#L42)
+[services/reporting-service/src/models/state-tracking.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/models/state-tracking.model.ts#L42)

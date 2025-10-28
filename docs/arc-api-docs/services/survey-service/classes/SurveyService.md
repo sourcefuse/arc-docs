@@ -27,6 +27,10 @@
 - [\_checkBasicSurveyValidations](SurveyService.md#_checkbasicsurveyvalidations)
 - [\_checkDateValidationForPatchCase](SurveyService.md#_checkdatevalidationforpatchcase)
 - [\_checkSurveyDateValidations](SurveyService.md#_checksurveydatevalidations)
+- [\_createQuestionsFromTemplate](SurveyService.md#_createquestionsfromtemplate)
+- [\_duplicateSurveyDetails](SurveyService.md#_duplicatesurveydetails)
+- [\_processSurveyText](SurveyService.md#_processsurveytext)
+- [\_setWeightFlagIfRequired](SurveyService.md#_setweightflagifrequired)
 - [approveSurveyQuestions](SurveyService.md#approvesurveyquestions)
 - [checkDeleteValidation](SurveyService.md#checkdeletevalidation)
 - [checkIfAllowedToUpdateSurvey](SurveyService.md#checkifallowedtoupdatesurvey)
@@ -40,7 +44,11 @@
 - [handleSurveyStatusApprove](SurveyService.md#handlesurveystatusapprove)
 - [updateModifiedByAndOn](SurveyService.md#updatemodifiedbyandon)
 - [updateSurvey](SurveyService.md#updatesurvey)
+- [validateActivationWithoutDates](SurveyService.md#validateactivationwithoutdates)
 - [validateAndGetSurvey](SurveyService.md#validateandgetsurvey)
+- [validateDraftWithStartDate](SurveyService.md#validatedraftwithstartdate)
+- [validateEndDateAfterStartDate](SurveyService.md#validateenddateafterstartdate)
+- [validateStartDateWithActiveStatus](SurveyService.md#validatestartdatewithactivestatus)
 - [validateTitleLength](SurveyService.md#validatetitlelength)
 
 ## Constructors
@@ -66,7 +74,7 @@
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L31)
+[services/survey-service/src/services/survey.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L31)
 
 ## Properties
 
@@ -76,7 +84,7 @@
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L50)
+[services/survey-service/src/services/survey.service.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L50)
 
 ___
 
@@ -86,7 +94,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L51)
+[services/survey-service/src/services/survey.service.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L51)
 
 ___
 
@@ -96,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L45)
+[services/survey-service/src/services/survey.service.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L45)
 
 ___
 
@@ -106,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L35)
+[services/survey-service/src/services/survey.service.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L35)
 
 ___
 
@@ -116,7 +124,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L41)
+[services/survey-service/src/services/survey.service.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L41)
 
 ___
 
@@ -126,7 +134,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L48)
+[services/survey-service/src/services/survey.service.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L48)
 
 ___
 
@@ -136,7 +144,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L39)
+[services/survey-service/src/services/survey.service.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L39)
 
 ___
 
@@ -146,7 +154,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L33)
+[services/survey-service/src/services/survey.service.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L33)
 
 ___
 
@@ -156,7 +164,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L43)
+[services/survey-service/src/services/survey.service.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L43)
 
 ___
 
@@ -166,7 +174,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L37)
+[services/survey-service/src/services/survey.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L37)
 
 ## Methods
 
@@ -187,7 +195,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:367](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L367)
+[services/survey-service/src/services/survey.service.ts:433](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L433)
 
 ___
 
@@ -208,7 +216,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:170](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L170)
+[services/survey-service/src/services/survey.service.ts:234](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L234)
 
 ___
 
@@ -229,7 +237,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:148](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L148)
+[services/survey-service/src/services/survey.service.ts:212](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L212)
 
 ___
 
@@ -249,7 +257,101 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:202](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L202)
+[services/survey-service/src/services/survey.service.ts:266](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L266)
+
+___
+
+### \_createQuestionsFromTemplate
+
+▸ `Private` **_createQuestionsFromTemplate**(`templateId`, `surveyId`): `Promise`<`void`\>
+
+The function `_createQuestionsFromTemplate` creates survey questions based on a template and adds
+them to a survey.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `templateId` | `string` | The `templateId` parameter is a string that represents the unique identifier of a template from which questions will be created for a survey. |
+| `surveyId` | `string` | The `surveyId` parameter is a string that represents the unique identifier of a survey. It is used to associate the questions created from a template with a specific survey. |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[services/survey-service/src/services/survey.service.ts:151](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L151)
+
+___
+
+### \_duplicateSurveyDetails
+
+▸ `Private` **_duplicateSurveyDetails**(`survey`, `createdSurvey`): `Promise`<`void`\>
+
+The _duplicateSurveyDetails function duplicates survey details, sections, responders, workgroups,
+and survey questions.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `survey` | `Omit`<[`SurveyDto`](SurveyDto.md), ``"id"``\> | The `survey` parameter is an object of type `SurveyDto` with the `id` property omitted. It contains details of a survey that needs to be duplicated. |
+| `createdSurvey` | [`SurveyDto`](SurveyDto.md) | The `_duplicateSurveyDetails` function takes in two parameters: `survey` and `createdSurvey`. The `createdSurvey` parameter is of type `SurveyDto`, which represents a survey object. It contains details about a survey that has been created, including an `id` property. |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[services/survey-service/src/services/survey.service.ts:184](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L184)
+
+___
+
+### \_processSurveyText
+
+▸ `Private` **_processSurveyText**(`survey`): `void`
+
+The _processSurveyText function processes survey text by unescaping HTML characters, extracting
+the title, and validating its length.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `survey` | `Omit`<[`SurveyDto`](SurveyDto.md), ``"id"``\> | The `survey` parameter is an object of type `SurveyDto` with the `id` property omitted. It likely contains information related to a survey, such as the survey text. |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[services/survey-service/src/services/survey.service.ts:111](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L111)
+
+___
+
+### \_setWeightFlagIfRequired
+
+▸ `Private` **_setWeightFlagIfRequired**(`survey`, `templateId?`): `Promise`<`void`\>
+
+This function sets a weight flag on a survey if a specific condition is met.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `survey` | `Omit`<[`SurveyDto`](SurveyDto.md), ``"id"``\> | The `survey` parameter is an object of type `SurveyDto` with the `id` property omitted. It likely contains information related to a survey, such as its title, questions, options, etc. |
+| `templateId?` | `string` | The `templateId` parameter is an optional string that represents the ID of a question template. It is used in the `_setWeightFlagIfRequired` method to check if a survey has a base survey ID and if a template ID is provided. If a template ID is provided and the corresponding template |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[services/survey-service/src/services/survey.service.ts:127](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L127)
 
 ___
 
@@ -269,7 +371,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:332](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L332)
+[services/survey-service/src/services/survey.service.ts:398](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L398)
 
 ___
 
@@ -289,7 +391,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:376](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L376)
+[services/survey-service/src/services/survey.service.ts:442](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L442)
 
 ___
 
@@ -309,7 +411,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:298](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L298)
+[services/survey-service/src/services/survey.service.ts:364](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L364)
 
 ___
 
@@ -329,7 +431,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:253](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L253)
+[services/survey-service/src/services/survey.service.ts:319](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L319)
 
 ___
 
@@ -337,19 +439,27 @@ ___
 
 ▸ **createSurvey**(`survey`): `Promise`<[`Survey`](Survey.md)<`DataObject`<`Model`\>\> & [`SurveyRelations`](../interfaces/SurveyRelations.md)\>
 
+This function creates a survey, performs various validations and operations, and returns the
+created survey.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `survey` | `Omit`<[`SurveyDto`](SurveyDto.md), ``"id"``\> |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `survey` | `Omit`<[`SurveyDto`](SurveyDto.md), ``"id"``\> | The `createSurvey` function takes a parameter `survey` of type `SurveyDto`, but with the `id` property omitted. The function performs several tasks such as copying survey data from a base survey, performing validations, setting weight flags, generating a unique survey ID, creating a new survey in |
 
 #### Returns
 
 `Promise`<[`Survey`](Survey.md)<`DataObject`<`Model`\>\> & [`SurveyRelations`](../interfaces/SurveyRelations.md)\>
 
+The `createSurvey` function returns the created survey object after performing various
+operations such as copying from a base survey, setting weight flag, generating a survey ID,
+creating the survey in the repository, handling survey status, creating questions from a template
+(if applicable), and duplicating survey details (if applicable).
+
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L54)
+[services/survey-service/src/services/survey.service.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L66)
 
 ___
 
@@ -369,7 +479,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:382](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L382)
+[services/survey-service/src/services/survey.service.ts:448](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L448)
 
 ___
 
@@ -383,7 +493,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:346](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L346)
+[services/survey-service/src/services/survey.service.ts:412](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L412)
 
 ___
 
@@ -403,7 +513,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:259](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L259)
+[services/survey-service/src/services/survey.service.ts:325](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L325)
 
 ___
 
@@ -424,7 +534,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:317](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L317)
+[services/survey-service/src/services/survey.service.ts:383](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L383)
 
 ___
 
@@ -445,7 +555,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:307](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L307)
+[services/survey-service/src/services/survey.service.ts:373](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L373)
 
 ___
 
@@ -466,7 +576,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:325](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L325)
+[services/survey-service/src/services/survey.service.ts:391](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L391)
 
 ___
 
@@ -486,7 +596,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:399](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L399)
+[services/survey-service/src/services/survey.service.ts:465](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L465)
 
 ___
 
@@ -507,7 +617,29 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:270](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L270)
+[services/survey-service/src/services/survey.service.ts:336](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L336)
+
+___
+
+### validateActivationWithoutDates
+
+▸ `Private` **validateActivationWithoutDates**(`startDate?`, `endDate?`, `isActive?`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `startDate?` | `string` |
+| `endDate?` | `string` |
+| `isActive?` | `boolean` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[services/survey-service/src/services/survey.service.ts:301](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L301)
 
 ___
 
@@ -528,7 +660,70 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:405](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L405)
+[services/survey-service/src/services/survey.service.ts:471](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L471)
+
+___
+
+### validateDraftWithStartDate
+
+▸ `Private` **validateDraftWithStartDate**(`startDate?`, `isDraft?`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `startDate?` | `string` |
+| `isDraft?` | `boolean` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[services/survey-service/src/services/survey.service.ts:311](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L311)
+
+___
+
+### validateEndDateAfterStartDate
+
+▸ `Private` **validateEndDateAfterStartDate**(`startDate?`, `endDate?`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `startDate?` | `string` |
+| `endDate?` | `string` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[services/survey-service/src/services/survey.service.ts:295](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L295)
+
+___
+
+### validateStartDateWithActiveStatus
+
+▸ `Private` **validateStartDateWithActiveStatus**(`startDate?`, `isActive?`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `startDate?` | `string` |
+| `isActive?` | `boolean` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[services/survey-service/src/services/survey.service.ts:279](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L279)
 
 ___
 
@@ -548,4 +743,4 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/services/survey.service.ts:264](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/services/survey.service.ts#L264)
+[services/survey-service/src/services/survey.service.ts:330](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/services/survey.service.ts#L330)

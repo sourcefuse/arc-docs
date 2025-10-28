@@ -85,7 +85,7 @@ packages/core/dist/models/base-entity.model.d.ts:6
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L54)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L54)
 
 ___
 
@@ -99,7 +99,7 @@ IAuthUserWithPermissions.authClientId
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L64)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L64)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L80)
+[services/authentication-service/src/models/user.model.ts:80](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L80)
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:118](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L118)
+[services/authentication-service/src/models/user.model.ts:118](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L118)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:128](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L128)
+[services/authentication-service/src/models/user.model.ts:128](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L128)
 
 ___
 
@@ -183,7 +183,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L100)
+[services/authentication-service/src/models/user.model.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L100)
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L49)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L49)
 
 ___
 
@@ -207,7 +207,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:105](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L105)
+[services/authentication-service/src/models/user.model.ts:105](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L105)
 
 ___
 
@@ -225,7 +225,7 @@ IAuthUserWithPermissions.email
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L66)
+[services/authentication-service/src/models/user.model.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L66)
 
 ___
 
@@ -235,7 +235,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L41)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L41)
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L59)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:59](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L59)
 
 ___
 
@@ -263,7 +263,7 @@ IAuthUserWithPermissions.firstName
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L43)
+[services/authentication-service/src/models/user.model.ts:43](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L43)
 
 ___
 
@@ -277,7 +277,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:115](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L115)
+[services/authentication-service/src/models/user.model.ts:115](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L115)
 
 ___
 
@@ -295,7 +295,7 @@ IAuthUserWithPermissions.id
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L36)
+[services/authentication-service/src/models/user.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L36)
 
 ___
 
@@ -309,7 +309,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L89)
+[services/authentication-service/src/models/user.model.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L89)
 
 ___
 
@@ -327,7 +327,7 @@ IAuthUserWithPermissions.lastName
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L49)
+[services/authentication-service/src/models/user.model.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L49)
 
 ___
 
@@ -345,7 +345,7 @@ IAuthUserWithPermissions.middleName
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L55)
+[services/authentication-service/src/models/user.model.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L55)
 
 ___
 
@@ -387,7 +387,7 @@ IAuthUserWithPermissions.passwordExpiryTime
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L84)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:84](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L84)
 
 ___
 
@@ -401,7 +401,7 @@ IAuthUserWithPermissions.permissions
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L30)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L30)
 
 ___
 
@@ -415,7 +415,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L74)
+[services/authentication-service/src/models/user.model.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L74)
 
 ___
 
@@ -429,7 +429,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:95](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L95)
+[services/authentication-service/src/models/user.model.ts:95](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L95)
 
 ___
 
@@ -443,7 +443,7 @@ IAuthUserWithPermissions.role
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L36)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L36)
 
 ___
 
@@ -453,7 +453,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:98](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L98)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:98](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L98)
 
 ___
 
@@ -467,7 +467,7 @@ IAuthUserWithPermissions.tenantId
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L74)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:74](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L74)
 
 ___
 
@@ -481,7 +481,7 @@ IAuthUserWithPermissions.userPreferences
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L69)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L69)
 
 ___
 
@@ -495,7 +495,7 @@ IAuthUserWithPermissions.userTenantId
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L79)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L79)
 
 ___
 
@@ -509,7 +509,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L131)
+[services/authentication-service/src/models/user.model.ts:131](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L131)
 
 ___
 
@@ -527,7 +527,7 @@ IAuthUserWithPermissions.username
 
 #### Defined in
 
-[services/authentication-service/src/models/user.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/user.model.ts#L61)
+[services/authentication-service/src/models/user.model.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/user.model.ts#L61)
 
 ## Methods
 
@@ -545,4 +545,4 @@ IAuthUserWithPermissions.getIdentifier
 
 #### Defined in
 
-[services/authentication-service/src/modules/auth/models/auth-user.model.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L100)
+[services/authentication-service/src/modules/auth/models/auth-user.model.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/modules/auth/models/auth-user.model.ts#L100)

@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/types/i-subscription.interface.ts:74](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/i-subscription.interface.ts#L74)
+[services/tenant-management-service/src/types/i-subscription.interface.ts:75](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/types/i-subscription.interface.ts#L75)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/types/i-subscription.interface.ts:71](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/i-subscription.interface.ts#L71)
+[services/tenant-management-service/src/types/i-subscription.interface.ts:72](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/types/i-subscription.interface.ts#L72)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/types/i-subscription.interface.ts:72](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/i-subscription.interface.ts#L72)
+[services/tenant-management-service/src/types/i-subscription.interface.ts:73](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/types/i-subscription.interface.ts#L73)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/types/i-subscription.interface.ts:70](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/i-subscription.interface.ts#L70)
+[services/tenant-management-service/src/types/i-subscription.interface.ts:71](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/types/i-subscription.interface.ts#L71)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/types/i-subscription.interface.ts:73](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/i-subscription.interface.ts#L73)
+[services/tenant-management-service/src/types/i-subscription.interface.ts:74](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/types/i-subscription.interface.ts#L74)

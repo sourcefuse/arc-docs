@@ -37,7 +37,7 @@
 
 #### Defined in
 
-[services/task-service/src/controllers/event.controller.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/event.controller.ts#L25)
+[services/task-service/src/controllers/event.controller.ts:25](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/event.controller.ts#L25)
 
 ## Properties
 
@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[services/task-service/src/controllers/event.controller.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/event.controller.ts#L29)
+[services/task-service/src/controllers/event.controller.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/event.controller.ts#L29)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/controllers/event.controller.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/event.controller.ts#L27)
+[services/task-service/src/controllers/event.controller.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/event.controller.ts#L27)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/controllers/event.controller.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/event.controller.ts#L31)
+[services/task-service/src/controllers/event.controller.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/event.controller.ts#L31)
 
 ## Methods
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/controllers/event.controller.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/event.controller.ts#L83)
+[services/task-service/src/controllers/event.controller.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/event.controller.ts#L83)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/controllers/event.controller.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/event.controller.ts#L34)
+[services/task-service/src/controllers/event.controller.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/event.controller.ts#L34)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[services/task-service/src/controllers/event.controller.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/event.controller.ts#L58)
+[services/task-service/src/controllers/event.controller.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/event.controller.ts#L58)
 
 ___
 
@@ -148,4 +148,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/controllers/event.controller.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/controllers/event.controller.ts#L100)
+[services/task-service/src/controllers/event.controller.ts:100](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/controllers/event.controller.ts#L100)

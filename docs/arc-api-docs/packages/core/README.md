@@ -117,6 +117,16 @@ setupSequence() {
 }
 ```
 
+By default asymmetric verification is supported, but if symmetric verification of the token is needed then it has to provided explicitly in the setupSequence() in the manner given below.
+
+```ts
+this.application.bind(BearerVerifierBindings.Config).to({
+  authServiceUrl: '',
+  type: BearerVerifierType.service,
+  useSymmetricEncryption: true,
+} as BearerVerifierConfig);
+```
+
 ## Logger-Extension
 
 ### Usage
@@ -131,6 +141,45 @@ setupSequence() {
   ```
 - Start the application
   `npm start`
+- Latest Log Format
+
+  The latest log format that will be generated is as follows:
+
+  ```ts
+
+  [2024-03-05T07:43:16.991Z] info :: gg-444-hh :: App_Log -> [200] Request GET /audit-logs Completed in 37ms`
+
+  ```
+
+  This format includes the timestamp, log level, context, log key, status code, and the log message.
+
+```typescript
+(log: LogEntry) =>
+  `[${log.timestamp}] ${log.level} :: ${log.context} :: ${log.key} ->[${log.statusCode}] ${log.message}`;
+```
+
+- Logging Usage
+
+  For example,To log information using the updated format, the info method can be used.
+
+  ```typescript
+  info(
+    message: string,
+    context?: string,
+    statusCode?: STATUS_CODE,
+    key?: string,
+  ): void
+  ```
+
+  ```typescript
+  this.logger.info(
+    `Request ${context.request.method} ${
+      context.request.url
+    } Completed in ${Date.now() - requestTime}ms`,
+    `${context.request.headers.tenantId}`,
+    `${context.request.res.statusCode}`,
+  );
+  ```
 
 ## Swagger Authentication Component
 
@@ -196,6 +245,54 @@ this.bind(SFCoreBindings.config).to({
   swaggerPassword: process.env.SWAGGER_PASSWORD,
 });
 ```
+
+### Tenant Context
+
+- TenantContextMiddlewareInterceptorProvider
+
+  The TenantContextMiddlewareInterceptorProvider [here](/packages/core/src/middlewares/tenant-context.middleware.ts) is a middleware designed to modify the HTTP request by adding tenantId from the current user and sets it as a header in the outgoing request. This middleware is typically used for multitenancy scenarios where the tenant ID needs to be communicated in the HTTP headers.
+
+  For enabling this we need to provide its configuration as follows:
+
+  ```typescript
+  this.bind(SFCoreBindings.config).to({
+    enableObf,
+    obfPath: process.env.OBF_PATH ?? '/obf',
+    openapiSpec: openapi,
+    authentication: authentication,
+    swaggerUsername: process.env.SWAGGER_USER,
+    swaggerPassword: process.env.SWAGGER_PASSWORD,
+    authenticateSwaggerUI: authentication,
+    tenantContextMiddleware: true,
+    tenantContextEncryptionKey: 'Secret_Key',
+  });
+  ```
+
+  This middleware uses TenantIdEncryptionProvider [here](/packages/core/src/providers/tenantid-encryption.provider.ts) which is responsible for encrypting tenant ID using CryptoJS library to encrypt the provided tenantId when `tenantContextEncryptionKey` is added to to core configuration.If the key exists, it encrypts the tenant ID before adding it to the request headers; otherwise, it adds the ID without encryption.
+
+- OBF LOGS
+
+  Also,If `tenantContextMiddleware` is enabled in the coreConfig, it adds an `onResponseFinish callback` to the middlewareConfig that incorporates the `addTenantId` function to append tenant ID information to responses.The `addTenantId` function adds a tenant ID to the response object based on whether a `tenantContextEncryptionKey` is provided for decryption. If no key is provided, it assigns the tenant ID directly from the request header; otherwise, it decrypts the encrypted tenant ID and assigns the decrypted value to the response object.
+
+  ```typescript
+  export function addTenantId(
+    req: IncomingMessage,
+    res: ServerResponse<IncomingMessage>,
+    reqResponse: AnyObject,
+    secretKey?: string,
+  ) {
+    if (!secretKey) {
+      reqResponse['tenant-id'] = req.headers['tenant-id'];
+    } else {
+      const encryptedTenantId = req.headers['tenant-id'];
+      const decryptedTenantId = CryptoJS.AES.decrypt(
+        encryptedTenantId as string,
+        secretKey as string,
+      ).toString(CryptoJS.enc.Utf8);
+      reqResponse['tenant-id'] = decryptedTenantId;
+    }
+  }
+  ```
 
 ### OAS
 
@@ -310,6 +407,37 @@ export class TestWithoutGuardRepo extends DefaultTransactionalRepository<
     super(TestModel, dataSource);
   }
 }
+```
+
+### Dynamic DataSource Component
+
+There can be scenariors where you wish to dynamicaly switch your datasources based on certain conditions or configurations. Our `DynamicDatasourceComponent` will be of great use in such cases. This component internally uses [loopback4-dynamic-datasource](https://github.com/sourcefuse/loopback4-dynamic-datasource). Our component binds this parent component, uses the middleware provider and provides default implementation where we identify the datasource based on the current users tenantId and fetch the datasource config values through AWS SSM.
+
+All you need to do is
+bind the component in your application.ts file
+
+```ts
+import {DynamicDatasourceComponent} from '@sourceloop/core';
+
+this.component(DynamicDatasourceComponent);
+```
+
+and provide the list of datasource binding key for each datasource needed in your application.
+
+```ts
+import {DynamicDataSourceBinding} from '@sourceloop/core';
+
+this.bind(DynamicDataSourceBinding.CONFIG).to({dataSourceNames: ['authDb']});
+```
+
+This key will be one that we use in repository class through `datasources.authDb`
+
+Since our implementaion depends on current user we have added a sequnce step to invoke the middleware after authentication and before invoke so if you wish to do same follow this
+
+```ts
+await this.invokeMiddleware(context, {
+  chain: MiddlewareChain.PRE_INVOKE,
+});
 ```
 
 ### Service

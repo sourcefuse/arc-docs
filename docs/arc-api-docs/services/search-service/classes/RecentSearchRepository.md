@@ -54,7 +54,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/search-service/src/repositories/recent-search.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/repositories/recent-search.repository.ts#L32)
+[services/search-service/src/repositories/recent-search.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/repositories/recent-search.repository.ts#L32)
 
 ## Properties
 
@@ -64,7 +64,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/search-service/src/repositories/recent-search.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/repositories/recent-search.repository.ts#L38)
+[services/search-service/src/repositories/recent-search.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/repositories/recent-search.repository.ts#L38)
 
 ___
 
@@ -78,7 +78,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/search-service/src/repositories/recent-search.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/repositories/recent-search.repository.ts#L40)
+[services/search-service/src/repositories/recent-search.repository.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/repositories/recent-search.repository.ts#L40)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/repositories/recent-search.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/repositories/recent-search.repository.ts#L27)
+[services/search-service/src/repositories/recent-search.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/repositories/recent-search.repository.ts#L27)
 
 ## Methods
 
@@ -113,7 +113,7 @@ DefaultUserModifyCrudRepository.create
 
 #### Defined in
 
-[services/search-service/src/repositories/recent-search.repository.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/repositories/recent-search.repository.ts#L52)
+[services/search-service/src/repositories/recent-search.repository.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/repositories/recent-search.repository.ts#L52)
 
 ___
 

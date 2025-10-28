@@ -44,6 +44,7 @@
 - [IArchiveService](interfaces/IArchiveService.md)
 - [IConfig](interfaces/IConfig.md)
 - [ISessionService](interfaces/ISessionService.md)
+- [MeetingLink](interfaces/MeetingLink.md)
 - [MeetingOptions](interfaces/MeetingOptions.md)
 - [MeetingResponse](interfaces/MeetingResponse.md)
 - [ResponseInterface](interfaces/ResponseInterface.md)
@@ -94,7 +95,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/meeting-link-id-generator.provider.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/meeting-link-id-generator.provider.ts#L8)
+[services/video-conferencing-service/src/services/meeting-link-id-generator.provider.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/meeting-link-id-generator.provider.ts#L8)
 
 ## Variables
 
@@ -104,7 +105,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/keys.ts#L35)
+[services/video-conferencing-service/src/keys.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/keys.ts#L35)
 
 ___
 
@@ -114,4 +115,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/keys.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/keys.ts#L40)
+[services/video-conferencing-service/src/keys.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/keys.ts#L40)

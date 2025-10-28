@@ -12,8 +12,8 @@
 
 ### Config
 
-• `Const` **Config**: `BindingKey`<``null`` \| [`ISubscriptionServiceConfig`](../interfaces/ISubscriptionServiceConfig.md)\>
+• `Const` **Config**: `BindingKey`<[`ISubscriptionServiceConfig`](../interfaces/ISubscriptionServiceConfig.md)\>
 
 #### Defined in
 
-[services/subscription-service/src/keys.ts:8](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/keys.ts#L8)
+[services/subscription-service/src/keys.ts:9](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/keys.ts#L9)

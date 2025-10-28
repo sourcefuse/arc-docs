@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/services/event-connector/event.connector.ts:6](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/event-connector/event.connector.ts#L6)
+[services/tenant-management-service/src/services/event-connector/event.connector.ts:6](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/event-connector/event.connector.ts#L6)
 
 ## Methods
 
@@ -48,4 +48,4 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/services/event-connector/event.connector.ts:8](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/event-connector/event.connector.ts#L8)
+[services/tenant-management-service/src/services/event-connector/event.connector.ts:8](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/event-connector/event.connector.ts#L8)

@@ -39,4 +39,4 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/types/webhook-payload.type.ts:38](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/types/webhook-payload.type.ts#L38)
+[services/tenant-management-service/src/types/webhook-payload.type.ts:38](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/types/webhook-payload.type.ts#L38)

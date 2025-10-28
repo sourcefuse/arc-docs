@@ -16,6 +16,7 @@
 
 - [application](WebhookTenantManagementServiceComponent.md#application)
 - [bindings](WebhookTenantManagementServiceComponent.md#bindings)
+- [booters](WebhookTenantManagementServiceComponent.md#booters)
 - [controllers](WebhookTenantManagementServiceComponent.md#controllers)
 - [models](WebhookTenantManagementServiceComponent.md#models)
 - [notifConfig](WebhookTenantManagementServiceComponent.md#notifconfig)
@@ -42,7 +43,7 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/webhook.component.ts:75](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/webhook.component.ts#L75)
+[services/tenant-management-service/src/webhook.component.ts:86](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/webhook.component.ts#L86)
 
 ## Properties
 
@@ -52,7 +53,7 @@
 
 #### Defined in
 
-[services/tenant-management-service/src/webhook.component.ts:77](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/webhook.component.ts#L77)
+[services/tenant-management-service/src/webhook.component.ts:88](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/webhook.component.ts#L88)
 
 ___
 
@@ -66,7 +67,17 @@ Component.bindings
 
 #### Defined in
 
-[services/tenant-management-service/src/webhook.component.ts:149](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/webhook.component.ts#L149)
+[services/tenant-management-service/src/webhook.component.ts:171](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/webhook.component.ts#L171)
+
+___
+
+### booters
+
+• `Optional` **booters**: `Class`<`Booter`\>[]
+
+#### Defined in
+
+[services/tenant-management-service/src/webhook.component.ts:85](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/webhook.component.ts#L85)
 
 ___
 
@@ -82,7 +93,7 @@ Component.controllers
 
 #### Defined in
 
-[services/tenant-management-service/src/webhook.component.ts:168](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/webhook.component.ts#L168)
+[services/tenant-management-service/src/webhook.component.ts:190](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/webhook.component.ts#L190)
 
 ___
 
@@ -95,7 +106,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/tenant-management-service/src/webhook.component.ts:163](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/webhook.component.ts#L163)
+[services/tenant-management-service/src/webhook.component.ts:185](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/webhook.component.ts#L185)
 
 ___
 
@@ -105,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/webhook.component.ts:79](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/webhook.component.ts#L79)
+[services/tenant-management-service/src/webhook.component.ts:90](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/webhook.component.ts#L90)
 
 ___
 
@@ -119,7 +130,7 @@ Component.providers
 
 #### Defined in
 
-[services/tenant-management-service/src/webhook.component.ts:147](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/webhook.component.ts#L147)
+[services/tenant-management-service/src/webhook.component.ts:169](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/webhook.component.ts#L169)
 
 ___
 
@@ -132,7 +143,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/tenant-management-service/src/webhook.component.ts:157](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/webhook.component.ts#L157)
+[services/tenant-management-service/src/webhook.component.ts:179](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/webhook.component.ts#L179)
 
 ___
 
@@ -146,7 +157,7 @@ Component.services
 
 #### Defined in
 
-[services/tenant-management-service/src/webhook.component.ts:151](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/webhook.component.ts#L151)
+[services/tenant-management-service/src/webhook.component.ts:173](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/webhook.component.ts#L173)
 
 ## Methods
 
@@ -162,4 +173,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/tenant-management-service/src/webhook.component.ts:174](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/webhook.component.ts#L174)
+[services/tenant-management-service/src/webhook.component.ts:196](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/webhook.component.ts#L196)

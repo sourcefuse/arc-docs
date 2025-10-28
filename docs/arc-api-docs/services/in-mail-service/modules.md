@@ -73,7 +73,7 @@
 
 #### Defined in
 
-[services/in-mail-service/src/types/compose-mail-body.type.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/types/compose-mail-body.type.ts#L9)
+[services/in-mail-service/src/types/compose-mail-body.type.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/in-mail-service/src/types/compose-mail-body.type.ts#L9)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/types/compose-mail-body.type.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/types/compose-mail-body.type.ts#L23)
+[services/in-mail-service/src/types/compose-mail-body.type.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/in-mail-service/src/types/compose-mail-body.type.ts#L23)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/message.model.ts:123](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/models/message.model.ts#L123)
+[services/in-mail-service/src/models/message.model.ts:123](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/in-mail-service/src/models/message.model.ts#L123)
 
 ## Variables
 
@@ -114,4 +114,4 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/keys.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/keys.ts#L15)
+[services/in-mail-service/src/keys.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/in-mail-service/src/keys.ts#L15)

@@ -56,7 +56,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/survey-service/src/repositories/section.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/section.repository.ts#L27)
+[services/survey-service/src/repositories/section.repository.ts:27](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/section.repository.ts#L27)
 
 ## Properties
 
@@ -70,7 +70,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/survey-service/src/repositories/section.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/section.repository.ts#L33)
+[services/survey-service/src/repositories/section.repository.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/section.repository.ts#L33)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/section.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/section.repository.ts#L31)
+[services/survey-service/src/repositories/section.repository.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/section.repository.ts#L31)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/section.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/section.repository.ts#L30)
+[services/survey-service/src/repositories/section.repository.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/section.repository.ts#L30)
 
 ## Methods
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/section.repository.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/section.repository.ts#L76)
+[services/survey-service/src/repositories/section.repository.ts:76](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/section.repository.ts#L76)
 
 ___
 
@@ -135,7 +135,7 @@ DefaultUserModifyCrudRepository.create
 
 #### Defined in
 
-[services/survey-service/src/repositories/section.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/section.repository.ts#L38)
+[services/survey-service/src/repositories/section.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/section.repository.ts#L38)
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 #### Defined in
 
-[services/survey-service/src/repositories/section.repository.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/section.repository.ts#L62)
+[services/survey-service/src/repositories/section.repository.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/section.repository.ts#L62)
 
 ___
 
@@ -283,7 +283,7 @@ DefaultUserModifyCrudRepository.updateAll
 
 #### Defined in
 
-[services/survey-service/src/repositories/section.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/section.repository.ts#L48)
+[services/survey-service/src/repositories/section.repository.ts:48](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/section.repository.ts#L48)
 
 ___
 

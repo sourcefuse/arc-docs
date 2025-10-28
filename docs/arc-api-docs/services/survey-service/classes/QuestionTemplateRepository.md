@@ -50,7 +50,7 @@ DefaultUserModifyCrudRepository&lt;
 
 #### Defined in
 
-[services/survey-service/src/repositories/question-template.repository.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/question-template.repository.ts#L15)
+[services/survey-service/src/repositories/question-template.repository.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/question-template.repository.ts#L15)
 
 ## Properties
 
@@ -64,7 +64,7 @@ DefaultUserModifyCrudRepository.getCurrentUser
 
 #### Defined in
 
-[services/survey-service/src/repositories/question-template.repository.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/survey-service/src/repositories/question-template.repository.ts#L18)
+[services/survey-service/src/repositories/question-template.repository.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/survey-service/src/repositories/question-template.repository.ts#L18)
 
 ## Methods
 

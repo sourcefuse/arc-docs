@@ -53,7 +53,7 @@ packages/core/dist/models/core-entity.d.ts:3
 
 #### Defined in
 
-[services/authentication-service/src/models/refresh-token.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/refresh-token.model.ts#L32)
+[services/authentication-service/src/models/refresh-token.model.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/refresh-token.model.ts#L32)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/refresh-token.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/refresh-token.model.ts#L14)
+[services/authentication-service/src/models/refresh-token.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/refresh-token.model.ts#L14)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/refresh-token.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/refresh-token.model.ts#L37)
+[services/authentication-service/src/models/refresh-token.model.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/refresh-token.model.ts#L37)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/refresh-token.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/refresh-token.model.ts#L42)
+[services/authentication-service/src/models/refresh-token.model.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/refresh-token.model.ts#L42)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/refresh-token.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/refresh-token.model.ts#L47)
+[services/authentication-service/src/models/refresh-token.model.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/refresh-token.model.ts#L47)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/refresh-token.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/refresh-token.model.ts#L52)
+[services/authentication-service/src/models/refresh-token.model.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/refresh-token.model.ts#L52)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/refresh-token.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/refresh-token.model.ts#L20)
+[services/authentication-service/src/models/refresh-token.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/refresh-token.model.ts#L20)
 
 ___
 
@@ -123,4 +123,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/refresh-token.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/refresh-token.model.ts#L26)
+[services/authentication-service/src/models/refresh-token.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/refresh-token.model.ts#L26)

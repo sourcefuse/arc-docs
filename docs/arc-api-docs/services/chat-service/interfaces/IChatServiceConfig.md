@@ -19,7 +19,7 @@
 
 ### useCustomSequence
 
-• **useCustomSequence**: `boolean`
+• `Optional` **useCustomSequence**: `boolean`
 
 #### Inherited from
 
@@ -27,7 +27,7 @@ IServiceConfig.useCustomSequence
 
 #### Defined in
 
-packages/core/dist/types.d.ts:7
+packages/core/dist/types.d.ts:5
 
 ___
 
@@ -41,4 +41,4 @@ IServiceConfig.useSequelize
 
 #### Defined in
 
-packages/core/dist/types.d.ts:8
+packages/core/dist/types.d.ts:6

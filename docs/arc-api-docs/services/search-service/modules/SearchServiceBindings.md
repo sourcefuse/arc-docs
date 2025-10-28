@@ -13,6 +13,7 @@
 - [PostgreSQLQueryBuilder](SearchServiceBindings.md#postgresqlquerybuilder)
 - [SearchFilterFunction](SearchServiceBindings.md#searchfilterfunction)
 - [SearchFunction](SearchServiceBindings.md#searchfunction)
+- [modelProvider](SearchServiceBindings.md#modelprovider)
 
 ## Variables
 
@@ -22,7 +23,7 @@
 
 #### Defined in
 
-[services/search-service/src/keys.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/keys.ts#L20)
+[services/search-service/src/keys.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/keys.ts#L24)
 
 ___
 
@@ -32,7 +33,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/keys.ts:11](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/keys.ts#L11)
+[services/search-service/src/keys.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/keys.ts#L15)
 
 ___
 
@@ -42,7 +43,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/keys.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/keys.ts#L22)
+[services/search-service/src/keys.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/keys.ts#L26)
 
 ___
 
@@ -52,7 +53,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/keys.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/keys.ts#L14)
+[services/search-service/src/keys.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/keys.ts#L18)
 
 ___
 
@@ -62,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/keys.ts:17](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/keys.ts#L17)
+[services/search-service/src/keys.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/keys.ts#L21)
 
 ___
 
@@ -72,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/search-service/src/keys.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/keys.ts#L24)
+[services/search-service/src/keys.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/keys.ts#L28)
 
 ___
 
@@ -82,4 +83,14 @@ ___
 
 #### Defined in
 
-[services/search-service/src/keys.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/search-service/src/keys.ts#L12)
+[services/search-service/src/keys.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/keys.ts#L16)
+
+___
+
+### modelProvider
+
+• `Const` **modelProvider**: `BindingKey`<`ModelProviderFn`\>
+
+#### Defined in
+
+[services/search-service/src/keys.ts:12](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/search-service/src/keys.ts#L12)

@@ -53,17 +53,17 @@
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L29)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L29)
 
 ## Properties
 
 ### context
 
-• `Private` **context**: `Context`
+• `Private` `Readonly` **context**: `Context`
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L31)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L31)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L28)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L28)
 
 ## Methods
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L93)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L93)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:115](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L115)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:115](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L115)
 
 ___
 
@@ -148,7 +148,7 @@ resolvedDataMap.get(parent[keyFrom])
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L78)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:78](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L78)
 
 ___
 
@@ -177,7 +177,7 @@ A map of related records.
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L39)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L39)
 
 ___
 
@@ -197,4 +197,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:107](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L107)
+[packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts:107](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/core/src/components/proxy-builder/services/rest-resolvers/belongs-to-resolver.service.ts#L107)

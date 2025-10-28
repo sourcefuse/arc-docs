@@ -50,7 +50,7 @@ packages/core/dist/models/core-entity.d.ts:3
 
 #### Defined in
 
-[services/authentication-service/src/models/otp-cache.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/otp-cache.model.ts#L28)
+[services/authentication-service/src/models/otp-cache.model.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/otp-cache.model.ts#L28)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/otp-cache.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/otp-cache.model.ts#L33)
+[services/authentication-service/src/models/otp-cache.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/otp-cache.model.ts#L33)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/otp-cache.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/otp-cache.model.ts#L13)
+[services/authentication-service/src/models/otp-cache.model.ts:13](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/otp-cache.model.ts#L13)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/otp-cache.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/otp-cache.model.ts#L23)
+[services/authentication-service/src/models/otp-cache.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/otp-cache.model.ts#L23)
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/otp-cache.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/otp-cache.model.ts#L18)
+[services/authentication-service/src/models/otp-cache.model.ts:18](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/otp-cache.model.ts#L18)

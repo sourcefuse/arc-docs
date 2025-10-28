@@ -44,7 +44,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:72](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L72)
+[services/subscription-service/src/models/plan.model.ts:72](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/plan.model.ts#L72)
 
 ## Properties
 
@@ -54,7 +54,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:65](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L65)
+[services/subscription-service/src/models/plan.model.ts:65](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/plan.model.ts#L65)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:70](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L70)
+[services/subscription-service/src/models/plan.model.ts:70](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/plan.model.ts#L70)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:28](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L28)
+[services/subscription-service/src/models/plan.model.ts:28](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/plan.model.ts#L28)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:15](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L15)
+[services/subscription-service/src/models/plan.model.ts:15](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/plan.model.ts#L15)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:54](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L54)
+[services/subscription-service/src/models/plan.model.ts:54](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/plan.model.ts#L54)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:22](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L22)
+[services/subscription-service/src/models/plan.model.ts:22](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/plan.model.ts#L22)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:47](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L47)
+[services/subscription-service/src/models/plan.model.ts:47](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/plan.model.ts#L47)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:41](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L41)
+[services/subscription-service/src/models/plan.model.ts:41](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/plan.model.ts#L41)
 
 ___
 
@@ -134,4 +134,4 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:35](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L35)
+[services/subscription-service/src/models/plan.model.ts:35](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/plan.model.ts#L35)

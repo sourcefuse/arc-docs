@@ -53,7 +53,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attendee.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attendee.repository.ts#L34)
+[services/scheduler-service/src/repositories/attendee.repository.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/attendee.repository.ts#L34)
 
 ## Properties
 
@@ -63,7 +63,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attendee.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attendee.repository.ts#L32)
+[services/scheduler-service/src/repositories/attendee.repository.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/attendee.repository.ts#L32)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attendee.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attendee.repository.ts#L42)
+[services/scheduler-service/src/repositories/attendee.repository.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/attendee.repository.ts#L42)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attendee.repository.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attendee.repository.ts#L44)
+[services/scheduler-service/src/repositories/attendee.repository.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/attendee.repository.ts#L44)
 
 ___
 
@@ -104,7 +104,7 @@ ConditionalAuditRepositoryMixin(
 
 #### Defined in
 
-[services/scheduler-service/src/repositories/attendee.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/repositories/attendee.repository.ts#L38)
+[services/scheduler-service/src/repositories/attendee.repository.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/repositories/attendee.repository.ts#L38)
 
 ## Methods
 

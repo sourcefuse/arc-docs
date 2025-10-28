@@ -53,7 +53,7 @@ packages/core/dist/models/core-entity.d.ts:3
 
 #### Defined in
 
-[services/authentication-service/src/models/login-activity.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/login-activity.model.ts#L20)
+[services/authentication-service/src/models/login-activity.model.ts:20](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/login-activity.model.ts#L20)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/login-activity.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/login-activity.model.ts#L51)
+[services/authentication-service/src/models/login-activity.model.ts:51](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/login-activity.model.ts#L51)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/login-activity.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/login-activity.model.ts#L14)
+[services/authentication-service/src/models/login-activity.model.ts:14](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/login-activity.model.ts#L14)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/login-activity.model.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/login-activity.model.ts#L57)
+[services/authentication-service/src/models/login-activity.model.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/login-activity.model.ts#L57)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/login-activity.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/login-activity.model.ts#L33)
+[services/authentication-service/src/models/login-activity.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/login-activity.model.ts#L33)
 
 ___
 
@@ -103,17 +103,17 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/login-activity.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/login-activity.model.ts#L45)
+[services/authentication-service/src/models/login-activity.model.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/login-activity.model.ts#L45)
 
 ___
 
 ### tenantId
 
-• `Optional` **tenantId**: `string`
+• **tenantId**: `string`
 
 #### Defined in
 
-[services/authentication-service/src/models/login-activity.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/login-activity.model.ts#L26)
+[services/authentication-service/src/models/login-activity.model.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/login-activity.model.ts#L26)
 
 ___
 
@@ -123,4 +123,4 @@ ___
 
 #### Defined in
 
-[services/authentication-service/src/models/login-activity.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/models/login-activity.model.ts#L39)
+[services/authentication-service/src/models/login-activity.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/models/login-activity.model.ts#L39)

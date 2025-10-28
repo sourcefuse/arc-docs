@@ -6,6 +6,7 @@
 
 ### Variables
 
+- [BINDING\_MANAGER](ReportingServiceComponentBindings.md#binding_manager)
 - [COMPONENT](ReportingServiceComponentBindings.md#component)
 - [CUSTOM\_TYPE\_CONVERTER\_MAPPING](ReportingServiceComponentBindings.md#custom_type_converter_mapping)
 - [CUSTOM\_TYPE\_CONVERTER\_METADATA](ReportingServiceComponentBindings.md#custom_type_converter_metadata)
@@ -25,8 +26,19 @@
 - [S3\_OBJECT\_PROVIDER](ReportingServiceComponentBindings.md#s3_object_provider)
 - [SEQUELIZE\_OBJECT\_PROVIDER](ReportingServiceComponentBindings.md#sequelize_object_provider)
 - [SERVICE\_MAPPING](ReportingServiceComponentBindings.md#service_mapping)
+- [SQL\_VALIDATOR](ReportingServiceComponentBindings.md#sql_validator)
 
 ## Variables
+
+### BINDING\_MANAGER
+
+• `Const` **BINDING\_MANAGER**: `BindingKey`<[`QueryBinding`](../interfaces/QueryBinding.md)\>
+
+#### Defined in
+
+[services/reporting-service/src/keys.ts:85](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L85)
+
+___
 
 ### COMPONENT
 
@@ -34,7 +46,7 @@
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:21](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L21)
+[services/reporting-service/src/keys.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L23)
 
 ___
 
@@ -44,7 +56,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L47)
+[services/reporting-service/src/keys.ts:49](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L49)
 
 ___
 
@@ -54,7 +66,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L32)
+[services/reporting-service/src/keys.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L34)
 
 ___
 
@@ -64,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:24](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L24)
+[services/reporting-service/src/keys.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L26)
 
 ___
 
@@ -74,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L52)
+[services/reporting-service/src/keys.ts:54](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L54)
 
 ___
 
@@ -84,7 +96,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:55](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L55)
+[services/reporting-service/src/keys.ts:57](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L57)
 
 ___
 
@@ -94,7 +106,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L37)
+[services/reporting-service/src/keys.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L39)
 
 ___
 
@@ -104,7 +116,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:50](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L50)
+[services/reporting-service/src/keys.ts:52](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L52)
 
 ___
 
@@ -114,7 +126,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L60)
+[services/reporting-service/src/keys.ts:62](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L62)
 
 ___
 
@@ -124,7 +136,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:58](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L58)
+[services/reporting-service/src/keys.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L60)
 
 ___
 
@@ -134,7 +146,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:69](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L69)
+[services/reporting-service/src/keys.ts:71](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L71)
 
 ___
 
@@ -144,7 +156,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L39)
+[services/reporting-service/src/keys.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L41)
 
 ___
 
@@ -154,7 +166,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L42)
+[services/reporting-service/src/keys.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L44)
 
 ___
 
@@ -164,7 +176,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:81](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L81)
+[services/reporting-service/src/keys.ts:88](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L88)
 
 ___
 
@@ -174,7 +186,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:64](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L64)
+[services/reporting-service/src/keys.ts:66](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L66)
 
 ___
 
@@ -184,7 +196,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L28)
+[services/reporting-service/src/keys.ts:30](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L30)
 
 ___
 
@@ -194,7 +206,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:73](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L73)
+[services/reporting-service/src/keys.ts:75](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L75)
 
 ___
 
@@ -204,7 +216,7 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:77](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L77)
+[services/reporting-service/src/keys.ts:79](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L79)
 
 ___
 
@@ -214,4 +226,14 @@ ___
 
 #### Defined in
 
-[services/reporting-service/src/keys.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/reporting-service/src/keys.ts#L45)
+[services/reporting-service/src/keys.ts:47](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L47)
+
+___
+
+### SQL\_VALIDATOR
+
+• `Const` **SQL\_VALIDATOR**: `BindingKey`<[`SqlValidatorInterface`](../interfaces/SqlValidatorInterface.md)\>
+
+#### Defined in
+
+[services/reporting-service/src/keys.ts:82](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/reporting-service/src/keys.ts#L82)

@@ -39,7 +39,7 @@ Model.constructor
 
 #### Defined in
 
-[services/notification-service/src/models/notification-settings-dto.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification-settings-dto.model.ts#L31)
+[services/notification-service/src/models/notification-settings-dto.model.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/notification-settings-dto.model.ts#L31)
 
 ## Properties
 
@@ -49,7 +49,7 @@ Model.constructor
 
 #### Defined in
 
-[services/notification-service/src/models/notification-settings-dto.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification-settings-dto.model.ts#L29)
+[services/notification-service/src/models/notification-settings-dto.model.ts:29](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/notification-settings-dto.model.ts#L29)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/notification-settings-dto.model.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification-settings-dto.model.ts#L9)
+[services/notification-service/src/models/notification-settings-dto.model.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/notification-settings-dto.model.ts#L9)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/notification-settings-dto.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification-settings-dto.model.ts#L22)
+[services/notification-service/src/models/notification-settings-dto.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/notification-settings-dto.model.ts#L22)
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 #### Defined in
 
-[services/notification-service/src/models/notification-settings-dto.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/notification-service/src/models/notification-settings-dto.model.ts#L15)
+[services/notification-service/src/models/notification-settings-dto.model.ts:15](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/notification-service/src/models/notification-settings-dto.model.ts#L15)

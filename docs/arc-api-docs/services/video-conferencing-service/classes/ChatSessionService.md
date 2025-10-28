@@ -18,6 +18,8 @@
 
 ### Methods
 
+- [\_validateExpireTime](ChatSessionService.md#_validateexpiretime)
+- [\_validateMeetingLinkId](ChatSessionService.md#_validatemeetinglinkid)
 - [checkWebhookPayload](ChatSessionService.md#checkwebhookpayload)
 - [editMeeting](ChatSessionService.md#editmeeting)
 - [endSession](ChatSessionService.md#endsession)
@@ -44,7 +46,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:31](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/chat-session.service.ts#L31)
+[services/video-conferencing-service/src/services/chat-session.service.ts:32](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L32)
 
 ## Properties
 
@@ -54,7 +56,7 @@
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:41](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/chat-session.service.ts#L41)
+[services/video-conferencing-service/src/services/chat-session.service.ts:42](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L42)
 
 ___
 
@@ -64,7 +66,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:37](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/chat-session.service.ts#L37)
+[services/video-conferencing-service/src/services/chat-session.service.ts:38](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L38)
 
 ___
 
@@ -74,7 +76,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/chat-session.service.ts#L39)
+[services/video-conferencing-service/src/services/chat-session.service.ts:40](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L40)
 
 ___
 
@@ -84,7 +86,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:35](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/chat-session.service.ts#L35)
+[services/video-conferencing-service/src/services/chat-session.service.ts:36](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L36)
 
 ___
 
@@ -94,9 +96,55 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/chat-session.service.ts#L33)
+[services/video-conferencing-service/src/services/chat-session.service.ts:34](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L34)
 
 ## Methods
+
+### \_validateExpireTime
+
+▸ `Private` **_validateExpireTime**(`expireTime?`): `void`
+
+The function `_validateExpireTime` checks if the provided expire time is in the correct format and
+not in the past.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `expireTime?` | `Date` | The `_validateExpireTime` function is used to validate the `expireTime` parameter. It checks if the `expireTime` is provided and if it is a valid Date object. It also ensures that the `expireTime` is not in the past. |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[services/video-conferencing-service/src/services/chat-session.service.ts:155](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L155)
+
+___
+
+### \_validateMeetingLinkId
+
+▸ `Private` **_validateMeetingLinkId**(`meetingLinkId`): `void`
+
+The function `_validateMeetingLinkId` checks if the provided meeting link ID is a valid non-empty
+string in TypeScript.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `meetingLinkId` | `string` | The `meetingLinkId` parameter is a string that represents the link to a meeting. The `_validateMeetingLinkId` function is used to check if the `meetingLinkId` is a valid string and not empty. If the `meetingLinkId` is not a valid string or is empty, it will throw |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[services/video-conferencing-service/src/services/chat-session.service.ts:142](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L142)
+
+___
 
 ### checkWebhookPayload
 
@@ -114,7 +162,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:236](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/chat-session.service.ts#L236)
+[services/video-conferencing-service/src/services/chat-session.service.ts:253](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L253)
 
 ___
 
@@ -135,7 +183,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:151](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/chat-session.service.ts#L151)
+[services/video-conferencing-service/src/services/chat-session.service.ts:168](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L168)
 
 ___
 
@@ -155,7 +203,7 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:207](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/chat-session.service.ts#L207)
+[services/video-conferencing-service/src/services/chat-session.service.ts:224](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L224)
 
 ___
 
@@ -176,13 +224,13 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:261](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/chat-session.service.ts#L261)
+[services/video-conferencing-service/src/services/chat-session.service.ts:278](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L278)
 
 ___
 
 ### getMeetingLink
 
-▸ **getMeetingLink**(`meetingOptions`): `Promise`<`string`\>
+▸ **getMeetingLink**(`meetingOptions`): `Promise`<[`MeetingLink`](../interfaces/MeetingLink.md)\>
 
 #### Parameters
 
@@ -192,11 +240,11 @@ ___
 
 #### Returns
 
-`Promise`<`string`\>
+`Promise`<[`MeetingLink`](../interfaces/MeetingLink.md)\>
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:44](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/chat-session.service.ts#L44)
+[services/video-conferencing-service/src/services/chat-session.service.ts:45](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L45)
 
 ___
 
@@ -204,20 +252,26 @@ ___
 
 ▸ **getMeetingToken**(`sessionOptions`, `meetingLinkId`): `Promise`<[`SessionResponse`](../interfaces/SessionResponse.md)\>
 
+The function `getMeetingToken` retrieves a session token for a meeting based on provided options and
+meeting link ID, with validation checks for session existence, expiration, and scheduled start time.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `sessionOptions` | [`SessionOptions`](../interfaces/SessionOptions.md) |
-| `meetingLinkId` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `sessionOptions` | [`SessionOptions`](../interfaces/SessionOptions.md) | The `sessionOptions` parameter in the `getMeetingToken` function represents the options for the session, such as the configuration settings for the meeting. It is an object that contains various properties like `expireTime`, `sessionId`, etc., which are used to customize the session behavior. |
+| `meetingLinkId` | `string` | The `meetingLinkId` parameter is a string that represents the unique identifier for a specific meeting or session. It is used to retrieve information about the meeting from the database and validate its status before generating a meeting token. |
 
 #### Returns
 
 `Promise`<[`SessionResponse`](../interfaces/SessionResponse.md)\>
 
+The `getMeetingToken` function returns a Promise that resolves to a `SessionResponse`
+object.
+
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:83](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/chat-session.service.ts#L83)
+[services/video-conferencing-service/src/services/chat-session.service.ts:97](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L97)
 
 ___
 
@@ -239,4 +293,4 @@ ___
 
 #### Defined in
 
-[services/video-conferencing-service/src/services/chat-session.service.ts:239](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/video-conferencing-service/src/services/chat-session.service.ts#L239)
+[services/video-conferencing-service/src/services/chat-session.service.ts:256](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/video-conferencing-service/src/services/chat-session.service.ts#L256)

@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/role.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/role.model.ts#L16)
+[services/oidc-service/src/models/role.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/models/role.model.ts#L16)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/role.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/role.model.ts#L22)
+[services/oidc-service/src/models/role.model.ts:22](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/models/role.model.ts#L22)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/role.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/role.model.ts#L39)
+[services/oidc-service/src/models/role.model.ts:39](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/models/role.model.ts#L39)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[services/oidc-service/src/models/role.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/oidc-service/src/models/role.model.ts#L33)
+[services/oidc-service/src/models/role.model.ts:33](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/oidc-service/src/models/role.model.ts#L33)

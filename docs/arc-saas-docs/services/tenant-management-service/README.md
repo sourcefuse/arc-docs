@@ -14,6 +14,7 @@ A Microservice for handling tenant management operations. It provides -
 - Tenant Onboarding of both pooled and silo tenants
 - Billing and Invoicing
 - Provisioning of resources for silo and pooled tenants
+- IDP - confgure identity provider
 
 ### work flow
 
@@ -24,7 +25,7 @@ A Microservice for handling tenant management operations. It provides -
 Install Tenant Management Service using `npm`;
 
 ```sh
-$ [npm install | yarn add] @sourceloop/tenant-management-service
+$ [npm install | yarn add] @sourceloop/ctrl-plane-tenant-management-service
 ```
 
 ## Usage
@@ -32,13 +33,13 @@ $ [npm install | yarn add] @sourceloop/tenant-management-service
 - Create a new Loopback4 Application (If you don't have one already)
   `lb4 testapp`
 - Install the tenant management service
-  `npm i @sourceloop/tenant-management-service`
+  `npm i @sourceloop/ctrl-plane-tenant-management-service`
 - Set the [environment variables](#environment-variables).
 - Run the [migrations](#migrations).
 - Add the `TenantManagementServiceComponent` to your Loopback4 Application (in `application.ts`).
   ```typescript
   // import the TenantManagementServiceComponent
-  import {TenantManagementServiceComponent} from '@sourceloop/tenant-management-service';
+  import {TenantManagementServiceComponent} from '@sourceloop/ctrl-plane-tenant-management-service';
   // add Component for TenantManagementService
   this.component(TenantManagementServiceComponent);
   ```
@@ -58,13 +59,63 @@ $ [npm install | yarn add] @sourceloop/tenant-management-service
 - This endpoint would onboard the tenant in the DB, and the facade is then supposed to trigger the relevant events using the `/tenants/{id}/provision` endpoint.
 - The provisioning endpoint will invoke the publish method on the `EventConnector`. This connector's purpose is to provide a place for consumer to write the event publishing logic. And your custom service can be bound to the key `EventConnectorBinding` exported by the service. Refer the example with Amazon EventBridge implementation in the [sandbox](./sandbox).
 
+## IDP - Identity Provider
+
+The IDP (Identity Provider) Controller provides an endpoint to manage identity provider configurations for tenants. It supports multiple identity providers, such as Keycloak and Auth0, and ensures secure handling of identity provider setup requests through rate-limiting, authorization, and input validation.
+
+### Features
+
+##### Multi-IDP Support:
+
+- Supports Keycloak and Auth0 as identity providers.
+- Extensible for additional providers like Cognito.
+
+##### Bindings:
+
+**TenantManagementServiceBindings.IDP_KEYCLOAK** - Provides Keycloak configuration handler.
+
+**TenantManagementServiceBindings.IDP_AUTH0** - Provides Auth0 configuration handler.
+
+This switch statement selects the appropriate identity provider (IDP) configuration based on the identityProvider value in the request payload.
+
+- AUTH0: Calls idpAuth0Provider to configure Auth0.
+- KEYCLOAK: Calls idpKeycloakProvider to configure Keycloak.
+
+Finally, it returns the response (res) from the selected provider.
+
+```typescript
+export interface IdpResp {
+  authId: string;
+}
+```
+
+authId is the id of the user created over identity provider.
+
+Bind your required provider as below
+
+- For Keycloak
+
+```ts
+app
+  .bind(TenantManagementServiceBindings.IDP_KEYCLOAK)
+  .toProvider(KeycloakIdpProvider);
+```
+
+- For Auth0
+
+```ts
+app
+  .bind(TenantManagementServiceBindings.IDP_AUTH0)
+  .toProvider(Auth0IdpProvider);
+```
+
 ## Webhook Integration
 
 - A webhook endpoint is available in the service that is supposed to update the status of a tenant based on the updates from the third-party responsible for actual provisioning of resources
 - To add Webhook configuration in your application, add the `WebhookTenantManagementServiceComponent` to your Loopback4 Application (in `application.ts`).
   ```typescript
   // import the UserTenantServiceComponent
-  import {WebhookTenantManagementServiceComponent} from '@sourceloop/tenant-management-service';
+  import {WebhookTenantManagementServiceComponent} from '@sourceloop/ctrl-plane-tenant-management-service';
   // add the component here
   this.component(WebhookTenantManagementServiceComponent);
   ```
@@ -82,6 +133,8 @@ const signature = crypto
   .update(`${payload}${context}${timestamp}`)
   .digest('hex');
 ```
+
+The identity provider and its related providers are also a part of the 'WebhookTenantManagementServiceComponent' since we expect it to be invoked separately once the tenant provisioning is completed via the orchestrator or any other medium preferred.
 
 ### Environment Variables
 
@@ -278,7 +331,7 @@ Here is a sample Implementation `DataSource` implementation using environment va
 ```typescript
 import {inject, lifeCycleObserver, LifeCycleObserver} from '@loopback/core';
 import {juggler} from '@loopback/repository';
-import {TenantManagementDbSourceName} from '@sourceloop/tenant-management-service';
+import {TenantManagementDbSourceName} from '@sourceloop/ctrl-plane-tenant-management-service';
 
 const config = {
   name: TenantManagementDbSourceName,

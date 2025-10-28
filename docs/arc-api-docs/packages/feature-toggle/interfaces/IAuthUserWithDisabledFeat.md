@@ -44,7 +44,7 @@ IAuthUserWithPermissions.allowedResources
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:30
+packages/core/dist/components/bearer-verifier/keys.d.ts:31
 
 ___
 
@@ -58,7 +58,7 @@ IAuthUserWithPermissions.authClientId
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:20
+packages/core/dist/components/bearer-verifier/keys.d.ts:21
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[packages/feature-toggle/src/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/packages/feature-toggle/src/types.ts#L23)
+[packages/feature-toggle/src/types.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/packages/feature-toggle/src/types.ts#L23)
 
 ___
 
@@ -82,7 +82,7 @@ IAuthUserWithPermissions.email
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:22
+packages/core/dist/components/bearer-verifier/keys.d.ts:23
 
 ___
 
@@ -96,7 +96,7 @@ IAuthUserWithPermissions.firstName
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:24
+packages/core/dist/components/bearer-verifier/keys.d.ts:25
 
 ___
 
@@ -110,7 +110,7 @@ IAuthUserWithPermissions.id
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:17
+packages/core/dist/components/bearer-verifier/keys.d.ts:18
 
 ___
 
@@ -124,7 +124,7 @@ IAuthUserWithPermissions.identifier
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:18
+packages/core/dist/components/bearer-verifier/keys.d.ts:19
 
 ___
 
@@ -138,7 +138,7 @@ IAuthUserWithPermissions.lastName
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:25
+packages/core/dist/components/bearer-verifier/keys.d.ts:26
 
 ___
 
@@ -152,7 +152,7 @@ IAuthUserWithPermissions.middleName
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:26
+packages/core/dist/components/bearer-verifier/keys.d.ts:27
 
 ___
 
@@ -166,7 +166,7 @@ IAuthUserWithPermissions.passwordExpiryTime
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:29
+packages/core/dist/components/bearer-verifier/keys.d.ts:30
 
 ___
 
@@ -180,7 +180,7 @@ IAuthUserWithPermissions.permissions
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:19
+packages/core/dist/components/bearer-verifier/keys.d.ts:20
 
 ___
 
@@ -194,7 +194,7 @@ IAuthUserWithPermissions.role
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:23
+packages/core/dist/components/bearer-verifier/keys.d.ts:24
 
 ___
 
@@ -208,7 +208,7 @@ IAuthUserWithPermissions.tenantId
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:27
+packages/core/dist/components/bearer-verifier/keys.d.ts:28
 
 ___
 
@@ -222,7 +222,7 @@ IAuthUserWithPermissions.userPreferences
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:21
+packages/core/dist/components/bearer-verifier/keys.d.ts:22
 
 ___
 
@@ -236,7 +236,7 @@ IAuthUserWithPermissions.userTenantId
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:28
+packages/core/dist/components/bearer-verifier/keys.d.ts:29
 
 ## Methods
 
@@ -254,4 +254,4 @@ IAuthUserWithPermissions.getIdentifier
 
 #### Defined in
 
-packages/core/dist/components/bearer-verifier/keys.d.ts:31
+packages/core/dist/components/bearer-verifier/keys.d.ts:32

@@ -47,7 +47,7 @@ packages/core/dist/models/core-model.d.ts:3
 
 #### Defined in
 
-[services/in-mail-service/src/models/id-array.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/models/id-array.model.ts#L16)
+[services/in-mail-service/src/models/id-array.model.ts:16](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/in-mail-service/src/models/id-array.model.ts#L16)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/in-mail-service/src/models/id-array.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/in-mail-service/src/models/id-array.model.ts#L23)
+[services/in-mail-service/src/models/id-array.model.ts:23](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/in-mail-service/src/models/id-array.model.ts#L23)

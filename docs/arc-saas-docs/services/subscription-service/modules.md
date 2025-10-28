@@ -15,11 +15,24 @@
 
 ### Classes
 
+- [AddressDto](classes/AddressDto.md)
+- [BillingCustomer](classes/BillingCustomer.md)
+- [BillingCustomerRepository](classes/BillingCustomerRepository.md)
+- [BillingCustomerService](classes/BillingCustomerService.md)
 - [BillingCycle](classes/BillingCycle.md)
 - [BillingCycleRepository](classes/BillingCycleRepository.md)
+- [BillingInvoiceService](classes/BillingInvoiceService.md)
+- [BillingPaymentSourceService](classes/BillingPaymentSourceService.md)
+- [ChargeDto](classes/ChargeDto.md)
 - [Currency](classes/Currency.md)
 - [CurrencyRepository](classes/CurrencyRepository.md)
+- [CustomerDto](classes/CustomerDto.md)
+- [Invoice](classes/Invoice.md)
+- [InvoiceDto](classes/InvoiceDto.md)
+- [InvoiceRepository](classes/InvoiceRepository.md)
+- [PaymentSourceDto](classes/PaymentSourceDto.md)
 - [Plan](classes/Plan.md)
+- [PlanFeaturesService](classes/PlanFeaturesService.md)
 - [PlanRepository](classes/PlanRepository.md)
 - [PlanSizes](classes/PlanSizes.md)
 - [PlanSizesRepository](classes/PlanSizesRepository.md)
@@ -29,11 +42,16 @@
 - [ServiceRepository](classes/ServiceRepository.md)
 - [Subscription](classes/Subscription.md)
 - [SubscriptionRepository](classes/SubscriptionRepository.md)
+- [SubscriptionSequelizeServiceComponent](classes/SubscriptionSequelizeServiceComponent.md)
+- [SubscriptionService](classes/SubscriptionService.md)
 - [SubscriptionServiceApplication](classes/SubscriptionServiceApplication.md)
 - [SubscriptionServiceComponent](classes/SubscriptionServiceComponent.md)
 
 ### Interfaces
 
+- [ICard](interfaces/ICard.md)
+- [IContent](interfaces/IContent.md)
+- [IPayload](interfaces/IPayload.md)
 - [ISubscriptionServiceConfig](interfaces/ISubscriptionServiceConfig.md)
 - [PlanRelations](interfaces/PlanRelations.md)
 - [PlanSizesRelations](interfaces/PlanSizesRelations.md)
@@ -44,6 +62,7 @@
 ### Type Aliases
 
 - [BaseUser](modules.md#baseuser)
+- [InvoiceStatus](modules.md#invoicestatus)
 - [LeadUser](modules.md#leaduser)
 - [LeadUserWithToken](modules.md#leaduserwithtoken)
 - [PlanSizesWithRelations](modules.md#plansizeswithrelations)
@@ -55,7 +74,9 @@
 ### Variables
 
 - [LEAD\_TOKEN\_VERIFIER](modules.md#lead_token_verifier)
+- [SYSTEM\_USER](modules.md#system_user)
 - [SubscriptionDbSourceName](modules.md#subscriptiondbsourcename)
+- [WEBHOOK\_VERIFIER](modules.md#webhook_verifier)
 
 ## Type Aliases
 
@@ -71,7 +92,17 @@
 
 #### Defined in
 
-[services/subscription-service/src/types.ts:12](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/types.ts#L12)
+[services/subscription-service/src/types.ts:8](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/types.ts#L8)
+
+___
+
+### InvoiceStatus
+
+Ƭ **InvoiceStatus**: ``"paid"`` \| ``"posted"`` \| ``"payment_due"`` \| ``"not_paid"`` \| ``"voided"`` \| ``"pending"``
+
+#### Defined in
+
+[services/subscription-service/src/types.ts:24](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/types.ts#L24)
 
 ___
 
@@ -81,7 +112,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/types.ts:16](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/types.ts#L16)
+[services/subscription-service/src/types.ts:12](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/types.ts#L12)
 
 ___
 
@@ -91,7 +122,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/types.ts:21](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/types.ts#L21)
+[services/subscription-service/src/types.ts:17](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/types.ts#L17)
 
 ___
 
@@ -101,7 +132,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan-sizes.model.ts:33](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan-sizes.model.ts#L33)
+[services/subscription-service/src/models/plan-sizes.model.ts:33](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/plan-sizes.model.ts#L33)
 
 ___
 
@@ -111,7 +142,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/plan.model.ts:79](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/plan.model.ts#L79)
+[services/subscription-service/src/models/plan.model.ts:79](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/plan.model.ts#L79)
 
 ___
 
@@ -121,7 +152,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/resource.model.ts:38](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/resource.model.ts#L38)
+[services/subscription-service/src/models/resource.model.ts:38](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/resource.model.ts#L38)
 
 ___
 
@@ -131,7 +162,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/service.model.ts:31](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/service.model.ts#L31)
+[services/subscription-service/src/models/service.model.ts:31](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/service.model.ts#L31)
 
 ___
 
@@ -141,7 +172,7 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/models/subscription.model.ts:65](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/models/subscription.model.ts#L65)
+[services/subscription-service/src/models/subscription.model.ts:72](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/models/subscription.model.ts#L72)
 
 ## Variables
 
@@ -149,9 +180,23 @@ ___
 
 • `Const` **LEAD\_TOKEN\_VERIFIER**: `BindingKey`<`BearerFn`<`AnyObject`\>\>
 
+Binding key for the lead token verifier.
+
 #### Defined in
 
-[services/subscription-service/src/keys.ts:13](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/keys.ts#L13)
+[services/subscription-service/src/keys.ts:21](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/keys.ts#L21)
+
+___
+
+### SYSTEM\_USER
+
+• `Const` **SYSTEM\_USER**: `BindingKey`<`IAuthUser` & `AnyObject`\>
+
+Binding key for the system user.
+
+#### Defined in
+
+[services/subscription-service/src/keys.ts:28](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/keys.ts#L28)
 
 ___
 
@@ -161,4 +206,14 @@ ___
 
 #### Defined in
 
-[services/subscription-service/src/types.ts:25](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/subscription-service/src/types.ts#L25)
+[services/subscription-service/src/types.ts:21](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/types.ts#L21)
+
+___
+
+### WEBHOOK\_VERIFIER
+
+• `Const` **WEBHOOK\_VERIFIER**: `BindingKey`<`Interceptor`\>
+
+#### Defined in
+
+[services/subscription-service/src/keys.ts:14](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/subscription-service/src/keys.ts#L14)

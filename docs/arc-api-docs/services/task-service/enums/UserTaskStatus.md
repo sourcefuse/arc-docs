@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[services/task-service/src/types.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L61)
+[services/task-service/src/types.ts:61](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L61)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/types.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/types.ts#L60)
+[services/task-service/src/types.ts:60](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/types.ts#L60)

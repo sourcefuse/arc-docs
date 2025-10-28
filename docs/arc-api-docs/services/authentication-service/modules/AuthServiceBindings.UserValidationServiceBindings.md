@@ -18,4 +18,4 @@
 
 #### Defined in
 
-[services/authentication-service/src/keys.ts:26](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/keys.ts#L26)
+[services/authentication-service/src/keys.ts:28](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/keys.ts#L28)

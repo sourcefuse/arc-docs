@@ -23,6 +23,7 @@
 ### Properties
 
 - [getCurrentUser](ResourceRepository.md#getcurrentuser)
+- [resource](ResourceRepository.md#resource)
 - [tenant](ResourceRepository.md#tenant)
 - [tenantRepositoryGetter](ResourceRepository.md#tenantrepositorygetter)
 
@@ -30,7 +31,7 @@
 
 ### constructor
 
-• **new ResourceRepository**<`T`\>(`dataSource`, `getCurrentUser`, `tenantRepositoryGetter`)
+• **new ResourceRepository**<`T`\>(`dataSource`, `getCurrentUser`, `tenantRepositoryGetter`, `resource`)
 
 #### Type parameters
 
@@ -44,7 +45,8 @@
 | :------ | :------ |
 | `dataSource` | `DataSource` |
 | `getCurrentUser` | `Getter`<`IAuthUserWithPermissions`<`string`, `string`, `string`\>\> |
-| `tenantRepositoryGetter` | `Getter`<[`TenantRepository`](TenantRepository.md)\> |
+| `tenantRepositoryGetter` | `Getter`<[`TenantRepository`](TenantRepository.md)<[`Tenant`](Tenant.md)\>\> |
+| `resource` | typeof `Entity` & { `prototype`: [`Resource`](Resource.md)<`T`\>  } |
 
 #### Overrides
 
@@ -56,7 +58,7 @@ DefaultTransactionalUserModifyRepository&lt;
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/resource.repository.ts:25](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/resource.repository.ts#L25)
+[services/tenant-management-service/src/repositories/resource.repository.ts:30](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/resource.repository.ts#L30)
 
 ## Properties
 
@@ -70,7 +72,17 @@ DefaultTransactionalUserModifyRepository.getCurrentUser
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/resource.repository.ts:29](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/resource.repository.ts#L29)
+[services/tenant-management-service/src/repositories/resource.repository.ts:34](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/resource.repository.ts#L34)
+
+___
+
+### resource
+
+• `Private` `Readonly` **resource**: typeof `Entity` & { `prototype`: [`Resource`](Resource.md)<`T`\>  }
+
+#### Defined in
+
+[services/tenant-management-service/src/repositories/resource.repository.ts:38](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/resource.repository.ts#L38)
 
 ___
 
@@ -80,14 +92,14 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/resource.repository.ts:20](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/resource.repository.ts#L20)
+[services/tenant-management-service/src/repositories/resource.repository.ts:25](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/resource.repository.ts#L25)
 
 ___
 
 ### tenantRepositoryGetter
 
-• `Protected` **tenantRepositoryGetter**: `Getter`<[`TenantRepository`](TenantRepository.md)\>
+• `Protected` **tenantRepositoryGetter**: `Getter`<[`TenantRepository`](TenantRepository.md)<[`Tenant`](Tenant.md)\>\>
 
 #### Defined in
 
-[services/tenant-management-service/src/repositories/resource.repository.ts:31](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/repositories/resource.repository.ts#L31)
+[services/tenant-management-service/src/repositories/resource.repository.ts:36](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/repositories/resource.repository.ts#L36)

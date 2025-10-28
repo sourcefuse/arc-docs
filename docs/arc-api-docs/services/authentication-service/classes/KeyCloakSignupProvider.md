@@ -38,4 +38,4 @@ Provider.value
 
 #### Defined in
 
-[services/authentication-service/src/providers/keycloak-signup.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/authentication-service/src/providers/keycloak-signup.provider.ts#L10)
+[services/authentication-service/src/providers/keycloak-signup.provider.ts:10](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/authentication-service/src/providers/keycloak-signup.provider.ts#L10)

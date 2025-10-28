@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[services/task-service/src/interfaces/i-command.ts:4](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/interfaces/i-command.ts#L4)
+[services/task-service/src/interfaces/i-command.ts:4](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/interfaces/i-command.ts#L4)
 
 ## Methods
 
@@ -39,4 +39,4 @@
 
 #### Defined in
 
-[services/task-service/src/interfaces/i-command.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/interfaces/i-command.ts#L5)
+[services/task-service/src/interfaces/i-command.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/interfaces/i-command.ts#L5)

@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[services/task-service/src/interfaces/i-event-adapter.ts:3](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/interfaces/i-event-adapter.ts#L3)
+[services/task-service/src/interfaces/i-event-adapter.ts:3](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/interfaces/i-event-adapter.ts#L3)
 
 ___
 
@@ -55,4 +55,4 @@ ___
 
 #### Defined in
 
-[services/task-service/src/interfaces/i-event-adapter.ts:2](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/task-service/src/interfaces/i-event-adapter.ts#L2)
+[services/task-service/src/interfaces/i-event-adapter.ts:2](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/task-service/src/interfaces/i-event-adapter.ts#L2)

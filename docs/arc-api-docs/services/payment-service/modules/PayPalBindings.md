@@ -13,11 +13,11 @@
 
 ### PayPalConfig
 
-• `Const` **PayPalConfig**: `BindingKey`<``null`` \| { `clientId`: `string` ; `clientSecret`: `string`  }\>
+• `Const` **PayPalConfig**: `BindingKey`<``null`` \| [`IPayPalConfig`](../interfaces/IPayPalConfig.md)\>
 
 #### Defined in
 
-[services/payment-service/src/providers/paypal/keys.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/paypal/keys.ts#L5)
+[services/payment-service/src/providers/paypal/keys.ts:5](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/providers/paypal/keys.ts#L5)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[services/payment-service/src/providers/paypal/keys.ts:9](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/payment-service/src/providers/paypal/keys.ts#L9)
+[services/payment-service/src/providers/paypal/keys.ts:8](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/payment-service/src/providers/paypal/keys.ts#L8)

@@ -43,7 +43,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:87](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/component.ts#L87)
+[services/scheduler-service/src/component.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/component.ts#L89)
 
 ## Properties
 
@@ -53,7 +53,7 @@
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:89](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/component.ts#L89)
+[services/scheduler-service/src/component.ts:91](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/component.ts#L91)
 
 ___
 
@@ -67,7 +67,7 @@ Component.bindings
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:184](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/component.ts#L184)
+[services/scheduler-service/src/component.ts:188](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/component.ts#L188)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/component.ts#L93)
+[services/scheduler-service/src/component.ts:95](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/component.ts#L95)
 
 ___
 
@@ -93,7 +93,7 @@ Component.controllers
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:201](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/component.ts#L201)
+[services/scheduler-service/src/component.ts:205](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/component.ts#L205)
 
 ___
 
@@ -106,7 +106,7 @@ via `app.model()` API.
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:196](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/component.ts#L196)
+[services/scheduler-service/src/component.ts:200](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/component.ts#L200)
 
 ___
 
@@ -120,7 +120,7 @@ Component.providers
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:182](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/component.ts#L182)
+[services/scheduler-service/src/component.ts:186](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/component.ts#L186)
 
 ___
 
@@ -133,7 +133,7 @@ via `app.repository()` API.
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:190](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/component.ts#L190)
+[services/scheduler-service/src/component.ts:194](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/component.ts#L194)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:91](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/component.ts#L91)
+[services/scheduler-service/src/component.ts:93](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/component.ts#L93)
 
 ## Methods
 
@@ -165,4 +165,4 @@ Setup ServiceSequence by default if no other sequnce provided
 
 #### Defined in
 
-[services/scheduler-service/src/component.ts:208](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/93a7f917/services/scheduler-service/src/component.ts#L208)
+[services/scheduler-service/src/component.ts:212](https://github.com/sourcefuse/loopback4-microservice-catalog/blob/eb9d4d57/services/scheduler-service/src/component.ts#L212)

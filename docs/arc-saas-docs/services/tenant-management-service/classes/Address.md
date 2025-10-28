@@ -41,7 +41,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/address.model.ts:47](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/address.model.ts#L47)
+[services/tenant-management-service/src/models/address.model.ts:47](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/address.model.ts#L47)
 
 ## Properties
 
@@ -51,7 +51,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/address.model.ts:20](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/address.model.ts#L20)
+[services/tenant-management-service/src/models/address.model.ts:20](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/address.model.ts#L20)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/address.model.ts:26](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/address.model.ts#L26)
+[services/tenant-management-service/src/models/address.model.ts:26](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/address.model.ts#L26)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/address.model.ts:45](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/address.model.ts#L45)
+[services/tenant-management-service/src/models/address.model.ts:45](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/address.model.ts#L45)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/address.model.ts:14](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/address.model.ts#L14)
+[services/tenant-management-service/src/models/address.model.ts:14](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/address.model.ts#L14)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/address.model.ts:32](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/address.model.ts#L32)
+[services/tenant-management-service/src/models/address.model.ts:32](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/address.model.ts#L32)
 
 ___
 
@@ -101,4 +101,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/address.model.ts:38](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/address.model.ts#L38)
+[services/tenant-management-service/src/models/address.model.ts:38](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/address.model.ts#L38)

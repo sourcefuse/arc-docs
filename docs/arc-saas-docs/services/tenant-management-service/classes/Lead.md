@@ -45,7 +45,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/lead.model.ts:68](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/lead.model.ts#L68)
+[services/tenant-management-service/src/models/lead.model.ts:68](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/lead.model.ts#L68)
 
 ## Properties
 
@@ -55,7 +55,7 @@ UserModifiableEntity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/lead.model.ts:66](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/lead.model.ts#L66)
+[services/tenant-management-service/src/models/lead.model.ts:66](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/lead.model.ts#L66)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/lead.model.ts:41](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/lead.model.ts#L41)
+[services/tenant-management-service/src/models/lead.model.ts:41](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/lead.model.ts#L41)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/lead.model.ts:48](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/lead.model.ts#L48)
+[services/tenant-management-service/src/models/lead.model.ts:48](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/lead.model.ts#L48)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/lead.model.ts:25](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/lead.model.ts#L25)
+[services/tenant-management-service/src/models/lead.model.ts:25](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/lead.model.ts#L25)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/lead.model.ts:17](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/lead.model.ts#L17)
+[services/tenant-management-service/src/models/lead.model.ts:17](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/lead.model.ts#L17)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/lead.model.ts:57](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/lead.model.ts#L57)
+[services/tenant-management-service/src/models/lead.model.ts:57](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/lead.model.ts#L57)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/lead.model.ts:33](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/lead.model.ts#L33)
+[services/tenant-management-service/src/models/lead.model.ts:33](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/lead.model.ts#L33)
 
 ___
 
@@ -125,4 +125,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/lead.model.ts:60](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/lead.model.ts#L60)
+[services/tenant-management-service/src/models/lead.model.ts:60](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/lead.model.ts#L60)

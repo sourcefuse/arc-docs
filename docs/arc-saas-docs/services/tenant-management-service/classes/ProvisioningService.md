@@ -52,13 +52,13 @@ Constructs a new instance of the ProvisioningService.
 | :------ | :------ | :------ |
 | `cryptoHelperService` | [`CryptoHelperService`](CryptoHelperService.md) | Service for cryptographic operations. |
 | `eventConnector` | [`EventConnector`](EventConnector.md) | Event Connector provided by consumer to invoke publish on. |
-| `webhookSecretRepo` | [`WebhookSecretRepository`](WebhookSecretRepository.md) | Repository for webhook secrets. |
-| `tenantRepository` | [`TenantRepository`](TenantRepository.md) | - |
+| `webhookSecretRepo` | [`WebhookSecretRepository`](WebhookSecretRepository.md)<[`WebhookSecret`](WebhookSecret.md)\> | Repository for webhook secrets. |
+| `tenantRepository` | [`TenantRepository`](TenantRepository.md)<[`Tenant`](Tenant.md)\> | - |
 | `logger` | `ILogger` | Logger service for logging messages. |
 
 #### Defined in
 
-[services/tenant-management-service/src/services/provisioning.service.ts:26](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/provisioning.service.ts#L26)
+[services/tenant-management-service/src/services/provisioning.service.ts:26](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/provisioning.service.ts#L26)
 
 ## Properties
 
@@ -70,7 +70,7 @@ Service for cryptographic operations.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/provisioning.service.ts:28](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/provisioning.service.ts#L28)
+[services/tenant-management-service/src/services/provisioning.service.ts:28](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/provisioning.service.ts#L28)
 
 ___
 
@@ -82,7 +82,7 @@ Event Connector provided by consumer to invoke publish on.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/provisioning.service.ts:30](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/provisioning.service.ts#L30)
+[services/tenant-management-service/src/services/provisioning.service.ts:30](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/provisioning.service.ts#L30)
 
 ___
 
@@ -94,29 +94,29 @@ Logger service for logging messages.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/provisioning.service.ts:36](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/provisioning.service.ts#L36)
+[services/tenant-management-service/src/services/provisioning.service.ts:36](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/provisioning.service.ts#L36)
 
 ___
 
 ### tenantRepository
 
-• `Private` **tenantRepository**: [`TenantRepository`](TenantRepository.md)
+• `Private` **tenantRepository**: [`TenantRepository`](TenantRepository.md)<[`Tenant`](Tenant.md)\>
 
 #### Defined in
 
-[services/tenant-management-service/src/services/provisioning.service.ts:34](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/provisioning.service.ts#L34)
+[services/tenant-management-service/src/services/provisioning.service.ts:34](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/provisioning.service.ts#L34)
 
 ___
 
 ### webhookSecretRepo
 
-• `Private` **webhookSecretRepo**: [`WebhookSecretRepository`](WebhookSecretRepository.md)
+• `Private` **webhookSecretRepo**: [`WebhookSecretRepository`](WebhookSecretRepository.md)<[`WebhookSecret`](WebhookSecret.md)\>
 
 Repository for webhook secrets.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/provisioning.service.ts:32](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/provisioning.service.ts#L32)
+[services/tenant-management-service/src/services/provisioning.service.ts:32](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/provisioning.service.ts#L32)
 
 ## Methods
 
@@ -145,4 +145,4 @@ webhook secret and build context to later verify the webhook callback.
 
 #### Defined in
 
-[services/tenant-management-service/src/services/provisioning.service.ts:48](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/services/provisioning.service.ts#L48)
+[services/tenant-management-service/src/services/provisioning.service.ts:48](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/services/provisioning.service.ts#L48)

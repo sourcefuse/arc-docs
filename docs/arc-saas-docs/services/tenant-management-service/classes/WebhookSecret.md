@@ -37,7 +37,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/webhook-secret.model.ts:21](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/webhook-secret.model.ts#L21)
+[services/tenant-management-service/src/models/webhook-secret.model.ts:21](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/webhook-secret.model.ts#L21)
 
 ## Properties
 
@@ -47,7 +47,7 @@ Entity.constructor
 
 #### Defined in
 
-[services/tenant-management-service/src/models/webhook-secret.model.ts:19](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/webhook-secret.model.ts#L19)
+[services/tenant-management-service/src/models/webhook-secret.model.ts:19](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/webhook-secret.model.ts#L19)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[services/tenant-management-service/src/models/webhook-secret.model.ts:11](https://github.com/sourcefuse/arc-saas/blob/5e03dcb/services/tenant-management-service/src/models/webhook-secret.model.ts#L11)
+[services/tenant-management-service/src/models/webhook-secret.model.ts:11](https://github.com/sourcefuse/arc-saas/blob/27b4636/services/tenant-management-service/src/models/webhook-secret.model.ts#L11)
