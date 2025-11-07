@@ -150,6 +150,53 @@ locals {
 }
 
 ```
+
+## EKS Compatibility
+
+This module supports AWS EKS (Elastic Kubernetes Service) by enabling per-subnet custom tagging. EKS requires specific tags on subnets for proper ALB/NLB provisioning and cluster auto-discovery.
+
+### Required EKS Tags
+
+- **Public subnets**: `kubernetes.io/role/elb = "1"`
+- **Private subnets**: `kubernetes.io/role/internal-elb = "1"`
+- **All subnets**: `kubernetes.io/cluster/<cluster-name> = "shared"` or `"owned"`
+
+### Usage with Auto-Generated Subnets
+
+Use `additional_public_subnet_tags` and `additional_private_subnet_tags` variables:
+
+```hcl
+module "network" {
+  # ... other configuration
+
+  additional_public_subnet_tags = {
+    "kubernetes.io/role/elb" = "1"
+    "kubernetes.io/cluster/my-eks-cluster" = "shared"
+  }
+
+  additional_private_subnet_tags = {
+    "kubernetes.io/role/internal-elb" = "1"
+    "kubernetes.io/cluster/my-eks-cluster" = "shared"
+  }
+}
+```
+
+### Usage with Custom Subnets
+
+Add `tags` field to each subnet in `subnet_map`:
+
+```hcl
+subnet_map = {
+  "public-subnet" = {
+    # ... subnet configuration
+    tags = {
+      "kubernetes.io/role/elb" = "1"
+      "kubernetes.io/cluster/my-eks-cluster" = "shared"
+    }
+  }
+}
+```
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
@@ -162,7 +209,7 @@ locals {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.0, < 7.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.100.0 |
 
 ## Modules
 
@@ -205,6 +252,8 @@ locals {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_additional_private_subnet_tags"></a> [additional\_private\_subnet\_tags](#input\_additional\_private\_subnet\_tags) | (optional) Additional tags for auto-generated private subnets | `map(string)` | `{}` | no |
+| <a name="input_additional_public_subnet_tags"></a> [additional\_public\_subnet\_tags](#input\_additional\_public\_subnet\_tags) | (optional) Additional tags for auto-generated public subnets | `map(string)` | `{}` | no |
 | <a name="input_assign_generated_ipv6_cidr_block"></a> [assign\_generated\_ipv6\_cidr\_block](#input\_assign\_generated\_ipv6\_cidr\_block) | Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. | `bool` | `false` | no |
 | <a name="input_availability_zones"></a> [availability\_zones](#input\_availability\_zones) | (optional) List of availability zones , if subnet map is null , subnet map automatically derived | `list(string)` | `[]` | no |
 | <a name="input_cidr_block"></a> [cidr\_block](#input\_cidr\_block) | The CIDR block for the VPC. | `string` | n/a | yes |
@@ -225,7 +274,7 @@ locals {
 | <a name="input_kms_config"></a> [kms\_config](#input\_kms\_config) | n/a | <pre>object({<br/>    deletion_window_in_days = number<br/>    enable_key_rotation     = bool<br/>  })</pre> | <pre>{<br/>  "deletion_window_in_days": 30,<br/>  "enable_key_rotation": true<br/>}</pre> | no |
 | <a name="input_name"></a> [name](#input\_name) | VPC name | `string` | n/a | yes |
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | Namespace name | `string` | n/a | yes |
-| <a name="input_subnet_map"></a> [subnet\_map](#input\_subnet\_map) | A map defining the configuration of subnets, their attributes, and associated resources.<br/>Each subnet configuration can include the following details:<br/><br/>- **name**: Name of the subnet.<br/>- **cidr\_block**: CIDR block for the subnet.<br/>- **availability\_zone**: The availability zone where the subnet is located.<br/>- **enable\_resource\_name\_dns\_a\_record\_on\_launch**: Enable or disable DNS A records for EC2 instances launched in this subnet (default: false).<br/>- **enable\_resource\_name\_dns\_aaaa\_record\_on\_launch**: Enable or disable DNS AAAA records for EC2 instances launched in this subnet (default: false).<br/>- **map\_public\_ip\_on\_launch**: Specify whether to auto-assign a public IP for instances in this subnet (default: false).<br/>- **ipv6\_native**: Enable or disable native IPv6 support for the subnet (default: false).<br/>- **assign\_ipv6\_address\_on\_creation**: Whether to automatically assign an IPv6 address to instances launched in the subnet (default: false).<br/>- **ipv6\_cidr\_block**: The IPv6 CIDR block associated with the subnet (optional).<br/>- **enable\_dns64**: Enable or disable DNS64 in the subnet (default: false).<br/>- **nat\_gateway\_name**: Name of the NAT Gateway attached to the subnet (optional).<br/>- **create\_nat\_gateway**: Specify whether to create a NAT Gateway for the subnet (default: true).<br/>- **attach\_nat\_gateway**: Specify whether to attach an existing NAT Gateway to the subnet (default: false).<br/>- **attach\_internet\_gateway**: Specify whether to attach an Internet Gateway to the subnet (default: false).<br/>- **additional\_routes**: List of additional routes to be added to the subnet route table, typically to route traffic to other services like Transit Gateway. Each route includes:<br/>  - **type**: Type of resource (default: "transit-gateway").<br/>  - **id**: The ID of the route target (e.g., a Transit Gateway ID).<br/>  - **cidr\_block**: The destination CIDR block for the route.<br/>  - **destination\_ipv6\_cidr\_block**: The destination IPV6 CIDR block for the route. | <pre>map(object({<br/>    name                                           = string<br/>    cidr_block                                     = string<br/>    availability_zone                              = string<br/>    enable_resource_name_dns_a_record_on_launch    = optional(bool, false)<br/>    enable_resource_name_dns_aaaa_record_on_launch = optional(bool, false)<br/>    map_public_ip_on_launch                        = optional(bool, false)<br/>    ipv6_native                                    = optional(bool, false)<br/>    assign_ipv6_address_on_creation                = optional(bool, false)<br/>    ipv6_cidr_block                                = optional(string, null)<br/>    enable_dns64                                   = optional(bool, false)<br/>    nat_gateway_name                               = optional(string, null)<br/>    create_nat_gateway                             = optional(bool, true)<br/>    attach_nat_gateway                             = optional(bool, false)<br/>    attach_internet_gateway                        = optional(bool, false)<br/>    additional_routes = optional(list(object({<br/>      type                        = optional(string, "transit-gateway") // possible values : network-interface ,transit-gateway, vpc-endpoint, vpc-peering-connection<br/>      id                          = string<br/>      destination_cidr_block      = optional(string, null)<br/>      destination_ipv6_cidr_block = optional(string, null)<br/>      }<br/>    )), [])<br/>  }))</pre> | `null` | no |
+| <a name="input_subnet_map"></a> [subnet\_map](#input\_subnet\_map) | A map defining the configuration of subnets, their attributes, and associated resources.<br/>Each subnet configuration can include the following details:<br/><br/>- **name**: Name of the subnet.<br/>- **cidr\_block**: CIDR block for the subnet.<br/>- **availability\_zone**: The availability zone where the subnet is located.<br/>- **enable\_resource\_name\_dns\_a\_record\_on\_launch**: Enable or disable DNS A records for EC2 instances launched in this subnet (default: false).<br/>- **enable\_resource\_name\_dns\_aaaa\_record\_on\_launch**: Enable or disable DNS AAAA records for EC2 instances launched in this subnet (default: false).<br/>- **map\_public\_ip\_on\_launch**: Specify whether to auto-assign a public IP for instances in this subnet (default: false).<br/>- **ipv6\_native**: Enable or disable native IPv6 support for the subnet (default: false).<br/>- **assign\_ipv6\_address\_on\_creation**: Whether to automatically assign an IPv6 address to instances launched in the subnet (default: false).<br/>- **ipv6\_cidr\_block**: The IPv6 CIDR block associated with the subnet (optional).<br/>- **enable\_dns64**: Enable or disable DNS64 in the subnet (default: false).<br/>- **nat\_gateway\_name**: Name of the NAT Gateway attached to the subnet (optional).<br/>- **create\_nat\_gateway**: Specify whether to create a NAT Gateway for the subnet (default: true).<br/>- **attach\_nat\_gateway**: Specify whether to attach an existing NAT Gateway to the subnet (default: false).<br/>- **attach\_internet\_gateway**: Specify whether to attach an Internet Gateway to the subnet (default: false).<br/>- **additional\_routes**: List of additional routes to be added to the subnet route table, typically to route traffic to other services like Transit Gateway. Each route includes:<br/>  - **type**: Type of resource (default: "transit-gateway").<br/>  - **id**: The ID of the route target (e.g., a Transit Gateway ID).<br/>  - **cidr\_block**: The destination CIDR block for the route.<br/>  - **destination\_ipv6\_cidr\_block**: The destination IPV6 CIDR block for the route.<br/>- **tags**: Additional tags to apply to the subnet (default: {}). | <pre>map(object({<br/>    name                                           = string<br/>    cidr_block                                     = string<br/>    availability_zone                              = string<br/>    enable_resource_name_dns_a_record_on_launch    = optional(bool, false)<br/>    enable_resource_name_dns_aaaa_record_on_launch = optional(bool, false)<br/>    map_public_ip_on_launch                        = optional(bool, false)<br/>    ipv6_native                                    = optional(bool, false)<br/>    assign_ipv6_address_on_creation                = optional(bool, false)<br/>    ipv6_cidr_block                                = optional(string, null)<br/>    enable_dns64                                   = optional(bool, false)<br/>    nat_gateway_name                               = optional(string, null)<br/>    create_nat_gateway                             = optional(bool, true)<br/>    attach_nat_gateway                             = optional(bool, false)<br/>    attach_internet_gateway                        = optional(bool, false)<br/>    additional_routes = optional(list(object({<br/>      type                        = optional(string, "transit-gateway") // possible values : network-interface ,transit-gateway, vpc-endpoint, vpc-peering-connection<br/>      id                          = string<br/>      destination_cidr_block      = optional(string, null)<br/>      destination_ipv6_cidr_block = optional(string, null)<br/>      }<br/>    )), [])<br/>    tags = optional(map(string), {})<br/>  }))</pre> | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | (optional) Tags for VPC resources | `map(string)` | `{}` | no |
 | <a name="input_vpc_endpoint_data"></a> [vpc\_endpoint\_data](#input\_vpc\_endpoint\_data) | (optional) List of VPC endpoints to be created | <pre>list(object({<br/>    service             = string<br/>    route_table_filter  = optional(string, "private") // possible values 'private' and 'public'<br/>    policy_doc          = optional(string, null)<br/>    private_dns_enabled = optional(bool, false)<br/>    security_group_ids  = optional(list(string), [])<br/>  }))</pre> | `[]` | no |
 | <a name="input_vpc_flow_log_config"></a> [vpc\_flow\_log\_config](#input\_vpc\_flow\_log\_config) | If `s3_bucket_arn` is null, only CloudWatch logging is enabled by default. If `s3_bucket_arn` is provided, S3 logging is enabled. | <pre>object({<br/>    enable            = bool<br/>    retention_in_days = number<br/>    s3_bucket_arn     = string<br/>  })</pre> | <pre>{<br/>  "enable": true,<br/>  "retention_in_days": 7,<br/>  "s3_bucket_arn": null<br/>}</pre> | no |
