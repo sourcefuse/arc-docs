@@ -97,7 +97,9 @@ No resources.
 | Name | Description |
 |------|-------------|
 | <a name="output_bucket_arn"></a> [bucket\_arn](#output\_bucket\_arn) | Bucket ARN |
+| <a name="output_bucket_domain_name"></a> [bucket\_domain\_name](#output\_bucket\_domain\_name) | Bucket domain Name |
 | <a name="output_bucket_id"></a> [bucket\_id](#output\_bucket\_id) | Bucket ID or Name |
+| <a name="output_bucket_regional_domain_name"></a> [bucket\_regional\_domain\_name](#output\_bucket\_regional\_domain\_name) | Bucket regional Domain Name |
 | <a name="output_destination_buckets"></a> [destination\_buckets](#output\_destination\_buckets) | n/a |
 | <a name="output_role_arn"></a> [role\_arn](#output\_role\_arn) | Role used to S3 replication |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
