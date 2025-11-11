@@ -1,10 +1,9 @@
 ![Module Logo](./static/terraform-aws-arc-dynamodb.png)
 
-# Terraform AWS Arc DynamoDB Module
+# [terraform-aws-arc-dynamodb](https://github.com/sourcefuse/terraform-aws-arc-dynamodb)
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/sourcefuse/terraform-aws-arc-dynamodb)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/sourcefuse/terraform-aws-arc-dynamodb)
-![GitHub](https://img.shields.io/github/license/sourcefuse/terraform-aws-arc-dynamodb)
+<a href="https://github.com/sourcefuse/terraform-aws-arc-dynamodb/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-dynamodb.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-dynamodb/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-dynamodb.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-dynamodb&token=15abaa99afec2eb3d56c7793f74ab85043345289)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-dynamodb)
 
