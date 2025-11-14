@@ -27,9 +27,32 @@ To use the module in your Terraform configuration, include the following source 
 ```tcl
 module "example_doc_db_cluster" {
   source = "sourcefuse/arc-document-db/aws"
-  // we recommend to pin the version we aren't simply for an example reference against our latest changes.
-  # insert the required variables here
+
+  cluster_identifier = var.cluster_identifier
+  master_username    = var.master_username
+  master_password    = var.master_password
+
+  instance_count = var.instance_count
+  instance_class = var.instance_class
+
+  subnet_config = {
+    subnet_ids = data.aws_subnets.private.ids
+  }
+  vpc_id = data.aws_vpc.vpc.id
+
+ security_group_data           = local.security_group_data
+
+  backup_retention_period      = var.backup_retention_period
+  preferred_backup_window      = var.preferred_backup_window
+  preferred_maintenance_window = var.preferred_maintenance_window
+  skip_final_snapshot          = var.skip_final_snapshot
+
+  storage_encrypted   = var.storage_encrypted
+  deletion_protection = var.deletion_protection
+
+  tags = module.tags.tags
 }
+
 ```
 
 ### Integration with Existing Terraform Configurations
@@ -64,7 +87,7 @@ For a list of outputs, see the README [Outputs](https://github.com/sourcefuse/te
 
 ### Basic Usage
 
-For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-arc-document-db/tree/main/example) folder.
+For basic usage, see the [example](https://github.com/sourcefuse/terraform-aws-arc-document-db/tree/main/examples) folder.
 
 This example will create:
 
