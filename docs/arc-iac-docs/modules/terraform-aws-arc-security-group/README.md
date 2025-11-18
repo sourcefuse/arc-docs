@@ -110,8 +110,8 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_description"></a> [description](#input\_description) | (optional) Description of Security Group | `string` | `null` | no |
-| <a name="input_egress_rules"></a> [egress\_rules](#input\_egress\_rules) | (optional) List of egress rules for the security group. | <pre>list(object({<br>    description                   = optional(string, null)<br>    cidr_block                    = optional(string, null)<br>    destination_security_group_id = optional(string, null)<br>    from_port                     = number<br>    ip_protocol                   = string<br>    to_port                       = string<br>    prefix_list_id                = optional(string, null)<br>  }))</pre> | `[]` | no |
-| <a name="input_ingress_rules"></a> [ingress\_rules](#input\_ingress\_rules) | (optional) List of ingress rules for the security group. | <pre>list(object({<br>    description              = optional(string, null)<br>    cidr_block               = optional(string, null)<br>    source_security_group_id = optional(string, null)<br>    from_port                = number<br>    ip_protocol              = string<br>    to_port                  = string<br>    self                     = optional(bool, false)<br>  }))</pre> | `[]` | no |
+| <a name="input_egress_rules"></a> [egress\_rules](#input\_egress\_rules) | (optional) List of egress rules for the security group. | <pre>list(object({<br/>    description                   = optional(string, null)<br/>    cidr_ipv6                     = optional(string, null)<br/>    cidr_block                    = optional(string, null)<br/>    destination_security_group_id = optional(string, null)<br/>    from_port                     = optional(number, null)<br/>    ip_protocol                   = string<br/>    to_port                       = optional(number, null)<br/>    prefix_list_id                = optional(string, null)<br/>    tags                          = optional(map(string), {})<br/>  }))</pre> | `[]` | no |
+| <a name="input_ingress_rules"></a> [ingress\_rules](#input\_ingress\_rules) | (optional) List of ingress rules for the security group. | <pre>list(object({<br/>    description              = optional(string, null)<br/>    cidr_ipv6                = optional(string, null)<br/>    cidr_block               = optional(string, null)<br/>    source_security_group_id = optional(string, null)<br/>    from_port                = optional(number, null)<br/>    ip_protocol              = string<br/>    to_port                  = optional(number, null)<br/>    prefix_list_id           = optional(string, null)<br/>    self                     = optional(bool, false)<br/>    tags                     = optional(map(string), {})<br/>  }))</pre> | `[]` | no |
 | <a name="input_name"></a> [name](#input\_name) | Security Group name | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags for Security Group | `map(string)` | `{}` | no |
 | <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | VPC Id for creating security group | `string` | n/a | yes |
@@ -120,7 +120,12 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_arn"></a> [arn](#output\_arn) | Security Group ARN |
+| <a name="output_egress_rule_arns"></a> [egress\_rule\_arns](#output\_egress\_rule\_arns) | ARNs of the egress rules |
+| <a name="output_egress_rule_ids"></a> [egress\_rule\_ids](#output\_egress\_rule\_ids) | IDs of the egress rules |
 | <a name="output_id"></a> [id](#output\_id) | Security Group ID |
+| <a name="output_ingress_rule_arns"></a> [ingress\_rule\_arns](#output\_ingress\_rule\_arns) | ARNs of the ingress rules |
+| <a name="output_ingress_rule_ids"></a> [ingress\_rule\_ids](#output\_ingress\_rule\_ids) | IDs of the ingress rules |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Versioning  
