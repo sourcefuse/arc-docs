@@ -492,6 +492,118 @@ export class AddTool implements IGraphTool {
 }
 ```
 
+# Observability
+
+## With Langsmith
+
+You can enable langsmith observability by simply adding the Langsmith env variables. Refer [this](https://docs.langchain.com/langsmith/observability-quickstart) for more details.
+
+## With Langfuse
+
+You can enable Langfuse based tracing with the following steps -
+
+- install the following packages -
+
+```sh
+npm i @langfuse/core @langfuse/langchain @langfuse/otel
+```
+
+- adding the following component in your LB4 application -
+
+```ts
+import {LangfuseComponent} from 'lb4-llm-chat-component/langfuse';
+...
+
+this.component(LangfuseComponent);
+```
+
+- set up langfuseSpanProcessor -
+
+```ts
+import {LangfuseSpanProcessor} from '@langfuse/otel';
+import {OTLPTraceExporter} from '@opentelemetry/exporter-trace-otlp-http';
+import {DnsInstrumentation} from '@opentelemetry/instrumentation-dns';
+import {HttpInstrumentation} from '@opentelemetry/instrumentation-http';
+import {PgInstrumentation} from '@opentelemetry/instrumentation-pg';
+import {
+  defaultResource,
+  resourceFromAttributes,
+} from '@opentelemetry/resources';
+import {NodeSDK} from '@opentelemetry/sdk-node';
+import {BatchSpanProcessor, SpanProcessor} from '@opentelemetry/sdk-trace-base';
+import {
+  ATTR_SERVICE_NAME,
+  ATTR_SERVICE_VERSION,
+} from '@opentelemetry/semantic-conventions';
+import * as dotenv from 'dotenv';
+import * as dotenvExt from 'dotenv-extended';
+
+dotenv.config();
+dotenvExt.load({
+  schema: '.env.example',
+  errorOnMissing: true,
+  includeProcessEnv: true,
+});
+
+if (!!+(process.env.ENABLE_TRACING ?? 0)) {
+  const resource = defaultResource().merge(
+    resourceFromAttributes({
+      [ATTR_SERVICE_NAME]: process.env.SERVICE_NAME ?? 'reporting-service',
+      [ATTR_SERVICE_VERSION]: process.env.SERVICE_VERSION ?? '1.0.0',
+    }),
+  );
+
+  const spanProcessors: SpanProcessor[] = [];
+  const instrumentations = [];
+
+  // Add OTLP exporter if Jaeger endpoint is configured
+  if (process.env.OPENTELEMETRY_HOST && process.env.OPENTELEMETRY_PORT) {
+    const otlpExporter = new OTLPTraceExporter({
+      url: `http://${process.env.OPENTELEMETRY_HOST}:${process.env.OPENTELEMETRY_PORT}/v1/traces`,
+    });
+    spanProcessors.push(new BatchSpanProcessor(otlpExporter));
+    instrumentations.push(
+      new HttpInstrumentation(),
+      new DnsInstrumentation(),
+      new PgInstrumentation(),
+    );
+  }
+
+  if (process.env.LANGFUSE_BASE_URL) {
+    console.log('Langfuse tracing enabled');
+    spanProcessors.push(new LangfuseSpanProcessor());
+  }
+
+  const sdk = new NodeSDK({
+    resource: resource,
+    spanProcessors: spanProcessors,
+    instrumentations,
+  });
+
+  // Initialize the SDK
+  console.log('Starting OpenTelemetry SDK');
+  sdk.start();
+
+  // Graceful shutdown
+  process.on('SIGTERM', () => {
+    sdk
+      .shutdown()
+      .then(() => console.log('Tracing terminated'))
+      .catch(error => console.log('Error terminating tracing', error))
+      .finally(() => process.exit(0));
+  });
+}
+```
+
+- setup env -
+
+```sh
+export ENABLE_TRACING=1
+export LANGFUSE_SECRET_KEY="sk-lf-..."
+export LANGFUSE_PUBLIC_KEY="pk-lf-..."
+export LANGFUSE_BASE_URL="https://cloud.langfuse.com"
+```
+
 # Testing
 
 ## Generation Acceptance Builder
