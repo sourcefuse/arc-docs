@@ -6,8 +6,6 @@
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-vpn)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-vpn)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-transit-gateway/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-transit-gateway/actions/workflows/snyk.yaml)
-
 ## Overview
 
 SourceFuse AWS Reference Architecture (ARC) Terraform module for managing a Client VPN and Site to Site VPN.
