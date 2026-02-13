@@ -2,9 +2,32 @@
 
 An Angular module that exports a component that can enable users to search over configured models using the search microservice provided in the sourceloop microservice catalog.
 
-### Deprecation Notice
+### Angular Version Compatibility
 
-Search-client now supports angular v14, we will provide support for the older version that is based on angular v13 till 30th June 2024.
+To ensure smooth integration, install the Search Library version that corresponds to your Angular version:
+
+<table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%; text-align: left;">
+  <thead>
+    <tr>
+      <th>Angular Version</th>
+      <th>Compatible Search-Client Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Angular v19</td>
+      <td>@sourceloop/search-client v8.x</td>
+    </tr>
+    <tr>
+      <td>Angular v20</td>
+      <td>@sourceloop/search-client v9.x</td>
+    </tr>
+    <tr>
+      <td>Angular v21+</td>
+      <td>Latest version (v11.x and above)</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Angular Module
 
@@ -16,33 +39,21 @@ npm i @sourceloop/search-client
 
 ### Usage
 
-Create a new Application using Angular CLI and import the SearchLibModule and add it to the imports array of the module. Also create a new service that implements the ISearchService interface exported by the search library. This service will be used by the exported component to make API calls whenever needed. You will have to update the providers section of your module with { provide: SEARCH_SERVICE_TOKEN, useExisting: Your_Service_Name }
-Your module will then look something like this
+Create a new Application using Angular CLI and import the `SearchComponent` in your application.SearchComponent is now a standalone component, so no NgModule is required.Also create a new service that implements the ISearchService interface exported by the search library. This service will be used by the exported component to make API calls whenever needed. You will have to update the providers section of your module with { provide: SEARCH_SERVICE_TOKEN, useExisting: Your_Service_Name }
 
 ```ts
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
+import {Component} from '@angular/core';
+import {SearchComponent, SEARCH_SERVICE_TOKEN} from '@sourceloop/search-client';
+import {SearchService} from './search.service';
 
-import { AppComponent } from "./app.component";
-
-import { HttpClientModule } from "@angular/common/http";
-import { XComponent } from "./x/x.component";
-import { ReactiveFormsModule } from "@angular/forms";
-
-import { SearchLibModule, SEARCH_SERVICE_TOKEN } from "search-lib";
-import { SearchService } from "./search.service";
-@NgModule({
-  declarations: [AppComponent, XComponent],
-  imports: [
-    BrowserModule,
-    SearchLibModule, //import SearchLibModule
-    HttpClientModule,
-    ReactiveFormsModule,
-  ],
-  providers: [{ provide: SEARCH_SERVICE_TOKEN, useClass: SearchService }], //Add your service here
-  bootstrap: [AppComponent],
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [SearchComponent],
+  templateUrl: './app.component.html',
+  providers: [{provide: SEARCH_SERVICE_TOKEN, useClass: SearchService}],
 })
-export class AppModule {}
+export class AppComponent {}
 ```
 
 ### Search Service
@@ -86,7 +97,6 @@ Apart from these there are some optional properties that you can give:
 - **noResultMessage (string) :** Message to display in dropdown incase no matching result found.
 - **searchIconClass (string) :** Can be used to give custom icon for search in search bar.
 - **crossIconClass (string) :** Can be used to give custom icon for clearing text input in search bar.
-- **dropDownButtonIconClass (string) :** Can be used to give custom icon for category drop down button.
 - **recentSearchIconClass (string) :** Can be used to give custom icon for recent searches displayed in the search dropdown.
 
 Your component might look something like
@@ -97,16 +107,16 @@ export class XComponent implements OnInit {
 
   constructor(private fb: FormBuilder) {
     this.config = new Configuration<IDefaultReturnType>({
-      displayPropertyName: "name",
+      displayPropertyName: 'name',
       models: [
         {
-          name: "ToDo",
-          displayName: "List",
+          name: 'ToDo',
+          displayName: 'List',
         },
         {
-          name: "User",
-          displayName: "Users",
-          imageUrl: "https://picsum.photos/id/1/50",
+          name: 'User',
+          displayName: 'Users',
+          imageUrl: 'https://picsum.photos/id/1/50',
         },
       ],
       order: [`name ASC`, `description DESC`],
@@ -135,7 +145,7 @@ type ItemClickedEvent<T> = {
 type RecentSearchEvent = {
   event: KeyboardEvent | Event;
   keyword: string;
-  category: "All" | IModel;
+  category: 'All' | IModel;
 };
 ```
 
@@ -149,32 +159,6 @@ type RecentSearchEvent = {
 ></sourceloop-search>
 ```
 
-````
-`Configuration to show only result overlay without search input box`
-There are other parameters which you can configure to use only the search result overlay without search input box
-
-```html
-<sourceloop-search
-  [config]="config"
-  [(ngModel)]="value"
-  [showOnlySearchResultOverlay]="true"
-  [customAllLabel]="customAllLabel"
-  [customSearchEvent]="customSearchEvent"
-></sourceloop-search>
-````
-
-You can pass `showOnlySearchResultOverlay` to true to use only search result overlay. You can also pass `customAllLabel` in case you have different model name configuration for performing search in All categories
-
-**Manadatory parameter when you configure `showOnlySearchResultOverlay` to true**
-You should pass `customSearchEvent`
-
-```ts
-interface CustomSearchEvent {
-  searchValue: string;
-  modelName: string;
-}
-```
-
 ### Icons
 
 To use the default icons you will have to import the following in your styles.scss:
@@ -184,6 +168,45 @@ To use the default icons you will have to import the following in your styles.sc
 ```
 
 You can also choose to use your own icons by providing classes for icons in the configuration.
+
+### Required Global Styles
+
+The search component uses Angular CDK overlays for the dropdown, which require global styles to function properly.
+
+### Styling and Theming
+
+The search component uses CSS custom properties (CSS variables) for theming, allowing you to customize colors without modifying the library code. You can override these variables in your application's global styles or in a component-specific stylesheet.
+
+#### Available CSS Variables
+
+````scss
+sourceloop-search {
+  --search-background: #f7f7f7; /* Background of the search container */
+  --search-input-background: #f1f3f4; /* Background of the input field */
+  --search-input-text-color: #6b6b6b; /* Text color in the input field */
+  --search-border-hover: #a53159; /* Border color on hover */
+  --search-border-focus: #90003b; /* Border color when focused */
+  --search-dropdown-background: #90003b; /* Background of the category dropdown (on hover/focus) */
+  --search-dropdown-text-color: #ffffff; /* Text color in the category dropdown (on hover/focus) */
+  --search-highlight-bg: #fee8e8; /* Background color for highlighted suggestions */
+  --search-heading-color: #9c9c9c; /* Color of category headings */
+  --search-text-color: #333; /* General text color */
+  --search-icon-color: #33333380; /* Color of icons */
+}
+
+####Example: Custom Theming To customize the search component, add the following
+    to your `component.scss` ```scss 
+    
+// Customize component colors
+
+:host ::ng-deep sourceloop-search {
+  --search-border-hover: #5c26f1 !important;
+  --search-border-focus: #5c26f1 !important;
+  --search-dropdown-background: #5c26f2 !important;
+}
+````
+
+This allows you to match the search component's appearance with your application's design system.
 
 ## Web Component
 
@@ -218,44 +241,44 @@ The web component accepts all the same inputs and services as the regular Angula
     <sourceloop-search-element></sourceloop-search-element>
     <script type="text/javascript" src="search-element.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const element = document.querySelector("sourceloop-search-element");
+      document.addEventListener('DOMContentLoaded', () => {
+        const element = document.querySelector('sourceloop-search-element');
         // Code to set inputs of the component
         element.searchProvider = {
           searchApiRequestWithPromise: () =>
             Promise.resolve([
               {
-                name: "Test",
-                description: "Test",
+                name: 'Test',
+                description: 'Test',
                 rank: 0.4,
-                source: "ToDo",
+                source: 'ToDo',
               },
               {
-                name: "Akshat",
-                description: "Dubey",
+                name: 'Akshat',
+                description: 'Dubey',
                 rank: 0.4,
-                source: "User",
+                source: 'User',
               },
             ]),
           recentSearchApiRequestWithPromise: () => Promise.resolve([]),
         };
         element.config = new SearchConfiguration({
-          displayPropertyName: "name",
+          displayPropertyName: 'name',
           models: [
             {
-              name: "ToDo",
-              displayName: "List",
-              imageUrl: "https://picsum.photos/id/1000/50",
+              name: 'ToDo',
+              displayName: 'List',
+              imageUrl: 'https://picsum.photos/id/1000/50',
             },
             {
-              name: "User",
-              displayName: "Users",
-              imageUrl: "https://picsum.photos/id/1/50",
+              name: 'User',
+              displayName: 'Users',
+              imageUrl: 'https://picsum.photos/id/1/50',
             },
           ],
           order: [`name ASC`, `description DESC`],
           hideCategorizeButton: false,
-          placeholder: "Search Programs, Projects or Dashboards",
+          placeholder: 'Search Programs, Projects or Dashboards',
           categorizeResults: true,
           saveInRecents: true,
           limit: 4,
@@ -272,7 +295,7 @@ Note that the instance of `SearchService` passed to the element is following a d
 export interface ISearchServiceWithPromises<T extends IReturnType> {
   searchApiRequestWithPromise(
     requestParameters: ISearchQuery,
-    saveInRecents: boolean
+    saveInRecents: boolean,
   ): Promise<T[]>;
   recentSearchApiRequestWithPromise?(): Promise<ISearchQuery[]>;
 }
