@@ -129,7 +129,7 @@ ARC API utilizes many LoopBack extensions in the micro-services provided, which 
 
 ## Example Implementations
 
-The [sandbox](./sandbox/) folder contains example applications and docker files that can be run independently to see the services in action. You can use [Docker Compose](https://docs.docker.com/compose/) to run the sandbox applications.
+The [sandbox](https://github.com/sourcefuse/loopback4-microservice-catalog/tree/master/sandbox) folder contains example applications and docker files that can be run independently to see the services in action. You can use [Docker Compose](https://docs.docker.com/compose/) to run the sandbox applications.
 
 ## Issues
 

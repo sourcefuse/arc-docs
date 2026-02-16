@@ -14,7 +14,6 @@ All infrastructure code is scanned using [Snyk IaC](https://snyk.io/product/infr
 * [Control Tower and AFT](reference_architectures/control_tower_aft_setup.md)
 * [Control Tower and LZA](reference_architectures/control_tower_lza_setup.md)
 * [ARC IaC and LZA](reference_architectures/arc_iac_lza.md)
-* [MAP Migrations](reference_architectures/map_migrations.md)
 * [Network Baseline](reference_architectures/network_baseline.md)
 * [ECS Platform Baseline](reference_architectures/ecs_platform_baseline.md)
 * [EKS Platform Baseline](reference_architectures/eks_platform_baseline.md)
