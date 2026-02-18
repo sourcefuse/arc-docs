@@ -7,7 +7,7 @@
 ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-argocd&token=8c09eb33c3523d0e29229b87e4e0f02e7b8245ea)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-argocd)
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-argocd&token=eaba4016b566fbd661d5446df35b82444d5309bb)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-argocd)
 
 ## Overview
 
