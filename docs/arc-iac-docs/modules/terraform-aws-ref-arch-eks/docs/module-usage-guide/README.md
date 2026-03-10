@@ -17,7 +17,8 @@ The [Terraform AWS ARC EKS](https://github.com/sourcefuse/terraform-aws-arc-eks)
 Before using this module, ensure you have the following:
 
 - AWS credentials configured.
-- Terraform installed.
+- Terraform installed (>= 1.6.0).
+- AWS Terraform provider (>= 6.0.0) required for EKS capabilities support.
 - A working knowledge of AWS VPC, EKS, Kubernetes, Helm, Karpenter and Terraform concepts.
 
 ## Getting Started
@@ -245,12 +246,91 @@ resource "kubectl_manifest" "karpenter_nodeclass" {
 
 ---
 
+#### 5. **EKS Capabilities (ArgoCD, ACK, KRO)**
+
+For EKS Cluster with the latest EKS capabilities, see the [examples/eks-capabilities](https://github.com/sourcefuse/terraform-aws-arc-eks/tree/main/examples/eks-capabilities) folder.
+
+This module supports the latest **EKS Capabilities** feature, which enables powerful add-ons and integrations directly on your EKS cluster:
+
+**Key Capabilities:**
+- **ArgoCD**: GitOps continuous delivery tool for automated deployment and management
+- **ACK (AWS Controllers for Kubernetes)**: Manage AWS services (EC2, S3, RDS, etc.) directly from Kubernetes
+- **KRO (Kubernetes Resource Operator)**: Simplified resource management and operations
+
+**Example Use Case:**
+You want to enable GitOps deployment with ArgoCD, manage AWS infrastructure resources from Kubernetes using ACK controllers, and leverage KRO for simplified resource operations.
+
+**How to Use:**
+```hcl
+eks_capabilities_config = {
+  enable = true
+  capabilities = [
+    # ArgoCD Capability
+    {
+      name            = "argocd"
+      capability_name = "ArgoCD"
+      type            = "ARGOCD"
+      role_arn        = aws_iam_role.argocd_role.arn
+      argocd_config = {
+        namespace = "argocd"
+        # Requirerd: Configure AWS IAM Identity Center
+        aws_idc = {
+          idc_instance_arn = "arn:aws:sso:::instance/ssoins-xxxxxxxxx"
+          idc_region       = "us-east-1"
+        }
+        # Optional: Configure network access with VPC endpoints
+        # network_access = {
+        #   vpce_ids = ["vpce-xxxxxxxx", "vpce-yyyyyyyy"]
+        # }
+        # Optional: Configure RBAC role mappings
+        # rbac_role_mapping = [
+        #   {
+        #     role     = "ADMIN"
+        #     identity = [
+        #       {
+        #         id   = "123456789012"
+        #         type = "SSO_USER"
+        #       }
+        #     ]
+        #   }
+        # ]
+      }
+    },
+    # ACK EC2 Capability
+    {
+      name            = "ack-ec2"
+      capability_name = "ACK-EC2"
+      type            = "ACK"
+      role_arn        = aws_iam_role.ack_ec2_role.arn
+    },
+    # KRO Capability
+    {
+      name            = "kro"
+      capability_name = "KRO"
+      type            = "KRO"
+      role_arn        = aws_iam_role.kro_role.arn
+    }
+  ]
+}
+```
+
+**Benefits:**
+- **Simplified Operations**: AWS manages the installation, upgrades, and patching of these capabilities
+- **Deep Integration**: Seamlessly integrates with EKS control plane and IAM
+- **Production Ready**: Pre-configured with secure defaults and best practices
+- **GitOps Workflow**: ArgoCD enables declarative, version-controlled deployments
+- **AWS Service Management**: ACK allows you to manage AWS resources using Kubernetes manifests
+- **Resource Optimization**: KRO provides simplified resource management and operations
+
+---
+
 ### Tips and Recommendations
 
 - Use `node_group_config` for granular node group management
 - Use `karpenter_config` for dynamic compute provisioning
 - Leverage `fargate_profile_config` for low-priority or bursty workloads
 - Consider EKS Auto Mode for minimal operational overhead
+- Use `eks_capabilities_config` to enable ArgoCD, ACK, and KRO for enhanced cluster functionality
 - Use custom `access_config` to centralize EKS access management
 
 
