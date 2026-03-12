@@ -19,8 +19,17 @@ Create the following resources in a single region.
 
 * VPC
 * Multi-AZ private and public subnets
-* Route tables, internet gateway, and NAT gateways
+* Route tables, internet gateway, and NAT gateways (zonal or regional)
 * Configurable VPC Endpoints
+
+### Key Features
+
+#### Regional NAT Gateway Support (Preview)
+This module now supports AWS Regional NAT Gateway configuration, which provides:
+- **Cost savings**: Reduction in NAT Gateway costs (single resource vs one per AZ)
+- **Built-in multi-AZ redundancy**: Automatic failover across availability zones
+- **Simplified management**: One NAT Gateway resource instead of multiple
+- **Auto and manual modes**: Choose between AWS-managed or custom EIP allocation
 
 ### Prerequisites
 Before using this module, ensure you have the following:
@@ -151,6 +160,68 @@ locals {
 
 ```
 
+## NAT Gateway
+
+This module supports both traditional zonal NAT Gateways and the new Regional NAT Gateway.
+
+### Zonal NAT Gateway (Default)
+
+Traditional approach with one NAT Gateway per availability zone:
+
+```hcl
+module "network" {
+  source = "sourcefuse/arc-network/aws"
+
+  # ... other configuration
+
+  nat_gateway_config = {
+    mode = "zonal"  # This is the default
+  }
+}
+```
+
+### Regional NAT Gateway
+
+Single multi-AZ NAT Gateway with automatic redundancy:
+
+**Auto Mode (Recommended)**:
+```hcl
+module "network" {
+  source = "sourcefuse/arc-network/aws"
+
+  # ... other configuration
+
+  nat_gateway_config = {
+    mode               = "regional"
+    regional_auto_mode = true  # AWS manages AZs and EIPs
+  }
+}
+```
+
+**Manual Mode (Custom EIP Control)**:
+```hcl
+resource "aws_eip" "nat" {
+  count  = 3
+  domain = "vpc"
+}
+
+module "network" {
+  source = "sourcefuse/arc-network/aws"
+
+  # ... other configuration
+
+  nat_gateway_config = {
+    mode               = "regional"
+    regional_auto_mode = false
+    regional_az_eip_config = {
+      "us-east-1a" = [aws_eip.nat[0].allocation_id]
+      "us-east-1b" = [aws_eip.nat[1].allocation_id]
+      "us-east-1c" = [aws_eip.nat[2].allocation_id]
+    }
+  }
+}
+```
+
 ## EKS Compatibility
 
 This module supports AWS EKS (Elastic Kubernetes Service) by enabling per-subnet custom tagging. EKS requires specific tags on subnets for proper ALB/NLB provisioning and cluster auto-discovery.
@@ -209,13 +280,13 @@ subnet_map = {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.100.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.35.1 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_kms"></a> [kms](#module\_kms) | sourcefuse/arc-kms/aws | 1.0.9 |
+| <a name="module_kms"></a> [kms](#module\_kms) | sourcefuse/arc-kms/aws | 1.0.11 |
 
 ## Resources
 
@@ -228,10 +299,12 @@ subnet_map = {
 | [aws_iam_role.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
 | [aws_iam_role_policy_attachment.attach_flow_logs_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
 | [aws_internet_gateway.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/internet_gateway) | resource |
+| [aws_nat_gateway.regional](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/nat_gateway) | resource |
 | [aws_nat_gateway.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/nat_gateway) | resource |
 | [aws_route.additional](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route) | resource |
 | [aws_route.internet_gw](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route) | resource |
 | [aws_route.nat](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route) | resource |
+| [aws_route.nat_regional](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route) | resource |
 | [aws_route_table.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table) | resource |
 | [aws_route_table_association.additional](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table_association) | resource |
 | [aws_route_table_association.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table_association) | resource |
@@ -274,6 +347,7 @@ subnet_map = {
 | <a name="input_kms_config"></a> [kms\_config](#input\_kms\_config) | n/a | <pre>object({<br/>    deletion_window_in_days = number<br/>    enable_key_rotation     = bool<br/>  })</pre> | <pre>{<br/>  "deletion_window_in_days": 30,<br/>  "enable_key_rotation": true<br/>}</pre> | no |
 | <a name="input_name"></a> [name](#input\_name) | VPC name | `string` | n/a | yes |
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | Namespace name | `string` | n/a | yes |
+| <a name="input_nat_gateway_config"></a> [nat\_gateway\_config](#input\_nat\_gateway\_config) | NAT Gateway configuration. Supports both zonal (traditional) and regional (multi-AZ) NAT Gateways.<br/><br/>- **mode**: 'zonal' (default) creates one NAT Gateway per AZ, 'regional' creates a single multi-AZ NAT Gateway<br/>- **regional\_auto\_mode**: When mode is 'regional', set to true for auto mode (AWS manages AZs/EIPs) or false for manual mode<br/>- **regional\_az\_eip\_config**: Required when mode is 'regional' and regional\_auto\_mode is false. Map of AZ to list of EIP allocation IDs | <pre>object({<br/>    mode                   = optional(string, "zonal") # "zonal" or "regional"<br/>    regional_auto_mode     = optional(bool, true)<br/>    regional_az_eip_config = optional(map(list(string)), {}) # { "us-east-1a" = ["eipalloc-xxx"], "us-east-1b" = ["eipalloc-yyy"] }<br/>  })</pre> | <pre>{<br/>  "mode": "zonal",<br/>  "regional_auto_mode": true,<br/>  "regional_az_eip_config": {}<br/>}</pre> | no |
 | <a name="input_subnet_map"></a> [subnet\_map](#input\_subnet\_map) | A map defining the configuration of subnets, their attributes, and associated resources.<br/>Each subnet configuration can include the following details:<br/><br/>- **name**: Name of the subnet.<br/>- **cidr\_block**: CIDR block for the subnet.<br/>- **availability\_zone**: The availability zone where the subnet is located.<br/>- **enable\_resource\_name\_dns\_a\_record\_on\_launch**: Enable or disable DNS A records for EC2 instances launched in this subnet (default: false).<br/>- **enable\_resource\_name\_dns\_aaaa\_record\_on\_launch**: Enable or disable DNS AAAA records for EC2 instances launched in this subnet (default: false).<br/>- **map\_public\_ip\_on\_launch**: Specify whether to auto-assign a public IP for instances in this subnet (default: false).<br/>- **ipv6\_native**: Enable or disable native IPv6 support for the subnet (default: false).<br/>- **assign\_ipv6\_address\_on\_creation**: Whether to automatically assign an IPv6 address to instances launched in the subnet (default: false).<br/>- **ipv6\_cidr\_block**: The IPv6 CIDR block associated with the subnet (optional).<br/>- **enable\_dns64**: Enable or disable DNS64 in the subnet (default: false).<br/>- **nat\_gateway\_name**: Name of the NAT Gateway attached to the subnet (optional).<br/>- **create\_nat\_gateway**: Specify whether to create a NAT Gateway for the subnet (default: true).<br/>- **attach\_nat\_gateway**: Specify whether to attach an existing NAT Gateway to the subnet (default: false).<br/>- **attach\_internet\_gateway**: Specify whether to attach an Internet Gateway to the subnet (default: false).<br/>- **additional\_routes**: List of additional routes to be added to the subnet route table, typically to route traffic to other services like Transit Gateway. Each route includes:<br/>  - **type**: Type of resource (default: "transit-gateway").<br/>  - **id**: The ID of the route target (e.g., a Transit Gateway ID).<br/>  - **cidr\_block**: The destination CIDR block for the route.<br/>  - **destination\_ipv6\_cidr\_block**: The destination IPV6 CIDR block for the route.<br/>- **tags**: Additional tags to apply to the subnet (default: {}). | <pre>map(object({<br/>    name                                           = string<br/>    cidr_block                                     = string<br/>    availability_zone                              = string<br/>    enable_resource_name_dns_a_record_on_launch    = optional(bool, false)<br/>    enable_resource_name_dns_aaaa_record_on_launch = optional(bool, false)<br/>    map_public_ip_on_launch                        = optional(bool, false)<br/>    ipv6_native                                    = optional(bool, false)<br/>    assign_ipv6_address_on_creation                = optional(bool, false)<br/>    ipv6_cidr_block                                = optional(string, null)<br/>    enable_dns64                                   = optional(bool, false)<br/>    nat_gateway_name                               = optional(string, null)<br/>    create_nat_gateway                             = optional(bool, true)<br/>    attach_nat_gateway                             = optional(bool, false)<br/>    attach_internet_gateway                        = optional(bool, false)<br/>    additional_routes = optional(list(object({<br/>      type                        = optional(string, "transit-gateway") // possible values : network-interface ,transit-gateway, vpc-endpoint, vpc-peering-connection<br/>      id                          = string<br/>      destination_cidr_block      = optional(string, null)<br/>      destination_ipv6_cidr_block = optional(string, null)<br/>      }<br/>    )), [])<br/>    tags = optional(map(string), {})<br/>  }))</pre> | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | (optional) Tags for VPC resources | `map(string)` | `{}` | no |
 | <a name="input_vpc_endpoint_data"></a> [vpc\_endpoint\_data](#input\_vpc\_endpoint\_data) | (optional) List of VPC endpoints to be created | <pre>list(object({<br/>    service             = string<br/>    route_table_filter  = optional(string, "private") // possible values 'private' and 'public'<br/>    policy_doc          = optional(string, null)<br/>    private_dns_enabled = optional(bool, false)<br/>    security_group_ids  = optional(list(string), [])<br/>  }))</pre> | `[]` | no |
@@ -289,8 +363,11 @@ subnet_map = {
 | <a name="output_id"></a> [id](#output\_id) | The VPC ID |
 | <a name="output_igw_id"></a> [igw\_id](#output\_igw\_id) | Internet gateway ID for the VPC |
 | <a name="output_main_route_table_id"></a> [main\_route\_table\_id](#output\_main\_route\_table\_id) | The Main Route Table ID for the VPC |
+| <a name="output_nat_gateway_ids"></a> [nat\_gateway\_ids](#output\_nat\_gateway\_ids) | NAT Gateway IDs (zonal mode) |
 | <a name="output_private_subnet_ids"></a> [private\_subnet\_ids](#output\_private\_subnet\_ids) | Private subnet IDs |
 | <a name="output_public_subnet_ids"></a> [public\_subnet\_ids](#output\_public\_subnet\_ids) | Public subnet IDs |
+| <a name="output_regional_nat_gateway_addresses"></a> [regional\_nat\_gateway\_addresses](#output\_regional\_nat\_gateway\_addresses) | Regional NAT Gateway addresses per AZ |
+| <a name="output_regional_nat_gateway_id"></a> [regional\_nat\_gateway\_id](#output\_regional\_nat\_gateway\_id) | Regional NAT Gateway ID (regional mode) |
 | <a name="output_vpc_cidr"></a> [vpc\_cidr](#output\_vpc\_cidr) | The VPC CIDR block |
 | <a name="output_vpc_default_network_acl_id"></a> [vpc\_default\_network\_acl\_id](#output\_vpc\_default\_network\_acl\_id) | The ID of the network ACL created by default on VPC creation |
 | <a name="output_vpc_endpoint_arn"></a> [vpc\_endpoint\_arn](#output\_vpc\_endpoint\_arn) | The ARN of the VPC Endpoint Connection. |
