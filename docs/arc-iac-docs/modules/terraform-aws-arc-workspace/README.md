@@ -1,20 +1,39 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-workspace](https://github.com/sourcefuse/terraform-aws-arc-workspace)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-workspace/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-workspace.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-workspace/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-workspace.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-workspace/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-workspace/aws](https://registry.terraform.io/modules/sourcefuse/arc-workspace/aws)
+
+> **Category:** End User Computing
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-workspace](https://github.com/sourcefuse/terraform-aws-arc-workspace)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-workspace.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-workspace/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-workspace.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-workspace/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-workspace)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-workspace)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-workspace/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-workspace/actions/workflows/snyk.yaml)
-
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Workspaces.
+Creates Amazon WorkSpaces with Microsoft AD or AD Connector directory integration, workspace bundles, and IP access control groups.
 
-## Usage
+## What It Does
 
-To see a Microsoft AD example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-workspace/blob/main/examples/Microsoft-AD/main.tf) file in the example folder.  
+- WorkSpaces with Microsoft AD or AD Connector
+- Configurable workspace bundle (OS, compute, storage)
+- Self-service permissions for users
+- IP access control groups
+- Workspace access properties (web, client)
+- Volume encryption with KMS
+- Multiple user workspace provisioning
+
+For more information about this repository and its usage, please see [Terraform AWS WORKSPACE Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-workspace/blob/main/docs/module-usage-guide/README.md).
+
+## Quickstart
 
 ```hcl
 module "microsoft-ad-workspace" {
@@ -38,8 +57,6 @@ module "microsoft-ad-workspace" {
   tags                               = module.tags.tags
 }
 ```
-
-To see a AD Connector example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-workspace/blob/main/examples/AD-Connector/main.tf) file in the example folder.
 
 ```hcl
 module "ad-connector-workspace" {
@@ -96,6 +113,24 @@ As we specified three custom user_names that means three workspaces for each use
 7. Last thing but not the least and this is very important that if you are trying to deploy in us-east-1 then below AZs are supported. When you are creating a virtual private cloud (VPC) for use with Amazon WorkSpaces, your VPC's subnets must reside in different Availability Zones in the Region where you're launching WorkSpaces. Availability Zones are distinct locations that are engineered to be isolated from failures in other Availability Zones. By launching instances in separate Availability Zones, you can protect your applications from the failure of a single location. Each subnet must reside entirely within one Availability Zone and cannot span zones. Here is the picture of supported Availability Zones For Workspaces.
 
 ![availability zones](./static/az.png)
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `vpc_id` | `string` | VPC ID |
+| `subnet_ids` | `list(string)` | Subnet IDs for the directory |
+| `directory_type` | `string` | MicrosoftAD or ADConnector |
+| `directory_name` | `string` | Fully qualified domain name |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `workspace_ids` | Map of username to workspace ID |
+| `directory_id` | WorkSpaces directory ID |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -225,6 +260,10 @@ By specifying this , it will bump the version and if you don't specify this in y
   cd test
   go test
   ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
