@@ -1,46 +1,42 @@
-![Module Structure](./static/banner.png)
-# AWS SNS Terraform Module
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-sns](https://github.com/sourcefuse/terraform-aws-arc-sns)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-sns/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-sns.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-sns/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-sns.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-sns/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-sns/aws](https://registry.terraform.io/modules/sourcefuse/arc-sns/aws)
+
+> **Category:** Messaging / Notifications
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-sns](https://github.com/sourcefuse/terraform-aws-arc-sns)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-sns.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-sns/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-sns.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-sns/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-sns&token=0becb68af7fd9c5aa57e380d1b53c84558fa4037)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-sns)
 
-
 ## Overview
 
-The ARC Terraform module provides an easy and consistent way to create and manage Amazon SNS topics on AWS. This module supports defining topics, subscriptions, and policies, making it simple to connect services like S3, Lambda, and SQS. By using this module, you can quickly set up reliable messaging and notification workflows while following AWS best practices.
+Creates SNS topics with subscriptions, KMS encryption, access policies, and FIFO support.
 
-### Prerequisites
-Before using this module, ensure you have the following:
+## Architecture
 
-- AWS credentials configured.
-- Terraform installed.
-- A working knowledge of Terraform.
+![Architecture Diagram](./static/arch.png)
 
-## Getting Started
+## What It Does
 
-1. **Define the Module**
+- Standard and FIFO SNS topics
+- Email, SQS, Lambda, HTTP/S, and SMS subscriptions
+- KMS encryption for message data
+- Topic access policy management
+- Message filtering policies
+- Dead letter queue for failed deliveries
 
-Initially, it's essential to define a Terraform module, which is organized as a distinct directory encompassing Terraform configuration files. Within this module directory, input variables and output values must be defined in the variables.tf and outputs.tf files, respectively. The following illustrates an example directory structure:
+For more information about this repository and its usage, please see [Terraform AWS SNS Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-sns/blob/main/docs/module-usage-guide/README.md).
 
-
-
-```plaintext
-sns/
-|-- main.tf
-|-- variables.tf
-|-- outputs.tf
-```
-
-
-2. **Define Input Variables**
-
-Inside the `variables.tf` or in `*.tfvars` file, you should define values for the variables that the module requires.
-
-3. **Use the Module in Your Main Configuration**
-In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
+## Quickstart
 
 ```hcl
 module "sns" {
@@ -54,69 +50,20 @@ module "sns" {
 }
 ```
 
-4. **Output Values**
+## Required Inputs
 
-Inside the `outputs.tf` file of the module, you can define output values that can be referenced in the main configuration. For example:
+| Name | Type | Description |
+|------|------|-------------|
+| `name` | `string` | SNS topic name |
+## Key Outputs
 
-```hcl
-output "topic_arn" {
-  description = "ARN of the created SNS topic"
-  value       = module.basic_sns_topic.topic_arn
-}
+| Name | Description |
+|------|-------------|
+| `topic_arn` | SNS topic ARN |
+| `topic_name` | SNS topic name |
+## Full Variable & Output Reference
 
-output "topic_name" {
-  description = "Name of the created SNS topic"
-  value       = module.basic_sns_topic.topic_name
-}
-
-```
-
-5. **.tfvars**
-
-Inside the `.tfvars` file of the module, you can provide desired values that can be referenced in the main configuration.
-
-
-## First Time Usage
-***uncomment the backend block in [main.tf](./examples/endpoint//main.tf)***
-```shell
-terraform init -backend-config=config.dev.hcl
-```
-***If testing locally, `terraform init` should be fine***
-
-Create a `dev` workspace
-```shell
-terraform workspace new dev
-```
-
-Plan Terraform
-```shell
-terraform plan -var-file dev.tfvars
-```
-
-Apply Terraform
-```shell
-terraform apply -var-file dev.tfvars
-```
-
-## Production Setup
-```shell
-terraform init -backend-config=config.prod.hcl
-```
-
-Create a `prod` workspace
-```shell
-terraform workspace new prod
-```
-
-Plan Terraform
-```shell
-terraform plan -var-file prod.tfvars
-```
-
-Apply Terraform
-```shell
-terraform apply -var-file prod.tfvars  
-```
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -230,6 +177,9 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
