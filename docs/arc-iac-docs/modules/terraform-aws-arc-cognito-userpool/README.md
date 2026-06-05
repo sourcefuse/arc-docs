@@ -1,13 +1,25 @@
-![Module Structure](./static/cognito-banner.png)
-## [terraform-aws-arc-cognito-userpool](https://github.com/sourcefuse/terraform-aws-arc-cognito-userpool)
+![Module Banner](./static/cognito-banner.png)
+
+# [terraform-aws-arc-cognito-userpool](https://github.com/sourcefuse/terraform-aws-arc-cognito-userpool)
+
+> **Module:** `sourcefuse/arc-cognito-userpool/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-cognito-userpool/aws](https://registry.terraform.io/modules/sourcefuse/arc-cognito-userpool/aws)
+
+> **Category:** Security / Identity
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-cognito-userpool](https://github.com/sourcefuse/terraform-aws-arc-cognito-userpool)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-cognito-userpool.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-cognito-userpool/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-cognito-userpool.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-cognito-userpool/commits)
 ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-cognito-userpool&token=e28bfe630069bd645a51dee7e25cf3c7e522e9fd)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-cognito-userpool)
-
-
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-cognito-userpool&token=e28bfe630069bd645a51dee7e25cf3c7e522e9fd)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-cognito-userpool)
 
 ## Overview
+
 SourceFuse AWS Reference Architecture (ARC) Terraform module for managing the cognito userpool module.
 ## Features
 - **Complete Cognito User Pool Management**: Create and configure user pools with all available settings.
@@ -22,6 +34,22 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for managing the co
 
  ## Usage
  To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-cognito-userpool/blob/main/examples/basic-user-pool/main.tf) file in the example folder.
+
+## What It Does
+
+- Complete Cognito User Pool with all settings
+- Multiple app clients with OAuth 2.0 flows
+- SAML, OIDC, and social identity provider integration
+- MFA and advanced security mode
+- Lambda triggers for all Cognito events
+- Custom domain with ACM certificate
+- User pool groups for RBAC
+- Resource servers for OAuth 2.0 scopes
+
+For more information about this repository and its usage, please see [Terraform AWS ARC COGNITO USERPOOL Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-cognito-userpool/blob/main/docs/module-usage-guide/README.md).
+
+
+## Quickstart
 
 ```hcl
 module "arc-cognito-userpool" {
@@ -38,6 +66,27 @@ module "arc-cognito-userpool" {
   # Add further required variables
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `environment` | `string` | Deployment environment |
+| `project` | `string` | Project name |
+| `name` | `string` | Component name |
+| `region` | `string` | AWS region |
+| `cognito_user_pool_name` | `string` | Name of the Cognito User Pool |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `user_pool_id` | Cognito User Pool ID |
+| `user_pool_arn` | Cognito User Pool ARN |
+| `client_ids` | Map of app client IDs |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -191,6 +240,11 @@ For Example
 git commit -m "your commit message #major"
 ```
 By specifying this , it will bump the version and if you don't specify this in your commit message then by default it will consider patch and will bump that accordingly
+
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
