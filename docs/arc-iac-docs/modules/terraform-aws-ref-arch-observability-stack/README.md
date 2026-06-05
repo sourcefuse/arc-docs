@@ -1,15 +1,39 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-observability-stack](https://github.com/sourcefuse/terraform-aws-arc-observability-stack)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-observability-stack/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-observability-stack.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-observability-stack/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-observability-stack.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-observability-stack/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-observability-stack/aws](https://registry.terraform.io/modules/sourcefuse/arc-observability-stack/aws)
+
+> **Category:** Observability / Monitoring
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-observability-stack](https://github.com/sourcefuse/terraform-aws-arc-observability-stack)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-observability-stack.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-observability-stack/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-observability-stack.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-observability-stack/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-observability-stack&token=bf80d04b87395dadd9473538860728fd9d32cfc6)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-observability-stack)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-observability-stack/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-observability-stack/actions/workflows/snyk.yaml)
-## Introduction
 
-The Observability Terraform Module is a comprehensive solution designed to simplify the deployment of a full-stack observability ecosystem in Kubernetes environments. This module enables organizations to monitor and troubleshoot their infrastructure and applications effectively, offering the flexibility to choose between various open-source tools.
+## Overview
+
+Deploys a full observability stack on Kubernetes — Prometheus, Grafana, Elasticsearch/OpenSearch, Fluentd/Fluent Bit — via Helm charts.
+
+## Architecture
+
+![Architecture Diagram](./static/arch.png)
+
+## What It Does
+
+- Prometheus and Grafana for metrics and dashboards
+- Elasticsearch or OpenSearch for log storage
+- Fluentd or Fluent Bit for log aggregation
+- Configurable Helm chart versions and values
+- Kubernetes namespace management
+- TLS certificate support for secure endpoints
 
 ### Key Features:
 1. EFK Stack for Log Management:
@@ -40,27 +64,9 @@ The Observability Terraform Module is a comprehensive solution designed to simpl
 
 For more information about this repository and its usage, please see [Terraform AWS ARC Observability Module Usage Guide](docs/module-usage-guide/README.md).
 
+## Quickstart
 
-Create the following resources in a single region.
-
-* VPC
-* Multi-AZ private and public subnets
-* Route tables, internet gateway, and NAT gateways
-* Configurable VPC Endpoints
-
-### Prerequisites
-Before using this module, ensure you have the following:
-
-- AWS credentials configured.
-- Terraform installed.
-- A working knowledge of Terraform.
-
-## Usage
-See the `examples` folder for a complete example.
-
-### EFK Stack
 ```hcl
-
 module "efk" {
   source                      = "sourcefuse/arc-observability-stack/aws"
   version                     = "0.0.1"
@@ -126,8 +132,6 @@ module "efk" {
     log_level           = "info"
   }
 }
-
-
 ```
 ### Prometheus
 
@@ -192,8 +196,24 @@ module "prometheus" {
 
   }
 }
-
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace prefix |
+| `environment` | `string` | Deployment environment |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `grafana_endpoint` | Grafana dashboard endpoint |
+| `prometheus_endpoint` | Prometheus endpoint |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
@@ -290,7 +310,47 @@ By specifying this , it will bump the version and if you dont specify this in yo
   ```sh
   go test -timeout 1800s
   ```
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 This project is authored by:
 - SourceFuse
+
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
+## Authors
+
+Built and maintained by the [SourceFuse ARC Team](https://github.com/sourcefuse).
+
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
+## Authors
+
+Built and maintained by the [SourceFuse ARC Team](https://github.com/sourcefuse).
+
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
+## Authors
+
+Built and maintained by the [SourceFuse ARC Team](https://github.com/sourcefuse).
+
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
+## Authors
+
+This project is authored by:  
+* SourceFuse ARC Team
