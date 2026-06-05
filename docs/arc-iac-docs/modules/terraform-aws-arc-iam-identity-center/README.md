@@ -1,36 +1,37 @@
-![Module Structure](./static/terraform-aws-arc-iam-identity-center.png)
+![Module Banner](./static/terraform-aws-arc-iam-identity-center.png)
 
 # [terraform-aws-arc-iam-identity-center](https://github.com/sourcefuse/terraform-aws-arc-iam-identity-center)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-iam-identity-center/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-iam-identity-center.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-iam-identity-center/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-iam-identity-center.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-iam-identity-center/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-iam-identity-center/aws](https://registry.terraform.io/modules/sourcefuse/arc-iam-identity-center/aws)
+
+> **Category:** Security / Identity
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-iam-identity-center](https://github.com/sourcefuse/terraform-aws-arc-iam-identity-center)
+
+[![Latest Release](https://img.shields.io/github/v/release/sourcefuse/terraform-aws-arc-iam-identity-center?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-iam-identity-center/releases)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-iam-identity-center.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-iam-identity-center/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-iam-identity-center&token=5aae43e6dd218faa463530dfa9955cb164c086c4)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-iam-identity-center)
 
-## Introduction
+## Overview
 
-SourceFuse's AWS Reference Architecture (ARC) Terraform module facilitates the management of a comprehensive, reusable Terraform module for provisioning and managing AWS IAM Identity Center (AWS SSO) resources following AWS and Terraform best practices.
+Manages AWS IAM Identity Center (SSO) — permission sets, account assignments, and user/group provisioning — for centralized multi-account access.
 
+## What It Does
 
-## Features
+- Permission sets with AWS managed and inline policies
+- Account assignments for users and groups
+- Auto-discovery of Identity Center instance
+- Session duration configuration
+- Support for multiple accounts and organizational units
 
-- **Identity Center Management**: Create or reference existing Identity Center instances
-- **Permission Sets**: Support for AWS managed, customer managed, and inline policies
-- **Account Assignments**: Flexible user/group to account/OU assignments
-- **Identity Store**: Optional user and group management
-- **Conditional Resources**: Smart resource creation based on input variables
-- **AWS Best Practices**: Follows naming conventions, tagging, and least-privilege principles
+For more information about this repository and its usage, please see [Terraform AWS IAM IDENTITY CENTER Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-iam-identity-center/blob/main/docs/module-usage-guide/README.md).
 
-
-## Requirements
-
-| Name | Version |
-|------|---------|
-| terraform | >= 1.3 |
-| aws | >= 5.0 |
-
-## Usage
-
-###  Quick Start - Basic Setup
+## Quickstart
 
 ```hcl
 provider "aws" {
@@ -104,10 +105,7 @@ module "aws_sso" {
   }
 }
 ```
-
 ###  Complete User, Group Management Setup (Recommended)
-
-For the most intuitive experience, use our complete-user-group-management structure where everything about each user is defined in one place:
 
 ```hcl
 provider "aws" {
@@ -315,30 +313,24 @@ module "aws_sso" {
 }
 ```
 
-## Examples
+## Required Inputs
 
-The `examples/` directory contains several complete use cases:
+| Name | Type | Description |
+|------|------|-------------|
+| `permission_sets` | `map(object)` | Permission set definitions |
+| `account_assignments` | `list(object)` | Account-to-principal-to-permission-set mappings |
+## Key Outputs
 
-- **[basic-sso](examples/basic-sso/)** - Simple SSO configuration for single account
-- **[complete-user-group-management](examples/complete-user-group-management/)** - **RECOMMENDED** - Easy-to-understand structure with comprehensive outputs
-- **[user-management](examples/user-management/)** - User creation, group assignments, and direct user assignments
-- **[custom-permission-sets](examples/custom-permission-sets/)** - Advanced permission sets with all policy types and boundaries
-- **[advanced-permission-sets](examples/advanced-permission-sets/)** - Customer managed and inline policies
-- **[full-featured](examples/full-featured/)** - Complete example combining user management and custom permission sets
+| Name | Description |
+|------|-------------|
+| `permission_set_arns` | Map of permission set name to ARN |
+## Full Variable & Output Reference
 
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run validation: `make validate`
-5. Submit a pull request
+The complete inputs/outputs reference is auto-generated below.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
@@ -433,6 +425,10 @@ For Example
 git commit -m "your commit message #major"
 ```
 By specifying this , it will bump the version and if you dont specify this in your commit message then by default it will consider patch and will bump that accordingly
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 This project is authored by:
