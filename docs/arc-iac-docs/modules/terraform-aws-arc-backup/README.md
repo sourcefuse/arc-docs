@@ -1,15 +1,40 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-backup](https://github.com/sourcefuse/terraform-aws-arc-backup)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-backup/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-backup.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-backup/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-backup.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-backup/aws`
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-backup&token=114a52a83d2ede2ba64f617fd805aa7e68c0eaf1)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-backup)
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-backup/aws](https://registry.terraform.io/modules/sourcefuse/arc-backup/aws)
+
+> **Category:** Storage / Data Protection
 
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-backup/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-backup/actions/workflows/snyk.yaml)
 
-## Introduction
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-backup](https://github.com/sourcefuse/terraform-aws-arc-backup)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-backup.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-backup/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-backup.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-backup/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-backup&token=114a52a83d2ede2ba64f617fd805aa7e68c0eaf1)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-backup)
+
+## Overview
+
+Centralizes AWS Backup configuration — vaults, plans, schedules, and resource selections — with optional vault lock and KMS encryption.
+
+## What It Does
+
+- Backup vault with optional KMS encryption
+- Backup plans with cron schedules and lifecycle policies
+- Resource selection by ARN or tag-based filters
+- Vault lock in governance or compliance mode
+- Cross-region copy actions
+- IAM role for backup and restore
+
+For more information about this repository and its usage, please see [Terraform AWS Backup Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-backup/blob/main/docs/module-usage-guide/README.md).
+
+## Quickstart
 
 SourceFuse's AWS Reference Architecture (ARC) Terraform module centralizes and automates the backup of data across AWS services such as Amazon RDS, EBS, DynamoDB, EFS, and more. It allows you to schedule automated backups, and manage and monitor backup activity from a single console, ensuring compliance and data protection. AWS Backup also supports cross-region and cross-account backup capabilities for enhanced data durability and disaster recovery.
 
@@ -59,6 +84,22 @@ module "example" {
 }
 ```
 
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `tags` | `map(string)` | Tags applied to all backup resources |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `backup_plan_id` | AWS Backup plan ID |
+| `vault_arn` | ARN of the backup vault |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
+
+```
 4. **Output Values**
 
 Inside the `outputs.tf` file of the module, you can define output values that can be referenced in the main configuration. For example:
@@ -289,6 +330,11 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
