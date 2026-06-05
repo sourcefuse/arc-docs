@@ -1,33 +1,41 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-kinesis-firehose](https://github.com/sourcefuse/terraform-aws-arc-kinesis-firehose)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-kinesis-firehose/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-kinesis-firehose.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-kinesis-firehose/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-kinesis-firehose.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-kinesis-firehose/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-kinesis-firehose/aws](https://registry.terraform.io/modules/sourcefuse/arc-kinesis-firehose/aws)
+
+> **Category:** Streaming / Data Ingestion
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-kinesis-firehose](https://github.com/sourcefuse/terraform-aws-arc-kinesis-firehose)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-kinesis-firehose.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-kinesis-firehose/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-kinesis-firehose.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-kinesis-firehose/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-kinesis-firehose2&token=6ebb7675ae9d12bbcc002cec253974f085e26ded)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-kinesis-firehose2)
 
----
-
 ## Overview
 
-This module provisions and manages Kinesis Data Firehose delivery streams with full support for multiple destinations, IAM roles, CloudWatch logging, Lambda transformation, KMS encryption, and dynamic partitioning.
+Creates Kinesis Data Firehose delivery streams with S3, Redshift, OpenSearch, or HTTP endpoint destinations, with optional transformation and encryption.
 
-## Features
+## Architecture
 
-- **Multiple destinations**: `extended_s3`, `redshift`, `opensearch`, `http_endpoint`
-- **Auto-created IAM role** with least-privilege policies (or bring your own)
-- **CloudWatch logging** with auto-created log group and stream
-- **KMS encryption** support (AWS-managed or customer-managed)
-- **Lambda data transformation** via processing configuration
-- **Parquet/ORC format conversion** via AWS Glue
-- **Dynamic partitioning** with JQ metadata extraction
-- **S3 backup** for all non-S3 destinations
-- **VPC support** for OpenSearch destinations
-- **Kinesis Data Stream** as source
+![Architecture Diagram](./static/arch.png)
 
-## Usage
+## What It Does
 
-### Basic S3
+- Delivery to S3, Redshift, OpenSearch, Splunk, or HTTP endpoints
+- Lambda-based record transformation
+- Dynamic partitioning for S3
+- KMS encryption for data at rest
+- CloudWatch logging for delivery errors
+- Data format conversion (JSON to Parquet/ORC)
+- Buffering hints configuration
+
+## Quickstart
 
 ```hcl
 module "firehose" {
@@ -164,20 +172,21 @@ module "firehose" {
 }
 ```
 
-## Examples
+## Required Inputs
 
-| Example | Description |
-|---------|-------------|
-| [basic-s3](./examples/basic-s3) | Simple delivery to S3 with GZIP |
-| [s3-encrypted](./examples/s3-encrypted) | S3 with KMS encryption and optional Parquet |
-| [redshift](./examples/redshift) | Delivery to Redshift via S3 staging |
-| [lambda-transform](./examples/lambda-transform) | Lambda data transformation before S3 |
-| [opensearch](./examples/opensearch) | Delivery to OpenSearch domain |
-| [dynamic-partitioning](./examples/dynamic-partitioning) | S3 with JQ-based dynamic partitioning |
+| Name | Type | Description |
+|------|------|-------------|
+| `name` | `string` | Firehose delivery stream name |
+| `destination` | `string` | Destination type: extended_s3, redshift, opensearch, http_endpoint |
+## Key Outputs
 
-## License
+| Name | Description |
+|------|-------------|
+| `stream_arn` | Firehose delivery stream ARN |
+| `stream_name` | Firehose delivery stream name |
+## Full Variable & Output Reference
 
-Apache 2.0 — see [LICENSE](./LICENSE).
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -300,6 +309,11 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 
 ## Authors
 
