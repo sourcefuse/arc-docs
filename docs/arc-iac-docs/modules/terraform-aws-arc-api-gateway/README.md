@@ -1,23 +1,62 @@
-![Module Structure](./static/banner.png)
-# AWS API Gateway Terraform Module
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-api-gateway](https://github.com/sourcefuse/terraform-aws-arc-api-gateway)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-api-gateway/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-api-gateway.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-api-gateway/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-api-gateway.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-api-gateway/aws`
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-api-gateway&token=281e8f7517cd0b5d9dcd53444d5786560998fd4d)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-api-gateway)
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-api-gateway/aws](https://registry.terraform.io/modules/sourcefuse/arc-api-gateway/aws)
 
+> **Category:** Networking / API Management
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-api-gateway](https://github.com/sourcefuse/terraform-aws-arc-api-gateway)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-api-gateway.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-api-gateway/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-api-gateway.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-api-gateway/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-api-gateway&token=281e8f7517cd0b5d9dcd53444d5786560998fd4d)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-api-gateway)
 
 ## Overview
 
-The API Gateway Terraform module provides an easy way to create and manage REST APIs on AWS. It supports defining resources, methods (GET, POST, etc.), and integrations with Lambda functions or other AWS services. The module also supports adding usage plans and API keys, enabling you to manage access, throttle requests, and monitor API usage. This helps ensure secure, scalable, and well-governed API deployments.
+Creates and manages AWS API Gateway REST APIs with Lambda integrations, custom domains, usage plans, and API keys.
 
-### Prerequisites
-Before using this module, ensure you have the following:
+## What It Does
 
-- AWS credentials configured.
-- Terraform installed.
-- A working knowledge of Terraform.
+- REST API creation from an OpenAPI JSON spec
+- Custom domain with ACM certificate and Route53 alias
+- Usage plans and API keys for rate limiting
+- CloudWatch logging and X-Ray tracing
+- REGIONAL, EDGE, or PRIVATE endpoint types
+
+For more information about this repository and its usage, please see [Terraform AWS API GATEWAY Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-api-gateway/blob/main/docs/module-usage-guide/README.md).
+
+## Quickstart
+
+```hcl
+module "api_gateway" {
+  source                 = "sourcefuse/arc-api-gateway/aws"
+  version                = "0.0.1"
+
+  name          = "arc-app"
+  stage_name    = "dev"
+  endpoint_type = "REGIONAL"
+  open_api_json = file("${path.module}/openapi.json")
+
+  enable_cloudwatch_logs = true
+
+  # Custom domain (optional)
+  api_gateway_domain = {
+    create              = true
+    domain              = "arc-api.${local.domain}"
+    certificate_arn     = data.aws_acm_certificate.this.arn
+    route53_root_domain = local.domain
+  }
+}
+```
+
+
 
 ## Getting Started
 
@@ -132,6 +171,25 @@ Apply Terraform
 ```shell
 terraform apply -var-file prod.tfvars  
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `name` | `string` | Name of the REST API |
+| `stage_name` | `string` | Deployment stage (e.g. prod) |
+| `api_gateway_domain` | `object` | Custom domain config; set create=false to skip |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `id` | REST API ID |
+| `invoke_url` | Base invoke URL for the stage |
+| `execution_arn` | Execution ARN for Lambda permissions |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -254,7 +312,10 @@ By specifying this , it will bump the version and if you don't specify this in y
   go test -timeout  30m
   ```
 
-## Authors
+## Contributing
 
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
+## Authors
 This project is authored by:
 - SourceFuse ARC Team
