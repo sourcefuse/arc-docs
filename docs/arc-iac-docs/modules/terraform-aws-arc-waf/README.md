@@ -1,21 +1,44 @@
+![Module Banner](./static/banner.png)
+
 # [terraform-aws-arc-waf](https://github.com/sourcefuse/terraform-aws-arc-waf)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-waf/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-waf.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-waf/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-waf.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-waf/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-waf/aws](https://registry.terraform.io/modules/sourcefuse/arc-waf/aws)
+
+> **Category:** Security / WAF
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-waf](https://github.com/sourcefuse/terraform-aws-arc-waf)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-waf.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-waf/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-waf.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-waf/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-waf)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-waf)
 
-[![Test](https://github.com/sourcefuse/terraform-aws-refarch-waf/actions/workflows/test.yml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-waf/actions/workflows/test.yml)
 
 ## Overview
 
-SourceFuse's AWS Reference Architecture Terraform module for AWS WAF (Web Application Firewall) simplifies the setup and management of web access controls. Leveraging the hashicorp/aws Terraform provider, this module allows users to define and deploy WAF configurations, including web ACLs and IP sets, with ease. The module supports customizable rules, default actions, and visibility configurations, empowering users to tailor WAF policies based on their specific security requirements. By associating web ACLs with designated resources through the aws_wafv2_web_acl_association resource, the module ensures seamless integration and protection for web applications against various threats. With support for tags and dependency management, this WAF module provides a robust foundation for enhancing the security posture of AWS-hosted web applications.
+Creates AWS WAFv2 web ACLs with managed rule groups, custom rules, IP sets, and resource associations for CloudFront or regional resources.
+
+## Architecture
+
+![Architecture Diagram](./static/arch.png)
+
+## What It Does
+
+- WAFv2 web ACL with REGIONAL or CLOUDFRONT scope
+- AWS managed rule groups (Core, Known Bad Inputs, SQL injection, etc.)
+- Custom rate-based and byte match rules
+- IP set creation and management
+- Web ACL association with ALB, API Gateway, or CloudFront
+- CloudWatch metrics and sampled requests logging
+- Default allow or block action
 
 For more information about this repository and its usage, please see [Terraform AWS ARC WAF Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-waf/blob/main/docs/module-usage-guide/README.md).
 
-
-## Usage
-
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-waf/blob/main/example/main.tf) file in the example folder.  
+## Quickstart
 
 ```hcl
 module "waf" {
@@ -47,6 +70,24 @@ module "waf" {
   tags = module.tags.tags
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `web_acl_name` | `string` | WAF web ACL name |
+| `web_acl_scope` | `string` | REGIONAL or CLOUDFRONT |
+| `web_acl_default_action` | `string` | allow or block |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `web_acl_id` | WAF web ACL ID |
+| `web_acl_arn` | WAF web ACL ARN |
+| `web_acl_capacity` | WAF capacity units consumed |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -142,6 +183,9 @@ By specifying this , it will bump the version and if you dont specify this in yo
   ```sh
   go test -timeout  30m
   ```
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
