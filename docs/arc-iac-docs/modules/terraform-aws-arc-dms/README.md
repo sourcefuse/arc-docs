@@ -1,26 +1,46 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-dms](https://github.com/sourcefuse/terraform-aws-arc-dms)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-dms/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-dms.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-dms/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-dms.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-dms/aws`
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-dms&token=354a04a27a079f60a649f1f80de398dad83e8ca4)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-dms)
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-dms/aws](https://registry.terraform.io/modules/sourcefuse/arc-dms/aws)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-dms/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-dms/actions/workflows/snyk.yaml)
+> **Category:** Database / Migration
+
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-dms](https://github.com/sourcefuse/terraform-aws-arc-dms)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-dms.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-dms/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-dms.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-dms/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-dms&token=354a04a27a079f60a649f1f80de398dad83e8ca4)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-dms)
 
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for creating Database Migration Service.
+## Architecture
 
-AWS DMS facilitates seamless, secure database migrations to AWS, enabling both homogeneous and heterogeneous data transfers with minimal downtime. DMS supports continuous data replication through Change Data Capture (CDC) and integrates with a broad range of source and target databases, providing a robust, scalable solution for reliable data migration.
+![Architecture Diagram](./static/arch.png)
 
-For more information about this repository and its usage, please see [Terraform AWS ARC CloudFront Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-dms/blob/main/docs/module-usage-guide/README.md).
+Creates AWS Database Migration Service resources — replication instances, endpoints, and tasks — for homogeneous and heterogeneous database migrations.
 
-## Usage
+## What It Does
+
+- DMS replication instance with configurable class and storage
+- Source and target endpoints with Secrets Manager auth
+- Full-load, CDC, and full-load-and-CDC migration tasks
+- Subnet group and VPC security group configuration
+- Support for PostgreSQL, MySQL, Oracle, SQL Server, and more
+
+For more information about this repository and its usage, please see [Terraform AWS DMS Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-dms/blob/main/docs/module-usage-guide/README.md).
+
+## Quickstart
 
 To see a DMS example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-dms/tree/main/examples/main.tf) file in the example folder.
-
-```tcl
+```hcl
 module "aws_dms" {
   source = "../modules/dms"
 
@@ -76,7 +96,7 @@ module "aws_dms" {
 }
 ```
 
-## Requirements
+## Required Inputs
 
 | Name | Version |
 |------|---------|
@@ -125,8 +145,7 @@ No resources.
 | <a name="input_subnet_group_id"></a> [subnet\_group\_id](#input\_subnet\_group\_id) | The name for the replication subnet group. Stored as a lowercase string, must contain no more than 255 alphanumeric characters, periods, spaces, underscores, or hyphens | `string` | `"DMS_replication_subnet_group"` | no |
 | <a name="input_subnet_group_subnet_ids"></a> [subnet\_group\_subnet\_ids](#input\_subnet\_group\_subnet\_ids) | A list of the EC2 subnet IDs for the subnet group | `list(string)` | `[]` | no |
 | <a name="input_subnet_group_tags"></a> [subnet\_group\_tags](#input\_subnet\_group\_tags) | A map of additional tags to apply to the replication subnet group | `map(string)` | `{}` | no |
-
-## Outputs
+## Key Outputs
 
 | Name | Description |
 |------|-------------|
@@ -185,8 +204,12 @@ By specifying this , it will bump the version and if you don't specify this in y
   go test -timeout  30m
   ```
 
+
+
+## Contributing
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
 
 This project is authored by:
-
-- SourceFuse
+- SourceFuse ARC Team
