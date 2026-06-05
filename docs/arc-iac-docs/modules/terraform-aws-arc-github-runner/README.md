@@ -1,32 +1,44 @@
 # [terraform-aws-arc-github-runner](https://github.com/sourcefuse/terraform-aws-arc-github-runner)
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-github-runner)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-github-runner)
+> **Module:** `sourcefuse/arc-github-runner/aws`
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-refarch-github-runner/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-refarch-github-runner/actions/workflows/snyk.yaml)
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-github-runner/aws](https://registry.terraform.io/modules/sourcefuse/arc-github-runner/aws)
+
+> **Category:** DevOps / CI/CD
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-github-runner](https://github.com/sourcefuse/terraform-aws-arc-github-runner)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-github-runner.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-github-runner/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-github-runner.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-github-runner/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-github-runner)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-github-runner)
 
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing GitHub Runner.
+Deploys a self-hosted GitHub Actions runner on an EC2 instance with auto-registration, SSM access, and configurable labels.
 
-This module will create the following resources in a specified AWS Account:
-* S3 bucket: used for storing the generated `docker-compose.yml`
-* EC2 instance: Used for running the runner container on
-* SSH Key Pair: Used for decrypting EC2 password
-* SSM Documents: Used for installing dependencies and updating the SSM Agent
-* IAM Policies: For accessing created resources
-* SSM Parameter: For storing the runner token
+## What It Does
+
+- EC2-based self-hosted GitHub Actions runner
+- Automatic runner registration with GitHub token
+- Configurable runner labels for job targeting
+- SSM Session Manager access (no SSH required)
+- IAM instance profile with configurable policies
+- VPC and security group configuration
 
 This module utilizes different `local-exec` provisioners to execute scripts for obtaining the needed GitHub Runner token
 and remove the runner from the organization when the resources are destroyed.
-See [Pre-Requisites](#pre-requisites) for information on the needed permissions these scripts will require.
+See [Pre-Requisites](#pre-requisites) for information on the needed permissions these scripts will require.  
 
-### Pre-Requisites
+## Pre-Requisites
 You will need to have a GitHub Personal Access Token (PAT) with `admin:org` permissions in order to manage GitHub runners for the Organization.
-If you do not have sufficient permissions to GitHub, the runner will not register.
+If you do not have sufficient permissions to GitHub, the runner will not register.  
 
 Once you've obtained a PAT, you will need to set it so Terraform can access it.
 The recommended approach to this is to save it in _Systems Manager Parameter Store_ with the Parameter name of: `/<namespace>/<environment>/github/token`
-You can reference this parameter via a data lookup:
+You can reference this parameter via a data lookup:  
 ```hcl
 data "aws_ssm_parameter" "github_token" {
   name = "/${var.namespace}/${var.environment}/github/token"
@@ -35,9 +47,11 @@ data "aws_ssm_parameter" "github_token" {
 
 ## Usage
 :warning: At this time, this module only supports **Debian** / **Ubuntu** AMIs.
-When choosing an AMI, please be sure to select either **Ubuntu** or **Debian**.
+When choosing an AMI, please be sure to select either **Ubuntu** or **Debian**.  
 
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-github-runner/blob/main/example/main.tf) file in the example folder.
+To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-github-runner/blob/main/example/main.tf) file in the example folder.  
+
+## Quickstart
 
 ```hcl
 module "runner" {
@@ -55,6 +69,26 @@ module "runner" {
   tags = module.tags.tags
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace prefix |
+| `environment` | `string` | Deployment environment |
+| `subnet_id` | `string` | Subnet ID for the runner EC2 instance |
+| `vpc_id` | `string` | VPC ID |
+| `github_token` | `string` | GitHub PAT or registration token |
+| `runner_labels` | `string` | Comma-separated runner labels |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `instance_id` | EC2 instance ID of the runner |
+| `instance_private_ip` | Private IP of the runner |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -182,10 +216,14 @@ By specifying this , it will bump the version and if you dont specify this in yo
   go mod init github.com/sourcefuse/terraform-aws-refarch-github-runner
   go get github.com/gruntwork-io/terratest/modules/terraform
   ```
-- Now execute the test
+- Now execute the test  
   ```sh
   go test -timeout  30m
   ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
