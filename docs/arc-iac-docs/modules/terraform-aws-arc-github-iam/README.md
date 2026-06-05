@@ -1,21 +1,37 @@
 # [terraform-aws-arc-github-iam](https://github.com/sourcefuse/terraform-aws-arc-github-iam)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-github-iam/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-github-iam.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-github-iam/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-github-iam.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-github-iam/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-github-iam/aws](https://registry.terraform.io/modules/sourcefuse/arc-github-iam/aws)
+
+> **Category:** Security / IAM
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-github-iam](https://github.com/sourcefuse/terraform-aws-arc-github-iam)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-github-iam.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-github-iam/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-github-iam.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-github-iam/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-github-iam)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-github-iam)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-github-iam/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-github-iam/actions/workflows/snyk.yaml)
-
 ## Overview
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing GitHub OIDC IAM access to your account.
 
-Please note, this module creates a GitHub identity provider by default for your AWS account. You can only have **ONE** GitHub identity provider per AWS account.
-If you already have the identity provider configured, or you need to run this multiple times for your account, set `var.create_github_oidc_provider` to `false`.
+Creates an AWS IAM OIDC provider and role for GitHub Actions to authenticate to AWS without long-lived credentials.
+
+## What It Does
+
+- GitHub OIDC provider registration in AWS IAM
+- IAM role with trust policy scoped to specific GitHub repos/branches
+- Attach custom and managed IAM policies
+- Support for multiple GitHub repository subscriptions
+- No long-lived AWS credentials needed in GitHub
+
 
 For more information about this repository and its usage, please see [Terraform AWS ARC GitHub IAM Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-github-iam/blob/main/docs/module-usage-guide/README.md).
 
-## Usage
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-github-iam/blob/main/example/main.tf) file in the example folder.
+
+## Quickstart
 
 ```hcl
 module "github_iam" {
@@ -42,6 +58,23 @@ module "github_iam" {
   tags = module.tags.tags
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace prefix |
+| `environment` | `string` | Deployment environment |
+| `github_subscriptions` | `list(object)` | GitHub org/repo/ref combinations to trust |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `role_arn` | IAM role ARN for GitHub Actions |
+| `oidc_provider_arn` | GitHub OIDC provider ARN |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -97,3 +130,12 @@ No modules.
 | <a name="output_role_id"></a> [role\_id](#output\_role\_id) | The ID of the IAM role |
 | <a name="output_role_name"></a> [role\_name](#output\_role\_name) | The name of the IAM role |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
+## Authors
+This project is authored by:
+- SourceFuse
