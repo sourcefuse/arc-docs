@@ -1,58 +1,36 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-synthetic-monitoring](https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring)
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-synthetic-monitoring.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-synthetic-monitoring.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-synthetic-monitoring/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-synthetic-monitoring/aws](https://registry.terraform.io/modules/sourcefuse/arc-synthetic-monitoring/aws)
+
+> **Category:** Observability / Monitoring
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring](https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-synthetic-monitoring.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-synthetic-monitoring.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-synthetic-monitoring&token=86c4365844146b19d7ee637439416373f834e97a)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-synthetic-monitoring)
 
-[![snyk](https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring/actions/workflows/snyk.yaml)
-
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing synthetic canaries.
+Creates CloudWatch Synthetics canaries for endpoint availability and performance monitoring with SNS alerting.
 
-## Features
+## What It Does
 
-- Allows creation of AWS Synthetics canaries with VPC configurations.
-- Supports custom IAM roles and policies.
-- Flexible configuration options for canaries.
+- CloudWatch Synthetics canaries for HTTP endpoint monitoring
+- Configurable canary schedule and runtime
+- VPC-enabled canaries for private endpoint testing
+- S3 bucket for canary artifacts
+- SNS topic for canary failure alerts
+- KMS encryption for artifacts
 
-## Introduction
-
-SourceFuse's AWS Reference Architecture (ARC) Terraform module for Synthetics Canaries centralizes and automates the monitoring of your applications and APIs. By leveraging AWS CloudWatch Synthetics, this module allows you to create and manage canary scripts that continuously check the availability and performance of your endpoints. It provides a comprehensive solution to detect anomalies, pinpoint performance issues, and ensure that your applications are functioning as expected. The module also supports scheduling canary runs, capturing and analyzing logs and metrics, and integrating with other AWS services for alerting and reporting. With cross-region and cross-account capabilities, it enhances monitoring coverage and resilience for your applications.
-
-### Prerequisites
-Before using this module, ensure you have the following:
-
-- AWS credentials configured.
-- Terraform installed.
-- A working knowledge of Terraform.
-
-## Getting Started
-
-1. **Define the Module**
-
-Initially, it's essential to define a Terraform module, which is organized as a distinct directory encompassing Terraform configuration files. Within this module directory, input variables and output values must be defined in the variables.tf and outputs.tf files, respectively. The following illustrates an example directory structure:
-
-
-```plaintext
-synthetics/
-|-- main.tf
-|-- variables.tf
-|-- outputs.tf
-```
-
-
-2. **Define Input Variables**
-
-Inside the `variables.tf` or in `*.tfvars` file, you should define values for the variables that the module requires.
-
-3. **Use the Module in Your Main Configuration**
-In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
+## Quickstart
 
 ```hcl
 module "synthetic-monitoring" {
@@ -67,19 +45,21 @@ module "synthetic-monitoring" {
 }
 ```
 
-4. **Output Values**
+## Required Inputs
 
-Inside the `outputs.tf` file of the module, you can define output values that can be referenced in the main configuration. For example:
+| Name | Type | Description |
+|------|------|-------------|
+| `endpoint` | `string` | URL to monitor |
+| `bucket_name` | `string` | S3 bucket for canary artifacts |
+| `sns_topic_name` | `string` | SNS topic name for alerts |
+## Key Outputs
 
-```hcl
-output "canary_arns" {
-  value = module.synthetic-monitoring.canary_arns
-}
+| Name | Description |
+|------|-------------|
+| `canary_arns` | Map of canary name to ARN |
+## Full Variable & Output Reference
 
-```
-## Usage
-
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring/blob/main/example/main.tf) file in the example folder.  
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -210,29 +190,11 @@ By specifying this , it will bump the version and if you don't specify this in y
   go test -timeout  30m
   ```
 
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
 
 This project is authored by:
 - SourceFuse ARC Team
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="http://mayankdevops.com"><img src="https://avatars.githubusercontent.com/u/83959396?v=4?s=100" width="100px;" alt="Mayank Sharma"/><br /><sub><b>Mayank Sharma</b></sub></a><br /><a href="https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring/commits?author=mayank0202" title="Code">💻</a> <a href="https://github.com/sourcefuse/terraform-aws-arc-synthetic-monitoring/commits?author=mayank0202" title="Documentation">📖</a> <a href="#infra-mayank0202" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-mayank0202" title="Maintenance">🚧</a> <a href="#mentoring-mayank0202" title="Mentoring">🧑‍🏫</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
