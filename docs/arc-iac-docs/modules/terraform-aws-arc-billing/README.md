@@ -1,24 +1,37 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-billing](https://github.com/sourcefuse/terraform-aws-arc-billing)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-billing/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-billing.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-billing/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-billing.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-billing/aws`
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-billing)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-billing)
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-billing/aws](https://registry.terraform.io/modules/sourcefuse/arc-billing/aws)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-billing/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-billing/actions/workflows/snyk.yaml)
+> **Category:** FinOps / Cost Management
 
-## Introduction
 
-SourceFuse's AWS Reference Architecture (ARC) Terraform module streamlines budget management and billing alarms in AWS environments. With predefined budgets and real-time Slack and email alerts, organizations stay on top of spending trends and prevent cost overruns. This proactive approach optimizes resource usage and ensures financial transparency across cloud deployments.
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-billing](https://github.com/sourcefuse/terraform-aws-arc-billing)
 
-### Prerequisites
-Before using this module, ensure you have the following:
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-billing.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-billing/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-billing.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-billing/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
-- AWS credentials configured.
-- Terraform installed.
-- A working knowledge of Terraform.
-- IAM billing role
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-billing)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-billing)
+
+
+## Overview
+
+Manages AWS Budgets with SNS alerts, optional Slack notifications via Lambda, and KMS-encrypted topics.
+
+## What It Does
+
+- Multiple budget definitions (cost, usage, RI utilization)
+- SNS topic with email and webhook subscribers
+- Optional Slack notifications via Lambda
+- KMS encryption for SNS topics
+- Service-level cost filters
+
+For more information about this repository and its usage, please see [Terraform AWS BILLING Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-billing/blob/main/docs/module-usage-guide/README.md).
 
 ## Getting Started
 
@@ -43,6 +56,8 @@ Inside the `variables.tf` or in `*.tfvars` file, you should define values for th
 3. **Use the Module in Your Main Configuration**
 In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
 
+## Quickstart
+
 ```hcl
 module "example_budgets" {
   source      = "sourcefuse/arc-billing/aws"
@@ -62,25 +77,21 @@ module "example_budgets" {
 
   billing_alerts_sns_subscribers = var.billing_alerts_sns_subscribers
 }
-
 ```
 
-4. **Output Values**
 
-Inside the `outputs.tf` file of the module, you can define output values that can be referenced in the main configuration. For example:
 
-```hcl
-output "sns_topic_name" {
-  value       = module.budgets.sns_topic_name
-}
+## Key Outputs
 
-output "lambda_function_arn" {
-  value       = module.budgets.lambda_function_arn
-}
-```
+| Name | Description |
+|------|-------------|
+| `sns_topic_arn` | SNS topic ARN for billing alerts |
+| `lambda_function_arn` | Slack notification Lambda ARN (if enabled) |
+## Full Variable & Output Reference
 
-5. **.tfvars**
-
+The complete inputs/outputs reference is auto-generated below.
+ 
+##.tfvars
 Inside the `.tfvars` file of the module, you can provide desired values that can be referenced in the main configuration. For example:
 
 Edit the [dev.tfvars](./example/dev.tfvars) file and provide desired values.  
@@ -201,7 +212,6 @@ Apply Terraform
 ```shell
 terraform apply -var-file prod.tfvars  
 ```
-
 ## Cleanup  
 Destroy Terraform
 ```shell
@@ -217,6 +227,7 @@ terraform destroy -var-file dev.tfvars
       Service = ["Amazon Elastic Compute Cloud - Compute"]
     }
 ```
+
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -334,7 +345,12 @@ By specifying this , it will bump the version and if you dont specify this in yo
   go test -timeout  30m
   ```
 
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
 
 This project is authored by:
-- SourceFuse
+- SourceFuse ARC Team
