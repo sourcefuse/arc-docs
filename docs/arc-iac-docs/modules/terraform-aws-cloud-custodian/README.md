@@ -1,15 +1,36 @@
-# [Terraform AWS: Cloud Custodian](https://github.com/sourcefuse/terraform-aws-cloud-custodian)
+# [terraform-aws-arc-cloud-custodian](https://github.com/sourcefuse/terraform-aws-arc-cloud-custodian)
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-cloud-custodian)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-cloud-custodian)
+> **Module:** `sourcefuse/arc-cloud-custodian/aws`
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-cloud-custodian/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-cloud-custodian/actions/workflows/snyk.yaml)
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-cloud-custodian/aws](https://registry.terraform.io/modules/sourcefuse/arc-cloud-custodian/aws)
+
+> **Category:** Governance / Compliance
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-cloud-custodian](https://github.com/sourcefuse/terraform-aws-arc-cloud-custodian)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-cloud-custodian.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-cloud-custodian/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-cloud-custodian.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-cloud-custodian/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-cloud-custodian)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-cloud-custodian)
+
 ## Overview
 
-The purpose of this module is to provide a Terraform based interface for administering Cloud Custodian to assist with managing the state of template files and to allow for easier runtime interpolation via Terraform.
+Provisions Cloud Custodian infrastructure (IAM role, S3 output bucket, CloudTrail, SQS) and runs custodian policies from template files.
 
-For more information about this repository and its usage, please see [Terraform AWS ARC GitHub CLOUD CUSTODIAN Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-cloud-custodian/blob/main/docs/module-usage-guide/README.md).
+## What It Does
 
+- IAM role for Cloud Custodian Lambda execution
+- S3 bucket for custodian output
+- CloudTrail with SQS queue for event-driven policies
+- Template-based policy files with Terraform variable interpolation
+- Automatic policy execution
 
+For more information about this repository and its usage, please see [Terraform AWS CLOUD CUSTODIAN Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-cloud-custodian/blob/main/docs/module-usage-guide/README.md)
+
+## Quickstart
 ## Requirements 
 
 ```shell
@@ -32,6 +53,7 @@ pip install c7n
   * c7n_gcp is for Google Compute  
 
 ## Usage
+
 ```hcl
 terraform {
   required_version = "~> 1.0.5"
@@ -102,8 +124,27 @@ module "cloud_custodian" {
     Example = "true"
   }
 }
-
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `name` | `string` | Name for the deployment |
+| `namespace` | `string` | Namespace prefix |
+| `region` | `string` | AWS region |
+| `stage` | `string` | Deployment stage |
+| `tags` | `map(string)` | Resource tags |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `role_arn` | IAM role ARN for Cloud Custodian |
+| `bucket_id` | S3 output bucket name |
+| `sqs_arn` | SQS queue ARN |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -197,7 +238,12 @@ pre-commit install
 pre-commit run --all-files
 ```
 
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
 
-This project is authored by:  
-* SourceFuse ARC Team
+This project is authored by:
+- SourceFuse ARC Team
