@@ -1,36 +1,57 @@
-![Module Structure](./static/terraform-aws-arc-fsx.png)
+![Module Banner](./static/terraform-aws-arc-fsx.png)
 
 # [terraform-aws-arc-fsx](https://github.com/sourcefuse/terraform-aws-arc-fsx)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-fsx/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-fsx.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-fsx/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-fsx.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-fsx/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-fsx/aws](https://registry.terraform.io/modules/sourcefuse/arc-fsx/aws)
+
+> **Category:** Storage / File System
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-fsx](https://github.com/sourcefuse/terraform-aws-arc-fsx)
+
+[![Latest Release](https://img.shields.io/github/v/release/sourcefuse/terraform-aws-arc-fsx?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-fsx/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-fsx.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-fsx/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-fsx&token=f9795bcdfa8a522b86818bff5287cf85038e7d88)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-fsx)
 
-## Introduction
+## Overview
 
-SourceFuse's AWS Reference Architecture (ARC) Terraform module facilitates the management of a comprehensive, reusable Terraform module for provisioning and managing AWS IAM Identity Center (AWS SSO) resources following AWS and Terraform best practices.
+Creates Amazon FSx file systems — Windows File Server, Lustre, ONTAP, and OpenZFS — with VPC, security groups, and backup configuration.
 
+## What It Does
 
+This module provides comprehensive support for multiple Amazon FSx file system types and related storage management capabilities, enabling flexible, secure, and scalable deployments.
 
-## Features
+For more information about this repository and its usage, please see [Terraform AWS FSX Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-fsx/blob/main/docs/module-usage-guide/README.md).
 
-- **Multi-FSx Support**: Windows File Server, Lustre, NetApp ONTAP, and OpenZFS
-- **File Cache**: FSx File Cache for high-performance caching
-- **Volumes**: ONTAP and OpenZFS volume management
-- **Storage Virtual Machines**: ONTAP SVM creation and configuration
-- **Snapshots**: OpenZFS snapshot management
-- **Backups**: Manual backup creation and management
-- **Security**: SourceFuse ARC Security Group module with protocol-specific rules
-- **Active Directory**: Support for both AWS Managed AD and self-managed AD
-- **S3 Integration**: Data repository associations for Lustre file systems
-- **Backup Management**: Configurable automatic backups and retention
-- **Encryption**: KMS encryption support for data at rest
+### Supported FSx Types
+
+- **Windows File Server**: Fully managed Windows-native file storage
+- **Lustre**: High-performance file storage for compute-intensive workloads
+- **NetApp ONTAP**: Enterprise-grade shared storage with advanced data management
+- **OpenZFS**: High-performance ZFS-based file storage
+- **FSx File Cache**: High-speed caching layer for frequently accessed datasets
+
+### Core Capabilities
+
+- **Volume Management**: Create and manage ONTAP and OpenZFS volumes
+- **Storage Virtual Machines (SVMs)**: Configure ONTAP SVMs for storage isolation and administration
+- **Snapshot Management**: Create and manage OpenZFS snapshots for data protection
+- **Backup Management**: Support for manual backups, automated backups, and retention policies
+- **S3 Integration**: Configure Data Repository Associations (DRA) for Lustre file systems
+- **Active Directory Integration**: Support for both AWS Managed Active Directory and self-managed Active Directory
+- **Security Controls**: Integration with SourceFuse ARC Security Group module for protocol-specific access rules
+- **Encryption at Rest**: KMS-based encryption support for enhanced data security
 - **IAM Integration**: Optional IAM role creation with least-privilege policies
-- **Flexible Networking**: Multi-AZ and single-AZ deployment options
+- **Flexible Networking**: Support for both Single-AZ and Multi-AZ deployment options
+
 
 ## FSx Component Support Matrix
 
-| Component | Windows | Lustre | ONTAP | OpenZFS | File Cache |
+| Capability | Windows | Lustre | ONTAP | OpenZFS | File Cache |
 |-----------|---------|--------|-------|---------|------------|
 | File Systems | Yes | Yes | Yes | Yes | Yes |
 | Volumes | No | No | Yes | Yes | No |
@@ -41,7 +62,14 @@ SourceFuse's AWS Reference Architecture (ARC) Terraform module facilitates the m
 | Multi-AZ | Yes | No | Yes | Yes | No |
 | S3 Integration | No | Yes | No | No | No |
 
-## Usage
+### Key Notes
+
+- **ONTAP** supports advanced storage features such as **Volumes**, **Storage Virtual Machines (SVMs)**, and **Multi-AZ deployments**.
+- **OpenZFS** supports **Snapshots**, **Volumes**, and **Multi-AZ configurations** for enhanced resilience.
+- **Lustre** integrates with **Amazon S3** using **Data Repository Associations (DRA)** for high-performance data processing workloads.
+- **File Cache** is designed for **high-speed caching** and does not support persistent storage features such as backups, snapshots, or volumes.
+
+## Quickstart
 
 ### Basic Windows File Server
 
@@ -175,6 +203,25 @@ module "fsx_openzfs" {
 - IAM roles follow least-privilege principles
 - Network access is restricted to specified CIDR blocks
 - Backup encryption is enabled by default
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `name` | `string` | FSx file system name |
+| `environment` | `string` | Deployment environment |
+| `fsx_type` | `string` | FSx type: windows, lustre, ontap, or openzfs |
+| `vpc_id` | `string` | VPC ID |
+| `subnet_ids` | `list(string)` | Subnet IDs |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `file_system_id` | FSx file system ID |
+| `dns_name` | FSx DNS name |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -310,6 +357,10 @@ For Example
 git commit -m "your commit message #major"
 ```
 By specifying this , it will bump the version and if you dont specify this in your commit message then by default it will consider patch and will bump that accordingly
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 This project is authored by:
