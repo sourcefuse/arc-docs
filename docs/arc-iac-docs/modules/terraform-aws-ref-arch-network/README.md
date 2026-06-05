@@ -1,15 +1,37 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-network](https://github.com/sourcefuse/terraform-aws-arc-network)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-network/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-network.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-network/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-network.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-network/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-network/aws](https://registry.terraform.io/modules/sourcefuse/arc-network/aws)
+
+> **Category:** Networking / VPC
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-network](https://github.com/sourcefuse/terraform-aws-arc-network)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-network.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-network/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-network.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-network/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-network)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-network)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-ref-arch-network/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-ref-arch-network/actions/workflows/snyk.yaml)
-## Introduction
+## Overview
 
-SourceFuse's AWS Reference Architecture (ARC) Terraform module facilitates the management of AWS VPC and associated networking resources. It includes features like VPC creation, Client VPN, and VPC endpoints for services like S3 and DynamoDB, enhancing network connectivity and security.
+Creates a VPC with public/private subnets, NAT gateways (zonal or regional), internet gateway, route tables, and VPC endpoints.
+
+## What It Does
+
+- VPC with configurable CIDR block
+- Auto-generated or custom subnet maps
+- Zonal NAT gateways (one per AZ) or Regional NAT gateway (single multi-AZ)
+- Internet gateway and route tables
+- VPC endpoints for S3, DynamoDB, and other services
+- VPC Flow Logs to CloudWatch or S3
+- EKS-compatible subnet tagging
+- IPv6 support
 
 For more information about this repository and its usage, please see [Terraform AWS ARC Network Module Usage Guide](docs/module-usage-guide/README.md).
 
@@ -31,18 +53,9 @@ This module now supports AWS Regional NAT Gateway configuration, which provides:
 - **Simplified management**: One NAT Gateway resource instead of multiple
 - **Auto and manual modes**: Choose between AWS-managed or custom EIP allocation
 
-### Prerequisites
-Before using this module, ensure you have the following:
+## Quickstart
 
-- AWS credentials configured.
-- Terraform installed.
-- A working knowledge of Terraform.
-
-## Usage
-See the `examples` folder for a complete example.
-
-```shell
-
+```hcl
 module "network" {
   namespace   = var.namespace
   environment = var.environment
@@ -64,12 +77,9 @@ module "network" {
 
   tags = module.tags.tags
 }
-
 ```
-## custom-subnets example
 
-```shell
-
+```hcl
 module "network" {
   source                      = "sourcefuse/arc-network/aws"
   version                     = "3.0.0"
@@ -157,9 +167,7 @@ locals {
     }
   }
 }
-
 ```
-
 ## NAT Gateway
 
 This module supports both traditional zonal NAT Gateways and the new Regional NAT Gateway.
@@ -221,7 +229,6 @@ module "network" {
   }
 }
 ```
-
 ## EKS Compatibility
 
 This module supports AWS EKS (Elastic Kubernetes Service) by enabling per-subnet custom tagging. EKS requires specific tags on subnets for proper ALB/NLB provisioning and cluster auto-discovery.
@@ -267,6 +274,26 @@ subnet_map = {
   }
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace prefix |
+| `environment` | `string` | Deployment environment |
+| `name` | `string` | VPC name |
+| `cidr_block` | `string` | VPC CIDR block |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `id` | VPC ID |
+| `private_subnet_ids` | Private subnet IDs |
+| `public_subnet_ids` | Public subnet IDs |
+| `nat_gateway_ids` | NAT gateway IDs |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -410,6 +437,11 @@ By specifying this , it will bump the version and if you dont specify this in yo
   go test -timeout 1800s
   ```
 
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
 This project is authored by:
 - SourceFuse
+
