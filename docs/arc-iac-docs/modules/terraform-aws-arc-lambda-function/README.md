@@ -1,46 +1,45 @@
-![Module Structure](./static/banner.png)
-# AWS Lambda Function Terraform Module
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-lambda-function](https://github.com/sourcefuse/terraform-aws-arc-lambda-function)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-lambda-function/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-lambda-function.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-lambda-function/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-lambda-function.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-lambda-function/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-lambda-function/aws](https://registry.terraform.io/modules/sourcefuse/arc-lambda-function/aws)
+
+> **Category:** Compute / Serverless
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-lambda-function](https://github.com/sourcefuse/terraform-aws-arc-lambda-function)
+
+[![Latest Release](https://img.shields.io/github/v/release/sourcefuse/terraform-aws-arc-lambda-function?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-lambda-function/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-lambda-function.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-lambda-function/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-lambda-function&token=2eef08aeb73594436eea462afe0bd790c9ae3841)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-lambda-function)
 
-
 ## Overview
 
-The ARC Terraform module provides a comprehensive and unified solution for deploying AWS Lambda functions on AWS. This versatile module supports multiple deployment methods including local source code, S3-based deployments, and container images, allowing you to choose the deployment approach that best fits your application requirements and operational needs.
+Creates AWS Lambda functions with IAM roles, VPC configuration, environment variables, layers, event source mappings, and CloudWatch log groups.
 
-### Prerequisites
-Before using this module, ensure you have the following:
+## Architecture
 
-- AWS credentials configured.
-- Terraform installed.
-- A working knowledge of Terraform.
+![Architecture Diagram](./static/arch.png)
 
-## Getting Started
+## What It Does
 
-1. **Define the Module**
+- Lambda function with configurable runtime, handler, and memory
+- Deployment from S3 or local zip file
+- VPC configuration for private resource access
+- Environment variables and SSM Parameter Store integration
+- Lambda layers support
+- Event source mappings (SQS, DynamoDB, Kinesis)
+- Dead letter queue configuration
+- X-Ray tracing
+- CloudWatch log group with retention
 
-Initially, it's essential to define a Terraform module, which is organized as a distinct directory encompassing Terraform configuration files. Within this module directory, input variables and output values must be defined in the variables.tf and outputs.tf files, respectively. The following illustrates an example directory structure:
+For more information about this repository and its usage, please see [Terraform AWS LAMBDA FUNCTION Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-lambda-function/blob/main/docs/module-usage-guide/README.md).
 
-
-
-```plaintext
-lambda-function/
-|-- main.tf
-|-- variables.tf
-|-- outputs.tf
-```
-
-
-2. **Define Input Variables**
-
-Inside the `variables.tf` or in `*.tfvars` file, you should define values for the variables that the module requires.
-
-3. **Use the Module in Your Main Configuration**
-In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
+## Quickstart
 
 ```hcl
 module "lambda-function" {
@@ -73,42 +72,23 @@ module "lambda-function" {
 }
 ```
 
-4. **Output Values**
+## Required Inputs
 
-Inside the `outputs.tf` file of the module, you can define output values that can be referenced in the main configuration. For example:
+| Name | Type | Description |
+|------|------|-------------|
+| `function_name` | `string` | Lambda function name |
+| `runtime` | `string` | Runtime (e.g. python3.12, nodejs20.x) |
+| `handler` | `string` | Function handler (file.method) |
+## Key Outputs
 
-```hcl
-output "arn" {
-  description = "ARN of the Lambda function"
-  value       = module.basic_lambda.lambda_function_arn
-}
+| Name | Description |
+|------|-------------|
+| `function_arn` | Lambda function ARN |
+| `function_name` | Lambda function name |
+| `invoke_arn` | Invoke ARN for API Gateway integration |
+## Full Variable & Output Reference
 
-output "name" {
-  description = "Name of the Lambda function"
-  value       = module.basic_lambda.lambda_function_name
-}
-
-output "invoke_arn" {
-  description = "Invoke ARN of the Lambda function"
-  value       = module.basic_lambda.lambda_function_invoke_arn
-}
-
-output "role_arn" {
-  description = "ARN of the Lambda execution role"
-  value       = module.basic_lambda.lambda_role_arn
-}
-
-output "cloudwatch_log_group_name" {
-  description = "Name of the CloudWatch log group"
-  value       = module.basic_lambda.lambda_cloudwatch_log_group_name
-}
-
-```
-
-5. **.tfvars**
-
-Inside the `.tfvars` file of the module, you can provide desired values that can be referenced in the main configuration.
-
+The complete inputs/outputs reference is auto-generated below.
 
 ## First Time Usage
 ***uncomment the backend block in [main.tf](./examples/endpoint//main.tf)***
@@ -335,6 +315,10 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
