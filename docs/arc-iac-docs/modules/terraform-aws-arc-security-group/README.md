@@ -1,30 +1,39 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
+
 # [terraform-aws-arc-security-group](https://github.com/sourcefuse/terraform-aws-arc-security-group)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-security-group/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-security-group.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-security-group/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-security-group.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-security-group/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-security-group/aws](https://registry.terraform.io/modules/sourcefuse/arc-security-group/aws)
+
+> **Category:** Networking / Security
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-security-group](https://github.com/sourcefuse/terraform-aws-arc-security-group)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-security-group.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-security-group/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-security-group.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-security-group/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-security-group&token=0e57ba3902cccbb2b9c0585a9859bccbf2d00e3c)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-security-group)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-security-group/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-security-group/actions/workflows/snyk.yaml)
+## Overview
 
-## Introduction
+Creates AWS security groups with configurable ingress and egress rules for controlling network traffic.
 
-The SourceFuse AWS Reference Architecture (ARC) Terraform module for creating and managing AWS security groups with customizable rules. It simplifies defining inbound and outbound rules for specific protocols, ports, and CIDR ranges, ensuring secure and efficient network traffic control in your infrastructure.
+## What It Does
+
+- Security group with custom name and description
+- Ingress rules with CIDR, security group, or self references
+- Egress rules with full configuration
+- Multiple rules per security group
+- Tag support
 
 For more information about this repository and its usage, please see [Terraform AWS ARC Security Group Module Usage Guide](docs/module-usage-guide/README.md).
 
-### Prerequisites
-Before using this module, ensure you have the following:
-
-- AWS credentials configured.
-- Terraform installed.
-- A working knowledge of Terraform.
-
-## Usage
-See the `examples` folder for a complete example.
+## Quickstart
 
 ```hcl
-
 locals {
   security_group_data = {
     create      = true
@@ -79,6 +88,24 @@ module "arc_security_group" {
 }
 ```
 
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `name` | `string` | Security group name |
+| `vpc_id` | `string` | VPC ID |
+| `ingress_rules` | `list(object)` | Ingress rule definitions |
+| `egress_rules` | `list(object)` | Egress rule definitions |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `id` | Security group ID |
+| `arn` | Security group ARN |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
@@ -126,6 +153,7 @@ No modules.
 | <a name="output_id"></a> [id](#output\_id) | Security Group ID |
 | <a name="output_ingress_rule_arns"></a> [ingress\_rule\_arns](#output\_ingress\_rule\_arns) | ARNs of the ingress rules |
 | <a name="output_ingress_rule_ids"></a> [ingress\_rule\_ids](#output\_ingress\_rule\_ids) | IDs of the ingress rules |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Versioning  
@@ -174,6 +202,10 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
