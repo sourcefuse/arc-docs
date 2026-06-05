@@ -1,37 +1,37 @@
-![Module Structure](./static/terraform-aws-arc-msk.png)
+![Module Banner](./static/terraform-aws-arc-msk.png)
 
 # [terraform-aws-arc-msk](https://github.com/sourcefuse/terraform-aws-arc-msk)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-msk/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-msk.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-msk/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-msk.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-msk/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-msk/aws](https://registry.terraform.io/modules/sourcefuse/arc-msk/aws)
+
+> **Category:** Streaming / Kafka
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-msk](https://github.com/sourcefuse/terraform-aws-arc-msk)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-msk.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-msk/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-msk.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-msk/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-msk&token=ad50d88e1098864c2906ef63bcfb9974003e670d)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-msk)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-msk/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-msk/actions/workflows/snyk.yaml)
-
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing the AWS MSK module.
+Creates Amazon MSK (Managed Streaming for Apache Kafka) clusters with configurable authentication, encryption, monitoring, and MSK Connect.
 
-## Features
-- Create an MSK cluster with customizable broker configuration
-- Configure encryption in transit and at rest
-- Set up authentication methods (SASL/SCRAM, IAM, TLS)
-- Enable monitoring with Prometheus JMX and Node exporters
-- Configure logging to CloudWatch, Kinesis Firehose, or S3
-- Create and manage MSK configurations
-- Associate SCRAM secrets for authentication
-- Deploy MSK Connectors to stream data in and out of Kafka
-- Create and manage custom plugins stored in S3
-- Configure MSK Connect worker configuration via properties file
-- Deploy MSK Connect connectors with support for autoscaling or provisioned mode
+## What It Does
 
-## Introduction
+- Provisioned and serverless MSK cluster modes
+- SASL/SCRAM and IAM authentication
+- TLS encryption in transit
+- CloudWatch and Prometheus monitoring
+- MSK Connect for managed connectors
+- Secrets Manager integration for SCRAM credentials
+- Multi-AZ broker deployment
 
-This Terraform module provisions a fully configurable Amazon MSK (Managed Streaming for Apache Kafka) cluster with support for encryption, authentication (IAM, TLS, SASL/SCRAM), monitoring, and logging. It also enables deployment of MSK Connect components including custom plugins, worker configurations, and connectors with autoscaling or provisioned capacity, along with log delivery to CloudWatch, Firehose, or S3—empowering end-to-end Kafka data streaming pipelines.
-
-## Usage
-
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-msk/blob/feature/fix-docs/examples/simple/main.tf) file in the example folder.  
+## Quickstart
 
 ### Basic Usage
 ```hcl
@@ -69,7 +69,6 @@ module "msk" {
   tags = module.tags.tags
 }
 ```
-
 ### MSK Connect Data Sink: Aurora PostgreSQL to Amazon S3
 
 #### This Terraform example provisions MSK Connect components that enable data ingestion from an Amazon Aurora PostgreSQL database into Amazon S3, using Kafka Connect and Confluent plugins.
@@ -162,6 +161,26 @@ module "msk_s3_sink" {
 }
 ```
 These modules will create MSK Connect plugins and connectors, enabling a seamless stream of data from PostgreSQL (public.users table) to S3 (cdc_aurora_users topic)
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `cluster_name` | `string` | MSK cluster name |
+| `kafka_version` | `string` | Apache Kafka version |
+| `number_of_broker_nodes` | `number` | Number of broker nodes |
+| `client_subnets` | `list(string)` | Subnet IDs for brokers |
+| `security_groups` | `list(string)` | Security group IDs |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `bootstrap_brokers_tls` | TLS bootstrap broker endpoints |
+| `bootstrap_brokers_sasl_iam` | IAM SASL bootstrap endpoints |
+| `zookeeper_connect_string` | ZooKeeper connection string |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -336,6 +355,9 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
