@@ -1,15 +1,45 @@
-![Module Structure](./static/argocd-banner.png)
+![Module Banner](./static/argocd-banner.png)
 
 # [terraform-aws-arc-argocd](https://github.com/sourcefuse/terraform-aws-arc-argocd)
+
+> **Module:** `sourcefuse/arc-argocd/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-argocd/aws](https://registry.terraform.io/modules/sourcefuse/arc-argocd/aws)
+
+> **Category:** DevOps / GitOps
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-argocd](https://github.com/sourcefuse/terraform-aws-arc-argocd)
 
 [![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-argocd.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-argocd/releases/latest)
 [![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-argocd.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-argocd/commits)
 ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-argocd&token=eaba4016b566fbd661d5446df35b82444d5309bb)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-argocd)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-argocd&token=eaba4016b566fbd661d5446df35b82444d5309bb)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-argocd)
 
 ## Overview
+
+## Architecture
+
+![Architecture Diagram](./static/arch.png)
+
+Deploys ArgoCD on an existing EKS cluster with ALB ingress, ACM certificates, Route53 DNS, and IRSA.
+
+## What It Does
+
+- ArgoCD Helm release with configurable version
+- ALB ingress with ACM certificate (auto-created or existing)
+- Route53 A record auto-creation
+- IRSA for least-privilege AWS access
+- High-availability mode with configurable replicas
+- ArgoCD Image Updater for automated image updates
+- SSO via Dex (GitHub, OIDC, SAML)
+- Repositories, projects, and applications as code
+
+For more information about this repository and its usage, please see [Terraform AWS ARGOCD Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-argocd/blob/main/docs/module-usage-guide/README.md).
+
+
 
 SourceFuse AWS Reference Architecture (ARC) Terraform module for deploying and managing ArgoCD on Amazon EKS clusters. This module provides a production-ready ArgoCD installation with comprehensive AWS service integrations, following security and operational best practices.
 
@@ -26,7 +56,7 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for deploying and m
 - **Enterprise SSO**: Dex integration for GitHub, OIDC, SAML authentication
 - **Event Notifications**: Integration with Slack, email, and webhook services
 
-## Architecture
+
 
 The module deploys the following components:
 
@@ -55,8 +85,8 @@ The module deploys the following components:
 - VPC with public subnets (for internet-facing ALB)
 - Route53 hosted zone (optional, for automatic DNS management)
 
-## Usage
 
+## Quickstart
 ### External Access (ALB + HTTPS)
 
 ```hcl
@@ -78,7 +108,7 @@ module "argocd" {
         value = "https://argocd.example.com"
       },
       {
-        name  = "configs.params.server\\.insecure"
+        name  = "configs.params.server\.insecure"
         value = "true"
       }
     ]
@@ -104,9 +134,7 @@ module "argocd" {
   }
 }
 ```
-
 ### With Existing Certificate
-
 ```hcl
 module "argocd" {
   source = "sourcefuse/arc-argocd/aws"
@@ -120,9 +148,7 @@ module "argocd" {
   }
 }
 ```
-
 ### High Availability Configuration
-
 ```hcl
 module "argocd" {
   source = "sourcefuse/arc-argocd/aws"
@@ -137,9 +163,7 @@ module "argocd" {
   }
 }
 ```
-
 ### With ArgoCD Resources (Repositories, Projects, Applications)
-
 ```hcl
 module "argocd" {
   source = "sourcefuse/arc-argocd/aws"
@@ -234,6 +258,13 @@ module "argocd" {
 }
 ```
 
+```hcl
+   module "argocd" {
+     source  = "sourcefuse/arc-argocd/aws"
+     version = "2.0.0"  # New version
+   }
+```
+
 ## Examples
 
 - [Complete Example](./examples/complete) - Full-featured deployment with all options
@@ -295,6 +326,25 @@ No modules.
 | [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
 | [aws_route53_zone.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/route53_zone) | data source |
 | [kubernetes_ingress_v1.argocd](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/data-sources/ingress_v1) | data source |
+
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace prefix for resource names |
+| `environment` | `string` | Deployment environment |
+| `eks_cluster_name` | `string` | Name of the existing EKS cluster |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `argocd_server_url` | ArgoCD UI URL |
+| `acm_certificate_arn` | ACM certificate ARN |
+| `server_iam_role_arn` | IRSA role ARN for ArgoCD server |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 ## Inputs
 
@@ -451,12 +501,11 @@ By specifying this , it will bump the version and if you dont specify this in yo
 go test
 ```
 
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
-
-This project is authored by below people
-
+This project is authored by:
 - SourceFuse ARC Team
 
-<!-- BEGIN_TF_DOCS -->
-
-<!-- END_TF_DOCS -->
