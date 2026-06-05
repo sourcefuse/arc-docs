@@ -1,11 +1,24 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-document-db](https://github.com/sourcefuse/terraform-aws-arc-document-db)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-document-db/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-document-db.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-document-db/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-document-db.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-document-db)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-document-db)
+> **Module:** `sourcefuse/arc-document-db/aws`
 
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-document-db/aws](https://registry.terraform.io/modules/sourcefuse/arc-document-db/aws)
+
+> **Category:** Database / NoSQL
+
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-document-db](https://github.com/sourcefuse/terraform-aws-arc-document-db)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-document-db.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-document-db/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-document-db.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-document-db/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-document-db)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-document-db)
 
 ## Overview
 
@@ -18,16 +31,20 @@ The SourceFuse AWS Reference Architecture (ARC) Terraform module for managing AW
 - **Backup & Recovery**: Automated backups with configurable retention periods
 - **Parameter Groups**: Custom database parameter configurations
 
-For more information about this repository and its usage, please see [Terraform AWS ARC Document DB Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-document-db/blob/main/docs/module-usage-guide/README.md).
+## What It Does
 
-## Usage
+- DocumentDB cluster with configurable instance count and class
+- Multi-AZ deployment for high availability
+- Global cluster support for cross-region replication
+- Encryption at rest and in transit
+- CloudWatch log exports (audit, profiler)
+- Automated backups with configurable retention
+- Parameter groups and custom configurations
 
-To see full examples, check out the [examples](https://github.com/sourcefuse/terraform-aws-arc-document-db/tree/main/examples) folder.
+For more information about this repository and its usage, please see [Terraform AWS DOCUMENT DB Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-document-db/blob/main/docs/module-usage-guide/README.md).
+## Quickstart
 
-
-## Examples
-
-### [Basic Cluster](https://github.com/sourcefuse/terraform-aws-arc-document-db/tree/main/examples/basic-cluster)
+[Basic Cluster](https://github.com/sourcefuse/terraform-aws-arc-document-db/tree/main/examples/basic-cluster)
 
 This example demonstrates a simple DocumentDB cluster setup with basic configuration:
 
@@ -74,7 +91,6 @@ This example shows a production-ready multi-AZ DocumentDB cluster with advanced 
 - KMS encryption with custom keys
 - CloudWatch monitoring and alarms
 - Custom parameter groups
-
 ```hcl
 module "documentdb_cluster" {
   source = "sourcefuse/arc-document-db/aws"
@@ -126,9 +142,7 @@ cluster_identifier = var.cluster_identifier
 
   tags = module.tags.tags
 }
-
 ```
-
 ### [Global Cluster Multi-Region](https://github.com/sourcefuse/terraform-aws-arc-document-db/tree/main/examples/global-cluster-multi-region)
 
 This example demonstrates a global DocumentDB cluster spanning multiple AWS regions:
@@ -138,7 +152,6 @@ This example demonstrates a global DocumentDB cluster spanning multiple AWS regi
 - Cross-region replication
 - Region-specific configurations
 - Disaster recovery setup
-
 ```hcl
 # Primary cluster in us-east-1
 module "primary_cluster" {
@@ -224,10 +237,25 @@ module "secondary_cluster" {
 
   depends_on = [module.primary_cluster]
 }
-
 ```
 
-## Features
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `cluster_identifier` | `string` | DocumentDB cluster identifier |
+| `master_username` | `string` | Master username |
+| `subnet_config` | `object` | Subnet configuration with subnet_ids |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `cluster_endpoint` | Cluster writer endpoint |
+| `cluster_reader_endpoint` | Cluster reader endpoint |
+| `cluster_arn` | Cluster ARN |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 ### Core Features
 - **DocumentDB Cluster Management**: Complete lifecycle management of DocumentDB clusters
@@ -326,6 +354,7 @@ event_subscription_config = {
   event_categories = ["backup", "failure", "maintenance"]
 }
 ```
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -518,3 +547,13 @@ Please use the [issue tracker](https://github.com/sourcefuse/terraform-aws-arc-d
 ## License
 
 Apache 2 Licensed. See [LICENSE](https://github.com/sourcefuse/terraform-aws-arc-document-db/blob/main/LICENSE) for full details.
+
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
+## Authors
+
+This project is authored by:
+- SourceFuse ARC Team
