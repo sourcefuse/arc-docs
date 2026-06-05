@@ -1,14 +1,25 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-cloudfront](https://github.com/sourcefuse/terraform-aws-arc-cloudfront)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-cloudfront/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-cloudfront.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-cloudfront/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-cloudfront.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-cloudfront/aws`
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-cloudfront)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-cloudfront)
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-cloudfront/aws](https://registry.terraform.io/modules/sourcefuse/arc-cloudfront/aws)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-refarch-cloudfront/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-cloudfront/actions/workflows/snyk.yaml)
+> **Category:** Networking / CDN
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-cloudfront](https://github.com/sourcefuse/terraform-aws-arc-cloudfront)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-cloudfront.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-cloudfront/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-cloudfront.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-cloudfront/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-cloudfront)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-cloudfront)
 
 ## Overview
+
 SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Cloudfront
 
 For more information about this repository and its usage, please see [Terraform AWS ARC CloudFront Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-cloudfront/blob/main/docs/module-usage-guide/README.md).
@@ -16,10 +27,22 @@ For more information about this repository and its usage, please see [Terraform 
 ## Usage
 
 **Important Note**: When using custom ACM certificates (`acm_details.domain_name` is set), the certificate must be created in the `us-east-1` region as required by CloudFront. If you're deploying in a different region, you'll need to configure a provider alias for `us-east-1`.
+## What It Does
 
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-cloudfront/blob/main/example/main.tf) file in the example folder.
+- S3 and custom HTTP/HTTPS origins
+- Custom cache and origin request policies
+- ACM certificate creation (must be in us-east-1)
+- Route53 alias records
+- Lambda@Edge and CloudFront Functions
+- Origin groups for failover
+- WAF web ACL association
+- Geo-restriction support
 
-``` tcl
+For more information about this repository and its usage, please see [Terraform AWS CLOUDFRONT Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-cloudfront/blob/main/docs/module-usage-guide/README.md).
+
+## Quickstart
+
+```hcl
 module "tags" {
   source  = "sourcefuse/arc-tags/aws"
   version = "1.2.3"
@@ -190,9 +213,26 @@ module "cloudfront" {
   tags = module.tags.tags
 
 }
-
-
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `aliases` | `list(string)` | FQDNs for the distribution |
+| `description` | `string` | Distribution description |
+| `default_cache_behavior` | `object` | Default cache behavior config |
+| `origins` | `list(object)` | List of origins |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `cloudfront_id` | CloudFront distribution ID |
+| `cloudfront_domain_name` | CloudFront domain name |
+| `acm_certificate_arn` | ACM certificate ARN |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -319,8 +359,11 @@ go get github.com/gruntwork-io/terratest/modules/terraform
 cd test/
 go test
 ```
+
+## Contributing
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
 
 This project is authored by:
-
 - SourceFuse ARC Team
