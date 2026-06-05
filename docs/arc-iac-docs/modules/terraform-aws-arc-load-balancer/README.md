@@ -1,78 +1,39 @@
-# terraform-aws-module-template
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
+
 # [terraform-aws-arc-load-balancer](https://github.com/sourcefuse/terraform-aws-arc-load-balancer)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-load-balancer/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-load-balancer.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-load-balancer/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-load-balancer.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-load-balancer/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-load-balancer/aws](https://registry.terraform.io/modules/sourcefuse/arc-load-balancer/aws)
+
+> **Category:** Networking / Load Balancing
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-load-balancer](https://github.com/sourcefuse/terraform-aws-arc-load-balancer)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-load-balancer.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-load-balancer/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-load-balancer.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-load-balancer/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-load-balancer&token=6306baee2d5d0acf189ee2eecd9a6d354522c0b5)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-load-balancer)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-load-balancer/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-load-balancer/actions/workflows/snyk.yaml)
-
 ## Overview
 
-This Terraform module provisions and configures an AWS Load Balancer (ALB/NLB) along with related resources such as target groups, listeners, listener rules, security groups, and logging configurations. It is designed for high availability, security, and scalability while allowing flexibility for integration with existing AWS infrastructure.
+Creates Application Load Balancers (ALB) or Network Load Balancers (NLB) with listeners, target groups, listener rules, and security groups.
 
-### Features
+## What It Does
 
-- Load Balancer
+- ALB and NLB support
+- HTTPS and HTTP listeners with SSL certificates
+- Target groups with health check configuration
+- Listener rules with path-based and host-based routing
+- Security groups with configurable rules
+- Access logging to S3
+- Deletion protection
 
-- Supports Application Load Balancer (ALB) and Network Load Balancer (NLB)
+For more information about this repository and its usage, please see [Terraform AWS LOAD BALANCER Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-load-balancer/blob/main/docs/module-usage-guide/README.md).
 
-- Option for internal or external load balancer
-
-- Supports IPv4 and IPv6 addressing
-
-- Cross-zone load balancing for improved traffic distribution
-
-- Deletion protection to prevent accidental removal
-
-### Security and Access Control
-
-- Ability to attach security groups dynamically
-
-- Trust store support for managing client authentication securely
-
-### Target Groups & Attachments
-
-- Dynamic target group creation for EC2 instances, Lambda functions, or IP addresses
-
-- Supports stickiness policies for session persistence
-
-- Configurable health checks to monitor target availability
-
-- DNS failover & unhealthy state routing for improved reliability
-
-- Target failover handling for high availability
-
-### Logging and Monitoring
-
-- Access logging to Amazon S3 for audit and compliance
-
-- Connection logs to track network-level traffic
-
-### Listener & Listener Rules
-
-- Supports HTTP, HTTPS, TCP, and UDP listeners
-
-- Configurable SSL/TLS certificates for secure traffic
-
-- OIDC and Cognito authentication for secure access control
-
-- Supports redirect, fixed response, and forward actions
-
-### Custom Configurations
-
-- Subnet mappings to control network placement
-
-- Fine-grained control over timeouts, session stickiness, and routing policies
-
-- Weighted target group routing for intelligent traffic distribution
-
-
-
-## Usage
-
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.  
+## Quickstart
 
 ```hcl
 ################################################################################
@@ -111,6 +72,24 @@ module "nlb" {
   tags                           = module.tags.tags
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `load_balancer_config` | `object` | Load balancer name, type, and subnet config |
+| `vpc_id` | `string` | VPC ID |
+| `tags` | `map(string)` | Resource tags |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `lb_arn` | Load balancer ARN |
+| `lb_dns_name` | Load balancer DNS name |
+| `target_group_arns` | Map of target group ARNs |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -224,6 +203,10 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
