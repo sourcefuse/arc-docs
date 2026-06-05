@@ -1,29 +1,38 @@
-![Module Structure](./static/terraform-aws-arc-network-firewall.png)
+![Module Banner](./static/terraform-aws-arc-network-firewall.png)
 
 # [terraform-aws-arc-network-firewall](https://github.com/sourcefuse/terraform-aws-arc-network-firewall)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-network-firewall/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-network-firewall.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-network-firewall/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-network-firewall.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-network-firewall/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-network-firewall/aws](https://registry.terraform.io/modules/sourcefuse/arc-network-firewall/aws)
+
+> **Category:** Networking / Security
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-network-firewall](https://github.com/sourcefuse/terraform-aws-arc-network-firewall)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-network-firewall.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-network-firewall/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-network-firewall.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-network-firewall/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-network-firewall&token=50e6ee25f84e3f8c4a858442d123b2942008e212)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-network-firewall)
 
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing the AWS Network Firewall module.
+Creates AWS Network Firewall with stateless and stateful rule groups, firewall policies, and logging configuration.
 
-## Features
+## What It Does
 
-- **Flexible Deployment**: Support for both VPC-attached and Transit Gateway-attached firewalls
-- **Comprehensive Rule Support**: Stateful and stateless rule groups with Suricata compatibility
-- **Advanced Logging**: CloudWatch Logs, S3, and Kinesis Data Firehose integration
-- **Security Best Practices**: Encryption, tagging, and protection settings
-- **High Availability**: Multi-AZ deployment support
-- **Policy Management**: Custom and AWS managed rule groups
-- **Conditional Resources**: Smart resource creation based on configuration
-- **Production Ready**: Comprehensive validation and error handling
+- Network Firewall with configurable VPC and subnets
+- Stateless rule groups for fast packet filtering
+- Stateful rule groups (Suricata-compatible rules)
+- Firewall policy with default actions
+- CloudWatch and S3 logging for flow and alert logs
+- Domain-based filtering with stateful rules
 
-## Usage
+For more information about this repository and its usage, please see [Terraform AWS NETWORK FIREWALL Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-network-firewall/blob/main/docs/module-usage-guide/README.md).
 
-### Basic Firewall
+## Quickstart
 
 ```hcl
 module "network_firewall" {
@@ -49,6 +58,7 @@ module "network_firewall" {
   }
 }
 ```
+
 ### Transit Gateway-Attached Firewall
 
 ```hcl
@@ -122,28 +132,23 @@ module "network_firewall" {
 }
 ```
 
-## Examples
+## Required Inputs
 
-The `examples/` directory contains complete, working examples:
+| Name | Type | Description |
+|------|------|-------------|
+| `name` | `string` | Firewall name |
+| `vpc_id` | `string` | VPC ID |
+| `subnet_ids` | `list(string)` | Subnet IDs for firewall endpoints |
+| `firewall_policy_config` | `object` | Firewall policy configuration |
+## Key Outputs
 
-- **[basic-firewall](./examples/basic-firewall/)**: Simple VPC-attached firewall with minimal configuration
-- **[firewall-with-rule-groups](./examples/firewall-with-rule-groups/)**: Advanced firewall with custom stateful/stateless rules
-- **[firewall-with-logging](./examples/firewall-with-logging/)**: Comprehensive logging configuration
-- **[firewall-with-resource-policy](./examples/firewall-with-resource-policy/)**: Firewall with cross-account resource policy
-- **[firewall-with-rule-group-policies](./examples/firewall-with-rule-group-policies/)**: Firewall with resource policies for rule groups
-- **[firewall-with-tls-inspection](./examples/firewall-with-tls-inspection/)**: Basic TLS inspection configuration
-- **[advanced-tls-inspection](./examples/advanced-tls-inspection/)**: Advanced TLS inspection with multiple certificates and KMS
-- **[transit-gateway-firewall](./examples/transit-gateway-firewall/)**: Transit Gateway-attached firewall
+| Name | Description |
+|------|-------------|
+| `firewall_arn` | Network Firewall ARN |
+| `firewall_status` | Firewall sync states per AZ |
+## Full Variable & Output Reference
 
-## Security Best Practices
-
-- **Encryption**: Use customer-managed KMS keys for encryption at rest
-- **Logging**: Enable comprehensive logging for security monitoring
-- **Protection Settings**: Enable all protection mechanisms in production
-- **Rule Ordering**: Use STRICT_ORDER for deterministic rule evaluation
-- **Least Privilege**: Apply minimal required permissions for IAM roles
-- **Tagging**: Implement consistent tagging for resource management
-
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -231,3 +236,11 @@ The `examples/` directory contains complete, working examples:
 | <a name="output_update_token"></a> [update\_token](#output\_update\_token) | Update token of the rule group |
 | <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | The VPC ID where the firewall is deployed |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+
+## Contributing
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
+## Authors
+This project is authored by:
+- SourceFuse
