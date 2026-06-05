@@ -1,45 +1,40 @@
-![Module Structure](./static/sagemaker-banner.png)
-# AWS SageMaker Terraform Module
+![Module Banner](./static/sagemaker-banner.png)
+
 # [terraform-aws-arc-sagemaker](https://github.com/sourcefuse/terraform-aws-arc-sagemaker)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-sagemaker/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-sagemaker.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-sagemaker/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-sagemaker.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-sagemaker/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-sagemaker/aws](https://registry.terraform.io/modules/sourcefuse/arc-sagemaker/aws)
+
+> **Category:** AI / Machine Learning
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-sagemaker](https://github.com/sourcefuse/terraform-aws-arc-sagemaker)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-sagemaker.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-sagemaker/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-sagemaker.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-sagemaker/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-sagemaker&token=593eae6b5a514b62b2c08871c2f608e4ce172ec5)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-sagemaker)
 
-
 ## Overview
 
-The ARC Terraform module provides a robust and fully extensible solution for managing SageMaker Studio domains, user profiles, models, endpoint, endpoint configurations, and pipelines. It supports custom app settings, and VPC integration to meet enterprise-grade machine learning needs. With dynamic configurations and secure defaults, the module enables rapid, consistent, and scalable SageMaker infrastructure provisioning using best practices.
+Creates SageMaker domains, models, endpoint configurations, endpoints, notebooks, and training jobs with IAM roles and VPC configuration.
 
-### Prerequisites
-Before using this module, ensure you have the following:
+## What It Does
 
-- AWS credentials configured.
-- Terraform installed.
-- A working knowledge of Terraform.
+- SageMaker Domain for Studio users
+- Model creation with primary container configuration
+- Endpoint configuration with production variants
+- Real-time inference endpoints
+- Notebook instances
+- Training job definitions
+- IAM execution roles with S3 and ECR access
+- VPC configuration for private endpoints
 
-## Getting Started
+For more information about this repository and its usage, please see [Terraform AWS Sagemaker Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-sagemaker/blob/main/docs/module-usage-guide/README.md).
 
-1. **Define the Module**
-
-Initially, it's essential to define a Terraform module, which is organized as a distinct directory encompassing Terraform configuration files. Within this module directory, input variables and output values must be defined in the variables.tf and outputs.tf files, respectively. The following illustrates an example directory structure:
-
-
-
-```plaintext
-sagemaker/
-|-- main.tf
-|-- variables.tf
-|-- outputs.tf
-```
-
-
-2. **Define Input Variables**
-
-Inside the `variables.tf` or in `*.tfvars` file, you should define values for the variables that the module requires.
-
-3. **Use the Module in Your Main Configuration**
-In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
+## Quickstart
 
 ```hcl
 module "sagemaker_model" {
@@ -69,80 +64,21 @@ module "sagemaker_model" {
 }
 ```
 
-4. **Output Values**
+## Required Inputs
 
-Inside the `outputs.tf` file of the module, you can define output values that can be referenced in the main configuration. For example:
+| Name | Type | Description |
+|------|------|-------------|
+| `name` | `string` | SageMaker resource name prefix |
+## Key Outputs
 
-```hcl
-output "model_name" {
-  description = "Name of the SageMaker model"
-  value       = module.sagemaker_model.model_name
-}
+| Name | Description |
+|------|-------------|
+| `endpoint_name` | SageMaker endpoint name |
+| `endpoint_arn` | SageMaker endpoint ARN |
+| `model_arn` | SageMaker model ARN |
+## Full Variable & Output Reference
 
-output "model_arn" {
-  description = "ARN of the SageMaker model"
-  value       = module.sagemaker_model.model_arn
-}
-
-output "endpoint_config_arn" {
-  description = "ARN of the SageMaker endpoint configuration"
-  value       = module.sagemaker_model.endpoint_config_arn
-}
-
-```
-
-5. **.tfvars**
-
-Inside the `.tfvars` file of the module, you can provide desired values that can be referenced in the main configuration.
-
-
-## First Time Usage
-***uncomment the backend block in [main.tf](./examples/endpoint//main.tf)***
-```shell
-terraform init -backend-config=config.dev.hcl
-```
-***If testing locally, `terraform init` should be fine***
-
-Create a `dev` workspace
-```shell
-terraform workspace new dev
-```
-
-Plan Terraform
-```shell
-terraform plan -var-file dev.tfvars
-```
-
-Apply Terraform
-```shell
-terraform apply -var-file dev.tfvars
-```
-
-## Production Setup
-```shell
-terraform init -backend-config=config.prod.hcl
-```
-
-Create a `prod` workspace
-```shell
-terraform workspace new prod
-```
-
-Plan Terraform
-```shell
-terraform plan -var-file prod.tfvars
-```
-
-Apply Terraform
-```shell
-terraform apply -var-file prod.tfvars  
-```
-
-## Cleanup  
-Destroy Terraform
-```shell
-terraform destroy -var-file dev.tfvars
-```
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -299,6 +235,10 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
