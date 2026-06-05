@@ -1,48 +1,38 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
-# [terraform-aws-refarch-healthcheck](https://github.com/sourcefuse/terraform-aws-refarch-healthcheck)
+# [terraform-aws-arc-healthcheck](https://github.com/sourcefuse/terraform-aws-arc-healthcheck)
 
-<a href="https://github.com/sourcefuse/terraform-aws-refarch-healthcheck/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-refarch-healthcheck.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-refarch-healthcheck/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-refarch-healthcheck.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-healthcheck/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-healthcheck/aws](https://registry.terraform.io/modules/sourcefuse/arc-healthcheck/aws)
+
+> **Category:** Observability / Monitoring
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-healthcheck](https://github.com/sourcefuse/terraform-aws-arc-healthcheck)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-healthcheck.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-healthcheck/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-healthcheck.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-healthcheck/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-healthcheck)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-healthcheck)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-refarch-healthcheck/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-healthcheck/actions/workflows/snyk.yaml)
+## Overview
 
-## Introduction
+Creates Route53 health checks with CloudWatch alarms and SNS notifications for endpoint availability monitoring.
 
-The SourceFuse AWS Reference Architecture (ARC) Terraform module facilitates endpoint health checks using Route53, enabling automated monitoring and management of endpoint health within AWS infrastructures for enhanced reliability and availability.
+## What It Does
 
-### Prerequisites
-Before using this module, ensure you have the following:
+- Route53 HTTP/HTTPS/TCP health checks
+- Configurable failure threshold and request interval
+- Latency measurement
+- String matching in response body
+- CloudWatch alarm on health check status
+- SNS notification on alarm state change
 
-- AWS credentials configured.
-- Terraform installed.
-- A working knowledge of Terraform.
+## Quickstart
 
-
-## Getting Started
-
-1. **Define the Module**
-
-Initially, it's essential to define a Terraform module, which is organized as a distinct directory encompassing Terraform configuration files. Within this module directory, input variables and output values must be defined in the variables.tf and outputs.tf files, respectively. The following illustrates an example directory structure:
-
-
-```plaintext
-healthcheck/
-|-- main.tf
-|-- variables.tf
-|-- outputs.tf
-```
-
-2. **Define Input Variables**
-
-Inside the `variables.tf` or in `*.tfvars` file, you should define values for the variables that the module requires.
-
-3. **Use the Module in Your Main Configuration**
-In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
-
-``` hcl
-
+```hcl
 module "health_check" {
  source  = "sourcefuse/arc-healthcheck/aws"
   version = "0.0.3"
@@ -59,30 +49,7 @@ module "health_check" {
   alarm_endpoint    = var.alarm_endpoint
 
 }
-
 ```
-
-4. **Output Values**
-
-Inside the `outputs.tf` file of the module, you can define output values that can be referenced in the main configuration. For example:
-
-```hcl
-
-output "cloudwatch_alarm_arn" {
-  value       = aws_cloudwatch_metric_alarm.this.arn
-}
-
-output "route53_health_check_arn" {
-  value       = aws_route53_health_check.this.arn
-}
-
-```
-
-5. **.tfvars**
-
-Inside the `.tfvars` file of the module, you can provide desired values that can be referenced in the main configuration. For example:
-
-Edit the [dev.tfvars](./example/dev.tfvars) file and provide desired values.  
 
 ```hcl
 region      = "us-east-1"
@@ -102,54 +69,23 @@ alarm_endpoint    = "https://api.opsgenie.com/v1/json/cloudwatch?apiKey=xxxxx-xx
 
 
 ```
+## Required Inputs
 
-## First Time Usage
-***uncomment the backend block in [main.tf](./example/main.tf)***
-```shell
-terraform init -backend-config=config.dev.hcl
-```
-***If testing locally, `terraform init` should be fine***
+| Name | Type | Description |
+|------|------|-------------|
+| `name` | `string` | Health check name |
+| `domain_name` | `string` | Domain to monitor |
+| `type` | `string` | Health check type: HTTP, HTTPS, or TCP |
+| `alarm_endpoint` | `string` | SNS topic ARN for alarm notifications |
+## Key Outputs
 
-Create a `dev` workspace
-```shell
-terraform workspace new dev
-```
+| Name | Description |
+|------|-------------|
+| `health_check_id` | Route53 health check ID |
+| `cloudwatch_alarm_arn` | CloudWatch alarm ARN |
+## Full Variable & Output Reference
 
-Plan Terraform
-```shell
-terraform plan -var-file dev.tfvars
-```
-
-Apply Terraform
-```shell
-terraform apply -var-file dev.tfvars
-```
-
-## Production Setup
-```shell
-terraform init -backend-config=config.prod.hcl
-```
-
-Create a `prod` workspace
-```shell
-terraform workspace new prod
-```
-
-Plan Terraform
-```shell
-terraform plan -var-file prod.tfvars
-```
-
-Apply Terraform
-```shell
-terraform apply -var-file prod.tfvars  
-```
-
-## Cleanup  
-Destroy Terraform
-```shell
-terraform destroy -var-file dev.tfvars  
-```
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -254,6 +190,10 @@ go get github.com/gruntwork-io/terratest/modules/terraform
 ```shell
 pre-commit run -a
 ```
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
 
 This project is authored by:
