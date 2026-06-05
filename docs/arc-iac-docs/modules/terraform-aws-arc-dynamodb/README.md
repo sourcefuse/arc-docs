@@ -1,34 +1,41 @@
-![Module Logo](./static/terraform-aws-arc-dynamodb.png)
+![Module Banner](./static/terraform-aws-arc-dynamodb.png)
 
 # [terraform-aws-arc-dynamodb](https://github.com/sourcefuse/terraform-aws-arc-dynamodb)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-dynamodb/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-dynamodb.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-dynamodb/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-dynamodb.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+> **Module:** `sourcefuse/arc-dynamodb/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-dynamodb/aws](https://registry.terraform.io/modules/sourcefuse/arc-dynamodb/aws)
+
+> **Category:** Database / NoSQL
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-dynamodb](https://github.com/sourcefuse/terraform-aws-arc-dynamodb)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-dynamodb.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-dynamodb/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-dynamodb.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-dynamodb/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-dynamodb&token=15abaa99afec2eb3d56c7793f74ab85043345289)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-dynamodb)
-
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-dynamodb&token=15abaa99afec2eb3d56c7793f74ab85043345289)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-dynamodb)
 
 ## Overview
 
 SourceFuse AWS Arc DynamoDB Terraform module provides comprehensive configuration for AWS DynamoDB tables with support for all major features including Global Tables, autoscaling, streams, encryption, and backup management.
 
-## Features
+## What It Does
 
-- **Flexible Billing Models**: Support for both provisioned and pay-per-request billing modes
-- **Index Management**: Complete support for Global Secondary Indexes (GSI) and Local Secondary Indexes (LSI)
-- **Autoscaling**: Automatic capacity scaling for both table and GSI read/write operations
-- **Global Tables**: Multi-region replication support for globally distributed applications
-- **Data Streams**: DynamoDB Streams configuration for real-time data processing
-- **Advanced Security**: Server-side encryption with customer-managed or AWS-managed keys
-- **Backup & Recovery**: Point-in-time recovery and automated backup management
-- **Monitoring**: CloudWatch contributor insights and comprehensive metrics
-- **Data Import**: Support for importing data from S3 with multiple formats
-- **TTL Management**: Time-to-live configuration for automatic item expiration
-- **Flexible Storage Classes**: Support for Standard and Standard-IA storage classes
+- Provisioned and on-demand billing modes
+- Global Secondary Indexes (GSI) and Local Secondary Indexes (LSI)
+- Read/write autoscaling for table and GSIs
+- Global Tables for multi-region replication
+- DynamoDB Streams for real-time processing
+- Server-side encryption with CMK or AWS-managed keys
+- Point-in-time recovery and automated backups
+- TTL for automatic item expiration
 
-## Usage
+For more information about this repository and its usage, please see [Terraform AWS DYNAMODB DB Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-dynamodb/blob/main/docs/module-usage-guide/README.md).
 
-### Basic Example
+## Quickstart
 
 ```hcl
 module "dynamodb_table" {
@@ -151,9 +158,7 @@ module "dynamodb_table" {
   }
 }
 ```
-
 ### Serverless (Pay-per-Request) Example
-
 ```hcl
 module "dynamodb_table" {
   source = "sourcefuse/arc-dynamodb/aws"
@@ -203,7 +208,6 @@ module "dynamodb_table" {
 }
 ```
 ### Global Tables (Pay-per-Request) Example
-
 ```hcl
 module "dynamodb_table" {
   source = "sourcefuse/arc-dynamodb/aws"
@@ -260,9 +264,23 @@ module "dynamodb_table" {
 }
 ```
 
-## Examples
+## Required Inputs
 
-To view examples for how you can leverage this module, please see the [examples](https://github.com/sourcefuse/terraform-aws-arc-dynamodb/tree/main/examples) directory.
+| Name | Type | Description |
+|------|------|-------------|
+| `table_name` | `string` | DynamoDB table name |
+| `hash_key` | `string` | Partition key attribute name |
+| `attributes` | `list(object)` | Attribute definitions (name + type) |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `table_id` | DynamoDB table ID |
+| `table_arn` | DynamoDB table ARN |
+| `stream_arn` | DynamoDB stream ARN (if enabled) |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -411,7 +429,11 @@ By specifying this , it will bump the version and if you don't specify this in y
   go test
   ```
 
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
 
 This project is authored by:
-- SourceFuse
+- SourceFuse ARC Team
