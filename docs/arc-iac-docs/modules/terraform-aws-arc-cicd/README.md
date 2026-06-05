@@ -1,48 +1,41 @@
+
+
 # [terraform-aws-arc-cicd](https://github.com/sourcefuse/terraform-aws-arc-cicd)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-cicd/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-cicd.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-cicd/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-cicd.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-cicd/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-cicd/aws](https://registry.terraform.io/modules/sourcefuse/arc-cicd/aws)
+
+> **Category:** DevOps / CI/CD
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-cicd](https://github.com/sourcefuse/terraform-aws-arc-cicd)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-cicd.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-cicd/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-cicd.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-cicd/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-cicd&token=b697edbb45222daad2f3184fdb06b908aec00460)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-cicd)
 
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-cicd&token=b697edbb45222daad2f3184fdb06b908aec00460)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-cicd)
-
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-cicd/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-cicd/actions/workflows/snyk.yaml)
 ## Overview
 
-For more information about this repository and its usage, please see [Terraform AWS ARC GitHub CICD Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-cicd/blob/main/docs/module-usage-guide/README.md).
+Creates AWS CodePipeline and CodeBuild projects for application and Terraform deployments, with optional Slack notifications via AWS Chatbot.
 
-## Introduction
-
-SourceFuse's AWS Reference Architecture (ARC) Terraform module automates the creation of AWS CodePipeline and CodeBuild projects, facilitating the build and deployment of both application code and Terraform modules. By defining reusable CodeBuild projects, it ensures consistent and efficient build processes that can be shared across multiple CodePipelines. This approach promotes standardization and reduces redundancy in the CI/CD pipeline configuration.
-
-### Prerequisites
-Before using this module, ensure you have the following:
-
-- AWS credentials configured.
-- Terraform installed.
-- A working knowledge of Terraform.
-
-## Getting Started
-
-1. **Define the Module**
-
-Initially, it's essential to define a Terraform module, which is organized as a distinct directory encompassing Terraform configuration files. Within this module directory, input variables and output values must be defined in the variables.tf and outputs.tf files, respectively. The following illustrates an example directory structure:
+![Module Banner](./static/multi-account-cicd.png)
 
 
+## What It Does
 
-```plaintext
-billing/
-|-- main.tf
-|-- variables.tf
-|-- outputs.tf
-```
+- CodePipeline with GitHub source via CodeStar connection
+- Reusable CodeBuild projects (Terraform plan/apply, app build)
+- IAM roles with least-privilege policies
+- AWS Chatbot Slack integration for pipeline notifications
+- Manual approval stages support
 
+For more information about this repository and its usage, please see [Terraform AWS CICD Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-cicd/blob/main/docs/module-usage-guide/README.md)
 
-2. **Define Input Variables**
-
-Inside the `variables.tf` or in `*.tfvars` file, you should define values for the variables that the module requires.
-
-3. **Use the Module in Your Main Configuration**
-In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
+## Quickstart
 
 ```hcl
 module "pipelines" {
@@ -60,20 +53,7 @@ module "pipelines" {
 }
 ```
 
-4. **Output Values**
-
-Inside the `outputs.tf` file of the module, you can define output values that can be referenced in the main configuration. For example:
-
-```hcl
-output "chatbot_sns_arns" {
-  description = "SNS topics created by AWS Chatbot"
-  value       = module.example.chatbot_sns_arns
-}
-
-
-```
-
-5. **.tfvars**
+## .tfvars
 
 Inside the `.tfvars` file of the module, you can provide desired values that can be referenced in the main configuration. For example:
 
@@ -338,6 +318,21 @@ Destroy Terraform
 ```shell
 terraform destroy -var-file dev.tfvars
 ```
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `artifacts_bucket` | `string` | S3 bucket for pipeline artifacts |
+| `codestar_connection` | `string` | CodeStar connection name for GitHub |
+| `tags` | `map(string)` | Resource tags |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `chatbot_sns_arns` | SNS topic ARNs integrated with AWS Chatbot |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -430,7 +425,11 @@ By specifying this , it will bump the version and if you dont specify this in yo
   go test -timeout  30m
   ```
 
+
+## Contributing
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
 
 This project is authored by:
-- SourceFuse
+- SourceFuse ARC Team
