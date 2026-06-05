@@ -10,7 +10,7 @@ This document provides guidelines and instructions for users looking to implemen
 
 The [Terraform AWS ARC EKS](https://github.com/sourcefuse/terraform-aws-arc-eks) module provides a secure and modular foundation for deploying EKS clusters on AWS.
 
-![arc_eks_hla](./static/arc_eks_hla.png)
+![arc_eks_hla](https://github.com/sourcefuse/terraform-aws-arc-eks/blob/feat/readme-update/static/arc_eks_hla.png)
 
 ### Prerequisites
 
