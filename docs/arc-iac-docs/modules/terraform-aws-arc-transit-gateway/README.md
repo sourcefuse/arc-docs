@@ -1,22 +1,80 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
+
 # [terraform-aws-arc-transit-gateway](https://github.com/sourcefuse/terraform-aws-arc-transit-gateway)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-transit-gateway/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-transit-gateway.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-transit-gateway/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-transit-gateway.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-transit-gateway/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-transit-gateway/aws](https://registry.terraform.io/modules/sourcefuse/arc-transit-gateway/aws)
+
+> **Category:** Networking / Transit
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-transit-gateway](https://github.com/sourcefuse/terraform-aws-arc-transit-gateway)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-transit-gateway.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-transit-gateway/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-transit-gateway.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-transit-gateway/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-transit-gateway&token=c95b7f9cb578b46e7138ef493c1b6a8df8fe4442)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-transit-gateway)
-
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-transit-gateway/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-transit-gateway/actions/workflows/snyk.yaml)
-
 
 
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Transit Gateway Terraform module provides a robust solution for managing complex network architectures within AWS. This module simplifies the creation, configuration, and management of AWS Transit Gateway, VPC attachments, and routing between VPCs. It ensures efficient network integration and connectivity across multiple AWS accounts by leveraging AWS best practices and conditional resource creation, making it ideal for scalable and flexible network solutions.
+Creates AWS Transit Gateway with VPC attachments, route table associations, and cross-account sharing via Resource Access Manager.
 
-## Usage
+## Architecture
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.  
+![Architecture Diagram](./static/arch.png)
 
+## What It Does
+
+- Transit Gateway with configurable ASN and routing options
+- VPC attachments with subnet configuration
+- Route table associations and propagations
+- Cross-account sharing via AWS RAM
+- Static routes for custom routing
+- DNS support and multicast configuration
+
+## Quickstart
+
+```hcl
+module "tgw" {
+  source  = "sourcefuse/arc-transit-gateway/aws"
+  version = "1.0.0"
+
+  namespace   = "myapp"
+  environment = "prod"
+
+  create_transit_gateway = true
+  transit_gateway_name   = "myapp-prod-tgw"
+
+  vpc_attachments = {
+    "spoke-vpc" = {
+      vpc_id     = data.aws_vpc.spoke.id
+      subnet_ids = data.aws_subnets.private.ids
+    }
+  }
+
+  tags = { Environment = "prod" }
+}
+```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace prefix |
+| `environment` | `string` | Deployment environment |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `transit_gateway_id` | Transit Gateway ID |
+| `transit_gateway_arn` | Transit Gateway ARN |
+| `vpc_attachment_ids` | Map of VPC attachment IDs |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -143,6 +201,10 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
