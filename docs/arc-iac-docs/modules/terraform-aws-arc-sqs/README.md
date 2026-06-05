@@ -1,28 +1,37 @@
-![Module Structure](./static/sqs.png)
+![Module Banner](./static/sqs.png)
 
 # [terraform-aws-arc-sqs](https://github.com/sourcefuse/terraform-aws-arc-sqs)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-sqs/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-sqs.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-sqs/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-sqs.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-sqs/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-sqs/aws](https://registry.terraform.io/modules/sourcefuse/arc-sqs/aws)
+
+> **Category:** Messaging / Queuing
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-sqs](https://github.com/sourcefuse/terraform-aws-arc-sqs)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-sqs.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-sqs/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-sqs.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-sqs/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-sqs&token=750e4168aaefa037a02d4ec0fc1fb2cf422b73e8)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-sqs)
 
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Amazon SQS queues with enterprise-grade features and security best practices.
+Creates SQS queues (standard or FIFO) with dead letter queues, KMS encryption, access policies, and long polling.
 
-## Features
+## What It Does
 
-- **Multiple Queue Types**: Support for both Standard and FIFO queues with comprehensive configuration options
-- **Dead Letter Queue Support**: Automatic DLQ provisioning with configurable retry policies for reliable message handling
-- **Flexible Encryption**: Choice between SQS-managed SSE or customer-managed KMS encryption with automatic key rotation
-- **Message Configuration**: Fine-grained control over retention, visibility timeouts, delays, and long polling
-- **Queue Policies**: Integrated IAM policy management with support for cross-account and service access patterns
-- **High Throughput FIFO**: Advanced FIFO configurations with per-message-group throughput and deduplication scopes
-- **Modular Design**: Integrates seamlessly with other SourceFuse ARC modules (SNS, KMS, Tags)
+- Standard and FIFO SQS queues
+- Dead letter queue (DLQ) with configurable max receive count
+- KMS encryption for messages at rest
+- Long polling configuration
+- Visibility timeout and message retention settings
+- Queue access policy management
+- Content-based deduplication for FIFO queues
 
-## Usage
-
-See the [examples](./examples/) directory for full examples.
+## Quickstart
 
 ```hcl
 module "sqs" {
@@ -59,56 +68,22 @@ module "sqs" {
 
 For detailed usage instructions, see the [Module Usage Guide](./docs/module-usage-guide/README.md).
 
-## Versioning
 
-This project uses a `.version` file at the root. Increment this version before committing to `main`. The pipeline will automatically tag the commit.
+## Required Inputs
 
-## Development
+| Name | Type | Description |
+|------|------|-------------|
+| `name` | `string` | SQS queue name |
+## Key Outputs
 
-### Prerequisites
+| Name | Description |
+|------|-------------|
+| `queue_url` | SQS queue URL |
+| `queue_arn` | SQS queue ARN |
+| `dlq_arn` | Dead letter queue ARN (if enabled) |
+## Full Variable & Output Reference
 
-- [terraform](https://learn.hashicorp.com/terraform/getting-started/install#installing-terraform)
-- [terraform-docs](https://github.com/segmentio/terraform-docs)
-- [pre-commit](https://pre-commit.com/#install)
-- [golang](https://golang.org/doc/install#install)
-- [golint](https://github.com/golang/lint#installation)
-
-### Configurations
-
-- Configure pre-commit hooks
-  ```sh
-  pre-commit install
-  ```
-
-### Versioning
-
-Specify the version bump in commit messages using `#major`, `#minor`, or `#patch`.
-
-Example:
-
-```sh
-git commit -m "your commit message #major"
-```
-
-Default: `#patch`
-
-### Tests
-- Tests are available in `test` directory
-- Configure the dependencies
-  ```sh
-  cd test/
-  go mod init github.com/sourcefuse/terraform-aws-arc-sqs
-  go get github.com/gruntwork-io/terratest/modules/terraform
-  ```
-- Now execute the test
-  ```sh
-  go test -timeout  30m
-  ```
-
-## Authors
-
-This project is authored by:
-- SourceFuse ARC Team
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -172,3 +147,10 @@ This project is authored by:
 | <a name="output_queue_policy"></a> [queue\_policy](#output\_queue\_policy) | The JSON policy of the SQS queue |
 | <a name="output_queue_url"></a> [queue\_url](#output\_queue\_url) | Same as `queue_id`: The URL for the created Amazon SQS queue |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+## Contributing
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
+## Authors
+This project is authored by:
+- SourceFuse
