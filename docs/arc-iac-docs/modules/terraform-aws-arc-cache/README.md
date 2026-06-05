@@ -1,14 +1,22 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-cache](https://github.com/sourcefuse/terraform-aws-arc-cache)
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-cache/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-cache.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-cache/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-cache.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-cache/aws`
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-cache&token=bcaee4bc307204787c5256ab3fb7f3454a84c169)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-cache)
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-cache/aws](https://registry.terraform.io/modules/sourcefuse/arc-cache/aws)
 
+> **Category:** Database / Caching
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-cache](https://github.com/sourcefuse/terraform-aws-arc-cache)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-cache.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-cache/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-cache.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-cache/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-cache&token=bcaee4bc307204787c5256ab3fb7f3454a84c169)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-cache)
 
 ## Overview
 
@@ -27,6 +35,19 @@ SourceFuse's AWS Reference Architecture (ARC) Terraform module for managing Elas
 ## Usage
 
 To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.  
+
+## What It Does
+
+- ElastiCache Redis replication group (single or multi-node)
+- Cluster mode with sharding support
+- At-rest and in-transit encryption
+- Auth token stored in SSM Parameter Store
+- CloudWatch CPU and memory alarms
+- Log delivery to CloudWatch Logs or Kinesis Firehose
+
+For more information about this repository and its usage, please see [Terraform AWS CACHE Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-cache/blob/main/docs/module-usage-guide/README.md).
+
+## Quickstart
 
 ```hcl
 module "elasticacheredis" {
@@ -49,6 +70,25 @@ module "elasticacheredis" {
 
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `name` | `string` | Name of the ElastiCache cluster |
+| `vpc_id` | `string` | VPC ID |
+| `subnet_ids` | `list(string)` | Private subnet IDs |
+| `tags` | `map(string)` | Resource tags |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `id` | Replication group ID |
+| `primary_endpoint_address` | Primary endpoint address |
+| `arn` | Replication group ARN |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -197,29 +237,12 @@ By specifying this , it will bump the version and if you don't specify this in y
   go test -timeout  30m
   ```
 
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
 
 This project is authored by:
 - SourceFuse ARC Team
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mayank0202"><img src="https://avatars.githubusercontent.com/u/83959396?v=4?s=100" width="100px;" alt="Mayank Sharma"/><br /><sub><b>Mayank Sharma</b></sub></a><br /><a href="https://github.com/sourcefuse/terraform-aws-arc-cache/commits?author=mayank0202" title="Code">💻</a> <a href="#mentoring-mayank0202" title="Mentoring">🧑‍🏫</a> <a href="#maintenance-mayank0202" title="Maintenance">🚧</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
