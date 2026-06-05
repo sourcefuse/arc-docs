@@ -1,15 +1,22 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-eks](https://github.com/sourcefuse/terraform-aws-arc-eks)
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-eks/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-eks.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-eks/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-eks.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-eks/aws`
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-eks)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-eks)
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-eks/aws](https://registry.terraform.io/modules/sourcefuse/arc-eks/aws)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-ref-arch-eks/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-ref-arch-eks/actions/workflows/snyk.yaml)
+> **Category:** Containers / Kubernetes
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-eks](https://github.com/sourcefuse/terraform-aws-arc-eks)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-eks.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-eks/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-eks.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-eks/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-eks)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-eks)
 
 ## Overview
 
@@ -33,6 +40,24 @@ For more information about this repository and its usage, please see [Terraform 
 
 ## Usage
 See `examples` directory for usage  examples, including configurations for `auto-mode`, `fargate-profile`, `karpenter`, `nodegroup`, and `eks-capabilities`. Below is the example for a simple EKS cluster creation.
+
+## What It Does
+
+- EKS control plane with configurable Kubernetes version
+- Managed node groups and Fargate profiles
+- EKS Auto Mode for simplified node management
+- Karpenter for flexible pod-driven autoscaling
+- OIDC provider for IRSA
+- Envelope encryption with KMS
+- VPC and security group configuration
+- ArgoCD, ACK, and KRO capability support
+
+
+For more information about this repository and its usage, please see [Terraform AWS EKS Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-eks/blob/main/docs/module-usage-guide/README.md).
+
+
+## Quickstart
+
 ```hcl
 module "eks_cluster" {
   source                    = "sourcefuse/arc-eks/aws"
@@ -48,9 +73,6 @@ module "eks_cluster" {
   kubernetes_network_config = local.kubernetes_network_config
 }
 ```
-
-
-
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
@@ -151,7 +173,18 @@ module "eks_cluster" {
 | <a name="input_upgrade_policy"></a> [upgrade\_policy](#input\_upgrade\_policy) | (optional) Support type to use for the cluster. If the cluster is set to EXTENDED, it will enter extended support at the end of standard support.<br/>    If the cluster is set to STANDARD, it will be automatically upgraded at the end of standard support.<br/>    Valid values are EXTENDED, STANDARD"<br/><br/>    STANDARD - This option supports the Kubernetes version for 14 months after the release date. There is no additional cost. When standard support ends, your cluster will be auto upgraded to the next version.<br/>    EXTENDED - This option supports the Kubernetes version for 26 months after the release date. The extended support period has an additional hourly cost that begins after the standard support period ends. When extended support ends, your cluster will be auto upgraded to the next version. | `string` | `"STANDARD"` | no |
 | <a name="input_vpc_config"></a> [vpc\_config](#input\_vpc\_config) | Configuration block for VPC settings:<br/>  - security\_group\_ids: List of security group IDs associated with the VPC.<br/>  - subnet\_ids: List of subnet IDs where resources will be deployed.<br/>  - endpoint\_private\_access: Enable or disable private access to the cluster endpoint.<br/>  - endpoint\_public\_access: Enable or disable public access to the cluster endpoint.<br/>  - public\_access\_cidrs: CIDR blocks that can access the public endpoint (if enabled). | <pre>object({<br/>    security_group_ids      = optional(list(string), [])<br/>    subnet_ids              = list(string)<br/>    endpoint_private_access = optional(bool, false)<br/>    endpoint_public_access  = optional(bool, true)<br/>    public_access_cidrs     = optional(list(string), ["0.0.0.0/0"])<br/>  })</pre> | n/a | yes |
 
-## Outputs
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace prefix |
+| `environment` | `string` | Deployment environment |
+| `name` | `string` | EKS cluster name |
+| `kubernetes_version` | `string` | Kubernetes version |
+| `vpc_config` | `object` | VPC and subnet configuration |
+
+
+## Key Outputs
 
 | Name | Description |
 |------|-------------|
@@ -197,6 +230,7 @@ and use the copied token to login
 - Configure pre-commit hooks
 ```sh
 pre-commit install
+
 ```
 
 - Configure golang deps for tests
@@ -224,37 +258,13 @@ By specifying this , it will bump the version and if you dont specify this in yo
 go test
 ```
 
+
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
 
-This project is authored by below people
-
+This project is authored by:
 - SourceFuse ARC Team
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/vijay-stephen"><img src="https://avatars.githubusercontent.com/u/91307015?v=4?s=100" width="100px;" alt="vijay-stephen"/><br /><sub><b>vijay-stephen</b></sub></a><br /><a href="https://github.com/sourcefuse/terraform-aws-arc-eks/commits?author=vijay-stephen" title="Code">💻</a> <a href="#infra-vijay-stephen" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/sourcefuse/terraform-aws-arc-eks/commits?author=vijay-stephen" title="Documentation">📖</a> <a href="#maintenance-vijay-stephen" title="Maintenance">🚧</a> <a href="#mentoring-vijay-stephen" title="Mentoring">🧑‍🏫</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://www.sourcefuse.com/"><img src="https://avatars.githubusercontent.com/u/73998079?v=4?s=100" width="100px;" alt="Shubham Sinha"/><br /><sub><b>Shubham Sinha</b></sub></a><br /><a href="https://github.com/sourcefuse/terraform-aws-arc-eks/commits?author=shubhamsinha-sf" title="Code">💻</a> <a href="#infra-shubhamsinha-sf" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/sourcefuse/terraform-aws-arc-eks/commits?author=shubhamsinha-sf" title="Documentation">📖</a> <a href="#maintenance-shubhamsinha-sf" title="Maintenance">🚧</a> <a href="#mentoring-shubhamsinha-sf" title="Mentoring">🧑‍🏫</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://sourcefuse.com"><img src="https://avatars.githubusercontent.com/u/89415058?v=4?s=100" width="100px;" alt="Travis Saucier"/><br /><sub><b>Travis Saucier</b></sub></a><br /><a href="https://github.com/sourcefuse/terraform-aws-arc-eks/commits?author=tsaucier-sf" title="Code">💻</a> <a href="#infra-tsaucier-sf" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/sourcefuse/terraform-aws-arc-eks/commits?author=tsaucier-sf" title="Documentation">📖</a> <a href="#maintenance-tsaucier-sf" title="Maintenance">🚧</a> <a href="#mentoring-tsaucier-sf" title="Mentoring">🧑‍🏫</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mayank0202"><img src="https://avatars.githubusercontent.com/u/83959396?v=4?s=100" width="100px;" alt="Mayank Sharma"/><br /><sub><b>Mayank Sharma</b></sub></a><br /><a href="https://github.com/sourcefuse/terraform-aws-arc-eks/commits?author=mayank0202" title="Code">💻</a> <a href="#infra-mayank0202" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/sourcefuse/terraform-aws-arc-eks/commits?author=mayank0202" title="Documentation">📖</a> <a href="#maintenance-mayank0202" title="Maintenance">🚧</a> <a href="#mentoring-mayank0202" title="Mentoring">🧑‍🏫</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
-
-<!-- BEGIN_TF_DOCS -->
-
-<!-- END_TF_DOCS -->
