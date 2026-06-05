@@ -1,15 +1,41 @@
+
+
 # [terraform-aws-arc-control-tower-aft](https://github.com/sourcefuse/terraform-aws-arc-control-tower-aft)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-refarch-control-tower-aft/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-control-tower-aft/actions/workflows/snyk.yaml)
+> **Module:** `sourcefuse/arc-control-tower-aft/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-control-tower-aft/aws](https://registry.terraform.io/modules/sourcefuse/arc-control-tower-aft/aws)
+
+> **Category:** Governance / Landing Zone
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-control-tower-aft](https://github.com/sourcefuse/terraform-aws-arc-control-tower-aft)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-control-tower-aft.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-control-tower-aft/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-control-tower-aft.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-control-tower-aft/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+
+
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing Control Tower Account Factory Terraform. Part of the ARC AWS Landing Zone solution.
+![Module Banner](./static/arc_landing_zone.png)
 
-![ARC Landing Zone](./static/arc_landing_zone.png)
+Deploys AWS Control Tower Account Factory for Terraform (AFT) to automate account provisioning and customization across a multi-account AWS organization.
 
-## Usage
+## What It Does
 
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-refarch-control-tower-aft/blob/main/example/main.tf) file in the example folder.
+- AFT pipeline for automated account vending
+- Account customization via Git repositories
+- Global and per-account customization hooks
+- CloudTrail data events and default VPC deletion
+- Configurable Terraform distribution (OSS, TFC, TFE)
+- Multi-region Terraform state backend
+
+For more information about this repository and its usage, please see [Terraform AWS CONTROL TOWER Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-control-tower-aft/blob/main/docs/module-usage-guide/README.md).
+
+## Quickstart
 
 ```hcl
 ################################################################################
@@ -30,6 +56,24 @@ module "aft" {
   global_customizations_repo               = var.global_customizations_repo
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `account_ids` | `object` | Account IDs for AFT, audit, management, and log archive |
+| `aft_vpc_cidr` | `string` | CIDR block for the AFT VPC |
+| `control_tower_home_region` | `string` | Region where Control Tower is deployed |
+| `terraform_backend_secondary_region` | `string` | Secondary region for state replication |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `account_ids` | Map of account IDs |
+| `aft_vpc_cidr` | AFT VPC CIDR |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -105,11 +149,11 @@ No resources.
 | <a name="output_vcs_provider"></a> [vcs\_provider](#output\_vcs\_provider) | VCS Provider where the repos are configure for the different accounts. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Versioning
-This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.
+## Versioning  
+This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.  
 
 When you intend to commit to `main`, you will need to increment this version. Once the project is merged,
-the pipeline will kick off and tag the latest git commit.
+the pipeline will kick off and tag the latest git commit.  
 
 ## Development
 
@@ -125,6 +169,10 @@ the pipeline will kick off and tag the latest git commit.
   ```sh
   pre-commit install
   ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
