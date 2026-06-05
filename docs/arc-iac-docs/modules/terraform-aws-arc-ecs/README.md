@@ -1,12 +1,24 @@
-![Module Structure](./static/ecs-banner.png)
+![Module Banner](./static/ecs-banner.png)
 
 # [terraform-aws-arc-ecs](https://github.com/sourcefuse/terraform-aws-arc-ecs)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-ecs/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-ecs.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-ecs/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-ecs.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-ecs/aws`
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-ecs)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-ecs)
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-ecs/aws](https://registry.terraform.io/modules/sourcefuse/arc-ecs/aws)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-ecs/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-ecs/actions/workflows/snyk.yaml)
+> **Category:** Containers / ECS
+
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-ecs](https://github.com/sourcefuse/terraform-aws-arc-ecs)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-ecs.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-ecs/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-ecs.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-ecs/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-ecs&token=470128924743a0aace992ff0eb4f2460199e267f)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-ecs)
+
 ## Overview
 
 SourceFuse's AWS Reference Architecture Terraform module leverages the terraform-aws-modules/terraform-aws-ecs GitHub repository to facilitate the deployment and management of an AWS ECS (Elastic Container Service) cluster. It streamlines the configuration of ECS tasks, services, and related components, providing a scalable and efficient solution for orchestrating containerized applications. With customizable settings for logging and load balancing the module promotes seamless deployment and management of containerized workloads on AWS.
@@ -36,8 +48,20 @@ Before using this module, ensure you have the following:
 - Network
 
 
-## Getting Started
+## What It Does
 
+- ECS cluster with Fargate and/or EC2 capacity providers
+- ECS service with task definition management
+- ALB/NLB target group wiring
+- Service auto-scaling with target tracking
+- CloudWatch log groups for container logs
+- IAM task execution and task roles
+- Support for multiple services per cluster
+
+For more information about this repository and its usage, please see [Terraform AWS ECS Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-ecs/blob/main/docs/module-usage-guide/README.md).
+
+
+## Quickstart
 1. **Define the Module**
 
 Initially, it's essential to define a Terraform module, which is organized as a distinct directory encompassing Terraform configuration files. Within this module directory, input variables and output values must be defined in the variables.tf and outputs.tf files, respectively. The following illustrates an example directory structure:
@@ -56,7 +80,6 @@ Inside the `variables.tf` or in `*.tfvars` file, you should define values for th
 
 3. **Use the Module in Your Main Configuration**
 In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
-
 
 ```hcl
 ################################################################################
@@ -94,6 +117,22 @@ module "ecs_services" {
 }
 ```
 
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `ecs_cluster` | `object` | ECS cluster configuration |
+| `tags` | `map(string)` | Resource tags |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `cluster_id` | ECS cluster ID |
+| `cluster_arn` | ECS cluster ARN |
+| `cluster_name` | ECS cluster name |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 4. **Output Values**
 
 Inside the `outputs.tf` file of the module, you can define output values that can be referenced in the main configuration. For example:
@@ -119,7 +158,6 @@ terraform apply
 6. **Review and Confirm**
 
 Terraform will display a plan showing the changes it intends to make. Review the plan and confirm by typing 'yes' when prompted.
-
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
@@ -212,6 +250,11 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
