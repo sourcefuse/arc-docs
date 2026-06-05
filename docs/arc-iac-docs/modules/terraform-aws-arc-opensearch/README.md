@@ -1,18 +1,41 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-opensearch](https://github.com/sourcefuse/terraform-aws-arc-opensearch)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-opensearch/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-opensearch.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-opensearch/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-opensearch.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-opensearch/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-opensearch/aws](https://registry.terraform.io/modules/sourcefuse/arc-opensearch/aws)
+
+> **Category:** Analytics / Search
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-opensearch](https://github.com/sourcefuse/terraform-aws-arc-opensearch)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-opensearch.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-opensearch/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-opensearch.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-opensearch/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-opensearch)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-opensearch)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-opensearch/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-opensearch/actions/workflows/snyk.yaml)
 ## Overview
-Terraform module for Amazon OpenSearch provides a flexible and scalable way to deploy and manage OpenSearch clusters, with support for both serverless and managed (provisioned) deployment options.
 
-## Usage
+Deploys Amazon OpenSearch Service domains (managed or serverless) with VPC, encryption, fine-grained access control, and CloudWatch alarms.
 
-See the `example/vpc` folder for a working module example.
+## Architecture
+
+![Architecture Diagram](./static/arch.png)
+
+## What It Does
+
+- Managed OpenSearch domain with configurable instance type and count
+- OpenSearch Serverless collections
+- VPC deployment with security groups
+- Encryption at rest and in transit
+- Fine-grained access control with master user
+- Automated snapshots and UltraWarm storage
+- CloudWatch alarms for cluster health
+
+## Quickstart
 
 ```hcl
 ################################################################################
@@ -55,9 +78,7 @@ module "opensearch" {
   tags                         = module.tags.tags
 
 }
-
 ```
-See the `example/public` folder if you want your os to be public
 
 ```hcl
 ################################################################################
@@ -95,8 +116,26 @@ module "opensearch_serverless" {
 
   tags = module.tags.tags
 }
-
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace prefix |
+| `environment` | `string` | Deployment environment |
+| `name` | `string` | Domain name suffix |
+| `engine_version` | `string` | OpenSearch version |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `domain_endpoint` | OpenSearch domain endpoint |
+| `domain_arn` | OpenSearch domain ARN |
+| `kibana_endpoint` | Kibana/Dashboards endpoint |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -250,6 +289,9 @@ the pipeline will kick off and tag the latest git commit.
   ```sh
   go test -timeout  30m
   ```
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
