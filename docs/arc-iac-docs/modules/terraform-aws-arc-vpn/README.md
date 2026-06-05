@@ -1,22 +1,45 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-vpn](https://github.com/sourcefuse/terraform-aws-arc-vpn)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-vpn/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-vpn.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-vpn/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-vpn.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-vpn/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-vpn/aws](https://registry.terraform.io/modules/sourcefuse/arc-vpn/aws)
+
+> **Category:** Networking / VPN
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-vpn](https://github.com/sourcefuse/terraform-aws-arc-vpn)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-vpn.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-vpn/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-vpn.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-vpn/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-vpn)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-vpn)
 
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing a Client VPN and Site to Site VPN.
+Creates AWS Client VPN or Site-to-Site VPN endpoints with certificate or Active Directory authentication and split-tunnel support.
 
-For more information about this repository and its usage, please see [Terraform AWS ARC CloudFront Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-vpn/blob/main/docs/module-usage-guide/README.md).
+## Architecture
 
-## Usage
+![Architecture Diagram](./static/arch.png)
 
-To see a Client VPN example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-vpn/blob/main/examples/client-vpn/main.tf) file in the example folder.
+## What It Does
 
-```tcl
+- Client VPN endpoint with certificate or AD authentication
+- Site-to-Site VPN with BGP or static routing
+- Self-signed certificate generation
+- Split-tunnel configuration
+- Authorization rules for network access
+- CloudWatch logging for VPN connections
+- Multiple subnet associations
+
+For more information about this repository and its usage, please see [Terraform AWS VPN Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-vpn/blob/main/docs/module-usage-guide/README.md).
+
+## Quickstart
+
+```hcl
 module "this" {
   source  = "sourcefuse/arc-vpn/aws"
   version = "1.0.0"
@@ -45,6 +68,23 @@ module "this" {
   tags = module.tags.tags
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `vpc_id` | `string` | VPC ID for the VPN endpoint |
+| `client_vpn_subnet_ids` | `list(string)` | Subnet IDs to associate with the VPN |
+| `client_vpn_target_network_cidr` | `string` | CIDR block clients can access |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `client_vpn_endpoint_id` | Client VPN endpoint ID |
+| `client_vpn_endpoint_dns_name` | Client VPN DNS name |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -134,6 +174,10 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
