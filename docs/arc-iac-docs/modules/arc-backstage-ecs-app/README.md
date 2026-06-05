@@ -1,9 +1,42 @@
-# [arc-backstage-ecs-app](https://github.com/sourcefuse/arc-backstage-ecs-app)
+
+
+# [terraform-aws-arc-backstage-ecs-app](https://github.com/sourcefuse/terraform-aws-arc-backstage-ecs-app)
+
+> **Module:** `sourcefuse/arc-backstage-ecs-app/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-backstage-ecs-app/aws]
+
+
+> **Category:** DevOps / Developer Portal
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-backstage-ecs-app](https://github.com/sourcefuse/terraform-aws-arc-backstage-ecs-app)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-backstage-ecs-app.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-backstage-ecs-app/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-backstage-ecs-app.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-backstage-ecs-app/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-backstage-ecs-app&token=eaba4016b566fbd661d5446df35b82444d5309bb)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-backstage-ecs-app)
 
 ## Overview
 
-Terraform Module to run Backstage as an ECS app.
+Runs Backstage developer portal as an ECS Fargate service behind an ALB with Route53 DNS and Secrets Manager integration.
 
+
+![Module Banner](./static/arc_backstage.png)
+
+## What It Does
+
+- ECS Fargate task definition and service for Backstage
+- ALB listener rule and target group wiring
+- Route53 A record for the Backstage hostname
+- Secrets Manager integration for DB credentials and GitHub tokens
+- Auto-scaling between configurable min/max task counts
+
+For more information about this repository and its usage, please see [Terraform AWS BACKSTAGE ECS Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-backstage-ecs-app/blob/main/docs/module-usage-guide/README.md).
+
+
+## Quickstart
 Upstream dependencies:
 
 * PostgreSQL Database and Service Account. See the [Backstage Docs](https://backstage.io/docs/getting-started/configuration/) for more info. See our [ARC DB module](https://github.com/sourcefuse/terraform-aws-ref-arch-db) for the simplest set up.
@@ -24,9 +57,10 @@ Upstream dependencies:
 }
 
 ```
-![Example Architecture](./static/arc_backstage.png)
+
 ## Usage
 **Note**: the example below is does not have a pinned version. Be sure to pin your version. Refer to the `example` folder for a working example version.
+
 ```hcl
 module "backstage" {
  source                = "git::https://github.com/sourcefuse/arc-backstage-ecs-app"
@@ -46,6 +80,19 @@ module "backstage" {
   tags                  = module.tags.tags
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `alb_dns_name` | `string` | DNS name of the existing ALB |
+| `cluster_id` | `string` | ECS cluster ID |
+| `lb_listener_arn` | `string` | HTTPS listener ARN |
+| `subnet_ids` | `list(string)` | Private subnet IDs |
+| `vpc_id` | `string` | VPC ID |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -156,8 +203,10 @@ pre-commit install
 ```
 
 
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
-
-This project is authored by below people
-
+This project is authored by:
 - SourceFuse ARC Team
