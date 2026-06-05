@@ -1,47 +1,44 @@
-![Module Structure](./static/banner.png)
-# AWS Redshift Terraform Module
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-redshift](https://github.com/sourcefuse/terraform-aws-arc-redshift)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-redshift/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-redshift.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-redshift/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-redshift.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-redshift/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-redshift/aws](https://registry.terraform.io/modules/sourcefuse/arc-redshift/aws)
+
+> **Category:** Analytics / Data Warehouse
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-redshift](https://github.com/sourcefuse/terraform-aws-arc-redshift)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-redshift.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-redshift/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-redshift.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-redshift/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-redshift&token=a5aa0cb6f6f72af1f9146e6f0fa91e9de79ae952)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-redshift)
 
 
 ## Overview
 
-The ARC Terraform-aws-arc-redshift module provides a comprehensive and unified solution for deploying Amazon Redshift data warehousing infrastructure on AWS. This versatile module supports both traditional Amazon Redshift provisioned clusters and the newer Redshift Serverless workgroups, allowing you to choose the
-deployment model that best fits your workload requirements and cost optimization needs.
+Creates Amazon Redshift clusters or Redshift Serverless workgroups with VPC, encryption, parameter groups, and snapshot management.
 
-### Prerequisites
-Before using this module, ensure you have the following:
+## Architecture
 
-- AWS credentials configured.
-- Terraform installed.
-- A working knowledge of Terraform.
+![Architecture Diagram](./static/arch.png)
 
-## Getting Started
+## What It Does
 
-1. **Define the Module**
+- Redshift provisioned cluster or Serverless workgroup
+- VPC and security group configuration
+- KMS encryption at rest
+- Parameter groups for cluster tuning
+- Automated snapshots and cross-region copy
+- IAM roles for S3 and Glue integration
+- Enhanced VPC routing
 
-Initially, it's essential to define a Terraform module, which is organized as a distinct directory encompassing Terraform configuration files. Within this module directory, input variables and output values must be defined in the variables.tf and outputs.tf files, respectively. The following illustrates an example directory structure:
+For more information about this repository and its usage, please see [Terraform AWS Redshift Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-redshift/blob/main/docs/module-usage-guide/README.md).
 
-
-
-```plaintext
-redshift/
-|-- main.tf
-|-- variables.tf
-|-- outputs.tf
-```
-
-
-2. **Define Input Variables**
-
-Inside the `variables.tf` or in `*.tfvars` file, you should define values for the variables that the module requires.
-
-3. **Use the Module in Your Main Configuration**
-In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
+## Quickstart
 
 ```hcl
 module "redshift" {
@@ -75,75 +72,25 @@ module "redshift" {
 }
 ```
 
-4. **Output Values**
+## Required Inputs
 
-Inside the `outputs.tf` file of the module, you can define output values that can be referenced in the main configuration. For example:
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace prefix |
+| `environment` | `string` | Deployment environment |
+| `vpc_id` | `string` | VPC ID |
+| `subnet_ids` | `list(string)` | Subnet IDs |
+| `database_name` | `string` | Initial database name |
+| `master_username` | `string` | Master username |
+## Key Outputs
 
-```hcl
-output "redshift_cluster_id" {
-  description = "The ID of the Redshift cluster"
-  value       = module.redshift.redshift_cluster_id
-}
+| Name | Description |
+|------|-------------|
+| `cluster_endpoint` | Redshift cluster endpoint |
+| `cluster_id` | Redshift cluster identifier |
+## Full Variable & Output Reference
 
-output "redshift_cluster_endpoint" {
-  description = "The connection endpoint for the Redshift cluster"
-  value       = module.redshift.redshift_cluster_endpoint
-}
-
-output "redshift_endpoint" {
-  description = "The endpoint of the Redshift deployment (either cluster or serverless)"
-  value       = module.redshift.redshift_endpoint
-}
-
-```
-
-5. **.tfvars**
-
-Inside the `.tfvars` file of the module, you can provide desired values that can be referenced in the main configuration.
-
-
-## First Time Usage
-***uncomment the backend block in [main.tf](./examples/endpoint//main.tf)***
-```shell
-terraform init -backend-config=config.dev.hcl
-```
-***If testing locally, `terraform init` should be fine***
-
-Create a `dev` workspace
-```shell
-terraform workspace new dev
-```
-
-Plan Terraform
-```shell
-terraform plan -var-file dev.tfvars
-```
-
-Apply Terraform
-```shell
-terraform apply -var-file dev.tfvars
-```
-
-## Production Setup
-```shell
-terraform init -backend-config=config.prod.hcl
-```
-
-Create a `prod` workspace
-```shell
-terraform workspace new prod
-```
-
-Plan Terraform
-```shell
-terraform plan -var-file prod.tfvars
-```
-
-Apply Terraform
-```shell
-terraform apply -var-file prod.tfvars  
-```
-
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -291,6 +238,9 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+
+## Contributing
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
