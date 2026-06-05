@@ -1,34 +1,39 @@
-![Module Structure](./static/s3.png)
+![Module Banner](./static/s3.png)
 
 # [terraform-aws-arc-s3](https://github.com/sourcefuse/terraform-aws-arc-s3)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-s3/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-s3.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-s3/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-s3.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-s3/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-s3/aws](https://registry.terraform.io/modules/sourcefuse/arc-s3/aws)
+
+> **Category:** Storage / Object Storage
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-s3](https://github.com/sourcefuse/terraform-aws-arc-s3)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-s3.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-s3/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-s3.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-s3/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-s3&token=3c75a1b94d1b6ab3f1b98785e484d5ede197851e)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-s3)
 
-
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing the s3 module.
+Creates S3 buckets with versioning, encryption, lifecycle rules, access logging, CORS, and bucket policies.
 
-## Features
-- Manages S3 Buckets: Handles the creation, deletion, and maintenance of Amazon S3 (Simple Storage Service) buckets, which are containers for storing data in the cloud.
+## What It Does
 
-- Supports Lifecycle Rules: Enables the setup and management of lifecycle rules that automate the transition of data between different storage classes and the deletion of objects after a specified period.
+- S3 bucket with versioning and server-side encryption
+- Lifecycle rules for object transitions and expiration
+- Public access block configuration
+- Access logging to a target bucket
+- CORS configuration
+- Bucket policy management
+- Object lock support
+- Cross-Region Replication (CRR) for automated replication of objects across AWS regions for disaster recovery and compliance requirements
 
-- Configurable Bucket Policies and Access Controls: Allows for the configuration of bucket policies and access control lists (ACLs) to define permissions and manage access to the data stored in S3 buckets, ensuring data security and compliance.
-
-- Supports CORS and Website Configurations: Provides support for Cross-Origin Resource Sharing (CORS) configurations to manage cross-origin requests to the bucket's resources, and allows for configuring the bucket to host static websites, including setting index and error documents.
-
-- Cross-Region Replication: Facilitates the automatic, asynchronous copying of objects across different AWS regions to enhance data availability, disaster recovery, and data compliance requirements.
-
-## Introduction
-
-SourceFuse's AWS Reference Architecture (ARC) Terraform module for managing Amazon S3 buckets using Terraform. It simplifies the creation, configuration, and management of S3 buckets by providing a set of predefined settings and options. The module supports advanced features such as bucket policies, access control lists (ACLs), lifecycle rules, and versioning. It also includes support for configuring Cross-Origin Resource Sharing (CORS) and cross-region replication for enhanced data availability and resilience. By leveraging this module, users can ensure consistent, secure, and efficient management of their S3 resources within an infrastructure-as-code (IaC) framework.
-
-## Usage
-
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-s3/blob/feature/fix-docs/examples/simple/main.tf) file in the example folder.  
+## Quickstart
 
 ```hcl
 module "s3" {
@@ -40,8 +45,23 @@ module "s3" {
   lifecycle_config = local.lifecycle_config
   tags             = module.tags.tags
 }
-
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `name` | `string` | S3 bucket name |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `bucket_id` | S3 bucket name |
+| `bucket_arn` | S3 bucket ARN |
+| `bucket_domain_name` | S3 bucket domain name |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -144,6 +164,10 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
