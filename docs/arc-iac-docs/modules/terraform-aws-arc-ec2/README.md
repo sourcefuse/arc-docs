@@ -1,17 +1,25 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
+
 # [terraform-aws-arc-ec2](https://github.com/sourcefuse/terraform-aws-arc-ec2)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-ec2/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-ec2.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-ec2/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-ec2.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-ec2/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-ec2/aws](https://registry.terraform.io/modules/sourcefuse/arc-ec2/aws)
+
+> **Category:** Compute / EC2
 
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-ec2&token=1a62ef6cfb038e1446e26868afd2b88a0dd91f85)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-ec2)  
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-ec2](https://github.com/sourcefuse/terraform-aws-arc-ec2)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-ec2/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-ec2/actions/workflows/snyk.yaml)
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-ec2.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-ec2/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-ec2.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-ec2/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-ec2&token=1a62ef6cfb038e1446e26868afd2b88a0dd91f85)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-ec2)
+
 ## Overview
 
-For more information about this repository and its usage, please see [Terraform AWS ARC GitHub EC2 Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-ec2/blob/main/docs/module-usage-guide/README.md).
-
-## Introduction
 
 SourceFuse's AWS Reference Architecture (ARC) Terraform module simplifies the creation and management of essential AWS infrastructure components. It is designed to provision and configure the following resources:
 
@@ -28,7 +36,19 @@ Before using this module, ensure you have the following:
 - Terraform installed.
 - A working knowledge of Terraform.
 
-## Getting Started
+## What It Does
+
+- One or more EC2 instances with configurable AMI and instance type
+- EBS volume attachment with custom size, type, and IOPS
+- ALB or NLB load balancer creation and attachment
+- Security groups with ingress/egress rules
+- IAM instance profile with custom policies
+- Key pair management
+- User data scripts
+
+For more information about this repository and its usage, please see [Terraform AWS EC2 Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-ec2/blob/main/docs/module-usage-guide/README.md).
+
+## Quickstart
 
 1. **Define the Module**
 
@@ -77,6 +97,23 @@ module "ec2" {
   tags = module.tags.tags
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace prefix |
+| `environment` | `string` | Deployment environment |
+| `vpc_id` | `string` | VPC ID |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `instance_ids` | List of EC2 instance IDs |
+| `private_ips` | List of private IP addresses |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 4. **Output Values**
 
@@ -394,3 +431,13 @@ By specifying this , it will bump the version and if you dont specify this in yo
 
 This project is authored by:
 - SourceFuse
+
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
+## Authors
+
+This project is authored by:
+- SourceFuse ARC Team
