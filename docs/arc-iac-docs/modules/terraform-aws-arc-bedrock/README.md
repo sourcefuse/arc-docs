@@ -1,13 +1,26 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
+
 # [terraform-aws-arc-bedrock](https://github.com/sourcefuse/terraform-aws-arc-bedrock)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-bedrock/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-bedrock.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-bedrock/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-bedrock.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-bedrock/aws`
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-bedrock&token=78b70860ffc10be72040ab50f0bdff0bd1626708)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-bedrock)
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-bedrock/aws](https://registry.terraform.io/modules/sourcefuse/arc-bedrock/aws)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-bedrock/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-bedrock/actions/workflows/snyk.yaml)
+> **Category:** AI / Machine Learning
 
-## Overview  
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-bedrock](https://github.com/sourcefuse/terraform-aws-arc-bedrock)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-bedrock.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-bedrock/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-bedrock.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-bedrock/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-bedrock&token=78b70860ffc10be72040ab50f0bdff0bd1626708)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-bedrock)
+
+
+## Overview
 This Terraform module provides an automated way to deploy and manage **AWS Bedrock Agents**, **Collaborators**, **Action Groups**, and associated **IAM Roles**. The module is designed to be flexible, reusable, and configurable to suit various use cases.  
 
 ## Features  
@@ -16,6 +29,21 @@ This Terraform module provides an automated way to deploy and manage **AWS Bedro
 - **Action Groups**: Enables defining multiple action groups for executing Lambda-based functions.  
 - **IAM Role Management**: Automatically provisions IAM roles with necessary policies for Bedrock resources.  
 
+## What It Does
+
+- Bedrock Agent with configurable foundation model and instructions
+- Multi-agent collaboration (supervisor + collaborator pattern)
+- Action groups with Lambda function schemas
+- Knowledge base with S3 data sources and OpenSearch Serverless vector store
+- IAM roles auto-provisioned for agents
+
+For more information about this repository and its usage, please see [Terraform AWS BEDROCK Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-bedrock/blob/main/docs/module-usage-guide/README.md).
+
+
+
+
+
+## Quickstart
 ## Module Components  
 
 ### 1. Bedrock Agent  
@@ -66,8 +94,8 @@ bedrock-agent/
 Inside the `variables.tf` or in `*.tfvars` file, you should define values for the variables that the module requires.
 
 3. **Use the Module in Your Main Configuration**
-In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
-
+In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For 
+Example
 ```hcl
 module "bedrock_agents" {
   source = "sourcefuse/arc-bedrock/aws"
@@ -99,6 +127,23 @@ module "bedrock_agents" {
   tags = module.tags.tags
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace prefix |
+| `environment` | `string` | Deployment environment |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `agent_id` | Bedrock Agent ID |
+| `agent_arn` | Bedrock Agent ARN |
+| `agent_role_arn` | IAM role ARN for the agent |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 4. **Output Values**
 
@@ -389,8 +434,12 @@ cd test/
 go test
 ```
 
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
 
 This project is authored by:
-
 - SourceFuse ARC Team
