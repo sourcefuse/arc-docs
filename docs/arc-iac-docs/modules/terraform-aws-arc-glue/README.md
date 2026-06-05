@@ -1,30 +1,44 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
+
 # [terraform-aws-arc-glue](https://github.com/sourcefuse/terraform-aws-arc-glue)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-glue/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-glue.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-glue/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-glue.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-glue/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-glue/aws](https://registry.terraform.io/modules/sourcefuse/arc-glue/aws)
+
+> **Category:** Analytics / ETL
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-glue](https://github.com/sourcefuse/terraform-aws-arc-glue)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-glue.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-glue/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-glue.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-glue/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-glue2&token=903109dbf648474b9e189a70bbb9e68bff79cb93)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-glue2)
 
----
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing AWS Glue resources, providing a comprehensive, production-ready solution for deploying data catalog, ETL jobs, crawlers, workflows, and related components with enterprise-grade security and operational best practices.
+Manages AWS Glue resources — data catalog databases, ETL jobs, crawlers, workflows, connections, and triggers — for data lake and ETL pipelines.
 
-## Module Features
+## Architecture
 
-This module provides a complete AWS Glue infrastructure including:
+![Architecture Diagram](./static/arch.png)
 
-- **Data Catalog Management**: Automated database and table creation with cross-account access policies
-- **ETL Job Orchestration**: Support for Spark, Python Shell, and Ray jobs with configurable worker types
-- **Data Discovery**: Multi-source crawlers (S3, JDBC, MongoDB, Delta Lake) with scheduling
-- **Workflow Automation**: Complex workflow orchestration with triggers and dependencies
-- **Security & Compliance**: KMS encryption, IAM role management, VPC integration, and secret management
-- **Enterprise Integration**: JDBC connections for RDS/Redshift, MongoDB, and other data sources
-- **Monitoring & Logging**: CloudWatch integration, job bookmarks, and execution tracking
 
-## Usage
+## What It Does
 
-To see a full example, check out the [complete example](./example/complete/main.tf) or [simple example](./example/simple/main.tf) files in the example folder.
+- Glue Data Catalog databases and tables
+- ETL jobs (Spark, Python Shell, Ray) with configurable workers
+- Crawlers for automatic schema discovery from S3, JDBC, and more
+- Workflows and triggers for orchestration
+- Glue connections for JDBC and network sources
+- IAM roles with least-privilege policies
+- CloudWatch metrics and job bookmarks
+
+For more information about this repository and its usage, please see [Terraform AWS GLUE Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-glue/blob/main/docs/module-usage-guide/README.md).
+
+## Quickstart
 
 ```hcl
 module "glue" {
@@ -75,6 +89,25 @@ module "glue" {
   }
 }
 ```
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace prefix |
+| `environment` | `string` | Deployment environment |
+| `name` | `string` | Component name |
+| `region` | `string` | AWS region |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `database_name` | Glue catalog database name |
+| `job_names` | Map of Glue job names |
+| `crawler_names` | Map of crawler names |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
@@ -527,6 +560,10 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
