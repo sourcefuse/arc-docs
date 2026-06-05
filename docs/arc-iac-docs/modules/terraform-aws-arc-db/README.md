@@ -1,20 +1,79 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
+
 # [terraform-aws-arc-db](https://github.com/sourcefuse/terraform-aws-arc-db)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-db/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-db.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-db/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-db.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-db/aws`
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-db)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-db)
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-db/aws](https://registry.terraform.io/modules/sourcefuse/arc-db/aws)
 
+> **Category:** Database / Relational
+
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-db](https://github.com/sourcefuse/terraform-aws-arc-db)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-db.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-db/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-db.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-db/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-db)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-db)
 
 ## Overview
 
-The SourceFuse AWS Reference Architecture (ARC) Terraform module offers a comprehensive solution for efficiently managing Aurora, RDS cluster, RDS proxy and RDS (Relational Database Service) instances within the Amazon Web Services (AWS) environment. This Terraform module is designed to streamline the provisioning, configuration, and management of these database instances, leveraging best practices.
+Manages Aurora clusters, RDS instances, and RDS Proxy with security groups, parameter groups, and Secrets Manager integration.
 
-For more information about this repository and its usage, please see [Terraform AWS ARC DB Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-db/blob/main/docs/module-usage-guide/README.md).
+## What It Does
 
-## Module Usage
+- Aurora MySQL/PostgreSQL clusters and global clusters
+- RDS instance (MySQL, PostgreSQL, Oracle, SQL Server)
+- RDS Proxy for connection pooling
+- Security groups auto-created per database
+- Parameter groups and option groups
+- Secrets Manager for credentials
+- Automated backups and maintenance windows
 
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-db/blob/main/example/main.tf) file in the example folder.
+For more information about this repository and its usage, please see [Terraform AWS DB Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-db/blob/main/docs/module-usage-guide/README.md).
+
+## Quickstart
+
+```hcl
+module "db" {
+  source  = "sourcefuse/arc-db/aws"
+  version = "3.0.0"
+
+  # Aurora PostgreSQL cluster
+  aurora_cluster_enabled = true
+  cluster_identifier     = "my-aurora-cluster"
+  engine                 = "aurora-postgresql"
+  engine_version         = "15.4"
+  database_name          = "mydb"
+  master_username        = "admin"
+
+  vpc_id     = data.aws_vpc.this.id
+  subnet_ids = data.aws_subnets.private.ids
+
+  tags = { Environment = "prod" }
+}
+```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `vpc_id` | `string` | VPC ID for the database |
+| `subnet_ids` | `list(string)` | Subnet IDs for the DB subnet group |
+| `tags` | `map(string)` | Resource tags |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `cluster_endpoint` | Aurora cluster writer endpoint |
+| `cluster_reader_endpoint` | Aurora cluster reader endpoint |
+| `db_instance_endpoint` | RDS instance endpoint (if used) |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -193,8 +252,12 @@ cd test/
 go test
 ```
 
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
 
 This project is authored by:
-
 - SourceFuse ARC Team
