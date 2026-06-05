@@ -1,21 +1,42 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-security](https://github.com/sourcefuse/terraform-aws-arc-security)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-security/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-security.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-security/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-security.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-security/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-security/aws](https://registry.terraform.io/modules/sourcefuse/arc-security/aws)
+
+> **Category:** Security / Compliance
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-security](https://github.com/sourcefuse/terraform-aws-arc-security)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-security.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-security/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-security.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-security/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-security)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-security)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-security/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-security/actions/workflows/snyk.yaml)
 ## Overview
 
-The SourceFuse AWS Reference Architecture (ARC) Terraform module streamlines the management of Security Hub components, enhancing security posture and compliance for AWS environments. This module offers simplified configuration and deployment for Security Hub, optimizing resource allocation and threat detection capabilities.
+Enables and configures AWS security services — GuardDuty, Security Hub, AWS Config, and Inspector — with SNS notifications.
 
-For more information about this repository and its usage, please see [Terraform AWS ARC GitHub SECURITY Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-security/blob/main/docs/module-usage-guide/README.md).
+## Architecture
 
-## Usage
+![Architecture Diagram](./static/arch.png)
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.  
+## What It Does
+
+- GuardDuty threat detection with SNS alerts
+- Security Hub with configurable compliance standards
+- AWS Config rules and conformance packs
+- Amazon Inspector for vulnerability scanning
+- SNS topics for security findings notifications
+- IAM roles for Config recorder
+
+For more information about this repository and its usage, please see [Terraform AWS Cloud Security Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-security/blob/main/docs/module-usage-guide/README.md).
+
+## Quickstart
 
 ```hcl
 module "cloud_security" {
@@ -47,6 +68,24 @@ module "cloud_security" {
   tags = module.tags.tags
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace prefix |
+| `environment` | `string` | Deployment environment |
+| `region` | `string` | AWS region |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `guardduty_detector_id` | GuardDuty detector ID |
+| `security_hub_arn` | Security Hub ARN |
+| `config_recorder_id` | AWS Config recorder ID |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -180,6 +219,9 @@ By specifying this , it will bump the version and if you dont specify this in yo
   ```sh
   go test -timeout  30m
   ```
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
