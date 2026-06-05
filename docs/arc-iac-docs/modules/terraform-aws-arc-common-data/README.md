@@ -1,8 +1,22 @@
+<!-- ![Module Banner](./static/banner.png) -->
+
 # [terraform-aws-arc-common-data](https://github.com/sourcefuse/terraform-aws-arc-common-data)
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-common-data)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-common-data)
+> **Module:** `sourcefuse/arc-common-data/aws`
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-common-data/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-common-data/actions/workflows/snyk.yaml)
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-common-data/aws](https://registry.terraform.io/modules/sourcefuse/arc-common-data/aws)
+
+> **Category:** Utility / Data
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-common-data](https://github.com/sourcefuse/terraform-aws-arc-common-data)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-common-data.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-common-data/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-common-data.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-common-data/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-common-data)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-common-data)
 
 ## Overview
 
@@ -13,7 +27,18 @@ SourceFuse AWS Reference Architecture (ARC) Terraform module for querying the mo
 
 ## Usage
 
-To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.
+To see a full example, check out the [main.tf](./example/main.tf) file in the example folder.  
+
+## What It Does
+
+- VPC lookup by namespace and environment tags
+- Public subnet IDs lookup
+- Private subnet IDs lookup
+- Zero resources created — data sources only
+
+For more information about this repository and its usage, please see [Terraform AWS COMMON DATA Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-common-data/blob/main/docs/module-usage-guide/README.md).
+
+## Quickstart
 
 ```hcl
 module "this" {
@@ -23,6 +48,24 @@ module "this" {
   region      = var.region
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace tag value to filter VPC/subnets |
+| `environment` | `string` | Environment tag value to filter VPC/subnets |
+| `region` | `string` | AWS region |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `vpc_id` | VPC ID |
+| `private_subnet_ids` | Private subnet IDs |
+| `public_subnet_ids` | Public subnet IDs |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -68,11 +111,11 @@ No modules.
 | <a name="output_vpc_name"></a> [vpc\_name](#output\_vpc\_name) | Name of the VPC |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Versioning
-This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.
+## Versioning  
+This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.  
 
 When you intend to commit to `main`, you will need to increment this version. Once the project is merged,
-the pipeline will kick off and tag the latest git commit.
+the pipeline will kick off and tag the latest git commit.  
 
 ## Development
 
@@ -110,10 +153,14 @@ By specifying this , it will bump the version and if you dont specify this in yo
   go mod init github.com/sourcefuse/terraform-aws-refarch-<module_name>
   go get github.com/gruntwork-io/terratest/modules/terraform
   ```
-- Now execute the test
+- Now execute the test  
   ```sh
   go test -timeout  30m
   ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
