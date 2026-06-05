@@ -1,18 +1,33 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
-# [terraform-postgresql-aws-arc-mgmt](https://github.com/sourcefuse/terraform-postgresql-aws-arc-mgmt)
+# [terraform-aws-arc-postgresql-mgmt](https://github.com/sourcefuse/terraform-aws-arc-postgresql-mgmt)
 
-<a href="https://github.com/sourcefuse/terraform-postgresql-aws-arc-mgmt/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-postgresql-aws-arc-mgmt.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-postgresql-aws-arc-mgmt/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-postgresql-aws-arc-mgmt.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-postgresql-mgmt/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-postgresql-mgmt/aws](https://registry.terraform.io/modules/sourcefuse/arc-postgresql-mgmt/aws)
+
+> **Category:** Database / Management
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-postgresql-mgmt](https://github.com/sourcefuse/terraform-aws-arc-postgresql-mgmt)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-postgresql-mgmt.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-postgresql-mgmt/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-postgresql-mgmt.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-postgresql-mgmt/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-postgresql-mgmt)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-postgresql-mgmt)
 
-[![snyk](https://github.com/sourcefuse/terraform-postgresql-aws-arc-mgmt/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-postgresql-aws-arc-mgmt/actions/workflows/snyk.yaml)
-
 ## Overview
 
-It demonstrates how to create and manage a PostgreSQL database, roles, schemas, and associated resources on AWS.
+Manages PostgreSQL databases, roles, schemas, and grants on an existing RDS or Aurora PostgreSQL instance using the PostgreSQL Terraform provider.
 
-In the example folder, you will see how this module should be called in downstream and how we can pass the values.
+## What It Does
+
+- Database creation on existing PostgreSQL server
+- Role and user management with password rotation
+- Schema creation and ownership
+- Fine-grained privilege grants
+- Secrets Manager integration for credentials
 
 ## Usage
   ```
@@ -27,18 +42,42 @@ required_providers {
     }
   }
   ```
-1. Initialize Terraform with the backend config
-  ```shell
-  terraform init -backend-config=config.dev.hcl
-  ```
-2. Plan Terraform
-  ```shell
-  terraform plan -var-file .\tfvars\dev.tfvars
-  ```
-3. Apply Terraform
-  ```shell
-  terraform apply -var-file .\tfvars\dev.tfvars
-  ```
+
+## Quickstart
+
+```hcl
+module "pg_mgmt" {
+  source  = "sourcefuse/arc-postgresql-mgmt/aws"
+  version = "1.0.0"
+
+  db_host     = module.db.cluster_endpoint
+  db_port     = 5432
+  db_name     = "postgres"
+  db_username = "admin"
+  db_password = data.aws_secretsmanager_secret_version.db.secret_string
+
+  databases = [{ name = "myapp_db" }]
+  roles     = [{ name = "myapp_user", login = true }]
+}
+```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `db_host` | `string` | PostgreSQL host endpoint |
+| `db_port` | `number` | PostgreSQL port |
+| `db_username` | `string` | Admin username |
+| `db_password` | `string` | Admin password |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `database_names` | List of created database names |
+| `role_names` | List of created role names |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -132,6 +171,9 @@ go get github.com/gruntwork-io/terratest/modules/terraform
 cd test/
 go test
 ```
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
