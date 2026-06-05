@@ -1,18 +1,42 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
+
 # [terraform-aws-arc-efs](https://github.com/sourcefuse/terraform-aws-arc-efs)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-efs/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-efs.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-efs/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-efs.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-efs/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-efs/aws](https://registry.terraform.io/modules/sourcefuse/arc-efs/aws)
+
+> **Category:** Storage / File System
+
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-efs](https://github.com/sourcefuse/terraform-aws-arc-efs)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-efs.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-efs/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-efs.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-efs/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-efs&token=e5b55fbb24c5e180eaf820cb59295caa9a8e8e95)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-efs)
 
----
-
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing AWS Elastic File System.
+Creates Amazon EFS file systems with mount targets, security groups, access points, and optional KMS encryption.
 
-## Usage
-### Basic Example
+## What It Does
+
+- EFS file system with configurable performance and throughput modes
+- Mount targets across multiple availability zones
+- Security group with configurable NFS ingress rules
+- Access points for application-specific entry points
+- KMS encryption at rest
+- Backup policy configuration
+- Lifecycle policies for cost optimization
+
+
+For more information about this repository and its usage, please see [Terraform AWS EFS Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-efs/blob/main/docs/module-usage-guide/README.md).
+
+## Quickstart
 
 ```hcl
 module "efs" {
@@ -41,9 +65,7 @@ module "efs" {
   }
 }
 ```
-
 ### Advanced Example with Access Points
-
 ```hcl
 module "efs" {
   source = "sourcefuse/arc-efs/aws"
@@ -114,7 +136,6 @@ module "efs" {
   }
 }
 ```
-
 ## Examples
 
 This module includes several comprehensive examples:
@@ -150,6 +171,25 @@ aws efs delete-file-system --region us-east-2 --file-system-id fs-xxxxxxxxx
 According to AWS documentation: *"Deleting a replication configuration ends the replication process. After a replication configuration is deleted, the destination file system becomes Writeable and its replication overwrite protection is re-enabled."*
 
 This behavior ensures that valuable data in the destination EFS is not accidentally lost when replication is stopped.
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `namespace` | `string` | Namespace prefix |
+| `environment` | `string` | Deployment environment |
+| `name` | `string` | EFS file system name |
+| `mount_targets` | `map(object)` | Map of AZ to subnet_id for mount targets |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `id` | EFS file system ID |
+| `arn` | EFS file system ARN |
+| `dns_name` | EFS DNS name for mounting |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -288,6 +328,10 @@ By specifying this , it will bump the version and if you don't specify this in y
   ```sh
   go test -timeout  30m
   ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
