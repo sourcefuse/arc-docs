@@ -1,13 +1,19 @@
+![Module Banner](./static/arch.png)
+
 # [terraform-aws-arc-eks-addon](https://github.com/sourcefuse/terraform-aws-arc-eks-addon)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-eks-addon/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-eks-addon/actions/workflows/snyk.yaml)
+> **Module:** `sourcefuse/arc-eks-addon/aws`
 
-## Overview
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-eks-addon/aws](https://registry.terraform.io/modules/sourcefuse/arc-eks-addon/aws)
 
-EKS Blueprints helps you compose complete EKS clusters that are fully bootstrapped with the operational software that is needed to deploy and operate workloads. With EKS Blueprints, you describe the configuration for the desired state of your EKS environment, such as the control plane, worker nodes, and Kubernetes add-ons, as an IaC blueprint. Once a blueprint is configured, you can use it to stamp out consistent environments across multiple AWS accounts and Regions using continuous deployment automation.
+> **Category:** Containers / Kubernetes
 
-You can use EKS Blueprints to easily bootstrap an EKS cluster with Amazon EKS add-ons as well as a wide range of popular open-source add-ons, including Prometheus, Karpenter, Nginx, Traefik, AWS Load Balancer Controller, Fluent Bit, Keda, ArgoCD, and more. EKS Blueprints also helps you implement relevant security controls needed to operate workloads from multiple teams in the same cluster.
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-eks-addon](https://github.com/sourcefuse/terraform-aws-arc-eks-addon)
 
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-eks-addon.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-eks-addon/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-eks-addon.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-eks-addon/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 ## Architecture
 
@@ -15,11 +21,20 @@ You can use EKS Blueprints to easily bootstrap an EKS cluster with Amazon EKS ad
 
 The module assumes that upstream dependencies, namely networking dependencies, are created upstream and the values are passed into this module via mechanisms such as Terraform data source queries. Similarly bations and related load balancers are shown as per best practices and has to be deployed separately from upstream module. The shown addons are example addons and may and may not be a fit for your architecture please enable them accordingly.
 
-## Usage
 
-**Note**: the example below is does not have a pinned version. Be sure to pin your version. Refer to the `example` folder for a working example version.
+## Overview
 
-To checkout the Full example Please visit [example](https://github.com/sourcefuse/terraform-aws-arc-eks-addon/blob/main/examples/complete/main.tf)
+Installs and manages EKS add-ons and Helm-based Kubernetes applications on an existing EKS cluster.
+
+## What It Does
+
+- EKS managed add-ons (VPC CNI, CoreDNS, kube-proxy, EBS CSI)
+- Helm chart releases for third-party tools
+- IRSA role creation per add-on
+- Configurable add-on versions and configuration values
+- Support for AWS Load Balancer Controller, Cluster Autoscaler, and more
+
+## Quickstart
 
 ```hcl
 module "eks" {
@@ -40,6 +55,22 @@ module "eks" {
   .............................................................
 }
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `cluster_name` | `string` | Name of the existing EKS cluster |
+| `vpc_id` | `string` | VPC ID |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `addon_arns` | Map of add-on name to ARN |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
@@ -219,6 +250,10 @@ the pipeline will kick off and tag the latest git commit.
 ```sh
 pre-commit install
 ```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
