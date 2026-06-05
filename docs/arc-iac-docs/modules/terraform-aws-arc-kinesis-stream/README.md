@@ -1,68 +1,36 @@
-![Module Structure](./static/banner.png)
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+![Module Banner](./static/banner.png)
+
 # [terraform-aws-arc-kinesis-stream](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-kinesis-stream.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-kinesis-stream.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-kinesis-stream/aws`
 
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-kinesis-stream/aws](https://registry.terraform.io/modules/sourcefuse/arc-kinesis-stream/aws)
+
+> **Category:** Streaming / Data Ingestion
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-kinesis-stream.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-kinesis-stream.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-kinesis-stream&token=b4da1709f70e10c956ed98d2510423b22dde8564)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-kinesis-stream)
 
-[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/actions/workflows/snyk.yaml)
 ## Overview
 
-For more information about this repository and its usage, please see [Terraform AWS ARC GitHub Kinesis Module Usage Guide](https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/blob/main/docs/module-usage-guide/README.md).
+Creates Kinesis Data Streams with configurable shard count, enhanced fan-out consumers, and KMS encryption.
 
-## Introduction
+## What It Does
 
-SourceFuse's AWS Reference Architecture (ARC) Terraform module simplifies the creation and management of essential AWS infrastructure components. It is designed to provision and configure the following resources:
+- Kinesis Data Stream with configurable shard count
+- Enhanced fan-out consumers for parallel processing
+- On-demand or provisioned capacity mode
+- KMS encryption for data at rest
+- CloudWatch metrics and alarms
+- Retention period configuration
 
-1. Amazon Kinesis Data Stream (aws_kinesis_stream):
-    - Name: A unique name for the Kinesis stream, generated using a local variable.
-    - Shard Count: The number of shards provisioned for the stream. This can be dynamically set based  on  the stream mode (PROVISIONED or ON_DEMAND).
-    - Retention Period: The length of time that data records are accessible after they are added to the stream.
-    - Shard Level Metrics: Metrics to be enabled for monitoring the stream at the shard level.
-    - Enforce Consumer Deletion: A flag to enforce consumer deletion when the stream is deleted.
-    - Encryption Type: The encryption type to be used for the stream.
-    - KMS Key ID: The KMS key ID for encrypting data records in the stream.
-    - Stream Mode Details: Dynamic configuration block to set the stream mode (PROVISIONED or ON_DEMAND).
-    - Tags: Key-value pairs to tag the stream for identification and management.  
-
-2. Amazon Kinesis Stream Consumer (aws_kinesis_stream_consumer):  
-    - Count: The number of consumer instances to create, determined by the var.consumer_count variables.
-    - Name: A unique name for each consumer, generated using a local variable and the count index
-    - Stream ARN: The Amazon Resource Name (ARN) of the Kinesis stream to which the consumer is attached.
-
-### Prerequisites
-Before using this module, ensure you have the following:
-
-- AWS credentials configured.
-- Terraform installed.
-- A working knowledge of Terraform.
-
-## Getting Started
-
-1. **Define the Module**
-
-Initially, it's essential to define a Terraform module, which is organized as a distinct directory encompassing Terraform configuration files. Within this module directory, input variables and output values must be defined in the variables.tf and outputs.tf files, respectively. The following illustrates an example directory structure:
-
-
-
-```plaintext
-ec2/
-|-- main.tf
-|-- variables.tf
-|-- outputs.tf
-```
-
-
-2. **Define Input Variables**
-
-Inside the `variables.tf` or in `*.tfvars` file, you should define values for the variables that the module requires.
-
-3. **Use the Module in Your Main Configuration**
-In your main Terraform configuration file (e.g., main.tf), you can use the module. Specify the source of the module, and version, For Example
+## Quickstart
 
 ```hcl
 module "kinesis" {
@@ -74,78 +42,24 @@ module "kinesis" {
 
   tags = module.tags.tags
 }
-
 ```
 
-4. **Output Values**
+## Required Inputs
 
-Inside the `outputs.tf` file of the module, you can define output values that can be referenced in the main configuration. For example:
+| Name | Type | Description |
+|------|------|-------------|
+| `name` | `string` | Kinesis stream name |
+| `shard_count` | `number` | Number of shards |
+## Key Outputs
 
-```hcl
-output "name" {
-  description = "Name of the Kinesis stream."
-  value       = module.kinesis.name
-}
+| Name | Description |
+|------|-------------|
+| `name` | Stream name |
+| `arn` | Stream ARN |
+| `stream_id` | Stream ID |
+## Full Variable & Output Reference
 
-output "shard_count" {
-  description = "Number of shards provisioned."
-  value       = module.kinesis.shard_count
-}
-
-output "stream_arn" {
-  description = "ARN of the Kinesis stream."
-  value       = module.kinesis.stream_arn
-}
-
-```
-
-## First Time Usage
-***uncomment the backend block in [main.tf](./example/main.tf)***
-```shell
-terraform init -backend-config=config.dev.hcl
-```
-***If testing locally, `terraform init` should be fine***
-
-Create a `dev` workspace
-```shell
-terraform workspace new dev
-```
-
-Plan Terraform
-```shell
-terraform plan -var-file terraform.tfvars
-```
-
-Apply Terraform
-```shell
-terraform apply -var-file terraform.tfvars
-```
-
-## Production Setup
-```shell
-terraform init -backend-config=config.prod.hcl
-```
-
-Create a `prod` workspace
-```shell
-terraform workspace new prod
-```
-
-Plan Terraform
-```shell
-terraform plan -var-file prod.tfvars
-```
-
-Apply Terraform
-```shell
-terraform apply -var-file prod.tfvars  
-```
-
-## Cleanup  
-Destroy Terraform
-```shell
-terraform destroy -var-file dev.tfvars
-```
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -240,29 +154,11 @@ By specifying this , it will bump the version and if you dont specify this in yo
   go test -timeout  30m
   ```
 
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
+
 ## Authors
 
 This project is authored by:
 - SourceFuse
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mayank0202"><img src="https://avatars.githubusercontent.com/u/83959396?v=4?s=100" width="100px;" alt="Mayank Sharma"/><br /><sub><b>Mayank Sharma</b></sub></a><br /><a href="#infra-mayank0202" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-mayank0202" title="Maintenance">🚧</a> <a href="#mentoring-mayank0202" title="Mentoring">🧑‍🏫</a> <a href="https://github.com/sourcefuse/terraform-aws-arc-kinesis-stream/commits?author=mayank0202" title="Code">💻</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
