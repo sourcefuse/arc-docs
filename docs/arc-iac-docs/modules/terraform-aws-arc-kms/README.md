@@ -1,23 +1,37 @@
-![Module Structure](./static/banner.png)
+![Module Banner](./static/banner.png)
 
 # [terraform-aws-arc-kms](https://github.com/sourcefuse/terraform-aws-arc-kms)
 
-<a href="https://github.com/sourcefuse/terraform-aws-arc-kms/releases/latest"><img src="https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-kms.svg?style=for-the-badge" alt="Latest Release"/></a> <a href="https://github.com/sourcefuse/terraform-aws-arc-kms/commits"><img src="https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-kms.svg?style=for-the-badge" alt="Last Updated"/></a> ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+> **Module:** `sourcefuse/arc-kms/aws`
+
+> **Registry:** [https://registry.terraform.io/modules/sourcefuse/arc-kms/aws](https://registry.terraform.io/modules/sourcefuse/arc-kms/aws)
+
+> **Category:** Security / Encryption
+
+> **Source:** [https://github.com/sourcefuse/terraform-aws-arc-kms](https://github.com/sourcefuse/terraform-aws-arc-kms)
+
+[![Latest Release](https://img.shields.io/github/release/sourcefuse/terraform-aws-arc-kms.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-kms/releases/latest)
+[![Last Updated](https://img.shields.io/github/last-commit/sourcefuse/terraform-aws-arc-kms.svg?style=for-the-badge)](https://github.com/sourcefuse/terraform-aws-arc-kms/commits)
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-kms)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-kms)
 
-[![snyk](https://github.com/sourcefuse/terraform-aws-arc-kms/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-arc-kms/actions/workflows/snyk.yaml)
-
 ## Overview
 
-SourceFuse AWS Reference Architecture (ARC) Terraform module for managing KMS.
+Creates and manages AWS KMS customer-managed keys (CMKs) with aliases, key policies, and automatic key rotation.
 
-## Usage
+## What It Does
 
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-kms/blob/main/example/main.tf) file in the example folder.  
+- KMS CMK with configurable deletion window
+- Automatic key rotation
+- Key alias management
+- Custom key policy support
+- Enable/disable key without deletion
+
+## Quickstart
 
 ```hcl
-
 module "kms" {
   source                  = "sourcefuse/arc-kms/aws"
   version                 = "1.0.0"
@@ -28,8 +42,23 @@ module "kms" {
   tags                    = module.tags.tags
   policy                  = var.policy
 }
-
 ```
+
+## Required Inputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `alias` | `string` | KMS key alias (must start with alias/) |
+## Key Outputs
+
+| Name | Description |
+|------|-------------|
+| `key_id` | KMS key ID |
+| `key_arn` | KMS key ARN |
+| `alias_arn` | KMS alias ARN |
+## Full Variable & Output Reference
+
+The complete inputs/outputs reference is auto-generated below.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -80,41 +109,9 @@ No modules.
 | <a name="output_key_id"></a> [key\_id](#output\_key\_id) | Key ID |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Versioning  
-This project uses a `.version` file at the root of the repo which the pipeline reads from and does a git tag.  
 
-When you intend to commit to `main`, you will need to increment this version. Once the project is merged,
-the pipeline will kick off and tag the latest git commit.  
-
-## Development
-
-### Prerequisites
-
-- [terraform](https://learn.hashicorp.com/terraform/getting-started/install#installing-terraform)
-- [terraform-docs](https://github.com/segmentio/terraform-docs)
-- [pre-commit](https://pre-commit.com/#install)
-- [golang](https://golang.org/doc/install#install)
-- [golint](https://github.com/golang/lint#installation)
-
-### Configurations
-
-- Configure pre-commit hooks
-  ```sh
-  pre-commit install
-  ```
-
-### Tests
-- Tests are available in `test` directory
-- Configure the dependencies
-  ```sh
-  cd test/
-  go mod init github.com/sourcefuse/terraform-aws-refarch-<module_name>
-  go get github.com/gruntwork-io/terratest/modules/terraform
-  ```
-- Now execute the test  
-  ```sh
-  go test -timeout  30m
-  ```
+## Contributing
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
 
 ## Authors
 
