@@ -97,7 +97,6 @@ nav:
       - AWS Account Baseline: "arc-iac-docs/reference_architectures/aws_account_baseline"
       - Control Tower and AFT: "arc-iac-docs/reference_architectures/control_tower_aft_setup"
       - Control Tower and LZA: "arc-iac-docs/reference_architectures/control_tower_lza_setup"
-      - MAP Migrations: "arc-iac-docs/reference_architectures/map_migrations"
       - Backstage Mono Repo Setup: "arc-iac-docs/reference_architectures/backstage_mono_repo_setup"
       - Pre-Commit Usage: "arc-iac-docs/reference_architectures/pre-commit-usage-guide"
       - ARC IaC and LZA: "arc-iac-docs/reference_architectures/arc_iac_lza"
