@@ -17,6 +17,9 @@
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=sourcefuse_terraform-aws-arc-waf)](https://sonarcloud.io/summary/new_code?id=sourcefuse_terraform-aws-arc-waf)
 
+> [!TIP]
+> 🤖 **New:** Use this module with AI assistants via the [ARC IaC MCP Server](https://github.com/sourcefuse/arc-iac-mcp) — search, scaffold, and security-scan ARC modules from natural language. [Quick setup ↓](#ai-assistant-integration-arc-iac-mcp)
+
 
 ## Overview
 
@@ -183,6 +186,50 @@ By specifying this , it will bump the version and if you dont specify this in yo
   ```sh
   go test -timeout  30m
   ```
+## AI Assistant Integration (ARC IaC MCP)
+
+The **[ARC IaC MCP Server](https://github.com/sourcefuse/arc-iac-mcp)** is a hosted Model Context Protocol service that lets AI assistants browse, search, scaffold, compare, and security-scan any of the SourceFuse ARC Terraform modules — directly from natural language.
+
+**What you can do with it:**
+
+- **Discover** — search and filter modules by keyword or AWS resource type.
+- **Understand** — get inputs, outputs, and resources for any module without leaving your editor.
+- **Scaffold** — generate production-ready, multi-file Terraform with cross-module wiring already done.
+- **Secure** — scan generated or existing HCL for misconfigurations before it hits a PR.
+- **Compare** — diff modules side-by-side to make informed architectural decisions.
+
+### Setup (one minute)
+
+The MCP endpoint is `https://arc-iac-mcp.sourcef.us/mcp`. Pick your client:
+
+**Claude Code CLI:**
+```bash
+claude mcp add arc-iac --transport http https://arc-iac-mcp.sourcef.us/mcp
+```
+
+**Claude Desktop** — edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
+```json
+{
+  "mcpServers": {
+    "arc-iac": {
+      "url": "https://arc-iac-mcp.sourcef.us/mcp"
+    }
+  }
+}
+```
+
+**Cursor / Windsurf / Kiro** — add the same block to `.cursor/mcp.json` (or the equivalent for your client).
+
+### Example prompts to try
+
+- *"List all ARC modules sorted by downloads"*
+- *"What inputs does `arc-ecs` require?"*
+- *"Scaffold a production-ready `arc-db` Aurora setup with Secrets Manager"*
+- *"Compare `arc-eks` and `arc-ecs` for running 10 microservices"*
+- *"Scan this Terraform before I raise a PR: `<paste HCL>`"*
+
+See the [ARC IaC MCP repo](https://github.com/sourcefuse/arc-iac-mcp) for the full tool reference, troubleshooting tips, and local-development instructions.
+
 ## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions and development setup.
