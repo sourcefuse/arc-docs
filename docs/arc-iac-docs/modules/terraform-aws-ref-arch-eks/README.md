@@ -176,18 +176,7 @@ module "eks_cluster" {
 | <a name="input_upgrade_policy"></a> [upgrade\_policy](#input\_upgrade\_policy) | (optional) Support type to use for the cluster. If the cluster is set to EXTENDED, it will enter extended support at the end of standard support.<br/>    If the cluster is set to STANDARD, it will be automatically upgraded at the end of standard support.<br/>    Valid values are EXTENDED, STANDARD"<br/><br/>    STANDARD - This option supports the Kubernetes version for 14 months after the release date. There is no additional cost. When standard support ends, your cluster will be auto upgraded to the next version.<br/>    EXTENDED - This option supports the Kubernetes version for 26 months after the release date. The extended support period has an additional hourly cost that begins after the standard support period ends. When extended support ends, your cluster will be auto upgraded to the next version. | `string` | `"STANDARD"` | no |
 | <a name="input_vpc_config"></a> [vpc\_config](#input\_vpc\_config) | Configuration block for VPC settings:<br/>  - security\_group\_ids: List of security group IDs associated with the VPC.<br/>  - subnet\_ids: List of subnet IDs where resources will be deployed.<br/>  - endpoint\_private\_access: Enable or disable private access to the cluster endpoint.<br/>  - endpoint\_public\_access: Enable or disable public access to the cluster endpoint.<br/>  - public\_access\_cidrs: CIDR blocks that can access the public endpoint (if enabled). | <pre>object({<br/>    security_group_ids      = optional(list(string), [])<br/>    subnet_ids              = list(string)<br/>    endpoint_private_access = optional(bool, false)<br/>    endpoint_public_access  = optional(bool, true)<br/>    public_access_cidrs     = optional(list(string), ["0.0.0.0/0"])<br/>  })</pre> | n/a | yes |
 
-## Required Inputs
-
-| Name | Type | Description |
-|------|------|-------------|
-| `namespace` | `string` | Namespace prefix |
-| `environment` | `string` | Deployment environment |
-| `name` | `string` | EKS cluster name |
-| `kubernetes_version` | `string` | Kubernetes version |
-| `vpc_config` | `object` | VPC and subnet configuration |
-
-
-## Key Outputs
+## Outputs
 
 | Name | Description |
 |------|-------------|
