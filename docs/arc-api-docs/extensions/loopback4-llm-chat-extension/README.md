@@ -12,8 +12,8 @@
 <a href="https://github.com/sourcefuse/loopback4-llm-chat-extension/graphs/contributors" target="_blank">
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/sourcefuse/loopback4-llm-chat-extension?">
 </a>
-<a href="https://www.npmjs.com/package/loopback4-authentication" target="_blank">
-<img alt="downloads" src="https://img.shields.io/npm/dw/loopback4-llm-chat-extension.svg">
+<a href="https://www.npmjs.com/package/lb4-llm-chat-component" target="_blank">
+<img alt="downloads" src="https://img.shields.io/npm/dw/lb4-llm-chat-component.svg">
 </a>
 <a href="https://github.com/sourcefuse/loopback4-llm-chat-extension/blob/master/LICENSE">
 <img src="https://img.shields.io/github/license/sourcefuse/loopback4-llm-chat-extension.svg" alt="License" />
@@ -25,11 +25,37 @@
 
 ### Overview
 
-A Loopack4 based component to integrate a basic Langgraph.js based endpoint in your application which can use any tool that you register using the provided decorator.
+A Loopback4 based component to integrate a chat/LLM endpoint (powered by [Mastra](https://mastra.ai)) in your application which can use any tool that you register using the provided decorator.
+
+> **Version note — LLM backend**
+>
+> - **Up to `v4.x`** the component was backed by **LangGraph.js / LangChain**.
+> - **From `v5.x`** onwards it is backed by **[Mastra](https://mastra.ai) + the [Vercel AI SDK](https://ai-sdk.dev)**.
+>
+> The public surface is preserved across the switch — the `@graphNode` / `@graphTool` decorators, the `IGraphNode` / `IGraphTool` interfaces and the `AiIntegrationBindings` / `DbQueryAIExtensionBindings` binding keys are unchanged. Upgrading from `v4.x` mainly means swapping the LangChain LLM provider packages for their AI SDK equivalents (see [LLM Providers](#llm-providers)) and updating custom tools to return a plain [`GraphTool`](#writing-your-own-tool) object instead of a LangChain `tool()`.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Installation](#installation)
+- [Basic Usage](#basic-usage)
+- [LLM Providers](#llm-providers) — [Ollama](#ollama) · [Gemini](#gemini) · [Cerebras](#cerebras) · [Anthropic](#anthropic) · [OpenAI](#openai) · [Bedrock](#bedrock) · [Groq](#groq) · [OpenRouter](#openrouter)
+- [Limiters](#limiters)
+- [DbQueryComponent](#dbquerycomponent)
+- [VisualizerComponent](#visualizercomponent)
+- [Providing Context](#providing-context)
+- [Registering Models](#usage)
+- [Connectors](#connectors)
+- [Default Conditions](#default-conditions)
+- [PgWithRlsConnector](#pgwithrlsconnector)
+- [Writing Your Own Tool](#writing-your-own-tool)
+- [Overriding a Node](#overriding-a-node)
+- [Observability](#observability) — [Langsmith](#with-langsmith) · [Langfuse](#with-langfuse)
+- [Testing](#testing)
 
 ### Installation
 
-Install AIIntegrationsComponent using `npm`;
+Install AiIntegrationsComponent using `npm`:
 
 ```sh
 $ [npm install | yarn add] lb4-llm-chat-component
@@ -47,7 +73,7 @@ export class MyApplication extends BootMixin(
   ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
-    // could be any LLM provider or your own LangGraph supported LLM provider
+    // could be any built-in provider (see below) or your own AI SDK compatible LLM provider
     // you can also have different LLM for different LLM type - cheap, smart and multimodal
     this.bind(AiIntegrationBindings.CheapLLM).toProvider(Ollama);
     this.bind(AiIntegrationBindings.SmartLLM).toProvider(Ollama);
@@ -57,9 +83,9 @@ export class MyApplication extends BootMixin(
       // if not set to true, it will bind a ARC based sequence from @sourceloop/core with authentication and authorization
       useCustomSequence: true,
       // if not set to false, it will bind the core component from @sourceloop/core by default
-      mountCore: false
+      mountCore: false,
       // if not set to false, it will bind @sourceloop/file-utils component with defaults config
-      mountFileUtils: false
+      mountFileUtils: false,
     });
     this.component(AiIntegrationsComponent);
 
@@ -71,31 +97,41 @@ export class MyApplication extends BootMixin(
 
 ## LLM Providers
 
+Since `v5.x` the providers are thin wrappers around the [Vercel AI SDK](https://ai-sdk.dev) provider packages. Each provider is shipped as a subpath export of this package, so you install the matching AI SDK package and import the provider from `lb4-llm-chat-component/<provider>`.
+
 ### Ollama
 
-To need the `Ollama` based models, install the package - `@langchain/ollama` and update your application.ts -
+To use the `Ollama` based models, install the package - `ollama-ai-provider-v2` and update your application.ts -
 
 ```ts
+import {Ollama, OllamaEmbedding} from 'lb4-llm-chat-component/ollama';
+
 this.bind(AiIntegrationBindings.CheapLLM).toProvider(Ollama);
 this.bind(AiIntegrationBindings.SmartLLM).toProvider(Ollama);
 this.bind(AiIntegrationBindings.FileLLM).toProvider(Ollama);
+this.bind(AiIntegrationBindings.EmbeddingModel).toProvider(OllamaEmbedding);
 ```
 
 ### Gemini
 
-To use the `Gemini` based models, install the package - `@google/generative-ai` and `@langchain/google-genai` and update your application.ts -
+To use the `Gemini` based models, install the package - `@ai-sdk/google` and update your application.ts -
 
 ```ts
+import {Gemini, GeminiEmbedding} from 'lb4-llm-chat-component/google';
+
 this.bind(AiIntegrationBindings.CheapLLM).toProvider(Gemini);
 this.bind(AiIntegrationBindings.SmartLLM).toProvider(Gemini);
 this.bind(AiIntegrationBindings.FileLLM).toProvider(Gemini);
+this.bind(AiIntegrationBindings.EmbeddingModel).toProvider(GeminiEmbedding);
 ```
 
 ### Cerebras
 
-To use the `Cerebras` based models, install the package - `@langchain/cerebras` and update your application.ts -
+To use the `Cerebras` based models, install the package - `@ai-sdk/cerebras` and update your application.ts -
 
 ```ts
+import {Cerebras} from 'lb4-llm-chat-component/cerebras';
+
 this.bind(AiIntegrationBindings.CheapLLM).toProvider(Cerebras);
 this.bind(AiIntegrationBindings.SmartLLM).toProvider(Cerebras);
 this.bind(AiIntegrationBindings.FileLLM).toProvider(Cerebras);
@@ -103,19 +139,23 @@ this.bind(AiIntegrationBindings.FileLLM).toProvider(Cerebras);
 
 ### Anthropic
 
-To use the `Anthropic` based models, install the package - `@langchain/anthropic` and update your application.ts -
+To use the `Anthropic` (Claude) based models, install the package - `@ai-sdk/anthropic` and update your application.ts. The provider is exported as `Claude` -
 
 ```ts
-this.bind(AiIntegrationBindings.CheapLLM).toProvider(Anthropic);
-this.bind(AiIntegrationBindings.SmartLLM).toProvider(Anthropic);
-this.bind(AiIntegrationBindings.FileLLM).toProvider(Anthropic);
+import {Claude} from 'lb4-llm-chat-component/anthropic';
+
+this.bind(AiIntegrationBindings.CheapLLM).toProvider(Claude);
+this.bind(AiIntegrationBindings.SmartLLM).toProvider(Claude);
+this.bind(AiIntegrationBindings.FileLLM).toProvider(Claude);
 ```
 
 ### OpenAI
 
-To use the `OpenAI` models, install the package - `@langchain/openai` and update your application.ts -
+To use the `OpenAI` models, install the package - `@ai-sdk/openai` and update your application.ts -
 
 ```ts
+import {OpenAI} from 'lb4-llm-chat-component/openai';
+
 this.bind(AiIntegrationBindings.CheapLLM).toProvider(OpenAI);
 this.bind(AiIntegrationBindings.SmartLLM).toProvider(OpenAI);
 this.bind(AiIntegrationBindings.FileLLM).toProvider(OpenAI);
@@ -123,13 +163,70 @@ this.bind(AiIntegrationBindings.FileLLM).toProvider(OpenAI);
 
 ### Bedrock
 
-To use the `Bedrock` based models, install the package - `@langchain/aws` and update your application.ts -
+To use the `Bedrock` based models, install the package - `@ai-sdk/amazon-bedrock` and update your application.ts -
 
 ```ts
+import {Bedrock, BedrockEmbedding} from 'lb4-llm-chat-component/aws';
+
 this.bind(AiIntegrationBindings.CheapLLM).toProvider(Bedrock);
 this.bind(AiIntegrationBindings.SmartLLM).toProvider(Bedrock);
 this.bind(AiIntegrationBindings.FileLLM).toProvider(Bedrock);
+this.bind(AiIntegrationBindings.EmbeddingModel).toProvider(BedrockEmbedding);
 ```
+
+> The AWS provider also exports `BedrockNonThinking` for models where you want to disable extended thinking (used for the `SmartNonThinkingLLM` binding).
+
+### Groq
+
+To use the `Groq` based models, install the package - `@ai-sdk/groq` and update your application.ts -
+
+```ts
+import {Groq} from 'lb4-llm-chat-component/groq';
+
+this.bind(AiIntegrationBindings.CheapLLM).toProvider(Groq);
+this.bind(AiIntegrationBindings.SmartLLM).toProvider(Groq);
+this.bind(AiIntegrationBindings.FileLLM).toProvider(Groq);
+```
+
+### OpenRouter
+
+To use the `OpenRouter` based models, install the package - `@openrouter/ai-sdk-provider`. The simplest setup is the same `toProvider` pattern as the other providers, which reads the `OPENROUTER_MODEL` / `OPENROUTER_API_KEY` (and optional `OPENROUTER_BASE_URL`, `OPENROUTER_TEMPERATURE`) env variables -
+
+```ts
+import {OpenRouter} from 'lb4-llm-chat-component/openrouter';
+
+this.bind(AiIntegrationBindings.CheapLLM).toProvider(OpenRouter);
+this.bind(AiIntegrationBindings.SmartLLM).toProvider(OpenRouter);
+this.bind(AiIntegrationBindings.FileLLM).toProvider(OpenRouter);
+```
+
+For finer control - a different model per binding, reasoning options, or provider routing - use the static `OpenRouter.createInstance(...)` factory and bind the returned model with `.to(...)`, as the reference `reporting-service` does -
+
+```ts
+import {OpenRouter} from 'lb4-llm-chat-component/openrouter';
+
+this.bind(AiIntegrationBindings.SmartLLM).to(
+  OpenRouter.createInstance({
+    model: process.env.OPENROUTER_SMART_MODEL!,
+    config: {
+      apiKey: process.env.OPENROUTER_API_KEY,
+      baseURL: process.env.OPENROUTER_BASE_URL,
+      temperature: 0,
+      // OpenRouter's native reasoning control
+      reasoningEffort: 'high', // 'xhigh' | 'high' | 'medium' | 'low' | 'minimal' | 'none'
+      reasoningSummary: 'concise', // 'auto' | 'concise' | 'detailed'
+      // provider routing (preferred order / allow-list)
+      provider: {order: ['cerebras', 'groq', 'google-vertex']},
+    },
+  }),
+);
+```
+
+> **`v5.x` model-kwargs change (OpenRouter)**
+>
+> On `v4.x`, `OpenRouter.createInstance({model, config})` accepted `config` as `Omit<ChatOpenRouterInput, 'model'>` — i.e. arbitrary LangChain `ChatOpenRouter` kwargs spread straight into `new ChatOpenRouter({model, ...config})`.
+>
+> On `v5.x` there is no LangChain model, so `config` is now a small **explicit, typed** object: `apiKey`, `baseURL`, `temperature`, `reasoningEffort`, `reasoningSummary`, and `provider` (`{order, only}`). Under the hood these are mapped to the AI SDK provider (`createOpenRouter(...).chat(model, {reasoning: {effort, summary}, provider})`, with `temperature` applied via the model's `defaultSettings`). If you were passing other raw LangChain kwargs before, move them to these fields (reasoning/provider-routing are the common ones).
 
 This binding would add an endpoint `/generate` in your service, that can answer user's query using the registered tools. By default, the module gives one set of tools through the `DbQueryComponent`
 
@@ -137,11 +234,11 @@ This binding would add an endpoint `/generate` in your service, that can answer 
 
 The package provides a way to limit the usage of the LLM Chat functionality by binding a provider on the key `AiIntegrationBindings.LimitStrategy` that follows the interface - `ILimitStrategy`.
 
-The packages comes with 3 strategies by default that are bound automatically on the basis of `AiIntegrationBindings.Config` -
+The package comes with 3 strategies by default that are bound automatically on the basis of `AiIntegrationBindings.Config` -
 
 - **ChatCountStrategy** - Applies limits per user based on number of chats. It is used if only `chatLimit` and `period` is provided in `tokenCounterConfig`.
-- **TokenCountStrategy** - Applies a fixed limit per user based on number of tokens used. It is used if `tokenLimit` and `period` are provided with `bufferToken` as optional field that determines that how much buffer to keep while checking for token limit.
-- **TokenCountPerUserStrategy** - Applies token based limit similar to `TokenCountStrategy` except the number of tokens commes from user permission `TokenUsage:NUMBER` in the user's token. It applies if only `period` is set in `tokenCounterConfig`, it also works with `bufferToken` just like `TokenCountStrategy`.
+- **TokenCountStrategy** - Applies a fixed limit per user based on number of tokens used. It is used if `tokenLimit` and `period` are provided with `bufferToken` as optional field that determines how much buffer to keep while checking for token limit.
+- **TokenCountPerUserStrategy** - Applies token based limit similar to `TokenCountStrategy` except the number of tokens comes from user permission `TokenUsage:NUMBER` in the user's token. It applies if only `period` is set in `tokenCounterConfig`, it also works with `bufferToken` just like `TokenCountStrategy`.
 
 ## DbQueryComponent
 
@@ -354,7 +451,7 @@ export class Employee extends Entity {
 ```
 
 - Model description - this is the primary description of the model, it is used to select model for generation, so it should only define the purpose of the model itself.
-- Model context - this is secondary information about the model, usually defining some specific details about the model that must be kept in mind while using it. NOTE - These values should always include the model name. This must be information that is applicable to overall model usage, or atleast to multiple columns, and not related to any single field of the model.
+- Model context - this is secondary information about the model, usually defining some specific details about the model that must be kept in mind while using it. NOTE - These values should always include the model name. This must be information that is applicable to overall model usage, or at least to multiple columns, and not related to any single field of the model.
 - Property description - this is the description for a property of a model, providing context for the LLM on how to use and understand a particular property.
 
 ## Usage
@@ -374,8 +471,8 @@ this.bind(DbQueryAIExtensionBindings.Config).to({
     schema: 'public', // schema of the database in case of DBs like Postgresql
     ignoredColumns: ['deleted'], // list of db column names that will be ignored for query generation (Do not use Loopback field names in this list)
   },
-  readAccessForAI: false // give access of the query result to the llm
-  maxRowsForAI: 0 // number of rows from the result that are passed to the LLM
+  readAccessForAI: false, // give access of the query result to the llm
+  maxRowsForAI: 0, // number of rows from the result that are passed to the LLM
   columnSelection: false // add a column selection step in generation in case you have tables with a lot of columns.
 });
 ```
@@ -385,10 +482,10 @@ this.bind(DbQueryAIExtensionBindings.Config).to({
 The package comes with 3 connectors by default -
 
 - **PgConnector** - basic connector for PostgreSQL databases
-- **SqlLiteConnector** - basic connector SqlLite databases, can be used for testing
+- **SqlLiteConnector** - basic connector for SQLite databases, can be used for testing
 - **PgWithRlsConnector** - Connector for PostgreSQL databases with support for [Row Security Policies](https://www.postgresql.org/docs/current/ddl-rowsecurity.html). Refer [`PgWithRlsConnector`](#pgwithrlsconnector) for more details.
 
-You can write your own connector by following the `IDbConnector` interface and and binding it on `DbQueryAIExtensionBindings.Connector`.
+You can write your own connector by following the `IDbConnector` interface and binding it on `DbQueryAIExtensionBindings.Connector`.
 
 By default, the package binds `PgWithRlsConnector` but if you are not planning to use row security policies or default conditions, you can bind `PgConnector` -
 
@@ -466,37 +563,93 @@ this.bind(DbQueryAIExtensionBindings.DefaultConditions).to(
 
 You can register your own tools by simply using the `@graphTool()` decorator and implementing the `IGraphTool` interface. Any such class would be automatically registered with the `/generate` endpoint and the LLM would be able to use it as a tool.
 
-```ts
-import {tool} from '@langchain/core/tools';
-import z from 'zod';
-import {graphTool, IGraphTool} from 'lb4-llm-chat-component';
+Since `v5.x`, `build()` returns a plain `GraphTool` object (`{name, description, schema, invoke}`) instead of a LangChain `tool()` — the component converts it to an AI SDK tool internally. `schema` is a [Zod](https://zod.dev) schema (or a JSON schema object) and `invoke` receives the parsed arguments.
 
-...
+```ts
+import z from 'zod';
+import {
+  graphTool,
+  GraphTool,
+  IGraphTool,
+  RunnableConfig,
+} from 'lb4-llm-chat-component';
+
 @graphTool()
 export class AddTool implements IGraphTool {
+  key = 'add-tool';
   needsReview = false;
 
-  build() {
-    return tool((ob: {a: number, b: number}) => {
-        return ob.a + ob.b
-    },
-    {
-        name: 'add-tool',
-        description: 'a tool to add two numbers',
-        schema: z.object({
-            a: z.number(),
-            b: z.number()
-        })
-    });
+  async build(_config: RunnableConfig): Promise<GraphTool> {
+    return {
+      name: this.key,
+      description: 'a tool to add two numbers',
+      schema: z.object({
+        a: z.number(),
+        b: z.number(),
+      }),
+      invoke: (args: {a: number; b: number}) => args.a + args.b,
+    };
   }
 }
 ```
+
+## Overriding a Node
+
+The built-in graphs (used by `DbQueryComponent` and `VisualizerComponent`) are composed of small dependency-injected classes, each tagged with the `@graphNode(<key>)` decorator and resolved from the LoopBack context by that key at run time. This is the same seam the package uses to register its own nodes, so a host can replace any single node without forking the component.
+
+The graph resolves **exactly one** binding per node key — registering two classes for the same key raises `Multiple nodes found with key <key>`. To override a bundled node, unbind the default and register your own class under the **same** `@graphNode(<key>)` key:
+
+```ts
+import {graphNode, IGraphNode, RunnableConfig} from 'lb4-llm-chat-component';
+import {DbQueryNodes} from 'lb4-llm-chat-component'; // the node-key enum
+
+@graphNode(DbQueryNodes.GetTables)
+export class MyGetTablesNode implements IGraphNode {
+  async execute(state: AnyObject, _config: RunnableConfig) {
+    // your custom logic; return the partial state the next node expects
+    return {tables: ['public.employees']};
+  }
+}
+```
+
+```ts
+// application.ts - remove the bundled node, then register the override
+this.unbind('services.GetTablesNode'); // bundled nodes are bound at services.<ClassName>
+this.service(MyGetTablesNode); //         your @graphNode(DbQueryNodes.GetTables) class
+```
+
+Collaborators are constructor-injected, so an override can `@inject` the same helpers the bundled node uses (for example `PermissionHelper`, the schema store, or the resolved model tiers). The available node keys live in the exported `DbQueryNodes` (and the visualization node enum).
 
 # Observability
 
 ## With Langsmith
 
-You can enable langsmith observability by simply adding the Langsmith env variables. Refer [this](https://docs.langchain.com/langsmith/observability-quickstart) for more details.
+On `v4.x` (LangChain based) LangSmith worked out-of-the-box just by setting the LangSmith env variables. From `v5.x` the LangChain runtime is gone, so LangSmith is wired through the AI SDK telemetry channel instead - install the `langsmith` package, bind the `LangsmithComponent` and set `LANGSMITH_TRACING=true`.
+
+- install the package -
+
+```sh
+npm i langsmith
+```
+
+- add the component in your LB4 application -
+
+```ts
+import {LangsmithComponent} from 'lb4-llm-chat-component/langsmith';
+...
+
+this.component(LangsmithComponent);
+```
+
+- set up the env -
+
+```sh
+export LANGSMITH_TRACING=true
+export LANGSMITH_API_KEY="lsv2_..."
+export LANGSMITH_PROJECT="your-project"
+```
+
+Refer [this](https://docs.langchain.com/langsmith/observability-quickstart) for more details on the available env variables.
 
 ## With Langfuse
 
@@ -505,7 +658,7 @@ You can enable Langfuse based tracing with the following steps -
 - install the following packages -
 
 ```sh
-npm i @langfuse/core @langfuse/langchain @langfuse/otel
+npm i @langfuse/tracing @langfuse/otel
 ```
 
 - adding the following component in your LB4 application -
