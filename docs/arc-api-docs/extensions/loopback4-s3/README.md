@@ -94,7 +94,7 @@ Please read [CONTRIBUTING.md](https://github.com/sourcefuse/loopback4-s3/blob/ma
 
 ## Developing
 
-For development guidelines, refer [here](https://github.com/sourcefuse/rakuten-pms-api/tree/master/DEVELOPING.md)
+For development guidelines, refer [here](https://github.com/sourcefuse/loopback4-s3/tree/master/DEVELOPING.md)
 
 ## Code of conduct
 
