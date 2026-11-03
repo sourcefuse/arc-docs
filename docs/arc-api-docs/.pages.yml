@@ -15,3 +15,8 @@ nav:
       - Helmet.js: "arc-api-docs/extensions/loopback4-helmet"
       - Notifications: "arc-api-docs/extensions/loopback4-notifications"
       - HashiCorp's Vault: "arc-api-docs/extensions/loopback4-vault"
+      - MCP: "arc-api-docs/extensions/loopback4-mcp"
+      - Message Bus Connector: "arc-api-docs/extensions/loopback4-message-bus-connector"
+      - NATS Connector: "arc-api-docs/extensions/loopback4-nats-connector"
+      - LLM Chat: "arc-api-docs/extensions/loopback4-llm-chat-extension"
+      - Billing: "arc-api-docs/extensions/loopback4-billing"
