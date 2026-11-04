@@ -35,6 +35,40 @@ This module utilizes different `local-exec` provisioners to execute scripts for 
 and remove the runner from the organization when the resources are destroyed.
 See [Pre-Requisites](#pre-requisites) for information on the needed permissions these scripts will require.  
 
+### Runners on Amazon EKS
+
+Set `eks_runner_config.create = true` to run autoscaling, ephemeral runners on an existing EKS cluster. Set
+`create_ec2_runner = false` if you do not also want the EC2 runner. The root module then deploys the official Actions Runner Controller runner scale sets with Helm, through
+the [`modules/eks-runner`](./modules/eks-runner) submodule. It supports multiple scale sets, Pod Identity or IRSA, and
+GitHub App auth. See [`example/eks-runner`](./example/eks-runner).
+
+```hcl
+module "github_runner" {
+  source  = "sourcefuse/arc-github-runner/aws"
+  # version = "x.y.z"
+
+  namespace         = "arc"
+  environment       = "dev"
+  region            = "us-east-1"
+  create_ec2_runner = false
+
+  github_token = data.aws_ssm_parameter.github_token.value # or github_app_private_key
+
+  eks_runner_config = {
+    create             = true
+    cluster_name       = "my-eks-cluster"
+    github_config_url  = "https://github.com/my-org"
+    github_auth_method = "pat"
+    runner_scale_sets = {
+      default = { min_runners = 1, max_runners = 10 }
+    }
+  }
+}
+```
+
+The calling configuration must configure the `helm` and `kubernetes` providers for the cluster. EC2-only inputs
+(`vpc_id`, `subnet_id`, ...) are not needed in this mode.
+
 ## Pre-Requisites
 You will need to have a GitHub Personal Access Token (PAT) with `admin:org` permissions in order to manage GitHub runners for the Organization.
 If you do not have sufficient permissions to GitHub, the runner will not register.  
@@ -52,7 +86,8 @@ data "aws_ssm_parameter" "github_token" {
 :warning: At this time, this module only supports **Debian** / **Ubuntu** AMIs.
 When choosing an AMI, please be sure to select either **Ubuntu** or **Debian**.  
 
-To see a full example, check out the [main.tf](https://github.com/sourcefuse/terraform-aws-arc-github-runner/blob/main/example/main.tf) file in the example folder.  
+To see a full EC2 example, check out the [EC2 runner example](https://github.com/sourcefuse/terraform-aws-arc-github-runner/blob/main/example/ec2-runner/main.tf).  
+For EKS runner scale sets, see the [EKS runner example](./example/eks-runner).  
 
 ## Quickstart
 
@@ -98,60 +133,51 @@ The complete inputs/outputs reference is auto-generated below.
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.3, < 2.0.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.0, < 2.0.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.40, < 6.0 |
+| <a name="requirement_helm"></a> [helm](#requirement\_helm) | >= 2.12, < 4.0 |
+| <a name="requirement_kubernetes"></a> [kubernetes](#requirement\_kubernetes) | >= 2.20, < 4.0 |
 | <a name="requirement_null"></a> [null](#requirement\_null) | >= 3.0 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.50.0 |
-| <a name="provider_null"></a> [null](#provider\_null) | 3.2.1 |
-| <a name="provider_random"></a> [random](#provider\_random) | 3.4.3 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.100.0 |
+| <a name="provider_null"></a> [null](#provider\_null) | 3.3.2 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_runner"></a> [runner](#module\_runner) | git::https://github.com/cloudposse/terraform-aws-ec2-instance | 0.45.2 |
-| <a name="module_ssh_key_pair"></a> [ssh\_key\_pair](#module\_ssh\_key\_pair) | git::https://github.com/cloudposse/terraform-aws-key-pair | 0.18.3 |
+| <a name="module_eks_runner"></a> [eks\_runner](#module\_eks\_runner) | ./modules/eks-runner | n/a |
+| <a name="module_runner"></a> [runner](#module\_runner) | sourcefuse/arc-ec2/aws | 0.0.5 |
 
 ## Resources
 
 | Name | Type |
 |------|------|
-| [aws_iam_policy.runner_bucket_access](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy) | resource |
-| [aws_iam_role_policy_attachment.runner](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
-| [aws_iam_role_policy_attachment.runner_bucket_access](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
-| [aws_s3_bucket.runner](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket) | resource |
-| [aws_s3_bucket_acl.runner](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_acl) | resource |
-| [aws_s3_bucket_logging.runner](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_logging) | resource |
-| [aws_s3_bucket_public_access_block.runner](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_public_access_block) | resource |
-| [aws_s3_bucket_server_side_encryption_configuration.runner](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_server_side_encryption_configuration) | resource |
-| [aws_s3_bucket_versioning.runner](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_versioning) | resource |
-| [aws_s3_object.docker_compose](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_object) | resource |
 | [aws_ssm_association.dependencies](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ssm_association) | resource |
-| [aws_ssm_association.runner_compose](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ssm_association) | resource |
+| [aws_ssm_association.runner_install](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ssm_association) | resource |
 | [aws_ssm_document.dependencies](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ssm_document) | resource |
-| [aws_ssm_document.runner_compose](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ssm_document) | resource |
+| [aws_ssm_document.runner_install](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ssm_document) | resource |
 | [null_resource.cleanup](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
 | [null_resource.prepare](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
-| [random_string.runner](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string) | resource |
 | [aws_caller_identity.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
-| [aws_ssm_parameter.runner_token](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ssm_parameter) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_ami"></a> [ami](#input\_ami) | AMI information for the EC2 instance | <pre>object({<br>    id       = string<br>    owner_id = string<br>  })</pre> | <pre>{<br>  "id": "ami-04505e74c0741db8d",<br>  "owner_id": "099720109477"<br>}</pre> | no |
+| <a name="input_ami"></a> [ami](#input\_ami) | AMI information for the EC2 instance | <pre>object({<br/>    id       = string<br/>    owner_id = string<br/>  })</pre> | <pre>{<br/>  "id": "ami-04505e74c0741db8d",<br/>  "owner_id": "099720109477"<br/>}</pre> | no |
 | <a name="input_associate_public_ip_address"></a> [associate\_public\_ip\_address](#input\_associate\_public\_ip\_address) | Associate a public IP address with the instance | `bool` | `false` | no |
-| <a name="input_ec2_runner_iam_role_policy_arns"></a> [ec2\_runner\_iam\_role\_policy\_arns](#input\_ec2\_runner\_iam\_role\_policy\_arns) | IAM role policies to attach to the Runner instance | `list(string)` | <pre>[<br>  "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore",<br>  "arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM"<br>]</pre> | no |
+| <a name="input_create_ec2_runner"></a> [create\_ec2\_runner](#input\_create\_ec2\_runner) | Whether to create the EC2 (SSM managed) runner. Set to false when only EKS runners are needed (eks\_runner\_config.create = true). | `bool` | `true` | no |
+| <a name="input_ec2_runner_iam_role_policy_arns"></a> [ec2\_runner\_iam\_role\_policy\_arns](#input\_ec2\_runner\_iam\_role\_policy\_arns) | IAM role policies to attach to the Runner instance | `list(string)` | <pre>[<br/>  "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore",<br/>  "arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM"<br/>]</pre> | no |
+| <a name="input_eks_runner_config"></a> [eks\_runner\_config](#input\_eks\_runner\_config) | EKS runner configuration. Set `create = true` to deploy autoscaling, ephemeral<br/>runner scale sets on an existing EKS cluster (official Actions Runner<br/>Controller charts). Attributes map 1:1 to the inputs of<br/>[`modules/eks-runner`](./modules/eks-runner), where defaults, validation and<br/>full descriptions live. Unset attributes use the submodule defaults.<br/>Required when create = true: cluster\_name, github\_config\_url.<br/><br/>Credentials are passed separately as sensitive inputs: `github_token` (PAT)<br/>or `github_app_private_key` (GitHub App).<br/><br/>Example:<br/>  eks\_runner\_config = {<br/>    create             = true<br/>    cluster\_name       = "my-eks-cluster"<br/>    github\_config\_url  = "https://github.com/my-org"<br/>    github\_auth\_method = "pat"<br/>    runner\_scale\_sets = {<br/>      default = { min\_runners = 1, max\_runners = 10 }<br/>    }<br/>  } | <pre>object({<br/>    create            = optional(bool, false)<br/>    cluster_name      = optional(string)<br/>    github_config_url = optional(string)<br/>    oidc_provider_arn = optional(string)<br/>    name_prefix       = optional(string)<br/><br/>    k8s_namespace               = optional(string)<br/>    create_k8s_namespace        = optional(bool)<br/>    k8s_namespace_labels        = optional(map(string))<br/>    controller_namespace        = optional(string)<br/>    create_controller_namespace = optional(bool)<br/><br/>    install_controller = optional(bool)<br/>    controller_service_account = optional(object({<br/>      name      = string<br/>      namespace = string<br/>    }))<br/>    chart_oci_registry      = optional(string)<br/>    chart_version           = optional(string)<br/>    controller_release_name = optional(string)<br/>    controller_values       = optional(list(string))<br/>    helm_timeout            = optional(number)<br/>    helm_max_history        = optional(number)<br/><br/>    runner_scale_sets = optional(any)<br/><br/>    existing_github_config_secret_name = optional(string)<br/>    github_auth_method                 = optional(string)<br/>    github_app_id                      = optional(string)<br/>    github_app_installation_id         = optional(string)<br/><br/>    iam_auth_type                 = optional(string)<br/>    iam_role_path                 = optional(string)<br/>    iam_role_permissions_boundary = optional(string)<br/><br/>    install_ebs_csi_driver    = optional(bool)<br/>    ebs_csi_addon_version     = optional(string)<br/>    ebs_csi_kms_key_arn       = optional(string)<br/>    create_storage_class      = optional(bool)<br/>    storage_class_name        = optional(string)<br/>    storage_class_is_default  = optional(bool)<br/>    storage_class_provisioner = optional(string)<br/>    storage_class_volume_type = optional(string)<br/>  })</pre> | <pre>{<br/>  "create": false<br/>}</pre> | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | Name of the environment, i.e. dev, stage, prod | `string` | n/a | yes |
+| <a name="input_github_app_private_key"></a> [github\_app\_private\_key](#input\_github\_app\_private\_key) | GitHub App private key (PEM). Used by the EKS runner when eks\_runner\_config.github\_auth\_method is "github\_app". | `string` | `null` | no |
 | <a name="input_github_owner"></a> [github\_owner](#input\_github\_owner) | GitHub Owner the runner belongs to. If you are adding a repo, the format will be `owner/repo` | `string` | `"sourcefuse"` | no |
-| <a name="input_github_token"></a> [github\_token](#input\_github\_token) | GitHub Personal Access Token with `admin:org` permission scope.<br>This is used to obtain a Runner Token used for registering the runner.<br>For more information, see [Create a registration token for an organization](https://docs.github.com/en/rest/actions/self-hosted-runners?apiVersion=2022-11-28#create-a-registration-token-for-an-organization). | `string` | n/a | yes |
+| <a name="input_github_token"></a> [github\_token](#input\_github\_token) | GitHub Personal Access Token.<br/>- EC2 runner (create\_ec2\_runner): required, with `admin:org` scope. Used to obtain a runner registration token, see<br/>  [Create a registration token for an organization](https://docs.github.com/en/rest/actions/self-hosted-runners?apiVersion=2022-11-28#create-a-registration-token-for-an-organization).<br/>- EKS runner (eks\_runner\_config.create): used when eks\_runner\_config.github\_auth\_method is "pat". | `string` | `null` | no |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | The instance type for the EC2 instance. Default is t3a.medium. | `string` | `"t3a.medium"` | no |
 | <a name="input_monitoring_enabled"></a> [monitoring\_enabled](#input\_monitoring\_enabled) | Launched EC2 instance will have detailed monitoring enabled | `bool` | `true` | no |
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | Namespace of the project, i.e. refarch | `string` | n/a | yes |
@@ -161,16 +187,13 @@ The complete inputs/outputs reference is auto-generated below.
 | <a name="input_root_block_device_kms_key_id"></a> [root\_block\_device\_kms\_key\_id](#input\_root\_block\_device\_kms\_key\_id) | KMS key ID used to encrypt EBS volume. When specifying root\_block\_device\_kms\_key\_id, root\_block\_device\_encrypted needs to be set to true | `string` | `null` | no |
 | <a name="input_root_volume_size"></a> [root\_volume\_size](#input\_root\_volume\_size) | Size of the root volume in gigabytes | `string` | `"80"` | no |
 | <a name="input_root_volume_type"></a> [root\_volume\_type](#input\_root\_volume\_type) | Type of root volume. Can be standard, gp2, gp3, io1 or io2 | `string` | `"gp2"` | no |
-| <a name="input_runner_image"></a> [runner\_image](#input\_runner\_image) | Name of the image to use for the Actions Runner. | `string` | `"sourcefuse/github-runner:0.3.0"` | no |
-| <a name="input_runner_labels"></a> [runner\_labels](#input\_runner\_labels) | Labels to assign the GitHub Runner. If no values are given, the default labels will be:<br>  - `self-hosted`<br>  - Base OS, i.e. `Linux`<br>  - Architecture, i.e. `X64`<br>These labels cannot be overridden.<br>Separate labels via comma, i.e. `dev,docker,another_label` | `string` | `""` | no |
+| <a name="input_runner_labels"></a> [runner\_labels](#input\_runner\_labels) | Labels to assign the GitHub Runner. If no values are given, the default labels will be:<br/>  - `self-hosted`<br/>  - Base OS, i.e. `Linux`<br/>  - Architecture, i.e. `X64`<br/>These labels cannot be overridden.<br/>Separate labels via comma, i.e. `dev,docker,another_label` | `string` | `""` | no |
 | <a name="input_runner_name"></a> [runner\_name](#input\_runner\_name) | Name to assign the GitHub Runner. If no value is given, it will use the ec2 instance name. | `string` | `null` | no |
-| <a name="input_runner_user"></a> [runner\_user](#input\_runner\_user) | Name of the user to run the container as. | `string` | `"runner"` | no |
-| <a name="input_security_group_rules"></a> [security\_group\_rules](#input\_security\_group\_rules) | Security group rules for the EC2 instance running the GitHub Runner | <pre>list(object({<br>    type        = string<br>    from_port   = number<br>    to_port     = number<br>    protocol    = string<br>    cidr_blocks = list(string)<br>  }))</pre> | <pre>[<br>  {<br>    "cidr_blocks": [<br>      "0.0.0.0/0"<br>    ],<br>    "from_port": 0,<br>    "protocol": "-1",<br>    "to_port": 65535,<br>    "type": "egress"<br>  }<br>]</pre> | no |
-| <a name="input_ssm_patch_manager_enabled"></a> [ssm\_patch\_manager\_enabled](#input\_ssm\_patch\_manager\_enabled) | Whether to enable SSM Patch manager | `bool` | `true` | no |
-| <a name="input_subnet_id"></a> [subnet\_id](#input\_subnet\_id) | Subnet ID for the EC2 instance to be assigned to | `string` | n/a | yes |
+| <a name="input_runner_user"></a> [runner\_user](#input\_runner\_user) | OS user that owns and runs the runner systemd service. Created if it does not exist. | `string` | `"ubuntu"` | no |
+| <a name="input_runner_version"></a> [runner\_version](#input\_runner\_version) | Version of the official GitHub Actions runner (github.com/actions/runner) to<br/>install on the host. Pin at or above GitHub's current minimum so the runner<br/>is never forced into a self-update. See the releases page for the latest tag. | `string` | `"2.336.0"` | no |
+| <a name="input_subnet_id"></a> [subnet\_id](#input\_subnet\_id) | Subnet ID for the EC2 instance to be assigned to. Required when create\_ec2\_runner is true. | `string` | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Default tags to apply to every resource | `map(string)` | `{}` | no |
-| <a name="input_volume_tags_enabled"></a> [volume\_tags\_enabled](#input\_volume\_tags\_enabled) | Whether or not to copy instance tags to root and EBS volumes | `bool` | `true` | no |
-| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | VPC ID for EC2 instance to reside in | `string` | n/a | yes |
+| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | VPC ID for EC2 instance to reside in. Required when create\_ec2\_runner is true. | `string` | `null` | no |
 
 ## Outputs
 
@@ -178,8 +201,14 @@ The complete inputs/outputs reference is auto-generated below.
 |------|-------------|
 | <a name="output_ec2_runner_instance_id"></a> [ec2\_runner\_instance\_id](#output\_ec2\_runner\_instance\_id) | Instance ID of the EC2 Runner |
 | <a name="output_ec2_runner_instance_name"></a> [ec2\_runner\_instance\_name](#output\_ec2\_runner\_instance\_name) | Instance Name of the EC2 Runner |
-| <a name="output_ec2_runner_role"></a> [ec2\_runner\_role](#output\_ec2\_runner\_role) | Instance role name |
+| <a name="output_ec2_runner_role"></a> [ec2\_runner\_role](#output\_ec2\_runner\_role) | Instance role name (created by arc-ec2 as <name>-role) |
 | <a name="output_ec2_runner_role_arn"></a> [ec2\_runner\_role\_arn](#output\_ec2\_runner\_role\_arn) | Instance role ARN |
+| <a name="output_eks_controller_namespace"></a> [eks\_controller\_namespace](#output\_eks\_controller\_namespace) | Kubernetes namespace of the Actions Runner Controller. |
+| <a name="output_eks_ebs_csi_role_arn"></a> [eks\_ebs\_csi\_role\_arn](#output\_eks\_ebs\_csi\_role\_arn) | IAM role ARN of the EBS CSI driver (null if not installed). |
+| <a name="output_eks_github_config_secret_name"></a> [eks\_github\_config\_secret\_name](#output\_eks\_github\_config\_secret\_name) | Kubernetes secret holding the GitHub credentials of the EKS runners. |
+| <a name="output_eks_runner_namespace"></a> [eks\_runner\_namespace](#output\_eks\_runner\_namespace) | Kubernetes namespace of the EKS runner scale sets. |
+| <a name="output_eks_runner_scale_sets"></a> [eks\_runner\_scale\_sets](#output\_eks\_runner\_scale\_sets) | Deployed EKS runner scale sets: name (use in `runs-on:`), Helm release, runner service account and IAM role ARN. |
+| <a name="output_eks_storage_class_name"></a> [eks\_storage\_class\_name](#output\_eks\_storage\_class\_name) | StorageClass created for runner work volumes (null if not created). |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Development
